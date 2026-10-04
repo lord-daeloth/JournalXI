@@ -208,7 +208,7 @@ local function clear_entry_steps(kind, group, item)
 end
 
 local function migrate_nation_m23_cache()
-    if (tonumber(config.nation_m23_cache_version) or 0) >= 1 then return end
+    if (tonumber(config.nation_m23_cache_version) or 0) >= 2 then return end
     config.mission_status = config.mission_status or T{}
     config.auto_completed_entries = config.auto_completed_entries or T{}
     for _, area in ipairs({ 'sandoria', 'bastok', 'windurst' }) do
@@ -223,7 +223,7 @@ local function migrate_nation_m23_cache()
             end
         end
     end
-    config.nation_m23_cache_version = 1
+    config.nation_m23_cache_version = 2
     save()
 end
 

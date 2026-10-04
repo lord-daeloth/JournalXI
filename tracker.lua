@@ -530,15 +530,19 @@ end
 
 local function nation_main_override(id, is_completed, is_current, completed_set, nation_current)
     -- IDs 6/8 represent one destination and 7/9 the other. The parent bit can
-    -- be set early, so mission 2-3 is complete only after both destinations.
+    -- be set early. Even after both destinations, mission 2-3 remains active
+    -- until its final home-nation turn-in advances the current mission.
     local destination_one = completed_set[6 + 1] or completed_set[8 + 1]
     local destination_two = completed_set[7 + 1] or completed_set[9 + 1]
+    if nation_current ~= nil and nation_current >= 5 and nation_current <= 9 then
+        return 'active', false
+    end
+
     if destination_one and destination_two then
         return 'completed', false
     end
 
-    if is_current or destination_one or destination_two
-        or (nation_current ~= nil and nation_current >= 5 and nation_current <= 9) then
+    if is_current or destination_one or destination_two then
         return 'active', false
     end
 
