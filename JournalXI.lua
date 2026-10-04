@@ -438,7 +438,10 @@ local function draw_tracker_window()
         imgui.SameLine()
         imgui.TextColored(color, '[' .. label .. ']')
         imgui.Separator()
-        draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
+        if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
+            draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
+        end
+        imgui.EndChild()
         imgui.Separator()
         if imgui.Button('Stop tracking') then untrack() end
         imgui.SameLine()
