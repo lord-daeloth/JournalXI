@@ -1,0 +1,458 @@
+addon.name = 'JournalXI'
+addon.author = 'Daeloth'
+addon.version = '0.1.0'
+addon.desc = 'A streamlined mission and quest journal for CatsEyeXI.'
+
+require('common')
+
+local imgui = require('imgui')
+local settings = require('settings')
+local tracker = require('tracker')
+
+local mission_areas = {
+    'sandoria', 'bastok', 'windurst', 'zilart', 'cop', 'toau', 'wotg',
+    'acp', 'mkd', 'asa', 'abyssea', 'adoulin', 'rov', 'tvr', 'assault',
+    'campaign',
+}
+
+local mission_names = {
+    sandoria = "San d'Oria", bastok = 'Bastok', windurst = 'Windurst',
+    zilart = 'Rise of the Zilart', cop = 'Chains of Promathia',
+    toau = 'Treasures of Aht Urhgan', wotg = 'Wings of the Goddess',
+    acp = 'A Crystalline Prophecy', mkd = "A Moogle Kupo d'Etat",
+    asa = 'A Shantotto Ascension', abyssea = 'Abyssea',
+    adoulin = 'Seekers of Adoulin', rov = "Rhapsodies of Vana'diel",
+    tvr = 'The Voracious Resurgence', assault = 'Assault', campaign = 'Campaign',
+}
+
+local defaults = T{
+    visible = true,
+    mode = 'mission',
+    mission_area = 1,
+    quest_category = 1,
+    mission_id = '',
+    quest_id = '',
+    show_active = true,
+    show_completed = false,
+    show_unstarted = false,
+    tracker_visible = false,
+    tracked_kind = '',
+    tracked_group = '',
+    tracked_id = '',
+    mission_status = T{},
+    quest_status = T{},
+}
+
+local config = settings.load(defaults)
+local search = { '' }
+local event_pointer
+local quest_categories
+
+local colors = {
+    active = { 0.43, 0.73, 1.00, 1.00 },
+    completed = { 0.40, 0.82, 0.48, 1.00 },
+    unstarted = { 0.62, 0.62, 0.67, 1.00 },
+    heading = { 0.95, 0.76, 0.30, 1.00 },
+    muted = { 0.62, 0.62, 0.67, 1.00 },
+}
+
+tracker.Initialize()
+
+settings.register('settings', 'journalxi_settings', function(updated)
+    if updated then config = updated end
+end)
+
+local function save()
+    settings.save()
+end
+
+local function in_cutscene()
+    local ok, active = pcall(function()
+        if event_pointer == nil then
+            event_pointer = ashita.memory.find('FFXiMain.dll', 0,
+                'A0????????84C0741AA1????????85C0741166A1????????663B05????????0F94C0C3', 0, 0) or 0
+        end
+        if event_pointer == 0 then return false end
+        local pointer = ashita.memory.read_uint32(event_pointer + 1)
+        return pointer ~= nil and pointer ~= 0 and ashita.memory.read_uint8(pointer) == 1
+    end)
+    return ok and active
+end
+
+local function logged_in()
+    local memory = AshitaCore:GetMemoryManager()
+    local player = memory and memory:GetPlayer()
+    local party = memory and memory:GetParty()
+    if not player or not party or player:GetLoginStatus() ~= 2 then return false end
+    return party:GetMemberIsActive(0) ~= 0
+        and party:GetMemberServerId(0) ~= 0
+        and party:GetMemberZone(0) ~= 0
+        and GetPlayerEntity() ~= nil
+end
+
+local function clamp_index(value, count)
+    if count < 1 then return 1 end
+    return math.max(1, math.min(tonumber(value) or 1, count))
+end
+
+local function status_label(status)
+    if status == 'active' then return 'Active', colors.active end
+    if status == 'completed' then return 'Completed', colors.completed end
+    return 'Not started', colors.unstarted
+end
+
+local function status_visible(status)
+    if status == 'active' then return config.show_active ~= false end
+    if status == 'completed' then return config.show_completed == true end
+    return config.show_unstarted == true
+end
+
+local function status_key(group, id)
+    return tostring(group or '') .. ':' .. tostring(id or '')
+end
+
+local function apply_cached_statuses(kind, group, items)
+    if tracker.IsReady() then return items end
+    local cache = kind == 'quest' and config.quest_status or config.mission_status
+    cache = cache or {}
+    for _, item in ipairs(items) do
+        item.status = cache[status_key(group, item.id)] or item.status or 'not_started'
+    end
+    return items
+end
+
+local function refresh_status_cache()
+    if not tracker.IsReady() then return end
+    local changed = false
+    config.mission_status = config.mission_status or T{}
+    config.quest_status = config.quest_status or T{}
+    if tracker.IsMissionDirty() then
+        for _, area in ipairs(mission_areas) do
+            for _, item in ipairs(tracker.GetMissionArea(area) or {}) do
+                config.mission_status[status_key(area, item.id)] = item.status or 'not_started'
+            end
+        end
+        tracker.ClearMissionDirty()
+        changed = true
+    end
+    if tracker.IsQuestDirty() then
+        for _, category in ipairs(quest_categories()) do
+            for _, item in ipairs(tracker.GetQuestArea(category) or {}) do
+                config.quest_status[status_key(category, item.id)] = item.status or 'not_started'
+            end
+        end
+        tracker.ClearQuestDirty()
+        changed = true
+    end
+    if changed then save() end
+end
+
+local function matches_search(item)
+    local query = tostring(search[1] or ''):lower()
+    if query == '' then return true end
+    local haystack = table.concat({
+        tostring(item.name or ''), tostring(item.zone or ''),
+        tostring(item.npc or ''), tostring(item.loc or ''),
+    }, ' '):lower()
+    return haystack:find(query, 1, true) ~= nil
+end
+
+quest_categories = function()
+    return tracker.GetQuestCategories() or {}
+end
+
+local function current_group()
+    if config.mode == 'quest' then
+        local categories = quest_categories()
+        config.quest_category = clamp_index(config.quest_category, #categories)
+        return categories[config.quest_category], tracker.GetQuestCategoryNames() or {}
+    end
+    config.mission_area = clamp_index(config.mission_area, #mission_areas)
+    return mission_areas[config.mission_area], mission_names
+end
+
+local function source_items()
+    local group = current_group()
+    if not group then return {} end
+    if config.mode == 'quest' then
+        return apply_cached_statuses('quest', group, tracker.GetQuestArea(group) or {})
+    end
+    return apply_cached_statuses('mission', group, tracker.GetMissionArea(group) or {})
+end
+
+local function visible_items()
+    local result = {}
+    for _, item in ipairs(source_items()) do
+        if status_visible(item.status or 'not_started') and matches_search(item) then
+            result[#result + 1] = item
+        end
+    end
+    return result
+end
+
+local function selected_id_key()
+    return config.mode == 'quest' and 'quest_id' or 'mission_id'
+end
+
+local function selected_item(items)
+    local wanted = tostring(config[selected_id_key()] or '')
+    for _, item in ipairs(items or source_items()) do
+        if tostring(item.id) == wanted then return item end
+    end
+    return nil
+end
+
+local function choose(item)
+    config[selected_id_key()] = tostring(item.id)
+    save()
+end
+
+local function set_mode(mode)
+    if config.mode == mode then return end
+    config.mode = mode
+    search[1] = ''
+    save()
+end
+
+local function set_group(index)
+    if config.mode == 'quest' then config.quest_category = index
+    else config.mission_area = index end
+    config[selected_id_key()] = ''
+    search[1] = ''
+    save()
+end
+
+local function draw_group_selector()
+    local groups, names, selected_index
+    if config.mode == 'quest' then
+        groups = quest_categories()
+        names = tracker.GetQuestCategoryNames() or {}
+        selected_index = clamp_index(config.quest_category, #groups)
+    else
+        groups = mission_areas
+        names = mission_names
+        selected_index = clamp_index(config.mission_area, #groups)
+    end
+    local selected = groups[selected_index]
+    imgui.SetNextItemWidth(-1)
+    if imgui.BeginCombo('##journalxi_group', selected and (names[selected] or selected) or 'None') then
+        for index, group in ipairs(groups) do
+            if imgui.Selectable((names[group] or group) .. '##group_' .. group, index == selected_index) then
+                set_group(index)
+            end
+            if index == selected_index then imgui.SetItemDefaultFocus() end
+        end
+        imgui.EndCombo()
+    end
+end
+
+local function draw_filters()
+    local active = { config.show_active ~= false }
+    if imgui.Checkbox('Active', active) then config.show_active = active[1]; save() end
+    imgui.SameLine()
+    local completed = { config.show_completed == true }
+    if imgui.Checkbox('Completed', completed) then config.show_completed = completed[1]; save() end
+    imgui.SameLine()
+    local unstarted = { config.show_unstarted == true }
+    if imgui.Checkbox('Not started', unstarted) then config.show_unstarted = unstarted[1]; save() end
+end
+
+local function draw_result_list(items)
+    local selected = tostring(config[selected_id_key()] or '')
+    if #items == 0 then
+        imgui.TextDisabled('No entries match these filters.')
+        return
+    end
+    for _, item in ipairs(items) do
+        local status = item.status or 'not_started'
+        local _, color = status_label(status)
+        imgui.PushStyleColor(ImGuiCol_Text, color)
+        if imgui.Selectable(tostring(item.name or item.id) .. '##entry_' .. tostring(item.id),
+                selected == tostring(item.id)) then
+            choose(item)
+        end
+        imgui.PopStyleColor()
+    end
+end
+
+local function step_text(step)
+    if type(step) ~= 'table' then return tostring(step or '') end
+    if step.text ~= nil then return tostring(step.text) end
+    local parts = {}
+    for _, value in ipairs(step) do parts[#parts + 1] = step_text(value) end
+    return table.concat(parts, ' ')
+end
+
+local function draw_steps(steps)
+    if type(steps) ~= 'table' or #steps == 0 then
+        imgui.TextDisabled('No objectives are available for this entry.')
+        return
+    end
+    for index, step in ipairs(steps) do
+        imgui.TextColored(colors.heading, tostring(index) .. '.')
+        imgui.SameLine()
+        imgui.TextWrapped(step_text(step))
+        if index < #steps then imgui.Spacing() end
+    end
+end
+
+local function metadata_line(label, value)
+    if value == nil or tostring(value) == '' then return end
+    imgui.TextColored(colors.muted, label .. ':')
+    imgui.SameLine()
+    imgui.TextWrapped(tostring(value))
+end
+
+local function is_tracked(item)
+    local group = current_group()
+    return config.tracker_visible == true
+        and config.tracked_kind == config.mode
+        and config.tracked_group == tostring(group or '')
+        and config.tracked_id == tostring(item.id)
+end
+
+local function track(item)
+    local group = current_group()
+    config.tracked_kind = config.mode
+    config.tracked_group = tostring(group or '')
+    config.tracked_id = tostring(item.id)
+    config.tracker_visible = true
+    save()
+end
+
+local function untrack()
+    config.tracker_visible = false
+    save()
+end
+
+local function draw_details(item)
+    if not item then
+        imgui.TextDisabled('Select an entry to view its details.')
+        return
+    end
+    imgui.TextColored(colors.heading, tostring(item.name or item.id))
+    local label, color = status_label(item.status or 'not_started')
+    imgui.TextColored(color, label)
+    imgui.Separator()
+    metadata_line('Zone', item.zone)
+    metadata_line('Location', item.loc)
+    metadata_line('NPC', item.npc)
+    metadata_line('Requirements', item.req)
+    metadata_line('Prerequisite', item.prereq)
+    metadata_line('Items', item.items)
+    metadata_line('Reward', item.reward)
+    if item.zone or item.loc or item.npc or item.req or item.prereq or item.items or item.reward then
+        imgui.Separator()
+    end
+    if is_tracked(item) then
+        if imgui.Button('Stop tracking') then untrack() end
+    else
+        if imgui.Button('Track objectives') then track(item) end
+    end
+    imgui.Separator()
+    imgui.TextColored(colors.heading, 'Objectives')
+    draw_steps(item.steps)
+end
+
+local function draw_main_window()
+    if not config.visible then return end
+    local open = { true }
+    imgui.SetNextWindowSize({ 900, 620 }, ImGuiCond_FirstUseEver)
+    if imgui.Begin('JournalXI', open, ImGuiWindowFlags_NoCollapse) then
+        if imgui.RadioButton('Missions', config.mode ~= 'quest') then set_mode('mission') end
+        imgui.SameLine()
+        if imgui.RadioButton('Quests', config.mode == 'quest') then set_mode('quest') end
+        imgui.Separator()
+
+        imgui.BeginChild('journalxi_browser', { 330, 0 }, true)
+        draw_group_selector()
+        imgui.SetNextItemWidth(-1)
+        imgui.InputText('Search', search, 128)
+        draw_filters()
+        imgui.Separator()
+        local items = visible_items()
+        draw_result_list(items)
+        imgui.EndChild()
+
+        imgui.SameLine()
+        imgui.BeginChild('journalxi_details', { 0, 0 }, true)
+        draw_details(selected_item())
+        imgui.EndChild()
+    end
+    imgui.End()
+    if not open[1] then config.visible = false; save() end
+end
+
+local function tracked_item()
+    if config.tracked_kind == 'quest' then
+        local items = apply_cached_statuses('quest', config.tracked_group,
+            tracker.GetQuestArea(config.tracked_group) or {})
+        for _, item in ipairs(items) do
+            if tostring(item.id) == tostring(config.tracked_id) then return item end
+        end
+    elseif config.tracked_kind == 'mission' then
+        local items = apply_cached_statuses('mission', config.tracked_group,
+            tracker.GetMissionArea(config.tracked_group) or {})
+        for _, item in ipairs(items) do
+            if tostring(item.id) == tostring(config.tracked_id) then return item end
+        end
+    end
+    return nil
+end
+
+local function draw_tracker_window()
+    if not config.tracker_visible then return end
+    local item = tracked_item()
+    if not item then
+        config.tracker_visible = false
+        save()
+        return
+    end
+    local open = { true }
+    imgui.SetNextWindowSize({ 430, 0 }, ImGuiCond_FirstUseEver)
+    if imgui.Begin('JournalXI Tracker', open, bit.bor(ImGuiWindowFlags_AlwaysAutoResize, ImGuiWindowFlags_NoCollapse)) then
+        imgui.TextColored(colors.heading, tostring(item.name or item.id))
+        local label, color = status_label(item.status or 'not_started')
+        imgui.SameLine()
+        imgui.TextColored(color, '[' .. label .. ']')
+        imgui.Separator()
+        draw_steps(item.steps)
+        imgui.Separator()
+        if imgui.Button('Stop tracking') then untrack() end
+        imgui.SameLine()
+        if imgui.Button('Open JournalXI') then config.visible = true; save() end
+    end
+    imgui.End()
+    if not open[1] then untrack() end
+end
+
+local function draw()
+    refresh_status_cache()
+    if not logged_in() or in_cutscene() then return end
+    draw_main_window()
+    draw_tracker_window()
+end
+
+ashita.events.register('command', 'journalxi_command', function(e)
+    local command = e.command:lower():match('^%s*(.-)%s*$')
+    local root, arg = command:match('^(%S+)%s*(.*)$')
+    if root ~= '/journalxi' and root ~= '/jxi' then return end
+    e.blocked = true
+    if arg == '' then config.visible = not config.visible
+    elseif arg == 'show' then config.visible = true
+    elseif arg == 'hide' then config.visible = false
+    elseif arg == 'missions' then config.mode = 'mission'; config.visible = true
+    elseif arg == 'quests' then config.mode = 'quest'; config.visible = true
+    elseif arg == 'tracker' then config.tracker_visible = not config.tracker_visible
+    elseif arg == 'untrack' then untrack(); return
+    else
+        print('[JournalXI] /jxi [show|hide|missions|quests|tracker|untrack]')
+        return
+    end
+    save()
+end)
+
+ashita.events.register('d3d_present', 'journalxi_present', draw)
+ashita.events.register('unload', 'journalxi_unload', save)
+
+return true
