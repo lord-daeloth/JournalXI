@@ -431,8 +431,8 @@ local function draw_tracker_window()
         return
     end
     local open = { true }
-    imgui.SetNextWindowSize({ 430, 0 }, ImGuiCond_FirstUseEver)
-    if imgui.Begin('JournalXI Tracker', open, bit.bor(ImGuiWindowFlags_AlwaysAutoResize, ImGuiWindowFlags_NoCollapse)) then
+    imgui.SetNextWindowSize({ 430, 420 }, ImGuiCond_FirstUseEver)
+    if imgui.Begin('JournalXI Tracker', open, ImGuiWindowFlags_NoCollapse) then
         imgui.TextColored(colors.heading, tostring(item.name or item.id))
         local label, color = status_label(item.status or 'not_started')
         imgui.SameLine()
