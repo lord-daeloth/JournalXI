@@ -41,6 +41,7 @@ local defaults = T{
     tracked_id = '',
     mission_status = T{},
     quest_status = T{},
+    step_progress = T{},
 }
 
 local config = settings.load(defaults)
@@ -252,7 +253,6 @@ local function draw_filters()
     imgui.SameLine()
     local completed = { config.show_completed == true }
     if imgui.Checkbox('Completed', completed) then config.show_completed = completed[1]; save() end
-    imgui.SameLine()
     local unstarted = { config.show_unstarted == true }
     if imgui.Checkbox('Not started', unstarted) then config.show_unstarted = unstarted[1]; save() end
 end
@@ -283,15 +283,37 @@ local function step_text(step)
     return table.concat(parts, ' ')
 end
 
-local function draw_steps(steps)
+local function step_progress_key(kind, group, id, index)
+    return table.concat({
+        tostring(kind or ''),
+        tostring(group or ''),
+        tostring(id or ''),
+        tostring(index or ''),
+    }, ':')
+end
+
+local function draw_steps(steps, item, kind, group)
     if type(steps) ~= 'table' or #steps == 0 then
         imgui.TextDisabled('No objectives are available for this entry.')
         return
     end
+    config.step_progress = config.step_progress or T{}
     for index, step in ipairs(steps) do
+        local key = step_progress_key(kind, group, item.id, index)
+        local checked = { config.step_progress[key] == true }
+        imgui.PushID(key)
+        if imgui.Checkbox('##complete', checked) then
+            if checked[1] then config.step_progress[key] = true
+            else config.step_progress[key] = nil end
+            save()
+        end
+        imgui.SameLine()
         imgui.TextColored(colors.heading, tostring(index) .. '.')
         imgui.SameLine()
+        if checked[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
         imgui.TextWrapped(step_text(step))
+        if checked[1] then imgui.PopStyleColor() end
+        imgui.PopID()
         if index < #steps then imgui.Spacing() end
     end
 end
@@ -351,7 +373,7 @@ local function draw_details(item)
     end
     imgui.Separator()
     imgui.TextColored(colors.heading, 'Objectives')
-    draw_steps(item.steps)
+    draw_steps(item.steps, item, config.mode, current_group())
 end
 
 local function draw_main_window()
@@ -416,7 +438,7 @@ local function draw_tracker_window()
         imgui.SameLine()
         imgui.TextColored(color, '[' .. label .. ']')
         imgui.Separator()
-        draw_steps(item.steps)
+        draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
         imgui.Separator()
         if imgui.Button('Stop tracking') then untrack() end
         imgui.SameLine()
