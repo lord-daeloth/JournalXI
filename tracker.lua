@@ -528,18 +528,17 @@ local function skip_override()
     return nil, true
 end
 
-local function nation_main_override(id, is_completed, is_current, completed_set)
-    for _, sub_id in ipairs({ 6, 7, 8, 9 }) do
-        if completed_set[sub_id + 1] then
-            return 'completed', false
-        end
-    end
-
-    if is_completed then
+local function nation_main_override(id, is_completed, is_current, completed_set, nation_current)
+    -- IDs 6/8 represent one destination and 7/9 the other. The parent bit can
+    -- be set early, so mission 2-3 is complete only after both destinations.
+    local destination_one = completed_set[6 + 1] or completed_set[8 + 1]
+    local destination_two = completed_set[7 + 1] or completed_set[9 + 1]
+    if destination_one and destination_two then
         return 'completed', false
     end
 
-    if is_current then
+    if is_current or destination_one or destination_two
+        or (nation_current ~= nil and nation_current >= 5 and nation_current <= 9) then
         return 'active', false
     end
 
@@ -551,7 +550,8 @@ end
 local mission_overrides = {
     sandoria = {
         [5] = function(id, is_completed, is_current, ctx)
-            return nation_main_override(id, is_completed, is_current, ctx.completed_set)
+            return nation_main_override(
+                id, is_completed, is_current, ctx.completed_set, ctx.nation_current)
         end,
 
         [6] = skip_override,
@@ -562,7 +562,8 @@ local mission_overrides = {
 
     bastok = {
         [5] = function(id, is_completed, is_current, ctx)
-            return nation_main_override(id, is_completed, is_current, ctx.completed_set)
+            return nation_main_override(
+                id, is_completed, is_current, ctx.completed_set, ctx.nation_current)
         end,
 
         [6] = skip_override,
@@ -573,7 +574,8 @@ local mission_overrides = {
 
     windurst = {
         [5] = function(id, is_completed, is_current, ctx)
-            return nation_main_override(id, is_completed, is_current, ctx.completed_set)
+            return nation_main_override(
+                id, is_completed, is_current, ctx.completed_set, ctx.nation_current)
         end,
 
         [6] = skip_override,
@@ -865,19 +867,20 @@ local function get_mission_status_from_context(area, id, context)
     end
 
     local is_completed = context.completed_set[numeric_id + 1] == true
-    local override = area_overrides and area_overrides[numeric_id]
+        local override = area_overrides and area_overrides[numeric_id]
 
-    if override ~= nil then
-        local status_override, skip = override(
-            numeric_id,
-            is_completed,
-            is_current,
-            {
-                completed_set = context.completed_set,
-                current_set = context.current_set,
-                cop_current = context.cop_current,
-            }
-        )
+        if override ~= nil then
+            local status_override, skip = override(
+                numeric_id,
+                is_completed,
+                is_current,
+                {
+                    completed_set = context.completed_set,
+                    current_set = context.current_set,
+                    cop_current = context.cop_current,
+                    nation_current = context.nation_current,
+                }
+            )
 
         if skip then
             return 'hidden'

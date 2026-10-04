@@ -47,6 +47,8 @@ local defaults = T{
     mission_status = T{},
     quest_status = T{},
     step_progress = T{},
+    auto_completed_entries = T{},
+    nation_m23_cache_version = 0,
 }
 
 local config = settings.load(defaults)
@@ -158,13 +160,84 @@ local function status_key(group, id)
     return tostring(group or '') .. ':' .. tostring(id or '')
 end
 
+local function step_progress_key(kind, group, id, index)
+    return table.concat({
+        tostring(kind or ''),
+        tostring(group or ''),
+        tostring(id or ''),
+        tostring(index or ''),
+    }, ':')
+end
+
+local function complete_entry_steps(kind, group, item)
+    if item.status ~= 'completed' or type(item.steps) ~= 'table' then return false end
+    config.step_progress = config.step_progress or T{}
+    config.auto_completed_entries = config.auto_completed_entries or T{}
+    local entry_key = status_key(kind .. ':' .. group, item.id)
+    if config.auto_completed_entries[entry_key] == true then return false end
+    local changed = false
+    for index = 1, #item.steps do
+        local key = step_progress_key(kind, group, item.id, index)
+        if config.step_progress[key] ~= true then
+            config.step_progress[key] = true
+            changed = true
+        end
+    end
+    config.auto_completed_entries[entry_key] = true
+    return true
+end
+
+local function clear_entry_steps(kind, group, item)
+    if type(item.steps) ~= 'table' then return false end
+    config.step_progress = config.step_progress or T{}
+    config.auto_completed_entries = config.auto_completed_entries or T{}
+    local changed = false
+    for index = 1, #item.steps do
+        local key = step_progress_key(kind, group, item.id, index)
+        if config.step_progress[key] ~= nil then
+            config.step_progress[key] = nil
+            changed = true
+        end
+    end
+    local entry_key = status_key(kind .. ':' .. group, item.id)
+    if config.auto_completed_entries[entry_key] ~= nil then
+        config.auto_completed_entries[entry_key] = nil
+        changed = true
+    end
+    return changed
+end
+
+local function migrate_nation_m23_cache()
+    if (tonumber(config.nation_m23_cache_version) or 0) >= 1 then return end
+    config.mission_status = config.mission_status or T{}
+    config.auto_completed_entries = config.auto_completed_entries or T{}
+    for _, area in ipairs({ 'sandoria', 'bastok', 'windurst' }) do
+        local cache_key = status_key(area, 5)
+        if config.mission_status[cache_key] == 'completed' then
+            config.mission_status[cache_key] = 'active'
+            for _, item in ipairs(tracker.GetMissionArea(area) or {}) do
+                if tonumber(item.id) == 5 then
+                    clear_entry_steps('mission', area, item)
+                    break
+                end
+            end
+        end
+    end
+    config.nation_m23_cache_version = 1
+    save()
+end
+
 local function apply_cached_statuses(kind, group, items)
-    if tracker.IsReady() then return items end
     local cache = kind == 'quest' and config.quest_status or config.mission_status
     cache = cache or {}
+    local progress_changed = false
     for _, item in ipairs(items) do
-        item.status = cache[status_key(group, item.id)] or item.status or 'not_started'
+        if not tracker.IsReady() then
+            item.status = cache[status_key(group, item.id)] or item.status or 'not_started'
+        end
+        if complete_entry_steps(kind, group, item) then progress_changed = true end
     end
+    if progress_changed then save() end
     return items
 end
 
@@ -176,7 +249,11 @@ local function refresh_status_cache()
     if tracker.IsMissionDirty() then
         for _, area in ipairs(mission_areas) do
             for _, item in ipairs(tracker.GetMissionArea(area) or {}) do
-                config.mission_status[status_key(area, item.id)] = item.status or 'not_started'
+                local key = status_key(area, item.id)
+                if config.mission_status[key] == 'completed' and item.status ~= 'completed'
+                    and clear_entry_steps('mission', area, item) then changed = true end
+                config.mission_status[key] = item.status or 'not_started'
+                if complete_entry_steps('mission', area, item) then changed = true end
             end
         end
         tracker.ClearMissionDirty()
@@ -185,7 +262,11 @@ local function refresh_status_cache()
     if tracker.IsQuestDirty() then
         for _, category in ipairs(quest_categories()) do
             for _, item in ipairs(tracker.GetQuestArea(category) or {}) do
-                config.quest_status[status_key(category, item.id)] = item.status or 'not_started'
+                local key = status_key(category, item.id)
+                if config.quest_status[key] == 'completed' and item.status ~= 'completed'
+                    and clear_entry_steps('quest', category, item) then changed = true end
+                config.quest_status[key] = item.status or 'not_started'
+                if complete_entry_steps('quest', category, item) then changed = true end
             end
         end
         tracker.ClearQuestDirty()
@@ -327,15 +408,6 @@ local function step_text(step)
     local parts = {}
     for _, value in ipairs(step) do parts[#parts + 1] = step_text(value) end
     return table.concat(parts, ' ')
-end
-
-local function step_progress_key(kind, group, id, index)
-    return table.concat({
-        tostring(kind or ''),
-        tostring(group or ''),
-        tostring(id or ''),
-        tostring(index or ''),
-    }, ':')
 end
 
 local function draw_step(step, index, item, kind, group)
@@ -528,12 +600,18 @@ local function draw_tracker_window()
                 restore_tracker_size = true
                 save()
             end
-            imgui.SameLine()
             local step, index = next_unchecked_step(
                 item.steps, item, config.tracked_kind, config.tracked_group)
             if step ~= nil then
+                if (item.status or 'not_started') == 'not_started' then
+                    imgui.SameLine()
+                    imgui.TextColored(colors.unstarted, 'Not started')
+                else
+                    imgui.SameLine()
+                end
                 draw_step(step, index, item, config.tracked_kind, config.tracked_group)
             else
+                imgui.SameLine()
                 imgui.TextColored(colors.completed, 'All objectives complete.')
             end
         else
@@ -568,6 +646,7 @@ local function draw_tracker_window()
 end
 
 local function draw()
+    migrate_nation_m23_cache()
     refresh_status_cache()
     if not logged_in() or in_cutscene() then return end
     draw_main_window()
