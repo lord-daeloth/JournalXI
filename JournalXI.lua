@@ -36,6 +36,9 @@ local defaults = T{
     show_completed = false,
     show_unstarted = false,
     tracker_visible = false,
+    tracker_compact = false,
+    tracker_width = 430,
+    tracker_height = 420,
     tracked_kind = '',
     tracked_group = '',
     tracked_id = '',
@@ -48,6 +51,7 @@ local config = settings.load(defaults)
 local search = { '' }
 local event_pointer
 local quest_categories
+local restore_tracker_size = false
 
 local colors = {
     active = { 0.43, 0.73, 1.00, 1.00 },
@@ -292,30 +296,43 @@ local function step_progress_key(kind, group, id, index)
     }, ':')
 end
 
+local function draw_step(step, index, item, kind, group)
+    config.step_progress = config.step_progress or T{}
+    local key = step_progress_key(kind, group, item.id, index)
+    local checked = { config.step_progress[key] == true }
+    imgui.PushID(key)
+    if imgui.Checkbox('##complete', checked) then
+        if checked[1] then config.step_progress[key] = true
+        else config.step_progress[key] = nil end
+        save()
+    end
+    imgui.SameLine()
+    imgui.TextColored(colors.heading, tostring(index) .. '.')
+    imgui.SameLine()
+    if checked[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
+    imgui.TextWrapped(step_text(step))
+    if checked[1] then imgui.PopStyleColor() end
+    imgui.PopID()
+end
+
 local function draw_steps(steps, item, kind, group)
     if type(steps) ~= 'table' or #steps == 0 then
         imgui.TextDisabled('No objectives are available for this entry.')
         return
     end
-    config.step_progress = config.step_progress or T{}
     for index, step in ipairs(steps) do
-        local key = step_progress_key(kind, group, item.id, index)
-        local checked = { config.step_progress[key] == true }
-        imgui.PushID(key)
-        if imgui.Checkbox('##complete', checked) then
-            if checked[1] then config.step_progress[key] = true
-            else config.step_progress[key] = nil end
-            save()
-        end
-        imgui.SameLine()
-        imgui.TextColored(colors.heading, tostring(index) .. '.')
-        imgui.SameLine()
-        if checked[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
-        imgui.TextWrapped(step_text(step))
-        if checked[1] then imgui.PopStyleColor() end
-        imgui.PopID()
+        draw_step(step, index, item, kind, group)
         if index < #steps then imgui.Spacing() end
     end
+end
+
+local function next_unchecked_step(steps, item, kind, group)
+    config.step_progress = config.step_progress or T{}
+    for index, step in ipairs(steps or {}) do
+        local key = step_progress_key(kind, group, item.id, index)
+        if config.step_progress[key] ~= true then return step, index end
+    end
+    return nil, nil
 end
 
 local function metadata_line(label, value)
@@ -431,21 +448,57 @@ local function draw_tracker_window()
         return
     end
     local open = { true }
-    imgui.SetNextWindowSize({ 430, 420 }, ImGuiCond_FirstUseEver)
-    if imgui.Begin('JournalXI Tracker', open, ImGuiWindowFlags_NoCollapse) then
-        imgui.TextColored(colors.heading, tostring(item.name or item.id))
-        local label, color = status_label(item.status or 'not_started')
-        imgui.SameLine()
-        imgui.TextColored(color, '[' .. label .. ']')
-        imgui.Separator()
-        if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
-            draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
+    local compact = config.tracker_compact == true
+    local width = math.max(260, tonumber(config.tracker_width) or 430)
+    local height = math.max(180, tonumber(config.tracker_height) or 420)
+    local flags = ImGuiWindowFlags_NoCollapse
+    if compact then
+        imgui.SetNextWindowSize({ width, 0 }, ImGuiCond_Always)
+        flags = bit.bor(flags, ImGuiWindowFlags_AlwaysAutoResize)
+    elseif restore_tracker_size then
+        imgui.SetNextWindowSize({ width, height }, ImGuiCond_Always)
+        restore_tracker_size = false
+    else
+        imgui.SetNextWindowSize({ width, height }, ImGuiCond_FirstUseEver)
+    end
+    if imgui.Begin('JournalXI Tracker', open, flags) then
+        if compact then
+            if imgui.Button('v##tracker_expand') then
+                config.tracker_compact = false
+                restore_tracker_size = true
+                save()
+            end
+            imgui.SameLine()
+            local step, index = next_unchecked_step(
+                item.steps, item, config.tracked_kind, config.tracked_group)
+            if step ~= nil then
+                draw_step(step, index, item, config.tracked_kind, config.tracked_group)
+            else
+                imgui.TextColored(colors.completed, 'All objectives complete.')
+            end
+        else
+            local current_width, current_height = imgui.GetWindowSize()
+            if current_width and current_width > 0 then config.tracker_width = current_width end
+            if current_height and current_height > 0 then config.tracker_height = current_height end
+            if imgui.Button('^##tracker_compact') then
+                config.tracker_compact = true
+                save()
+            end
+            imgui.SameLine()
+            imgui.TextColored(colors.heading, tostring(item.name or item.id))
+            local label, color = status_label(item.status or 'not_started')
+            imgui.SameLine()
+            imgui.TextColored(color, '[' .. label .. ']')
+            imgui.Separator()
+            if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
+                draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
+            end
+            imgui.EndChild()
+            imgui.Separator()
+            if imgui.Button('Stop tracking') then untrack() end
+            imgui.SameLine()
+            if imgui.Button('Open JournalXI') then config.visible = true; save() end
         end
-        imgui.EndChild()
-        imgui.Separator()
-        if imgui.Button('Stop tracking') then untrack() end
-        imgui.SameLine()
-        if imgui.Button('Open JournalXI') then config.visible = true; save() end
     end
     imgui.End()
     if not open[1] then untrack() end
