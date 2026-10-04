@@ -39,6 +39,7 @@ local defaults = T{
     tracker_compact = false,
     tracker_width = 430,
     tracker_height = 420,
+    tracker_opacity = 100,
     tracked_kind = '',
     tracked_group = '',
     tracked_id = '',
@@ -401,6 +402,16 @@ local function draw_main_window()
         if imgui.RadioButton('Missions', config.mode ~= 'quest') then set_mode('mission') end
         imgui.SameLine()
         if imgui.RadioButton('Quests', config.mode == 'quest') then set_mode('quest') end
+        imgui.SameLine()
+        imgui.SetCursorPosX(math.max(210, imgui.GetWindowWidth() - 255))
+        imgui.Text('Tracker BG')
+        imgui.SameLine()
+        imgui.SetNextItemWidth(150)
+        local opacity = { math.max(0, math.min(100, tonumber(config.tracker_opacity) or 100)) }
+        if imgui.SliderInt('##tracker_opacity', opacity, 0, 100, '%d%%') then
+            config.tracker_opacity = opacity[1]
+            save()
+        end
         imgui.Separator()
 
         imgui.BeginChild('journalxi_browser', { 330, 0 }, true)
@@ -461,6 +472,8 @@ local function draw_tracker_window()
     else
         imgui.SetNextWindowSize({ width, height }, ImGuiCond_FirstUseEver)
     end
+    local opacity = math.max(0, math.min(100, tonumber(config.tracker_opacity) or 100))
+    imgui.SetNextWindowBgAlpha(opacity / 100)
     if imgui.Begin('JournalXI Tracker', open, flags) then
         if compact then
             if imgui.Button('v##tracker_expand') then
@@ -490,10 +503,12 @@ local function draw_tracker_window()
             imgui.SameLine()
             imgui.TextColored(color, '[' .. label .. ']')
             imgui.Separator()
+            imgui.PushStyleColor(ImGuiCol_ChildBg, { 0, 0, 0, 0 })
             if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
                 draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
             end
             imgui.EndChild()
+            imgui.PopStyleColor()
             imgui.Separator()
             if imgui.Button('Stop tracking') then untrack() end
             imgui.SameLine()
