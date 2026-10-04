@@ -40,6 +40,7 @@ local defaults = T{
     tracker_width = 430,
     tracker_height = 420,
     tracker_opacity = 100,
+    font_scale = 1.0,
     tracked_kind = '',
     tracked_group = '',
     tracked_id = '',
@@ -62,6 +63,15 @@ local colors = {
     muted = { 0.62, 0.62, 0.67, 1.00 },
 }
 
+local font_scale_options = {
+    { label = '75%', value = 0.75 },
+    { label = '85%', value = 0.85 },
+    { label = 'Default', value = 1.00 },
+    { label = '115%', value = 1.15 },
+    { label = '130%', value = 1.30 },
+    { label = '150%', value = 1.50 },
+}
+
 tracker.Initialize()
 
 settings.register('settings', 'journalxi_settings', function(updated)
@@ -70,6 +80,37 @@ end)
 
 local function save()
     settings.save()
+end
+
+local function selected_font_scale()
+    local value = tonumber(config.font_scale) or 1.0
+    for _, option in ipairs(font_scale_options) do
+        if math.abs(value - option.value) < 0.001 then return option.value, option.label end
+    end
+    return 1.0, 'Default'
+end
+
+local function apply_font_scale()
+    local value = selected_font_scale()
+    if imgui.SetWindowFontScale ~= nil then imgui.SetWindowFontScale(value) end
+end
+
+local function draw_font_scale_selector()
+    local value, label = selected_font_scale()
+    imgui.Text('Text')
+    imgui.SameLine()
+    imgui.SetNextItemWidth(95)
+    if imgui.BeginCombo('##font_scale', label) then
+        for _, option in ipairs(font_scale_options) do
+            local selected = math.abs(value - option.value) < 0.001
+            if imgui.Selectable(option.label, selected) then
+                config.font_scale = option.value
+                save()
+            end
+            if selected then imgui.SetItemDefaultFocus() end
+        end
+        imgui.EndCombo()
+    end
 end
 
 local function in_cutscene()
@@ -399,11 +440,14 @@ local function draw_main_window()
     local open = { true }
     imgui.SetNextWindowSize({ 900, 620 }, ImGuiCond_FirstUseEver)
     if imgui.Begin('JournalXI', open, ImGuiWindowFlags_NoCollapse) then
+        apply_font_scale()
         if imgui.RadioButton('Missions', config.mode ~= 'quest') then set_mode('mission') end
         imgui.SameLine()
         if imgui.RadioButton('Quests', config.mode == 'quest') then set_mode('quest') end
         imgui.SameLine()
-        imgui.SetCursorPosX(math.max(210, imgui.GetWindowWidth() - 255))
+        imgui.SetCursorPosX(math.max(210, imgui.GetWindowWidth() - 430))
+        draw_font_scale_selector()
+        imgui.SameLine()
         imgui.Text('Tracker BG')
         imgui.SameLine()
         imgui.SetNextItemWidth(150)
@@ -415,6 +459,7 @@ local function draw_main_window()
         imgui.Separator()
 
         imgui.BeginChild('journalxi_browser', { 330, 0 }, true)
+        apply_font_scale()
         draw_group_selector()
         imgui.SetNextItemWidth(-1)
         imgui.InputText('Search', search, 128)
@@ -426,6 +471,7 @@ local function draw_main_window()
 
         imgui.SameLine()
         imgui.BeginChild('journalxi_details', { 0, 0 }, true)
+        apply_font_scale()
         draw_details(selected_item())
         imgui.EndChild()
     end
@@ -475,6 +521,7 @@ local function draw_tracker_window()
     local opacity = math.max(0, math.min(100, tonumber(config.tracker_opacity) or 100))
     imgui.SetNextWindowBgAlpha(opacity / 100)
     if imgui.Begin('JournalXI Tracker', open, flags) then
+        apply_font_scale()
         if compact then
             if imgui.Button('v##tracker_expand') then
                 config.tracker_compact = false
@@ -505,6 +552,7 @@ local function draw_tracker_window()
             imgui.Separator()
             imgui.PushStyleColor(ImGuiCol_ChildBg, { 0, 0, 0, 0 })
             if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
+                apply_font_scale()
                 draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
             end
             imgui.EndChild()
