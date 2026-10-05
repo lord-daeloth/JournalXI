@@ -679,21 +679,23 @@ local function draw_tracker_window()
                 restore_tracker_size = true
                 save()
             end
+            imgui.SameLine()
+            imgui.TextColored(colors.heading, tostring(item.name or item.id))
+            if (item.status or 'not_started') == 'not_started' then
+                imgui.SameLine()
+                imgui.TextColored(colors.unstarted, '[Not started]')
+            end
+            imgui.Separator()
             local step, index = next_unchecked_step(
                 item.steps, item, config.tracked_kind, config.tracked_group)
             if step ~= nil then
-                if (item.status or 'not_started') == 'not_started' then
-                    imgui.SameLine()
-                    imgui.TextColored(colors.unstarted, 'Not started')
-                else
-                    imgui.SameLine()
-                end
                 draw_step(step, index, item, config.tracked_kind,
                     config.tracked_group, true)
             else
-                imgui.SameLine()
                 imgui.TextColored(colors.completed, 'All objectives complete.')
             end
+            imgui.Separator()
+            if imgui.Button('Open JournalXI') then config.visible = true; save() end
         else
             local current_width, current_height = imgui.GetWindowSize()
             if current_width and current_width > 0 then config.tracker_width = current_width end
