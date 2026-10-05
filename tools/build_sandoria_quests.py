@@ -1,0 +1,241 @@
+#!/usr/bin/env python3
+"""Build JournalXI nation quest Lua files from a BG-Wiki snapshot."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import unicodedata
+from pathlib import Path
+
+
+EXTRA_QUESTS = {
+    "sandoria": {
+        "A Chocobo Riding Game (San d'Oria)": {"id": "sdz_ref_chocobo_riding_game"},
+        "Trust: San d'Oria": {"id": "sdz_ref_trust_sandoria"},
+    },
+    "bastok": {
+        "Altana's Sorrow": {
+            "id": "bsz_bm_altanas_sorrow",
+            "tracker_area": "bastok",
+            "tracker_id": 49,
+        },
+        "Past Perfect": {
+            "id": "bsz_pb_past_perfect",
+            "tracker_area": "bastok",
+            "tracker_id": 23,
+        },
+    },
+}
+
+TITLE_ALIASES = {
+    "bastok": {
+        "The Weight of Your Limits": "Weight of Your Limits",
+    },
+}
+
+STEP_OVERRIDES = {
+    "bastok": {
+        "Altana's Sorrow": [
+            "Speak with Virnage in the back room of the Bat's Lair Inn in Bastok Mines (I-5).",
+            "Travel to Garlaige Citadel and find the ??? in a room around (G-8/H-8).",
+            "Examine the ??? to obtain the Bucket of Divine Paint.",
+            "Return to Virnage to receive the Letter from Virnage.",
+            "Deliver the letter to Eperdur upstairs in the Northern San d'Oria Cathedral (M-7) to complete the quest.",
+        ],
+    },
+}
+
+
+def ascii_text(value: str | None) -> str:
+    if not value:
+        return ""
+    value = value.replace("\u00d7", "x").replace("\u2192", "->")
+    value = value.replace("\u2018", "'").replace("\u2019", "'")
+    value = value.replace("\u201c", '"').replace("\u201d", '"')
+    value = value.replace("\u2013", "-").replace("\u2014", "-")
+    return unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode()
+
+
+def lua_string(value: str) -> str:
+    return json.dumps(ascii_text(value), ensure_ascii=True)
+
+
+def parse_old_records(path: Path) -> dict[str, dict]:
+    records = {}
+    current = None
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if re.match(r"^\s*\{\s*$", line):
+            current = {}
+            continue
+        if current is None:
+            continue
+        if re.match(r"^\s*\},\s*$", line):
+            if current.get("name"):
+                records[current["name"]] = current
+            current = None
+            continue
+        match = re.match(r"^\s*(\w+)\s*=\s*(['\"])(.*)\2,\s*$", line)
+        if match:
+            current[match.group(1)] = match.group(3).replace("\\'", "'").replace('\\"', '"')
+            continue
+        match = re.match(r"^\s*(\w+)\s*=\s*(\d+),\s*$", line)
+        if match:
+            current[match.group(1)] = int(match.group(2))
+    return records
+
+
+def starting_location(value: str) -> tuple[str, str, str]:
+    zone_match = re.search(r"(?:Southern|Northern|Port) San d'Oria", value)
+    if not zone_match:
+        return value.strip(), "", ""
+    npc = value[:zone_match.start()].strip(" ,- ").replace(" , ", ", ")
+    remainder = value[zone_match.start():].strip()
+    coordinate = re.search(r"\(?[A-Z]-\d{1,2}\)?", remainder)
+    zone = remainder[:coordinate.start()].strip(" ,(") if coordinate else remainder
+    location = f"{zone} ({coordinate.group(0).strip('()')})" if coordinate else zone
+    return npc, zone, location
+
+
+def useful(value: str | None) -> str:
+    value = ascii_text(value)
+    return "" if value.lower() in {"", "na", "n/a", "none", "unknown"} or "unknown" in value.lower() else value
+
+
+def render_metadata(
+    records: list[dict], category: dict[str, dict], old: dict[str, dict], area: str
+) -> str:
+    lines = [
+        "local M = {}",
+        "",
+        "-- Generated from BG-Wiki by tools/build_sandoria_quests.py.",
+        "-- Tracker fields are preserved from the original CatsEyeXI data.",
+        "",
+        "M = {",
+    ]
+    for record in records:
+        name = ascii_text(record["title"])
+        meta = record["metadata"]
+        prior = old.get(name, {})
+        extra = EXTRA_QUESTS.get(area, {}).get(name, {})
+        row = category.get(name, {})
+        fallback_npc, fallback_zone, fallback_loc = starting_location(meta.get("Starting NPC", ""))
+        quest = {
+            "id": prior.get("id") or extra.get("id"),
+            "name": name,
+            "area": area,
+            "zone": ascii_text(row.get("zone")) or fallback_zone,
+            "loc": (
+                f"{ascii_text(row['zone'])} ({ascii_text(row['position'])})"
+                if row.get("zone") and row.get("position") else fallback_loc
+            ),
+            "npc": ascii_text(row.get("npc")) or fallback_npc,
+            "description": useful(meta.get("Description")),
+            "fame": useful(row.get("fame")) or useful(meta.get("Required Fame")),
+            "level": useful(meta.get("Level Restriction")),
+            "repeatable": useful(meta.get("Repeatable")),
+            "title": useful(meta.get("Title")),
+            "pack": useful(meta.get("Pack")),
+            "previous_quest": useful(meta.get("Previous Quest")),
+            "next_quest": useful(meta.get("Next Quest")),
+            "items": ascii_text(prior.get("items")),
+            "reward": ascii_text(row.get("reward")) or ascii_text(prior.get("reward")),
+        }
+        server_note = prior.get("server_note", "") or prior.get("req", "")
+        if "NOT IMPLEMENTED" in server_note:
+            quest["server_note"] = server_note
+        lines.extend(["", "    {"])
+        for key, value in quest.items():
+            if value:
+                lines.append(f"        {key} = {lua_string(str(value))},")
+        tracker_area = prior.get("tracker_area") or extra.get("tracker_area")
+        tracker_id = prior.get("tracker_id")
+        if tracker_id is None:
+            tracker_id = extra.get("tracker_id")
+        if tracker_area:
+            lines.append(f"        tracker_area = {lua_string(tracker_area)},")
+        if tracker_id is not None:
+            lines.append(f"        tracker_id = {tracker_id},")
+        lines.append("    },")
+    lines.extend(["", "}", "", "return M", ""])
+    return "\n".join(lines)
+
+
+def render_step(step: str | dict, indent: str = "        ") -> list[str]:
+    if isinstance(step, str):
+        return [f"{indent}{lua_string(step)},"]
+    lines = [f"{indent}{{", f"{indent}    text = {lua_string(step['text'])},", f"{indent}    substeps = {{"]
+    lines.extend(f"{indent}        {lua_string(item)}," for item in step.get("substeps", []))
+    lines.extend([f"{indent}    }},", f"{indent}}},"])
+    return lines
+
+
+def render_steps(records: list[dict], old: dict[str, dict], area: str) -> str:
+    lines = [
+        "local Q = {}",
+        "",
+        "-- Generated from BG-Wiki by tools/build_sandoria_quests.py.",
+        "",
+        "Q.STEPS = {",
+    ]
+    for record in records:
+        name = ascii_text(record["title"])
+        quest_id = old.get(name, {}).get("id") or EXTRA_QUESTS.get(area, {}).get(name, {}).get("id")
+        if not quest_id:
+            raise ValueError(f"No stable quest ID for {name}")
+        lines.extend(["", f"    {quest_id} = {{"])
+        steps = STEP_OVERRIDES.get(area, {}).get(name, record["steps"])
+        for step in steps:
+            lines.extend(render_step(step))
+        lines.append("    },")
+    lines.extend(["", "}", "", "return Q", ""])
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--area", choices=sorted(EXTRA_QUESTS), default="sandoria")
+    parser.add_argument("--expected-records", type=int, required=True)
+    parser.add_argument("--expected-existing", type=int, required=True)
+    parser.add_argument("--quests", type=Path, required=True)
+    parser.add_argument("--category", type=Path, required=True)
+    parser.add_argument("--metadata-output", type=Path, required=True)
+    parser.add_argument("--steps-output", type=Path, required=True)
+    args = parser.parse_args()
+
+    records = json.loads(args.quests.read_text(encoding="utf-8"))
+    category_rows = json.loads(args.category.read_text(encoding="utf-8"))
+    old = parse_old_records(args.metadata_output)
+    aliases = TITLE_ALIASES.get(args.area, {})
+    for record in records:
+        title = ascii_text(record["title"])
+        if title not in old:
+            prior_name = aliases.get(title)
+            if prior_name not in old:
+                prior_name = next((name for name in old if name.casefold() == title.casefold()), None)
+            if prior_name:
+                old[title] = old.pop(prior_name)
+    category = {ascii_text(row["name"]).casefold(): row for row in category_rows}
+    if any(record.get("error") for record in records):
+        raise SystemExit("Refusing to build from a snapshot containing scrape errors")
+    if len(records) != args.expected_records or len(old) not in {
+        args.expected_existing, args.expected_records
+    }:
+        raise SystemExit(f"Unexpected record count: scraped={len(records)} existing={len(old)}")
+    missing_trackers = sorted(set(old) - {ascii_text(record["title"]) for record in records})
+    if missing_trackers:
+        raise SystemExit(f"Scrape omitted existing quests: {missing_trackers}")
+
+    category = {ascii_text(row["name"]): category[ascii_text(row["name"]).casefold()] for row in category_rows}
+    for record in records:
+        title = ascii_text(record["title"])
+        row = next((item for key, item in category.items() if key.casefold() == title.casefold()), None)
+        if row is not None:
+            category[title] = row
+    args.metadata_output.write_text(render_metadata(records, category, old, args.area), encoding="utf-8")
+    args.steps_output.write_text(render_steps(records, old, args.area), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

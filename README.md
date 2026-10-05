@@ -41,10 +41,19 @@ addons register packet handlers for the same character progress data.
 
 ## Data
 
-The files under `data/` were copied from the local Journal addon so JournalXI
-can be installed independently. Gameplay information was originally assembled
-from the sources credited by Journal, including BG-Wiki and related FFXI addon
-projects. See `LICENSE` and the source-file comments for attribution details.
+The files under `data/` let JournalXI work without a network connection.
+San d'Oria and Bastok quest metadata and walkthroughs are generated from the
+corresponding BG-Wiki quest pages with `tools/scrape_sandoria_quests.py` and
+`tools/build_sandoria_quests.py`. Existing CatsEyeXI quest-log IDs are retained
+so active and completed status detection continues to match the server.
+
+BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
+metadata comes from BG-Wiki, while its five objectives use the matching concise
+walkthrough documented by the HorizonXI and FFXIclopedia wikis.
+
+Other gameplay information was originally assembled from the sources credited
+by Journal, including BG-Wiki and related FFXI addon projects. See `LICENSE` and
+the source-file comments for attribution details.
 
 ## Testing status
 

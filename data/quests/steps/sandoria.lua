@@ -1,139 +1,470 @@
 local Q = {}
 
+-- Generated from BG-Wiki by tools/build_sandoria_quests.py.
+
 Q.STEPS = {
 
-    -- ========================================================
-    -- SAN D'ORIA
-    -- ========================================================
+    sdz_ns_boys_dream = {
+        "Speak with Ailbeche .",
+        "Talk to Exoroche at Helbort's Blades in Southern San d'Oria (K-7).",
+        "Return to and speak with Ailbeche again.",
+        {
+            text = "Trade Ailbeche a Giant Shell Bug .",
+            substeps = {
+                "Either buy one off the Auction House, or go to Crawler's Nest and defeat Dreadbug via the ??? on map 2, SW of H-9 .",
+                "He can drop up to 4 Giant Shell Bug .",
+                "If you are planning to complete this quest for other characters on the same account in one trip, you may pop Dreadbug again, only while this quest is still active , on subsequent new game days, once per game day.",
+                "Note: Be careful to do the above NPC interactions, as if skipped you will use up the Giant Shell Bug you get during the next step.",
+            },
+        },
+        {
+            text = "Fish with a rod used for catching big fish in Castle Oztroja using Giant Shell Bug as bait. Fishing skill is not required.",
+            substeps = {
+                "You will want to bring more than one Giant Shell Bug.",
+                "A Clothespole from the Fishing Guild Merchant or Composite Fishing Rod from the Auction House are likely the easiest to obtain.",
+            },
+        },
+        {
+            text = "From the entrance, go through the Brass Door at (I-8) on Map 1. Be careful about the trapdoor, you can avoid falling down by quickly moving after triggering the lever if you select the wrong one.",
+            substeps = {
+                "On Map 2, walk towards exit (F) at (G-7).",
+                "On the next map, head to (I). You will then be on map 7.",
+                "On map 7 head towards (H-8)/(H-9) (middle of the big square room in the middle of Map 7) and fish in the pond. There are 2 Oozes in the pond.",
+            },
+        },
+        {
+            text = "Odontotyrannus (Monster) will be fished up and drops Odontotyrannus . Note that the fish can be sent to other characters on the same account.",
+            substeps = {
+                "Odontotyrannus (Monster) may be immediately fished up again after defeat if needing multiple Odontotyrannus for other players.",
+                "You can fish up Odontotyrannus (Monster) before trading Ailbeche the Giant Shell Bug in the previous step.",
+            },
+        },
+        "Return Ailbeche and trade them the Odontotyrannus .",
+        "Head to Selbina and trade Trade Zaldon (H-9), (inside the Fisherman's Guild) the Odontotyrannus and receive the Knight's boots .",
+        "Return to and speak with Ailbeche again.",
+        "Speak with Exoroche at Helbort's Blades in Southern San d'Oria (K-7) one last time.",
+        "Finally, head to Chateau d'Oraguille and select Trion's door (Prince Royal's Rm, H-7) to receive your Gallant Leggings .",
+    },
+
+    sdz_ref_chocobo_riding_game = {
+        "The starting NPC will be at the Chocobo stables and will ask you to deliver a Chocobo to a distant stable.",
+        "You will be placed on a Chocobo and will need to ride to the destination.",
+        "If you dismount the Chocobo the quest will end in failure.",
+        "Your reward will depend on how quickly you deliver the Chocobo .",
+        {
+            text = "Time / East San d'Oria Glyph / Miratete's Memoirs / Chocobo Ticket / Gysahl Greens",
+            substeps = {
+                "Bastok - - - 27:00 - 28:36 - 28:37 - 29:59 - 30:00 +",
+                "Windurst - - - 31:00 - 32:29 - 32:30 - 34:43 - 34:44 +",
+                "Jeuno - 14:00 - 15:29 - - - - - 15:30 +",
+            },
+        },
+    },
+
+    sdz_ns_craftsmans_work = {
+        "Note : Make sure your current job is set to Dragoon when you speak to Miaux. After speaking to Miaux, you may change to another job to perform the rest of the quest if you wish.",
+        "Speak to Miaux in Northern San d'Oria (E-6). You will be requested to obtain an Altepa polishing stone",
+        {
+            text = "Examine the ??? in Eastern Altepa Desert in the lower part of (H-8) to spawn Decurio I-III .",
+            substeps = {
+                "The Survival Guide warp puts you very near. Alternatively Teleport-Altep is also another good option.",
+            },
+        },
+        "Examine the ??? after defeating Decurio I-III to receive the Altepa polishing stone .",
+        "Speak to Miaux again to receive your reward.",
+    },
+
+    sdz_ps_discerning_eye = {
+        "Speak to Eddy and accept the quest.",
+        "Eddy will show you a picture of an NPC, you need to memorize.",
+        "Board the next airship.",
+        "Several NPCs will spawn on the ship that all look very similar to the one Eddy showed you.",
+        "Speaking to the NPCs will give you an option to return a Dropped item to them.",
+        {
+            text = "You only have one chance to get it right.",
+            substeps = {
+                "If you choose correctly, you are given 500 gil.",
+                "If you choose incorrectly, you fail the quest.",
+            },
+        },
+    },
+
+    sdz_ps_job_for_consortium = {
+        "Speak to Portaure in the Cargo Room B near Port San d'Oria Home Point #1 to accept this quest and obtain Brugaire goods .",
+        {
+            text = "Note: To guarantee going through customs undetected, perform the next step in Jeuno during nighttime hours (18:00-6:00).",
+            substeps = {
+                "An airship arriving in San d'Oria will reach Jeuno 3 hours later (1h to depart, 2h in the air).",
+            },
+        },
+        {
+            text = "Travel to Port Jeuno .",
+            substeps = {
+                "Fastest method is to Home Point warp to Port Jeuno.",
+                "Airship, Jeuno - San d'Oria is the original route.",
+            },
+        },
+        {
+            text = "Speak to Haubijoux at the Air Travel Agency - Arrivals Entrance in Port Jeuno.",
+            substeps = {
+                "If you are caught, your airship pass is revoked until midnight Japan time and the quest is failed.",
+            },
+        },
+        "If you cleared customs, go to the Tenshodo HQ in Lower Jeuno and speak to Yin Pocanakhu (J-8).",
+        "Return to Portaure for your reward.",
+    },
+
+    sdz_ss_knights_test = {
+        "Speak to Balasiel , who will give you the Book of Tasks containing hints on how to proceed.",
+        "Speak to Cahaurme (J-9) from (L-8) (In the \"Tower\" above the East Gate) to recieve Book of the East .",
+        "Speak to Baunise (H-9) from (F-8) (In the \"Tower\" above the West Gate) to receive Book of the West .",
+        "Go to the dead-end on the map at (E-10) in Davoi and examine the Disused Well to receive Knight's soul .",
+        "Return to Balasiel to complete the quest.",
+    },
+
+    sdz_ns_purchase_of_arms = {
+        {
+            text = "Speak to Helbort in Southern San d'Oria (K-7) at the weapon shop after completing Father and Son .",
+            substeps = {
+                "You will receive Weapons order .",
+            },
+        },
+        {
+            text = "Bring the Weapons order to Alexius in Jugner Forest (I-6) near the lake.",
+            substeps = {
+                "You will receive Weapons receipt .",
+            },
+        },
+        "Return to Helbort to complete the quest.",
+    },
 
     sdz_ss_sentrys_peril = {
-    "Talk to Glenne; she\'s worried about her husband, Aaveleon, a guard out on patrol, and gives you some healing ointment to take to him. Find him on the road to Ghelsba Outpost in West Ronfaure (G-6).",
-	"Trade Ointment to him and he\'ll give you the Ointment Case, so you can give it back to his wife.",
-	"Trade the Ointment Case to Glenne to complete the quest.",
-    },
-
-    sdz_ns_waters_of_cheval = {
-    "Speak with Miageau at (L-7) in Northern San d'Oria, just past the entrance to the Cathedral.",
-    "Trade 10 gil to Nouveil nearby to receive a Blessed Waterskin.",
-    "Travel to East Ronfaure.",
-    "Reach the Cheval River target at (H-5).",
-    "Trade the Blessed Waterskin to the Cheval River to obtain Cheval Water.",
-    "Return to Miageau in Northern San d'Oria.",
-    "Trade the Cheval Water to Miageau to receive the Wing Pendant.",
-    },
-
-    sdz_ss_rosel_the_armorer = {
-    "Speak with Rosel and you will get a cutscene. Rosel has finished a cape for one of the Princes, and someone comes to pick it up. In the confusion, Rosel forgets to give the man his receipt. He asks you to deliver the Receipt for the Prince (key item) for him.",
-	"In this quest the receipt is for one of the San d'Orian Princes, either Trion or Pieuje. Remember which prince it is, for you get a lesser reward for delivering to the incorrect person.",
-	"Go to Northern San d'Oria and talk to Guilerme who is stationed in front of the Chateau d'Oraguille at I-7. He will ask you who to give the receipt to, and will deliver it for you. The guard comes back out, insults your clothing, and sends you on your way.",
-	"Return to Rosel for your reward.",
-    },
-
-    sdz_ps_the_pickpocket = {
-        "Speaking with the little elvaan girl, Miene, will activate a cutscene. You will see a burglar steal something from Altiret, one of the guards.",
-        "After the cutscene ends, speak with Altiret. He asks you to retrieve his wife's glasses for him, since he cannot leave his post.",
-        "Speak to Miene again to get a quest item Eagle Button.",
-        "Informational: You can talk to nearby guards and by-standers, some will report having seen the thief allowing you to pick up the trail.",
-        "Travel to (F-6) in West Ronfaure. You will find Esca in the tower there. Speak with her, and she will deny any accusation, demanding proof.",
-        "Trade Esca the Eagle Button and she will admit her guilt. She then gives you the Gilt Glasses.",
-        "Return to Port San d'Oria and trade the Gilt Glasses to Altiret for your reward.",
-    },
-
-    sdz_ns_father_and_son = {
-        "Talk to Ailbeche, a small crying boy just south of the fountain, to get a cutscene. He says he became separated with his father, and doesn't know what to do. You must look for someone in armor but no helmet.",
-        "Talk to Ailbeche's father, Exoroche, shopping in Southern San d'Oria in Helbort's Blades (K-7).",
-        "Talk to Ailbeche again to get another cutscene. His father appears and scolds him for crying and turning to strangers for help. As punishment, he takes the boy's fishing rod away and gives it to you. This completes the quest.",
-        "If you talk to the boy again, he tells you that he would really like his fishing rod back. You can give it back to him by trading it.",
-        "There is no immediate reward for doing this but it is necessary to start the Sharpening the Sword quest.",
-    },
-
-    sdz_ss_the_seamstress = {
-        "Hanaa Punaa needs sheepskins to practice her skills. Trade her 3 Sheepskins for your reward.",
-    },
-
-    sdz_ps_dismayed_customer = {
-        "Gulemont has lost some very important documents, and needs you to help him find them.",
-        "He can only think of three places they may be, and they're all in West Ronfaure",
-        "Near the entrance to La Theine Plateau F-11",
-        "Near Ronfaure Outpost G-9",
-        "Near the Knightwell Border of G-10/11",
-        "The ??? may exist at all three locations, but only the correct location will give you the key item, while the incorrect location will produce the message, \"You find some worthless scraps of paper.\"",
-        "Go to these locations and look around for a ???.",
-        "Click on it and obtain the Gulemont's Document (key item).",
-        "Once you have the papers, return to Gulemont for your reward.",
-    },
-
-    sdz_ns_trader_in_forest = {
-        "Speak with Abeaule in the Phoenix Perch Inn, who will explain he needs someone to go out and fill an order he has. If you accept, he will give you a Supplies Order (speak with him again if you lose it).",
-        "The Supplies Order is for a clump of Batagreens.",
-        "You can trade the Supplies Order to Phairet in the tower at I-11 in West Ronfaure for the Batagreens.",
-        "Alternately,you can purchase them from the Cooking Guild in Windurst.",
-        "Trade a clump of Batagreens to Abeaule to complete the quest.",
-        "After completing this quest, you can buy a single Batagreens from Phairet by trading him 50 gil.",
-    },
-
-    sdz_ss_sweetest_things = {
-        "Raimbroy hasn't gotten his supplies in yet, and wants you to help. Fetch and trade him 5 honey and he'll reward you.",
-        "You will have to talk to Raimbroy twice. The first gets you a cutscene, and the second starts the quest proper.",
-    },
-
-    sdz_ns_vicasques_sermon = {
-        "Speak with Abioleget in Northern San d'Oria in the Cathedral and a cutscene sermon will take place with you in attendance.",
-        "Talk to Abioleget again, and he will offer to sell you some Blue Peas. You can trade 70 gil to Abioleget for some Blue Peas.",
-        "Note: Blue Peas can also be purchased from Machielle in Southern San d'Oria (G-9) for 25~29 gil, if San d'Oria controls the Norvallen region.",
-        "Head to the tower (J-11) in the south-east corner of East Ronfaure. Trade Andelain a single Blue Peas despite his mentioning of 3 Blue Peas.",
-        "Return to Northern San d'Oria, and talk to Abioleget to complete the quest.",
+        "Talk to Glenne to receive an Ointment .",
+        "Zone to West Ronfaure and look for Aaveleon at (G-6).",
+        "Trade the ointment to him, and he'll give back an Ointment Case .",
+        "Return to Glenne and trade her the Ointment Case to complete the quest and to receive your reward.",
     },
 
     sdz_ss_squires_test = {
-        "{Southern San d'Oria F-7} Talk to Balasiel. Trade him Revival Tree Root to him to complete the quest.",
-        "Auction House: Materials -> Alchemy",
-        "Otherwise typically dropped by undead. Despite what he says, you don't have to get the Revival Root from King Ranperre's Tomb. Any Revival Root will work.",
-        "Balasiel can be tricky to find.",
-        "Start by going to Watchdog Alley at (F-6).",
-        "You will see an NPC named Celyddon.",
-        "Walk west from him into the stairwell.",
-        "Follow it upward, and take your first left.",
-        "do not walk out along the wooden walkway; walk across the wooden bridge instead",
-        "Follow those stairs up, then they will dip back down, and curve around to Balasiel.",
-        "It is not necessary to zone to give the Revival Tree Root after he gives you the quest. Give it immediately after talking to him.",
+        "Talk to Balasiel, who asks of you a revival tree root.",
+        "He is located on the upper levels on the walkway .",
+        {
+            text = "Revival Tree Root can be bought from the auction house (Materials  Alchemy 1) or dropped from Ghost type enemies.",
+            substeps = {
+                "It does NOT need to be obtained specifically from King Ranperre's Tomb .",
+            },
+        },
+        "Trade the root to him to complete the quest and receive your reward.",
     },
 
-    sdz_ss_grave_concerns = {
-        "Speak to Andecia. She wants you to replace the offering water at the King's tomb. Speak to her again to receive the Well Water.",
-        "If you drop the Well Water, you will be asked to retrieve the Tomb Waterskin from the grave, fill it at the well in Southern San d'Oria (F-6), then go back to the tomb to leave the water.",
-        "Go to King Ranperre's Tomb and find the tombstone at the center of the maze at (I-10) on the first map.",
-        "Monsters in the tomb aggro up to level 14. Also undead are around the tomb at night so take precautions.",
-        "Trade the Well Water to the tombstone to receive the Tomb Waterskin.",
-        "Return to Andecia and trade her the Tomb Waterskin for your reward.",
+    sdz_ss_squires_test_2 = {
+        "Speak to Balasiel to start the quest.",
+        {
+            text = "Proceed to Ordelle's Caves at map 2 (G-7).",
+            substeps = {
+                "The fastest route here is to use the Proto-Waypoint warp to La Theine Plateau . Turn around to enter Ordelle's Caves , then travel north until you reach the map.",
+                "An alternative route is to go to La Theine Plateau (H-7), and enter Ordelle's Caves .",
+                "You may also use the Ordelle's Caves Survival Guide , which will put you on map 2 (G-2).",
+            },
+        },
+        {
+            text = "Examine the ??? in the pool of water, which will read \"You place your hands into the pool.\" Quickly move towards the middle of the room and examine the ??? for the Stalactite dew .",
+            substeps = {
+                "If you do not check the second ??? quickly enough, you will have to try again.",
+            },
+        },
+        "Speak to Balasiel to complete the quest.",
     },
 
-    sdz_ps_brugaire_consortium = {
-        "Fontoumant needs you to deliver some packages for him. The packages are given one at a time and take a slot of inventory. All deliveries are in Port San d'Oria.",
-        "Trade each parcel to the following NPCs",
-        "The Magic Shop Parcel is for Regine (J-8) {In Regine's Magic Mart}",
-        "The Auction Parcel is for Apstaule (H-10) {Top of the Auction House}",
-        "The Pub Parcel is for Thierride (G-7) {Rusty Anchor Pub}",
-        "Return to Fontoumant after you deliver each package to receive the next one.",
-        "After you deliver the last package, talk to Fontoumant for your reward.",
+    sdz_ps_taste_for_meat = {
+        "Talk to Antreneau , then Thierride . They are both located in the Rusty Anchor Pub (@ G-7 in Port San d'Oria ), to begin the quest.",
+        {
+            text = "Trade 5 Hare Meat to Thierride to complete the quest.",
+            substeps = {
+                "For low leveled players, both Wild Rabbit and Forest Hare can be defeated for Experience Points and have a chance to drop the Hare Meat needed for this quest.",
+            },
+        },
+        "Afterwards, Antreneau will give you a Grilled Hare if you speak with him.",
     },
 
-    sdz_ss_lizard_skins = {
-        "Hanaa needs your help again. Fetch her 3 Lizard Skins and she'll make you something nice.",
+    sdz_ss_timely_visit = {
+        "Speak to Deraquien for a cutscene.",
+        {
+            text = "Go to La Theine Plateau and speak with Narvecaint (F-7) at the entrance to Ordelle's Caves for another cutscene.",
+            substeps = {
+                "Voidwatch warp to Ordelle's Caves will put you right next to the NPC.",
+            },
+        },
+        "Return to Deraquien and speak to him again.",
+        {
+            text = "Head to Chateau d'Oraguille and speak to Halver .",
+            substeps = {
+                "If you just cleared The Voracious Resurgence , you will have to rezone after the cutscene you get and talk to him again.",
+            },
+        },
+        "Speak to Deraquien again.",
+        "Speak to Phillone (D-7).",
+        "Go back to speak with Deraquien .",
+        {
+            text = "Head to Jugner Forest through King Ranperre's Tomb .",
+            substeps = {
+                "If you have access to the Proto-Waypoint , this is the fastest method of reaching the location.",
+            },
+        },
+        {
+            text = "Click on the ??? at (F-5) between 18:00 and 4:00 to spawn two NMs; Giollemitte B Feroun and Skeleton Esquire .",
+            substeps = {
+                "Both NMs must be defeated to proceed.",
+            },
+        },
+        "Once defeated, click on the ??? again for a cutscene.",
+        "Return to Phillone for a cutscene.",
+        "Speak to Narvecaint (F-7) in La Theine Plateau .",
+        "Return to Phillone to receive your reward.",
+    },
+
+    sdz_wr_advanced_teamwork = {
+        "First, zone at (C-7) in Northern San d'Oria .",
+        "You should be in a watchtower in West Ronfaure now, and Vilatroire should be up ahead after zoning in.",
+        "Talk to him to activate the quest.",
+        "After you form a party of two (yourself and one other) with the same job, talk to him again to complete the quest.",
+    },
+
+    sdz_ss_atelloune_lament = {
+        "Speak to Atelloune in Southern San d'Oria at (L-6) for a cutscene to start the quest.",
+        "Trade her a Ladybug Wing for a cutscene and to receive your reward.",
+    },
+
+    sdz_ss_black_tiger_skins = {
+        "Obtain 3 Black Tiger Hides",
+        "Speak with Hanaa Punaa to begin quest and trade her the 3 hides to end quest.",
+    },
+
+    sdz_ns_blackmail = {
+        "Speak with Dauperiat to obtain a Suspicious envelope . Deliver this letter to Halver .",
+        "Return to Dauperiat , he will now request that you complete a second job for him.",
+        {
+            text = "If you agree, he requests that you get the floor plans back from the Orcs.",
+            substeps = {
+                "Orcish Serjeants in Fort Ghelsba , Davoi , and Yughott Grotto can drop the plans. Trade the Castle Floor Plans back to Dauperiat for your reward.",
+                "If you chose no, you can still proceed to the next quest.",
+            },
+        },
+    },
+
+    sdz_ps_chasing_quotas = {
+        {
+            text = "Speak to Ceraulian inside Cargo Room A to begin this quest. Agree to help obtain a Gold Hairpin",
+            substeps = {
+                "From this point on, you can change to any other job to complete the quest.",
+            },
+        },
+        {
+            text = "Trade him a Gold Hairpin for a cutscene.",
+            substeps = {
+                "Gold Hairpin +1 will not work",
+            },
+        },
+        "Wait one minute, then speak to him again. You may need to zone. Speaking to Miaux as mentioned below now will give bonus dialogue.",
+        "Speak to Miaux , Northern San d'Oria (E-6) to receive a Shiny earring .",
+        "Speak to Ardea , Bastok Markets (H-8).",
+        "Next, speak to Esca , West Ronfaure (F-6).",
+        {
+            text = "Head to the island in Batallia Downs (I-11).",
+            substeps = {
+                "The only way to get to the island is to first go through The Eldieme Necropolis .",
+                "To reach the room at (G-9) you will need to bring someone to operate the gates for you, or have a Magicked astrolabe .",
+                "Enter The Eldieme Necropolis at (I-10) in Batallia Downs . Or teleport using the Survival Guide to The Eldieme Necropolis .",
+                "Once inside hug the South side until you reach a large room at (G-9). Fall through the grave at the center of this room at point D into map 2. All the enemies in this section sound aggro even at 99.",
+                "After dropping down go to point E to zone into map 3, from here follow the path going south to exit to Batallia Downs again.",
+            },
+        },
+        {
+            text = "Examine the ??? at (I-11) to spawn the NM Sturmtiger .",
+            substeps = {
+                "This is on the west side of the island, not the east side, at cliff's edge.",
+            },
+        },
+        "Examine the ??? again after Sturmtiger is defeated to get Ranchuriome's legacy .",
+        "Return to Ceraulian for your reward.",
+    },
+
+    sdz_ss_distant_loyalties = {
+        {
+            text = "Talk to Femitte , who needs a goldsmithing order fulfilled. She requests an Elvaan specifically.",
+            substeps = {
+                "She will provide you with a Goldsmithing order .",
+                "(Optional) Talk to Rouva for a hint on where to go.",
+            },
+        },
+        "Head to Bastok Markets (HP#1), and look for Michea at (F-10). She's located upstairs inside Brunhilde the Armorer's shop.",
+        "Michea requests a Mythril Ingot . After trading it to her, you must zone out of Bastok Markets once.",
+        "Zone back into Bastok Markets and return to Michea to receive Mythril hearts .",
+        "Travel back to Southern San d'Oria and talk to Femitte to complete the quest.",
+        "(Optional) Talk to Michea again for some more lore.",
+    },
+
+    sdz_ss_eco_warrior = {
+        {
+            text = "Speak to Norejaie to begin this quest.",
+            substeps = {
+                "You cannot get this quest if you have Eco-Warrior (Bastok) or Eco-Warrior (Windurst) quest active.",
+            },
+        },
+        {
+            text = "Enter Ordelle's Caves from the (F-7) entrance in La Theine Plateau",
+            substeps = {
+                "The Survival Guide or Voidwatch warps (San d'Oria region) will take you right there.",
+            },
+        },
+        {
+            text = "Speak to Rojaireaut (G-3) to have your level capped at 25.",
+            substeps = {
+                "Everyone in your party/alliance needs to have the level cap applied to them.",
+                "Note that the level cap has no timer. Enemies that normally wouldn't be aggressive to you due to high level, will be aggressive to you now, such as all of the Goblins, Hognosed Bats. Stink Bats will link to Hognosed Bats.",
+            },
+        },
+        "Head East through the puddle and follow the path South.",
+        "Continue to follow the path, eventually you will reach a large room at (G-7).",
+        "Stick to the wall on the West side and continue South.",
+        "Before reaching the next tunnel, turn left towards the center of the map.",
+        "At the North east corner of (G-9) there is a ??? someone in your group will need to examine.",
+        "When you examine the ??? an NM named Necroplasm will spawn.",
+        {
+            text = "Trusts may be used in this fight.",
+            substeps = {
+                "Due to the nature of the NM being spawned on top of the Stalagmite, the NM may not be targetable with target cycling (IE: Tab Key.) If you are a caster doing this with trusts, quickly move away to bring the NM off the stalagmite and target it to auto attack it.",
+            },
+        },
+        {
+            text = "Defeat the Necroplasm and check the ??? again to receive a Indigested stalagmite .",
+            substeps = {
+                "The Level Sync will NOT be removed, and CANNOT be removed through UI interaction like player-given buffs. Warp out if necessary.",
+                "You can return to Rojaireaut to have the level cap removed. You may need to speak to him twice after receiving the stalagmite.",
+            },
+        },
+        "Return to Norejaie to complete this quest.",
+        "Note :",
+        "You can only complete 1 Eco-Warrior quest a week. You have to wait until the next conquest tally before accepting another Eco-Warrior.",
+    },
+
+    sdz_co_enveloped_darkness = {
+        {
+            text = "After completing The Crimson Trial and attaining level 50+ Red Mage , speak to Curilla (I-9) in Chateau d'Oraguille . You will receive the Old pocket watch .",
+            substeps = {
+                "You no longer have to be on RDM after starting the quest.",
+                "Players from San d'Oria must be rank 2, but players from other nations must be on at least Bastok / Windurst Mission 2-3 and able the enter Chateau d'Oraguille .",
+                "Depending on your character's progress, you may get both the Savage Blade and The General's Secret quests first.",
+            },
+        },
+        {
+            text = "Next go to the Cathedral (back in Northern San d'Oria , exit the Chateau d'Oraguille ) and speak to Pagisalis in the basement. He will request a Velvet Cloth .",
+            substeps = {
+                "The basement stairs are to the left after entering the Cathedral.",
+            },
+        },
+        "Trade him a Velvet Cloth . You will obtain a pair of Old boots in exchange for the Old pocket watch .",
+        "Speak to Curilla again.",
+        {
+            text = "Head to Crawlers' Nest and open a Treasure Chest (blue dots on the map below) using a Nest Chest Key to obtain the key item Crawler blood .",
+            substeps = {
+                "You can purchase a Nest Chest Key from the Curio Vendor Moogle if you have obtained the \"Rhapsody in White\" key item by completing Rhapsodies of Vanadiel Mission 1-6 .",
+                "The chest has a 3 minute re-spawn time.",
+            },
+        },
+        {
+            text = "On Map 2 at (I-10) examine the ??? . A dialog will ask if you want to bury the Old boots and Crawler blood , of course you do.",
+            substeps = {
+                "If you get a message \"Someone has been digging here\" you have forgotten to talk to Curilla after trading the Velvet Cloth .",
+            },
+        },
+        "Check the ??? again after about a minute to obtain the Warlock's Boots (zoning not required).",
+    },
+
+    sdz_ns_escort_for_hire = {
+        "Speak to Rondipur to begin this quest.",
+        "Head to Eldieme Necropolis from Batallia Downs (I-10).",
+        "As soon as you zone in you will receive a cutscene.",
+        {
+            text = "Once the cutscene is over, an NPC named Cannau will spawn.",
+            substeps = {
+                "You will have 30 minutes to complete this quest.",
+            },
+        },
+        {
+            text = "She will begin to run West towards the door at (H-8). You will either need a Magicked astrolabe , or to bring someone with you, to flip the switch to let you through this door.",
+            substeps = {
+                "Speaking to Cannau will make her stop running. Talking to her again will make her continue.",
+                "Cannau will draw aggro from just about everything inside Eldieme Necropolis . You need to stop her and kill everything in her path.",
+                "If her HP drops too low she will blood aggro any undead near by.",
+            },
+        },
+        "After you get past the gate at (H-8), Cannau will continue to (F-8) taking either the North or South path.",
+        "Once she reaches (F-8) she will stop on her own.",
+        {
+            text = "Quickly speak to her to obtain the Completion certificate .",
+            substeps = {
+                "If she disappears before you talk to her you will not get credit for escorting her.",
+            },
+        },
+        "Return to Rondipur for your reward.",
+    },
+
+    sdz_ns_exit_the_gambler = {
+        "Start the quest by talking to Aurege (F-3) near Northern San d'Oria Home Point #4, outside of the Carpenter's Guild.",
+        "(Optional): Talk to Nonterene (I-10) at the Parade Grounds near Victory Arch.",
+        "Varchet is located in Southern San d'Oria at (L-6) right next to the fountains.",
+        {
+            text = "You'll need to gamble against him. Each attempt against him costs 5 gil. Keep trading until you win.",
+            substeps = {
+                "Gambling against him is still possible after this quest is complete.",
+            },
+        },
+        "After winning, return and talk to Aurege for your reward.",
+    },
+
+    sdz_ns_father_and_son = {
+        "Talk to Ailbeche to start the quest for a cutscene.",
+        "Talk to Ailbeche's father, Exoroche , who can be found in Southern San d'Oria at (K-7) in Helbort's Blade.",
+        {
+            text = "Return to Ailbeche and talk to him again for a cutscene. You'll receive the willow fishing rod as reward.",
+            substeps = {
+                "In order to active the Paladin AF1 quest, Sharpening the Sword , it's necessary to trade back the fishing rod to Ailbeche. Doing so will also change your title to Family Counselor.",
+            },
+        },
+    },
+
+    sdz_ns_fear_of_dark = {
+        "Obtain 2 Bat Wings and trade them to Secodiand .",
+    },
+
+    sdz_co_fit_for_a_prince = {
+        "Speak to Halver for a cutscene. During the cutscene, you are told the description of the type of female Prince Trion is attracted to.",
+        "Find a player who matches the description and make a party with them. Then return to Halver while in the same party as the match.",
+        {
+            text = "Both players must speak to Halver, and each one will receive the same cutscene.",
+            substeps = {
+                "The player who started this quest gains the title of Royal Wedding Planner as well as Castor's Ring .",
+                "The player who matches the description will gain the title of Consort Candidate and Pollux's Ring .",
+                "The player who matches the description does not need to be eligible to start the quest for the player who started this quest to complete it.",
+            },
+        },
+        "The rings can be synthesized with a Wind Crystal , and can also be signed with a Cyclone Crystal . Doing so with either will also remove the and attributes, and the rings can be traded to another person, acting like a Wedding Ring .",
     },
 
     sdz_ps_flyers_for_regine = {
-        "Talk to Rugiette or Regine in the magic shop. They talk about the lack of floor traffic. After this, when you talk to Regine and she asks how she can help you, you'll have the option to say you're looking for work. Choose it, and Regine gives you some flyers to hand out to boost business. You get 15 flyers and must trade them all to various people in the San d'Oria, but very few will actually take them. An indication that a NPC will accept the flyer is by a system message stating \"NPCname looks over curiously for a moment.\" when you approach that specific NPC.",
-        "You must have two inventory slots free, as you will receive 1 stack (12) and 3 flyers.",
-        "If you need more flyers, go back to Regine and trade her 10 gil per flyer. You can't trade Regine 150 gil for 15 flyers, you must continuously trade her 10 gil per flyer and then sort them into your inventory. You may also find them at the Auction House.",
-        "Trade the flyers to NPC's until you have given away all 15. Next steps show NPCs by Zone.",
+        "Make sure you have two slots available in active inventory.",
+        "Speak with Regine to begin quest and choose the option to look for work.",
+        "After her story, Magicmart Flyer x15 will given to you.",
+        "While this quest is active, if you come close to an NPC you need to give a flyer to, a message will appear in /say informing you that \"... looks over curiously for a moment.\"",
+        "Travel to the following zones and trade the fliers to the following NPCs:",
         {
             text = "Port San d'Oria",
             substeps = {
                 "Answald (J-10) - front of Mog house",
-                "Prietta (H-9) - up the stairs above cargo rooms (H-9)",
+                "Portaure (H-9) - Cargo room B",
                 "Miene (I-9) - open area by water",
-                "Portaure - Cargo room B",
+                "Prietta (H-9) - up the stairs above cargo rooms",
                 "Auvare (H-6) - behind the Air Travel Agency",
             },
         },
@@ -144,7 +475,7 @@ Q.STEPS = {
                 "Villion (F-3) - Carpenter`s guild, 2nd floor balcony",
                 "Capiria (F-6) - Near Laborman's Way arch, overlooking the sluice gates",
                 "Boncort (F-8) - Phoenix Perch Inn, 2nd floor",
-                "Coullene (M-6) - Cathedral 1st floor Main Hall",
+                "Coullene (M-6) - Cathedral",
             },
         },
         {
@@ -157,973 +488,920 @@ Q.STEPS = {
                 "Rosel (K-8) - Rosel's Armour Shop",
             },
         },
-        "Talk to Regine again to complete the quest.",
-    },
-
-    sdz_ns_gates_to_paradise = {
-        "Talk to Olbergieut, in the Manuscript room of the Northern San d'Oria Cathedral. He asks you to take a Key Item:Scripture of Wind to Faurbellant.",
-        "Go to La Theine Plateau, and find Faurbellant located at the east wall of the Crag of Holla (K-8).",
-        "Talk to Faurbellant. He will give you a Key Item:Scripture of Water.",
-        "Return to the Cathedral in Northern San d'Oria, and talk to Olbergieut for your reward.",
-    },
-
-    sdz_ss_squires_test_2 = {
-        "{Southern San d'Oria F-7}Talk to Balasiel, same place as last time.",
-        "Have a form of Sneak/Invisible to avoid aggro in Ordelle's, depending on your level (sub Lv40).",
-        "Consider having a form of Warp or Escape, such as a scroll of Instant Warp, for a quick out once you have the Stalactite Dew.",
-        "The following steps are optional and for dialogue purposes. You can immediately head to Ordelle's Caves without talking to either Chanpau or Morjean and still complete the quest.",
-        "(Southern San d'Oria E-7) Talk to Chanpau.",
-        "{Northern San d'Oria L-7} Talk to Morjean in the Cathedral's Manuscript room.",
-        "This step cannot be completed if you are currently between the steps of speaking with Morjean and collecting the Wyvern Egg for the Dragoon flag quest The Holy Crest.",
-        "If Morjean will only say \"Ah, good day. I am Morjean, a researcher here...\", it doesn't hold up the quest.",
-        "{La Theine Plateau F-6} Enter down into the ravine.",
-        "Once past the Equesobillot NPC, follow the left wall until you zone into Ordelle's Caves.",
-        "There is a Survival Guide in Ordelle's Caves at the entrance.",
-        "{Ordelle's Caves Map 2 H-2} Starting here, make your way to the stalactite room.",
-        "Get to (Map 2 G-3) and go west here.",
-        "Follow this path until you circle up to \"A\" at (G-4) .",
-        "You will transition to Map 1.",
-        "(Map 1 G-4 \"A\") Continue down the steps until you get to the cave room at (Map 1 I-5)",
-        "Take the Southwest exit and climb up toward \"C\" at (Map 1 G-6).",
-        "(Map 2 G-6 \"C\") The cave room is just south at (G-7).",
-        "If you instead took the uncommon entrance (La Theine Plateau at H-7) into Ordelle's",
-        "You start at the North end of Map 1",
-        "Travel to the cave room at (I-5).",
-        "Take the South exit from this room.",
-        "Climb the steps. You will transition to Map 2 at (H-6).",
-        "Proceed to the cave room at (H-6).",
-        "{Ordelle's Caves Map 2 G-7} Obtain the Stalactite Dew.",
-        "You should be able to see both ??? as you look into this cave room.",
-        "Aggro in this room (sub Lv40)",
-        "Sound = Shriekers (mushrooms), Hognosed Bats, and Jellies.",
-        "Sight & Magic = Will-o'-the-Wisp (bomb) may be by the pool of water.",
-        "You are timed between touching two ???.",
-        "Touch the ??? that rests in the pool of water.",
-        "Quickly search for the second ??? near the center of this room.",
-        "If you did this correctly, you will receive key item: Stalactite Dew.",
-        "If you did not receive the key item",
-        "you took too long between the??? points.",
-        "Click the first ??? and try again.",
-        "{Southern San d'Oria F-7} Return to Balasiel for your recognition.",
-        "You can take A Knight's Test without having to zone after completing the quest, if the requirement has been passed.",
-    },
-
-    sdz_ss_cure_a_cough = {
-        "Talk to Nenne, who can be found in the third house in Watchdog Alley. After talking with her, you will now have access to page 3 of the diary.",
-        "Page 3 may not be viewed while the quest The Medicine Woman is active, but will show up immediately after completion.",
-        "Go to the top floor of the first house in Watchdog Alley (G-7), there is a diary. You must read one page in order for the next one to show up, so you have to read the pages in order. If you do not get the option to read all three pages, you may not have enough fame. Page 3 tells you what item is needed to cure a cough.",
-        "Speak with Amaura in the second house in Watchdog Alley. She asks you to bring her some Thyme Moss.",
-        "Thyme Moss can be found by clicking on the ??? at (F-9) in Davoi, the Orcish stronghold. To get there you must enter the river at (H-8) or (J-10) (the J-10 route is probably safer as it allows you to bypass the high-level mobs in the central part of Davoi) and travel west through the river to get to the land at (D-8). Next go east all the way till you find a plank of wood. Under the plank is the ???.",
-        "Return to Amaura and she will give you some Cough Medicine.",
-        "Take the syrup to Nenne, who will give you a Scroll of Treasure as a reward. Now the quest will appear on your completed quests list. Optional: The Scroll of Treasure allows you to receive 3000 gil from a signpost at (H-6) in East Ronfaure.",
-    },
-
-    sdz_ss_tigers_teeth = {
-        "Taumila at Taumila's Sundries (Southern San d'Oria E-9) in Southern San d'Oria (Home Point #4) wants tiger fangs.",
-        "Bring her 3 Black Tiger Fangs and she will reward you.",
-        "If you are a Novice Bonecrafter, you can buy Black Tiger Fangs from Retto-Marutto for 2,000 gil at the Boneworkers' Guild in Windurst Woods (Home Point #5). Otherwise, Shih Tayuun, who's next to them, might have it in stock.",
-        "Note: You end up with 8,400 gil per stack; compare prices with AH before choosing what to do.",
-    },
-
-    sdz_ns_undying_flames = {
-        "You find Pagisalis in the Reliquary on the bottom floor of the Cathedral.",
-        "He wants 2 beeswax to make sacred candles.",
-        "Buy or craft these and give them to him for your reward.",
-    },
-
-    sdz_ns_purchase_of_arms = {
-        "Helbort needs you to make a delivery for him.",
-        "This quest will not be given if you haven't done the quest Father and Son. The first time you talk to Helbort, a cutscene will be shown concerning Exoroche, who is in the same store, and nothing more. Complete Father and Son, then talk to Helbort to receive this quest.",
-        "Take the Weapons Order to Alexius (I-6) (by the lake) in Jugner Forest who will give you a Weapons Receipt.",
-        "Return for your reward.",
-    },
-
-    sdz_ss_knights_test = {
-        "{Southern San d'Oria F-7} Speak with Balasiel once more to obtain Book of Tasks.",
-        "{Southern San d'Oria H-9} Speak with Baunise (parapet over the Westgate) to obtain Book of the West.",
-        "{Southern San d'Oria J-9} Speak with Cahaurme (parapet over the Eastgate) to obtain Book of the East.",
-        "{Davoi E-10} Examine the Disused Well to retrieve the Knight's Soul.",
-        "Travel to the broken bridge at (I-8) and drop into the water.",
-        "Follow the water westbound to (D-8).",
-        "Exit the water at (D-9), move southeast through the camp, and head south along the path to the Disused Well at (E-10).",
-        "You will need sneak & invisible.",
-        "{Southern San d'Oria F-7} Return to Balasiel.",
-    },
-
-    sdz_ns_medicine_woman = {
-        "Abeaule, at the inn in Northern San d'Oria, says a customer got sick and needs medicine. (You don't need to zone if you just finished the last quest)",
-        "Go to Southern San d'Oria to the second house in Watchdog Alley and talk to Amaura (G-6), who gives you the key item Amaura's formula, which lists the items she needs to make the medicine. She needs one each of the following",
-        "Malboro Vine",
-        "Zinc Ore",
-        "Insect Wing",
-        "Trade these to Amaura and she will give you the cold medicine (key item).",
-        "Return to Abeaule to complete the quest.",
-    },
-
-    sdz_ss_black_tiger_skins = {
-        "Hanaa now wants 3 Tiger Hides. Trade these to her for your reward.",
-    },
-
-    sdz_ns_growing_flowers = {
-        "Talk to Kuu Mohzolhi; she's obsessed with flowers and will tell you about gardening. She doesn't ask for help but she'd like to have flowers to plant in her garden.",
-        "(Optional) Trade a flower to her and she'll mention Chalvatot who likes carnations, but what she really wants is a Marguerite.",
-        "Obtain a Marguerite and trade it to her to complete the quest.",
-    },
-
-    sdz_ns_trial_by_ice = {
-        "Speak to Gulmama in Northern San d'Oria (E-7). If you have sufficient fame, she will give you a Tuning fork of ice.",
-        "Travel to Fei'Yin and head to the Cloister of Frost.",
-        "You can use the Home Point #2 to get there quickly, if you have been there before.",
-        "To get to the Cloister of Frost, enter Fei'Yin from Beaucedine Glacier at (J-4).",
-        "Follow the path to a large room and take the east passage. Ignore the branch south and pass through a small room, turn north and follow the path back west. Ignore the branch north and descend the stairs; leading you to the second map.",
-        "The path forces you north and east, again, and into a small room (H-8). Here, follow the left wall (north) until it opens into a large room (full of Utukkus, Golems and Bats); continue north.",
-        "The north exit (a short distance from where you entered) leads a winding path through several small rooms (populated by Specters, then Weapons), eventually leading to the Cloister of Frost.",
-        "Once you defeat Shiva Prime, you will acquire the Whisper of Frost.",
-        "Return the Whisper to Gulmama for your reward.",
-        "Alternatively, hold onto it and when you have all six whispers, you may start the quest The Moonlit Path to fight Fenrir Prime.",
-        "If you are collecting items for the Evoker's Ring, you will want the Rust 'B' Gone from Gulmama.",
-        "Everyone who is involved in the fight must have a tuning fork of the correct protocrystal.",
-        "There is no cap on this battle.",
-        "There is a 30-minute time limit.",
-        "You can buff up before entering the protocrystal, so feel free to do so and rest up while still outside.",
-        "Try to fight Shiva Prime on Firesday and do not fight her on Iceday.",
-        "Keep up Barblizzara at all times.",
-        "Do not use Ice-based spells, weaponskills, or weapons that have Additional effect: Ice Damage|, as they will heal Shiva Prime.",
-        "The battlefield is shaped like a long path up the side of hill, with a switchback about halfway to the top. This allows the mages to stand above the fight (and out of easy reach of the avatar) while still being able to cast spells upon the combatants.",
-        "See testimonials.",
-    },
-
-    sdz_co_generals_secret = {
-        "Talk to Curilla for a cutscene; agree twice to start the quest and obtain Curilla's Bottle.",
-        "Go through Yughott Grotto and exit at K-5 into Fort Ghelsba. Follow the left wall to loop around and re-enter Yughott Grotto at J-8. Once inside, go to J-9 and zone into a small open area of Horlais Peak. There is also a Home Point north of J-9.",
-        "Once in Horlais Peak, head south to the Hot Springs, and select it to fill Curilla's Bottle (this causes the key item's description to change).",
-        "Return to Chateau d'Oraguille and talk to Curilla to complete the quest.",
-        "The Norg quest Secret of the Damp Scroll also requires going to the Hot Springs and can be done at the same time. Also, you cannot start this quest if you have any RDM AF quests active that involve Curilla.",
-        "You need to be able to enter Chateau d'Oraguille, and therefore must be Rank 2 if you are from San d'Oria, or at least started the 2-3 Mission in Windurst or Bastok.",
-    },
-
-    sdz_bo_the_rumor = {
-        "You must be Rank 2 or higher in San d'Oria or on Mission 2-3 or higher in Windurst or Bastok to pass through Chateau d'Oraguille and enter Bostaunieux Oubliette.",
-        "Upon entering the Chateau d'Oraguille, go east through an open door, north down a corridor, and down curving stairs to I-8. Zone through to the Oubliette.",
-        "Travel straight south to H-8, and turn right (West). Ignore the doors to either side; examining them will send you to almost certain death for anything less than a party of very high level players. (Examine the cells doors to receive a cs hinting at what lies below!) You will find Novalmauge patrolling this hallway on the south side of F-8 to G-8.",
-        "Trade Novalmauge a vial of Beastman Blood.",
-    },
-
-    sdz_co_majestys_garden = {
-        "Enter Chateau d'Oraguille and go to the Queen Leaute Memorial Garden (F-7).",
-        "Talk to Chalvatot, who is nearby. He will seem upset and not willing to help if you are not of the San d'Oria allegiance.",
-        "Talk to Chalvatot again and receive a cutscene(if you do not get the cutscene you must zone out of Chateau d'Oraguille and back in.) Accept the Quest. Default Selection is No, so make sure you're not spamming enter to skip through the dialogue.",
-        "Trade Chalvatot a Derfland Humus to complete the quest.",
-        "Derfland Humus drops from Doom Scorpions in Crawler's Nest and can be bought and sold at the Auction House",
-        "After another cutscene, you will receive Map of the Northlands Area, 2,000 gil and 2,000 Experience Points.",
-        "If you have already obtained the map you will still receive 2,000 gil and XP.",
-    },
-
-    sdz_wr_intro_teamwork = {
-        "Talk to Vilatroire in the Watchtower, accessed from Northern San d'Oria (C-7).",
-        "Form a party of 2 people from the same nation, then talk to him again to complete the quest. All party members must be in the Watchtower area.",
-    },
-
-    sdz_wr_intermediate_teamwork = {
-        "Talk to Vilatroire in the Watchtower, accessed from Northern San d'Oria (C-7).",
-        "Form a party of 2 people of the same race, then talk to him again to complete the quest. All party members must be in the Watchtower area.",
-    },
-
-    sdz_wr_advanced_teamwork = {
-        "Talk to Vilatroire in the Watchtower, accessed from Northern San d'Oria (C-7), as a level 10+ job.",
-        "Form a party of 2 people with the same job, then talk to him again to complete the quest. All party members must be in the Watchtower area.",
-        "You can start this quest with any job level 10+, and then change to a job under level 10 and still complete the quest.",
-    },
-
-    sdz_ss_grimy_signposts = {
-        "Maugie wants you to clean off the signposts in Jugner Forest.",
-        "There are 4 signposts in Jugner Forest, located at (E-11), (G-8), (H-7), and (J-5). To clean them, just click on them, read the garbled message, then choose to clean it when given the option.",
-        "Tigers, goblins, and orcs aggro by sight in Jugner Forest",
-        "After you clean all 4 signposts, return to Maugie for your reward.",
-    },
-
-    sdz_ps_job_for_consortium = {
-        "Portaure wants you to help him smuggle some goods into Jeuno. If you accept the quest, you'll obtain the temporary key item:Brugaire Goods.",
-        "Take the Airship to Jeuno and pass through customs.",
-        "To earn an extra 500 gil, consider accepting the San d'Orian version of the quest \"A Discerning Eye\" as well.",
-        "Passing through and clearing Jeuno customs is required to complete this quest. It is possible to complete this quest after traveling to Jeuno by other means, bypassing the airship ride. To pass through customs once in Port Jeuno, pay your way past the Departures Exit door at the Port Jeuno-San d'Oria travel agency. Then you can immediately examine the Arrivals Entrance. This will pass you through Jeuno customs. There is no way to bypass the 200 gil airship fee.",
-        "If you pass through customs untroubled, continue with the walk-through.",
-        "There is a random chance customs will stop you. They will seize the Brugaire Goods and revoke your Airship pass until midnight Japan time. This only restricts you from boarding flights leaving Jeuno, not those departing from other areas.",
-        "If players go between the hours of 18:00 and 6:00 (Nighttime) there is no possibility of being caught.",
-        "You must return to Portaure to try again, however as long as your flight privileges are revoked, he will not re-flag this quest.",
-        "Take the goods to Yin Pocanakhu in Neptune's Spire in Lower Jeuno. She will tell you to return to Portaure.",
-        "Until you speak with Yin Pocanakhu or until the Brugaire Goods are confiscated, you will be checked by Port Jeuno customs each time you pass through arrivals from San d'Oria. This quest can fail as long as you have the Brugaire Goods, even if you cleared customs once before.",
-        "It is possible that Yin Pocanakhu will not accept the Brugaire Goods due to their \"extensive damage.\" This possibly results from engaging in combat while carrying the key item. Also if you teleport, you HAVE to take the airship.",
-        "Return to Port San d'Oria however you like (Warp, Airship, etc.).",
-        "Talk again with Portaure to receive your reward.",
-    },
-
-    sdz_ns_trouble_at_sluice = {
-        "Belgidiveau thinks the watergate may have been poisoned and asks you to get a counteragent for it.",
-        "Head to Bostaunieux Oubliette and talk to Novalmauge and ask him to make the counteragent.",
-        "He needs you to get a Dahlia first.",
-        "Trade a Dahlia to Novalmauge and receive the Neutralizer (key item).",
-        "Return to Belgidiveau to complete the quest.",
-    },
-
-    sdz_ss_merchants_bidding = {
-        "Parvipon (near Southern San d'Oria Home Point #4) needs Rabbit Hides. Bring him 3 to reap your reward.",
-        "You can buy them nearby from Cletae at (Southern San d'Oria D-8) for 80 gil. She's upstairs in the Tanner's Guild.",
-    },
-
-    sdz_ns_unexpected_treasure = {
-        "Buy a Cupboard from Justi's Furniture shop in Northern San d'Oria, place it in your Mog House, and display it using Layout.",
-        "The Cupboard is Exclusive, but this item can be sent via Delivery Box to other characters on the same Playonline ID.",
-        "Zone out of and back into your Mog House and talk to your Moogle to receive a Small teacup.",
-        "If zoning out and back doesn't work, try zoning out, travel to another Mog House Home Point in the same city, and re-enter the Mog House.",
-        "If you have already completed a Furniture Quest this Conquest Tally, remove all other Furniture Quest furniture items, and then try again.",
-        "Once the Small teacup is acquired, the Cupboard can be removed. It is not necessary to keep it displayed to complete the quest.",
-        "Head back to the furniture shop and talk to Morunaude. Optional: Talk with Morunaude a second time; she mentions Calovour.",
-        "Head to the Cathedral in Northern San d'Oria and talk to Calovour, who asks you for a Mistletoe.",
-        "Trade a mistletoe to Calovour to complete the quest.",
-    },
-
-    sdz_ns_blackmail = {
-        "Talk to Dauperiat (I-10) in Northern San d'Oria. You will receive a Suspicious Envelope.",
-        "Talk to Halver (I-9) in Chateau d'Oraguille (I-9), who will declare the envelope a forgery.",
-        "Talk to Dauperiat again.",
-        "Trade Castle Floor Plans to Dauperiat to finish the quest and receive 900g. This quest is repeatable without zoning.",
-        "Castle Floor Plans drop from Orcish Serjeants in Fort Ghelsba, Yughott Grotto, and Davoi.",
-    },
-
-    sdz_ns_setting_sun = {
-        "Vamorcote needs you to find a key that was apparently buried in the Batallia Downs.",
-        "If you already have the Engraved Key you do not need to zone and can trade the key to Vamorcote immediately after flagging the quest.",
-        "The Engraved Key he is looking for is dropped from an Ahtu, a NM Treant that spawns at (J-11) in the Batallia Downs on a small island. The key is 100% drop.",
-        "You should consider doing the quest An Explorer's Footsteps for the Monument in Batallia Downs (J-11) because it is on the same island.",
-        "Return to Vamorcote in Northern San d'Oria, and trade him the key to receive your reward.",
-        "To get to the island, head out to Batallia Downs, go to (I-10) inside the small cave, and enter Eldieme Necropolis. Your goal is to get to (G-9). To do this, you must have either a Magicked astrolabe or two people to operate the gates.",
-        "There are switches that manipulate all the gates at each of the 4 main sections with graves in them. Two will be available at the start; they are at (H-8) and (F-8).",
-        "If you have the Magicked astrolabe, skip the indented instructions. Otherwise, make your way to the room at (G-9).",
-        "Have someone move to (H-9) where the lich spawns and have them face the south closed gate (it should be named Titan's Gate).",
-        "Once there, have the person at the switch open Titan's gate for you. Once through the gate, run to the switch in your area at (G-9).",
-        "Now whoever is at the (G-9) switch must open and close the gates for the person at the other switch.",
-        "Once everyone is now gathered at (G-9), find the grave in the middle of the 9 graves and walk over it (If lich and tomb wolves aggro, you must put Sneak up first) and fall through the hole.",
-        "Once you're down the hole, follow the path until you end up at a fork. Turn right here and proceed south until you find the zone at (J-9) to Batallia.",
-        "You will now be at (J-11) on the island.",
-        "Kill Ahtu and get the Engraved Key from him.",
-    },
-
-    sdz_ss_distant_loyalties = {
-        "Femitte needs a goldsmith to make a special earring for her, and not just any goldsmith will do. She gives you the Goldsmithing Order key item and specifically requests that you find an Elvaan goldsmith to complete this work. If you have already done \"The Elvaan Goldsmith\" you may recall Michea meets the requirements.",
-        "You may wish to set your Home Point to somewhere in San d'Oria in order to return here later on (via Warp or similar method). This will reduce your travel time considerably.",
-        "Travel to Bastok Markets, you will find Michea, an Elvaan living on the top floor above Brunhilde the Armorer. You find out she's Femitte's niece.",
-        "She asks you to fetch her a Mythril Ingot to complete the order, find her this and trade it to her.",
-        "She takes some time to make this item (zone out and back into Bastok Markets). When she is finished, she will give you the Key Item Mythril Hearts.",
-        "Return to Femitte for a cutscene and your reward.",
-        "Optional Return to Michea for extra dialogue.",
-    },
-
-    sdz_ps_the_rivalry = {
-        "Speak to either Joulet to begin The Competition or Gallijaux to begin The Rivalry.",
-        "Trade Moat Carps and/or Forest Carps to whichever brother you accepted the quest from until 10,000 fish are traded.",
-        "You can talk to the brothers again to see which one you've agreed to help.",
-        "You can trade multiple stacks at a time.",
-        "You receive 10 gil for each Moat Carp and 15 gil for every Forest Carp.",
-        "To learn your current total of fish, speak with Ufanne, who stands watch behind the two bickering fishermen. You may need to talk to the latter multiple times before she'll tell you.",
-        "While you can talk with the chosen brother to get a number, his count is allegedly the total number all players have traded since last maintenance (source). Disregard it. Only talk with Ufanne.",
-        "You will get Lu Shang's Fishing Rod and the Testimonial upon trading the 10,000th carp.",
-        "If not already unlocked by other Fishing activities, you will now be able to purchase Atma of the Ace Angler from an Atma Fabricant.",
-    },
-
-    sdz_ss_starting_a_flame = {
-        "Legata wants 4 flint stones; trade these to her for a reward.",
-        "The 15-minute limitation of A Flash in the Pan does not apply. Consecutive trades can be made.",
-    },
-
-    sdz_ns_fear_of_dark = {
-        "Talk to Secodiand; he needs 2 bat wings to create wards.",
-        "Obtain the wings and trade them to him to complete the quest.",
-    },
-
-    sdz_ns_warding_vampires = {
-        "Maloquedil needs garlic to ward off the vampire living in the dungeon under the Chateau d'Oraguille.",
-        "Shaman Garlic can be obtained by killing Orcish Cursemakers.",
-        "Trade him two Shaman Garlic to receive your reward.",
-    },
-
-    sdz_ss_sleepless_nights = {
-        "Speak with Paouala (M-8), who is located in the southernmost of the three houses there, on the second floor.",
-        "She will say that she has heard that drinking jugs of Mary's Milk would help with her insomnia, and asks if you could bring her one.",
-        "Mary's Milk can be found at the Auction House, or by defeating the NM Stray Mary in Konschtat Highlands (100% drop rate).",
-        "Can also get this from your pet Lamb or Sheep in your Mog Garden.",
-        "Trade her one for your reward.",
-    },
-
-    sdz_ps_lufets_lake_salt = {
-        "Talk to Nogelle; she needs 3 Lufet Salts for her bean surprise and hints you might get it from river crabs.",
-        "Obtain the Lufet Salt by defeating River Crabs in West Ronfaure at the Knightwell. You cannot buy it as it is an Exclusive item.",
-        "Note: Get 5 Lufet Salts if you plan on continuing with the next quest.",
-        "Trade 3 salts to Nogelle to complete the quest.",
-    },
-
-    sdz_ns_healing_the_land = {
-        "{Northern San d'Oria} Upstairs in Cathedral you will find Eperdur.",
-        "He will tell you that there is word of a foul wind coming from Gusgen Mines that is blowing on the Crag of Dem in Konschtat Highlands. The seal that stops the dead from walking is weakening. Eperdur gives you key item: Seal of Banishing.",
-        "{Gusgen Mines}",
-        "Go straight and down some stairs until you get to the first set of three levers. Pull the center one.",
-        "Continue on north ahead and down a second set of stairs until you get to the second set of levers. Pull the west-most lever.",
-        "Simply hug the left-hand wall until you come to a hole in the ground Gusgen Mines F-8. Cast Invisible or use your Prism Powder BEFORE dropping down the hole - it contains bombs, which aggro sight and magic. Do not forget to cast Sneak or use a Silent Oil! The flies down the hole aggro sound.",
-        "Take particular note of a NM that pops once a day directly beneath the hole: Juggler Hecatomb.",
-        "The ??? is behind the shed to the southwest, located in Gusgen Mines G-8. Deactivate Invis when nothing is looking your way, check the ???, and warp out.",
-        "NOTE: There are 2 sets of ??? in this room, pay attention to the location AND Make sure that you get the message: \"You have found the location of the seal. You place a Seal of Banishing on it.\" after examining the ???. If you re-examine the ???, you will get the message: \"A Seal of Banishing is on this seal.\" If you do NOT get these messages, you haven't found the right ???.",
-        "Everything in this dungeon detects by sound except for the bombs at the end, which detect by sight and magic.",
-        "Level 50 and above will not get aggro from normal mobs.",
-        "{Northern San d'Oria} Return to Eperdur for your reward.",
-        "Note: You must zone before you can be offered follow up quest Sorcery of the North.",
-    },
-
-    sdz_ns_sorcery_of_north = {
-        "Note: You must zone after completing the previous quest in the line Healing the Land to flag this quest.",
-        "Talk to Eperdur who is located at 2nd floor of the Cathedral in Northern San d'Oria to start the quest.",
-        "Head to Fei'Yin.",
-        "Be aware Wekufe are Tough and Very Tough at 95.",
-        "Sneak will be needed around them even if you are at level 99.",
-        "The Fei'Yin Magic Tome you seek is in a Treasure Chest which spawns in random points in . A Fei'Yin Chest Key can be obtained as follows",
-        "If you have Rhapsody in White, you can buy the key for 2,500g from any Curio Vendor Moogle.",
-        "Alternatively one can use Thief's Tools as a Thief to obtain the key item.",
-        "Lastly, defeat Shadows, Ore Golems, and/or Underworld Bats in Fei'Yin to obtain a Fei'Yin Chest Key (which can be very elusive).",
-        "Open a Treasure Chest with a Fei'Yin Chest Key and you get the Fei'Yin Magic Tome.",
-        "The Treasure Chest you seek is one that appears in random spots and is NOT dropped by killing enemies.",
-        "Bring it back to Eperdur to complete the quest.",
-    },
-
-    sdz_ss_crimson_trial = {
-        "Talk to Sharzalion at the bar in the Lion Springs Tavern. He wants some Orcish dried food.",
-        "To get this food, you need to get a Davoi Storage Key to open the Storage Hole which spawns randomly about Davoi.",
-        "You need to start this quest while being a Red Mage. It is not necessary to be on Red Mage for the NM to spawn. You only need to have the quest flagged.",
-        "Enter Davoi from Jugner Forest and defeat Purpleflash Brukdok around the western half of (E-9)/(F-9) to obtain a Davoi Storage Key.",
-        "Purpleflash Brukdok spawns around the western half of (E-9) / (F-9) when you enter the zone with the RDM AF weapon started. VERY IMPORTANT: you must travel down the river to get to this point. Get down to the river at (I-8) or (J-10) and follow it west to (D-8).",
-        "There are a few orcs on the way that aggro even at 99.",
-        "Additionally, all nearby orcs link when fighting the NM.",
-        "Note: coming /NIN for the NM greatly helps.",
-        "The Storage Hole spawns randomly around Davoi, so hunt around until you find it. There are patterns on the ground which identify potential spawn positions. The patterns look like someone stretched animal skins over a hole in the ground, except that they are the same colors as the ground. There are 4 \"skins\" in a pattern forming a rough circle divided into 4 quadrants with a fifth small \"skin\" covering the middle. Trade the Davoi Storage Key to it to receive the Orcish dried food. The location changes each game day. May respawn in the same spot after the Davoi Storage Key is used.thumb|229x229px|Some Storage Hole Locations",
-        "Some known locations of the Storage Hole are at (Davoi E-10), (Davoi F-6), (Davoi F-7), (Davoi F-9), (Davoi G-9), (Davoi G-10), (Davoi I-7), (Davoi I-8), (Davoi J-7), (Davoi K-7), (Davoi K-8), (Davoi K-9),(Davoi K-10), and another at (Davoi J-8). There are other locations it can spawn in, anywhere on the map.",
-        "The Storage Hole at (Davoi H-8), previously thought unreachable without running through Monastic Cavern, CAN be reached from the river below. Running through Monastic Cavern is not necessary.",
-        "After the Storage Hole has been used by a RDM, it will immediately respawn somewhere in Davoi; you don't have to wait until the next Vana'diel Day.",
-        "Once you have obtained the Orcish dried food, return to Sharzalion to receive your Fencing Degen.",
-    },
-
-    sdz_co_enveloped_darkness = {
-        "Repeatedly speak with Curilla (Chateau d'Oraguille) until she gives you an Old Pocket Watch. You may need to talk to Curilla numerous times.",
-        "If you have not taken The General's Secret, you will obtain it first. (You do not need to complete the quest to acquire this quest.)",
-        "Note: After this point, this entire quest can be done as a job other than Red Mage if necessary.",
-        "Obtain a Velvet Cloth.",
-        "Go to the basement of the Cathedral in Northern San d'Oria and speak with the priest, Pagisalis, who asks for Velvet Cloth. Trade the Velvet Cloth to him.",
-        "Pagisalis can be found on the lower level of the Cathedral in the Reliquary. When you enter the Cathedral, immediately go to your left and on the right, just before the double doors in front of you there is a set of stairs that lead down. Go down these stairs and the first door on your left is the Reliquary.",
-        "When you pray, a cutscene activates and you receive some Old Boots.",
-        "Return to Curilla for a cutscene and to activate the next part of the quest.",
-        "Speak to her until she specifically asks you to retrieve the Crawler Blood and bury it and the Old Boots in the nest.",
-        "Go to Crawlers' Nest and get a Nest Chest Key. Then find a treasure chest (click for maps: 15px or 15px) and open it with the key, and this will give you the Crawler Blood. This can be done on any job once you have flagged the quest.",
-        "CAUTION: Opening this chest aggroes the monsters around you if you are not a high enough level, even if you have Sneak active (Sneak drops upon opening the chest).",
-        "NOTE!: With Rhapsody in White you can buy a Nest Chest Key for 2,500gil from Curio Vendor Moogle.",
-        "Click the ??? once more to obtain Warlock's Boots",
-        "NOTE: It could take for up to 40 seconds for the purification to take place before you can pick up the boots.",
-        "Return to Curilla if you wish, as you must return to her to quest for your Chapeau anyway.",
-    },
-
-    sdz_co_peace_for_spirit = {
-        "As a Red Mage, go to Curilla in Chateau d'Oraguille.",
-        "Note: You don't have to be RDM for the remainder of this quest.",
-        "Go to Sharzalion located in the Lion Springs Tavern (K-5)/(K-6) Southern San d'Oria (near the Mog House).",
-        "Head to Fei'Yin in the Beaucedine Glacier.",
-        "Defeat Miser Murphy. He spawns near the Dry Fountain at (H-8) on the first floor.",
-        "He is a ghost NM with an occasional additional effect of drain on his regular melee attacks. This drain can do upwards of 600 damage to a player, restoring the NM's HP in the process. Miser Murphy cannot be bound easily. This can be a very hard fight.",
-        "Possible to solo as a 75 NIN/DNC by keeping your shadows up as much as possible; you may also bring a healer to be safe.",
-        "When he is killed, Miser Murphy drops one Antique Coin.",
-        "Trade the Antique Coin to the Dry Fountain for a cutscene.",
-        "Return to Southern San d'Oria and speak to Sharzalion in the Lion Springs Tavern.",
-        "Next, speak with Daggao (the Galka down by the stage to the right).",
-        "Head to Garlaige Citadel. Immediately past the Banishing Gate #1 there is an Oaken Box in the first room to the left. Select this box to spawn a Guardian Statue.",
-        "Guardian Statue is no slouch. He constantly spams TP Moves that can be heavy hitting or an AOE move that can inflict slow. Some can sleep you for a long duration. At level 60 with 5 trusts, this was a close fight.",
-        "Note: If you wish to avoid the four-player switch for Banishing Gate #1, use a Pouch of weighted stones to open the doors solo.",
-        "Once defeated, the Guardian Statue drops a Nail Puller.",
-        "Trade the Nail Puller to the Oaken Box for a cutscene.",
-        "Note: Like his counterpart Miser Murphy, Guardian Statue only drops one Nail Puller at a time.",
-        "Note: You do not have to be Red Mage to get the cutscene or to spawn Guardian Statue.",
-        "Note: Zoning out of Garlaige Citadel after receiving the Nail Puller, but prior to trading it to the Oaken Box, resets the pop conditions for the Guardian Statue. Reexamination of the Oaken Box (even with the Nail Puller item in inventory) causes the Guardian Statue to respawn and attack. If you zone out prior to getting the CS with Rainemard, trade the Nail Puller without examining the box. (see discussion)",
-        "Enter Northern San d'Oria for the final cutscene and your Warlock's Chapeau.",
-        "Zoning from your Mog House may not trigger the cutscene. If this happens, zone from Southern San d'Oria to trigger the final cutscene. However, zoning from the Airship, using Thrifty Transit, Home Point, Survival Guide or Repatriation have worked, as has zoning into the MH in Port San d'Oria, and then zoning out of the MH into Northern San d'Oria.",
-    },
-
-    sdz_ns_messenger_beyond = {
-        "As WHM, Talk to Narcheral (Northern San d'Oria M-6) in the cathedral, on the balcony that overlooks the main floor, in Northern San d'Oria.",
-        "After flagging it, you can complete the remainder of the quest on any job.",
-        "Head to Valkurm Dunes around (Valkurm Dunes B-8).",
-        "This is the secret beach area.",
-        "The Gustav Tunnel Survival Guide is the fastest way there.",
-        "Wait until night (18:00 game time) and a ??? will appear near the Song Runes. Click on the ??? to spawn the NM Shadow Marchelute.",
-        "The ??? will depop at 5:00 Vana'diel time.",
-        "Defeat Marchelute, and it will drop a Tavnazia Pass.",
-        "Trade the pass to Narcheral to complete the quest.",
-    },
-
-    sdz_co_prelude_black_white = {
-        "Make sure you are a White Mage when clicking the door.",
-        "Yagudo Abbots spawn behind the brass door at (Castle Oztroja G-8) on map 3.",
-        "The combination to the levers to open this door can be found behind the secret door at (Castle Oztroja I-10) on the same map.",
-        "Yagudo Abbots located at (Castle Zvahl Keep G-9) & (Castle Zvahl Keep G-10) on map 2 in Castle Zvahl Keep can also drop Yagudo Holy Water. Although fewer of them spawn in this zone, they are 1-7 levels lower than Yagudo Abbots in Castle Oztroja.",
-        "All mobs have extremely low drop rates for Moccasins (<1%).",
-        "Moccasins +1 are not accepted.",
-        "You may also purchase them from the Auction House.",
-    },
-
-    sdz_co_pieujes_decision = {
-        "Make sure you are a White Mage to begin.",
-        "Check the door marked \"Prince Regent's Rm\", located on south side of the small courtyard at (Chateau d'Oraguille H-8) in Chateau d'Oraguille. You will be asked to obtain a Tavnazia Bell.",
-        "You do not need to be on White Mage for the rest of this quest in either Eldieme Necropolis or Fei'Yin, including the upcoming battle.",
-        "Kill Dark Stalkers in the Eldieme Necropolis until one drops a Tavnazia Bell.",
-        "The Dark Stalkers can be found after dropping down A onto the second map, they are around the Hume Bones.",
-        "Four Dark Stalkers can also be found on the first map, two in the north room and two in the far west room.",
-        "You can open the gates using a Magicked astrolabe obtained for 10,000 gil from Churano-Shurano, on the roof, in Windurst Waters (Windurst Waters F-8) North map Home Point #1.",
-        "Enter Fei'Yin for another cutscene. Home Point #1 is closest.",
-        "If you are on Mission 5-1 for your country, you might get the cutscene for this first. Make sure to zone out and back in so that you see the cutscene with the prince and his aide.",
-        "Trade the Tavnazia Bell to the ??? at (Fei'Yin G-8) to spawn the NM Altedour I Tavnazia.",
-        "Kill him to obtain a Tavnazian Mask.",
-        "If you wipe fighting this NM and he depops, you must obtain another Tavnazia Bell to make another attempt.",
-        "If you need to do this NM more than once, you must wait 15 minutes to respawn it.",
-        "Trade the mask to Narcheral upstairs in the cathedral in Northern San d'Oria (Northern San d'Oria M-6) to complete the quest.",
-    },
-
-    sdz_ns_sharpening_sword = {
-        "Complete the Father and Son quest and make sure to give the Willow Fishing Rod back to the son.",
-        "There is no need to zone if you've just completed Father and Son.",
-        "Talk to Ailbeche again who will ask you for an Ordelle Whetstone.",
-        "Talk to Sobane in (Southern San d'Oria D-6) of Southern San d'Oria. Be sure to talk to her twice if you get a cutscene the first time. The cutscene is the beginning of either the quest Signed in Blood or Tea with a Tonberry? and not part of this quest.",
-        "Head to Ordelle's Caves, entering from the western most entrance at (La Theine Plateau F-7) from La Theine Plateau.",
-        "There is a Survival Guide teleport at the entrance to Ordelle's Caves for quicker access.",
-        "Alternatively you can take the Survival Guide teleport to West Ronfaure, which is close if you don't have the former.",
-        "From the first map, head east to the ramp at (Ordelle's Caves I-6). This puts you on the second map. Head southwest to the room at (G-8), then take a left. Next, head south up the ramp at (Ordelle's Caves H-9). This puts you back on the first map. The Stalagmite is next to the hole in the first small room.",
-        "Select the Stalagmite to spawn and defeat the NM Polevik, an Earth Elemental.",
-        "Can be defeated on any job, as long as quest is active.",
-        "Should be level 65+ to solo the fight.",
-        "Has been soloed as a level 44 PLD with trusts. (EDIT: Just solo'd at PLD42/WAR21 with 4 trusts.)",
-        "Touch the Stalagmite again to receive the Ordelle Whetstone.",
-        "Talk to Ailbeche to complete the quest.",
-    },
-
-    sdz_ns_boys_dream = {
-        "After completing Sharpening the Sword, speak with Ailbeche (Northern San d'Oria J-9 in Northern San d'Oria) as a level 50+ Paladin and he'll request a Giant Shell Bug.",
-        "Talk to Exoroche at (Southern San d'Oria K-7) in Helbort's Blades shop in Southern San d'Oria for a cutscene.",
-        "You are not required to be a Paladin after this step.",
-        "Return to Ailbeche who tells you Giant Shell Bugs can be found in Crawlers' Nest.",
-        "Obtain one or several Giant Shell Bugs. You can buy them on the AH, or follow the steps below.",
-        "From the entrance to Crawler's Nest, use exit A at (Crawlers' Nest H-8).",
-        "On map 2, find the small alcove at (Crawlers' Nest H-9). The ??? is tucked away in the far end. Check it to spawn Dreadbug, which will drop 1-4 Giant Shell Bugs.",
-        "Speak with Exoroche in Southern San d'Oria",
-        "Trade the Giant Shell Bug to Ailbeche to initiate a cutscene in which he'll tell you where you can catch the \"big one\". You will still have the Giant Shell Bug after the cutscene.",
-        "If you have multiples and you are skilled at fishing up monsters, you can skip this step until after you fish up Odontotyrannus.",
-        "At this point if you're not experienced with fishing it's advised to look over the Fishing page to get an idea on how to know when a monster/NM has bitten the hook, and how to deplete its stamina when it does bite. Tip: When you get a bite, do NOT press enter/confirm before depleting all stamina or you will lose the catch and your bait. Do NOT press enter/confirm to let a catch go when you've hooked something other than the NM or you will lose your bait. Wait it out, and the catch will eventually escape and your bait will be preserved.",
-        "Obtain a fishing rod (any will do), then head to the small pond on map 2 of Castle Oztroja. Prepare for a fight, and bring a friend or two if necessary.",
-        "From the entrance, go through the Brass Door at (Castle Oztroja I-8) on map 1. To avoid the trapdoor, throw one lever and then quickly move backwards.",
-        "On map 3, use exit F at (Castle Oztroja G-7).",
-        "On map 7, use exit I at (Castle Oztroja I-7).",
-        "Head to (Castle Oztroja H-8/Castle Oztroja H-9) on map 2 to find a pool of water with Oozes in it.",
-        "Fish up the NM Odontotyrannus using your fishing rod and Giant Shell Bug. You will lose your bait, and the NM will appear, ready to lay a beatdown on you. Upon victory it will drop Odontotyrannus (Item).",
-        "Call any trusts you wish to use before you begin fishing. The NM spawns claimed and you will be unable to call trusts at that point. Trusts do not prevent you from fishing.",
-        "Return to Northern San d'Oria and trade the Odontotyrannus to Ailbeche. (Optional)",
-        "If you did not trade a Giant Shell Bug to Ailbeche before, do it now.",
-        "Trade the Odontotyrannus to Zaldon (Selbina H-9) at the Fisherman's Guild in Selbina to receive the Knight's Boots. (Zaldon may not accept the fish while Under the Sea quest is active, finish \"Under the Sea\" to allow Zaldon to accept Odontotyrannus)",
-        "Head back to Northern San d'Oria and speak to Ailbeche again.",
-        "Go to Southern San d'Oria and talk with Exoroche again.",
-        "Go to Chateau d'Oraguille in Northern San d'Oria and check Prince Trion's room at (Chateau d'Oraguille H-7).",
-        "If your job is Paladin, this cutscene will also immediately start the next quest Under Oath.",
-    },
-
-    sdz_co_under_oath = {
-        "Go to Chateau d'Oraguille and click on the door to Prince Trion's chambers. (If you were a Paladin when you completed A Boy's Dream, you may have already received this cutscene.)",
-        "Note: This quest takes priority over receiving the Trust: Trion spell. If you are trying to receive the trust spell, you may have to click on the door multiple times until you receive the proper cutscene for it.",
-        "After the cutscene, talk to Vemalpeau in , who lives inside the small house nearest Lion Square, on the bottom floor.",
-        "Then go to Lion Spring's Tavern and talk to Najjar.",
-        "Next, head to Count Caffaule's Manor in and talk to Ullasa, who mentions Mique's Paintbrush. Once you see the paintbrush mentioned, you can go key hunting.",
-        "Head to Castle Zvahl Baileys and obtain a Zvahl Coffer Key. (You can just pick the lock on Thief and skip the key farming or Alternatively, you could just purchase the Zvahl Coffer Key for 5,000 gil off of the Curio Vender Moogle under the Keys Category if you've progressed far enough into the Rhapsody of Vana'dial Missions to have unlocked the purchasing shops Curio Vender Moogle's in the cities ports of Port Bastok, Port San d'Oria, and Port Windurst.)",
-        "Keys can be dropped by Ahriman, Abyssal Demons, Arch Demons, Blood Demons, and Doom Demons.",
-        "To the right is a map of the coffer locations. Basically, the key dropping monsters are in the four corners and the tunnels leading to the four corners. To get to these corners, you need to drop down into four different holes. However, the northwest hole will only lead to the northwest corner, and once you drop, you must make your way back up to get to a different hole.",
-        "Open a coffer to obtain Mique's Paintbrush. Coffer can be opened on any job.",
-        "Note: If you have a current artifact quest active from this coffer, the coffer will produce the artifact and not Mique's Paintbrush.",
-        "Note: This can be picked as a Thief, since Paladin does not have to be your main job to obtain the paintbrush.",
-        "Return to Vemalpeau in .",
-        "Proceed upstairs in Vemalpeau's house. Immediately to your left, there are three spots that can be examined. Click on the painting on the wall above the first spot and select the option to \"look behind the frame\" and then \"open and examine\" to obtain a Strange Sheet of Paper.",
-        "(optional) Return to Vemalpeau who mentions his son's commanding officer.",
-        "Go to \"Helbort's Blades\" (K-7) and talk to Exoroche, who tells you to go to Davoi.",
-        "Go to to the Village Well.",
-        "The person who needs this quest should touch the well to spawn two NMs: Three-eyed Prozpuz (RNG) and One-eyed Gwajboj (PLD).",
-        "A full alliance of level 55+, a full well rounded party, or high level help is recommended.",
-        "The area should be cleared of Orcs, including the ones North and North east that look a bit far, which link with the NMs.",
-        "Defeat the NMs to obtain the Well Weight.",
-        "One-eyed Gwajboj drops the Well Weight regardless of whether or not the other NM is killed.",
-        "After killing the NMs, only one Well Weight drops. So if you have more than one PLD who needs the quest, you must kill them both again.",
-        "Before you leave! Trade the Well Weight to the Village Well for a cutscene and the Knight's Confession.",
-        "Travel back to Ailbeche in , who mentions Jugner Forest.",
-        "Go to the Maiden's Spring which is located in . Approach the edge of the pond for a cutscene.",
-        "If you arrive mounted, you do not need to dismount to get the cutscene.",
-        "Finally, head back to San d'Oria where you may optionally talk to Ailbeche and Exoroche or simply head to Chateau d'Oraguille and talk to Prince Trion for a final cutscene and your reward.",
-        "Although the quest is technically over after talking with Trion, the Knight's Confession will remain in your inventory until speaking with Vemalpeau one last time. Giving him his son's confession serves as a bit of closure, though this is entirely optional.",
-    },
-
-    sdz_ps_the_holy_crest = {
-        "Go to Cargo Room A in Port San d'Oria and talk to Arminibit or Ceraulian.",
-        "Talking with either one will start a dialog between them. It doesn't matter who you pick. If you talk with both, you will get the same dialog the second time.",
-        "Talk to Novalmauge in Bostaunieux Oubliette (beneath Chateau d'Oraguille).",
-        "You will need to be able to get into the Chateau d'Oraguille, and therefore must be Rank 2 if you are from San d'Oria, or at least have started the 2-3 Mission in Windurst or Bastok",
-        "Novalmauge patrols between (F-8) to (G-8). If you don't have the map, zone in and follow the hallway south, then turn west.",
-        "If you have the Scythe weapon skill quest Souls in Shadow active, you cannot complete this part of the quest until you complete the Scythe of Trials. Also, it's possible to obtain the Scythe of Trials while talking to Novalmauge to flag Dragoon. Choose your dialog options carefully.",
-        "Talk to Morjean (L-7) in the manuscript room within the Cathedral in Northern San d'Oria. It is on the left as soon as you enter the cathedral.",
-        "Although the cut-scene with Novalmauge tells you to ask the archeologist Oiheaurese to learn of dragons, he is an NPC who only appears in the cutscene with Morjean.",
-        "Buy a pickaxe and head for the Maze of Shakhrami.",
-        "Ostalie in Southern San d'Oria sells pickaxes.",
-        "The Maze of Shakhrami can be reached at (K-5) in the Tahrongi Canyon.",
-        "There is a Survival Guide at the entrance of the Maze of Shakhrami.",
-        "Once inside, look for an excavation point (refer to this map for the possible locations of these points) Also, go to the Tahrongi Canyon entrance FIRST and check ALL the possible locations for the Excavation point on that side before checking the places on the left side (close to Buburimu Peninsula)",
-        "If you're only around level 30, you may want to bring Sneak and Invisible or be sure to have Trust out just in case. If you're going to venture to the second map with the level 80+ monsters, you'll want that regardless what level you are.",
-        "Trade your pickaxe to an excavation point to receive a Wyvern Egg.",
-        "Return to Morjean, and receive a cutscene where Yachemidot asks you to take the Wyvern Egg to the Meriphataud Mountains.",
-        "On the eastern edge of Drogaroga's Spine in the Meriphataud Mountains at K-8 is a ???.",
-        "Fastest way there is to warp to the Survival Guide in the Castle Oztroja entrance.",
-        "Second fastest way is via the Meriphataud Mountains Outpost Survival Guide.",
-        "Trade the Wyvern Egg to the ??? for a cutscene.",
-        "Return to the Chateau d'Oraguille and talk to Rahal, who is in the Royal Knight's Quarters (on the left as you enter the Chateau). Rahal will then give you the Dragon Curse Remedy and send you to the Ghelsba Outpost. If you have the quest Lure of the Wildcat (San d'Oria) active Rahal will berate you for being a mercenary. Simply speak to him again to get the Dragon Curse Remedy.",
-        "Travel to the hut at F-10 in Ghelsba Outpost. When ready, open the door to enter the battlefield \"The Holy Crest\" with Cyranuce M Cutauleon.",
-        "Only players with this quest active (including completed prerequisites) or have completed this quest before may enter the battlefield.",
-        "This is a six-person, uncapped battlefield (TP and buffs are not lost upon entering).",
-        "Trust magic cannot be used in this battle.",
-        "Defeat Cyranuce M Cutauleon to complete the quest.",
-        "Defeated solo by most non-mage jobs at level 30. May need a higher level for mage jobs. Individual experience may vary depending on job/gear/buffs/etc. (see NPC page for testimonials).",
-    },
-
-    sdz_ns_craftsmans_work = {
-        "With your Main Job set to Dragoon, go to Northern San d'Oria (E-5), outside the 2nd floor entrance to the Blacksmiths' guild.",
-        "Talk to Miaux. In a cutscene, you'll learn she wants her father's old armor repaired, but needs you to get a Altepa polishing stone for the repairs.",
-        "From this point on, this quest can be completed on any job.",
-        "Travel to H-8 in Eastern Altepa Desert. Find and examine the ??? to spawn the NM Decurio I-III. The ??? is on the top level near the ruins in the bottom right corner of the entrance to the Quicksand Caves.",
-        "Defeat Decurio I-III and re-examine the ??? to obtain the Altepa polishing stone.",
-        "You do not have to be on Dragoon to spawn Decurio I-III.",
-        "If you are in a party, Decurio I-III need only be defeated once. All party members with the quest flagged may then obtain the key item.",
-        "Take the Altepa polishing stone back to Miaux for your reward.",
-    },
-
-    sdz_ps_chasing_quotas = {
-        "With your Main Job set to Dragoon, go to Cargo Room A in Port San d'Oria and talk to Arminibit or Ceraulian.",
-        "Talking with either one will start the quest. It doesn't matter who you pick.",
-        "During the cut-scene, agree to help Ceraulian obtain a Gold Hairpin.",
-        "From this point on, you can change to any other job to complete the quest. Once you've flagged the quest, you don't need to be Dragoon to finish.",
-        "Trade a Gold Hairpin to Ceraulian for a cut-scene.",
-        "Wait 1 minute and talk to Ceraulian again for another cut-scene.",
-        "Go to Northern San d'Oria (E-6) and talk to Miaux, on the upper level in front of the Blacksmith's Guild shop for a cut-scene. She will give you the Shiny Earring",
-        "(Optional) You may now speak with Ceraulian for a clue to visit the Goldsmith's Guild.",
-        "Got to Bastok Markets (H-8) at Home Point #4 and talk to Ardea in front of the Goldsmiths Guild.",
-        "Make your way to West Ronfaure.",
-        "Fastest way there is via the Northern San d'Oria Home Point (E) #1.",
-        "After arriving in West Ronfaure, go to the the tower at (F-6) and speak with Esca located inside for a cut-scene. She will mention you must go to the small island in Batallia Downs, which can only be reached through The Eldieme Necropolis.",
-        "Go to The Eldieme Necropolis",
-        "Fastest way is to return to Northern San d'Oria and use the Survival Guide next to the Home Point.",
-        "If you don't have the Survival Guide teleport: Go to Batallia Downs (J-10) and locate the small cave on the side of the hill. Follow the tunnel into The Eldieme Necropolis.",
-        "Your goal in The Eldieme Necropolis is to get to the hole at (G-9; Point D on the map).",
-        "If you have acquired the Magicked astrolabe, then you can operate the gates solo.",
-        "Otherwise, you will need at least one other person with you to operate the gates inside of The Eldieme Necropolis as follows.",
-        "There is a switch to manipulate the gates in each of the four large square rooms.",
-        "Wait at (H-9) where Lich spawn and face South at the closed Titan's Gate.",
-        "Once there, have someone flip the switch at (H-8) to open Titan's Gate.",
-        "If you require their assistance for the upcoming fight, you will need to operate a second switch in your area at (G-9) before they will be able to join you.",
-        "After everyone who will be taking part in the fight has gathered around (G-9; Point D on the map), walk over the center-most grave and fall down the hole.",
-        "If Lich and Tomb Wolf aggro to you, then you must put Sneak up before falling down.",
-        "The area after you drop contains higher level mobs Hellbound Warrior and Nekros Hound . They con roughly Very Tough to a level 90. You only need a form of Sneak to get past them.",
-        "Once you are at the bottom, follow the path until it forks and turn right. Proceed South and zone at (J-9) out to Batallia Downs.",
-        "Outside on the island, make a turn to the north-west of the entrance (left) and go to the depression on the edge of the island.",
-        "Examine the ??? (I-11) to spawn the NM Sturmtiger.",
-        "??? does not need to be examined on Dragoon job to spawn.",
-        "The ??? is on the opposite side of the island from the Stone Monument.",
-        "Sturmtiger attacks extremely fast, so Blink-Tanking will be relatively ineffective.",
-        "Highly susceptible to both slow and paralyze.",
-        "Susceptible to bind, gravity and sleep.",
-        "(see testimonials)",
-        "Defeat it, and examine the ??? again for Ranchuriome's Legacy. Bring it back to Ceraulian to finish the quest.",
-    },
-
-    sdz_co_knight_stalker = {
-        "You MUST complete the previous quest Chasing Quotas, before Rahal will allow you to flag this quest.",
-        "Speak with Rahal in Chateau d'Oraguille (H-9) for a cutscene.",
-        "Rahal is in the Royal Knights' Quarters (to the left after you enter the Chateau).",
-        "You must be Dragoon to flag the quest.",
-        "Make sure you choose the first option at the end of the cutscene. If you didn't, talk to him again to choose the right option.",
-        "Speak with Ceraulian (in Cargo Room A) in Port San d'Oria (I-10) for another cutscene where Brugaire asks you to find the helm of the last Dragoon for him.",
-        "Open the coffer in Kuftal Tunnel for Challenge to the Royal Knights.",
-        "You do not need to be Dragoon when you open the coffer.",
-        "You can either obtain a Kuftal Coffer Key or simply pick the lock as Thief.",
-        "Return to Chateau d'Oraguille and speak with Rahal.",
-        "Speak with Balasiel in Southern San d'Oria (F-7).",
-        "Go back and speak to Rahal one more time. Rahal hints that the writer of the challenge may be in the south, dabbling in black arts.",
-        "Head to the Temple of Uggalepih in Yhoator Jungle.",
-        "You will need your Wyvern out to spawn the NMs. (Call Wyvern)",
-        "Make your way to south to F-11 on the first map and walk through the granite door to the North of F-11 to enter a room in F-9/10. (Note: The ??? here is very close to the one used to spawn the Death from Above NM.)",
-        "Only invisible is needed to make it to this room safely.",
-        "Clear out the Tonberries, bees and doll in F-9/10 and then you are ready to spawn the 2 NM shadows. The Rumble Crawlers aren't aggressive like the ones in Crawler's Nest, so they may be ignored.",
-        "When ready, cast Sneak (or have a mage cast it on you) and hit the ??? on the floor, in the area north of the short bridge, to spawn Cleuvarion M Resoaix and Rompaulion S Citalle.",
-        "The NMs will not link if you spawn them with Sneak active and pull them from afar.",
-        "Both NMs will aggro by low HP, even if Sneak is active.",
-        "NMs will aggro a level 75 and will grant exp/limit points to a 75 (about 39 or so).",
-        "It is only necessary to kill ONE of the NM's, if doing so, let the other despawn first before killing it.",
-        "Other NM must despawn before the first dies in order to obtain the cutscene.",
-        "Both NMs are either Highly Resistant to Repose and Sleep or Immune to it all together.",
-        "After the shadows are dead, touch the ??? again for a cutscene after which you will receive your helmet.",
-        "(Please note, that if you get the message, \"It seems some kind of ceremony occurred here...,\" you may be too far from the ???. Play around with the angle at which you're standing, and the cutscene will start.)",
-        "Return to Ceraulian in Port San d'Oria for a short cutscene with Brugaire.",
-        "Return to Rahal in Chateau d'Oraguille who will thank you for solving the mystery behind the last Dragoon.",
-        "If and when you get to fight for the shadows please note that a party that's there can claim one shadow. We killed 1 shadow and a nearby party killed the second one. Please note that as of now I do not know which shadow must be killed to trigger cutscene but for my party we killed Rompaulion S Citalle.",
-        "If multiple party members need to complete this quest, only one member's wyvern is needed. The other party members can get the final cutscene after the fight is complete.",
-        "You can get this cutscene with all jobs so only one DRG is needed to pop NM but ALL party members can get the cut scene after fight.",
-        "(see testimonials)",
-    },
-
-    sdz_ss_eco_warrior = {
-        "Talk to Norejaie in the Lion Springs Tavern Southern San d'Oria K-6. She asks you to help with the extermination of a monster infesting Ordelle's Caves.",
-        "If you cannot get the quest Norejaie will tell you either",
-        "Something about the food (Already completed Eco-Warrior this conquest period)",
-        "\"...Can I have a moment of your time? Oh, but you look busy...\" (Eco-Warrior from another nation is logged)",
-        "Assemble a party or alliance. See notes below for preparation.",
-        "Go to Ordelle's Caves using the entrance at the south end of the ravine at La Theine Plateau F-7.",
-        "The Atmacite Refiner's warp to Ordelle's Caves works well.",
-        "Once you're inside Ordelle's Caves, talk to Rojaireaut Ordelle's Caves G-3 to have him apply the ointment. This caps your level at 25!",
-        "Buffs do not wear off! So apply strong, lasting buffs before receiving the ointment!",
-        "Trusts will be dismissed upon application of the level restriction, but can be resummoned (and will have the same level restriction that you do).",
-        "Make sure everyone gets the ointment. If any alliance member does not receive it, then the monster will not spawn.",
-        "From Rojaireaut take the path to the left (head east, through the puddle) and take the long corridor.",
-        "Use Circumspection from the Grounds Tome to receive sneak and invisible.",
-        "The ??? is located in the southwest corner of a small room on a stalagmite. The ??? is at Ordelle's Caves G-9 , northeast corner. The designated tank/puller should spawn the NM Necroplasm by touching the ???.",
-        "This ??? used to be at G-10. It was moved in a version update.",
-        "Defeat the Necroplasm.",
-        "For this fight, only those with the level cap can assist in this fight. Anyone else trying to help will receive a message telling them they cannot.",
-        "Examine the ??? to receive an Indigested Stalagmite.",
-        "After the battle, you may want to remove your level cap to cast Raise your friends so they can get the ???. To do this, you need to logout/Login. Upon logging in, your level cap is gone and you may Raise fallen friends.",
-        "Talk to Rojaireaut again! He will tell you to report to Norejaie.",
-        "If you don't do this, you can still get the quest done but the gil/exp rewarded might be missing (depending on servers?).",
-        "Talk to Norejaie complete the quest.",
-        "You can only have one Eco-Warrior quest active at any time. This includes Eco-Warrior (Windurst), Eco-Warrior (San d'Oria) and Eco-Warrior (Bastok).",
-        "Eco-Warrior quests cannot be deactivated.",
-        "Only one Eco-Warrior quest can be completed once per Conquest Tally. So if you completed the quest the week before but FORGOT to turn it in then you cannot flag it again this week.",
-        "All members must have accepted the quest by talking to Norejaie.",
-        "With a number of high-damaging jobs (SMN, RNG, or even WAR or SAM, etc.) using their 2 hour abilities and level 99 buffs from before receiving the ointment, the NM can be defeated by as few as 2-3 people. Astral Flow Inferno is the most damaging attack to this NM. However, this Eco-Warrior boss has the most HP of all Eco-Warrior NMs, so be careful.",
-        "If you're on a level 99 job and have decent endgame gear then this quest will be absolutely trivialized. Even level-synced, your gear will still give you overpowered stats (for a level 25 job) and nothing will be of any real threat to you, especially if you're using Trusts and you buff yourself before receiving the level restriction.",
-    },
-
-    sdz_ss_methods_madness = {
-        "Talk to Balasiel in Southern San d'Oria who will give you the Spear of Trials and the Weapon Training Guide.",
-        "If you chose the the wrong answer by mistake, zone out and back in to get the cutscene again.",
-        "Perform Weapon Skills with the Spear of Trials until the latent effect disappears.",
-        "To remove the latent effect, you must acquire 300 Weapon Skill Points.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "See the Skillchain Chart for more details.",
-        "You must perform Weapon Skills and Skillchains on monsters that directly grant experience points to you.",
-        "You CANNOT acquire points from Weapon Skills performed during Campaign Battles or Besieged.",
-        "Weapon Skills performed while under Level Sync count.",
-        "Weapon Skills performed in Reives will count.",
-        "It is not necessary to remove the weapon in order to see when the latent effect is removed.",
-        "Once you no longer receive the latent effect bonus, head back to Southern San d'Oria and trade the Spear of Trials back to Balasiel, who will take the weapon from you and give you a Map to the Annals of Truth and tell you to head to Sea Serpent Grotto. (Note: The latent effect will not always be removed once you hit the 300 Weaponskill points; to check your progress if unsure trade the weapon back to Balasiel.)",
-        "You need to get a Sahagin Key from the Sahagin Key Quest.",
-        "When everyone is ready, trade the Sahagin Key to the Ornamented door at (J-10/11). You cannot open it from inside and you lose the key, so make sure everyone gets in together. Pass the bridge into the next room.",
-        "Click the ??? to spawn the NM Water Leaper.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "Bring this back to Balasiel for your reward.",
-        "NOTE: You cannot unlock this quest if you already have another WSNM quest active, though you CAN cancel the quest by talking to the NPC that gave it to you.",
-        "If you're on Dragoon, you can use Wheeling Thrust to close Light. Trust: Ayame doesn't have a Fragmentation weapon skill, unfortunately. If you have another party member, you can do the following",
-        "Spinning Slash from a Dark Knight or Paladin.",
-        "Ground Strike from a Dark Knight, Paladin or Warrior.",
-        "Savage Blade from a Paladin, Red Mage, Blue Mage, Corsair, Dark Knight or Warrior.",
-        "Dragon Kick from a Puppetmaster or Monk.",
-        "Black Halo from a White Mage, Warrior, Monk, Black Mage, Paladin, Summoner, Blue Mage or Scholar.",
-        "King's Justice from a Warrior.",
-        "Mordant Rime from a Bard.",
-        "Blade: Kamu from a Ninja.",
-        "Trueflight from a Ranger.",
-        "Vidohunir from a Black Mage.",
-        "Death Blossom from a Red Mage.",
-        "Shark Bite from a Thief or Dancer.",
-        "Alternatively, if you're level 96+, you can get Stardiver as any of the three jobs. Ayame will open using Tachi: Gekko, allowing you to close with Darkness.",
-    },
-
-    sdz_bo_souls_in_shadow = {
-        "Note: You cannot start this quest if you have another WSNM quest active.",
-        "(Bostaunieux Oubliette G-7) Talk to Novalmauge in the hallway.",
-        "He gives you the Scythe of Trials and a Weapon Training Guide.",
-        "Trading the weapon back gives the option to cancel the quest.",
-        "Use the Scythe of Trials until the latent effect disappears.",
-        "To remove the latent effect, you must perform Weapon Skills and Skillchains on monsters that check Easy Prey or higher to accumulate 300 Weapon Skill Points.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "To check to see if the latent effect has disappeared, see if you do not get the elemental resistance bonuses. If not, you are done. 'Note' the latent effect itself will not disappear, only the bonuses it gives will.",
-        "You do NOT have to un-equip/re-equip the weapon to check for changes in the elemental resistance bonuses.",
-        "You cannot earn points towards unlocking the weapon by participating in Campaign Battles, but points can be earned while in Level Sync. Points can be earned from Reives.",
-        "(Bostaunieux Oubliette F-8/H-8) Give the latentless Scythe of Trials back to Novalmauge in (Bostaunieux Oubliette F-8/H-8).",
-        "He will give you a Map to the Annals of Truth.",
-        "He tells you to head to the Den of Rancor.",
-        "Fastest way is to take Den of Rancor Home Point #2.",
-        "(Den of Rancor Map 2 I-13) Click the ??? to spawn the NM Mokumokuren.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "(Bostaunieux Oubliette F-8/H-8) Bring this back to Novalmauge for your reward.",
-    },
-
-    sdz_ps_taste_for_meat = {
-        "Talk to Antreneau, he complains that he's had naught to eat but beans lately, and they just do not satisfy. The cook, Thierride, wishes he could make him some meat, but is fresh out.",
-        "Speak with Thierride and he will ask you to get him 5 slices of Hare Meat.",
-        "Obtain 5 slices of Hare Meat and trade them to Thierride to complete the quest.",
-        "Talk to Antreneau again to get a sample slice of Grilled Hare.",
-        "It's a good idea to do this along with The Merchant's Bidding as Wild Rabbits and Forest Hares will drop both Rabbit Hide and Hare Meat.",
-        "The Forest Hares in West Ronfaure do not drop Hare Meat.",
-    },
-
-    sdz_ns_exit_the_gambler = {
-        "Talk to Aurege, he and Guilberdrier discuss one of their workers who is gambling again and late for work.",
-        "Talk to Varchet in Southern San d'Oria (L-6), the missing worker. He will agree to go back to work only if you win against him gambling. Bet 5 gil until you win against him (it may take several tries), then he says he will return to work.",
-        "Talk to Aurege again to complete the quest.",
-        "You can still gamble with Varchet after the quest is over. It will be a bet of 5 gil, with the winner getting 10 gil.",
-        "Note: You can start this quest if you have started and not completed the quest The Pickpocket. but it may not show up as active in the current quest log. It will show up when completed.",
-    },
-
-    sdz_co_old_wounds = {
-        "Talk to Curilla in Chateau d'Oraguille to obtain a Sapara of Trials and a Weapon Training Guide.",
-        "If you are participating in the Trust Initiative to obtaining Alter Egos, this will prioritize over the weapon skill quest. You can talk to Curilla again after obtaining Curilla's Alter Ego or pass through the dialogue for it.",
-        "The General's Secret quest also prioritizes over this weapon skill quest and must start it first to get the weapon skill quest dialogue.",
-        "Use the Sapara of Trials until the latent effect disappears. (This does not always disappear. Check with Quest Giver NPC periodically by trading her the sword to see your status.)",
-        "How to remove the latent effect",
-        "You must perform Weapon Skills and Skillchains on monsters that con Easy Prey or higher.",
-        "Weapon Skills performed while under Level Sync will count.",
-        "Weapon Skills performed in Reives will count.",
-        "You must accumulate 300 total Weapon Skill Points.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "Unless you are using the sapara with Paladin (and therefore can use Swift Blade), you will not be able to close any Lv.3 chains at this point using a sword, unless you are already Lv.75, and have already unlocked Expiacion (BLU) or Death Blossom (RDM).",
-        "If you already have Atonement unlocked for Paladin, trust Valaineral can open with Uriel Blade then you can close with Atonement for Light. At lvl99 the Slough Skua's in Caedarva Mire to the west of Nashmau are a good target for one Light skillchain per minute.",
-        "To check to see if the latent effect has disappeared, look at your equipment screen for the elemental resistance. Though it is easy to see the HP drop, it should be even easier to see you lose a good 10 resistance in both schools below.",
-        "At any time, you can talk to Curilla to end the quest. If you do end it, all work on the latent effect will be lost as you will need to start the quest again.",
-        "Once you no longer receive the latent effect bonus, head back to Chateau d'Oraguille and TRADE the Sapara of Trials back to Curilla to exchange the weapon for a Map to the Annals of Truth and instructions to head to Quicksand Caves.",
-        "Before doing the part below, make sure you have done Open Sesame quest to get a Loadstone. (this will save you time in case the gate is closed)",
-        "EASIEST WAY FORWARD",
-        "Use the Western Altepa Unity Teleport (125). Drop down into the walkway, and use the linked map to navigate to the doorway.",
-        "Head to Western Altepa Desert. Here you must open the Altepa Gate.",
-        "Once in Quicksand Caves go to I-6 on the map to the right and click the ??? to spawn the NM named Girtablulu. On the way there, you may encounter an Antican Praetor that hears through sneak at the 4-way intersection. Wait for that antica to move to the far southwest corner of that room before heading north.",
-        "Once you enter the room, be sure to clear it out first as you might be unlucky like me and aggro all the nearby Antica, rendering you dead and having to open the Gate again if you haven't cast Reraise in advance.",
-        "Girtablulu causes high damage when it connects. Uses Wild Rage and Earth Pounder like other scorpions, which can cause high damage. Wild Rage can do about 400-600 damage.",
-        "Girtablulu's use of Death Scissors can do upwards of 1000 damage on a well-equipped level 75 Paladin. It may be best to bring a blink tank.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "Only one character from a party will need to spawn Girtablulu for the whole party that defeated it to get the Key Item.",
-        "Bring this back to Curilla for your reward.",
-        "If more than one individual in your party needs the item, they may check the ??? as well. You do not need to fight the NM for each of them.",
-        "NOTE: You cannot unlock this quest if you already have another Weapon Skill quest opened.",
-        "You will not gain points towards unlocking the weapon by participating in Campaign Battles or Besieged.",
-        "Talking to Curilla may trigger a cut-scene for the quest The General's Secret. Simply talk to her again after accepting the The General's Secret quest to obtain the correct cutscene for Old Wounds.",
-        "Kupipi",
-        "Joachim",
-        "Brygid",
-        "Arciela II",
-        "Naja Salaheem (UC)",
-    },
-
-    sdz_ns_escort_for_hire = {
-        "Talk to Rondipur in Northern San d'Oria to activate the quest.",
-        "Zone into The Eldieme Necropolis from Batallia Downs I-10 (Entrance 1). The fastest way there is using the survival guide located just inside. If you use this, you must zone out and back in to activate the quest.",
-        "The first person to zone into the dungeon will get a cut scene with Cannau about the quest.",
-        "That person must talk to Cannau to start the quest. You will have 30 minutes to finish from this point. If noone talks to her, after several minutes she will leave.",
-        "After talking to Cannau, she will immediately bolt away and start towards her destination with no thought for aggro at all. Anyone can stop and start her, simply talk to her; she will reply \"Why have we stopped?.\" This way you can safely fight mobs with her out of aggro and AoE range. To start her moving again, talk to her once more.",
-        "Make sure you give the order to stop well in advance of where you actually want her to stop...due to lag she will sometimes take a few steps before she responds, and thus aggro unintentionally.",
-        "If Cannau's HP gets low (in the yellow) she will draw hate from the undead at a distance; Cannau can be cured.",
-        "She will wind her way to the switch at (H-8) to open the doors.",
-        "After throwing the switch, she will go one of the two ways that you can continue on to the west (the ultimate goal is the room at (F-8).",
-        "Once she gets to the eastern or western wall of the room at (F-8), she will stop. Talking to her will get you a Completion Certificate. You have about 20 seconds to talk to the escortee before she warps out.",
-        "Go back to Rondipur in Northern San d'Oria to receive your Page from Miratete's Memoirs and 10,000g if it's your first completion.",
-        "06/09/2008 Update",
-        "Any of the three Escort for Hire quests may now be undertaken simultaneously with the quests All by Myself and The Big One.",
-        "Only one Escort for Hire quest can be active at any time. Only one Escort for Hire quest can be completed per Conquest Tally. In other words, if you finish Escort for Hire (San d'Oria), you cannot do another Escort for Hire quest until the next Conquest Tally.",
-        "Any of the escort quests can be easily deactivated by talking to the same person who gave you the quest.",
-        "Do not talk to the escortee until everyone who is in the party is in the dungeon. Anyone not in the zone when you begin the quest (i.e., still zoning) will not get credit for the quest.",
-        "Although you can go in with an alliance, only the people in the starting person's party will get credit for the quest at the end. If you want to do this for more than 6 people, you will have to do it multiple times.",
-        "If the escortee dies, you only have to zone out and zone back in to restart the quest.",
-        "You will receive both the 10k gil and the Completion Certificate the first time you complete this quest. Each time you complete this quest after the first time, you will only receive the certificate.",
-        "You cannot sneak or invisible the escortee.",
-        "The escortee can go through the gates even when they are down. If another party is in the Necropolis and is throwing the switches, you may want to leave a member of your group posted at the switches until after you clear the gates.",
-        "The player who receives the cutscene upon zoning into Eldieme Necropolis will be unable to call their Adventuring Fellow NPC during the escort quest. However, other members of the party will be able to do so. Alter Egos may be summoned.",
-        "If doing this with multiple people, designate one person to be the one that will control the NPC...it makes things easier and prevents issues with stopping/starting her.",
-    },
-
-    sdz_ss_timely_visit = {
-        "Speak with Deraquien for a cutscene.",
-        "Go to La Theine Plateau and speak with Narvecaint (F-7) at the entrance to Ordelle's Caves for another cutscene. If you have the Survival Guide for Ordelle's Caves flagged, teleport to it and then zone out to La Theine Plateau -- this is by far the quickest way to get to Narvecaint.",
-        "Return to Southern San d'Oria (to save some time, use the Survival Guide in Ordelle's Caves to teleport back to San d'Oria) and speak with Deraquien again. You are then told to go to Chateau d'Oraguille to speak with Halver--he'll be right in front of you.",
-        "You must be on or finished either San d'Oria: Mission 1-3, Bastok: Mission 2-3 or Windurst: Mission 2-3 depending on your citizenship in order to enter Chateau d'Oraguille.",
-        "Return back to talk to Deraquien and then go to the first house on the left after the Tanner's Guild and talk to Phillone (D-7).",
-        "Go back to speak with Deraquien.",
-        "Head to King Ranperre's Tomb.",
-        "Go to Jugner Forest through King Ranperre's Tomb. Once you get there, wait until between 18:00 and 6:00, then click on the ??? right outside (F-5). This spawns two NMs, Giollemitte B Feroun and Skeleton Esquire .",
-        "Only Giollemitte B Feroun needs to be defeated - Sneak can be used to pop them aggro free.",
-        "Its possible Skeleton Esquire may need to depop before killing Giollemitte B Feroun ,as no cutscene was received after checking the ??? when the skeleton depoped after killing the Fomor. Rezoning and killing both gave the cutscene.",
-        "After you kill them, click on the ??? again for a cutscene.",
-        "Return to Phillone for a cutscene.",
-        "Travel back to La Theine Plateau and speak with Narvecaint again.",
-        "Return one last time to Southern San d'Oria to speak with Phillone to receive your reward.",
-    },
-
-    sdz_co_fit_for_a_prince = {
-        "Talk to Halver for a cutscene. He will ask you to find a female adventurer that fits Prince Trion's preferences.",
-        "Halver is involved with many quests. You may need to speak to him several times.",
-        "Consult the table below to pinpoint the player model you need to find. Have a matching player in your party and in the zone, then talk to Halver again.",
-        "You may cancel the quest at any time. You can restart the quest every in-game hour with no need to zone, and Halver will give you a new description.",
-        "If you are female, Halver will never describe an adventurer with your race.",
-        "You will be rewarded with Castor's Ring and the title \"Royal Wedding Planner\". Your partner will be rewarded with Pollux's Ring and the title \"Consort Candidate\".",
-        "The quality on these rings can be removed by synthing them with a Wind Crystal, and they can be signed by using a Cyclone Crystal. These synths have a 100% success rate.",
-    },
-
-    sdz_ns_trial_size_ice = {
-        "Speak to Castilchat in Northern San d'Oria. You must speak to Castilchat as a Summoner.",
-        "If you qualify, he will give you a Mini Tuning Fork of Ice. (Note: You only have to be level 15 to get the fork.)",
-        "This item is not a Key Item like the regular Tuning Forks, but is a Rare/Exclusive item that needs to go in your inventory.",
-        "When you are ready to go, return to Castilchat and trade him the Mini Tuning Fork of Ice (he does not keep the fork) and be warped to the Cloister of Frost for the fight.",
-        "Trade the Mini Tuning Fork to the protocrystal to enter the battle.",
-        "Note that if you do not trade the Mini Tuning Fork and instead just select the protocrystal, you will enter the regular level 60+ party avatar battle if you have the regular tuning fork key item.",
-        "Defeat her for your reward.",
-        "This is a solo battle.",
-        "There is a level 20 cap on this battle.",
-        "There is a 15 minute time limit.",
-        "You can only use Carbuncle.",
-        "Try to fight Shiva on Firesday and do not fight her on Iceday.",
-        "When you complete this quest you keep the Mini Tuning Fork of Ice, although Castilchat will not warp you to the protocrystal a second time.",
-    },
-
-    sdz_ss_signed_in_blood = {
-        "Talk to Sobane, she is willing to give you a quest, but she needs to be able to trust that you'll keep your mouth shut. She wants you to retrieve a Cathedral Tapestry.",
-        "Obtain a Cathedral Tapestry by killing Orcish Fighters in Fort Ghelsba or the Yughott Grotto.",
-        "Trade the tapestry to Sobane and she'll explain the next step.",
-        "Travel to Selbina, where you will find that the person you are looking for is nowhere to be found. Talk to the mayor, Abelard, @ G-9 and he'll say he has \"no idea\" what you're talking about... but he will then mention something about a diary he found, and that some key pages are missing... perhaps his lips will loosen if you help him find them.",
-        "Travel to Ordelle's Caves and hunt for an Ordelle Chest Key. Once you find a key, look for a Treasure Chest and open it.",
-        "Only people who have this quest flagged will receive some Torn-Out Pages (key item).",
-        "Thief can open chest and receive key item using Thief's Tools, Skeleton Key or Living Key .",
-        "This key item takes precedence over the Magical Pattern from The Goblin Tailor RSE quest; if both are active, a character opening the chest will receive this key item first.",
-        "Return to Selbina and talk to the mayor. He'll reveal some information to you which will prove interesting to Sobane.",
-        "Return to Sobane to complete this quest and to receive your reward.",
-    },
-
-    sdz_ss_tea_with_tonberry = {
-        "If you just completed Signed in Blood, you must Zone out and back into Southern San d'Oria to flag this quest.",
-        "Talk to Sobane. She and her husband need your help confirming a threat to a local aristocrat, but the only ones who may know about it are the tight lipped Tonberries in Carpenters' Landing.",
-        "Travel to Attohwa Chasm and defeat Gallinipper, Ogrefly, or Monarch Ogrefly until they drop Attohwa Ginseng.",
-        "Travel to South Landing in Carpenters' Landing.",
-        "Either take the barge from the entrance in Northern San d'Oria, or take a chocobo to the entrance at (J-8) in Jugner Forest. Or Survival Guide / Norvallen / Carpenters' Landing.",
-        "Talk with the elvaan Anguenet standing next to the Tonberry at the docks for a cutscene. He knows a way to speak with them, but he won't do it for free.",
-        "Trade Anguenet the Attohwa Ginseng and he will give you the Tonberry Blackboard which will allow you to communicate with the Tonberry Riche on the ferry.",
-        "Purchase a Barge Ticket or Barge Multi-ticket and board a barge headed for Central Landing via Emfea Way. See here for the barge Schedule.",
-        "Talk to Riche, the Tonberry on board. Ask him all the questions (5); at the end he'll take the key item. Be sure to do this before the ride is over, which is approximately 7 minutes.",
-        "Travel to Fei'Yin and kill Shadow until they drop Treasury Gold.",
-        "Shadow appear on Map #1. Home Point #1 is the best warp option.",
-        "Take the Treasury Gold to Davoi and trade it to the ??? at (J-11), which spawns a Hematic Cyst NM.",
-        "Kill the Hematic Cyst and select the ??? again for a cutscene.",
-        "A group of characters who are doing this quest can all get the cut-scene by killing just one Hematic Cyst, from one Treasury Gold.",
-        "Return to Southern San d'Oria and talk to Sobane to complete the quest.",
-    },
-
-    sdz_ss_spice_gals = {
-        "Talk to Rouva at in Southern San d'Oria to start the quest. Optional: Activate the Records of Eminence objective Miratete 1 or Miratete 1 (W) under 15th Vana'versary IV to get additional rewards for completing this quest.",
-        "Obtain Rivernewort from a ??? in either Riverne - Site #A01 or Riverne - Site #B01.",
-        "In Riverne - Site #A01 the ??? is found at on the island that connects to Monarch Linn.",
-        "You need two Giant Scales to get there.",
-        "In Riverne - Site #B01 the ??? is found in near the Spatial Displacement heading south toward Monarch Linn.",
-        "You need one Giant Scale to get there.",
-        "Alternatively you can use the Riverne - Site #B01 waypoint.",
-        "Also Riverne - Site B01 Home Point #1 is at the zone to Monarch Linn. It is one displacement away from the island where the ??? is.",
-        "Neither ??? ever despawns, allowing any number of players to grab the key item with no wait.",
-        "Return to Rouva with the Rivernewort for your reward.",
-        "Consider completing Uninvited Guests at the same time; both ??? are found on the way to the battle for that quest.",
-    },
-
-    sdz_ps_over_hills_away = {
-        "To activate this quest, first go to the second floor of the house at (G-7) in Southern San d'Oria.",
-        "Read the diary there a couple of times until you have read Page 4.",
-        "Pages 2 and 3 of the diary refer to the quests A Squire's Test II and The Medicine Woman, which do not need to be completed to get to the page 4, unless they have been activated. See the Discussion page for details and testimonials.",
-        "Talk to Antreneau in the Rusty Anchor Pub in Port San d'Oria.",
-        "The quest A Taste For Meat might interfere with Antreneau speaking about Uleguerand Range. Complete A Taste For Meat and restart the walkthrough starting with reading the Diary at (G-7) in Southern San d'Oria. If Antreneau continues to say, \"All right, then! I am ready to eat!\" you do not have sufficient Reputation to participate in this quest.",
-        "Although previously listed as having a reputation requirement of 9, it has since been confirmed that the quest can be flagged by having a San d'Oria reputation of 8.",
-        "He will tell you that the Map of the Uleguerand Range is top secret and his uncle has gone there to investigate the mountains. He asks you to find his uncle and tell him he wishes him back soon.",
-        "Now you have the quest, but first you need a Moblin Hotrok.",
-        "Moblin Hotroks are dropped by the Moblin Ashman in Oldton Movalpolos and Moblin Groundman in Newton Movalpolos . There is a Moblin Ashman spawn at (K-10) in the \"pit\" area at the center of the platforms.",
-        "After obtaining the Moblin Hotrok, go to Uleguerand Range.",
-        "You will need to find a ??? in the caves at around (F-8), but it cannot be reached directly from the entrance. Once in Uleguerand Range, you'll need to make your way counter-clockwise across the zone, slowly climbing to the top of the Thousandfall Ridge.",
-        "Do not jump down holes on the way.",
-        "Use sneak and invisible.",
-        "Avoid Brontotaurs, Tyrannotaurs and Molechs, which are true sight.",
-        "Avoid Jormungand, a HNM which spawns in your path and also has true sight.",
-        "Once you are at the top, start walking towards (F-8) and you will see two slopes. One to the south and one to the west.",
-        "If you slide down the southern slope, you need to land on a small ledge leading to cave S3 on the map of the Southern Slope to the right.",
-        "If you slide down the western slope, you need to land on a small ledge leading to cave W2 on the map of the Western Slope to the right.",
-        "If you fall into one of the holes on the slopes (S1 or W1), you must go back onto the slope and land on the proper ledge.",
-        "Once you start down a slope, you're committed. You can steer a little to the left and right and you can slow your descent by running against gravity. If you miss the outcropped cave ledge, you will have to climb back up the entire mountain.",
-        "It is possible to have Tractor cast on you to put you on the ledge should you miss.",
-        "S1 and W1 lead to the black tunnel path which can be seen in the cave insert on the Uleguerand Range map to the right. Caves S2 and W3 lead to the white path. The ledges you seek (S3 or W2) lead to the red path and the ???.",
-        "When you reach either S3 or W2, follow the path to the ???.",
-        "There is also a hole above W3 that's leads to the W2 path. There is an eye at the bottom of the hole so sneak or silent oil is recommended before going down.",
-        "Trade in the Moblin Hotrok for a cutscene and to complete the quest.",
-        "You will receive a different reward if you already have bought a Map of the Uleguerand Range. This is also reflected in the dialogue, which will mention \"a reward\" rather than the map explicitly.",
-    },
-
-    sdz_ss_lure_of_wildcat = {
-        "Note that Rank 2 for San d'Orians or advancement to Mission 2-3 for Windurstians and Bastokers is required to enter the Chateau d'Oraguille. 5 of the NPCs for Lure of the Wildcat quest are there, and thus access to it is required to get the Mythril piece as a reward.<- Meaning the imperial Mythril piece you get from Naja Salaheem (Aht Urhgan Whitegate (I-10); upstairs)) for trading her all 4 invitation cards you get for doing all 4 Wildcat quests.",
-        "Note: The quest A Timely Visit will also give you access to Chateau d'Oraguille when you reach the point where you are ordered to talk to Halver.",
-        "Talk to Amutiyaal (at the fountain near Lion Springs Tavern) who will give you a Red Sentinel Badge and ask you to find new recruits for a mercenary group in Aht Urhgan.",
-        "Check the badge to get coordinates for the people you should talk to in each area.",
-        "You will know you've found the right person because you get an emote message: \"[]'s badge flashes brightly.\"",
-        "After you talk to all of the people for San d'Oria, return to Amutiyaal to receive a Red Invitation Card (key item).",
-        "Note when talking to Halver if you are currently on Mission 2-3 for San d'Orians you must first complete the mission. Halver will only speak of the mission until completed,however, if you have this quest activated while doing mission 2-3 for San d'Oria, Halver will speak of your badge before speaking of the quest.",
-        "You will need to talk to",
-        "Southern San d'Oria (East to West)",
-        "(K-5) Daggao (Lion Springs Tavern)",
-        "(J-9) Authere (a small boy under a tree to the east of the Auction House)",
-        "(I-8) Rouva (under a tree in west Victory Square)",
-        "(I-8) Femitte (Rouva's attache)",
-        "(G-8) Deraquien (guarding entrance to Watchdog Alley)",
-        "Northern San d'Oria (East to West)",
-        "(J-8) Maloquedil (northeast of the fountain, under a tree)",
-        "(J-8) Anilla (north of the fountain, West of Maloquedil)",
-        "(I-9) Giaunne (west of the fountain)",
-        "(H-8) Phairupegiont (north of Windurstian Consul, looking into the moat)",
-        "(E-4) Bertenont (upstairs outside the Royal Armoury)",
-        "Port San d'Oria (West to East)",
-        "(G-7) Perdiouvilet (Rusty Anchor Pub)",
-        "(H-8) Pomilla (outside the Rusty Anchor, watching Joulet fish)",
-        "(H-8) Cherlodeau (just before the docks where two fisherman are having a contest)",
-        "(H-10) Parcarin (on top of the Auction House)",
-        "(J-8) Rugiette (Regine's Magicmart)",
-        "Chateau d'Oraguille (East to West)",
-        "(I-9) Curilla (Temple Knights' Quarters)",
-        "(I-9) Halver (main room)",
-        "(H-9) Rahal (Royal Knights' Quarters)",
-        "(H-7) Perfaumand (guarding Prince Royal Trion I d'Oraguille's Room)",
-        "(F-7) Chalvatot (Her Majesty's garden)",
-        "Just doing this quest alone will not gain you access to Whitegate. You must do a quest in Jeuno and a quest in Tenshodo before this access will work.",
-    },
-
-    sdz_ss_atelloune_lament = {
-        "Talk to Atelloune, standing near the fountain at (L-6) in Southern San d'Oria. She'll tell you about a letter she received that has her irritated. She'll ask you to bring back a Ladybug Wing in answer to her letter.",
-        "Trade a Ladybug Wing to Atelloune, which will give her a mild shock. For your reward, she tells you why there aren't any ladybugs in the present. She'll then give you the Trainee Gloves, and tell you to leave her to her work.",
-    },
-
-    sdz_ps_thick_shells = {
-        "Vounebariont needs 5 Beetle Shells. Trade them to him for your reward.",
+        "Once all 15 Magicmart Flyers have been distributed, return to Regine and speak with her to end quest.",
     },
 
     sdz_ns_forest_for_trees = {
-        "Talk to Ramua and agree to help her to start the quest.",
-        "You need to sign up with the Carpenters' Guild for this quest to be activated.",
-        "Ramua will hand you both a hatchet & Timber Survey Checklist upon accepting.",
-        "It is advised to buy more hatchets as they do break on occasion.",
-        "Head to Jugner Forest and locate Logging Points on which to use your Hatchet.",
-        "The Timber Survey Checklist that Ramua gave you lists five logs. You must obtain one of each (Arrowwood Log, Ash Log, Yew Log, Willow Log, and Walnut Log).",
-        "It is completely random what logs or other items you will obtain from Logging. It is possible to get multiples of the same log from a Logging Point.",
-        "You cannot purchase the logs and trade them to Ramua. She will refuse to take them. They must be logged by you and you will see a message pertaining to that.",
-        "While you must actually log at least one of each type of log to complete this quest, the logs traded to the NPC can be purchased if you no longer have the original logs.",
-        "When you successfully cut off a log for the first time of a kind you need, you will see the message: \" recorded survey data for a on the Timber Survey Checklist.\"",
-        "Subsequent logging of a log you've already recorded does nothing extra.",
-        "Return to Ramua and trade her your five logs to complete the quest.",
-        "Ramua will confirm the logs and allow you to keep them.",
+        {
+            text = "Speak to Ramua in Northern San d'Oria (E-3) for a cutscene that begins the quest.",
+            substeps = {
+                "You need to have already signed up with the Woodworking Guild for this quest to be activated. Speak to Guild Master : Cheupirudaux - Northern San d'Oria (F-3)",
+            },
+        },
+        {
+            text = "Ramua will give you the Timber survey checklist and a Hatchet .",
+            substeps = {
+                "The one hatchet will probably break, so buy more hatchets before you go. Ostalie in Southern San d'Oria (E-9) is closest.",
+            },
+        },
+        {
+            text = "Travel to Jugner Forest and log the following items:",
+            substeps = {
+                "Arrowwood Log",
+                "Ash Log",
+                "Yew Log",
+                "Willow Log",
+                "Walnut Log",
+            },
+        },
+        "If you've never harvested before: go to the green points marked on the wiki's map, and look for yellow sparkles called \"Logging Point\"s. Trade your hatchet to them for a chance at an item.",
+        "(Optional) turn on the Records of Eminence objective Harvesting -> Original Areas -> Jugner Forest for sparks and experience. For the first clear, it'll also give you 12 hatchets.",
+        "Trade these logs to Ramua, for your reward. She will also return the logs to you.",
     },
+
+    sdz_ns_gates_to_paradise = {
+        "Speak with Olbergieut to begin quest. You will receive Scripture of Wind",
+        "Travel to K-8 in La Theine Plateau (its at the tail end wall of the Holla Crag) and look for an NPC named Faurbellant",
+        "Speak to Faubellant and he will give you Scripture of Water",
+        "Return to Olbergieut and speak with him to end quest.",
+    },
+
+    sdz_ss_grave_concerns = {
+        "Speak to Andecia (located in the middle house on the first floor of Squire's Alley) once to trigger story text. Speak to Andecia again after the first set of text to receive the Well Water item (will be deposited into your inventory).",
+        "Travel to King Ranperre's Tomb (I-10) on the first map.",
+        "Trade the Well Water to the 'tombstone' to receive a Tomb Waterskin .",
+        "Return to Andecia and trade her Tomb Waterskin to complete quest.",
+    },
+
+    sdz_ss_grimy_signposts = {
+        "Talk to Maugie to start the quest.",
+        "Travel to Jugner Forest and click on the signposts at the following spots to clean them: (E-11), (G-8), (H-7), and (J-5).",
+        "Talk to Maugie again after cleaning them for your reward.",
+    },
+
+    sdz_ns_growing_flowers = {
+        "(optional) Talk to Kuu Mohzolhi .",
+        {
+            text = "She won't come out and say it at first, but she would like a Marguerite .",
+            substeps = {
+                "Marguerite can be bought off auction houses, or Areebah in Upper Jeuno at (H-6) for 120 Gil .",
+            },
+        },
+        {
+            text = "Trade it to her to complete the quest.",
+            substeps = {
+                "If you trade the wrong flower for the other 2 quests, she will keep it and you will have to acquire another.",
+            },
+        },
+    },
+
+    sdz_ns_healing_the_land = {
+        {
+            text = "Speak with Eperdur at (M-7) in Northern San d'Oria Cathedral. Walk into the Cathedral and take the right staircase. He is at the top.",
+            substeps = {
+                "He will give you the Seal of banishing , and you must go place it on a ??? target.",
+            },
+        },
+        {
+            text = "Travel to Gusgen Mines from Konschtat Highlands .",
+            substeps = {
+                "The fastest way is to use the Survival Guide -> Zulkheim -> Gusgen Mines.",
+            },
+        },
+        {
+            text = "Follow these directions to reach the ??? target:",
+            substeps = {
+                "North, down the stairs, and hit the lever to go through the middle door at (H-6)",
+                "Then North, down the stairs, and hit the lever for the left door this time.",
+                "Take a left at the T intersection then head north.",
+                "West until another split.",
+                "West again, and then fall down hole (H) at the end if the path.",
+                "Check the ??? at (G-8) in the South West corner, behind the shack. There are two '???' close, make sure to get the message 'You have found the location of the seal.' followed by 'You place a Seal of banishing on it.'",
+            },
+        },
+        "Speak with Eperdur again for your reward.",
+    },
+
+    sdz_co_majestys_garden = {
+        "Speak to Chalvatot to begin this quest.",
+        {
+            text = "Trade Chalvatot a Derfland Humus to complete the quest.",
+            substeps = {
+                "Derfland Humus drops off Doom Scorpions in the Crawlers' Nest . It can also be purchased off the Auction House .",
+            },
+        },
+    },
+
+    sdz_wr_intermediate_teamwork = {
+        "First, zone at (C-7) in Northern San d'Oria .",
+        "You should be in a watchtower in West Ronfaure now, and Vilatroire should be up ahead after zoning in.",
+        "Talk to him to activate the quest.",
+        "After you form a party of two (yourself and one other) with the same race, talk to him again to complete the quest.",
+    },
+
+    sdz_wr_intro_teamwork = {
+        "First, zone at (C-7) in Northern San d'Oria .",
+        "You should be in a watchtower in West Ronfaure now, and Vilatroire should be up ahead after zoning in.",
+        "Talk to him to activate the quest.",
+        "After you form a party of two (yourself and one other) with the same allegiance, talk to him again to complete the quest.",
+    },
+
+    sdz_co_knight_stalker = {
+        "Speak to Rahal in Chateau d'Oraguille at (H-9) inside the Royal Knight Quarters as a Dragoon to begin this quest.",
+        "Speak to Ceraulian , Port San d'Oria (I-10) inside Cargo Room A for a cutscene.",
+        "Speak to Ceraulian once more after the cutscene.",
+        {
+            text = "Obtain a Kuftal Coffer Key . Use the key to open any coffer in Kuftal Tunnel . This will give you ( Key Item ): Challenge to the Royal Knights .",
+            substeps = {
+                "Use a Survival Guide or UNM warp to reach the area.",
+            },
+        },
+        "Return to Rahal and speak to him again.",
+        "Speak to Balasiel , Southern San d'Oria (F-7)",
+        "Speak to Rahal again.",
+        {
+            text = "Head to Temple of Uggalepih for a NM fight.",
+            substeps = {
+                "NOTE: Make sure atleast one person present is on Dragoon as having a wyvern out is a requirement to spawn the NM. Other people can be on any job and still get the reward after the fight.",
+                "The survival guide is most likely the fastest warp available",
+            },
+        },
+        {
+            text = "Once inside, head to (F-10) on the first map to find a ??? .",
+            substeps = {
+                "This spot is on a hidden area of the map at (F-9).",
+            },
+        },
+        {
+            text = "Click the ??? with your wyvern summoned to spawn two NMs ; Cleuvarion M Resoaix and Rompaulion S Citalle . The NMs will not spawn unless your wyvern is out with you.",
+            substeps = {
+                "Only Rompaulion S Citalle needs to be defeated to continue.",
+                "The battle can be handled with little difficulty at level 60 with a full party of Trusts.",
+            },
+        },
+        "Once the NM's are dead, check the ??? again for a cutscene and your reward.",
+        "Note :",
+        "Although it is not necessarry, you can return to Ceraulian after defeating the NM's for an additional cutscene.",
+        "Rahal will also have some additional dialogue for you after the fight.",
+    },
+
+    sdz_ss_lizard_skins = {
+        "Obtain 3 Lizard Skins",
+        "Speak with Hanaa Punaa to begin quest and trade her the 3 skins to complete quest.",
+    },
+
+    sdz_ps_lufets_lake_salt = {
+        "Speak to Nogelle who asks for 3 Lufet Salts .",
+        "Lufet Salt drops off River Crabs in West Ronfaure .",
+        "Trade her the three salts to complete this quest.",
+    },
+
+    sdz_ss_lure_of_wildcat = {
+        "Speak with Amutiyaal to recieve a Red Sentinel badge and begin the quest.",
+        "Speak with the following people:",
+        {
+            text = "Area / Position / Name",
+            substeps = {
+                "Southern San d'Oria - (K-5) - Daggao",
+                "(J-9) - Authere",
+                "(I-8) - Rouva",
+                "(I-8) - Femitte",
+                "(G-8) - Deraquien",
+                "Northern San d'Oria - (I-9) - Giaunne",
+                "(J-8) - Maloquedil",
+                "(J-8) - Anilla",
+                "(H-8) - Phairupegiont",
+                "(E-4) - Bertenont",
+                "Chateau d'Oraguille - (I-9) - Halver",
+                "(I-9) - Curilla",
+                "(H-9) - Rahal",
+                "(H-7) - Perfaumand",
+                "(F-7) - Chalvatot",
+                "Port San d'Oria - (G-7) - Perdiouvilet",
+                "(H-8) - Pomilla",
+                "(H-8) - Cherlodeau",
+                "(H-10) - Parcarin",
+                "(J-8) - Rugiette",
+            },
+        },
+        "Once you have spoken to all 20 people, return to Amutiyaal. He will take your Red Sentinel badge and give you a Red invitation card .",
+    },
+
+    sdz_ns_messenger_beyond = {
+        {
+            text = "As a White Mage, talk to Narcheral (M-6) upstairs in the cathedral in Northern San d'Oria to get the quest.",
+            substeps = {
+                "Note: You can do the rest of the quest on any job.",
+            },
+        },
+        {
+            text = "Head to (B-8) (Secret Beach) in Valkurm Dunes .",
+            substeps = {
+                "The Survival Guide teleport to Gustav Tunnel , then walking out will bring you directly next to the spawn point.",
+            },
+        },
+        {
+            text = "Between 18:00 and 5:00 a ??? will appear near the Song Runes . Click on it to spawn Marchelute .",
+            substeps = {
+                "If another player killed Marchelute recently, a few minutes have to pass before Marchelute will spawn again.",
+            },
+        },
+        "Marchelute drops a Tavnazia Pass .",
+        "Take the Tavnazia Pass back to Narcheral to complete the quest and receive your Blessed Hammer .",
+    },
+
+    sdz_ss_methods_madness = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Balasiel at (F-7) will grant you the key item Weapons Training Guide as well as the Spear of Trials . You will need to break the latent on the Spear of Trials before completing the rest of the quest.",
+        "Breaking the Latent:",
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Spear of Trials back to Balasiel . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to Sea Serpent Grotto .",
+        "Take Silent Oil with you and head to Sea Serpent Grotto . Make sure either you or someone in your party has a Sahagin Key .",
+        "After entering the Grotto, head south into the first large room and take the southwestern tunnel. Continue to the south until you reach the Ornamented Door at (J-10). Unlock the door with the Sahagin Key and head south across the bridge. You will find the ??? to spawn the NM at (H-6).",
+        "This fight is against Water Leaper , a pugil. It is weak to Ice and Lightning attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Balasiel to receive your reward.",
+    },
+
+    sdz_co_old_wounds = {
+        "Speaking with Curilla will grant you the Weapon training guide as well as the Sapara of Trials . You will need to break the latent on the Sapara of Trials before completing the rest of the Quest.",
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "The Bight Uragnite at (K-8) in Ceizak Battlegrounds are a great enemy to break the latent with if you are lv 99+.",
+        "Trade the Sapara of Trials back to Curilla . This will give you the Map to the Annals of Truth .",
+        {
+            text = "You will be instructed to travel to Quicksand Caves .",
+            substeps = {
+                "Before you go, you will need to speak to Lokpix in Eastern Altepa Desert at (G-7) and complete the Quest Open Sesame to acquire the Loadstone . This allows you to use the weight-activated switches without needing multiple people .",
+            },
+        },
+        "Take Echo Drops and Silent Oil with you.",
+        {
+            text = "Head to Western Altepa Desert . You will now need to open the Altepa Gate .",
+            substeps = {
+                "See the Altepa Gate page for instructions on opening it.",
+                "Once you open the Altepa Gate , it will remain open for 15-30 minutes. It is advisable to either get help lowering the colored columns or have a mule behind the gate.",
+            },
+        },
+        "Once you are behind the Altepa Gate , follow the path to the intersection and go north into the large room. You may need to clear this room of the Antica that live in it. The ??? to spawn the NM is at the northern tip of this room at (I-6).",
+        "This fight is against Girtablulu , a scorpion. It is weak to Ice and Light attacks.",
+        "Once you kill it, re-examine the ??? to receive the Annals of Truth .",
+        "Go back and speak with Curilla to receive your reward.",
+    },
+
+    sdz_ps_over_hills_away = {
+        "First you need to to go to the second floor of the house at (G-7) in Southern San d'Oria and read the diary there until you have read up to Page 4.",
+        "Speak to Antreneau , Port San d'Oria (G-7) to flag the quest.",
+        "Head to Oldton Movalpolos and kill Moblin Ashman and Moblin Gurneyman until they drop a Moblin Hotrok . Alternately, you can go to Newton Movalpolos and kill Moblin Groundman .",
+        "Head to Uleguerand Range and climb to the top where Jormungand spawns.",
+        "At (F-9) you will find a slope leading all the way down to the entrance of the zone.",
+        {
+            text = "Fall down the Southern Slope (the one you see as soon as you zone) and aim for the ledge on your left.",
+            substeps = {
+                "If you miss the ledge you will have to climb up the mountain and try again.",
+            },
+        },
+        "Once on the ledge head inside the hole and examine the ??? .",
+        "Trade the Moblin Hotrok to the ??? to complete this quest.",
+    },
+
+    sdz_co_peace_for_spirit = {
+        {
+            text = "As a Red Mage, Talk to Curilla in Chateau d'Oraguille at (I-9) to start this quest.",
+            substeps = {
+                "Note: You don't have to be RDM for the remainder of this quest.",
+            },
+        },
+        "Head to Southern San d'Oria , find Sharzalion at (K-6) in the Lion Springs Tavern and speak to him.",
+        {
+            text = "Kill Miser Murphy in Fei'Yin for an Antique Coin .",
+            substeps = {
+                "He will pop at (H-8) on map1 if the quest is active.",
+                "10 minute respawn time",
+            },
+        },
+        "Trade the coin to the Dry Fountain at (H-8) for a cutscene.",
+        {
+            text = "Head to Southern San d'Oria and speak to Sharzalion and then speak with Daggao who is in the bar as well.",
+            substeps = {
+                "Curilla has additional optional dialogue.",
+            },
+        },
+        {
+            text = "Go to Garlaige Citadel (G-8) behind the first banishing gate (map 2) click the Oaken Box in the first room to the left. This will spawn the Guardian Statue .",
+            substeps = {
+                "If you get the message \"Something feels wrong, but nothing happens.\", click off Sneak.",
+            },
+        },
+        "Kill him for a Nail Puller .",
+        "Trade the Nail Puller to the same Oaken box for a Cutscene.",
+        "Zone into Northern San d'Oria for a Cutscene and Warlock's Chapeau .",
+    },
+
+    sdz_co_pieujes_decision = {
+        "Open Door: Prince Regent's Rm in Chateau d'Oraguille at (H-8) to start this quest.",
+        "You can continue as any job at this point.",
+        {
+            text = "Go to Eldieme Necropolis and kill Dark Stalkers until a Tavnazia Bell drops.",
+            substeps = {
+                "There are 4 spawn points near the Hume Bones from the drop at (G-8) in the center of map 2.",
+                "There are also 4 spawns at C and B drops of map 1.",
+            },
+        },
+        {
+            text = "Travel to Fei'Yin and zone in for a cutscene.",
+            substeps = {
+                "Warping to the Home Point will trigger the cutscene",
+            },
+        },
+        {
+            text = "Locate the ??? at (G-8) on Map 1. This is just to west of the big fountain. Trade the Tavnazia Bell to the ??? to pop Altedour I Tavnazia . Be warned he is one of the strongest AF NMs out there. He will drop a Tavnazian Mask .",
+            substeps = {
+                "This ??? used to be located closer to Homepoint #1 and still appears there on some older maps, but it is now at (G-8), just west of the big fountain.",
+                "If more than one character is doing this quest, you will have to wait a few minutes before popping the NM again. You will get \"You find nothing.\" for a few minutes when trying to trade the Tavnazia Bell .",
+            },
+        },
+        "Trade the Tavnazian Mask to Narcheral in the Cathedral upstairs in Northern San d'Oria at (M-6) to receive your Healer's Bliaut .",
+    },
+
+    sdz_co_prelude_black_white = {
+        {
+            text = "As a White Mage, examine the Door: Prince Regent's Rm in Chateau d'Oraguille at (H-8) to start this quest.",
+            substeps = {
+                "You must be able to access Chateau d'Oraguille .",
+            },
+        },
+        "Go to Castle Oztroja or Castle Zvahl Keep and kill Yagudo Abbots until a Yagudo Holy Water drops.",
+        {
+            text = "Yagudo Abbots spawn behind the brass door at (G-8) on map 3.",
+            substeps = {
+                "The combination to these levers can be found behind the secret door at (I-10) on the same map.",
+                "Yagudo Abbots located at (G-9) & (G-10) on map 2 in Castle Zvahl Keep can also drop Yagudo Holy Water. Although fewer of them spawn in this zone, they are 1-7 levels lower than Yagudo Abbots in Castle Oztroja.",
+            },
+        },
+        {
+            text = "Find a pair of Moccasins",
+            substeps = {
+                "Purchasable from the Auction House",
+                "Dropped from Multiple Enemies",
+                "Synthesized from a level 59 Leathercraft synth",
+            },
+        },
+        "Take the pair of Moccasins and the Yagudo Holy Water to Narcheral (M-6) in Northern San d'Oria to complete this quest and obtain your Healer's Duckbills .",
+    },
+
+    sdz_ss_rosel_the_armorer = {
+        "Upon speaking to Rosel in Southern San d'Oria , he will ask you to deliver Receipt for the prince to either Prince Pieuje or Prince Trion in Chateau d'Oraguille . The chosen prince is random, but if you forget which was chosen you can return to Rosel for a reminder.",
+        "Leave Rosel's Armour Shop and head west into Victory Square. Head north through Victory Arch into Northern San d'Oria . Proceed straight north towards Chateau d'Oraguille.",
+        "Look for the NPC Guilerme , a guard standing near the bridge into the Chateau. Upon speaking to him, he will take the receipt but is unable to read the intended recipient. After you tell him which prince, Pieuje or Trion, he will run into the Chateau to deliver the receipt.",
+        "After the cutscene with Guilerme is complete, return to Rosel for your reward. If Guilerme was told the right prince, you will receive 200 gil for a reward. However, if the wrong prince was chosen, you will only receive 100 gil.",
+    },
+
+    sdz_ns_sharpening_sword = {
+        "In order to start this quest, it's necessary to trade back the fishing rod to Ailbeche from the previous quest Father and Son .",
+        {
+            text = "Speak with Ailbeche near Home Point #2 to begin the quest.",
+            substeps = {
+                "He will ask you for an Ordelle whetstone .",
+            },
+        },
+        {
+            text = "Talk to Sobane in (D-6) of Southern San d'Oria.",
+            substeps = {
+                "Be sure to talk to her twice if you get a cutscene the first time.",
+            },
+        },
+        {
+            text = "Enter Ordelle's Caves from the entrance in La Theine Plateau position (F-7). This will put you on map 2.",
+            substeps = {
+                "Taking the survival guide to Ordelle's Caves is the fastest route.",
+            },
+        },
+        "Take the first left and walk towards (I-6) on map 2 on to use exit B which will put you on map 1. Walk towards (H-9) exit D, which will put you back on map 2 again.",
+        {
+            text = "Examine the Stalagmite in the circular room at (H-10) on map 2 to pop the NM Polevik an Earth Elemental.",
+            substeps = {
+                "Be careful not to fall down the hole in this room.",
+            },
+        },
+        "Defeat the Polevik, then examine the Stalagmite again to obtain the key item: Ordelle whetstone .",
+        "Return to Ailbeche to end the quest and receive your reward.",
+    },
+
+    sdz_ss_signed_in_blood = {
+        {
+            text = "Speak to Sobane who will request you bring her a Cathedral Tapestry .",
+            substeps = {
+                "Cathedral Tapestry drops off Orcish Fighters in Fort Ghelsba or the Yughott Grotto .",
+            },
+        },
+        "Trade the Cathedral Tapestry to Sobane .",
+        "Travel to Selbina and speak to Abelard (G-9).",
+        {
+            text = "Head to Ordelle's Caves obtain an Ordelle Chest Key off the monsters inside.",
+            substeps = {
+                "Certain monsters in the cave drop the key. To reach that area, take path D on map 1, drop into the southeastern hole depicted on map 2, then take path E .",
+                "The high-level mobs Buds Bunny , Swagger Spruce , Targe Beetle do not aggro.",
+            },
+        },
+        "Use the key on a chest inside to receive Torn-out pages .",
+        "Return to Abelard .",
+        "Speak to Sobane to complete this quest.",
+    },
+
+    sdz_ss_sleepless_nights = {
+        "Mary's Milk is a drop off of Stray Mary in Konschtat Highlands .",
+        "Can also be bought off an auction house.",
+        "Obtain one and trade it Paouala your reward.",
+    },
+
+    sdz_ns_sorcery_of_north = {
+        "Zone after completing Healing the Land to begin this quest.",
+        "Speak to Eperdur in Northern San d'Oria (M-7) second level of the Cathedral.",
+        "Travel to Fei'Yin to open a Treasure Chest .",
+        {
+            text = "Obtain a Fei'Yin Chest Key by defeating Shadows , Underworld Bats and Ore Golems in that area.",
+            substeps = {
+                "If you possess the \"Rhapsody in White\" , a key can be purchased from a Curio Vendor Moogle .",
+            },
+        },
+        "Open a treasure chest using either the key or Thief's Tools to obtain the Fei'Yin magic tome .",
+        "Return to Eperdur to receive your reward.",
+    },
+
+    sdz_bo_souls_in_shadow = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Novalmauge will grant you the key item Weapons Training Guide as well as the Scythe of Trials . You will need to break the latent on the Scythe of Trials before completing the rest of the quest.",
+        "Breaking the Latent",
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Take Silent Oil and Prism Powder with you and head to the Temple of Uggalepih . Make sure that you either have a Paintbrush of Souls or someone in your party has one.",
+        "Once inside the Temple, head to the first intersection and go south. At the next T-intersection, head north to another T-intersection and go north again. This will zone you into Yhoator Jungle ; you will then need to head west and south directly back into the Temple of Uggalepih .",
+        "This time, when you enter the Temple, you will head to the first intersection and go west. Go through the Wooden Gate and continue south until you reach a T-intersection; head east here. Defeat the Temple Guardian that protects the Granite Door and head east into the large circular room. Take the hallway in the northeastern part of this room at (J-9). Use the Paintbrush of Souls to open the Granite Door at (I-7) and head into the Den of Rancor .",
+        "Inside the Den, head south and turn immediately to the east when the room opens up. Take the north tunnel and go east at the intersection. Head down this tunnel until it opens up into a large room. Go south through this room to (I-13); this is where the ??? is to spawn the NM.",
+        "This fight is against Mokumokuren , a hecteyes . Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Novalmauge to receive your reward.",
+    },
+
+    sdz_ss_spice_gals = {
+        "Talk to Rouva on the West side of Victory Square (I-8) to begin the quest. She will ask you to bring her a sprig of Rivernewort .",
+        {
+            text = "The Rivernewort key item can be found at a ??? located in either Riverne - Site #B01 or Riverne - Site #A01 . To get to either you will require Giant Scale(s) , or the Home Point Warps, to teleport through the Unstable Displacements.",
+            substeps = {
+                "Riverne - Site #A01: The ??? is found on the island at (E-8) containing the zone to Monarch Linn . Two Giant Scales are required. (The Home Point warp places you at (I-9)).",
+                "Riverne - Site #B01: The ??? is found on the island at (E-7), just before the final Stable Displacement heading towards Monarch Linn island. One Giant Scale, or the Home Point warp, is required.",
+            },
+        },
+        "Once you have acquired the Rivernewort, return to Rouva for your reward; a Page from Miratete's Memoirs .",
+        "Like other Experience Points scroll quests, it can be completed once per Conquest tally.",
+    },
+
+    sdz_ss_starting_a_flame = {
+        "Speak to Legata in the Lion Spring's Tavern to begin the quest.",
+        "Trade her 4 Flint Stones for your reward.",
+    },
+
+    sdz_ss_tea_with_tonberry = {
+        {
+            text = "Speak to Sobane to begin this quest.",
+            substeps = {
+                "You will need to zone after finishing Signed in Blood .",
+            },
+        },
+        {
+            text = "You will need a Attohwa Ginseng for the next part of the quest.",
+            substeps = {
+                "Attohwa Ginseng drops off Gallinippers , Ogreflys , and Monarch Ogreflys in Attohwa Chasm .",
+            },
+        },
+        {
+            text = "Enter Carpenters' Landing by taking the entrance from Jugner Forest (J-8).",
+            substeps = {
+                "The Carpenters' Landing Survival Guide will put you right next to Anguenet .",
+            },
+        },
+        "Speak to Anguenet (J-10) and trade him the Attohwa Ginseng . In return, he will give you a Tonberry blackboard .",
+        {
+            text = "Purchase a ticket and board a barge headed for Central Landing via Emfea Way.",
+            substeps = {
+                "This barge leaves at 00:50 every game day, from the docks next to Anguenet .",
+            },
+        },
+        "On the ship, you will find Riche . Speak to him and ask him all five questions. After you ask him all the questions, he will take the Tonberry blackboard from you.",
+        {
+            text = "Head to Fei'Yin and kill the Shadows there until they drop Treasury Gold .",
+            substeps = {
+                "You only need one per party.",
+            },
+        },
+        "Go to Davoi and trade the Treasury Gold to the ??? (J-11) to spawn the NM Hematic Cyst .",
+        "After the Hematic Cyst is defeated, check the ??? again for a cutscene.",
+        "Return to Sobane for your reward.",
+    },
+
+    sdz_ps_brugaire_consortium = {
+        {
+            text = "Talk to Fontoumant (in Cargo Room B), who asks you to deliver parcels to various NPCs in Port San d'Oria . You can only hold 1 parcel at a time, so deliver it then return to him for another.",
+            substeps = {
+                "Magic Shop Parcel  Regine (J-8)",
+                "Auction Parcel  Apstaule (located upstairs) (H-10)",
+                "Pub Parcel  Thierride (G-7)",
+            },
+        },
+        "Once all parcels are delivered, talk to him again for your reward.",
+    },
+
+    sdz_ss_crimson_trial = {
+        {
+            text = "Speak to Sharzalion in the Lion Springs Tavern (K-6) Southern San d'Oria with Red Mage as your main job.",
+            substeps = {
+                "You only have to be on RDM to start the quest.",
+                "You must have selected the right answer \"Yes\" to start the quest.",
+            },
+        },
+        {
+            text = "Go to Davoi and fight Purpleflash Brukdok (BLM) at (E-9)/(F-9) to obtain a Davoi Storage Key .",
+            substeps = {
+                "You may need Sneak and Invisible as some enemies you pass will aggro even at level 99.",
+                "Enter the creek from the broken bridge at (I-8) or from the ramp down to the creek at (J-10). Walk through the creek towards the fork at (I-9) and take the west fork. Continue toward the west area of the map to reach (D-8). A ramp at (D-8) will let you exit the creek entering the area with the target NM.",
+                "NM drops 1 Key and has 10 min re spawn time, each RDM doing the quest needs a key to finish.",
+            },
+        },
+        {
+            text = "Trade the Davoi Storage Key to the targetable Storage Hole that moves throughout the zone randomly at the end/start of each game day.",
+            substeps = {
+                "Storage Holes are usually located in the open areas.",
+                "These can be seen on the ground, usually there's a few per open field but only one will be targetable.",
+                "Storage Hole Locations : (E-10), (F-6), (F-7), (F-9), (G-9), (G-10), (H-8), (I-7), (I-8), (J-7), (J-8), (K-7), (K-8), (K-9), (K-10).",
+            },
+        },
+        "You will obtain the key item Orcish dried food after trading the key.",
+        "Return to Sharzalion after obtaining the requested item to receive your Fencing Degen .",
+    },
+
+    sdz_ps_dismayed_customer = {
+        "Speak with Gulemont to begin quest.",
+        "Travel to West Ronfaure to locate a ???. It will appear in one of the following 3 locations:",
+        "When you locate the ???, touch it to obtain Gulemont's document",
+        "Return to Gulemont and speak with him to end quest.",
+    },
+
+    sdz_co_generals_secret = {
+        "Speak to Curilla and agree to help her to receive Curilla's bottle .",
+        "Head to Horlais Peak by going through Yughott Grotto .",
+        "Once in Horlais Peak , head to the Hot Springs in the springs and check it to get Curilla's bottle again. To confirm you filled it, because the name doesn't change, observe the text description of the item under \"Temporary Items\". It should read \"The bottle from general Curilla. It is full of water from the hot spring that flows from the Horlais Peak\"",
+        "Return to Curilla for your reward.",
+    },
+
+    sdz_ps_the_holy_crest = {
+        {
+            text = "Speak to Arminibit and Ceraulian in Port San d'Oria (I-9) inside Cargo Room A.",
+            substeps = {
+                "Auction House or Mog House Home Point are both close.",
+            },
+        },
+        {
+            text = "Speak to Novalmauge who walks between (F-8) and (G-8) in Bostaunieux Oubliette Map 1 (enter from Northern San d'Oria (I/J-6) HP#2 and then Chateau d'Oraguille (I/J-8) ) for a cutscene.",
+            substeps = {
+                "Access to Chateau d'Oraguille is required to talk to Novalmauge in the Bostaunieux Oubliette . You must be at least Rank 2 in San d'Oria , or have started Mission 2-3 as a Bastok / Windurst citizen in order to enter Chateau d'Oraguille .",
+                "Note: If you have not yet completed the quest The Rumor ( Drain Quest), you can speak to Novalmauge a second time to accept The Rumor . You no longer need to complete The Rumor before advancing the job quest.",
+            },
+        },
+        {
+            text = "Speak to Morjean in Northern San d'Oria (L-7), within the Cathedral's Manuscript room for a cutscene.",
+            substeps = {
+                "The quest will show up on quests tab now.",
+            },
+        },
+        {
+            text = "If you don't already happen to have some, buy a Pickaxe .",
+            substeps = {
+                "Ostalie in Southern San d'Oria (F-8) around Home Point #4 is nearby.",
+                "Trailblazing Pickaxe does not work . It must be a regular Pickaxe.",
+            },
+        },
+        {
+            text = "Go to the Maze of Shakhrami and trade (/trade) a Pickaxe to an Excavation Point to receive a Wyvern Egg .",
+            substeps = {
+                "If you come across \"Fossil Rock,\" they are unrelated to this quest.",
+                "See the map on the right for Excavation Points (blue dots).",
+            },
+        },
+        "Return to Morjean and speak to him with the Wyvern Egg in your inventory.",
+        {
+            text = "Travel to Meriphataud Mountains (K-8) and look for a ??? near the base of Drogaroga's Spine . Trade the Wyvern Egg to it for a cutscene.",
+            substeps = {
+                "Quickest way is the Survival Guide to Castle Oztroja via Aragoneu . Step outside and you're looking at the spine's base.",
+            },
+        },
+        {
+            text = "Speak to Rahal in Chateau d'Oraguille (H-9).",
+            substeps = {
+                "He will provide you the Dragon curse remedy .",
+            },
+        },
+        {
+            text = "Travel to Ghelsba Outpost to find the Hut Door at (F-10/G-10) to enter a BC fight. Quickest way to BC Entrance is Domenic Teleport NPC in Lower Jeuno .",
+            substeps = {
+                "The enemy in this BC is Wyvern Notorious Monster that is approximately level 40.",
+                "Only people up to this point in the quest or players who have already completed the quest may enter this BC.",
+                "You are unable to summon trusts in this fight.",
+            },
+        },
+        "Upon defeating the Wyvern, you will receive your reward.",
+        "There are more wyvern names to choose from if you pay to rename it.",
+    },
+
+    sdz_ns_medicine_woman = {
+        "After speaking with Abeaule head over to Southern San d'Oria (G-6) and speak with Amaura .",
+        {
+            text = "Amaura requires certain ingredients to brew the medicine, and gives you Amaura's formula which lists them:",
+            substeps = {
+                "1 Insect Wing",
+                "1 Malboro Vine",
+                "1 Zinc Ore",
+            },
+        },
+        "Gather and trade the listed items to Amaura to get the Cold medicine key item.",
+        "Deliver the medicine to Abeaule for your reward.",
+    },
+
+    sdz_ss_merchants_bidding = {
+        {
+            text = "Speak to Parvipon the tanner in Southern San d'Oria at (E-8) outside of the Leathercraft Guild to begin the quest.",
+            substeps = {
+                "The first time you undertake the quest, you must respond with I shall help. before you can proceed. It's unnecessary to speak with him again for subsequent trade-ins.",
+            },
+        },
+        {
+            text = "Trade Parvipon Rabbit Hide x3 for your reward.",
+            substeps = {
+                "Easily purchased upstairs in the extremely close Leathercraft/Tanner's guild from Cletae (D-8) - the NPC of the two who is always open and stocked.",
+            },
+        },
+        "Repeat this quest as often as you like, as Parvipon requires a steady flow of hides.",
+    },
+
+    sdz_ps_the_pickpocket = {
+        "Talk to Miene by the water, which will start a cut-scene revealing a burglary in process.",
+        "Talk to Altiret , who asks you to retreive the stolen item.",
+        {
+            text = "Talk to Miene to obtain a clue, an Eagle Button .",
+            substeps = {
+                "(Optional) You can attempt to trade the button to Altiret.",
+            },
+        },
+        {
+            text = "(Optional) Several guard and bystander NPCs will have comments about the thief:",
+            substeps = {
+                "Port San d'Oria:",
+                "Northern San d'Oria:",
+                "For just the ones that give hints:",
+            },
+        },
+        "Head out to West Ronfaure and look for Esca inside a tower at (F-6). She will demand evidence.",
+        "Trade the button to her, prompting her to admit she was the thief.",
+        "After receiving the Gilt Glasses , return them to Altiret for your reward.",
+    },
+
+    sdz_ps_the_rivalry = {
+        "The quest begins from either Joulet (for 'The Competition') or Gallijaux (for 'The Rivalry').",
+        "Trade whichever NPC you want 10,000 Moat Carp and/or Forest Carp .",
+        "Ufanne , Port San d'Oria (H-8) keeps track of how many fish you have turned in, and to which brother. You may need to speak to her multiple times.",
+        "Talking to either brother will tell you how many carp they have been traded by all players since last server maintenance.",
+    },
+
+    sdz_bo_the_rumor = {
+        "Speak to Novalmauge in Bostaunieux Oubliette to begin this quest.",
+        "Trade Novalmauge a vial of Beastman Blood to complete the quest.",
+    },
+
+    sdz_ss_the_seamstress = {
+        "Obtain 3 Sheepskins . Cletae in the building right behind her sells them.",
+        "Speak with Hanaa Punaa on the second floor balcony of the Leathercraft guild to start quest and then trade her the 3 skins to complete quest.",
+    },
+
+    sdz_ns_setting_sun = {
+        "Speak to Vamorcote to begin this quest.",
+        {
+            text = "Head to the island in Batallia Downs (J-11).",
+            substeps = {
+                "The only way to get to the island is to first go through The Eldieme Necropolis .",
+                "Enter The Eldieme Necropolis from (I-10) Batallia Downs . Survival Guide puts you in the correct part of Eldieme for this quest.",
+                "Once inside hug the South side until you reach a large room at (G-9). Fall through the grave in the center of this room.",
+                "Follow the path South until you exit onto the island in Batallia Downs .",
+            },
+        },
+        {
+            text = "On this island is an NM named Ahtu . Defeat Ahtu to obtain an Engraved Key .",
+            substeps = {
+                "(Optional) A Stone Monument for the quest An Explorer's Footsteps is also here.",
+            },
+        },
+        "Trade the Engraved Key to Vamorcote to complete this quest.",
+    },
+
+    sdz_ss_sweetest_things = {
+        {
+            text = "Speak with Raimbroy twice to begin quest.",
+            substeps = {
+                "Close to Home Point #4",
+            },
+        },
+        {
+            text = "Obtain 5 pots of Honey and trade to Raimbroy to end quest.",
+            substeps = {
+                "Can be Purchased From Windurst Waters Cooking Guild Chomo Jinjahl",
+            },
+        },
+    },
+
+    sdz_ns_trader_in_forest = {
+        "Start this quest by speaking to Abeaule . He needs someone to fill an order for him. Accept this task and he will give you a Supplies Order .",
+        {
+            text = "Take the Supplies Order to the tower at (I-11) in West Ronfaure and trade them to Phairet . You will receive the batagreens .",
+            substeps = {
+                "Trading him 50 gil will also get you the batagreens as long as the quest has been flagged.",
+            },
+        },
+        "Take the batagreens back to Abeaule for your reward.",
+    },
+
+    sdz_ns_vicasques_sermon = {
+        "Talk to Abioleget, who needs you to deliver Blue Peas .",
+        "Trade him 70 gil to receive the peas.",
+        "Look for Andelain in East Ronfaure at (J-11).",
+        "After giving him the peas, return to Abioleget for your reward.",
+    },
+
+    sdz_ps_thick_shells = {
+        "Speak to Vounebariont to begin this quest.",
+        "Trade Vounebariont 5 Beetle Shells to complete this quest.",
+        "5-6 Stacks of Beetle Shells increase fame from 1~ to 9 Max Fame.",
+    },
+
+    sdz_ss_tigers_teeth = {
+        "Trade Black Tiger Fang x3 to Taumila to complete this quest.",
+    },
+
+    sdz_ss_cure_a_cough = {
+        {
+            text = "Speak to Nenne , Southern San d'Oria (F-6)",
+            substeps = {
+                "Important note: this quest will not immediately appear on your quest log until the actual 'item hunt' portion of the quest has been activated (see below).",
+                "(Optional) You can speak to her again to ask her some questions.",
+            },
+        },
+        "Once you have heard Nenne's story, go into the first house on Watchdog Alley (G-7) and go upstairs into a bedroom and on the table there is a diary. Click this and the option to read a diary will appear. Read the diary up to page 3 to continue to the next portion.",
+        {
+            text = "Speak to Amaura (G-6) who will ask for Thyme moss .",
+            substeps = {
+                "To get the moss, you need to examine a ??? at (F-9) in Davoi .",
+                "The ??? is behind the one-way barrier in the center-north of (F-9). To get to it, access the waterway at (J-10) and then follow it north and west. Go south at (D-8).",
+            },
+        },
+        "Return the moss to Amaura who will give you Cough medicine .",
+        "Speak to Nenne who will give you a Scroll of treasure as your reward.",
+        "The scroll leads you to the signpost at (H-6) in East Ronfaure .",
+        "Examine the signpost for 3,000 gil.",
+    },
+
+    sdz_ns_trial_by_ice = {
+        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        "Speak with Gulmama to obtain quest. If you are positive that you have the required fame but she is not allowing you to undertake this quest, continue speaking with her until her text changes. Once you have received the key item : Tuning fork of ice , you can now safely undertake the quest.",
+        {
+            text = "Travel to Beaucedine Glacier and enter the ruins of Fei'Yin at (J-4). In Fei'Yin (Map A) travel to (G-9) and go down the stairs to the second map. In the basement (Map B) travel to (I-5) to find the entrance to the Cloister of Frost .",
+            substeps = {
+                "Preferably, home point to Fei'Yin #2. If you don't have it yet, make sure to grab it on the way.",
+            },
+        },
+        "Defeat Shiva Prime to receive the key item: Whisper of frost",
+        "Return to Gulmama with the whisper and she will provide several reward options including the ability to summon Shiva (Avatar) .",
+    },
+
+    sdz_ns_trial_size_ice = {
+        "Speak with Castilchat in Northern San d'Oria (E-7) to begin quest and obtain a Mini Tuning Fork of Ice .",
+        "You may prepare for the upcoming battle and whenever you are ready, trade Castilchat the tuning fork to be transported to the arena.",
+        "Trade the fork to the Ice Protocrystal to enter the fighting arena.",
+        "Defeat Shiva Prime to complete quest.",
+    },
+
+    sdz_ns_trouble_at_sluice = {
+        "Speak to Belgidiveau to begin the quest.",
+        "Speak to Novalmauge , Bostaunieux Oubliette (G-8).",
+        "Trade Novalmauge a Dahlia to receive Neutralizer .",
+        "Return to Belgidiveau to complete this quest.",
+    },
+
+    sdz_ref_trust_sandoria = {
+        "Speak to Gondebaud in Southern San d'Oria at (L-6), he will give you the Red institute card .",
+        {
+            text = "Head to Northern San d'Oria and speak to Excenmille at (D-9).",
+            substeps = {
+                "If this is not your first Trust quest that you are completing, at this point you will be finished with the quest and receive the San d'Oria Trust permit .",
+                "If this is your first Trust quest, you must use the Trust magic spell \"Excenmille\" in either West Ronfaure or East Ronfaure . After, return to Excenmille for the San d'Oria Trust permit .",
+            },
+        },
+    },
+
+    sdz_co_under_oath = {
+        {
+            text = "Examine the door to Prince Trion 's room (Door: Prince Royal's Rm) at Chateau d'Oraguille (H-7) while you are a Paladin for a cutscene.",
+            substeps = {
+                "If you were a Paladin when you completed the previous quest, A Boy's Dream , you have already received this cutscene. Check your active Quests and you should see \"Under Oath\".",
+            },
+        },
+        "The rest of this quest can be completed as any job from this point on.",
+        "Speak to Vemalpeau , Southern San d'Oria (M-7), inside a house.",
+        "Speak to Najjar , Southern San d'Oria (K-6) inside the Lion Springs Tavern, who will mention ( Key Item ) Mique's paintbrush .",
+        "Speak to Ullasa , Southern San d'Oria (B-6) inside the Count's Manor, who will mention ( Key Item ) Mique's paintbrush .",
+        {
+            text = "Obtain a Zvahl Coffer Key and trade it to a Treasure Coffer in Castle Zvahl Baileys to get ( Key Item ) Mique's paintbrush .",
+            substeps = {
+                "You can purchase a Zvahl Coffer Key from the Curio Vendor Moogle for 5,000 gil if you have the \"Rhapsody in Umber\" KI.",
+            },
+        },
+        "Return to Vemalpeau .",
+        "Head to the second story in Vemalpeau 's house and examine the ??? on the painting. Look behind the painting and read the letter for ( Key Item ) Strange sheet of paper .",
+        "Speak to Exoroche (K-7) in Helbort's Blades who will tell you how to read the letter.",
+        "Head to Davoi and locate the Village Well at (G-9).",
+        {
+            text = "Examine the Village Well will spawn 2 NMs:",
+            substeps = {
+                "Three-eyed Prozpuz ( RNG )",
+                "One-eyed Gwajboj ( PLD )",
+            },
+        },
+        "Trade the Well Weight to the Village Well for a cutscene and ( Key Item ) Knight's confession .",
+        "Speak to Ailbeche , Northern San d'Oria (J-9).",
+        "Travel to Jugner Forest and head for the Maiden's Spring at (E-6). When you get close to the spring, a cutscene will start.",
+        "Head back to Chateau d'Oraguille and speak to Prince Trion for your reward.",
+        {
+            text = "You may additionally talk to Ailbeche , Exoroche , and Vemalpeau for more quest-related dialogue.",
+            substeps = {
+                "Vemalpeau will take your Knight's confession key item.",
+            },
+        },
+    },
+
+    sdz_ns_undying_flames = {
+        "Speak to Pagisalis located in the basement of the cathedral to begin this quest.",
+        "Trade him 2 Beeswax to complete this quest.",
+    },
+
+    sdz_ns_unexpected_treasure = {
+        "Purchase a Cupboard from the furniture shop in Northern San d'Oria (F-8) and put it in your mog house.",
+        "Zone out and back into your mog house.",
+        "Wait some time (between 10-15 real-world minutes).",
+        {
+            text = "Talk to your Moogle. He will say he found something, and give you a Small teacup .",
+            substeps = {
+                "If the Moogle does not give you the item, you may not have waited long enough.",
+            },
+        },
+        "Return to the furniture shop and speak to Morunaude twice.",
+        "Speak to Calovour in the Cathedral (M-6).",
+        "Bring Calovour a Mistletoe to complete this quest.",
+    },
+
+    sdz_ns_warding_vampires = {
+        "Speak to Maloquedil to begin this quest.",
+        {
+            text = "Trade him 2 Shaman Garlic to complete this quest.",
+            substeps = {
+                "Shaman Garlic drop off Orcish Cursemakers .",
+            },
+        },
+    },
+
+    sdz_ns_waters_of_cheval = {
+        "Talk to Miageau, and he will have you run an errand for him.",
+        "Trade 10 gil to Nouveil , who should be nearby Miageau, to receive a Blessed Waterskin .",
+        "Head to the mouth of the river at (H-5) in East Ronfaure and find a target named the Cheval River .",
+        "Trade the waterskin to it then return to Miageau , and trade the Cheval Water to him for you reward.",
+    },
+
 }
 
 return Q

@@ -1,1365 +1,1762 @@
 local Q = {}
 
+-- Generated from BG-Wiki by tools/build_sandoria_quests.py.
+
 Q.STEPS = {
 
-    -- ========================================================
-    -- PORT BASTOK
-    -- ========================================================
-
-    bsz_pb_welcome_to_bastok = {
-        "Talk to Powhatan; he's foolishly told someone coming into the port that he'll meet him wearing a shell shield when he doesn't have one.",
-        "Obtain a Shell Shield and equip it.",
-        "Talk with the clerk Bartolomeo in the Arrivals section of the Air Travel Agency with the Shell Shield equipped. This triggers a cutscene where an NPC named Evrain appears. You exchange greetings and then he finds his own way to the tavern where Powhatan is waiting.",
-        "Talk to Powhatan again to complete the quest.",
-        "You keep the Shell Shield.",
-    },
-
-    bsz_pb_beauty_and_galka = {
-        "Talk to Talib at (Port Bastok F-6) in Port Bastok (Home Point #3) downstairs in warehouse 2 for a cutscene where Cornelia asks your help to get a Zinc Ore for her friend Parraggoh and hints that you can get them from monsters in Gustaberg. Accept the quest and Talib will agree to take the ore from you when you get it.",
-        "If you decline the quest you can start it by talking to Parraggoh.",
-        "(Optional) Talk to Talib again and he explains that Cornelia is making the ore delivery for Parraggoh who was injured and can't do it himself. He also tells you where you can find Parraggoh.",
-        "Trade a Zinc Ore to Talib to receive the Palborough Mines Logs.",
-        "Talk to Parraggoh at (Bastok Mines H-5) in Bastok Mines (Home Point #1) inside the first house down the ramp to the lower level to complete the quest.",
-        "(Optional) After completing The Eleventh's Hour, return to Parraggoh for additional dialoge.",
-    },
-
-    bsz_pb_quadavs_curse = {
-        "Talk to Corann inside the house at (K-6). He's got a phobia about going outside, but he thinks that if you brought him something large to hide in it would help.",
-        "Taking a hint from the name of the quest, obtain a Quadav Backplate and trade it to Corann to complete the quest.",
-        "The nearest drops for Quadav Backplate are from Amethyst Quadav in North Gustaberg and Palborough Mines.",
-    },
-
-    bsz_pb_guest_of_hauteur = {
-        "Talk to Gudav; he's worried about the project foreman since the project was cancelled. He wants you to keep an eye out for him and his dog.",
-        "(Optional) Talk to Dehlner in Port Bastok (H-5) and he'll give you a hint as to where the foreman is.",
-        "Obtain a Dog Collar. They are dropped by Black Wolves in North Gustaberg. They are also available at the Auction House.",
-        "Bring it back to Gudav. He recognizes it and realizes that the foreman has gone on to the next life and the wolf was the undead soul of the foreman's dog. Grateful for an answer, he gives you your reward.",
-    },
-
-    bsz_pb_wisdom_of_elders = {
-        "Talk to Benita; she's having problems cleaning her chimney but says her mother-in-law has a secret for doing it easily.",
-        "Talk to the mother-in-law (outside at [I-5]), Tete, to find out about Bomb Ash.",
-        "Trade a Bomb Ash to Benita to complete the quest.",
-    },
-
-    bsz_pb_ayame_and_kaede = {
-        "{Port Bastok J-5 northernmost house} Talk to Kaede for a cutscene.",
-        "{Port Bastok F-6 Warehouse 2} Talk to Kagetora.",
-        "upper floor, western warehouse",
-        "{Port Bastok J-5 northernmost house} Talk to Ensetsu who will ask you for a favor. Optional: Benita has additional dialogue.",
-        "This quest will now appear in the Bastok quests log.",
-        "{Korroloka Tunnel Map 5 L-8} Find a ??? that spawns three Korroloka Leeches.",
-        "Kill them and click on the ??? to get some Strangely Shaped Coral.",
-        "If you receive the message \"You see nothing out of the ordinary,\" simply wait for the leeches' bodies to vanish. Then you can get the coral by checking the ???. Not everyone has this issue.",
-        "If more than one party member needs this fight, the leeches only need to be popped & killed once.",
-        "NOTE: The player who spawned the leeches must click the ??? last. Otherwise the players who did not spawn the leeches will be unable to obtain the Strangely Shaped Coral.",
-        "There are Thread Leeches nearby that link with the Korroloka Leeches.",
-        "It is helpful to clear the area of the leeches before checking the ??? to avoid links.",
-        "Ghosts also spawn in the area.",
-        "{Port Bastok J-5 northernmost house} Talk to Ensetsu.",
-        "He tells you to take the coral to Norg.",
-        "{Norg H-8} Talk to Ryoma on the docks to receive a Sealed Dagger.",
-        "If this is your first trip to Norg, you will need the Airship pass for Kazham or be on the Rhapsodies of Vana'diel mission The Beginning or higher to be able to go there.",
-        "Port Jeuno > Kazham > Yuhtunga Jungle > Sea Serpent Grotto (sneak/blood aggro at 30) > Norg",
-        "{Port Bastok J-5 northernmost house} Return the dagger to Ensetsu.",
-        "This final cutscene finishes the quest.",
-        "Completion of the Quest requires access to Norg either via an Airship pass for Kazham or by completing The Beginning from the Rhapsodies of Vana'diel Missions storyline.",
-        "The Korroloka Leeches immediately attack the player who examines the ???. If this player is low-leveled, he/she may die from this. It is a good idea to have that player use Sneak (item/spell/ability) to prevent this, or have another player use an AoE attack to quickly attract the leeches' attention.",
-        "If the player who examines the ??? dies, even if all the Korroloka Leeches are killed before they are raised, they can still obtain the Strangely Shaped Coral by checking the ???.",
-        "It is not necessary to kill all three leeches. If you hold one leech without aggroing or linking the other two, you can wait for the two passive leeches to despawn. Then, you can kill the leech you were holding and receive credit for the fight. The game only checks that the last remaining leech is defeated. Note that spawning the leeches and letting all three despawn does not allow you to get the key item.",
-        "Leeches have ~250 HP each.",
-    },
-
-    bsz_pb_fear_of_flying = {
-        "Talk to Kurando to accept the quest. He can be found at the end of the tunnel between the construction area and the water side.",
-        "Go to Rolanberry Fields and hunt the Silk Caterpillar (see testimonials) - it spawns every 11 minutes in the area of K-7, when the Airship flies by overhead. Kill it to get the Silkworm Egg. You will see a piece of Crag material sticking out of the ground. The Silk Caterpillar spawns just behind this.",
-        "Go back to Kurando and trade him the Silkworm Egg to get your reward.",
-    },
-
-    bsz_pb_forever_to_hold = {
-        "Talk to Qiji and he will tell you he wants to give his wife a Brass Hairpin.",
-        "Give Qiji's wife, Romilda, who is standing next to him, a Brass Hairpin.",
-        "Talk to Qiji for your reward.",
-    },
-
-    bsz_pb_till_death_do_part = {
-        "Zone after Forever to Hold quest.",
-        "Talk to Romilda.",
-        "Trade some Cotton Gloves to Romilda to complete the quest and receive your reward.",
-    },
-
-    bsz_pb_silence_of_rams = {
-        "Talk to Paujean on the bottom floor of Warehouse 2 (Bastok).",
-        "Trade Paujean a Rampaging Horn and a Lumbering Horn to complete the quest.",
-        "The Lumbering Horn drops from Lumbering Lambert (level 27-28) or Bloodtear Baldurf (level 55-56) in La Theine Plateau.",
-        "The Rampaging Horn drops from Rampaging Ram (level 27-28) or Steelfleece Baldarich (level 55-56) in Konschtat Highlands.",
-    },
-
-    bsz_pb_bite_the_dust = {
-        "Talk to Yazan.",
-        "Obtain a Sand Bat Fang, either by killing the Sand Bats that drop them in the Valkurm Dunes, or from the Auction House, under Bonecraft.",
-        "Trade the Sand Bat Fang to Yazan to complete the quest .",
-    },
-
-    bsz_pb_ladys_heart = {
-        "Talk to Wahid in Bastok Mines (Home Point #1); he's a collector of precious gems and is looking for a Siren's Tear. He says they can be found near the rivers of the Gustaberg Mountains but will slip through your fingers unless they are handled in a special way. Also, there is a bard in a tavern somewhere who has advice on how to get the jewel.",
-        "(Optional) Talk to Otto at the Steaming Sheep in Port Bastok E-6; he will point to the bard mentioned above, Carmelo.",
-        "(Optional) Talk to Carmelo; he sings a cryptic song explaining how to get the tear and he explains its meaning.",
-        "Go to North Gustaberg (east section) and locate the ??? along the river at North Gustaberg J-8 and North Gustaberg J-9. (You can avoid aggro by going via Port Bastok Home Point #1.) The ??? will move around the shore line, so it's not always in the same spot. A good strategy is to check one side of the river, then the other until you find the ???.",
-        "Unequip your weapon and shield and examine the ??? to pick up the Siren's Tear.",
-        "Trade the tear to Wahid to complete the quest.",
-        "It is possible for a Monk or Puppetmaster to obtain the tear with no weapons equipped.",
-    },
-
-    bsz_pb_lure_of_wildcat = {
-        "Talk to Alib-Mufalib who will give you the Key Item: Blue Sentinel Badge. He will tell you about his company, \"Salaheem's Sentinels,\" which has been sanctioned by the Empire of Aht Urhgan and is currently recruiting new members.",
-        "Check the badge to get coordinates for the people you should talk to in each area.",
-        "You will know you've found the right person because you get an emote message: \" 's badge flashes brightly.\"",
-        "After you talk to all of the people for Bastok, return to Alib-Mufalib to receive a Blue Invitation Card (key item).",
-        "Once you have also signed up to be a whitegate mercenary, Alib-Mufalib will also teleport you to whitegate for 300g.",
-        "Port Bastok (East to West)",
-        "(J-5) Kaede (northernmost house)",
-        "(F-5) Patient Wheel (north of Warehouse 2)",
-        "(F-6) Paujean (bottom floor of Warehouse 2)",
-        "(E-6) Hilda (Steaming Sheep Restaurant, walks on the top floor and occasionally down. However, she can still be talked to when on second floor.)",
-        "(F-8) Tilian (end of a pier west of Air Travel Agency)",
-        "Metalworks (all found on top floor)",
-        "(G-8) Raibaht (Cid's lab)",
-        "(G-8) Invincible Shield (outside Cid's Lab)",
-        "(G-7) Manilam (on top of Cermet Refinery)",
-        "(I-8) Kaela (between Consulate of Windurst & Consulate of Jeuno)",
-        "(K-7) Ayame (Inside north Cannonry)",
-        "Bastok Markets (East to West)",
-        "(K-10) Harmodios (Harmodios's Music Shop)",
-        "(J-10) Arawn (west of music store)",
-        "(I-9) Horatius (Inside Trader's Home)",
-        "(E-10) Ken (outside Mjoll's General Goods)",
-        "(E-11) Pavel (West Gate to South Gustaberg)",
-        "Bastok Mines (Clockwise, starting at Ore Street, upper floor to lower floor)",
-        "(H-5) Griselda (upper floor, Bat's Lair Inn)",
-        "(I-6) Goraow (upper floor, in stairwell of Ore Street)",
-        "(I-7) Echo Hawk (lower floor, end of dead end between houses, Ore Street)",
-        "(H-6) Deidogg (lower floor, past curve to the north, Ore Street)",
-        "(H-9) Vaghron (upper floor, southwest of Auction House, standing by corner wall)",
-    },
-
-    bsz_pb_test_of_true_love = {
-        "If you just finished Love and Ice, you must zone before you can start this quest.",
-        "Talk to Carmelo and watch the cut-scene to start the quest.",
-        "Obtain three Key Items from Treasure Chests (not coffers) in three different zones",
-        "\"Un Moment\" from the chest in Castle Zvahl Baileys or Castle Zvahl Keep",
-        "\"L'Ancienne\" from the chest in Labyrinth of Onzozo",
-        "\"L'Ephemere\" from the chest in Sea Serpent Grotto",
-        "If the quest is active, a character opening the chest will obtain the appropriate key item from the chests. Keys are needed to open the chests in those zones by all jobs except Thief, who can pick the chest.",
-        "Once all three key items are obtained, return to Bastok and talk to Carmelo for a short cut-scene.",
-        "Zone out of the area, come back in, then speak to him again to complete the quest and receive your reward.",
-    },
-
-    bsz_pb_love_and_ice = {
-        "Examine the Carrier Pigeon Letter permanent key item that you received during The Stars of Ifrit quest.",
-        "Talk to Carmelo who is at (E-6) in Port Bastok. He will give you Carmelo's Song Sheet and ask you to place it at the Mirror Pond.",
-        "Go to the pond at (G-10) in Beaucedine Glacier.",
-        "A portion of the pond will become selectable (the target is named \"Mirror Pond\") in the presence of dark-element weather or clear weather. This target disappears when there is single or double ice-element weather.",
-        "Check with Maleme, the Weather Checker at (J-8) in Southern San d'Oria, before going to the glacier to see what the weather will be like there. A weather message of \"gloom with occasional snow\" means that snow will taper on and off.",
-        "Select the \"Mirror Pond\" for a cutscene.",
-        "Return to Bastok and talk to Carmelo to complete the quest and receive your reward.",
-    },
-
-    bsz_pb_lovers_in_dusk = {
-        "Change zones then talk to Carmelo after completing A Test of True Love and he will give the key item Chanson de Liberte and ask you to place it in the Sanctuary of Zi'Tah at Dusk.",
-        "Go to the Sanctuary of Zi'Tah and find the ??? located there, in the middle of H-8.",
-        "Select this at Dusk (between the hours of 16:00-18:00) for a cut-scene to complete the story for this set of quests, and to obtain your reward.",
-    },
-
-    bsz_pb_the_usual = {
-        "Talk to Hilda.",
-        "Trade a King Truffle to Hilda and she will give you the key item Steaming Sheep Invitation.",
-        "Go to the Metalworks and talk to Raibaht in Cid's Lab.",
-        "You may need to talk to Raibaht twice if you have the quest \"Teak Me to the Stars\" or The Naming Game active.",
-        "Return to the restaurant and talk to Hilda to complete the quest.",
-    },
-
-    bsz_pb_trial_size_earth = {
-        "Speak to Ferrol in Port Bastok, located at I-8 near the drawbridge. You must speak to Ferrol as a Summoner.",
-        "If you qualify, he will give you a Mini Tuning Fork of Earth.",
-        "This item is not a Key Item like the regular Tuning Forks, but is a Rare/Exclusive item that needs to go in your inventory.",
-        "When you are ready to go, return to Ferrol and trade him the Mini Tuning Fork of Earth (he does not keep the fork) and be warped to the Cloister of Tremors for the fight.",
-        "Trade the Mini Tuning Fork to the protocrystal to enter the battle.",
-        "Note that if you do not trade the Mini Tuning Fork and instead just select the protocrystal, you will enter the regular level 60+ party avatar battle if you have the regular tuning fork key item.",
-        "Defeat him for your reward.",
-        "This is a solo battle.",
-        "There is a level 20 cap on this battle.",
-        "There is a 15 minute time limit.",
-        "You can only use Carbuncle.",
-        "Keep up Barstonra at all times.",
-        "Try to fight Titan Prime on Windsday and do not fight him on Earthsday.",
-        "When you complete this quest you keep the Mini Tuning Fork of Earth, although Ferrol will not warp you to the protocrystal a second time.",
-    },
-
-    bsz_pb_trial_by_earth = {
-        "Speak to Juroro in Port Bastok, located at I-8 (near the drawbridge). If you have sufficient fame, she will give you a Tuning fork of earth after accepting her request.",
-        "If you have never talked to this NPC before you may have to talk to her a few times before she gives you the quest.",
-        "Travel to Quicksand Caves, and head to the Cloister of Tremors.",
-        "Enter from Eastern Altepa Desert at (J-7).",
-        "In the first room, follow the east wall, dropping to the east, and following a passage south.",
-        "When the path opens into the next room, head due west along the north wall. Through another small passage and into a third room (E/F-9), go to the west wall and drop west.",
-        "Alternatively this is Home Point Quicksand Caves #2",
-        "In the Cloister of Tremors, stick to the right wall to get to the Earth Protocrystal.",
-        "Once you defeat Titan Prime, you will acquire the Whisper of Tremors.",
-        "Return the Whisper of Tremors to Juroro for your reward.",
-        "Alternatively, hold onto it and when you have all six whispers, you may start the quest The Moonlit Path to fight Fenrir Prime.",
-        "If you are collecting items for the Evoker's Ring, you want the Desert Light.",
-        "If you see an airship moving through the background of the reward cutscene, this is because an airship arrived or departed during the cutscene.",
-        "Everyone who is involved in the fight must have a tuning fork of the correct protocrystal.",
-        "There is no level cap on this battle.",
-        "There is a 30-minute time limit.",
-        "You can buff up before entering the protocrystal, so feel free to do so and rest up while still outside.",
-        "Try to fight Titan Prime on Windsday, and do not fight him on Earthsday.",
-        "Keep up Barstonra at all times.",
-        "Do not use Earth-based spells, weaponskills, or weapons that have Additional effect: Earth Damage|, as they will heal Titan Prime.",
-        "The battlefield is shaped like a long path up the side of hill, with a switchback about halfway to the top. This allows the mages to stand above the fight (and out of easy reach of the avatar) while still being able to cast spells upon the combatants.",
-        "See testimonials.",
-    },
-
-    bsz_pb_eco_warrior = {
-        "NOTE: Before attempting this quest, designate a leader so that the group functions as a team. This is essential for the success of this quest. Make sure you have a near-full alliance unless you are using two or more Summoners with Ifrit's Astral Flow ability, Inferno.",
-        "Talk to Raifa in the Steaming Sheep Restaurant in Port Bastok (D-6).",
-        "If you cannot get the quest, Raifa says...",
-        "Something about the food. (You have already completed an Eco-Warrior quest this Conquest period or you do not have enough fame)",
-        "\"...Can I have a moment of your time? Oh, but you look busy...\" (You are currently involved in another Eco-Warrior quest)",
-        "Head to Gusgen Mines.",
-        "Talk to Degga at (H-9). (You will see him on your right, toward the end of the entry corridor.) He applies an ointment that restricts your level to 25. Buffs do NOT wear with this level restriction. Buff before applying the restriction.",
-        "Note that, once the level restriction is applied, only others with the same level restriction are able to cure or buff you.",
-        "Trusts will be dismissed upon application of the level restriction, but can be resummoned (and will have the same level restriction that you do).",
-        "You lose the level restriction if you are KO'd. It may be reapplied at any time by speaking to Degga again once raised.",
-        "Note: if you Reraise, you keep the level restriction.",
-        "If you return to your Home Point after being KO'd or otherwise leave the area in any way, you lose any progress made in the quest since talking to Degga.",
-        "At the very first 4-way intersection (H-9), go down the west corridor (turn left).",
-        "Go down the west corridor and turn north at (G-9).",
-        "Continue north at (G-9) and do not turn down any passage except ones leading north until you arrive at (G-6).",
-        "Camp on the western side of (G-6) and clear out the monsters here before turning to the east corridor.",
-        "Clear the way to the east. The ??? is on a chest further east in the middle of the deck at (H-6). Clear the area around the chest.",
-        "When ready, click the ??? to spawn two Pudding NMs.",
-        "You must have the level restriction applied to spawn and engage these NMs.",
-        "The Puddings spawn with aggro toward the party member who spawns them. If Sneak is applied, the spawner is still aggroed. Clicking the ??? removes any Sneak effect.",
-        "The Puddings are Slime-type NMs. As such, they are weak against magic, but highly resistant to physical attack. As they gain TP, they use a strong version of Fluid Spread, the Slime AOE attack, that causes critical damage to anyone in range. This is a common cause of wipes.",
-        "After the NMs are defeated, touch the ??? again to receive an Indigested Ore.",
-        "You must have the Level Restriction applied to obtain the key item.",
-        "Should you change areas during or after the fight, but before obtaining the key item, clicking the ??? causes the Puddings to respawn. They must be defeated again for you to obtain the key item.",
-        "Return to Degga to have your ointment/level restriction removed. It may also be removed through logging out and back in, or simply warping out of the mines.",
-        "Return to Raifa in Port Bastok to receive your reward.",
-        "You can only have one Eco-Warrior quest active at any time. This includes Eco-Warrior (Windurst), Eco-Warrior (San d'Oria) and Eco-Warrior (Bastok).",
-        "Eco-Warrior quests cannot be cancelled.",
-        "Only one Eco-Warrior quest can be completed per Conquest Tally.",
-        "Because buffs do not wear when the level restriction is applied, and the Puddings are weak against fire, 2 Summoners can easily duo this if one is high-leveled enough to give strong buffs.",
-        "Make sure each SMN has Sprinter's Shoes and Silent Oils. MP medicine optional.",
-        "Fleet Wind can be used in place of Sprinter's Shoes, and it gives a faster Quickening effect.",
-        "First, cast Reraise and have Light Spirit apply Protect V and Shell V to each Summoner.",
-        "Next, go to the ??? with no level cap yet and clear the skeletons and ghosts.",
-        "The respawn times of monsters have been changed from 15 minutes to 5 minutes. This trick may no longer work.",
-        "Third, use Sprinter's Shoes or Fleet Wind and run back to Degga. Apply Earthen Ward, Aerial Armor, and Noctoshield. Noctoshield is very important in case of a resist! Cast Sneak, then receive the level restriction. High summoning magic skill may be required for the durations to be long enough.",
-        "Fourth, run to the ???.",
-        "Fifth, summon Ifrit, use Astral Flow, and have a SMN pop the NM. Each SMN uses Inferno. If neither slime resists the Infernos, the battle will be won. Important: Pets cannot take hate in this fight! If one or more of the slimes resists, they attack the Summoner who popped them. They are slow-moving and easy to kite. Protect V, Noctoshield, and Earthen Ward make kiting while the other SMN rests very easy with 1 Pudding still alive. Because pets do not take hate, the NMs will have to be kited if they survive the Infernos until Blood Pact: Rage timer is back up.",
-        "If you're on a level 99 job and have decent endgame gear then this quest will be absolutely trivialized. Even level-synced, your gear will still give you overpowered stats (for a level 25 job) and nothing will be of any real threat to you, especially if you're using Trusts and you buff yourself before receiving the level restriction.",
-    },
-
-    bsz_pb_escort_for_hire = {
-        "Talk to Trilok in Port Bastok D-6 to activate the quest.",
-        "Zone into Crawlers' Nest.",
-        "The first person to zone into the dungeon will get a cut scene with Olavia about the quest.",
-        "That person must talk to Olavia to start the quest. You will have 30 minutes to finish from this point.",
-        "After talking to Olavia, she will immediately bolt away and start towards her destination with no thought for aggro at all. Anyone can stop and start her, simply talk to her. She will reply \"Is anything wrong?\" This way you can safely fight mobs with her out of aggro and AoE range. To start her forward again, talk to her once more.",
-        "Be warned that monsters will aggro Olavia from farther away than they normally would aggro a character.",
-        "Olavia can be cured by White Magic and Curing Waltzes, but not by Blue Magic or Blood Pact: Wards.",
-        "There are three possible routes she can take.",
-        "All three routes start with her running into the big central room at Crawlers' Nest J-9 on the first map, running north into the scorpion room, and circling back out to the main room.",
-        "There are at least three possible routes",
-        "First route: Olavia will head North-West towards Crawlers' Nest H-8. She will pass a Doom Scorpion, possibly 1-2 Puroboros and several Soldier Crawlers. At Crawlers' Nest I-8 on the second map she will fall into a room full of Labyrinth Lizards that aggro. She will then head west and eventually end up in the Exoray room at Crawlers' Nest G-10, where she'll stop. Once she stops, talk to her.",
-        "Second route: Olavia will head due west out of the main room and head all the way down the hallway to Crawlers' Nest F-7 past a Doom Scorpion and some Soldier Crawlers, then turn around and run all the way back to the main room. She will then head North-West like in route one, drop off the same ledge into the Labyrinth Lizard room at Crawlers' Nest I-8 on map 2, but head North-East out of this room instead of west. She will pass some Soul Stingers and eventually stop in the little Exoray room at Crawlers' Nest I-7. Once she stops, talk to her.",
-        "Third route: Olavia will head South-West to Crawlers' Nest J-10 on the first map. She will go down and run through the big room on the third map, which is filled with Hornflies, Exorays, Soldier Crawlers, Blazer Beetles and Mushussus. Only the hornflies don't aggro. Water Elementals also spawn here. She will run down the hallway at Crawlers' Nest G-9 on the west side of the room, past Rumble Crawlers, Helm Beetles, Crawler Hunters and Knight Crawlers, and eventually stop in Crawlers' Nest D-7. Once she stops, talk to her.",
-        "Speak to Olavia at the end of her trip and she will give you a Completion Certificate (Key Item), then return to Trilok in the Steaming Sheep Inn for your reward.",
-        "06/09/2008 Update",
-        "Any of the three Escort for Hire quests may now be undertaken simultaneously with the quests All by Myself and The Big One.",
-        "Only one Escort for Hire quest can be active at any time. Only one Escort for Hire quest can be completed per Conquest Tally. In other words, if you finish Escort for Hire (Bastok), you cannot do any other Escort for Hire quests until the next Conquest Tally.",
-        "Any of the escort quests can be easily deactivated by talking to the same person who gave you the quest.",
-        "Do not talk to the escortee until everyone who is in the party is in the dungeon. Anyone not in the zone when you begin the quest (i.e. still zoning) will not get credit for the quest.",
-        "Although you can go in with an alliance, only the people in the starting person's party will get credit for the quest at the end. If you want to do this for more than 6 people, you will have to do it multiple times.",
-        "If the escortee dies, you only have to zone out, wait for 15min in Rolanberry Fields (as if you are waiting for the repop of a ??? for a NM) and zone back in to restart the quest.",
-        "You will receive both the 10k gil and the Completion Certificate the first time you complete this quest. Each time you complete this quest after the first time, you will only receive the Completion Certificate.",
-        "You have about 20 seconds to talk to the escortee before he/she warps out.",
-        "You can not sneak, invisible or buff the escortee.",
-        "The player who receives the cutscene upon zoning into Crawlers' Nest will be unable to call their Adventuring Fellow NPC during the escort quest. However, other members of the party will be able to do so.",
-        "If a member of the party has an NPC out at the start of the quest, Olavia will not respond until that NPC is dismissed.",
-        "You can not receive cutscene if you have buff.",
-        "This quest is known soloable by several jobs at 75, including Ninja, Monk, Red Mage, Puppetmaster, Blue Mage, Thief and others; jobs such as Beastmaster and Dragoon can solo it as early as level 60. Though any job at 75 should be able to defeat the enemies in Crawler's Nest, the 30 minute time limit will be an issue if the player takes too long to defeat monsters or has to stop to rest HP/MP.",
-        "Soloable by 75 RDM/BLM using Stoneskin. Simply stop the NPC and use Sleep, Sleep II and Sleepga. If mobs wake up and surround you use Sleepga again. Repeat process.",
-        "Duoable by 75 RDM/BLM and 75 SMN/WHM. \"Simple\" is not the best way to describe the feat of keeping 20+ monsters determined to kill you asleep. The RDM uses the above strategy, but the SMN is the only one who stops and starts the NPC. The SMN Cure IIIs and casts Earthen Ward with Titan to aid the RDM if she cannot get Stoneskin or Sleepga off without spell interruption. SMN leaves ALL sleeping to RDM to prevent complications. At the end, SMN draws all hate off RDM with Thunderspark and RDM casts Escape. Recommended for SMN to keep Reraise to prevent returning to home point if RDM can't get Escape off.",
-    },
-
-    bsz_pb_trust_bastok = {
-        "Travel to (K-7) Port Bastok and speak to Clarion Star to activate quest and receive a Blue institute card.",
-        "Travel to (J-8) in the Metalworks and speak with Naji for a cutscene and Trust: Naji.",
-        "If this is not your first Trust spell, you will also receive the Bastok Trust permit and complete the quest at this point.",
-        "If this is your first Trust spell, cast Trust: Naji in either North Gustaberg or South Gustaberg, then return to Naji in the Metalworks to complete the quest and receive the Bastok Trust permit",
-        "Once you are Rank 3 or higher in any nation, go to (K-7) in Metalworks and speak with Ayame to learn Trust: Ayame.",
-        "Once you are Rank 6 or higher in any nation, enter the Aide's Office and talk to Lucius at (J-9) of the Metalworks to learn Trust: Volker.",
-        "After learning Trust: Naji, Trust: Ayame, and Trust: Volker, speak to Iron Eater in Metalworks' Presidential Building to learn Trust: Iron Eater.",
-    },
-
-    bsz_pb_walls_of_mind = {
-        "Talk to Oggbi in Port Bastok as a Monk or Puppetmaster level 71 minimum with 250 Hand-to-Hand skill minimum (merit bonuses do not count for beginning the quest) to obtain the Knuckles of Trials and a Weapon Training Guide.",
-        "You cannot begin this quest if you have any other quest involving the Weapon Training Guide active.",
-        "You must be level 71 minimum to begin the quest, but after beginning the quest, deleveling to 70 does not affect the quest progress in any way.",
-        "Perform weapon skills with the Knuckles of Trials until the latent effect disappears.",
-        "You must accumulate 300 Weapon Skill Points on experience-yielding monsters.",
-        "Weapon Skills in Campaign Battles and Besieged do not count.",
-        "Weapon Skills performed while under Level Sync do count. Your latent effect may disappear when level sync is applied due to equipment adjustment. Remove sync to ensure the weapon is broken.",
-        "Weapon Skills in Reives do count.",
-        "You receive 5 points for opening/soloing a weapon skill, 7 points for closing a Lv.1 skillchain, 9 points for closing a Lv.2 skillchain, and 11 points for closing a level 3 skillchain.",
-        "Wheeling Thrust (DRG, Spear)--> Dragon's Kick (H2H) Light Skillchain.",
-        "To check to see if the latent effect has disappeared, simply check your equipment page for the elemental resistance bonuses, and if you do not have the bonus stats anymore, you are done.",
-        "Once you no longer receive the latent effect bonus, head back to Port Bastok and trade the Knuckles of Trials back to Oggbi, who takes the weapon from you and gives you a Map to the Annals of Truth, telling you to head to Bostaunieux Oubliette.",
-        "Once in Bostaunieux Oubliette, follow the path south, then turn west into a long corridor. Go through the Wooden Door at the end of the corridor and talk to the NPC there to access the trap door, which takes you to the lower level with monsters.",
-        "Make your way to the small room at (I-8) on the third map, clear the room of leeches, rest up, and click the ??? in the center of the room to spawn the NM warrior skeleton Bodach.",
-        "You can spawn Bodach on any job.",
-        "Bodach uses Blood Saber, Hell Slash, and Horror Cloud; possesses very high HP and higher-than-average evasion.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "Return to Oggbi for your reward.",
-    },
-
-    bsz_pb_ghosts_of_past = {
-        "Talk to Oggbi in Port Bastok inside the Steaming Sheep Restaurant located at (E-6) as a MNK level 40+.",
-        "Home Point #3 is closest.",
-        "Note: If you have hand-to-hand skill above 250 he will offer you the Knuckles of Trials for the quest The Walls of Your Mind first. Talk to him again for the right quest.",
-        "Once flagged, you can complete the quest on any high-level job, not just monk.",
-        "Obtain a Pickaxe (you can buy one from Numa (E-7) in Port Bastok for about 190 gil).",
-        "Head to Gusgen Mines and look for a ??? in the lowest level around G-7.",
-        "Go due north across the first map and down the stairs. Use the western door to enter the second map.",
-        "Go to the room in the northwest corner and follow the corridor that runs on the west side from this room to the next room.",
-        "Take the passage in the NW corner, which is in the SW corner of (F-5). Follow it down.",
-        "Go to the second room. The ??? is located on the left side of the room in the NW corner.",
-        "Use a pickaxe there and it will trigger the Wandering Ghost to spawn.",
-        "There is a bug that can sometimes prevent the NM from spawning, instead giving you the message \"You cannot even dig it open with a pickaxe\". If that happens and the quest is properly flagged (check your quest log), log out and back in and try again.",
-        "If that does not help, disable Windower / Ashita if you're using them.",
-        "It's possible that you'll get that message again but the NM spawns anyway. The quest can still be properly completed if that happens.",
-        "Defeat it and it will drop the Miner's Pendant (make sure to Cast Lots on it if doing it with others).",
-        "Return to Port Bastok and trade it to Oggbi for your reward.",
-    },
-
-    bsz_pb_achieving_true_power = {
-        "Obtain a Puppetmaster's Testimony from Troll Shieldbearers or Troll Surveillants in Bhaflau Thickets or Troll Engravers in Halvung.",
-        "Talk to Shamarhaan (F-9) in Bastok Markets before trading your testimony.",
-        "Trade the testimony to Shamarhaan (F-9) in Bastok Markets.",
-        "Following a cutscene, you will then be transported to the Navukgo Execution Chamber to enter a solo BCNM battle. Proceed to the Decorative Bronze Gate and trade the testimony to enter the BCNM battle.",
-        "As with Maat fights, this quest is optional if you have attained a level 75 limit on another job.",
-        "This fight is easily solo'd by any level 99 job.",
-    },
-
-    bsz_pb_out_of_ones_shell = {
-        "Talk to Ronan to activate the quest.",
-        "(optional) Talk to Mine Konte Port Bastok D-7 and then with Panana.",
-        "Trade 3 Shell Bugs to Ronan.",
-        "Give him his \"time\" by zoning out of Port Bastok and back in. Talk to him again for your reward.",
-    },
-
-    -- ========================================================
-    -- BASTOK MINES
-    -- ========================================================
-
-    bsz_bm_sirens_tear = {
-        "Talk to Wahid in Bastok Mines (Home Point #1); he's a collector of precious gems and is looking for a Siren's Tear. He says they can be found near the rivers of the Gustaberg Mountains but will slip through your fingers unless they are handled in a special way. Also, there is a bard in a tavern somewhere who has advice on how to get the jewel.",
-        "(Optional) Talk to Otto at the Steaming Sheep in Port Bastok E-6; he will point to the bard mentioned above, Carmelo.",
-        "(Optional) Talk to Carmelo; he sings a cryptic song explaining how to get the tear and he explains its meaning.",
-        "Go to North Gustaberg (east section) and locate the ??? along the river at North Gustaberg J-8 and North Gustaberg J-9. (You can avoid aggro by going via Port Bastok Home Point #1.) The ??? will move around the shore line, so it's not always in the same spot. A good strategy is to check one side of the river, then the other until you find the ???.",
-        "Unequip your weapon and shield and examine the ??? to pick up the Siren's Tear.",
-        "Trade the tear to Wahid to complete the quest.",
-        "It is possible for a Monk or Puppetmaster to obtain the tear with no weapons equipped.",
-    },
-
-    bsz_bm_hearts_of_mythril = {
-        "Talk to Elki in the Bat's Lair Inn; his grandfather Omran is buried at a monument at the top of Zegham Hill in North Gustaberg. He gives you the key item Bouquet for the Pioneers to lay at the foot of the grave.",
-        "Follow the paths up to the top of Zegham Hill in North Gustaberg to find the monument at J-7. (The path starts on the south side at I-8. Look for a grassy spot with trees.)",
-        "Examine the Palborough Pioneers Monument to place the bouquet; you see the name of Elki's ancestor, Omran, and a partially readable name, Vig****t O**. This is the name of Vigilant Owl, which ties the quest The Eleventh's Hour to this one.",
-        "Talk to Elki again to complete the quest. He doesn't seem to recognize the partial name but he might if you get more information.",
-    },
-
-    bsz_bm_elevenths_hour = {
-        "Talk to Elki. (You must zone between this quest and Hearts of Mythril.)",
-        "Go to Palborough Mines and take the elevator at I-8 to the third floor.",
-        "Make your way to the LEFT side of the split chamber to the west. But you can't just go west. That would be too easy. See map, to notice how you have to thread your way through an obscene amount of dead ends.",
-        "At the line between H-7 and H-8 examine the Old Toolbox and obtain the Old Toolbox (key item).",
-        "Return to Bastok and talk to Elki. (Quickest way back, is to take the one-way boat, near top of elevator. Again, see inset map on this page).",
-        "Talk to Babenn at (J-6) to receive the reward of a Small Sword.",
-        "(Optional) After completing Beauty and the Galka, return to Parraggoh for additional dialoge.",
-    },
-
-    bsz_bm_minesweeper = {
-        "Talk to Gerbaum. He complains about the monsters in Zeruhn Mines and asks you to clear them out and bring back Zeruhn Soot as proof.",
-        "Obtain three Zeruhn Soot and trade them to Gerbaum to complete the quest.",
-    },
-
-    bsz_bm_fallen_comrades = {
-        "Talk to Pavvke.",
-        "Obtain a Silver Name Tag, either from killing Onyx Quadav or Greater Quadav in Palborough Mines, or purchasing it from the Neck section of the Auction House.",
-        "Trade the Silver Name Tag to Pavvke for your gil reward.",
-    },
-
-    bsz_bm_rivals = {
-        "Talk to Detzo.",
-        "Obtain a Mythril Sallet and trade it to Detzo for the cut-scene and to receive your reward.",
-        "You retain the Mythril Sallet after trading it to Detzo.",
-    },
-
-    bsz_bm_vengeful_wrath = {
-        "Talk to Goraow.",
-        "Obtain a Quadav Helm and trade it to Goraow to receive your reward.",
-        "Quadav Helm are dropped from Old Quadav in Beadeaux (reportedly also Pashhow Marshlands, and Darksteel Quadav in Beadeaux and Qulun Dome).",
-        "This quest can be repeated by continuing to turn in Quadav Helms; zoning between each repeat is not required.",
-        "When you come back to Goraow, you have to speak to him first to get him to tell you that he wants the Quadav Helm as proof of your deeds.",
-    },
-
-    bsz_bm_groceries = {
-        "Talk to Tami at (J-8) in Bastok Mines.",
-        "She'll give you the key item Tami's Note to take to her husband.",
-        "Note: If you read the note, the quest is no longer repeatable.",
-        "Note: Colliery Bats (level 75 - 80) may be in the corridor between you and Zelman. Some form of sneak may be needed.",
-        "If you do not read the note",
-        "Take the note to Zelman at (I-8) in Zeruhn Mines.",
-        "He will tell you that he is busy and to report back to his wife.",
-        "Return to Tami and get a reward of 10 gil.",
-        "If you read the note",
-        "He asks you to go and get some Meat Jerky for him.",
-        "Meat Jerky can be bought from Griselda at the Bat's Lair inn Bastok Mines.",
-        "Go back to Tami and trade her the Meat Jerky and get the Rabbit Mantle reward.",
-    },
-
-    bsz_bm_blade_of_darkness = {
-        "{Bastok Mines J-7}Speak with Gumbah until he gives you the cutscene that starts this quest.",
-        "upper floor, across the bridge, toward the Alchemy Guild.",
-        "Make sure you check your quest log before heading to Palborough Mines.",
-        "The quest Great Sword Weaponskill quest Inheritance (Ground Strike) seems to take priority over this quest, so it is important to make sure to get the correct cutscene/dialogue from Gumbah.",
-        "{Palborough Mines H-8 Map 3} Pull the boat lever on the 3rd floor to ride it.",
-        "Fastest way is via the Palborough Mines Home Point #1 at (H-10).",
-        "Otherwise, Port Bastok > North Gustaberg (K-3) > Palborough > Head to the third floor.",
-        "If you have the map for Palborough Mines, the third floor has a giant burn hole in the center.",
-        "The boat is very close once you go up the elevator.",
-        "This boat also takes you to Zeruhn Mines (safe zone connected to Bastok Mines).",
-        "WARNING: Ensure you have inventory space BEFORE boarding the boat or you will need run back to this location again.",
-        "{Zeruhn Mines} Receive a cutscene and the Chaosbringer",
-        "Lv1 Great Sword for Warriors, Dark Knights, and Rune Fencers.",
-        "Anyone can pull the lever; you need only make the trip.",
-        "If you drop the Chaosbringer, you may take the ferry in the Palborough Mines once more to receive another.",
-        "Using the Chaosbringer, kill 100 enemies.",
-        "It doesn't matter what you kill, as long as the sword is equipped and deals the final blow with a standard/critical melee strike.",
-        "Killing with weapon skills, abilities (such as Jump), and monster suicides do not count.",
-        "monster suicides: Goblins' Bomb Toss, Bombs' Self-Destruct, and Bees' Final Sting)",
-        "The enemy does not have to give experience points for it to count toward the 100 total.",
-        "The methods used to damage the monsters are irrelevant. Suggestions to kill monsters faster. However, the killing blow must be made with Chaosbringer",
-        "Sub BLM and use Black Magic.",
-        "Use a ranged weapon.",
-        "Nothing resets the kill count (other than dropping the blade); you may change areas, jobs, weapons, get K.O.'d, etc. Optional: Get another 100 kills needed for the quest Blade of Death before going to turn in the Chaosbringer for this quest.",
-        "Reward: Deathbringer (Lv5 DRK Greatsword).",
-        "Just keep count and make sure you get 200 kills by the stipulations noted above.",
-        "Special events that may help",
-        "Harvest Festival events in real-life October: Wraith Bats spawn outside the starter nations with only 1 HP.",
-        "Records of Eminence quest: \"Area Kills\" is helpful for keeping count.",
-        "{Pashhow Marshlands L-11} Zone into Beadeaux with the Chaosbringer for a cutscene to unlock Dark Knight.",
-        "You can travel to Beadeaux as ANY job, not just Warrior or Rune Fencer or Paladin. The blade does not have to be equipped; it must simply be in your inventory.",
-        "The Marshlands can be reached from either top-right of Konschtat Highlands or bottom of Rolanberry Fields.",
-        "You can also get the cutscene by warping to the Survival Guide.",
-    },
-
-    bsz_bm_drachenfall = {
-        "Talk to Black Mud, who gives you a Brass Canteen to fill with water from the Drachenfall.",
-        "If you drop the Brass Canteen, you can talk to him again to get another one.",
-        "You may need to zone and return to Black Mud to get a replacement.",
-        "Take the canteen to Dangruf Wadi and head north. You will pass through two geysers that shoot you up to a higher ledge. The first geyser is at I-8, and the next is at J-3, the far northeast area of the zone. After going up that geyser you will follow an unmarked path leading northeast into a hidden section of North Gustaberg.",
-        "Some form of Invisible is strongly suggested, as there are lvl 85+ Goblins beyond the first geyser.",
-        "Alternatively, if you have the North Gustaberg Proto-Waypoint unlocked, you can use this to get to the same location. If you don't have it unlocked but have a Prototype attuner from Ru'Lude Gardens, you can activate this point now, even if not to that point in the prototype attuner quest.",
-        "Once in North Gustaberg, head east along the river, cross the bridge, then go further east to the waterfall.",
-        "Since North Gustaberg is an outdoor area, mounts are allowed to shorten your trek.",
-        "Trade the Brass Canteen to the Waterfall Base, not the ???, to receive the Drachenfall Water.",
-        "Alternatively, the Drachenfall Water can be bought from the Auction House.",
-        "Return to Bastok and trade the Drachenfall Water to Black Mud to complete the quest and receive your gil reward.",
-        "Note: The North Gustaberg location for the quest An Explorer's Footsteps is in the cave nearby, and it is easy to complete them both at the same time.",
-    },
-
-    bsz_bm_blade_of_death = {
-        "Speak with Gumbah for a cutscene and to receive a Letter from Zeid.",
-        "You must kill another 100 enemies with Chaosbringer.",
-        "You need to bring the total number of kills with the Chaosbringer (from the time you first received it) up to 200. As such, kills made before activating this quest count towards the total.",
-        "If you've dropped the Chaosbringer, take the ferry in the Palborough Mines once more to receive another. You will need to make 200 kills with this new weapon.",
-        "Once the additional 100 have been slaughtered, take Chaosbringer with you to the Gusgen Mines.",
-        "In the Gusgen Mines, go to the standing water at (J-7) on the first map and trade Chaosbringer to the ???.",
-        "Beware of the NM ghost, Smothered Schmidt, that spawns here. It detects by sound so use either sneak or a silent oil if you wish to avoid it.",
-        "After a cutscene with Zeid, your Chaosbringer will be replaced with the new Deathbringer.",
-        "Walk into the mines until you hit the first intersection and take a right.",
-        "At the next intersection, take a left.",
-        "After walking a short distance, you will see a tunnel off to the right. Proceed through it.",
-        "Following the bend, there will be another tunnel going off to the right. This takes you to the pond at (J-7).",
-        "Here, in the water, you can target a ???.",
-        "For it to count as a kill, the finishing blow must be made through a regular or critical strike with the Chaosbringer.",
-        "As long as the finishing blow is dealt with the Chaosbringer, the method(s) used to weaken the target are irrelevant.",
-        "Weapon skills that defeat the enemy and abilities that do so (such as Jump) do not count towards the kill total.",
-        "Monster suicides (such as Goblins' Bomb Toss, Bombs' Self-Destruct, and Bees' Final Sting) do not count towards the kill total.",
-        "Nothing resets the kill count other than dropping the blade; you may change areas, jobs, weapons, get KO'd.",
-    },
-
-    bsz_bm_inheritance = {
-        "Talk to Gumbah in Bastok Mines (J-7) who will give you the Sword of Trials and the Weapon Training Guide.",
-        "Use the Sword of Trials until the latent effect disappears.",
-        "How to remove the latent effect",
-        "!!WARNING!! The weapon skill Dimidiation does not currently (Dec. 30th 2015) count toward breaking the latent.",
-        "You must perform Weapon Skills and Skillchains on monsters that con Easy Prey or higher.",
-        "Weapon Skills performed while under Level Sync will count.",
-        "Weapon Skills performed in Reives will count.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "You must accumulate 300 total points.",
-        "To check to see if the latent effect has disappeared, simply check your equipment menu stats. If the latent effects aren't there anymore, you are done (it is unnecessary to unequip and reequip the weapon).",
-        "Once you no longer receive the latent effect bonus, head back to Bastok Mines and trade the Sword of Trials back to Gumbah, who will take the weapon from you and give you a Map to the Annals of Truth and tell you to head to Western Altepa Desert.",
-        "Head to (E-9) (Quicksand Caves Home Point #1 is the fastest. Zone at H-4. Or take the Survival Guide to Eastern Altepa Desert and then zone into Western Altepa Desert) and touch the ??? there to spawn the NM tiger Maharaja.",
-        "Once the NM is dead, re-examine the ??? to obtain the Annals of Truth.",
-        "Bring this back to Gumbah for your reward.",
-    },
-
-    bsz_bm_the_doorman = {
-        "Phara, an elderly Hume woman at (Bastok Mines J-9) in Bastok Mines will ask you for some Sword Grip Material (key item) from Davoi.",
-        "Your job no longer needs to be Warrior.",
-        "Enter Davoi and head almost directly south to a small open area, down to a short, narrow path until you reach the wide-open area of (Davoi K-9) and (Davoi K-10).",
-        "The Orcs (including tier 4) here are aggressive to Sight only.",
-        "Scout around for the 'Hide Flap' on one of the tents scattered around the area of K-9/10. Kill off all nearby Orcs to avoid any potential links, buff and when ready, touch the 'Hide Flap' and spawn two NM Orcs, Gavotvut and Barakbok.",
-        "Barakbok is a Dark Knight and should be killed first. Gavotvut is a Warrior.",
-        "Both Orcs are highly resistant to sleep.",
-        "Zoning the Orcs and fighting them one by one does not work. However, it is possible to only fight the WAR by pulling the orcs, along with a large train down to the river. Upon hitting the water they will lose hate, and you will be able to fight only the WAR NM. (See Testimonials)",
-        "Or just wait for the NMs to despawn then check the Hide Flap.",
-        "After both have died, find where the 'Hide Flap' has moved to (still in the same area, it should not be very far away) and examine it again to be presented with the Sword Grip Material.",
-        "Warning: If you have multiple warriors doing this quest, you will have to kill the notorious monsters for each warrior. Only the warrior that spawned the NMs will get the key item upon inspecting that hide flap; if another warrior inspects that flap the NMs will spawn again.",
-        "Take this back to Phara, who asks you to come back tomorrow.",
-        "Wait until the next Vana'diel day. No need to rezone.",
-        "Return to Phara and you will receive Yasin's Sword (key item), which she asks you to take to her grandson Naji, who is a doorman at the Presidential Office in the Metalworks (J-8).",
-        "After a cut scene, Naji will give you the Razor Axe.",
-    },
-
-    bsz_bm_talekeepers_truth = {
-        "Phara, at (J-9) in the Bastok Mines tells you about the Galka Deidogg at (H-6) in the Bastok Mines.",
-        "You will need to speak with Deidogg twice with Warrior set as your main job to receive the cutscene where he will ask you for a Mottled Quadav Egg dropped by Ni'Ghu Nestfender in Palborough Mines.",
-        "If you have it unlocked, it is a short run from the Palborough Mines Home Point #1 to the spawn point. Otherwise",
-        "From the first map in Palborough Mines, take the elevator at I-8 up to the Third Floor. Ni'Ghu Nestfender spawns from a ??? located in G-10. Nothing here will be high enough to aggro you, and the room is usually empty, but if some Quadav have wandered in, of course, clear the area beforehand.",
-        "Note: You do not have to go with Warrior as your main job in order to spawn the NM but must have the quest active.",
-        "When your party is ready, examine the ??? to spawn Ni'Ghu Nestfender. He is a Paladin, and will use Invincible and Flash.",
-        "When he is defeated, he will drop the Mottled Quadav Egg.",
-        "Make sure you do not touch the ??? again or it will spawn another Ni'Ghu Nestfender and you will have to do the fight again.",
-        "If you haven't set a Bastok Home Point, there is a ferry from Palborough Mines to Zeruhn Mines which will put you right next to Bastok Mines.",
-        "After you bring the Mottled Quadav Egg to Deidogg, the cutscene suggests that you get a Parasite Skin from Castle Oztroja.",
-        "Note: Since Parasite Skin is a Rare/Ex drop off the leeches in Castle Oztroja, you can save yourself a trip to Bastok if you catch a Teleport-Mea and head to Castle Oztroja before returning to town. You can kill two birds with one stone this way, and trade the skin after trading the egg to Deidogg when you arrive in Bastok Mines.",
-        "If you have Zilart Tier II Voidwatch Warp access, you can use this to shorten your trip to Castle Oztroja by taking the warp to The Sanctuary of Zi'Tah.",
-        "If you've unlocked it, you can warp to the Survival Guide just inside the entry to Castle Oztroja.",
-        "When you get to Castle Oztroja you need to go past the first doorway with the trapdoor and proceed up to the 4 lever door at the SW corner of G-8. You can find the combination to the door at the dead-end at (I-10).",
-        "Once inside this doorway proceed all the way up the stairs to a chamber with a pool in the middle of it. This pool will be surrounded by Tier 6 Yagudo and full of the leeches you need to kill.",
-        "The leeches aggro by sound and the Yagudo aggro by sight.",
-        "Kill a Yagudo Parasite and obtain the Parasite Skin.",
-        "Head back to Deidogg and trade him the Parasite Skin. He will ask you to return the next Vana'diel day.",
-        "When you return, he will present you with your hard-earned Fighter's Calligae.",
-    },
-
-    bsz_bm_talekeepers_gift = {
-        "After receiving your Fighter's Calligae, wait until the following game day, then speak to Deidogg as a Warrior.",
-        "Head around the corner to the small Galka child, Detzo, who will tell you Deidogg secretly likes Ginger Cookies.",
-        "You can buy Ginger Cookies from Valeriano, who is located in whichever is currently ranked 1st, or from a Curio Vendor Moogle provided you have unlocked it.",
-        "Trade a Ginger Cookie to Deidogg for the quest to register on your quest log.",
-        "Go to Behemoth's Dominion",
-        "The fastest way is to take the Survival Guide to Behemoth's Dominion (Qufim region).",
-        "From Qufim Island (at (G-5) near Delkfutt's Tower, there is a long tunnel that leads to Behemoth's Dominion that is not shown on the map).",
-        "There is a Survival Guide at the zone to Qufim Island which is available if you've activated it.",
-        "Once in Behemoth's Dominion, go to the spot at (K-9) where the ??? is, clear the area of Bats and Weapons if they aggro you, buff and get ready to go.",
-        "Examine the ??? to spawn three Goblin NMs",
-        "Doglix Muttsnout, a White Mage, who uses Benediction.",
-        "Moxnix Nightgoggle, a Ranger, who uses Eagle Eye Shot.",
-        "Picklix Longindex, a Thief, who uses Perfect Dodge.",
-        "When all the Goblins are dead, head back to Qufim (reexamining the ??? does not do anything), and upon zoning back to Qufim Island, you will receive a cutscene and your Fighter's Lorica.",
-        "The NMs can be popped only once per game day.",
-        "If you get the message \"It is too blurry to read\", someone as already popped the NM for that game day.",
-        "Players can spawn the NMs on any job.",
-        "The Goblins generally cannot be Slept without Elemental Seal.",
-        "The Ranger will only stand and shoot until low health, so it can safely be left for last as long as you don't move into its melee range.",
-        "The White Mage is easy to kite around the rocks in the big room, as it will frequently stop to cast and is known to be resistant to Stun.",
-        "Picklix Longindex, the Thief, is immune to stun.",
-        "If multiple warriors with this quest active are in the alliance, the NMs only have to be fought once.",
-        "If you (while solo) disconnect during the fight, call for help, or your party/alliance loses claim on all the NMs, you will not be able to get the CS. Even if you zone back in quickly and kill the NMs, you will not get it.",
-        "If party holds hate you can still complete the mission as long as you get hate on the NM before last one is killed, then touch the ??? as normal.",
-    },
-
-    bsz_bm_first_meeting = {
-        "NOTE: You must zone after obtaining your artifact weapon (Beat Cesti) to flag this quest. If you changed jobs to complete Ghosts of the Past you must change your main job back to Monk.",
-        "Talk to Oggbi in Port Bastok inside the Steaming Sheep Restaurant located at (E-6). He will ask you to travel to Fei'Yin to meet Dalzakk.",
-        "Once the quest shows up in your quest log, you may feel free to change jobs to continue the quest with another job (preferably a higher leveled job).",
-        "Zone into Qu'Bia Arena and upon exiting back into Fei'Yin you will trigger a cutscene and receive Letter from Dalzakk (key item).",
-        "You will not trigger the cutscene zoning into Fei'Yin from Beaucedine Glacier. The cutscene will only trigger from an exit from Qu'Bia Arena.",
-        "Fei'Yin Home Point #1 is next to Qu'Bia Arena.",
-        "After that, head to Davoi and look for a 'Hide Flap' on one of the tents at (F-7).",
-        "Clear the area of any Orcs wandering around the area as they will link to the NMs once they are spawned, This can spell disaster, even for a job at level 75.",
-        "Interact with the Hide Flap to trigger two NM Orcs to spawn: Bilopdop (MNK) and Deloknok (PLD).",
-        "Bilopdop is immune to sleep.",
-        "See also: Testimonials.",
-        "Kill them and investigate the 'Hide Flap' on the tent again to receive the San d'Orian Martial Arts Scroll (Key Item).",
-        "If you are doing this quest as a party, each member will have to pop a new set of NMs before obtaining the Key Item. The cooldown timer seems to be about 4 minutes since the last party member got his KI.",
-        "Return to Oggbi to obtain the Temple Gaiters. Optional: Talk to Michea in Bastok Markets (F-10), second floor over the Bruhilde Armourer shop for an extra cutscene.",
-    },
-
-    bsz_bm_true_strength = {
-        "Talk to Ayame in the top level of the Metalworks at K-7.",
-        "She asks you to defeat a powerful Yagudo, Huu Xalmo the Savage, in Castle Oztroja and recover the Xalmo Feather as proof.",
-        "Note: Once you have talked to Ayame, the quest will show up in your quest log, at this point you may switch to another job to complete the quest. You do not have to fight Huu Xalmo the Savage as a MNK.",
-        "You will need to trade a Yagudo Drink to a ??? on map 5 H-8 of Castle Oztroja to spawn Huu Xalmo the Savage.",
-        "Note: If more than one person needs the feather you will need to spawn the NM multiple times. There is a cooldown (approx 5-15 mins) on the ???, which will result in a \"But nothing happens.\" message after a trade. Wait and try again.",
-        "Return to Ayame and trade the Xalmo Feather to receive the Temple Hose.",
-    },
-
-    bsz_bm_wondrous_whatchamacallit = {
-        "Obtain Synergy skill level 5.",
-        "A useful strategy is to gather the six stones below needed for the quest and feed Fire Fewell, Dark Fewell, and Light Fewell to receive skill-ups, but not allowing the Synergy process to reach completion. The Synergy skill of Astral Matter caps exactly at level 5, making it a perfect beginning skill-up recipe.",
-        "These stones can be gathered without the quest flagged.",
-        "After obtaining Synergy skill level 5, head down to the entrance of the Alchemists' Guild and speak with Selliste.",
-        "She asks for the following stones, which can be found at the Cloisters where the Protocrystals reside",
-        "Flamestone",
-        "Froststone",
-        "Galestone",
-        "Tremorstone",
-        "Stormstone",
-        "Tidestone",
-        "You can buy these from a player's Bazaar but it is not possible to buy or sell these stones at the Auction House.",
-        "Easy for Summoners with the Mini Fork Warp, it lets them teleport directly to the Avatar's Cloisters and get the required items.",
-        "For additional information on the mini fork warp method, refer to Trial-Size Avatar Guide.",
-        "Another way to the Cloisters: a Home Point has been placed at each.",
-        "Once all the stones are in your possession, you will need to synergize them into an Astral Matter at a Synergy Furnace.",
-        "There is no need to actually trade Selliste the stones, you can synergize them into Astral Matter as soon as you have the stones (to save space).",
-        "Return to Selliste and trade her the Astral Matter.",
-        "Once the CS ends, she will reward you with a Portafurnace.",
-        "Once you have this quest complete, you can always get a new Portafurnace if you dropped your old one, all you need to do is just talk to Selliste again, you don't need to collect the stones anymore.",
-    },
-
-    bsz_bm_fully_mental_alchemist = {
-        "Speak with Titus at the 2nd floor of the Alchemy Guild in Bastok Mines, at (L-7). In a cutscene, you will be asked to procure twenty grains of gold dust from Grauberg.",
-        "He will give you the key items Prospector's Pan and Corked Ampoule to do this.",
-        "Make your way to (F-13) at Grauberg (S) to find the Riverbed, a spot in the river that can be targeted.",
-        "Examine it and choose one of the given options to start scooping and how roughly to do it.",
-        "Once you have the 20 grains you will receive the key item: Ampoule of Gold Dust",
-        "If you leave the area before you get the 20 grains, you'll have to start over.",
-        "See the Discussion page for successive methods though it does not matter if you fail to find any gold. You will merely need to try again.",
-        "Return to Titus for another cutscene and your reward.",
-    },
-
     bsz_bm_chocobo_riding_game = {
-        "The starting NPC will be at the Chocobo Stables (Bastok Mines) and will ask you to deliver a Chocobo to a distant stable.",
-        "If you accept the assignment, you will be placed on a Chocobo and will need to ride to the destination.",
-        "You cannot dismount the Chocobo and still complete the quest.",
-        "Your reward will depend on how quickly you deliver the Chocobo.",
-        "You will not be offered this quest if you have attempted any of the other Chocobo riding quests this week. This includes the San d'Oria, Windurst, and Kazham quests.",
-        "This quest is not always available. MithraPride has a schedule of when the various origin/destination combinations are available.",
-    },
-
-    -- ========================================================
-    -- BASTOK MARKETS
-    -- ========================================================
-
-    bsz_bkt_shady_business = {
-        "Talk to Talib in Port Bastok F-6 (Home Point #3) (located downstairs in Warehouse 2) who tells you he wants four more Zinc Ore.",
-        "Obtain four Zinc Ore and trade them to Talib to complete the quest and receive the gil reward.",
-        "Hint: You can trade anywhere from 5 to 12 ores; Talib will take 4 from your trade and return the rest to your inventory. In other words, you don't have to trade exactly 4. Thus, you can complete multiple trades rapidly.",
-        "Note: This is one of the primary quests used to raise Tenshodo fame, which is required for many quests in Norg. This quest can be repeated by continuing to trade sets of four ore to Talib; zoning is not required. It does not raise Bastok reputation when it is completed, only Tenshodo reputation.",
-        "Side-Note: You can buy as much Zinc Ore as you want for 200 gil each from the Goldsmithing guilds, Teerth in Bastok Markets (Home Point #4) or Celestina in Mhaura G-8.",
-    },
-
-    bsz_bkt_breaking_stones = {
-        "Talk to Horatius.",
-        "You may have to talk to him a second time to get the quest, and you must have the quest before you can trade him the stone.",
-        "He needs a Dangruf Stone for his gem collection and says they can be found in Dangruf Wadi, of course, but only on sunny days.",
-        "Go to Dangruf Wadi on a sunny day or when there is no weather and at I/J-5 location target select the ???, to receive the stone.",
-        "Return to Horatius and trade him the Dangruf Stone for your reward.",
-    },
-
-    bsz_bkt_cold_light_of_day = {
-        "NOTE: Steam Clock, which is needed to finish this quest, may be available at the Auction House",
-        "Talk to Malene; a monster stole a parcel she was expecting and she asks you to find it for her. The problem is that monster who stole it is hiding near the lighthouse and won't come out. She mentions another adventurer named Dalzakk who might know how to lure the monster out. Dalzakk lives in a house on Kulatz Bridge.",
-        "(Optional) Go to Dalzakk's house, he isn't home so talk to Gwill. Gwill gives you the hint about the monster, put a Quus behind the lighthouse.",
-        "Obtain a Quus.",
-        "Find the ??? behind the lighthouse at M-10 in South Gustaberg and trade the Quus to it. You may have to wait a bit for the monster (Bubbly Bernie) to appear.",
-        "Kill Bubbly Bernie to obtain a Steam Clock.",
-        "Note:The monster is soloable by any job over level ~10.",
-        "Trade the clock to Malene to complete the quest.",
-        "Note:If you have a Steam Clock in your inventory Bubbly Bernie will not drop another. You must trade the one you have to Malene before attempting for another.",
-    },
-
-    bsz_bkt_gourmet = {
-        "Talk to Salimah, who will always want one of three items for her cooking.",
-        "Talk to her daughter next to her, Rothais, or check the chart below to see which item is currently wanted.",
-        "Trade the appropriate item to Salimah at the right hours gametime to get the higher amount of gil; trading her the item at any other time will give 100 gil.",
-        "Sleepshroom: Trade during 18:00-5:59 for 200 gil",
-        "Treant Bulb: Trade during 6:00-11:59 for 200 gil",
-        "Wild Onion: Trade during 12:00-17:59 for 350 gil",
-    },
-
-    bsz_bkt_elvaan_goldsmith = {
-        "Talk to Michea.",
-        "Trade a Copper Ingot to Michea.",
-        "The quest is repeatable, but once you attain Bastok reputation 2, speaking to Michea begins Father Figure and prevents this quest from being available until completion of The Return of the Adventurer.",
-    },
-
-    bsz_bkt_flash_in_the_pan = {
-        "Talk to Aquillina; she needs 4 flint stones to light her oven.",
-        "Trade 4 flint stones to Aquillina to complete the quest.",
-        "This quest is repeatable, but can only be completed once every 15 (Earth time) minutes. This is based on completion by any player, not just yourself.",
-    },
-
-    bsz_bkt_stamp_hunt = {
-        "Talk to Arawn; he and Emrys are stamp collectors and he gives you a blank Stamp Sheet so you can help him collect stamps.",
-        "Obtain the stamps by talking to 7 guards spread out all over Bastok. You can get the locations, sort of, by examining the stamp sheet.",
-        "Talk to Arawn again to complete the quest.",
-        "Try to get the Moogle Exit Upgrade. It really makes this time-consuming quest easier and less time consuming!",
-        "Bastok Markets",
-        "Pavel D-11 (West Gate) Home Point #1",
-        "Bastok Mines",
-        "Deadly Spider G-8 (2nd level of the Depot) Nearest Home Point is #1",
-        "Tall Mountain J-7 (Next to Alchemist Guild, guarding off limits area) Home Point #3",
-        "Metalworks",
-        "Romualdo K-9 (Southern Cannonry, near President's Office) Nearest Home Point is #1",
-        "Elayne G-8 (Stand between the elevators and face east, go down stairs to the temple) Home Point #2",
-        "Port Bastok",
-        "Ehrhard G-5 (Standing on the northeast corner outside of Warehouse #1) Nearest Home Point is #3",
-        "Latifah J-8 (Just north of the Drawbridge) Nearest Home Point is #1",
-    },
-
-    bsz_bkt_mom_the_adventurer = {
-        "Talk to Nbu Latteh. She wants a Copper Ring for her daughter, Roh Latteh, but only has a Fire Crystal which she gives you so you can synthesize one.",
-        "Obtain a Copper Ring. (Copper Ring +1 will not work)",
-        "Trade the Copper Ring to Roh Latteh in Bastok Mines at (Bastok Mines H-7) in a house on the bottom floor; she gives you a key item Letter from Roh Latteh.",
-        "Do not peek at the letter. If you do you only get half the reward.",
-        "Talk to Nbu Latteh again to complete the quest.",
-        "You will receive 100 gil if you examined the letter or 200 gil if you did not.",
-        "The quest is repeatable - to a point. You can repeat it every time you zone, until you attain Bastok reputation 2, whereupon speaking to Nbu Latteh begins The Signpost Marks the Spot.",
-        "The letter reads \"Dear Mom, Thank you for all the presents you bring me. I like them a lot...but I'd be more happy if you came home early sometimes, even if you don't bring me anything.\" -Roh",
-        "The Copper Ring can be bought nearby from Carmelide or Raghd in Carmelide's Jewelry at (Bastok Markets I-8).",
-        "It can also be fished up in areas such as Bastok Markets and Windurst Woods with Insect Paste and a rod which can catch fish such as Moat Carp. It can also be fished up in Port Jeuno with a Sabiki Rig.",
-        "(Optional) When you talk to the nearby guard Parnika before/during this quest, she mentions something suspicious about Nbu Latteh; while at the same time Nbu Latteh also complaints about Parnika making her life difficult. But after this quest is completed, Parnika will change to giving general directions around Bastok Markets; whereas Nbu Latteh is still complaining about her difficult life, but in a different way (hehe).",
-    },
-
-    bsz_bkt_signpost_marks_spot = {
-        "Talk to Nbu Latteh.",
-        "Note: If you have not zoned from the prior quest, Mom, the Adventurer? Nbu will just chat with you about her work.",
-        "Go to Konschtat Highlands and select the signpost at G-5 to receive the Painting of a Windmill (key item).",
-        "Return to Bastok, and talk to Roh Latteh in Bastok Mines to complete the quest and receive the Linen Robe reward.",
-    },
-
-    bsz_bkt_bare_bones = {
-        "(Optional) Talk to Degenhard; he talks about a vitality formula but won't tell you any more until you bring him his secret ingredient. Unfortunately, he doesn't tell you what the ingredient is.",
-        "(Optional) Talk to Biggorf nearby; he says that he's seen people giving Degenhard Bone Chips. This only happens if you talk to Biggorf after talking to Degenhard.",
-        "Obtain a Bone Chip and trade it to Degenhard to complete the quest.",
-        "If you already bought the map, you will just receive the 2,000 experience points.",
-        "This quest will never appear in Bastok: Current Quests, even after you talk to Degenhard and/or Biggorf, and hence will remain unflagged at an Adventurer's Assistant until completed.",
-    },
-
-    bsz_bkt_buckets_of_gold = {
-        "Talk to Foss and tell him you fish. He tells you that he will buy five rusty buckets from you.",
-        "These can be caught while fishing, or purchased from the auction house.",
-        "Once you have five, trade them to him to complete the quest.",
-    },
-
-    bsz_bkt_curse_collector = {
-        "Talk to Zon-Fobun and receive a Cursepaper (key item).",
-        "Go to Beadeaux and proceed to one of the sets of machines: you need to visit an Afflictor (which Curses whoever comes near it, unless they are currently Silenced) and Mute (which Silences whoever touches it). So it is important to get cursed first, by coming near the Afflictor, and then touch the Mute to become silenced.",
-        "The first, and easiest, set of machines: Go straight in when entering Beadeaux, then turn left (go north) when you reach the wall at F-7. Go north to the wall in F-6, then due east to H-6. From here head south and you'll find yourself going into a cave that leads down. Take that down until it exits at H-7 on the lower map. Go west, south, and west again until you near the glowing red Afflictor in G-8. This will curse you, dramatically lowering your maximum HP and MP, as well as your running speed.",
-        "Now head back east and then take your first turn north all the way to G-7 where you will find the Mute. Touch it and you will become silenced, so that you now have both the curses on the Cursepaper.",
-        "Return to Zon-Fobun and talk to him; he will gladly take the Cursepaper and provide your reward of a Poison Cesti.",
-        "Note: It is recommended that you complete the quest Beadeaux Smog at the same time.",
-        "Note 2: There is no in-game confirmation upon touching either machine; this is intentional and you will still be rewarded upon returning with both curses.",
-    },
-
-    bsz_bkt_return_of_adventurer = {
-        "Talk to Gwill.",
-        "Trade a Cinnamon to Gwill.",
-    },
-
-    bsz_bkt_wish_upon_a_star = {
-        "Talk to Zacc near the fountain in Bastok Markets (G-9) and watch a cut scene.",
-        "Talk to Malene at Bastok Markets (I-5).",
-        "Talk to Enu at Bastok Markets (G-9) and watch another cut scene, where she will ask you to find a Fallen Star to help her father. This logs the quest in your quest log.",
-        "Bring a hatchet to Yuhtunga Jungle or Yhoator Jungle and use it on a Logging Point to receive the Fallen Star (Rare/Ex).",
-        "Return to Bastok Markets and trade the fallen star to Enu on a clear starry night (20:00 - 4:00) for your reward.",
-    },
-
-    bsz_bkt_brygid_stylist = {
-        "Talk to Brygid at K-9 in Bastok Markets. She advises you to wear a Bronze Subligar and a Robe.",
-        "Obtain and equip these items. This combination of equipment only can be worn by: BLU, BRD, DRK, MNK, RDM, DNC, COR, or THF.",
-        "Once you are wearing both items, speak with her to receive the Gloves to complete the set.",
-    },
-
-    bsz_bkt_brygid_stylist_returns = {
-        "Talk to Brygid while wearing any artifact armor piece (artifact +1 and artifact weapons do not work). You only need to have one piece of AF armor on your body to trigger this quest.",
-        "Brygid will ask that you get a new body armor and leg armor to meet the demands of the fashion world (she asks for armor equippable by your current job, with level requirements up to Level 60).",
-        "Recommend always starting the quest with her on the same job as you will see repeat requests for gear, making the hunt for pieces much easier",
-        "She does not accept +1 versions of armor.",
-        "She does accept augmented normal-quality armor.",
-        "You can change jobs to meet the requirements of the items she has requested even though you talked to her as a different job.",
-        "When you come back wearing the equipment she offers 13 types of level 50 body armor",
-        "When you select a body armor, Brygid demands the corresponding subligar. These are dropped by Fomors in Phomiuna Aqueducts as well as in the Sacrarium. All of these subligars are level 50 and Rare/EX, so you must personally go acquire it.",
-        "Once you request a specific body armor, you are locked into that request until you trade her the subligar for it.",
-        "If you leave Bastok Markets after showing Brygid the armor she requests but before choosing the body armor you want, you must wear the requested armor again when you return before you can choose your armor.",
-        "Trade the requested subligar to Brygid receive your new body armor.",
-    },
-
-    bsz_bkt_father_figure = {
-        "Talk to Michea.",
-        "Trade a Silver Ingot to Michea.",
-        "You can not start this quest if you already have the San d'Orian quest Distant Loyalties started.",
-    },
-
-    bsz_bkt_proper_burial = {
-        "Note: This quest may involve both the past and present day Bastok but it will appear on your log in the list for current day Bastok.",
-        "Travel to Bastok Markets and talk to Offa (F-10) (inside house on 2nd floor).",
-        "Travel to Bastok Markets (S) and talk to young Offa (S) at (F-10)(in front of door on 2nd floor).",
-        "Choose either 'Bury it Somewhere in the City' or 'Conceal the burial spot with a Rock'.",
-        "Option B requires less back and forth traveling.",
-        "Choosing 'Bury it Somewhere in the City' only gets an additional cutscene where Offa laments he forgot where he buried the capsule, and puts you on the path of 'Conceal the burial spot with a Rock'.",
-        "Travel to the Bastok Markets and speak to Offa.",
-        "Travel to the Bastok Markets (S) and speak to young Offa (S).",
-        "From here on, you are onto Step 2B, the \"Conceal the burial spot with a rock\" path",
-        "Travel to the Bastok Markets and speak to Offa. He will mention Fish Bones.",
-        "Travel to the Bastok Markets (S) and trade the Fish Bones to young Offa (S).",
-        "Travel to the Bastok Markets and speak to Offa.",
-        "Travel to the Bastok Markets (S) and speak to young Offa (S).",
-        "Travel to the Bastok Markets and speak to Offa.",
-        "Travel to the Bastok Markets (S) and trade the Rolanberry to young Offa (S).",
-        "Travel to the Bastok Markets and speak to Offa.",
-    },
-
-    bsz_bkt_all_by_myself = {
-        "Marin wants you to watch over her brother Ken in Dangruf Wadi.",
-        "When Ken asks you not to interfere, select \"I wasn't talking to you, squirt!\" to start the quest.",
-        "Zone into Dangruf Wadi for a cut scene in which Ken tells you to leave.",
-        "Talk to Ken to start the escort.",
-        "Talking to Ken caps the level of all players of the party to level 10.",
-        "Follow him without being seen and keep him alive.",
-        "He has extremely large sight range and pivots around very quickly.",
-        "See notes below for tips and suggestions.",
-        "He more or less follows the path outlined in the 'Quest Route' map.",
-        "Ken fights all monsters he sees (even nonaggressive ones) and takes tremendous damage during the trip.",
-        "Once he's back at the zone he'll say something and zone out. That's when Marin will appear.",
-        "Talk to Marin to obtain Ken's escort reward and to remove your level cap.",
-        "Go back to Bastok and talk to Marin to receive your reward, 1500 gil.",
-        "Under the level cap, a White Mage may be the only realistic option to complete the quest without help from a high level player.",
-        "The Destier Beret is your friend!",
-        "BUFFS DO NOT WEAR! It is recommended to enable Afflatus Solace if you have WHM 40+ before speaking with Ken to receive the level cap. The Stoneskin effect will wear off in one hit, but it does reduce the damage he takes after every Cure you give him.",
-        "Invisible status wears off instantly, be it by someone else casting it on you, by using Prism Powders or even Tonko: Ichi.",
-        "Ken has HNM sight radius, which means if you can see him, he can see you.",
-        "He has the natural 90 degrees area of sight in front of him, but he turns and moves around a lot.",
-        "WIthout a high level player clearing the area ahead of him, he will be attacked and killed if you don't cure him. Ignoring him is not an option.",
-        "When you're running low on MP try to cure him to full HP fast and rest. It takes a while for his HP to drop again, which gives you time to rest and catch up with him.",
-        "His trip is one set path (see the 'Quest Route' map). He does a loop on the left-hand side of the entrance of Dangruf Wadi and goes through a few regions. His path will not take him near the newly-added high level monsters.",
-        "Be advised that the aforementioned map gives his general route without any specifics. At various points he turns to look behind him, and even deviates a bit from the map, but his path is always the same.",
-        "When he engages a monster, he runs off to fight it, but will return to the point where he left off before continuing his path. This means that he may turn around abruptly after the battle ends, unless there's another mob he needs to fight first. Be aware that he ignores terrain while returning to the point he left off from and takes the straightest line, even if that involves running straight over normally impassable rocks.",
-        "The only time that is really safe to cure him is while he's in a battle, but keep in mind that he might turn around right after the battle ends.",
-        "Outside cures don't have any effect; only the escort can cure him.",
-        "Alliance members won't be capped, but can't heal him either.",
-        "Other players cannot engage Ken's targets, even though they don't appear claimed.",
-        "A higher level player not in the party can run ahead of Ken and kill most or all of the mobs in his way. This drastically reduces the difficulty on this quest.",
-        "Now that the monsters respawn in 5 minutes rather than 15, this option is no longer very effective; neither is training the monsters, which deaggro liberally. The best way to beat the quest may be to just cure him as the developers intended.",
-        "Dec-2025, Used a Lv99 (no iLVL) RDM/BLM to run ahead and clear monsters using Stonega and Waterga. These low level spells are enough to one shot everything, and often multiple monsters in a single cast. The biggest problem was the large open areas, as there is some randomness to which route trough that area that Ken takes. As such, always get to those areas and clear them ASAP. He only really pauses in the open areas, so if he's in the tunnels expect him to not stop if there is no monsters for him to fight. He can fight at least one monster by himself without healing, so if he does engage something don't worry about it. The level synced player stayed at the entrance to the zone, and only left when Ken returned to the entrance to avoid getting spotted at the very end.",
-        "You have 30 minutes in total to complete this quest. The countdown starts as soon as you enter Dangruf Wadi, not when you talk to Ken. You must talk to him within 5 minutes after zoning into the area or he'll leave and you have to rezone to start.",
-        "Any of the escort quests can be easily deactivated by talking to the same person who gave you the quest.",
-        "If the escortee dies, you only have to zone out and zone back in to restart the quest.",
-        "This quest can be completed once per Conquest Tally.",
-        "You can not sneak or invisible the escortee.",
+        "The starting NPC will be at the Chocobo stables and will ask you to deliver a Chocobo to a distant stable.",
+        "You will be placed on a Chocobo and will need to ride to the destination.",
+        "If you dismount the Chocobo the quest will end in failure.",
+        "Your reward will depend on how quickly you deliver the Chocobo .",
+        "The standard riding time limit for a Chocobo is 30 minutes: there is not enough time to ride to Windurst unless you have equipped a Orange Race Silks and/or Chocobo Wand .",
+        {
+            text = "Time / Bastok Mines Glyph / Miratete's Memoirs / Chocobo Ticket / Gysahl Greens",
+            substeps = {
+                "San d'Oria - - - 27:00 - 28:36 - 28:37 - 29:59 - 30:00 +",
+                "Windurst - - - 31:00 - 32:29 - 32:30 - 34:43 - 34:44 +",
+                "Jeuno - 16:00 - 18:49 - - - - - 18:50 +",
+            },
+        },
     },
 
     bsz_bkt_discerning_eye = {
-        "The quest will show up under the quests of the city you started it in and fame will be assigned to that city.",
-        "The starting NPC informs you that he/she found a lost package and asks you to return it to the owner, who is a passenger on the next airship.",
-        "If you accept the assignment, you will be shown the owner of the package.",
-        "The 'owner' is a randomly generated NPC, including Race, face/hair, and clothing. You will be allowed to repeat the viewing until you say \"I got it\". At this point you receive the Dropped Item.",
-        "Once airborne you have until you land to find the true owner. There will be 8 Passengers on this ship which look similar to the owner. The variations are always in the clothing and hair, and not the race/gender/face. Sometimes the Passengers are in hard-to-see places, such as the top of the canopy over the stairs from below deck, or behind covered section of the propeller engine.",
-        "If you return the Dropped Item to the incorrect passenger, he/she will take the package and you get no reward. If you return the Dropped Item to the correct passenger you receive 500 gil.",
-        "The correct passenger is the same NPC for all people on that single trip.",
-        "If you do not turn the Dropped Item in by the time you land, you will still have it and must return it to the NPC in the town you started in before attempting this quest again (from any nation).",
-        "When you have completed this quest with a passenger of each race and gender, you receive the title, \"Very Discerning Individual\".",
-        "When you have completed this quest with a passenger of each character model, you receive the title, \"Extremely Discerning Individual\".",
-        "The character face will remain the same for all trips from all ports that Vana'diel day, but it possible to receive the two different hairstyles on separate trips on the same day. It is unconfirmed if this final title requires both hair variations of each face type.",
+        "Speak to Grin and accept the quest.",
+        "Grin will show you a picture of an NPC, you need to memorize.",
+        "Board the next airship.",
+        "Several NPCs will spawn on the ship that all look very similar to the one Grin showed you.",
+        "Speaking to the NPCs will give you an option to return a Dropped item to them.",
+        {
+            text = "You only have one chance to get it right.",
+            substeps = {
+                "If you choose correctly, you are given 500 gil.",
+                "If you choose incorrectly, you fail the quest.",
+            },
+        },
     },
 
-    -- ========================================================
-    -- METALWORKS
-    -- ========================================================
-
-    bsz_mw_smoke_on_mountain = {
-        "(Optional) Talk to Offa to learn how to make the sausage.",
-        "Obtain a piece of Giant Sheep Meat.",
-        "Go to South Gustaberg and follow the path starting in the northeast corner of K-10 to a goblin camp at the top of a small hill. (See the map.)",
-        "Trade the sheep meat to the ??? in the campfire.",
-        "Wait one minute (Earth time) for the sausage to cook.",
-        "Examine the fire to get your sausage.",
-        "Note:Low-level jobs will catch aggro from goblins at the camp, and there is a chance that they will link; if you are not capable of fighting more than one at a time you may want to bring a friend, wait until you've gained a couple levels, or just buy the sausage from the auction house.",
-        "Note:It appears that you cannot zone out of South Gustaberg while the sheep meat is cooking, otherwise the campfire will simply give the \"This fire looks perfect for cooking.\" message. However, you are allowed to log out (without changing zones) and log back in to check on and collect the sausage, assuming the required amount of time has passed.",
+    bsz_bkt_flash_in_the_pan = {
+        "Talk to Aquillina in Bastok Markets at (K-9), she will ask for Flint Stones",
+        "Trade Flint Stone x4 to Aquillina to complete quest.",
+        "Quest is repeatable but has a restriction of 15 earth minutes. This restriction is for everyone , not just yourself. So if another player has completed the quest recently, it will not be available.",
+        "Tip: If you're looking to gain Bastok fame fast, skip this one and work on the other repeatables and also Selbina quests.",
     },
 
     bsz_mw_foremans_best_friend = {
-        "Talk to Gudav; he's worried about the project foreman since the project was cancelled. He wants you to keep an eye out for him and his dog.",
-        "(Optional) Talk to Dehlner in Port Bastok (H-5) and he'll give you a hint as to where the foreman is.",
-        "Obtain a Dog Collar. They are dropped by Black Wolves in North Gustaberg. They are also available at the Auction House.",
-        "Bring it back to Gudav. He recognizes it and realizes that the foreman has gone on to the next life and the wolf was the undead soul of the foreman's dog. Grateful for an answer, he gives you your reward.",
+        "Speak to Gudav to begin the quest.",
+        {
+            text = "Obtain a Dog Collar from Black Wolves in North Gustaberg during night time (game time 20:00 - 04:00). (Or the Auction House .)",
+            substeps = {
+                "There appears to be only one pop, in the F-8/9 area.",
+            },
+        },
+        "After the cutscene, trade Gudav the Dog Collar to complete quest.",
     },
 
-    bsz_mw_stardust = {
-        "Talk to Baldric on the lower level of the Metalworks in the Darksteel Forge.",
-        "Trade a a pinch of Valkurm Sunsand to Baldric to complete the quest.",
-        "Valkurm Sunsand can be found in Valkurm Dunes during a sandstorm by clicking on the ??? on the overturned ship at H-9 in the Siren Sands, or can be purchased from Auction House Category: Others > Misc.",
+    bsz_pb_ladys_heart = {
+        "(optional) Talk to Valah Molkot .",
+        {
+            text = "She won't come out and say it at first, but she would like an Amaryllis .",
+            substeps = {
+                "Amaryllis can be bought off auction houses, or Areebah in Upper Jeuno at (H-6) for 120 Gil .",
+            },
+        },
+        {
+            text = "Trade it to her to complete the quest.",
+            substeps = {
+                "If you trade the wrong flower for the other 2 quests, she will keep it and you will have to acquire another.",
+            },
+        },
     },
 
-    bsz_mw_mean_machine = {
-        "Talk to Unlucky Rat inside the Cermet Refinery of Bastok's Metalworks. He muses about how to oil the machine, but does not ask you for anything specific.",
-        "Unlucky Rat is on the lower level, so use Home Point #2",
-        "Obtain a Slime Oil from one of the mobs in the Slime family that drop it, or purchase it from the Auction House.",
-        "Tip: Slime Oil can be found off of the Jelly slimes from Korroloka Tunnel.",
-        "Trade the Slime Oil to Unlucky Rat to complete the quest.",
-    },
-
-    bsz_mw_cids_secret = {
-        "Talk to Cid, who will ask you to check on Hilda (E-6) in the Steaming Sheep Restaurant.",
-        "Go to Port Bastok and talk to Hilda in the restaurant.",
-        "If she is on the stairs, stand across from Sawyer at the counter to target her.",
-        "If she is on the upper floor, stand at the counter beneath her to target her.",
-        "Obtain a Rolanberry 874 from the mini-quest in Crawlers' Nest or purchased in the Auction House under Food -> Ingredients.",
-        "Trade the Rolanberry 874 to Hilda and she will give you an Unfinished Letter (key item) to take to Cid.",
-        "Return to the Metalworks and talk to Cid to deliver the letter and complete the quest.",
-    },
-
-    bsz_mw_beadeaux_smog = {
-        "Talk to High Bear. He will tell you \"I am compiling data on the effects of Bastok's mining and industrial projects on the environment. I've heard adventurers say that the Quadav dumping of industrial waste has polluted Beadeaux and its surrounding areas. I'd like to examine some of that Corrupted Dirt. I've heard you can find some near their forges, and that it's also easier to spot on rainy days.\"",
-        "Go to Beadeaux. Proceed straight in, then turn left (go north) when you reach the wall at F-7. Go north to the wall in F-6, then due east to H-6. From here head south and you'll find yourself going into a cave that leads down. Take that down until it exits at H-7 on the lower map.",
-        "From here, go west and south as you can until you come to the tunnel at F-8 that leads back to the surface; you will pass one Afflictor that will Curse you as you proceed. Follow the surface path along, south past the Mute at F-9. Continue south, under the bridge and past the second Afflictor, then head east around the giant smokestacks at G-9/H-9.",
-        "When the weather is raining, a ??? will appear near the base of the smokestacks at G-9 or H-9(see map). Select that to receive the Corrupted Dirt (key item).",
-        "Return to the Metalworks and talk to High Bear to deliver the dirt and complete the quest.",
-        "The quest The Curse Collector can easily be done in the same trip.",
-    },
-
-    bsz_mw_the_darksmith = {
-        "Talk to Mighty Fist.",
-        "Trade two Darksteel Ore to Mighty Fist to complete the quest.",
-    },
-
-    bsz_mw_stars_of_ifrit = {
-        "Talk to Agapito, who is outside the air travel agency in Port Bastok.",
-        "Next you have to ride the San d'Oria-Jeuno Airship under the right conditions, which are nighttime and Full Moon (19:40 - 06:00 and moon >= 90%). Either direction will work.",
-        "Do not board in Port Bastok; you cannot receive the item on this route.",
-        "Search the rail of the ship for a ??? and check it to obtain a Carrier Pigeon Letter.",
-        "Return to Agapito with the letter to receive your reward.",
-    },
-
-    bsz_mw_gustaberg_tour = {
-        "Talk to Izabele to begin the quest.",
-        "Pair up with somebody else.",
-        "One of you must be level 10-15 if you want to use Level Sync to meet the level requirement. Remember that Level Sync does not work if the sync designee is below level 10. Alternatively, all party members can naturally be levels 1-15.",
-        "When everyone has the quest, go to North Gustaberg (west section) and talk to Hunting Bear near the falls to get a short cutscene that completes the quest.",
-        "There is some chance of aggro on the way to the falls, but it is easily killed if either of you are level 8+.",
-        "To actually complete the quest, Alter Egos won't work. The quest requires a real party member. However, after completing this quest, you can rewatch the cutscene with Hunting Bear at the Goblin Footprint in North Gustaberg. If you summon Alter Egos with Trust Magic and then rewatch this quest's cutscene, you can see your summoned Alter Egos in the cutscene.",
-    },
-
-    bsz_mw_dark_legacy = {
-        "With your main job set to level 40+ Dark Knight, talk to Raibaht in Cid's Lab in the Metalworks. Raibaht asks you to find a book detailing the Darksteel Formula.",
-        "Talk to Mighty Fist in the Darksteel Forge to receive a Letter from the Darksteel Forge.",
-        "Talk to Cochal-Monchal in the west wing of the Optistery in Windurst Waters North at (F-8).",
-        "Obtain 2 Yagudo Cherry (only 1 is required) one to trade to Quu Bokye and one to spawn Vaa Huja the Erudite.",
-        "Head to Giddeus.",
-        "Home Point #1 (under Sarutabaruta ) is the fastest way there. Optional: Go to the storage room located at (G-6) on the second map and speak to Quu Bokye. He will mention Vaa Huja the Erudite and something about Yagudo Cherries. Trade him a Yagudo Cherry and he will reveal Vaa Huja the Erudite's location and some interesting information about him.",
-        "Follow the path along the west side of the first map and head to (H-7).",
-        "Drop down (drop D as labeled on map) to the lower level and continue heading south to (H-14).",
-        "Do not drop down off the cliff after you exit the cave.",
-        "Trade a Yagudo Cherry to the ??? at (H-14) to spawn Vaa Huja the Erudite.(You only need one Yagudo Cherry if you're going with a group)",
-        "(see testimonials)",
-        "Kill Vaa Huja the Erudite and check the ??? again to receive the \"Darksteel Formula\". Optional: Talk to Cochal-Monchal in the Optistery.",
-        "Return to the Metalworks. Optional: Talk to Mighty Fist.",
-        "Talk to Raibaht to complete the quest.",
-    },
-
-    bsz_mw_dark_puppet = {
-        "Go to Cid's Lab in the Metalworks and talk to Cid to hear comments about the Darksteel Formula you found during the Dark Legacy quest. Raibaht informs Cid that Zeid sent him a letter indicating that he found one of the weapons forged by Gerwitz, the legendary darksteel smith, but it has taken the form of an evil weapon. You must meet Zeid and help him with his task.",
-        "Obtain a Darksteel Ingot (only one is needed per group).",
-        "Zone into Ordelle's Caves from La Theine Plateau for a cutscene where Zeid comes up to you and tells you that a merchant who had been in the caves was attacked by Gerwitz's Axe.",
-        "You will also get the cutscene if you warp to the Ordelle's Caves Survival Guide.",
-        "Make your way to SW corner of I-8 on this map. (Note: The Ordelle's Caves 1 map shows the ??? spawn point at H-11, this is incorrect, I-8 is the correct location for the spawn point.)",
-        "When ready, trade the Darksteel Ingot to the ??? and spawn Gerwitz's Axe.",
-        "Kill Gerwitz's Axe and it will drop Gerwitz's Axe (Item).",
-        "Note: If you die and must leave the zone you will need another Darksteel Ingot to repop.",
-        "Note: Gerwitz's Axe has bad evasion and low defense but has near perfect accuracy and can hit pretty hard. (DO NOT attempt to shadow/evade tank)",
-        "Note: Gerwitz's Axe's melee attacks have an added Drain TP effect.",
-        "Note: Gerwitz's Axe will not aggro if spawned with sneak.",
-        "After obtaining Gerwitz's Axe (Item), take the south passage in H-9 which climbs upwards.",
-        "After you finish climbing, head all the way south to the hole at H-11/H-12. Drop down the hole.",
-        "After landing, do not drop off the ledge you land upon. Go slightly north-east to the path at I-11 and you'll find yourself at J-8 of the third map.",
-        "There are lv 80+ Targe Beetle down there, but they don't aggro.",
-        "Follow the path to H-8, hugging the left wall if you don't have a map for reference.",
-        "Spawn Gerwitz's Sword by trading Gerwitz's Axe (Item) to the ???.",
-        "Kill Gerwitz's Sword and it will drop Gerwitz's Sword (Item).",
-        "Note: Gerwitz's Sword will use Blood Weapon around 50% of HP and it's not as tough as Gerwitz's Axe.",
-        "Note: Gerwitz's Sword will not aggro if spawned with sneak.",
-        "The final ??? is just a bit farther south, at H-10 on the same map.",
-        "Mind the Morbolger NM that sometimes pops there. It aggros all levels.",
-        "Spawn Gerwitz's Soul by trading Gerwitz's Sword (Item) to the ???.",
-        "Gerwitz's Soul is a Ghost NM around level 54.",
-        "Note: Gerwitz's Soul will not aggro if spawned with sneak.",
-        "Kill Gerwitz's Soul.",
-        "Exit to La Theine Plateau from the same map at G-10 and you'll get a cutscene, receive your reward, and complete the quest.",
-    },
-
-    bsz_mw_teak_to_the_stars = {
-        "Raibaht needs some Garhada Teak Lumber for an airship Cid is working on.",
-        "Garhada Teak Lumber is dropped by enemies on the Phanauet Channel barge, both randomly spawned (Giant Pugil and Ooze) and fished up (Fishtrap); it is not dropped by Flytraps. The barge can be boarded from various stops along Carpenter's Landing.",
-        "It is also dropped by the Fishtraps that are fished up in Carpenter's Landing. The dock by the Survival Guide is a good place, but be warned that some fish that can break rods, such as Dark Bass, are fished up there.",
-        "Trade one piece of the Garhada Teak Lumber to Raibaht to complete the quest and receive your reward.",
-    },
-
-    bsz_mw_hyper_active = {
-        "You must zone after completing the previous quest to activate this one.",
-        "Raibaht gives you a Molybdenum Box in which to smuggle the Hyper Altimeter through Jeuno customs once the adventurer reveals its location to you.",
-        "Head to Delkfutt's Tower in Qufim and use the Delkfutt Key (obtained from Mission 3-3) OR Delkfutt Key (Key Item) to open the door to the basement inside level 1 at (E-8).",
-        "Proceed downstairs to basement and head to (I-6), where the passage dead-ends into a cermet door.",
-        "Upon attempting to open the door, a message will be displayed, \"A bloodthirsty monster has appeared!\". The monster Orna, and two Fomorian Spear will spawn.",
-        "Upon defeating Orna, the two Fomorian Spears will despawn.",
-        "Attempt to open the door again and watch a cutscene with the adventurer that was sent to kill Orna. He tells you that he hid the Hyper Altimeter in one of the streetlamps in Lower Jeuno.",
-        "Head to Lower Jeuno and search the streetlamps until you find the Hyper Altimeter, which you put into the Molybdenum Box.",
-        "Head back to Bastok and talk to Raibaht to complete the quest.",
-        "You do not need to clear customs in the Bastok-Jeuno Airship terminal. You may use the Home Point to return to the Metalworks.",
-    },
-
-    bsz_mw_the_naming_game = {
-        "Talk to Raibaht to start the quest. You do not need to zone after completing the previous quest.",
-        "Obtain an Ordrynite from a Cryptonberry Plaguer or Cryptonberry Stalker in Pso'Xja. These mobs can be found in both the (G-9) and (I-7) entrances from Beaucedine Glacier, but (G-9) is recommended over (I-7) since it has more spawns. Alternatively, the Ordrynite is obtainable through digging in Beaucedine Glacier as of June 2016 update.",
-        "Trade the Ordrynite to Raibaht for a cutscene and your rewards.",
-        "You can rename the airship by trading another Ordrynite.",
-        "You are initially allowed to pick three words, and the last word will be C.I.D.",
-        "Example: If Mighty, Morphing, and Power are chosen, the name will be Mighty Morphing Power C.I.D.",
-        "After repeating the quest ten times, you can choose a different name than C.I.D. for the fourth option.",
-        "Ultra",
-        "Hyper",
-        "Psycho",
-        "Eternal",
-        "Neo",
-        "Lovely",
-        "Pretty",
-        "Final",
-        "Extra",
-        "Deadly",
-        "Savage",
-        "Aero",
-        "Pseudo",
-        "Universal",
-        "Exciting",
-        "Celestial",
-        "Super",
-        "Mighty",
-        "Mega",
-        "Omni",
-        "Poly",
-        "Terror",
-        "Perfect",
-        "Royale",
-        "Gorgeous",
-        "Pretty",
-        "Hell",
-        "Fantasy",
-        "Stealth",
-        "Powerful",
-        "Invincible",
-        "Explosive",
-        "Storm",
-        "Fantastic",
-        "Duper",
-        "Go-Go",
-        "Morphing",
-        "Retro",
-        "Sonic",
-        "Cloud",
-        "Sky",
-        "Stellar",
-        "Hyper",
-        "Neo",
-        "Lovely",
-        "Happy",
-        "Caller",
-        "Hound",
-        "XI",
-        "Armored",
-        "Brutal",
-        "Buster",
-        "Alpha",
-        "Chief",
-        "Provoker",
-        "Mincer",
-        "Streak",
-        "King",
-        "Prince",
-        "Power",
-        "Robo",
-        "Delver",
-        "Mystic",
-        "C.I.D.",
-        "Enterprise (Final Fantasy III)",
-        "Nautilus (Final Fantasy III)",
-        "Gilgamemnon",
-        "Redwing (Final Fantasy IV)",
-        "Blackjack (Final Fantasy VI)",
-        "Falcon (Final Fantasy IV)",
-        "Highwind (Final Fantasy VII)",
-        "Ragnarok (Final Fantasy VIII)",
-        "Hilda Garde (Final Fantasy IX)",
-        "Prima Vista (Final Fantasy IX)",
-        "Red Rose (Final Fantasy IX)",
-        "Fahrenheit (Final Fantasy X)",
-    },
-
-    bsz_mw_out_of_the_depths = {
-        "Talk to Ayame (K-7 on the top floor of Metalworks in a Cannon Room) and accept her job offer. You cannot start this quest if you are a Bastokan citizen and have completed Bastok Mission 4-1, but have not started Bastok Mission 5-1. Ayame will just tell you to go talk to Naji because there is an emergency.",
-        "Next go talk to Ravorara outside the Steaming Sheep Restaurant (Home Point #3).",
-        "Talk to Brakobrik at , selecting the option \"I getting you.\"",
-        "You can use a Proto-Waypoints to teleport to the Geomagnetic Fount at (K-11). Just drop down to the floor Brakobrik is on.",
-        "Proceed to kill Ancient Bombs and gather 11 Hoary Bomb Ashes. Each kill will net you one to four.",
-        "These bombs are hard to come by as they hang out by themselves in the tunnels throughout the zone. Since they have a 14 minute respawn time, making a wide circle through the zone through their spawn points is recommended (FFXIDB spawn map).",
-        "Once you have 11 Hoary Bomb Ashes, take 10 of them & trade them in a specific way to Brakobrik.",
-        "Trade 1 pinch of Hoary Bomb Ash to get the Dusty Tome",
-        "Trade 2 pinches of Hoary Bomb Ash to get the Pointed Jug",
-        "Trade 3 pinches of Hoary Bomb Ash to get the Cracked Club",
-        "Trade 4 pinches of Hoary Bomb Ash to get the Peeling Hairpin",
-        "Now return to Port Bastok and talk to Ravorara four times - once for each key item. She'll give you 100 gil for the Dusty Tome, 200 gil for the Pointed Jug, 300 gil for the Cracked Club, and 400 gil for the Peeling Hairpin (repeatable if quest isn't finished).",
-        "Now you must return to Oldton Movalpolos and trade one additional Hoary Bomb Ash to Brakobrik.",
-        "This time say \"No Thanks\" when he offers a reward. He will apologize to you and give you the Old Nametag.",
-        "Head back to Port Bastok and talk to Ravorara.",
-        "Finally, go to Bastok Mines and speak with Pavvke, in a house on the lower level of I-7, to finish the quest and get your final reward, 1,200 gil.",
+    bsz_bkt_proper_burial = {
+        "Speak to Offa to begin quest.",
+        "Travel to Bastok Markets (S) and speak to young Offa (S) (F-10).",
+        "You will be given two options which will lead to two differing paths you take with the quest. * Please follow the next section depending on your choice:",
+        "Whichever way you decided to complete the previous section, once you have obtained the Rolanberry he gives, travel to Bastok Markets (S) one more time and trade the Rolanberry to young Offa , then return to Bastok Markets and speak with Offa there to complete the quest and obtain the Withered Berry .",
     },
 
     bsz_mw_question_of_faith = {
-        "Talk to Ayame to activate the quest.",
-        "Next, go to Bastok Mines and talk to Virnage at I-5 (in the Bats Lair Inn) to receive the Dawn Talisman.",
-        "Next head out to Oldton Movalpolos to speak with Rakorok at K-10. When you click on Rakorok, the NM Bugallug will immediately appear. Defeat Bugallug . Please note, the other Moblins in the area will link with Bugallug.",
-        "Talk to Rakorok again, and get a cutscene.",
-        "Go back to Bastok Mines and speak with Virnage again to get your reward.",
+        "Talk to Ayame for a cut-scene that starts the quest.",
+        "Go to Bastok Mines and talk with Virnage at (I-5) for a cut-scene. Agree to his proposal, and you will receive the Dawn talisman .",
+        {
+            text = "Go to Oldton Movalpolos and talk with Rakorok at (K-10). This will spawn the NM Bugallug , which must be defeated. It has around 5000HP and does the standard Bugbear attacks (Earthshock, Heavy Whisk, Flying Hip Press, etc.)",
+            substeps = {
+                "Closest warp is via Proto-Waypoint to the Geomagnetic Fount at (K-11) if you have it.",
+            },
+        },
+        "After defeating Bugallug , talk with Rakorok for a cut-scene where you will lose the Dawn talisman .",
+        "Return to Bastok Mines and talk with Virnage to complete the quest and receive your reward.",
     },
 
-    bsz_mw_return_to_depths = {
-        "Talk to Ayame for a cutscene that starts the quest.",
-        "Go to Oldton Movalpolos, watch a cutscene, and proceed to Misareaux Coast and obtain a Misareaux Garlic that drops from the Orcs there.",
-        "(You don't necessarily need to watch the CS before obtaining the garlic.)",
-        "Go to Lower Jeuno and trade the Misareaux Garlic to Muckvix (located at H-10 in Goblins' Goblet, through Muckvix's Junk Shop.) You will receive 2,000 gil and a Letter from Muckvix.",
-        "Go to Kazham and talk with Magriffon, located at I-7 in Celodehki's Bed & Breakfast.",
-        "Trade him 10,000 gil for a cutscene and two key items: Letter from Magriffon and Providence Pot.",
-        "You will receive the 10,000 gil back at the end of the quest.",
-        "Trading Magriffon the 10,000 gil will continue this specific quest even if other quests are currently active that involve giving Magriffon gil.",
-        "Return to Lower Jeuno and talk with Muckvix for another cutscene where you deliver the key items and receive a Pungent Providence Pot in return.",
-        "Zone into Oldton Movalpolos from the western K-6 North Gustaberg entrance for a cutscene. (Zoning in via the Survival Guide also triggers the cutscene.)",
-        "Talk to Tarnotik at (K-10), answering in the affirmative to both his questions.",
-        "Trade one Ahriman Tears to Tarnotik to be teleported to Mine Shaft #2716.",
-        "Each person who is involved in the quest must trade a tear to Tarnotik to be teleported to the BCNM zone. EACH PERSON MUST HAVE DONE OR ACTIVATED THIS QUEST IN ORDER FOR THIS TO WORK.",
-        "Tarnotik will continue to perform this service for you even after the quest is completed. One Ahriman Tears is still required for each teleport.",
-        "Check the Shaft Entrance for a cutscene.",
-        "Check it again and select the battlefield Return to the Depths.",
-        "As of the May 10, 2011 Version Update, the level 40 restriction on this battlefield has been removed. The Moblins' strength is unchanged.",
-        "Buffs wear on entry, and Trusts cannot be summoned in the battlefield.",
-        "You will receive a cutscene as you enter the battlefield. Answer with the top option every time you are asked a question.",
-        "The Moblins Twilotak (Dark Knight) and three Moblin Clergymen (White Mage) and three Moblin Wisewomen (Red Mage) are in the back of the BCNM arena.",
-        "Only Twilotak has to be defeated to complete the BCNM; the other six can be killed if you wish. They do not attack with melee hits even when engaged. They only stand in the background and cast.",
-        "Twilotak casts standard Dark Knight spells and has around 5800HP.",
-        "The Moblin Clergymen and Moblin Wisewomen use Draw In, which makes Twilotak very difficult to kite unless the supporting Moblins are defeated.",
-        "Twilotak can use Blood Weapon multiple times.",
-        "The three Moblin Wisewomen cast spells such as Haste on Twilotak and cast spells like Sleep II and Dispel on players.",
-        "The three Moblin Clergymen cast spells such as Protect III and Cure IV on Twilotak and Holy on players.",
-        "This fight can be easily soloed by any level 90 job. It was formerly capped at level 40 and was very difficult, but at level 90, it is nothing.",
-        "Defeat Twilotak to end the BCNM and receive a cutscene and 10,000 gil.",
-        "Once you complete the BCNM, when you zone out of Mine Shaft #2716 you'll be in Newton Movalpolos on a ledge, safe from the standard Moblins. If you do not have someone in your group who can Escape, talk to the NPC Sleakachiq on that ledge to receive a teleport back out to North Gustaberg, at the cost of 800 gil per person.",
-        "Return to Metalworks and talk with Ayame for the Bowyer Ring reward and to end the quest. You may have to talk to her twice to trigger the cutscene. Optional: Talk to the Tarutaru Ravorara in Port Bastok (E-7) to sell the Pungent Providence Pot for 1,000 gil.",
+    bsz_pb_test_of_true_love = {
+        "Zone after completing Love and Ice",
+        "Speak with Carmelo to begin quest",
+        "Travel to the following locations and procure 3 necessary items from Treasure Chests :",
+        "Return to Bastok and speak with Carmelo with all 3 key items in possesion.",
+        "After the conversation, zone out, then return to him and speak with him one last time to complete quest.",
     },
 
-    bsz_mw_faded_promises = {
-        "With your job set to ninja level 20+, talk to Romualdo for a cutscene to start the quest.",
-        "Go to the other Cannonry room and talk to Ayame.",
-        "You may get a scene related to the quest Out of the Depths the first time you speak to her.",
-        "Obtain a Palborough Chest Key in the Palborough Mines and open a treasure chest there to obtain the Diary of Mukunda.",
-        "Return to Bastok and talk to Kagetora (F-6) in Port Bastok, then talk to Ayame again.",
-        "Finally, talk to Alois (J-8) in Metalworks to receive your reward.",
+    bsz_pb_achieving_true_power = {
+        "Shamarhaan is the Puppetmaster standing near the Fountain in Bastok Markets . Talk to him as a Puppetmaster to begin the quest.",
+        "Farm Trolls for the testimony . Specific Trolls drop it.",
+        {
+            text = "Trade to Shamarhaan to initiate the Navukgo Execution Chamber BC (you will be warped there), where just like the Maat fight, you'll have to fight Shamarhaan to break level cap limit.",
+            substeps = {
+                "Upon arrival at Navukgo Execution Chamber , trade the Testimony to the Decorative Bronze Gate to begin battle.",
+                "Shamarhaan will be accompanied by his Automaton Valkeng , so you will need to prepare for a battle with both of them.",
+                "Battle Time Limit: 10mins",
+                "If you have the \"Rhapsody in Umber\" Key Item, you are able to summon Trust Magic to aid you.",
+                "Bring Shamarhaan down to -20% hp and you should win the battle.",
+            },
+        },
     },
 
-    bsz_mw_too_many_chefs = {
-        "Talk to Ferghus in the Craftsmen's Eatery at G-9 in Metalworks.",
-        "Talk to Leonhardt in the Craftsmen's Eatery (same room) at H-9.",
-        "Talk to Raginmund at L-10 in Bastok Markets (S).",
-        "Kill Quadav for a Red Oven Mitt.",
-        "Trade the Red Oven Mitt to Leonhardt.",
-        "Talk to Ferghus",
-        "Talk to Umberto in Bastok Markets L-10 to complete the quest.",
+    bsz_bkt_all_by_myself = {
+        "Speak to Marin and accept the quest.",
+        "When prompted, you need to select \"I wasn't talking to you, squirt.\" in order to proceed.",
+        {
+            text = "Enter Dangruf Wadi for a short introductory cutscene.",
+            substeps = {
+                "If you use the Survival Guide to teleport, you must re-zone in order to receive this cutscene.",
+            },
+        },
+        {
+            text = "Speak to the NPC Ken to initiate the quest.",
+            substeps = {
+                "This will cap you at level 10.",
+                "Buffs do remain active, but you cannot cast anything on Ken before starting the quest.",
+            },
+        },
+        "Escort Rules",
+        "You will fail the mission if Ken spots you at any time.",
+        "Ken engages all enemies that are in his line of sight.",
+        "You must keep Ken alive as he battles monsters in Dangruf Wadi .",
+        "He has reasonable survivability, but will be in danger after about 3-4 enemies.",
+        "Ken cannot be stopped like NPC's used in the 3 nation escort quests.",
+        "Ken will attack an unclaimed enemy even if it has aggression on an outside player.",
+        "When attacking, Ken's target will appear unclaimed, but outside people still cannot attack it.",
+        "His sight distance is considerable so be aware of your position.",
+        "When he spots a monster, he makes a beeline for it and begins attacking. After a monster is dead, he will then \"snap\" back onto the path location he was at before he drew his weapon. This almost certainly means he will turn around abruptly and spot you if you were behind him curing him. This causes him to pass normally impassable terrain.",
+        "He kills lizards and worms in usually only four-five hits. His accuracy is horrible though. Goblins take around five of his hits, and crabs take about six-seven.",
+        "One way to make this quest easier is if you have a higher level friend run slightly ahead of Ken and kill monsters before he attacks them. You will still need to be careful that he does not spot you, and it's possible he will need curing if he reaches a monster before your friend does. Once Ken starts attacking a monster, your friend cannot help him.",
+        "Escort Route Progression",
+        "Ken will always follow the same path outlined in the map provided.",
+        "As he progresses you will receive messages of him speaking that indicate how far along the route he currently is. Each message corresponds to a number and location on the map:",
+        {
+            text = "1: \"I have this funny feeling I'm being watched... Let's see if anybody's following me...\"",
+            substeps = {
+                "At this point Ken will stop and turn around. Make sure you're out of sight.",
+            },
+        },
+        {
+            text = "2: \"Uh-oh... I think I'm lost. I really should have brought that map Sis gave me...\"",
+            substeps = {
+                "Ken will pause for a moment before continuing.",
+            },
+        },
+        {
+            text = "3a: \"Now, where should I begin my survey...\"",
+            substeps = {
+                "Ken will pause, rotate 360 degrees, Say a couple \"Hmms\" then run to the pond in the middle of the large room.",
+            },
+        },
+        "3b: \"This looks like a good place... But I wonder if there is anything interesting further on...\"",
+        {
+            text = "4: \"A dead end... I guess I'll go back to that other place.\"",
+            substeps = {
+                "Ken will turn around and return the way he came. Hide behind the southern rock.",
+            },
+        },
+        {
+            text = "5: \"Ah, here we are. Now let's see... Depth... Temperature...\"",
+            substeps = {
+                "Ken will pause to take a reading at the hot spring.",
+            },
+        },
+        {
+            text = "6: \"... What was that sound...\"",
+            substeps = {
+                "Ken will stop and turn around. Make sure you're out of sight.",
+            },
+        },
+        {
+            text = "7: \"Have I already been here... Wait a minute... This place looks familiar...\"",
+            substeps = {
+                "As Ken reaches the first room again he will run in circles. Make sure you're far away from the perimeter.",
+            },
+        },
+        {
+            text = "8: \"Huh. That was easy. I don't know what Sis was all worried about.\"",
+            substeps = {
+                "After this, Ken will run towards the zone line and despawn.",
+                "Be behind him for this part, because he will see you when he runs towards the zone line facing out!",
+            },
+        },
+        "After Ken despawns, Marin will appear at the exit. Speak to her to remove the level cap and receive Ken's escort award .",
+        "Return to Bastok Markets and speak to Marin again to finish the quest.",
+    },
+
+    bsz_bm_altanas_sorrow = {
+        "Speak with Virnage in the back room of the Bat's Lair Inn in Bastok Mines (I-5).",
+        "Travel to Garlaige Citadel and find the ??? in a room around (G-8/H-8).",
+        "Examine the ??? to obtain the Bucket of Divine Paint.",
+        "Return to Virnage to receive the Letter from Virnage.",
+        "Deliver the letter to Eperdur upstairs in the Northern San d'Oria Cathedral (M-7) to complete the quest.",
+    },
+
+    bsz_pb_ayame_and_kaede = {
+        {
+            text = "Talk to Kaede in Port Bastok at (J-5) - nearest to Home Point #1 (E) - in the north most house for a cutscene.",
+            substeps = {
+                "(if she says \"I heard somebody at the warehouse saying that the people from Aht Urhgan are sneaky.\", disregard it and talk to her again.)",
+            },
+        },
+        "Talk to Kagetora at (F-6), inside the door to Warehouse 2 .",
+        {
+            text = "Return to Kaede's house and speak with Ensetsu at (I-5) for a cutscene.",
+            substeps = {
+                "The quest log entry will appear after this cutscene.",
+            },
+        },
+        {
+            text = "Travel to (K-8) within Korroloka Tunnel , Map 5.",
+            substeps = {
+                "The quickest entrance is from Western Altepa Desert at (M-8), via the Survival Guide . This entrance will bring you directly to Map 5.",
+                "Although the Survival Guide to Zeruhn Mines is also close.",
+            },
+        },
+        {
+            text = "Click on the ??? to spawn 3 Korroloka Leeches .",
+            substeps = {
+                "These leeches will link with any Thread Leeches in the vicinity.",
+                "If for some reason you click on the ??? and the Leeches don't pop, try relogging.",
+            },
+        },
+        {
+            text = "Once the leeches are defeated and after the bodies despawn, click on the ??? to receive the Strangely shaped coral .",
+            substeps = {
+                "Multiple players may do this quest at the same time for the coral:",
+            },
+        },
+        "Return to Ensetsu in Port Bastok at (I-5).",
+        "Travel to Norg and speak with Ryoma at (H-8), who will give you the Sealed dagger .",
+        {
+            text = "Return to Ensetsu to complete the quest.",
+            substeps = {
+                "(Optional) Speak to Kaede afterwards for some closing dialogue.",
+            },
+        },
     },
 
     bsz_mw_bait_and_switch = {
-        "Talk to Salim to get a cutscene. He is standing on the balcony overlooking the north elevator.",
-        "DO NOT ZONE after you have started the quest; if you do, it will be cancelled.",
-        "Next go to the Temple of the Goddess at the bottom of Metalworks G-8 and examine the ??? on the altar for a cutscene with Miledo-Shiraddo and Luto Mewrilah.",
-        "After the first time through, you become \"more involved\" in the cutscene.",
-        "Choose one of seven different items to help you in the quest. Whichever you choose will determine your reward",
-        "Bard's Harp -> Prism Powder. When using it on guards, choose \"Recent Happy Times\" for Militant Gale, \"Promotion Day\" for Gentle Tiger - other results are neutral/unfavorable. The first time you play for each guard, you receive a small 10 gil reward (until you have played for both guards. You can play for the same one and get a reward as long as you haven't played for the other. -- even repeating the quest in future \"cycles\" does not reset this). You can play the harp with no limit - using the songs above will allow you to progress to press the switch.",
-        "??? (Costume Kit) -> Icarus Wing. The Costume Kit is revealed after completing the quest once with each of the other available options and upon completion of Chameleon Capers. -Note- Only able to be completed once unless you restart the NPC quest.",
-        "Lead Guardsman's ID -> Hi-Potion",
-        "Militant Gale - Used Lead Guardsman's ID",
-        "Take a break - Leaves to take a break.",
-        "Guard another spot - Luto Mewrilah or Miledo-Shiraddo captured.",
-        "Call all guards together - Luto Mewrilah or Miledo-Shiraddo captured.",
-        "How is Salim doing? - Goes away to check on Salim.",
-        "Gentle Tiger - Used Lead Guardsman's ID",
-        "All options are same as for Militant Gale, but you get the exact opposite results!",
-        "Take a break - Luto Mewrilah or Miledo-Shiraddo captured.",
-        "Guard another spot - Leaves to guard another spot.",
-        "Call all guards together - Leaves to call them together.",
-        "How is Salim doing? - Luto Mewrilah or Miledo-Shiraddo captured.",
-        "Lucky Charm -> Key Ring Belt",
-        "Pocket Watch -> Hermes Quencher",
-        "Scope -> Silent Oil. Allows you to see which NPCs are safe to talk to for hints; useless if you're reading this page. Don't use on hint NPCs or you can miss out on getting one.",
-        "Snare -> Hi-Ether You are given several locations in which to lay the snares. This will stop the guards from even challenging your attempts to press the switches, should you place a snare at the location where a switch is. Hint: Put the snares in each of the three switch locations. The \"all clear\" will be automatic each time you press a switch. The snares cannot be deactivated throughout the quest.",
-        "You must examine three switches in the Metalworks a total of 3-10 times, in random order. (e.g., MLSLLSMS, SLMMMSLL, LMSSSMLM, or other random combinations.)",
-        "Switch locations",
-        "The small switch (\"hardest to find\") is in the Cermet Refinery (Metalworks G-7), underneath a shelf, and north of the elevators.",
-        "The medium (or \"normal\") switch is at the replica (Metalworks G-8) near the entrance, next to NPC Quasim.",
-        "The large switch (\"hardest to use\") is at the kiln (Metalworks F-8) just outside of the Blacksmithing Guild.",
-        "There are 5 NPCs who will give you hints to the order in which the switches must be deactivated. The nature of the specific hints will vary, but as long as you talk to them, you'll be told everything you need to know. The NPCs are",
-        "Folzen (In corridor leading to Blacksmith Guild)",
-        "Darha (North side of open area just outside Blacksmith Guild)",
-        "Helmut (Middle of elevators room)",
-        "Hungry Wolf (Craftsmen's Eatery, Upper Floor)",
-        "Striking Snake (Gunpowder Room, Upper Floor)",
-        "At each switch, you will encounter a different guard. You will be given a choice of four options to deal with them.",
-        "Gentle Tiger: If it is this Galka, choose either...",
-        "\"Leave it to Luto Mewrilah\", or...",
-        "\"Say something clever\" and then choose \"Checking out the Metalworks.\"",
-        "Militant Gale: If it is this Galka, choose either...",
-        "\"Leave it to Miledo-Shiraddo\", or...",
-        "\"Say something clever\" and then choose \"Waiting for a friend.\"",
-        "Pensive Beast (Appears only when the Lucky Charm is picked as the help item): If you run into the Lead Guardsman, choose...",
-        "\"Use the Lucky Charm.\"",
-        "Note: If you are at the wrong switch, he will catch you no matter what.",
-        "Salim (Appears in the place of the other guards when the Costume Kit is selected): When you see him...",
-        "\"Use the Costume Kit\" and then select one of the three items (knitted cap, spectacles, silver heels). The knitted cap will transform you into Salim's son Pabro if you're a male character, or his daughter Erba if you're a female character; the spectacles will transform you into Salim's father if you're a male character, or his mother if you're a female character; and the silver heels will transform you into Salim's wife Ulrica regardless of your gender. Any of the 3 transformations will work, and there does not seem to be a limit as to how many times you can transform into the same person during the quest.",
-        "Once you see the message \"You hear a noise from the direction of the Temple of the Goddess\", go back to the temple and check the ??? for a final cutscene to complete the quest and receive your reward. The first time you complete this quest for any item, you will receive an extended cutscene with Miledo-Shiraddo (Nambima-Hyonbima). Salim will give you a reward based on the item you selected previously.",
-        "This quest can be only be done ONCE per Conquest Tally.",
-        "Failure to Distract",
-        "If you fail to distract the guard, either Luto Mewrilah or Miledo-Shiraddo will be caught.",
-        "If Luto Mewrilah or Miledo-Shiraddo get caught, you can free them by going to the NPC Ferghus (in Craftsmen's Eatery, Upper Floor) and then NPC Folzen.",
-        "If Luto Mewrilah or Miledo-Shiraddo get caught three times, you must start the quest over. Speak to Salim again and visit the Temple. (The switch order will be reset to a new random order.)",
-        "If someone gets caught, DO NOT press the switch again. This will reset all the switches. Go release the NPC that was captured (via the above mentioned method) and head back to the switch that you previously got wrong and try again. The Guardsmen may or may not be the same one.",
-        "Helpful Tips",
-        "If you are checking the switches in the correct order and choose the correct action/response to the Galka guards, you will distract the guard, and will be able to check the switch. (Depending on the item you choose to start out with, you may get some additional characters showing in the cutscenes. The one with the Snares is particularly funny.)",
-        "If you did it correctly, you will get a message saying \"The [First, Second, Third, Fourth, Fifth, Sixth, or Seventh] switch has been deactivated.\"",
-        "Once you've deactivated all of the switches, you get a message saying \"You hear a noise from the direction of the Temple of the Goddess.\"",
-        "If you did it incorrectly, you will still be able to hit the switch, but you will not get a message. Doing so will also reset the switches that you have pressed thus far; the order will remain the same, but you will have to start from switch #1 again.",
-        "Note: If you are caught while trying to activate an incorrect switch, the switches you deactivated up to that point will not be reset. Free whomever was caught then continue from where you left off.",
-        "Zoning after the quest is complete but your reward is not obtained (EG: Key Ring Belt is in your Mog Safe, you choose the Lucky Charm to reobtain the belt, unlock the switches and get the, \"Come back after sorting your inventory.\" message) you will have to repeat the entire quest. You can just click the ??? again if you drop the belt without having to zone without repeating the quest.",
-        "Switch Log Tips",
-        "Talk to Folzen first and type in the number of switches in Party Chat (This is best done when NOT in a party). You can also type \"/echo \" and you'll be the only one to see the text, thus not disturbing anyone in a party.",
-        "From here, you can keep track of everything by typing in S (Small), M (Medium), or L (Large) for the switch order.",
-        "Talk to another NPC to find out the switch order. If they reply with something like, \"you should press the smallest switch third, fourth, and fifth,\" you will then type into your Party Chat, \"1 2 3S 4S 5S 6 7 8.\"",
-        "Continue this to get the full order and your list should look something like this, \"1L 2M 3S 4S 5S 6M 7L 8M.\"",
+        "Speak to Salim to start the quest.",
+        "Examine the ??? on the ground floor (take the elevator) in the Temple of the Goddess at (G-8).",
+        "*IF YOU ZONE AT ANY TIME AFTER CLICKING THE ??? YOU MUST START OVER BY TALKING TO SALIM",
+        "* Select one of the following items to aid in your adventure:",
+        {
+            text = "Item name / Number of switches / Special conditions / Reward",
+            substeps = {
+                "Scope - 3 - Silent Oil",
+                "Bard's harp - 4 - Prism Powder",
+                "Lead Guardsman's ID - 6 - Hi-Potion",
+                "Snares - 8 - Snare placement: Cermet Refinery, Kiln, and Metalworks Replica. - Hi-Ether",
+                "Lucky charm - 8 - Use Lucky charm for switches with Pensive Beast - Key Ring Belt",
+                "Pocket watch - 8 - Hermes Quencher",
+                "Costume kit - 10 - You must use Costume kit to get information, and avoid Salim at switches. - Icarus Wing",
+            },
+        },
+        "The goal is to find an NPC that will tell you about the switch order without talking to other NPCs who will call the guards to capture the Mithra and the Taru friend",
+        "Speak to the following NPCs to get clues about the switch order:",
+        {
+            text = "NPC name / Location / Function / Costume kit item",
+            substeps = {
+                "Folzen - Ground floor, kid Galka by Blacksmith Guild - Number of switches - Knitted hat",
+                "Darha - Ground floor, Galka near Home Point #2 - Switch order - Heels",
+                "Helmut - Ground floor, Hume old man near Home Point #2 - Switch order - Spectacles",
+                "Hungry Wolf - Upper floor, Craftman's Eatery, South of Cid's Lab - Switch order - Heels",
+                "Striking Snake - Upper floor, Gunpowder Room, North of Cid's Lab - Switch order - Heels",
+            },
+        },
+        "Activate the switches in the proper order. The order will be based on the comments of the NPCs and may differ.",
+        {
+            text = "The messages that confirm that you have activated the correct switches in order are:",
+            substeps = {
+                "The first switch has been deactivated.",
+                "The second switch has been deactivated.",
+                "You hear a noise from the direction of the Temple of the Goddess.",
+            },
+        },
+        "If you activate an incorrect switch, you will have to start from the beginning. When you attempt to activate a switch one of the following NPCs will appear:",
+        {
+            text = "NPC name / Action to avoid being arrested",
+            substeps = {
+                "Gentle Tiger - Leave it to Luto Say something clever: Checking out the Metalworks.",
+                "Militant Gale - Leave it to Miledo Say something clever: Waiting for a friend.",
+                "Pensive Beast - Use the Lucky charm item.",
+                "Salim - Costume kit (any costume works)",
+            },
+        },
+        "If you do the incorrect action, either Luto or Miledo will be captured. If so, speak to Ferghus then to Folzen . If the same character gets captured twice, the quest will end.",
+        "Once all switches have been deactivated, return to the ??? in the Temple of the Goddess for a cutscene and your reward.",
+        "You can repeat this quest once per conquest tally.",
     },
 
-    bsz_mw_synergistic_pursuits = {
-        "Head to Metalworks in Bastok and speak to Hildolf (F-8 ground floor), who asks for an Earth Crystal, a Flint Stone, an onz of Mythril Sand, and a Brass Tank.",
-        "Trade Hildolf the four items to obtain a Synergy crucible.",
-        "Congratulations! You are now a certified Synergist!",
+    bsz_mw_beadeaux_smog = {
+        "Speak to High Bear to begin quest.",
+        "Travel to Beadeaux .",
+        "Upon entry, Proceed straight in, then turn left (go north) when you reach the wall at F-7. Go north to the wall in F-6, then due east to H-6.",
+        "From here head south and you'll find yourself going into a cave that leads down. Take that down until it exits at H-7 on the lower map.",
+        "From here, go west and south as you can until you come to the tunnel at F-8 that leads back to the surface; you will pass one Afflictor that will Curse you as you proceed.",
+        "Follow the surface path along, south past the Mute at F-9. Continue south, under the bridge and past the second Afflictor, then head east around the giant smokestacks at G-9/H-9.",
+        "When the weather is raining, a ??? will appear near the base of the smokestacks. Select that to receive Corrupted dirt .",
+        "Return to High Bear and speak with him to complete the quest.",
     },
 
-    bsz_mw_synergistic_support = {
-        "Head to Metalworks in Bastok and simply speak with Hildolf (F-8 ground floor) for cutscene.",
-        "After giving you some tips on how to make your own fewell, Hildolf offers you three free Fewell of your choice. After making your selection, this quest is immediately added to your completed quests.",
-        "Hildolf may request Slime Oil if the crucible is obtained without doing the previous quest. In that case trading it to him will bring you to the Fewell selection.",
+    bsz_pb_beauty_and_galka = {
+        {
+            text = "Speak to Talib to start quest. After the cutscene, 'accept' the quest to proceed to the next portion.",
+            substeps = {
+                "If you happened to decline the quest the first time, you can still restart it by speaking with Parraggoh in Bastok Mines (H-5).",
+            },
+        },
+        "Trade a Zinc Ore to Talib and he'll give you a Palborough Mines logs",
+        {
+            text = "Speak to Parraggoh in Bastok Mines (H-5) to complete quest.",
+            substeps = {
+                "You may need to speak with him twice to complete this quest.",
+                "In the House on the bottom level",
+            },
+        },
     },
 
-    bsz_mw_weight_of_limits = {
-        "Talk to Iron Eater in Metalworks who will give you the Axe of Trials and the Weapon Training Guide.",
-        "Use the Axe of Trials until the latent effect disappears.",
-        "How to remove the latent effect",
-        "You must perform Weapon Skills and Skillchains on monsters that check as Easy Prey or higher.",
-        "Weapon Skills performed while under Level Sync count.",
-        "Weapon Skills performed in Reives will count.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "You must accumulate 300 total points.",
-        "To check to see if the latent effect has disappeared, simply look at your elemental resistances. If you are not receiving the elemental bonus from the Axe of Trials then you have broken the latent. It is NOT necessary to un-equip/re-equip the weapon.",
-        "You will not be able to tell if the latent is broken while under the effect of Level Sync. You will not receive the elemental bonuses while Level Sync is in effect. Therefore, you must be unsynced to check.",
-        "Once you no longer receive the latent effect bonus, head back to Metalworks and trade the Axe of Trials back to Iron Eater who will take the weapon from you and give you a Map to the Annals of Truth and tell you to head to Sanctuary of Zi'Tah.",
-        "Once in Sanctuary of Zi'Tah go to F-6 and click the ??? (ignore map's mark, it's just wrong) in the far northwestern corner of the square to spawn the NM named Greenman.",
-        "Once the NM is dead, re-examine the ??? to obtain the Annals of Truth. If you zone and forget to check the ???, you will have to fight the Greenman again to get the key item.",
-        "More than one person can gain the key item from a single fight, as long as they check the ???.",
-        "Bring this back to Iron Eater for your reward.",
+    bsz_pb_bite_the_dust = {
+        {
+            text = "Talk to Yazan (H-6), who asks you to exterminate Sand Bats in Valkurm Dunes .",
+            substeps = {
+                "Sand Bat Fangs are obtained from Sand Bats in the tunnels of Valkurm Dunes.",
+            },
+        },
+        "Once you have one, trade it to Yazan for your reward.",
     },
 
-    bsz_mw_shoot_first = {
-        "Talk to Cid in Metalworks to receive the Gun of Trials and a Weapon Training Guide.",
-        "Use the Gun of Trials until the latent effect disappears.",
-        "You must accumulate 300 total Weapon Skill Points by performing Weapon Skills on experience-yielding monsters. You cannot earn points by participating in Campaign Battles or Besieged, because those monsters do not directly grant experience points.",
-        "The Weapon Skills must be performed by this particular gun; using a melee Weapon Skill with this gun merely equipped does not count.",
-        "Weapon Skills performed while under Level Sync count.",
-        "Weapon Skills performed in Reives will count.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "No message is given when the latent effect is lost. To check if the latent effect has disappeared, simply check if you have the bonus stats; if not, you are done. It is not necessary to unequip the gun for the latent effect to disappear; the stats disappear immediately upon acquiring the 300th WS point.",
-        "Note your Elemental Resistance bonuses from the weapon: they will be gone if the latent is broken.",
-        "Once you no longer receive the latent effect bonus, head back to Metalworks and trade the Gun of Trials to Cid, who takes the weapon from you and gives you a Map to the Annals of Truth and instructions to head to the Boyahda Tree.",
-        "Once in the Boyahda Tree, go to Map 3 (J-8) and click the ??? to spawn the NM named Beet Leafhopper.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "Return to Cid for your reward.",
+    bsz_bm_blade_of_darkness = {
+        "Teleport to Bastok Mines Home Point #3, go inside the house ( upper floor ) at (J-7) and speak with Gumbah .",
+        {
+            text = "Speak to him repeatedly until you get the cutscene that begins the Quest. It specifically mentions finding Zeid so he can teach you how to become a Dark Knight.",
+            substeps = {
+                "It can be difficult to get the correct cutscene. There are situations where you receive the same dialogue no matter how many times you speak to them. Try zoning if this happens.",
+            },
+        },
+        {
+            text = "Travel to the Palborough Mines and go to the top floor (Map 3).",
+            substeps = {
+                "Home Point #1 is on the southern end of this map and you can make your way back north to near the top of the map, then proceed south again.",
+                "If you haven't unlocked it yet, and if you have completed the high-level limit break quest Beyond Infinity , you can use Domenic to teleport right to the home point outside Waughroon Shrine .",
+            },
+        },
+        {
+            text = "Go to the Boat Docks at (H-8), climb aboard one of the boats, and then interact with the Dock Lever for a cutscene with Zeid.",
+            substeps = {
+                "Ensure you have a free space in your inventory .",
+            },
+        },
+        {
+            text = "At the end of the cutscene, you will obtain the Chaosbringer greatsword.",
+            substeps = {
+                "If you drop the Chaosbringer before completing the requisite number of kills, return to Palborough Mines and ride the boat back to Zeruhn Mines to reobtain it; your kill count will be reset to zero.",
+            },
+        },
+        {
+            text = "You must now slay 100 monsters with the sword equipped in order to activate its potential.",
+            substeps = {
+                "Enemies do NOT have to grant experience points to provide credit.",
+                "This portion is easy if you have WAR or RUN leveled and Great Sword skilled.",
+                "If you do not have WAR leveled, you might as well level it up now! You can use the sword from level 1.",
+                "If you do not have Great Sword skilled, proceed to the starter mobs outside of gate, they should die in one or two hits as well as skill you up.",
+                "Do not use Weapon Skills for the kill shot; those kills won't count towards the 100 kills.",
+                "The only kills that count are normal kill hits from the sword .",
+                "The sword has a 'memory' of how many it has slain, so you do not need to worry about zoning out, logging out, etc. There is also no time limit.",
+                "You have to keep track of the number of kills yourself as there is no indicator on the sword. Or you could just go on a killing or farming rampage and before you know it, voila you have met the requirements.",
+                "It is best to not use Trusts, because they will \"take\" your kills and you will get no credit.",
+                "Set the Records of Eminence quest Conflict: South Gustaberg (or similar) to help you keep track of kills. Make use of the /echo command to track every 10th kill.",
+                "If you use Windower with chat logging, you can use a text editor like Notepad++ to find the number of \"#Playername defeats\" entries if you want to do it in one session.",
+                "If using Windower and addon LatentChecker, you can track the number of kills.",
+            },
+        },
+        "Upon the completion of the mass slaying, proceed to Beadeaux . Zone in for a cutscene to complete the quest.",
     },
 
-    -- ========================================================
-    -- OTHER LOCATIONS
-    -- ========================================================
+    bsz_bm_blade_of_death = {
+        "Speak to Gumbah to receive the key item Letter from Zeid .",
+        {
+            text = "Use the Chaosbringer to slay 100 more enemies.",
+            substeps = {
+                "If you discarded your Chaosbringer, take the boat from Palborough Mines to Zeruhn Mines to receive a new one from Zeid . This will reset the blade, meaning that you will have to kill a total of 200 monsters with the blade in order to complete the quest.",
+                "Same rules apply as Blade of Darkness , e.g. WS kills do not count",
+            },
+        },
+        "Go to Gusgen Mines and trade the Chaosbringer to the ??? at (J-7) on Map 1 to receive your reward. It is the same ??? used in Bastok Mission 3-2 to spawn the NM Blind Moby .",
+    },
 
     bsz_ol_blade_of_evil = {
-        "Head to Beadeaux as a Dark Knight for a cutscene with Zeid.",
-        "You must zone in to Beadeaux from Pashow Marshlands to receive the cutscene. Taking the proto-waypoint warp or coming from Qulun Dome will not work.",
-        "However, you can transport to the Survival Guide in Beadeaux, exit to Pashhow Marshlands, then turn around and re-enter Beadeaux to get the cutscene.",
-        "Obtain a vial of Quadav Mage Blood, which is dropped by Topaz Quadav. Consider bringing treasure hunter and staying along K column in general as well as the J-7 ledge.",
-        "If more than one Dark Knight is doing this quest, only one vial of this blood is needed.",
-        "Head to the seventh floor of Delkfutt's Tower and use the teleporter \"I\" at (J-6).",
-        "You should end up in a small room on the Sixth floor.",
-        "When ready, trade the Quadav Mage Blood to the ??? to spawn an Evil Weapon named Gerwitz's Scythe and two Skeletons named Scythe Victim.",
-        "Any duo of characters around level 75 should be fully capable of taking down all three.",
-        "Whoever trades must have the quest active, so you must farm your own Blood. A friend/alt can't trade the item for you.",
-        "These monsters cannot be \"sneak popped\" to fight only one of them. All three will attack immediately when spawned.",
-        "Only Gerwitz's Scythe must be defeated and thus, if you were to be defeated after killing Gerwitz's Scythe, it is possible to be raised or come back from Home Point for the reward.",
-        "A good strategy is to have three different people \"tanking\". One to tank the weapon, and two more to hold the victims and a healer for support, along with other DDs. Pick the skeletons off as fast as possible, then have everyone focus on the weapon. Once the victims are down, it should be just a straight up fight.",
-        "After defeating Gerwitz's Scythe, or all three, take the teleporter out and you will receive a cutscene and your reward.",
+        {
+            text = "Zone into Beadeaux from Pashhow Marshlands as a Dark Knight to receive a cutscene to start the quest.",
+            substeps = {
+                "The easiest way there is using the Beadeaux Survival Guide , exiting to Pashhow Marshlands, then re-entering Beadeaux.",
+                "You may complete the rest of this quest on a job other than Dark Knight .",
+            },
+        },
+        {
+            text = "Farm Topaz Quadav until you acquire a Quadav Mage Blood .",
+            substeps = {
+                "Only one is needed, even if you're doing this with a group of multiple players.",
+            },
+        },
+        "Enter Middle Delkfutt's Tower by either climbing up from Lower Delkfutt's Tower or climbing down from the Upper Delkfutt's Tower Home Point .",
+        "Use the teleporter at (J-6) on the 7th floor . You will arrive at a circular chamber on the 6th floor with no exits and a ???.",
+        "Trade the Quadav Mage Blood to the ??? to spawn Gerwitz's Scythe NM and two Scythe Victims .",
+        {
+            text = "Defeat all 3 mobs and stand on the teleporter to go back upstairs.",
+            substeps = {
+                "You only need to defeat Gerwitz's Scythe in order to progress, but the other two mobs are weaker and it's likely faster to kill them than sleep them.",
+            },
+        },
+        "Upon taking the teleport back, you will receive a cutscene and your reward.",
+    },
+
+    bsz_bkt_breaking_stones = {
+        {
+            text = "Speak with Horatius inside of the Trader's Home at (I-9) in Bastok Markets , who sends you to Dangruf Wadi .",
+            substeps = {
+                "The monsters in the area around the ??? are level 90-95. Only the Goblins are aggressive and they can be avoided with just Invisible since they do not have pets.",
+            },
+        },
+        {
+            text = "Inside Dangruf Wadi , head to the (I-5)/(J-5) boundary, where you'll find a ??? during sunny weather.",
+            substeps = {
+                "Sunny weather is the default weather with no icon. If there is a weather at the time you're attempting this quest, you will have to wait for it to clear up to find the ???.",
+                "You receive the Dangruf Stone after choosing the dialog option to check the area.",
+            },
+        },
+        "Head back to Horatius for your reward of 400g.",
+    },
+
+    bsz_bkt_brygid_stylist = {
+        "Talk to Brygid the Fashion Police in Bastok Markets at (K-9), and she'll tell you how much your fashion sense sucks!",
+        "Improve her view of you by acquiring a Robe and a Bronze Subligar both of which are easy enough to find either on the Auction House or at some armor merchant.",
+        "Wear the two pieces of equipment. Keep in mind that only the following jobs can wear both these items at the same time:",
+        "Complete this quest to later unlock Brygid the Stylist Returns .",
+    },
+
+    bsz_bkt_brygid_stylist_returns = {
+        {
+            text = "Speak to Brygid on any job while wearing any 1 to 5 pieces of Artifact Armor to begin the quest.",
+            substeps = {
+                "Note : Artifact Armor +1 and Reforged Artifact Armor will not work. You must use non-enhanced/original Artifact Armor .",
+            },
+        },
+        "She will request one Body and one Legs armor items from the Armor requests table below.",
+        "When you return to her wearing both the requested pieces of armor, she will offer 13 different kinds of level 50 body armor from the Rewards table below.",
+        {
+            text = "When you select the body armor you desire, she will require you to trade her a corresponding rare/ex Subligar which drops from Fomors in Phomiuna Aqueducts and Sacrarium .",
+            substeps = {
+                "You will receive your body armor reward after trading her the respective Subligar piece.",
+            },
+        },
+        "You can repeat this quest as many times as you want (to get any piece of armor you desire).",
+        {
+            text = "Body",
+            substeps = {
+                "Banded Mail - Beak Jerkin - Bishop's Robe",
+                "Breastplate - Carapace Harness - Cloak",
+                "Cuir Bouilli - Frost Robe - Gambison",
+                "Iron Scale Mail - Linen Doublet - Padded Armor",
+                "Pyro Robe - Raptor Jerkin - Silk Coat",
+                "Silver Mail - Velvet Robe - White Cloak",
+                "Wool Doublet - Wool Gambison",
+                "Legs",
+                "Beak Trousers - Breeches - Carapace Subligar",
+                "Cuir Trousers - Hose - Iron Cuisses",
+                "Iron Subligar - Linen Slacks - Raptor Trousers",
+                "Scorpion Subligar - Silk Slops - Silver Hose",
+                "Velvet Slops - White Slacks - Wool Hose",
+            },
+        },
+        {
+            text = "JSE Piece / Wearable by / Subligar Needed / Dropped by",
+            substeps = {
+                "Aikido Gi - MNK - Aquarius Subligar - Fomor Monk",
+                "Cerise Doublet - BRD/RDM/BLU/PUP/RUN - Libra Subligar - Fomor Bard",
+                "Duende Cotehardie - BLM/SMN/GEO - Aries Subligar - Fomor Black Mage",
+                "Gaudy Harness - BRD/BST - Ophiuchus Subligar - Fomor Beastmaster",
+                "Glamor Jupon - RDM/SCH - Scorpius Subligar - Fomor Red Mage",
+                "Gloom Breastplate - DRK - Sagittarius Subligar - Fomor Dark Knight",
+                "Nimbus Doublet - SMN/WHM - Capricornus Subligar - Fomor Summoner",
+                "Nokizaru Gi - NIN - Taurus Subligar - Fomor Ninja",
+                "Parade Cuirass - PLD/WAR - Pisces Subligar - Fomor Paladin",
+                "Rapparee Harness - THF/DNC - Gemini Subligar - Fomor Thief",
+                "Shikaree Aketon - RNG/COR - Virgo Subligar - Fomor Ranger",
+                "Shinimusha Hara-Ate - SAM - Cancer Subligar - Fomor Samurai",
+                "Wyvern Mail - DRG - Leo Subligar - Fomor Dragoon",
+            },
+        },
+    },
+
+    bsz_bkt_buckets_of_gold = {
+        "Start the quest by talking to Foss.",
+        "Once you accept, obtain 5 Rusty Buckets by either fishing for them or buying them off auction houses or Kahah Hobichai in Al Zahbi .",
+        "Trade the 5 Rusty Buckets to him for your reward.",
     },
 
     bsz_ol_chips = {
-        "You must get the Cutscene from Cid for 6-4 before you can start the quest.",
-        "Talk to Ghebi Damomohe at the Neptune's Spire to start the quest.",
-        "Be sure to pick the first option or you will have to zone to restart the quest.",
-        "Farm the chips in Pso'Xja, and then trade them all to Cid.",
-        "The Gray Chip is dropped by Diremites.",
-        "The Carmine Chip is dropped by Lizards (Snow Lizards, Frost Lizards).",
-        "The Cyan Chip is dropped by Mimics.",
-        "Tip: go to the tower at Beaucedine's F-7, where you'll find all these monsters.",
-        "To repeat the quest later, just collect the chips again and take them to Cid.",
-        "You must have completed all the cutscenes for PM6-3 in order to obtain the quest from Ghebi Damomohe. Even though the quest is started in Lower Jeuno with Ghebi Damomohe, the quest appears as a Bastok quest.",
-        "The Diremites in the first room are the easiest chip mobs; they run 42-45 and drop the Gray Chip. The Maze Lizards don't seem to drop chips here.",
-        "The G/H/L area in Basement 1 has 2 Snow Lizards and 4 Diremite Assaulters, all level 66-68. Note: It is possible to use ranged attacks to pull the Frost Lizards from below up onto the level where the 2 Snow Lizards live, and avoid dropping down while farming Lizzards.",
-        "The L/M/N area in Basement 2 has 2 Frost Lizards and 2 Diremite Dominators, all level 74-76.",
-        "The H/S/O area in Basement 2 also has 2 Frost Lizards and 2 Diremite Dominators.",
-        "The M/V area in Basement 3 has 2 Diremite Dominators and a staircase to the ground level.",
-        "The N/O/P/Q area in Basement 3 has 2 Frost Lizards and the elevator to the ground level.",
-        "The S/T area in Basement 3 has 2 Archaic Chests, which do drop the Cyan Chip if you're masochistic enough to fight them. Be careful, even if they are hard to kill, the drop rate isn't 100%.",
-        "When you touch the colored ???s in I-8 on the upper floor (Blue) and H-7 in the basement (Green), the door closes behind you and two Dolls spawn and attack.",
-        "The Blue ??? spawns Gargoyle-Kappa and Gargoyle-Iota; the Green ??? spawns Gargoyle-Lambda and Gargoyle-Mu.",
-        "The Dolls alternate between physical immunity and very high magical resistance, each doll changing weaknesses simultaneously. This is marked by a blue- or yellow-colored sheen on each mob, so be prepared to switch targets frequently.",
-        "When both dolls are defeated, click on the ??? again to obtain the Bracelet.",
-        "There are 6 Treasure Chest mimics in these locations",
-        "Ground Level: In the F room and next to the chest spawn in NW G-8",
-        "Upper Level: Next to the chest spawn in SE H-9",
-        "Basement: In the E room and the room in NW G-8.",
-        "And in the lower basement at the bottom of the elevator (no map).",
-        "WHM spell barthundera seemed to cause these chests' death trap move to have only the poison or no effect when cast by a 75 WHM. The stun effect seemed to be no longer present. Data pool was about 10-12 chests fought.",
-        "There are 3 Diremite Stalkers in the Basement in the hall running from I-7 to I-9.",
-        "There are 4 Diremite Assaulters in the lower basement.",
+        "Speak to Ghebi Damomohe in Lower Jeuno (I-7) when you are on (or finished with) the mission More Questions than Answers to begin the quest.",
+        "In Pso'Xja fight the following monsters until you acquire the three chips.",
+        {
+            text = "Chip / Monster / Level / Location",
+            substeps = {
+                "Carmine Chip - Snow Lizard - 65 - 68 - #1: Enter at the (I-7) tower in Beaucedine, spawns on second floor down. #2: Enter at the (F-7) tower in Beaucedine, spawns on second floor down. Drop at (I-8).",
+                "Frost Lizard - 73 - 77 - Enter at the (F-7) tower in Beaucedine, spawns on third floor down. Drop at (I-8), then (I-7).",
+                "Gray Chip - Diremite Assaulter - 57 - 59 - #1: Enter at the (F-7) tower in Beaucedine, spawns on second floor down. Drop at (I-8). #2: Enter at the (H-8) tower. Spawns across first map.",
+                "Diremite Stalker - 63 - 68 - Enter at the (G-9) tower in Beaucedine, spawns on second floor down. Drop in the lower right corner of (H-9). Go to the long hallway on the right side of this map.",
+                "Diremite Dominator - 74 - 77 - Enter at the (F-7) tower in Beaucedine, spawns on third floor down. Drop at (I-8), then (I-7).",
+                "Diremite - 42 - 48 - Spawns on multiple maps across the zone.",
+                "Cyan Chip - Treasure Chest (Monster) - 55 - 60 - Enter at the (G-9) tower in Beaucedine, spawns on multiple floors here.",
+                "Archaic Chest - 80 - Enter at the (F-7) tower in Beaucedine, spawns on third floor down at (I-6) and (G-6).",
+            },
+        },
+        "Trade all three chips to Cid in Bastok Metalworks . The chips are no longer Rare, so you may gather several sets before trading to Cid, but since the CCB Polymer Pumps are Rare, you will have to trade them to another character or place them in a delivery box before you are able to get another.",
     },
+
+    bsz_mw_cids_secret = {
+        "Speak to Cid to begin the Quest.",
+        "Travel to Port Bastok ( Home Point #3) and visit the Steaming Sheep Restaurant .",
+        "Locate Hilda at (E-6) and speak with her. You can interact with her through the floor if you stand under her (near the bar) while she's upstairs.",
+        {
+            text = "Obtain a Rolanberry 874 in one of two ways:",
+            substeps = {
+                "Via the Auction House . (Food  Ingredients)",
+                "Defeating the Drone Crawler ( G ) in Crawler's Nest . ( Survival Guide  Derfland Region). This is a multi-step spawn process, see the quest Cargo for details.",
+            },
+        },
+        "Trade the Rolanberry 874 to Hilda and to receive Unfinished letter .",
+        "Return to Cid and speak with him to complete the Quest.",
+    },
+
+    bsz_mw_dark_legacy = {
+        "Speak with Cid's Assistant Raibaht to start quest.",
+        "After this point, the rest of the quest can be completed on any job.",
+        "Speak with Mighty Fist in Metalworks (G-9) (lower level; inside Darksteel Forge) and you will receive a key item: Letter from the Darksteel Forge",
+        "Travel to Windurst Waters and speak to Cochal-Monchal (F-8) (HP #1 - North Map - Optistery)",
+        {
+            text = "Obtain a Yagudo Cherry from either a vendor or the auction house.",
+            substeps = {
+                "One is enough for multiple people doing the quest.",
+            },
+        },
+        {
+            text = "Travel to Giddeus and trade the Yagudo Cherry to the ??? at H-14. This will spawn a NM: Vaa Huja the Erudite .",
+            substeps = {
+                "You may want to clear the area before doing so.",
+            },
+        },
+        "Defeat the NM and click on the ??? again. You will obtain a key item: \"Darksteel Formula\"",
+        "(Optional) Return to Metalworks and speak with Mighty Fist again for additional dialogue.",
+        "Return to Raibaht and speak with him to complete quest.",
+    },
+
+    bsz_mw_dark_puppet = {
+        "Speak with Cid as a Dark Knight to begin quest.",
+        "You can be on any job from here on.",
+        {
+            text = "Obtain a Darksteel Ingot from the Auction House or Crafting.",
+            substeps = {
+                "One is enough for multiple people doing the quest.",
+            },
+        },
+        {
+            text = "Zone into Ordelle's Caves for a cutscene.",
+            substeps = {
+                "Survival guide and voidwatch warp bring you to the same entrance.",
+            },
+        },
+        {
+            text = "Trade the Darksteel Ingot to the ??? at (I-8) on map 1 to spawn Gerwitz's Axe (NM) .",
+            substeps = {
+                "If you zoned in from La Theine Plateau or used Survival Guide, you should take the east path (B on the wiki maps).",
+            },
+        },
+        {
+            text = "Defeat Gerwitz's Axe and it will drop Gerwitz's Axe .",
+            substeps = {
+                "If you are defeated you will need another Darksteel Ingot to respawn the NM.",
+            },
+        },
+        "Head South up the ramp (D on the wiki maps). At (H-11/12) drop down the hole (the southeast hole). Go east to reach map 3 (E on the wiki maps).",
+        "Trade Gerwitz's Axe to the ??? at (H-8) on map 3 to spawn Gerwitz's Sword (NM) .",
+        "Defeat Gerwitz's Sword and it will drop Gerwitz's Sword .",
+        "Head South to enter a large square room.",
+        "Trade Gerwitz's Sword to the ??? at (H-10) and it will spawn Gerwitz's Soul .",
+        {
+            text = "Defeat Gerwitz's Soul then head for La Theine Plateau at (G-10) on the same map. You will receive your reward after the cutscene.",
+            substeps = {
+                "All party members in zone receive credit for Gerwitz's Soul's defeat for quest progression even if they are too far to gain exp.",
+            },
+        },
+    },
+
+    bsz_bm_drachenfall = {
+        {
+            text = "Speak with Black Mud to begin quest. You will obtain a Brass Canteen .",
+            substeps = {
+                "If you have the Proto-Waypoint warp to North Gustaberg , it will take you almost directly to the Waterfall Base . (From there, walk east and across the bridge to the north.)",
+            },
+        },
+        {
+            text = "Otherwise, travel to Dangruf Wadi and head north from the entrance.",
+            substeps = {
+                "The quickest method is via Survival Guide , otherwise zone in from South Gustaberg (D-9).",
+                "Invisible or Prism Powders are recommended, as there are aggressive level 90 Goblins along the way.",
+            },
+        },
+        "Once inside Dangruf Wadi , travel to (I-8) and go up the geyser by standing on top of it until being shot up the ledge.",
+        "Head northeast to (J-3) and go up a second geyser.",
+        "Continue following this path to zone out into North Gustaberg",
+        {
+            text = "Travel east and cross the bridge.",
+            substeps = {
+                "Pick up the Geomagnetic Fount here if you do not have the Proto-Waypoint warp yet.",
+            },
+        },
+        "Continue following the river towards the base of the waterfall.",
+        {
+            text = "Locate the Waterfall Base and trade the Brass Canteen to it to receive Drachenfall Water .",
+            substeps = {
+                "There is a ??? nearby. It is for unlocking the relic weapon Apocalypse , not for this quest.",
+            },
+        },
+        "Return to Bastok and trade the Drachenfall Water to Black Mud to complete the quest.",
+    },
+
+    bsz_pb_eco_warrior = {
+        "Talk to Raifa (D-6) in the Steaming Sheep Restaurant in Port Bastok .",
+        {
+            text = "Head to Gusgen Mines and talk to Degga (H-9).",
+            substeps = {
+                "Your level will be restricted to 25.",
+            },
+        },
+        {
+            text = "Head to (H-6) to find a ??? .",
+            substeps = {
+                "This is on the top floor. Do not go down the stairs.",
+                "It is advised to clear the area around the ??? before clicking it.",
+            },
+        },
+        "Clicking the ??? will spawn two Pudding NMs.",
+        "Click the ??? after the NMs are defeated to receive Indigested ore .",
+        "Return to Raifa in Port Bastok to receive your reward.",
+        "Notes",
+        "You can only have one Eco-Warrior quest active at any time.",
+        "Eco-Warrior quests cannot be deactivated.",
+        "Only one Eco-Warrior quest can be completed once per Conquest Tally.",
+        "Can summon trusts.",
+    },
+
+    bsz_pb_escort_for_hire = {
+        "Speak with Trilok to begin quest.",
+        "Zone into Crawler's Nest from Rolanberry Fields . If you get a cutscene with an hume female NPC named Olavia , then you're ready to head out.",
+        "If you do not, there may already be another team on the quest at the moment, so wait a while and try zoning back in again. Continue doing so until Olavia pops and talks to a member of your party.",
+        "To control her movements, simply talk to her to stop her, then talk to her again to move her. It is important to note that she dies pretty easily, so stop her before you reach a camp of aggro mobs. Clear the path and let her go her merry way.",
+        "Olavia will take one of 3 paths, all of which has been illustrated in the maps in the following section.",
+        {
+            text = "Escort her to the 'end' point, and she will present you with the Completion certificate .",
+            substeps = {
+                "Important: You MUST speak to her when she stops - every member in the party/alliance must do so or they will not get completion!",
+            },
+        },
+        "Return to Trilok to complete quest.",
+    },
+
+    bsz_mw_faded_promises = {
+        "Change your main job to Ninja (it must be level 20 or above) and speak to Romualdo at (K-9) in the southern Cannonry to begin quest.",
+        "Next speak with Ayame at (K-7) in the other Cannonry.",
+        "Travel to Palborough Mines and open a Treasure Chest to receive the Diary of Mukunda",
+        "Return to Bastok to speak with Kagetora in Port Bastok at (F-6).",
+        "After that speak with Ayame again.",
+        "Finally, speak with Alois in the conference room of the President's Office at Metalworks (J-8) to complete the quest.",
+    },
+
+    bsz_bm_fallen_comrades = {
+        "Talk to Pavvke, who asks of you to bring back name tags.",
+        "Silver Name Tags can be bought off auction houses. Alternately, Onyx Quadav or Greater Quadav will drop them in Palborough Mines .",
+        "Since the tags are rare, you can only turn one in at a time.",
+        "Trade it to him for your reward.",
+    },
+
+    bsz_bkt_father_figure = {
+        "Obtain a Silver Ingot from Auction House or by Crafting",
+        "Speak to Michea to start quest.",
+        "When the cutscene ends, trade her the Ingot to complete quest.",
+    },
+
+    bsz_pb_fear_of_flying = {
+        "Speak to Kurando to begin quest.",
+        "Travel to Rolanberry Fields and proceed to (K-7).",
+        "Look for the NM Silk Caterpillar . It will spawn when an airship goes by about every 14 minutes.",
+        "Upon defeating the NM, you will receive a Silkworm Egg",
+        "Return to Kurando and trade him the egg to complete quest.",
+    },
+
+    bsz_pb_forever_to_hold = {
+        "Talk to Qiji , who wants to give his wife, Romilda , a Brass Hairpin .",
+        "Brass hairpins can be bought off auction houses, or by crafting one.",
+        "Trade the hairpin to Romilda, who is standing next to Qiji.",
+        "Talk to Qiji to obtain your reward.",
+    },
+
+    bsz_bm_fully_mental_alchemist = {
+        {
+            text = "Speak to Titus on the second floor of the Alchemy Guild in Bastok Mines for a cutscene that begins the quest.",
+            substeps = {
+                "You will receive the Prospector's pan and Corked ampoule .",
+            },
+        },
+        {
+            text = "Travel to Grauberg (S) and find the Riverbed at (F-13).",
+            substeps = {
+                "Fastest travel method is the regular campaign warp to Grauberg]",
+            },
+        },
+        {
+            text = "When you examine the Riverbed, you will receive the following options:",
+            substeps = {
+                "A sizable portion",
+                "A moderate portion",
+                "A small portion",
+            },
+        },
+        {
+            text = "When you select one, you will then receive the following options:",
+            substeps = {
+                "Wash vigorously.",
+                "Wash thoroughly.",
+                "Wash gently.",
+            },
+        },
+        {
+            text = "To extract gold, you must wash away as much sediment as possible without washing away any gold dust. The results are random, but generally choosing \"A sizable portion\", \"Wash vigorously\", \"Wash thoroughly\", then selecting \"Wash gently\" over and over again will work. Repeat washing until you you get the following message added to the options:",
+            substeps = {
+                "Wash carefully to extract gold.",
+            },
+        },
+        {
+            text = "Choose that and you will gain a random amount of gold dust grains (generally between 3 to 11). Repeat examining the Riverbed and the washing steps until you get at least 20 grains of gold, and thusly an Ampoule of gold dust .",
+            substeps = {
+                "If you leave Grauberg (S), you will lose any gold dust that you have acquired and will have to start over.",
+            },
+        },
+        "Speak to Titus again for a cutscene to receive your reward.",
+    },
+
+    bsz_pb_ghosts_of_past = {
+        {
+            text = "Talk to Oggbi inside the Steaming Sheep Restaurant for a cutscene.",
+            substeps = {
+                "You must be on Monk to receive this cutscene. Once the quest is active you can complete it on any job.",
+                "If you have over 250 H2H Skill he will offer you the Asuran Fists trial first.",
+            },
+        },
+        {
+            text = "Get a Pickaxe from the Auction House or from any source.",
+            substeps = {
+                "View the Pickaxe page for merchants.",
+                "Recommended to get Pickaxes from Numa (E-7) he's in the store right in front of Steaming Sheep Restaurant down the stairs.",
+            },
+        },
+        "Travel to Gusgen Mines . Go to the 2nd map by going straight ahead, down the staircase, and use the west switch to open the Door.",
+        {
+            text = "Get to the 3rd map by taking the ramp down at (F-5) and trade a Pickaxe to the ??? at (G-7) to spawn Wandering Ghost .",
+            substeps = {
+                "Repop is about 3 minutes if doing multiple.",
+            },
+        },
+        "Wandering Ghost drops a Miner's Pendant and the Pickaxe is still in your inventory.",
+        "Trade the Miner's Pendant to Oggbi and receive Beat Cesti .",
+    },
+
+    bsz_bkt_gourmet = {
+        "Speak to Salimah to begin quest.",
+        "Obtain any of the following item and trade it to her depending on time of day. Reward varies depending on type of item traded in as well.",
+        "All 3 items may be farmed (Sleepshroom from Funguar type, Treant Bulb from Sapling type and Wild Onion from Goblin Thugs or by gardening) or purchased from the Auction House.",
+        "Important Note: This quest is repeatable as many times as you want but requires zoning between each trade.",
+    },
+
+    bsz_bm_groceries = {
+        "Speak to Tami in Bastok Mines at (J-8) to begin quest.",
+        {
+            text = "She will give you the Tami's note .",
+            substeps = {
+                "Note: If you open and read the Key Item, you can no longer repeat the quest.",
+            },
+        },
+        "If you read the note",
+        "Proceed to Zeruhn Mines and locate Zelman at (I-8).",
+        "Go to (H-5) in Bastok Mines (Bat's Lair Inn) and purchase a Meat Jerky from Griselda .",
+        {
+            text = "Trade the jerky to Tami for your reward of a Rabbit Mantle .",
+            substeps = {
+                "You will now complete the quest, and it is no longer repeatable.",
+            },
+        },
+        "If you do not read the note",
+        "Proceed to Zeruhn Mines and locate Zelman at (I-8).",
+        "He will tell you that he is busy, and to tell Tami .",
+        {
+            text = "Return to Tami for your reward of 10 Gil .",
+            substeps = {
+                "At this point, you can repeat this quest.",
+            },
+        },
+    },
+
+    bsz_pb_guest_of_hauteur = {
+        "Speak to Powhatan to start the quest. (You will have to zone after completing Welcome to Bastok .)",
+        {
+            text = "Equip either a Maul or a Replica Maul . There are several ways to obtain one of these items:",
+            substeps = {
+                "Maul -",
+                "Replica Maul -",
+            },
+        },
+        "Speak to Bartolomeo in Port Bastok at (F-7) inside the Air Travel Agency. Nothing will happen.",
+        "Revisit Powhatan and select the second option \"Where am I supposed to meet your guest?\".",
+        "Speak to Steel Bones in Port Bastok at (D-8). After the cutscene concludes, you'll receive a Letter from Domien .",
+        "Return to Powhatan to complete the quest.",
+    },
+
+    bsz_bm_hearts_of_mythril = {
+        "Speak to Elki in the Bat's Lair Inn (H-5) to trigger a cutscene and start the quest.",
+        "When the cutscene ends, you will have obtained a Bouquet for the pioneers .",
+        {
+            text = "Head out to Zegham Hill in North Gustaberg . Go up the winding hill until you reach the peak and find a monument at J-7.",
+            substeps = {
+                "Fastest route is from Oldton Movalpolos survival guide. Exit to North Gustaberg then ascend Zegham Hill from the middle of (I-6).",
+                "Alternatively, use the Port Bastok exit near Home Point #1, then in North Gustaberg ascend starting on the SW part of the hill, in a patch of trees at the (H-8)/(I-8) border.",
+            },
+        },
+        {
+            text = "It's pretty easy to go up the hill, just read the map carefully, it shows all the 'up' ramps in the form of 'dashes' on the hillside.",
+            substeps = {
+                "Once the first plateau, move in a CCW direction to reach the ramp in the middle of (J-8).",
+                "On the second plateau, follow the path back around the hill to the last ramp.",
+            },
+        },
+        "Touch the monument for an event.",
+        "After the event ends, head back to Elki, speak to him to complete quest.",
+    },
+
+    bsz_mw_hyper_active = {
+        "If you have just completed Teak Me to the Stars , you must zone before starting this quest.",
+        "Speak with Raibaht to begin quest. You will receive a Molybdenum box .",
+        {
+            text = "Travel to Lower Delkfutt's Tower and proceed to the basement.",
+            substeps = {
+                "A Delkfutt Key or Delkfutt key is required.",
+            },
+        },
+        "Travel to (I-6) of the basement map and touch the Cermet Door to pop 3 NMs: Orna (the boss) and 2 Fomorian Spear .",
+        "Defeat Orna (which will make the other two depop) and touch the Cermet Door again.",
+        "Travel to Lower Jeuno and inspect the Street Lamp targets until you find a Hyper altimeter .",
+        "Return to Bastok and speak with Raibaht to complete the quest.",
+    },
+
+    bsz_bm_inheritance = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Gumbah will grant you the key item Weapon training guide as well as the Sword of Trials . You will need to break the latent on the Sword of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Sword of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Sword of Trials back to Gumbah . This will give you the key item Map to the Annals of Truth .",
+        {
+            text = "Next, travel to the oasis in Western Altepa Desert at (E-9) . It is located in the south west of the map.",
+            substeps = {
+                "Unity Warp (125) gets you closest.",
+                "Rabao or Quicksand Caves #1 HP warps, Survival Guide , or Voidwatch warps also available.",
+            },
+        },
+        "Examine the ??? on the south side of the oasis to spawn the NM Maharaja , a tiger.",
+        "Re-examine the ??? after winning to receive the key item Annals of Truth .",
+        "Go back and speak with Gumbah to receive your reward.",
+    },
+
+    bsz_pb_love_and_ice = {
+        {
+            text = "Locate the Carrier pigeon letter in your permanent key items and \"examine\" it.",
+            substeps = {
+                "This is the key item reward from the pre-req quest: The Stars of Ifrit . Without this key item you may not continue.",
+                "You receive this key item before the end of The Stars of Ifrit , and thus you do not need to complete that quest before starting this one.",
+            },
+        },
+        {
+            text = "Speak with Carmelo inside the Steaming Sheep to receive the actual quest. After a cutscene, you will receive Carmelo's song sheet .",
+            substeps = {
+                "If you have The Siren's Tear active. You will get a prompt to ask him about the Siren's Tear instead.",
+            },
+        },
+        {
+            text = "Travel to G-10 in Beaucedine Glacier (at the ice pond) and click on Mirror Pond which only appears during days without snow or clouds.",
+            substeps = {
+                "\"Gloom\" single dark weather with sun is fine.",
+                "This location can be reached quickly using the Beaucedine Glacier Voidwatch warp.",
+            },
+        },
+        "After the cutscene, return to Bastok and speak to Carmelo to complete quest",
+    },
+
+    bsz_pb_lovers_in_dusk = {
+        "Zone after completing A Test of True Love",
+        "Speak with Carmelo to begin quest and receive the key item: \"Chanson de Liberte\"",
+        {
+            text = "Travel to H-8 of The Sanctuary of Zi'Tah to locate a ??? (middle of the pos)",
+            substeps = {
+                "Survival Guide The Sanctuary of Zi'Tah is the quickest way to get here.",
+            },
+        },
+        "Touch the ??? between 16:00-18:00 in-game time to complete quest.",
+    },
+
+    bsz_pb_lure_of_wildcat = {
+        "Speak with Alib-Mufalib to recieve a Blue Sentinel badge and begin the quest.",
+        "Speak with the following people:",
+        {
+            text = "Bastok Mines",
+            substeps = {
+                "(H-6) - Deidogg",
+                "(I-7) - Echo Hawk",
+                "(H-5) - Griselda",
+                "(I-6) - Goraow",
+                "(H-9) - Vaghron",
+            },
+        },
+        {
+            text = "Bastok Markets",
+            substeps = {
+                "(I-9) - Horatius",
+                "(J-10) - Arawn",
+                "(K-10) - Harmodios",
+                "(E-11) - Pavel",
+                "(E-10) - Ken",
+            },
+        },
+        {
+            text = "Port Bastok",
+            substeps = {
+                "(F-6) - Paujean",
+                "(J-5) - Kaede",
+                "(F-8) - Tilian",
+                "(E-6) - Hilda",
+                "(F-5) - Patient Wheel",
+            },
+        },
+        {
+            text = "Metalworks",
+            substeps = {
+                "(G-7) - Manilam",
+                "(G-8) - Invincible Shield",
+                "(K-7) - Ayame",
+                "(I-8) - Kaela",
+                "(G-8) - Raibaht",
+            },
+        },
+        "Once you have spoken to all 20 people, return to Alib-Mufalib. He will take your Blue Sentinel badge and give you a Blue invitation card .",
+    },
+
+    bsz_mw_mean_machine = {
+        "Talk to Unlucky Rat located on the first floor in the Cermet Refinery, who is having a machine problem.",
+        "Although he doesn't ask for help, bring him a Slime Oil to alleviate his problem, and to obtain your reward.",
+    },
+
+    bsz_bm_minesweeper = {
+        "Gerbaum asks you to exterminate the pests that roam inside Zeruhn Mines .",
+        "Collect 3 Zeruhn Soot either by killing the monsters in Zeruhn Mines , or by buying them off the auction house.",
+        "Trade them to Gerbaum for your reward.",
+    },
+
+    bsz_bkt_mom_the_adventurer = {
+        {
+            text = "Speak to Nbu Latteh on Gold Street to start quest.",
+            substeps = {
+                "She will give you a Fire Crystal you can use to craft your Copper Ring if you choose.",
+            },
+        },
+        "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation.",
+        "Obtain a Copper Ring either via Auction House , Merchants or Crafting .",
+        "Trade Copper Ring to Roh Latteh in Bastok Mines (H-7), she is located on the first floor house on Ore Street.",
+        "Upon NPC dialogue completion, you will obtain Letter from Roh Latteh .",
+        "If you 'check' the letter (as in read it from your Key Item menu) you will receive a penalty and get only half the actual reward.",
+        "Return to Nbu Latteh to complete quest.",
+        "This quest is repeatable for players below Bastok fame level 2. Zone out each time and you can re-do it.",
+    },
+
+    bsz_pb_out_of_ones_shell = {
+        "Speak to Ronan to activate quest.",
+        "This quest will not show up in Chronicle if you're using it to track quests, however after you talk to Ronan and he mentions that you gave him \"that cursed thing\" (the quadav backplate from the previous quest), he will accept the shell bugs.",
+        {
+            text = "Obtain 3 Shell Bugs from Quadavs or the Auction House, and trade them to Ronan.",
+            substeps = {
+                "Shell bugs can be obtained from the Green Thumb Moogle if you have a Baby eft memento (Goods and rank one and two creatures).",
+            },
+        },
+        "Zone out (leave the area) and back in again, then speak to Ronan to complete quest.",
+    },
+
+    bsz_mw_out_of_the_depths = {
+        "Talk to Ayame for a starting cut-scene, agree twice to start the quest.",
+        {
+            text = "Go to Port Bastok and talk with Ravorara (E-7) outside the Steaming Sheep Restaurant for a cutscene.",
+            substeps = {
+                "if you have Fallen Comrades open you will have to finish that before Ravorara will start this portion of Out of Depths.",
+            },
+        },
+        {
+            text = "Go to Oldton Movalpolos and talk to Brakobrik (K-10).",
+            substeps = {
+                "Closest warp is via Proto-Waypoint to the Geomagnetic Fount at (K-11) if you have it.",
+            },
+        },
+        "Kill Ancient Bombs in Oldton Movalpolos to get Hoary Bomb Ash . At least 1 ash will always drop from a bomb, with up to 3 dropping with Treasure Hunter. Obtain 11 bomb ash in total.",
+        {
+            text = "Trade between 1 to 4 Hoary Bomb Ash to Brakobrik at (K-11) to receive 4 different key items. You can only have one of each key item; trading the same amount of ashes twice will just waste the ashes. He'll offer you the following key items in exchange for the ash:",
+            substeps = {
+                "Trade 1 ash for the Dusty tome - (100 gil from Ravorara)",
+                "Trade 2 ash for the Pointed jug - (200 gil from Ravorara)",
+                "Trade 3 ash for the Cracked club - (300 gil from Ravorara)",
+                "Trade 4 ash for the Peeling hairpin - (400 gil from Ravorara)",
+            },
+        },
+        "After getting the 4 key items, return to Port Bastok and talk to Ravorara four (4) times, once for each key item. You will see a cutscene and receive gil for each key item, as listed above.",
+        "Return to Oldton Movalpolos and trade the final/11th ash to Brakobrik at (K-11), but choose \"No Thanks\" when he offers to give you something in return. He'll give you the Old nametag .",
+        "Return to Port Bastok and talk with Ravorara for another cutscene.",
+        "Go to Bastok Mines and talk with Pavvke in his residence on the lower level (I-7) for a cutscene, completing the quest and receiving your reward.",
+    },
+
+    bsz_pb_past_perfect = {
+        "Speak to Evi to begin quest.",
+        "Next to him is a Hume woman named Rafaela , speak to her.",
+        "Speak with Evi again.",
+        "Travel to Konschtat Highlands and look for a ??? near a windmill around the (G-8) square.",
+        "Touch the ??? to receive a Temporary Key Items : Tattered mission orders",
+        "Return to Evi, speak with him to complete the quest.",
+    },
+
+    bsz_mw_return_to_depths = {
+        "Talk to Ayame for a cut-scene that starts the quest.",
+        "Go to Oldton Movalpolos for a cutscene upon zoning.",
+        "Go to Misareaux Coast and obtain a Misareaux Garlic that drops from the Orcs there.",
+        "Go to Lower Jeuno and trade the Misareaux Garlic to Muckvix (located at H-10 in Goblins' Goblet, through Muckvix's Junk Shop.) After a lengthy cut-scene, you will receive 2000 gil and the Letter from Muckvix key item.",
+        {
+            text = "Go to Kazham and talk with Magriffon , located at (I-7) in Celodehki's Bed & Breakfast. Trading him 10,000 gil will trigger a cutscene resulting in two key items: Letter from Magriffon and Providence pot .",
+            substeps = {
+                "You will receive the 10,000 gil back at the end of the quest.",
+                "Trading Magriffon the 10,000 gil will continue this specific quest even if other quests are currently active that involve giving Magriffon gil.",
+            },
+        },
+        "Return to Lower Jeuno and talk with Muckvix for a cutscene where you deliver the key items and receive the Pungent providence pot key item in return.",
+        {
+            text = "Return to Oldton Movalpolos for a short cutscene. Go to Tarnotik and talk with him, answering in the affirmative to both his questions.",
+            substeps = {
+                "Closest warp is via Proto-Waypoint to the Geomagnetic Fount at (K-11) if you have it.",
+                "If you receive a Voracious Resurgence-related cutscene where you receive Boudox's Masque / Boudox's Suit , you must zone and talk to Tarnotik again for the proper cutscene.",
+            },
+        },
+        "If you are in a party, each one must trade an Ahriman Tears to Tarnotik to be teleported to Mine Shaft #2716 BCNM zone OR use the Home Point warp to Newton Movalpolos .",
+        "Once in Mine Shaft #2716 , select the Shaft Entrance twice for two cutscenes; select in the affirmative both times. This will put you in a 30 minute BCNM, with up to 6 people allowed.",
+        "Defeat Twilotak to end the BCNM, and for a cutscene where you receive the 10,000 gil back.",
+        "Return to Metalworks and talk with Ayame for the Bowyer Ring reward, and to end the quest.",
+        "Optional followup: talk to the Tarutaru Ravorara from the earlier quests, to sell the Pungent providence pot for 1000 gil and receive a final cutscene.",
+    },
+
+    bsz_bm_rivals = {
+        "Obtain a Mythril Sallet from the auction house (Armor  Head) or for 437 Sparks .",
+        "Speak to Detzo to begin quest.",
+        {
+            text = "Trade Sallet to Detzo to complete quest and receive your reward.",
+            substeps = {
+                "You will also have returned to you the Sallet, so make sure you have space in your inventory!",
+            },
+        },
+    },
+
+    bsz_bkt_shady_business = {
+        {
+            text = "Speak to Talib to start quest.",
+            substeps = {
+                "Homepoint #3 is the closest",
+            },
+        },
+        {
+            text = "Obtain 4 Zinc Ore via:",
+            substeps = {
+                "Teerth in Bastok Markets for 200 Gil (HP #4)",
+                "Celestina in Mhaura for 200 Gil",
+                "The Auction House",
+                "By Mining",
+                "Mineral Vein",
+            },
+        },
+        "Trade 4 Zinc Ore to Talib to complete the quest.",
+    },
+
+    bsz_mw_shoot_first = {
+        "Speaking with Cid will grant you the Weapon training guide as well as the Gun of Trials .",
+        "You will need to break the latent on the Gun of Trials before completing the rest of the Quest.",
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Gun of Trials back to Cid . This will give you the Map to the Annals of Truth .",
+        {
+            text = "You will be instructed to travel to The Boyahda Tree .",
+            substeps = {
+                "Examine the ??? at (J-8) in The Boyahda Tree Map 3.",
+                "Short path:",
+                "Otherwise, long path:",
+            },
+        },
+        "This fight is against Beet Leafhopper , a Fly . It is weak to Ice .",
+        "Once you kill it, re-examine the ??? to receive the Annals of Truth .",
+        "Go back and speak with Cid to receive your reward.",
+    },
+
+    bsz_pb_silence_of_rams = {
+        "Speak to Paujean to begin the quest.",
+        "Obtain a Rampaging Horn and a Lumbering Horn :",
+        {
+            text = "Lumbering Horn is obtainable via the following means:",
+            substeps = {
+                "Slay Lumbering Lambert or Bloodtear Baldurf in La Theine Plateau .",
+                "Various BCNMs , check the item page of the horn for details.",
+            },
+        },
+        {
+            text = "Rampaging Horn is obtainable via the following means:",
+            substeps = {
+                "Slay Rampaging Ram or Steelfleece Baldarich in Konschtat Highlands .",
+                "Various BCNMs, check the item page of the horn for details.",
+            },
+        },
+        "Trade both items to Paujean to complete quest.",
+    },
+
+    bsz_mw_smoke_on_mountain = {
+        {
+            text = "Speak to Hungry Wolf inside the Craftmen's Eatery to start the quest. (Use Home Point #1.)",
+            substeps = {
+                "(Optional) Speak to Offa at Bastok Markets (F-10) (second floor, door on the left) for instructions on how to make the sausage.",
+            },
+        },
+        "Obtain a Giant Sheep Meat from the Auction House or from Ornery Sheep in South Gustaberg (or elsewhere.)",
+        {
+            text = "Travel to South Gustaberg (K-9) to find a Goblin campfire (???).",
+            substeps = {
+                "To find this, look on your map for the small hill at (K-9). Proceed to the area directly south of the hill at the top of (K-10) and you'll see a ramp to go up the hill. It blends in with the surroundings, so keep an eye open for it.",
+            },
+        },
+        "Trade the Giant Sheep Meat to the campfire and to begin to cook it.",
+        "Wait for a minute (Earth time). DO NOT ZONE OUT, or you will have to repeat these steps again!",
+        {
+            text = "After the required wait time, check the campfire again to receive a Galkan Sausage .",
+            substeps = {
+                "It goes directly into your inventory, so make sure you have an open slot.",
+            },
+        },
+        "Trade the Galkan Sausage to Hungry Wolf to complete the quest.",
+    },
+
+    bsz_bkt_stamp_hunt = {
+        "Speak to Arawn to start quest. You will be given the Stamp sheet to collect stamps.",
+        "Speak to the following 7 guards to obtain the stamps:",
+        "Speak to Arawn again once you have collected all the stamps to complete the quest.",
+    },
+
+    bsz_mw_stardust = {
+        "Speak with Baldric inside the Darksteel Forge on the first floor to begin the quest.",
+        {
+            text = "Obtain a Valkurm Sunsand either via Auction House or by travelling to Valkurm Dunes .",
+            substeps = {
+                "To collect the Sunsand from its natural environment, locate the ??? on an overturned boat on the east most beach in Valkurm called Siren Sands (H-9)",
+            },
+        },
+        "Return to Baldric and trade him the sunsand to complete quest.",
+    },
+
+    bsz_mw_synergistic_pursuits = {
+        "It is no longer possible to flag this quest. Speak to a Synergy Engineer to obtain a Synergy Crucible if you did not activate this quest prior to March 27, 2012.",
+        {
+            text = "Although the original quest has been removed along with its requirements, speaking to Hildolf will still trigger a quest under the same title. This time, he will ask for a vial of Slime Oil. Once you bring him the item, you'll be given the option to choose a Fewell element. He will then craft it for you while explaining the crafting process. After giving you the Fewell of your choosing, he will no longer offer to craft and will instead have a dialogue encouraging you not to give up if you're running low on Fewell.",
+            substeps = {
+                "The quest will show up in the log and be marked as completed upon completion of Synergistic Support .",
+            },
+        },
+    },
+
+    bsz_mw_synergistic_support = {
+        "Speak to Hildolf at (F-8) to learn how to create your own Fewell .",
+        "Trade him a Slime Oil .",
+        "Choose a type from the list and you will be given three of that choice and the quest will be completed.",
+    },
+
+    bsz_mw_teak_to_the_stars = {
+        "Speak with Raibaht in Cid's lab to begin quest.",
+        {
+            text = "Travel to Carpenters' Landing to obtain a Garhada Teak Lumber .",
+            substeps = {
+                "Can be obtained from monsters that appear on the Phanauet Channel barge or that spawn from Fishing on the barge or on the Carpenters' Landing pier.",
+                "The Survival Guide to Carpenters' Landing takes you directly to South Landing, where you can get on the barge.",
+            },
+        },
+        "Return to Raibaht and trade him the lumber to complete quest.",
+    },
+
+    bsz_bkt_bare_bones = {
+        "Obtain a Bone Chip from the Auction House or by farming Skeleton type mobs.",
+        "Speak to Degenhard to begin quest.",
+        "Trade him the chip to complete quest.",
+    },
+
+    bsz_bkt_cold_light_of_day = {
+        "Speak to Malene to begin quest.",
+        "Obtain a Steam Clock via the following methods:",
+        "Return to town and trade the clock to Malene to complete quest.",
+    },
+
+    bsz_bkt_curse_collector = {
+        "Speak with Zon-Fobun to begin quest. You will receive Cursepaper .",
+        "Go to Beadeaux and proceed to one of the sets of machines: you need to visit an Afflictor (which Curses whoever comes near it, unless they are currently Silenced) and Mute (which Silences whoever touches it). So it is important to get cursed first, by coming near the Afflictor, and then touch the Mute to become silenced.",
+        "The first, and easiest, set of machines: Go straight in when entering Beadeaux, then turn left (go north) when you reach the wall at F-7. Go north to the wall in F-6, then due east to H-6.",
+        "From here head south and you'll find yourself going into a cave that leads down. Take that down until it exits at H-7 on the lower map. Go west, south, and west again until you near the glowing red Afflictor in G-8. This will curse you, dramatically lowering your maximum HP and MP.",
+        "Now head back east and then take your first turn north all the way to G-7 where you will find the Mute. Touch it and you will become silenced, so that you now have both the curses on the Cursepaper.",
+        "Return to Zon-Fobun to complete quest.",
+    },
+
+    bsz_mw_the_darksmith = {
+        "Obtain 2 Darksteel Ores via the Auction House , Mog Garden , Mining , etc.",
+        "Speak to Mighty Fist on the first floor of the Metalworks (HP #2) to begin the quest.",
+        "Trade him the two ores to end the quest.",
+        "You may immediately repeat this quest.",
+    },
+
+    bsz_bm_the_doorman = {
+        {
+            text = "Talk to Phara in Bastok Mines at (J-9).",
+            substeps = {
+                "She is right beside the Gobbie Mystery Box at HP #2.",
+            },
+        },
+        {
+            text = "Go to Davoi and click the Hide Flap at K-9/10.",
+            substeps = {
+                "This Pops 2 NM's Barakbok and Gavotvut .",
+            },
+        },
+        {
+            text = "Kill them then check the Hide Flap to receive the Sword grip material .",
+            substeps = {
+                "The Hide Flap moves to a random spot in this area once you check it. It can be in the same spot.",
+                "If multiple people are doing the quest, you will have to wait 5 min to pop again.",
+            },
+        },
+        "Speak to Phara then wait a game day (after clock rolls around past 00:00).",
+        "Speak to Phara again for Yasin's sword .",
+        "Speak to Naji outside the President's Office in Metalworks at (J-8) for a cutscene to finish the quest and receive your Razor Axe . You may have to speak to him twice.",
+    },
+
+    bsz_bm_elevenths_hour = {
+        "After just completing Hearts of Mythril , you must zone in order to flag this quest.",
+        "Speak to Elki to start quest.",
+        {
+            text = "Travel to the top floor of Palborough Mines (Map 3).",
+            substeps = {
+                "Palborough Mines Home Point #1 is the fastest.",
+            },
+        },
+        "Examine the Old Toolbox at the intersection of (H-7)/(H-8) to receive the Key Item Old toolbox .",
+        "Return to Elki and speak to him.",
+        "After the cutscene, speak to Babenn in Bastok Mines (J-6) to complete quest.",
+    },
+
+    bsz_bkt_elvaan_goldsmith = {
+        "Speak to Michea to start quest",
+        "Obtain a Copper Ingot from either the Auction House , Goldsmithing guild shops or by crafting it.",
+        {
+            text = "(Recommended method) To buy the Copper Ore to craft the Ingot from a guild shop, visit the following NPCs:",
+            substeps = {
+                "Teerth Bastok Markets (H-8)",
+                "Visala Bastok Markets (H-8)",
+                "Yabby Tanmikey Mhaura (G-8)",
+                "Celestina Mhaura (G-8)",
+            },
+        },
+        {
+            text = "To craft the ingot:",
+            substeps = {
+                "Use a Fire Crystal with 4 Copper Ores",
+            },
+        },
+        "Trade the Ingot to Michea to complete the quest.",
+        "May be repeated by zoning out of the area. No longer repeatable once you attain Bastok fame level 2.",
+    },
+
+    bsz_bm_first_meeting = {
+        {
+            text = "Talk to Oggbi inside the Steaming Sheep Restaurant for a cutscene.",
+            substeps = {
+                "You must be on Monk. Once the Quest is active you can complete it on any job.",
+                "You must zone after completing the previous quest.",
+            },
+        },
+        {
+            text = "Travel to Fei'Yin . Your goal is to zone into, and then out of Qu'Bia Arena for a cutscene and receive the key item Letter from Dalzakk .",
+            substeps = {
+                "You can use the Home Point warp #1 if you have it.",
+            },
+        },
+        "Travel to Davoi and look for the Hide Flap at (F-7)/(G-7).",
+        {
+            text = "When ready click the Hide Flap and pop Deloknok (PLD) and Bilopdop (MNK). Kill them, then search for where the Hide Flap moved to and check for the key item San d'Orian martial arts scroll .",
+            substeps = {
+                "There is only one Hide Flap and it moves to another random hut in the area after any player searches a hut. It can appear on any of the huts near (F-7)/(G-7).",
+                "If completing this for multiple players, each player on the quest will need to trigger the NMs once before being able to retrieve the key item.",
+                "Once the key item is retrieved, there appears to be a cool down of a few minutes before the NMs can be spawned again. Searching a hut during this time period will result in finding nothing without spawning the NMs, and the Hide Flap will move to a new location.",
+            },
+        },
+        "Go back and talk to Oggbi and receive your Temple Gaiters .",
+    },
+
+    bsz_mw_gustaberg_tour = {
+        "Speak to Izabele to begin the quest.",
+        {
+            text = "Invite at least one other player to form a party of 2. Change to a job that's level 15 or below.",
+            substeps = {
+                "Trusts and Adventuring Fellows do not count toward the requirements.",
+                "Level Sync does work.",
+            },
+        },
+        {
+            text = "Together with your party, travel to North Gustaberg and locate the galka Hunting Bear at F-8 (near the waterfall).",
+            substeps = {
+                "The Survival Guide also puts you at the Outpost , which is fairly close to him.",
+                "Any players under level 20 will have to walk, as mounts require level 20.",
+            },
+        },
+        {
+            text = "Speak with Hunting Bear to complete the quest.",
+            substeps = {
+                "You only need to be level synced when you talk to Hunting Bear , not as you travel to him.",
+            },
+        },
+    },
+
+    bsz_mw_the_naming_game = {
+        "Obtain an Ordrynite",
+        {
+            text = "Enter Pso'Xja from Beaucedine Glacier (G-9) and kill Cryptonberry Plaguer or Cryptonberry Stalker for them.",
+            substeps = {
+                "Outpost Warp or Survival Guide to Beaucedine Glacier -> Mount -> (G-9)",
+                "HP1 in Pso'Xja -> Escape -> Mount -> (G-9)",
+            },
+        },
+        {
+            text = "Do Chocobo Digging in Beaucedine Glacier",
+            substeps = {
+                "With Rank 10 Chocobo Digging, you can probably get 10 in a day (accepting that they are Rare, so you have to turn each in).",
+            },
+        },
+        "Trade it to Raibaht to complete quest",
+    },
+
+    bsz_pb_quadavs_curse = {
+        "Speak to Corann to start the quest (he's inside the northmost house)",
+        "Obtain a Quadav Backplate either from the Auction House or by farming Amethyst Quadavs in North Gustaberg , South Gustaberg , Palborough Mines or Konschtat Highlands .",
+        "Turn in backplate to Corann to complete quest.",
+    },
+
+    bsz_bkt_return_of_adventurer = {
+        {
+            text = "Obtain a Cinnamon from the Auction House or if you have the Kazham Airship Pass , travel to the port shop in Kazham and purchase it from the vendor.",
+            substeps = {
+                "Can access vendor without being on the airship side. Take Survival Guide or Home Point to Kazham and buy Cinnamon from Ghemi Sinterilo",
+            },
+        },
+        "Speak with Gwill to begin quest.",
+        "When cutscene ends, trade him the Cinnamon to complete quest.",
+    },
+
+    bsz_bkt_signpost_marks_spot = {
+        "Speak to Nbu Latteh at (J-9) to begin quest.",
+        "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation.",
+        "Travel to Konschtat Highlands and inspect the Signpost at the south edge of G-4 / north edge of G-5.",
+        "You will receive a Painting of a windmill",
+        "Return to Bastok Mines and speak to Roh Latteh at (H-7) to complete the quest.",
+    },
+
+    bsz_bm_sirens_tear = {
+        {
+            text = "Talk to Wahid (HP #1 Bastok Mines ), he will ask for a \" Siren's Tear \".",
+            substeps = {
+                "(Optional) Go to the Steaming Sheep Restaurant at Port Bastok (E-6) and talk to Otto , then Carmelo for hints about the tear.",
+            },
+        },
+        {
+            text = "Travel to J-9 in North Gustaberg and look for a ??? . The ??? will appear randomly up and down the length of the river.",
+            substeps = {
+                "Port Bastok HP #1 to North Gustaberg is the quickest way to get to this river",
+            },
+        },
+        "Make sure you have 1 free inventory slot in active bag.",
+        {
+            text = "Unequip all weapons and shield in \"Main\" and \"Sub\" slot if applicable, then examine the ??? and you will receive the message \"... has obtained a Siren's Tear\".",
+            substeps = {
+                "If you don't unequip your weapons, then the tear won't be collected and the ??? will move to a different spot.",
+            },
+        },
+        "Go back to Wahid, trade Siren's Tear to complete quest.",
+        "Can be repeated as many times as you want.",
+    },
+
+    bsz_mw_stars_of_ifrit = {
+        "You may work on this quest only after you have obtained an Airship pass as its completion requires a trip on the airship.",
+        "If you fulfill all the prerequisites of the quest, then speak to Agapito to begin quest.",
+        {
+            text = "During a Full Moon at night time , board the San d'Oria-Jeuno airship .",
+            substeps = {
+                "You can use the /clock command to check the current moon phase.",
+            },
+        },
+        "Search for an abnormal ??? somewhere on the ship. It will only appear during this very specific time frame.",
+        "Touch the ??? to receive the Carrier pigeon letter .",
+        "Return to Agapito to complete the quest.",
+    },
+
+    bsz_bm_talekeepers_gift = {
+        "You must wait until the next game day after completing The Talekeeper's Truth before you can activate this quest.",
+        "Speak to Deidogg in Bastok Mines .",
+        "Speak to Detzo in Bastok Mines (I-6), located in the alleyway around the corner from Deidogg.(Speak to him again if he mentions a Mythril Sallet)",
+        "Obtain a Ginger Cookie and trade it to Deidogg . The quest will now be flagged.",
+        {
+            text = "Travel to Behemoth's Dominion .",
+            substeps = {
+                "If you don't have the Survival Guide warp, the quickest way is via Qufim Island ; follow the tunnel starting at (G-5) until you zone in.",
+            },
+        },
+        {
+            text = "Proceed to (K-9) in Behemoth's Dominion to find a ??? . Touching it will spawn 3 NM goblins:",
+            substeps = {
+                "Doglix Muttsnout (Level 58 WHM)",
+                "Moxnix Nightgoggle (Level 58 RNG)",
+                "Picklix Longindex (Level 60 THF)",
+                "Be aware all 3 NMs will aggressively use Bomb Toss .",
+            },
+        },
+        "Defeat the NMs, and zone out of Behemoth's Dominion (back into Qufim Island) to receive a cutscene and your reward.",
+    },
+
+    bsz_bm_talekeepers_truth = {
+        "Talk to Phara in Bastok Mines at (J-9).",
+        {
+            text = "Talk to Deidogg (H-6) Bastok Mines twice.",
+            substeps = {
+                "He is at the bottom of the ramp that leads to the guild.",
+                "After this point the quest can be completed on any job.",
+            },
+        },
+        {
+            text = "Go Palborough Mines and work your way to the top floor. You will find a ??? at (G-10) in a dead end room.",
+            substeps = {
+                "Home Point #1 is very close. If you don't have the Home Point, Domenic can also teleport you to Waughroon Shrine which is right next to it.",
+            },
+        },
+        {
+            text = "Examine it to spawn Ni'Ghu Nestfender . Defeat the NM who will drop a Mottled Quadav Egg .",
+            substeps = {
+                "3 minute re-spawn.",
+            },
+        },
+        {
+            text = "Return to Bastok and trade the Mottled Quadav Egg to Deidogg .",
+            substeps = {
+                "You can speak to Deidogg again for an additional cutscene.",
+            },
+        },
+        "Go to Castle Oztroja and kill the Yagudo Parasite in the pond on the 3rd floor (H-9) for a Parasite Skin .",
+        "Return to Bastok again and trade the Parasite Skin to Deidogg .",
+        "Wait a game day (after clock rolls around past 00:00). Talk to Deidogg for your reward.",
+    },
+
+    bsz_pb_the_usual = {
+        "Speak to Hilda to begin the quest.",
+        {
+            text = "Trade a King Truffle to Hilda to receive the Steaming Sheep invitation .",
+            substeps = {
+                "This can be found via Auction House , via Voidwatch , or dropped from some Funguar enemies in Crawlers' Nest .",
+            },
+        },
+        {
+            text = "Travel to the Metalworks and speak with Raibaht at G-8 (Cid's Lab).",
+            substeps = {
+                "Make sure that you receive a short dialog pertaining to this specific quest and not a cutscene for one of the multiple quests that involve Raibaht.",
+            },
+        },
+        "Return to the Steaming Sheep restaurant, and speak with Hilda to complete the quest.",
+    },
+
+    bsz_pb_walls_of_mind = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Oggbi will grant you the key item Weapon training guide as well as the Knuckles of Trials . You will need to break the latent on the Knuckles of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Knuckles of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Knuckles of Trials back to Oggbi . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to the Bostaunieux Oubliette .",
+        {
+            text = "Unity NPC warp 122 is available to get you close within Bostaunieux Oubliette well after the drop. Head East and go through connection B to (I-8) where the ??? is located.",
+            substeps = {
+                "Otherwise take Silent Oil with you and head to the Chateau d'Oraguille . In the entry hall, take the eastern door and follow the path north to Bostaunieux Oubliette .",
+                "Once inside the Oubliette, head south to (H-7/8) and then west. Continue west to (E-7/8) and drop down. After you drop, head south again and then turn west. Go west until you have to turn south; repeat this until you come to (F-9) and then turn east.",
+                "Follow this path until you come to (I-8), where you will find the ??? to spawn the NM.",
+            },
+        },
+        "This fight is against Bodach , a skeleton. It is weak to Fire and Light attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Oggbi to receive your reward.",
+    },
+
+    bsz_mw_weight_of_limits = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Iron Eater will grant you the key item Weapon training guide as well as the Axe of Trials . You will need to break the latent on the Axe of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Axe of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        {
+            text = "Trade the Axe of Trials back to Iron Eater . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to The Sanctuary of Zi'Tah .",
+            substeps = {
+                "To spawn the NM, use the Survival Guide to zone in The Sanctuary of Zi'Tah and head to the northwest corner of (F-6) to find the ???.",
+                "Alternatively, for the fastest route, use the Unity Warp to Ro'Maeve (level 125), then zone into The Sanctuary of Zi'Tah. The ??? is located at (F-5) in the southwest area.",
+            },
+        },
+        "This fight is against Greenman , a treant. It is weak to Fire and Dark attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Iron Eater to receive your reward.",
+    },
+
+    bsz_pb_wisdom_of_elders = {
+        "Speak with Benita to begin quest.",
+        "Speak to Tete at (I-5) of Port Bastok",
+        "Obtain a Bomb Ash from the Auction House , Tenshodo vendors or Alchemy vendors, or by farming Lanterns/Bomb type mobs.",
+        "Trade Bomb Ash to Benita to complete quest.",
+    },
+
+    bsz_bm_wondrous_whatchamacallit = {
+        "Speak to Selliste in Bastok Mines at (K-7).",
+        "To synergize Astral Matter , you will have to gather the following stones from ??? spots in the matching cloisters:",
+        {
+            text = "Stone / Location",
+            substeps = {
+                "Flamestone - Cloister of Flames",
+                "Froststone - Cloister of Frost",
+                "Galestone - Cloister of Gales",
+                "Tremorstone - Cloister of Tremors",
+                "Stormstone - Cloister of Storms",
+                "Tidestone - Cloister of Tides",
+            },
+        },
+        {
+            text = "Synergize the stones into Astral Matter in a Synergy Furnace , then trade Selliste the result for your reward.",
+            substeps = {
+                "Enternity and Frame Rate above 30fps appear to lock up this cutscene.",
+            },
+        },
+    },
+
+    bsz_pb_till_death_do_part = {
+        "You must have zoned once after finishing Forever to Hold to receive this quest.",
+        "Talk to Romilda, who wants to give her husband, Qiji , a pair of Cotton Gloves .",
+        "Once you've got it, trade them to Romilda to finish the quest.",
+    },
+
+    bsz_mw_too_many_chefs = {
+        {
+            text = "Speak to Ferghus for a cutscene. He can be found in in the Craftsmen's Eatery, south of Cid's workshop.",
+            substeps = {
+                "Metalworks HP#1 is the closest.",
+            },
+        },
+        "Speak to Leonhardt for another cutscene.",
+        "Go to Bastok Markets (S) and speak to Raginmund near Harmodio's Music Shop (L-10).",
+        {
+            text = "Obtain a Red Oven Mitt from Copper Quadav and Onyx Quadav in Grauberg (S) or North Gustaberg (S) .",
+            substeps = {
+                "The J-5/6 corridor in Grauberg (S) has two spawns of each. It is conveniently reached via campaign arbiter or Survival Guide .",
+                "The area south of the Survival Guide in North Gustaberg (S) has one Copper Quadav .",
+            },
+        },
+        "Trade the Red Oven Mitt to Leonhardt for a brief cutscene.",
+        "Speak to Umberto in Bastok Markets near Harmodio's Music Shop (L-10) for a cutscene and your reward.",
+    },
+
+    bsz_pb_trial_by_earth = {
+        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        "Speak with Juroro to obtain the quest. If you are positive that you have the required fame but she is not allowing you to undertake this quest, continue speaking with her until her text changes. Once you have received the Tuning fork of earth , you can now safely undertake the quest.",
+        {
+            text = "Travel to Eastern Altepa Desert and look for the entrance to Quicksand Caves at (J-7) (where the level 30+ beetle/antica camp is). This will put you at the first map of Quicksand Caves at (L-4). You will need to travel to (E-10) of the map, to find a hidden entrance to the Cloister of Tremors . The map to the right hand side shows you the map with the hidden tunnels, falls and other traps. Be careful to not fall into the wrong areas.",
+            substeps = {
+                "Preferably, home point to Quicksand Caves #2. If you don't have it yet, make sure to grab it on the way.",
+                "The Unity 125 warp places you within a minute run to the home point.",
+            },
+        },
+        "Defeat Titan Prime and you will receive Whisper of tremors",
+        "Return to Juroro with the whisper and she will provide several reward options including the ability to summon Titan (Avatar) .",
+    },
+
+    bsz_pb_trial_size_earth = {
+        "Speak with Ferrol at Port Bastok (I-8) to begin quest and obtain a Mini Tuning Fork of Earth .",
+        "You may prepare for the upcoming battle and whenever you are ready, trade Ferrol the tuning fork to be transported to the arena.",
+        "Trade the fork to the Earth Protocrystal to enter the fighting arena.",
+        "Defeat Titan Prime to complete quest.",
+    },
+
+    bsz_bm_true_strength = {
+        {
+            text = "Talk to Ayame in the Metalworks at (K-7).",
+            substeps = {
+                "If you have finished the Treasures of Aht Urhgan Missions , you may need to speak with her twice.",
+                "Acquire a Yagudo Drink from the Auction House , or purchase one from a Curio Vendor Moogle if you have the appropriate rhapsody item.",
+            },
+        },
+        "Note: Once you have talked to Ayame, the quest will show up in your quest log, at this point you may switch to another job to complete the quest.",
+        {
+            text = "Travel to Castle Oztroja .",
+            substeps = {
+                "You will not need the three passwords to enter the Altar Room.",
+            },
+        },
+        {
+            text = "Head to the top floor where you have limited time to get past the gate before it closes.",
+            substeps = {
+                "Do not head through the timed gate. The ??? you need will be in the H-shaped room before it.",
+            },
+        },
+        "Look for a torch with a ??? on it at (H-8). Trade it a Yagudo Drink and Pop Huu Xalmo the Savage .",
+        {
+            text = "He drops Xalmo Feather .",
+            substeps = {
+                "There is a 3 minute cooldown between pops if needing multiple feathers.",
+            },
+        },
+        "Trade the feather to Ayame for your Temple Hose .",
+    },
+
+    bsz_pb_trust_bastok = {
+        "Speak to Clarion Star in Port Bastok HP #1 at (K-7), he will give you the Blue institute card .",
+        {
+            text = "Head to Metalworks HP #1 (J-8) and speak to Naji .",
+            substeps = {
+                "If this is not your first Trust quest that you are completing, at this point you will be finished with the Quest and receive the Bastok Trust permit .",
+                "If this is your first Trust Quest, you must use the Trust magic spell \"Naji\" in either South Gustaberg or North Gustaberg . After, return to Naji for the Bastok Trust permit .",
+            },
+        },
+    },
+
+    bsz_bm_vengeful_wrath = {
+        {
+            text = "Speak to Goraow (I-6) in the upper stairway of Ore Street to begin quest.",
+            substeps = {
+                "Close to Bastok Mines Home Point #3.",
+            },
+        },
+        {
+            text = "Obtain a Quadav Helm .",
+            substeps = {
+                "Only drops from Old Quadav in Beadeaux .",
+                "Can be bought on the Auction House  Others  Beast-made.",
+            },
+        },
+        "Trade a Quadav Helm to Goraow to complete the quest.",
+        "Can be repeated without zoning.",
+    },
+
+    bsz_pb_welcome_to_bastok = {
+        "Obtain a Shell Shield either via Auction House or by farming it from Young Quadavs in North Gustaberg , South Gustaberg , Palborough Mines or Konschtat Highlands",
+        "You will notice that only levels 7+ of the following jobs can equip the shield: WAR / RDM / PLD / BST / SAM",
+        "Speak to Powhatan to start the quest. (Inside Steaming Sheep)",
+        "Equip the shield.",
+        "Speak to Bartolomeo in Port Bastok (F-7) (Downstairs Air Travel Agency, enter through Arrival's Exit)",
+        "After the cutscene, return to Powhatan and complete quest.",
+    },
+
+    bsz_bkt_wish_upon_a_star = {
+        "Speak to Zacc (G-9) who is standing next to Enu (G-9).",
+        "Speak with Malene (I-5), more popularly known as the Steam Clock/Bubbly Bernie quest giver.",
+        {
+            text = "Return to the fountain and speak with Enu.",
+            substeps = {
+                "The quest will now appear in your log.",
+            },
+        },
+        "Acquire a Hatchet from the Auction House, NPC stores, or crafting.",
+        {
+            text = "Travel to Yuhtunga Jungle and locate a Logging Point . Start logging and you will receive a Fallen Star .",
+            substeps = {
+                "Yuhtunga Jungle is on Elshimo Island, accessed via airship with Kazham Airship Pass or transport to Norg via NPCs in Mhaura or Selbina (requires RoV 1-5 or later).",
+            },
+        },
+        {
+            text = "Return to Enu and trade her the star on a clear starry night (Clear weather, with stars visible in the sky) to complete the quest.",
+            substeps = {
+                "Attempts during other weather conditions, including Clear weather but with overcast (clouds), will cause Enu to say \"It has to be a starry night for the fallen star to work. We have to wait a little bit longer.\"",
+            },
+        },
+    },
+
 }
 
 return Q

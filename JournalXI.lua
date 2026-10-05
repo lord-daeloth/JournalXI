@@ -366,6 +366,18 @@ local function visible_items()
             result[#result + 1] = item
         end
     end
+    if config.mode == 'quest' then
+        table.sort(result, function(left, right)
+            local left_id = tonumber(left.tracker_id)
+            local right_id = tonumber(right.tracker_id)
+            if left_id ~= nil and right_id ~= nil and left_id ~= right_id then
+                return left_id < right_id
+            end
+            if left_id ~= nil and right_id == nil then return true end
+            if left_id == nil and right_id ~= nil then return false end
+            return tostring(left.name or left.id):lower() < tostring(right.name or right.id):lower()
+        end)
+    end
     return result
 end
 
@@ -566,14 +578,24 @@ local function draw_details(item)
     local label, color = status_label(item.status or 'not_started')
     imgui.TextColored(color, label)
     imgui.Separator()
+    metadata_line('Description', item.description)
     metadata_line('Zone', item.zone)
     metadata_line('Location', item.loc)
     metadata_line('NPC', item.npc)
+    metadata_line('Fame', item.fame)
+    metadata_line('Level', item.level)
+    metadata_line('Repeatable', item.repeatable)
+    metadata_line('Previous quest', item.previous_quest or item.prereq)
+    metadata_line('Next quest', item.next_quest)
+    metadata_line('Title', item.title)
+    metadata_line('Expansion', item.pack)
+    metadata_line('Server note', item.server_note)
     metadata_line('Requirements', item.req)
-    metadata_line('Prerequisite', item.prereq)
     metadata_line('Items', item.items)
     metadata_line('Reward', item.reward)
-    if item.zone or item.loc or item.npc or item.req or item.prereq or item.items or item.reward then
+    if item.description or item.zone or item.loc or item.npc or item.fame or item.level
+        or item.repeatable or item.previous_quest or item.prereq or item.next_quest
+        or item.title or item.pack or item.server_note or item.req or item.items or item.reward then
         imgui.Separator()
     end
     if is_tracked(item) then
