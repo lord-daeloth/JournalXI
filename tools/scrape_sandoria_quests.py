@@ -59,10 +59,20 @@ def fetch_page(session: requests.Session, title: str) -> dict:
 def clean_text(node: Tag) -> str:
     clone = BeautifulSoup(str(node), "lxml")
     for unwanted in clone.select(
-        "sup, .mw-editsection, style, script, .reference, .mw-collapsible-toggle"
+        "sup, .hidden, .mw-editsection, style, script, .reference, .mw-collapsible-toggle"
     ):
         unwanted.decompose()
     return " ".join(clone.get_text(" ", strip=True).split())
+
+
+def clean_list_text(node: Tag) -> str:
+    clone = BeautifulSoup(str(node), "lxml")
+    for unwanted in clone.select(
+        "sup, .hidden, .mw-editsection, style, script, .reference, .mw-collapsible-toggle"
+    ):
+        unwanted.decompose()
+    parts = [" ".join(part.split()) for part in clone.get_text(" / ", strip=True).split(" / ")]
+    return " / ".join(part for part in parts if part)
 
 
 def direct_text(node: Tag) -> str:
@@ -174,6 +184,14 @@ def extract_metadata(soup: BeautifulSoup) -> dict[str, str]:
     rows = soup.select("tr")
     for index, row in enumerate(rows):
         cells = row.find_all(["th", "td"], recursive=False)
+        if len(cells) == 1:
+            label = clean_text(cells[0]).strip().rstrip(":")
+            if label in {"Requirements", "Rewards"} and index + 1 < len(rows):
+                values = rows[index + 1].find_all(["th", "td"], recursive=False)
+                value = " / ".join(clean_list_text(cell) for cell in values if clean_list_text(cell))
+                if value:
+                    metadata[label] = value
+            continue
         if len(cells) < 2:
             continue
         label = clean_text(cells[0]).strip().rstrip(":")
@@ -181,8 +199,8 @@ def extract_metadata(soup: BeautifulSoup) -> dict[str, str]:
         if label == "Previous Quest" and value == "Next Quest" and index + 1 < len(rows):
             values = rows[index + 1].find_all(["th", "td"], recursive=False)
             if len(values) >= 2:
-                metadata["Previous Quest"] = clean_text(values[0])
-                metadata["Next Quest"] = clean_text(values[1])
+                metadata["Previous Quest"] = clean_list_text(values[0])
+                metadata["Next Quest"] = clean_list_text(values[1])
             continue
         if label and value and label not in metadata:
             metadata[label] = value
@@ -198,19 +216,21 @@ def extract_category_rows(html: str) -> list[dict[str, str]]:
     table = heading.find_next("table")
     if table is None:
         return []
+    table_rows = table.select("tr")
+    if not table_rows:
+        return []
+    headers = [clean_text(cell).strip().lower() for cell in table_rows[0].find_all(["th", "td"], recursive=False)]
+    aliases = {"pos.": "position", "pos": "position", "rewards": "reward"}
+    keys = [aliases.get(header, header.replace(" ", "_")) for header in headers]
     rows = []
-    for row in table.select("tr"):
+    for row in table_rows[1:]:
         cells = row.find_all(["th", "td"], recursive=False)
-        if len(cells) < 6 or clean_text(cells[0]).lower() == "fame":
+        if len(cells) < 2:
             continue
-        rows.append({
-            "fame": clean_text(cells[0]),
-            "name": clean_text(cells[1]),
-            "npc": clean_text(cells[2]),
-            "position": clean_text(cells[3]),
-            "zone": clean_text(cells[4]),
-            "reward": clean_text(cells[5]),
-        })
+        values = [clean_text(cell) for cell in cells]
+        item = {key: values[index] if index < len(values) else "" for index, key in enumerate(keys)}
+        if item.get("name"):
+            rows.append(item)
     return rows
 
 

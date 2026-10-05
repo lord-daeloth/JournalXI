@@ -27,6 +27,7 @@ EXTRA_QUESTS = {
             "tracker_id": 23,
         },
     },
+    "windurst": {},
 }
 
 TITLE_ALIASES = {
@@ -65,7 +66,8 @@ def lua_string(value: str) -> str:
 def parse_old_records(path: Path) -> dict[str, dict]:
     records = {}
     current = None
-    for line in path.read_text(encoding="utf-8").splitlines():
+    text = path.read_text(encoding="utf-8")
+    for line in text.splitlines():
         if re.match(r"^\s*\{\s*$", line):
             current = {}
             continue
@@ -83,7 +85,40 @@ def parse_old_records(path: Path) -> dict[str, dict]:
         match = re.match(r"^\s*(\w+)\s*=\s*(\d+),\s*$", line)
         if match:
             current[match.group(1)] = int(match.group(2))
+    by_id = {record.get("id"): record for record in records.values()}
+    tracker_pattern = re.compile(
+        r"^\s*([a-z0-9_]+)\s*=\s*\{\s*area\s*=\s*(['\"])([^'\"]+)\2,"
+        r"\s*bit\s*=\s*(\d+)\s*\},?\s*$",
+        re.MULTILINE,
+    )
+    for match in tracker_pattern.finditer(text):
+        record = by_id.get(match.group(1))
+        if record is not None:
+            record["tracker_area"] = match.group(3)
+            record["tracker_id"] = int(match.group(4))
     return records
+
+
+def parse_old_step_bodies(path: Path) -> dict[str, list[str]]:
+    bodies = {}
+    current_id = None
+    current_lines = []
+    depth = 0
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if current_id is None:
+            match = re.match(r"^    ([a-z0-9_]+) = \{$", line)
+            if match:
+                current_id = match.group(1)
+                current_lines = []
+                depth = 1
+            continue
+        depth += line.count("{") - line.count("}")
+        if depth == 0:
+            bodies[current_id] = current_lines
+            current_id = None
+        else:
+            current_lines.append(line)
+    return bodies
 
 
 def starting_location(value: str) -> tuple[str, str, str]:
@@ -139,8 +174,8 @@ def render_metadata(
             "pack": useful(meta.get("Pack")),
             "previous_quest": useful(meta.get("Previous Quest")),
             "next_quest": useful(meta.get("Next Quest")),
-            "items": ascii_text(prior.get("items")),
-            "reward": ascii_text(row.get("reward")) or ascii_text(prior.get("reward")),
+            "items": useful(meta.get("Requirements")) or ascii_text(prior.get("items")),
+            "reward": useful(meta.get("Rewards")) or ascii_text(row.get("reward")) or ascii_text(prior.get("reward")),
         }
         server_note = prior.get("server_note", "") or prior.get("req", "")
         if "NOT IMPLEMENTED" in server_note:
@@ -171,7 +206,9 @@ def render_step(step: str | dict, indent: str = "        ") -> list[str]:
     return lines
 
 
-def render_steps(records: list[dict], old: dict[str, dict], area: str) -> str:
+def render_steps(
+    records: list[dict], old: dict[str, dict], old_step_bodies: dict[str, list[str]], area: str
+) -> str:
     lines = [
         "local Q = {}",
         "",
@@ -186,8 +223,11 @@ def render_steps(records: list[dict], old: dict[str, dict], area: str) -> str:
             raise ValueError(f"No stable quest ID for {name}")
         lines.extend(["", f"    {quest_id} = {{"])
         steps = STEP_OVERRIDES.get(area, {}).get(name, record["steps"])
-        for step in steps:
-            lines.extend(render_step(step))
+        if not steps and quest_id in old_step_bodies:
+            lines.extend(old_step_bodies[quest_id])
+        else:
+            for step in steps:
+                lines.extend(render_step(step))
         lines.append("    },")
     lines.extend(["", "}", "", "return Q", ""])
     return "\n".join(lines)
@@ -207,6 +247,7 @@ def main() -> None:
     records = json.loads(args.quests.read_text(encoding="utf-8"))
     category_rows = json.loads(args.category.read_text(encoding="utf-8"))
     old = parse_old_records(args.metadata_output)
+    old_step_bodies = parse_old_step_bodies(args.steps_output)
     aliases = TITLE_ALIASES.get(args.area, {})
     for record in records:
         title = ascii_text(record["title"])
@@ -234,7 +275,9 @@ def main() -> None:
         if row is not None:
             category[title] = row
     args.metadata_output.write_text(render_metadata(records, category, old, args.area), encoding="utf-8")
-    args.steps_output.write_text(render_steps(records, old, args.area), encoding="utf-8")
+    args.steps_output.write_text(
+        render_steps(records, old, old_step_bodies, args.area), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":
