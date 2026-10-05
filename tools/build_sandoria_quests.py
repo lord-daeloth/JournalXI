@@ -29,11 +29,17 @@ EXTRA_QUESTS = {
     },
     "windurst": {},
     "jeuno": {},
+    "other": {},
 }
 
 TITLE_ALIASES = {
     "bastok": {
         "The Weight of Your Limits": "Weight of Your Limits",
+    },
+    "other": {
+        "Monstrosity (Quest)": "Monstrosity",
+        "Records of Eminence (Quest)": "Records of Eminence",
+        "The Big One (Quest)": "The Big One",
     },
 }
 
@@ -62,6 +68,10 @@ SKIP_PAGES = {
     "jeuno": {"Unlocking a Myth"},
 }
 
+PRESERVE_OLD_RECORDS = {
+    "other": {"Unity Concord"},
+}
+
 
 def ascii_text(value: str | None) -> str:
     if not value:
@@ -84,6 +94,8 @@ def tracker_key(name: str) -> str:
         value = value[:-6]
     if value == "LURE_OF_THE_WILDCAT_JEUNO":
         return "LURE_OF_THE_WILDCAT"
+    if value == "THE_MOOGLES_PICNIC":
+        return "THE_MOOGLE_PICNIC"
     return value
 
 
@@ -170,6 +182,12 @@ def useful(value: str | None) -> str:
     return "" if value.lower() in {"", "na", "n/a", "none", "unknown"} or "unknown" in value.lower() else value
 
 
+def fame_value(value: str | None) -> str:
+    value = useful(value)
+    match = re.search(r"Fame Level:\s*(\d+)", value, re.IGNORECASE)
+    return match.group(1) if match else value
+
+
 def render_metadata(
     records: list[dict], category: dict[str, dict], old: dict[str, dict], area: str,
     tracker_ids: dict[str, int]
@@ -193,14 +211,14 @@ def render_metadata(
             "id": prior.get("id") or extra.get("id") or generated_id(area, name),
             "name": name,
             "area": area,
-            "zone": ascii_text(row.get("zone")) or fallback_zone,
+            "zone": ascii_text(row.get("zone")) or fallback_zone or ascii_text(prior.get("zone")),
             "loc": (
                 f"{ascii_text(row['zone'])} ({ascii_text(row['position']).strip('()')})"
-                if row.get("zone") and row.get("position") else fallback_loc
+                if row.get("zone") and row.get("position") else fallback_loc or ascii_text(prior.get("loc"))
             ),
-            "npc": ascii_text(row.get("npc")) or fallback_npc,
+            "npc": ascii_text(row.get("npc")) or fallback_npc or ascii_text(prior.get("npc")),
             "description": useful(meta.get("Description")),
-            "fame": useful(row.get("fame")) or useful(meta.get("Required Fame")),
+            "fame": fame_value(row.get("fame")) or fame_value(meta.get("Required Fame")),
             "level": useful(meta.get("Level Restriction")),
             "repeatable": useful(meta.get("Repeatable")),
             "title": useful(meta.get("Title")),
@@ -219,7 +237,7 @@ def render_metadata(
                 lines.append(f"        {key} = {lua_string(str(value))},")
         tracker_area = prior.get("tracker_area") or extra.get("tracker_area")
         tracker_id = prior.get("tracker_id")
-        if tracker_id is None:
+        if tracker_id is None and "NOT IMPLEMENTED" not in server_note:
             tracker_id = extra.get("tracker_id", tracker_ids.get(tracker_key(name)))
         if tracker_id is not None and not tracker_area:
             tracker_area = area
@@ -300,6 +318,10 @@ def main() -> None:
                 prior_name = next((name for name in old if name.casefold() == title.casefold()), None)
             if prior_name:
                 old[title] = old.pop(prior_name)
+    existing_titles = {ascii_text(record["title"]) for record in records}
+    for title in sorted(PRESERVE_OLD_RECORDS.get(args.area, set())):
+        if title in old and title not in existing_titles:
+            records.append({"title": title, "metadata": {}, "steps": [], "error": None})
     category = {ascii_text(row["name"]).casefold(): row for row in category_rows}
     tracker_path = Path(__file__).parent / "tracker_ids" / f"{args.area}.json"
     tracker_ids = json.loads(tracker_path.read_text(encoding="utf-8")) if tracker_path.exists() else {}

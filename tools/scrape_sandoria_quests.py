@@ -73,6 +73,8 @@ def clean_list_text(node: Tag) -> str:
         unwanted.decompose()
     for line_break in clone.find_all("br"):
         line_break.replace_with(" || ")
+    for list_item in clone.find_all("li"):
+        list_item.insert_after(" || ")
     text = " ".join(clone.get_text(" ", strip=True).split())
     parts = [part.strip(" / ") for part in text.split("||")]
     return " / ".join(part for part in parts if part)
@@ -239,7 +241,7 @@ def extract_category_rows(html: str) -> list[dict[str, str]]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--category", default=DEFAULT_CATEGORY)
+    parser.add_argument("--category", action="append")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--category-output", type=Path)
     parser.add_argument("--category-only", action="store_true")
@@ -248,9 +250,14 @@ def main() -> None:
 
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
+    categories = args.category or [DEFAULT_CATEGORY]
     if args.category_output is not None:
-        category_page = fetch_page(session, args.category)
-        category_rows = extract_category_rows(category_page["text"])
+        category_rows_by_name = {}
+        for category in categories:
+            category_page = fetch_page(session, category)
+            for row in extract_category_rows(category_page["text"]):
+                category_rows_by_name.setdefault(row["name"], row)
+        category_rows = list(category_rows_by_name.values())
         args.category_output.parent.mkdir(parents=True, exist_ok=True)
         args.category_output.write_text(
             json.dumps(category_rows, indent=2, ensure_ascii=True), encoding="utf-8"
@@ -258,7 +265,11 @@ def main() -> None:
         print(f"category rows={len(category_rows)}", flush=True)
         if args.category_only:
             return
-    titles = category_titles(session, args.category)
+    titles = sorted({
+        title
+        for category in categories
+        for title in category_titles(session, category)
+    })
     records = []
     for index, title in enumerate(titles, 1):
         try:

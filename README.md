@@ -42,10 +42,14 @@ addons register packet handlers for the same character progress data.
 ## Data
 
 The files under `data/` let JournalXI work without a network connection.
-San d'Oria, Bastok, Windurst, and Jeuno quest metadata and walkthroughs are generated from the
-corresponding BG-Wiki quest pages with `tools/scrape_sandoria_quests.py` and
-`tools/build_sandoria_quests.py`. Existing CatsEyeXI quest-log IDs are retained
-so active and completed status detection continues to match the server.
+San d'Oria, Bastok, Windurst, Jeuno, and Other quest metadata and walkthroughs
+are generated from the corresponding BG-Wiki quest pages with
+`tools/scrape_sandoria_quests.py` and `tools/build_sandoria_quests.py`. The
+Other data combines the Other, Selbina, Mhaura, Tavnazian Safehold, and Mog
+House quest categories. Existing CatsEyeXI quest-log IDs are retained so active
+and completed status detection continues to match the server. The server-specific
+`Unity Concord` reference entry is also retained even though it is not listed in
+those BG-Wiki categories.
 
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise
