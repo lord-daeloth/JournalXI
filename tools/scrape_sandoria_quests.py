@@ -71,7 +71,10 @@ def clean_list_text(node: Tag) -> str:
         "sup, .hidden, .mw-editsection, style, script, .reference, .mw-collapsible-toggle"
     ):
         unwanted.decompose()
-    parts = [" ".join(part.split()) for part in clone.get_text(" / ", strip=True).split(" / ")]
+    for line_break in clone.find_all("br"):
+        line_break.replace_with(" || ")
+    text = " ".join(clone.get_text(" ", strip=True).split())
+    parts = [part.strip(" / ") for part in text.split("||")]
     return " / ".join(part for part in parts if part)
 
 

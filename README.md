@@ -42,7 +42,7 @@ addons register packet handlers for the same character progress data.
 ## Data
 
 The files under `data/` let JournalXI work without a network connection.
-San d'Oria, Bastok, and Windurst quest metadata and walkthroughs are generated from the
+San d'Oria, Bastok, Windurst, and Jeuno quest metadata and walkthroughs are generated from the
 corresponding BG-Wiki quest pages with `tools/scrape_sandoria_quests.py` and
 `tools/build_sandoria_quests.py`. Existing CatsEyeXI quest-log IDs are retained
 so active and completed status detection continues to match the server.
@@ -54,6 +54,11 @@ walkthrough documented by the HorizonXI and FFXIclopedia wikis.
 BG-Wiki currently provides metadata but no walkthrough for `Acting in Good
 Faith`, `Hat in Hand`, or `The Root of the Problem`. JournalXI retains its
 existing walkthroughs for those three Windurst quests.
+
+BG-Wiki currently provides metadata but no walkthrough for `Shadows of the
+Departed`, `Storms of Fate`, or `Your Crystal Ball`. JournalXI retains its
+existing walkthroughs for the first two; `Your Crystal Ball` uses the matching
+walkthrough documented by FFXIclopedia.
 
 Other gameplay information was originally assembled from the sources credited
 by Journal, including BG-Wiki and related FFXI addon projects. See `LICENSE` and
