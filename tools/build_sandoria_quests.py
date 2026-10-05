@@ -31,6 +31,7 @@ EXTRA_QUESTS = {
     "jeuno": {},
     "other": {},
     "outlands": {},
+    "whitegate": {},
 }
 
 TITLE_ALIASES = {
@@ -105,7 +106,7 @@ def tracker_key(name: str) -> str:
 
 def generated_id(area: str, name: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "_", ascii_text(name).lower()).strip("_")
-    prefix = {"jeuno": "jeu"}.get(area, area)
+    prefix = {"jeuno": "jeu", "whitegate": "tau"}.get(area, area)
     return f"{prefix}_{slug}"
 
 
@@ -114,12 +115,12 @@ def parse_old_records(path: Path) -> dict[str, dict]:
     current = None
     text = path.read_text(encoding="utf-8")
     for line in text.splitlines():
-        if re.match(r"^\s*\{\s*$", line):
+        if re.match(r"^\s*(?:\{|M\[#M \+ 1\]\s*=\s*\{)\s*$", line):
             current = {}
             continue
         if current is None:
             continue
-        if re.match(r"^\s*\},\s*$", line):
+        if re.match(r"^\s*\},?\s*$", line):
             if current.get("name"):
                 records[current["name"]] = current
             current = None
@@ -244,7 +245,7 @@ def render_metadata(
         if tracker_id is None and "NOT IMPLEMENTED" not in server_note:
             tracker_id = extra.get("tracker_id", tracker_ids.get(tracker_key(name)))
         if tracker_id is not None and not tracker_area:
-            tracker_area = area
+            tracker_area = {"whitegate": "toau"}.get(area, area)
         if tracker_area:
             lines.append(f"        tracker_area = {lua_string(tracker_area)},")
         if tracker_id is not None:
