@@ -45,3 +45,10 @@ The files under `data/` were copied from the local Journal addon so JournalXI
 can be installed independently. Gameplay information was originally assembled
 from the sources credited by Journal, including BG-Wiki and related FFXI addon
 projects. See `LICENSE` and the source-file comments for attribution details.
+
+## Testing status
+
+The Assault and Campaign Ops walkthroughs load correctly but have not yet been
+verified through live completion of every operation. Campaign Ops need extra
+review for nation-specific NPCs, locations, enemies, and the entries documented
+with counterpart data because BG-Wiki has no dedicated national page.

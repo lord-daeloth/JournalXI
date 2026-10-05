@@ -1,5 +1,7 @@
 -- Mission names: campaign (extracted from DAT 0xD9AC)
-return {
+local M = {}
+
+M.MISSIONS = {
     [1] = 'Smokescreen I (S)',
     [2] = 'Smokescreen II (S)',
     [3] = 'Smokescreen III (S)',
@@ -248,3 +250,326 @@ return {
     [498] = 'Magna Cache III (W)',
     [499] = 'Hazardous Materials (W)',
 }
+
+-- Objective summaries adapted from https://www.bg-wiki.com/ffxi/Category:Campaign_Ops.
+-- Each DAT entry already identifies its Allied nation, so no player setting is needed.
+
+local NATIONS = {
+    S = {
+        city = "Southern San d'Oria (S)",
+        officer = 'Rasdinice at (I-9)',
+        quartermaster = 'the Quartermaster at (H-9)',
+        adjutant = 'the Adjutant at (D-8)',
+        field = 'East Ronfaure (S)',
+        beastmen = 'Orcish',
+        stronghold = 'La Vaule (S)',
+        instance = 'Everbloom Hollow',
+    },
+    B = {
+        city = 'Bastok Markets (S)',
+        officer = 'Hieronymus at (E-8)',
+        quartermaster = 'the Quartermaster at (H-9)',
+        adjutant = 'the Adjutant at (J-9)',
+        field = 'North Gustaberg (S)',
+        beastmen = 'Quadav',
+        stronghold = 'Beadeaux (S)',
+        instance = 'Ruhotz Silvermines',
+    },
+    W = {
+        city = 'Windurst Waters (S)',
+        officer = 'Emhi Tchaoryo at (H-9)',
+        quartermaster = 'the Quartermaster at (F-9)',
+        adjutant = 'the Adjutant at (F-9)',
+        field = 'West Sarutabaruta (S)',
+        beastmen = 'Yagudo',
+        stronghold = 'Castle Oztroja (S)',
+        instance = "Ghoyu's Reverie",
+    },
+}
+
+local function report_steps(nation)
+    return 'Return to ' .. nation.officer .. ' in ' .. nation.city .. ' to report completion.'
+end
+
+local function get_steps(name)
+    local code = name:match('%(([SBW])%)$')
+    local nation = NATIONS[code]
+    local base = name:gsub(' %([SBW]%)$', '')
+    if nation == nil then return { 'Complete the Campaign Operation objective.' } end
+
+    if base:match('^Smokescreen') then
+        local target = base:match(' V$') and 'a Northlands enemy stronghold'
+            or ('a ' .. nation.beastmen .. ' stronghold')
+        return {
+            'Wait for a Campaign Battle at ' .. target .. '.',
+            'Travel there, obtain Allied Tags, and participate in the offensive battle.',
+            'Remain until the Campaign Battle ends and the operation objective is awarded.',
+            report_steps(nation),
+        }
+    elseif base == 'Splitting Heirs' then
+        return {
+            'Travel to La Vaule (S) and enter the operation battlefield.',
+            'Defeat Darkheir Grradhod and his supporting Orcs.',
+            'Leave through the victory aureola after completing the objective.',
+            report_steps(nation),
+        }
+    elseif base == 'Cracking Shells' then
+        return {
+            'Travel to Beadeaux (S) and enter the operation battlefield.',
+            'Defeat the Quadav commander and supporting forces.',
+            'Leave through the victory aureola after completing the objective.',
+            report_steps(nation),
+        }
+    elseif base == 'Plucking Wings' then
+        return {
+            'Travel to Castle Oztroja (S) and enter the operation battlefield.',
+            'Defeat Soo Luma the Ascended and the supporting Yagudo.',
+            'Leave through the victory aureola after completing the objective.',
+            report_steps(nation),
+        }
+    elseif base:match('^Kinslayer:') then
+        local area = base:find('Baileys', 1, true) and 'Castle Zvahl Baileys (S)'
+            or 'Castle Zvahl Keep (S)'
+        return {
+            'Travel to ' .. area .. ' and locate the operation target.',
+            'Defeat the designated Kindred commander.',
+            report_steps(nation),
+        }
+    elseif base == 'Fiat Lux' then
+        return {
+            'Enter the Throne Room (S) battlefield while the Allied Forces control the required Northlands areas.',
+            'Defeat the Shadow Lord before the battlefield time limit expires.',
+            'Exit the battlefield after victory.',
+            report_steps(nation),
+        }
+    elseif base:match('^Pit Spider') then
+        return {
+            'Travel to a region where an enemy supply transport is operating.',
+            'Locate and ambush the ' .. nation.beastmen .. ' supply unit.',
+            'Defeat the transport leader and required escorts before they reach their destination.',
+            report_steps(nation),
+        }
+    elseif base == 'By Light of Fire I' then
+        return {
+            'Travel to the operation entrance specified in the mission orders.',
+            'Enter ' .. nation.instance .. ' through the Beastman Ensign.',
+            'Destroy the beastmen camps and all required targets.',
+            'Leave through the victory aureola after completing the objective.',
+            report_steps(nation),
+        }
+    elseif base:match('^Aegis Scream') then
+        return {
+            "Wait for a Campaign Battle at one of your nation's strongholds while it is under attack.",
+            'Travel there, obtain Allied Tags, and participate in the defensive battle.',
+            'Remain until the Campaign Battle ends and the operation objective is awarded.',
+            report_steps(nation),
+        }
+    elseif base:match('^Granite Rose') then
+        return {
+            'Travel to the Allied Ensign specified in the mission orders.',
+            'Enter ' .. nation.instance .. ' and join the allied defenders.',
+            'Protect the allied soldiers while defeating the attacking ' .. nation.beastmen .. ' forces.',
+            'Leave through the victory aureola after the attack is repelled.',
+            report_steps(nation),
+        }
+    elseif base:match('^Hawk Eye') then
+        return {
+            'Travel to an enemy-held ' .. nation.beastmen .. ' stronghold.',
+            'Search the fortress for the designated intelligence points.',
+            'Examine the required locations without being defeated.',
+            report_steps(nation),
+        }
+    elseif base:match('^Prying Eyes I') then
+        return {
+            'Infiltrate ' .. nation.stronghold .. '.',
+            'Locate and examine the defensive and weapon-store intelligence points.',
+            'Obtain all intelligence required by the operation.',
+            report_steps(nation),
+        }
+    elseif base:match('^Prying Eyes II') then
+        return {
+            'Infiltrate Castle Zvahl (S).',
+            'Locate and examine the weapon stores and unidentified military devices.',
+            'Obtain all intelligence required by the operation.',
+            report_steps(nation),
+        }
+    elseif base:match('^Deep Cover') then
+        return {
+            'Collect the surveillance equipment provided for the operation.',
+            'Travel to enemy territory and locate the requested ' .. nation.beastmen .. ' equipment.',
+            'Use the temporary camera from the proper distance and direction to record each target.',
+            'Gather the required number of successful images.',
+            report_steps(nation),
+        }
+    elseif base:match('^Slaughterhouse') then
+        return {
+            'Travel to ' .. nation.stronghold .. ' and locate the operation entrance.',
+            'Enter the battlefield and destroy the required enemy fortifications.',
+            'Defeat defenders as needed and finish every required structure.',
+            'Leave through the victory aureola.',
+            report_steps(nation),
+        }
+    elseif base == 'Frozen Flame' then
+        return {
+            'Receive the prototype weapon specified by the operation.',
+            'Use the prototype against the designated enemy targets during Campaign.',
+            'Continue until the field test is declared complete.',
+            report_steps(nation),
+        }
+    elseif base == 'Bailey Borer' then
+        return {
+            'Travel to a Castle Zvahl (S) area and locate a Zvahl Fortalice.',
+            'Attack and destroy the Zvahl Fortalice.',
+            report_steps(nation),
+        }
+    elseif base:match('^Brave Dawn') then
+        return {
+            'Travel to the Allied Ensign specified in the mission orders.',
+            'Enter ' .. nation.instance .. ' and find the trainee fighting a Trained Crab.',
+            'Keep the trainee alive and wait until the trainee is fighting with vigor.',
+            'Defeat the Trained Crab after the trainee gains sufficient focus.',
+            'Leave through the Dawn Aureola.',
+            report_steps(nation),
+        }
+    elseif base:match('^Cut and Cauterize') then
+        return {
+            'Travel to the Allied Ensign specified in the mission orders.',
+            'Enter ' .. nation.instance .. ' and examine the wounded allied recruits.',
+            'Diagnose each recruit and apply the appropriate treatment.',
+            'Treat the required number of recruits successfully.',
+            'Leave through the Dawn Aureola.',
+            report_steps(nation),
+        }
+    elseif base:match('^Stock and Awe') then
+        return {
+            'Speak with ' .. nation.quartermaster .. ' in ' .. nation.city .. '.',
+            'Note the requested supply item and obtain it.',
+            'Trade the requested item to the Quartermaster.',
+            report_steps(nation),
+        }
+    elseif base:match('^Materiel Storm') then
+        return {
+            'Speak with ' .. nation.quartermaster .. ' in ' .. nation.city .. '.',
+            'Note the requested material and required quantity.',
+            'Obtain and trade the requested materials to the Quartermaster.',
+            report_steps(nation),
+        }
+    elseif base == 'Search and Seizure I' then
+        return {
+            'Travel to enemy territory and locate a beastman supplier.',
+            'Defeat the supplier and obtain the temporary cargo item.',
+            'Return the seized cargo to ' .. nation.quartermaster .. ' in ' .. nation.city .. '.',
+            report_steps(nation),
+        }
+    elseif base:match('^Vanguard%-X') then
+        return {
+            "Travel to a checkpoint garrison in territory controlled by your nation.",
+            'Speak with the Gate Sentry to receive a Reinforcement escort.',
+            'Stay near the Reinforcement and escort them to the zone Campaign Arbiter.',
+            'Speak with the Campaign Arbiter when the Reinforcement arrives.',
+            report_steps(nation),
+        }
+    elseif base:match('^Crimson Domino') then
+        return {
+            'Collect the campaign supplies from the dispatch NPC in ' .. nation.city .. '.',
+            "Carry the supplies to a stronghold controlled by your nation.",
+            'Deliver them to the local Gate Sentry without discarding the temporary item.',
+            report_steps(nation),
+        }
+    elseif base == 'Bridge Too Far I' then
+        return {
+            'Travel to the operation entrance specified in the mission orders.',
+            'Enter ' .. nation.instance .. ' and survey the proposed transport route.',
+            'Examine the required route markers and deal with any threats.',
+            'Leave through the victory aureola after the survey is complete.',
+            report_steps(nation),
+        }
+    elseif base:match('^Crystal Fist') then
+        return {
+            'Speak with ' .. nation.adjutant .. ' in ' .. nation.city .. '.',
+            'Choose a crafting discipline for the test.',
+            'Identify the crystal and ingredients for each requested recipe before time expires.',
+            'Complete all three recipe tests correctly.',
+            report_steps(nation),
+        }
+    elseif base:match('^Iron Anvil') then
+        return {
+            'Speak with ' .. nation.adjutant .. ' in ' .. nation.city .. '.',
+            'Choose a crafting discipline for the test.',
+            'Identify the crystal and every ingredient for each requested recipe before time expires.',
+            'Complete both advanced recipe tests correctly.',
+            report_steps(nation),
+        }
+    elseif base:match('^Streetsweeper') then
+        return {
+            'Search ' .. nation.city .. ' for a Suspicious Object.',
+            'Examine likely hiding places until the correct object is found.',
+            'Dispose of the object to complete the operation.',
+            report_steps(nation),
+        }
+    elseif base:match('^Delta Strike') then
+        return {
+            'Patrol ' .. nation.field .. ' and search for a Goblin Picaroon.',
+            'Defeat the Goblin Picaroon and any immediate threats accompanying it.',
+            report_steps(nation),
+        }
+    elseif base:match('^Steel Resolve') then
+        return {
+            "Travel to a stronghold controlled by your nation.",
+            'Speak with the Gate Sentry and learn which fortification materials are needed.',
+            'Obtain and deliver the requested materials to reinforce the stronghold.',
+            report_steps(nation),
+        }
+    elseif base:match('^Magna Cache') then
+        return {
+            'Speak with ' .. nation.quartermaster .. ' in ' .. nation.city .. '.',
+            'Learn which provisions are needed for the storehouse expansion.',
+            'Obtain and trade the requested provisions.',
+            report_steps(nation),
+        }
+    elseif base == 'Hazardous Materials' then
+        return {
+            'Speak with the operation official to receive the hazardous temporary item.',
+            'Carry it to the disposal point specified in the mission orders.',
+            'Avoid actions that could destabilize the material while transporting it.',
+            'Dispose of the material at the target location.',
+            report_steps(nation),
+        }
+    end
+
+    return { 'Complete the Campaign Operation objective.', report_steps(nation) }
+end
+
+M.STEPS = {}
+for id, name in pairs(M.MISSIONS) do
+    M.STEPS[id] = { name = name, steps = get_steps(name) }
+end
+
+-- BG-Wiki has no dedicated page for these DAT entries. Their steps use the
+-- documented mechanics of the matching operation from another nation or tier.
+M.GENERIC_STEPS = {
+    'Aegis Scream II (S)', 'Aegis Scream III (S)', 'Aegis Scream IV (S)',
+    'Aegis Scream V (S)', 'Aegis Scream V (W)',
+    'Granite Rose II (S)', 'Granite Rose III (S)', 'Granite Rose II (W)',
+    'Granite Rose III (W)',
+    'Hawk Eye I (S)', 'Hawk Eye II (S)', 'Hawk Eye III (S)', 'Hawk Eye IV (S)',
+    'Hawk Eye IV (W)',
+    'Prying Eyes I (S)', 'Prying Eyes I (W)', 'Prying Eyes II (W)',
+    'Deep Cover I (S)', 'Deep Cover II (S)', 'Deep Cover III (S)',
+    'Deep Cover III (B)',
+    'Slaughterhouse I (S)', 'Slaughterhouse II (S)', 'Slaughterhouse III (S)',
+    'Frozen Flame (S)',
+    'Cut and Cauterize II (W)', 'Cut and Cauterize III (W)',
+    'Smokescreen II (S)', 'Smokescreen III (S)', 'Smokescreen IV (S)',
+    'Smokescreen IV (B)', 'Smokescreen V (B)', 'Smokescreen IV (W)',
+    'Smokescreen V (W)',
+    'Pit Spider III (S)', 'By Light of Fire I (S)', 'Bridge Too Far I (W)',
+    'Delta Strike III (S)',
+    'Steel Resolve II (S)', 'Steel Resolve III (S)', 'Steel Resolve IV (S)',
+    'Steel Resolve IV (B)',
+    'Magna Cache I (S)', 'Magna Cache II (S)', 'Magna Cache III (S)',
+    'Hazardous Materials (S)', 'Hazardous Materials (B)',
+    'Iron Anvil IV (W)', 'Search and Seizure I (S)',
+}
+
+return M

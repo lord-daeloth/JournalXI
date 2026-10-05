@@ -1,101 +1,36 @@
 local M = {}
 
--- Mission modules in the addon do not all use the same layout.
--- Normalize them here so the rest of the addon only sees one format.
--- Each individual mission module may use either: 
--- 1) M.MISSIONS + M.STEPS 
--- or:  
--- 2) Direct mission table: 
--- [id] = { 
--- name = '...', 
--- steps = { ... }, -- }
+-- Every mission module exposes M.MISSIONS, M.STEPS, and returns M.
+-- M.MISSIONS uses tracker-facing numeric IDs, while M.STEPS may use either
+-- those IDs or walkthrough IDs. Walkthrough records can be matched by name.
 
 local function normalize_mission_module(module)
-    if type(module) ~= 'table' then
+    if type(module) ~= 'table' or type(module.MISSIONS) ~= 'table' then
         return {}
     end
 
     local result = {}
+    local mission_list = module.MISSIONS
+    local step_list = type(module.STEPS) == 'table' and module.STEPS or {}
+    local steps_by_name = {}
 
-    -- Older mission files use M.MISSIONS + M.STEPS.
-    if type(module.MISSIONS) == 'table' then
-        local mission_list = module.MISSIONS
-        local step_list = type(module.STEPS) == 'table' and module.STEPS or {}
-        local steps_by_name = {}
-
-        -- Keep the original STEPS table untouched.
-        for _, step_data in pairs(step_list) do
-            if type(step_data) == 'table' and step_data.name ~= nil then
-                local name = tostring(step_data.name)
-
-                if steps_by_name[name] == nil then
-                    steps_by_name[name] = step_data
-                end
-            end
+    for _, step_data in pairs(step_list) do
+        if type(step_data) == 'table' and step_data.name ~= nil then
+            local name = tostring(step_data.name)
+            if steps_by_name[name] == nil then steps_by_name[name] = step_data end
         end
-
-        for raw_id, mission_data in pairs(mission_list) do
-            local numeric_id = tonumber(raw_id)
-            local name
-            local mission_steps
-            local step_data
-
-            if type(mission_data) == 'table' then
-                numeric_id = numeric_id or tonumber(mission_data.id)
-                name = mission_data.name
-                mission_steps = mission_data.steps
-            else
-                name = mission_data
-            end
-
-            if numeric_id ~= nil then
-                -- Embedded steps always win when present.
-                if mission_steps == nil then
-                    step_data = step_list[raw_id]
-                        or step_list[numeric_id]
-                        or step_list[tostring(numeric_id)]
-
-                    if type(step_data) == 'table' then
-                        mission_steps = step_data.steps
-                    end
-                end
-
-                -- Some older files identify the step by mission name.
-                if mission_steps == nil and name ~= nil then
-                    step_data = steps_by_name[tostring(name)]
-
-                    if type(step_data) == 'table' then
-                        mission_steps = step_data.steps
-                    end
-                end
-
-                result[numeric_id] = {
-                    name = name,
-                    steps = mission_steps,
-                }
-            end
-        end
-
-        return result
     end
 
-    -- Newer files can expose the mission table directly.
-    for raw_id, mission_data in pairs(module) do
+    for raw_id, name in pairs(mission_list) do
         local numeric_id = tonumber(raw_id)
-
-        if type(mission_data) == 'table' then
-            numeric_id = numeric_id or tonumber(mission_data.id)
-
-            if numeric_id ~= nil then
-                result[numeric_id] = {
-                    name = mission_data.name,
-                    steps = mission_data.steps,
-                }
-            end
-        elseif numeric_id ~= nil then
+        if numeric_id ~= nil then
+            local step_data = step_list[raw_id]
+                or step_list[numeric_id]
+                or step_list[tostring(numeric_id)]
+                or steps_by_name[tostring(name)]
             result[numeric_id] = {
-                name = mission_data,
-                steps = nil,
+                name = name,
+                steps = type(step_data) == 'table' and step_data.steps or nil,
             }
         end
     end
