@@ -1,337 +1,516 @@
 local Q = {}
 
+-- Generated from BG-Wiki by tools/build_sandoria_quests.py.
+
 Q.STEPS = {
 
-    -- ========================================================
-    -- KAZHAM
-    -- ========================================================
+    out_nrg_pirate_years = {
+        "Talk to Ryoma at (H-8) in Norg (Home Point #1) to begin the quest, then head to Port Bastok",
+        "Speak to Kagetora inside Warehouse #2 at (F-6) (Port Bastok Home Point #3).",
+        "Head to (I-5) in Port Bastok and speak with Ensetsu .",
+        {
+            text = "After speaking with Ensetsu , make your way to (H-5)/(H-6) of Eastern Altepa Desert .",
+            substeps = {
+                "At this point you can continue on any job.",
+                "The shortest route to the ??? is to take the Survival Guide to Western Altepa Desert then zone to Eastern Altepa Desert",
+            },
+        },
+        "Clear the area and examine the ??? once ready.",
+        "Two non-sleepable Spider NMs called Tsuchigumo will spawn.",
+        {
+            text = "Clicking the ??? again after defeating the Tsuchigumo will grant the Trick box .",
+            substeps = {
+                "Both NM corpses must disappear before you can obtain the Trick box .",
+            },
+        },
+        "Head back to Norg and speak with Ryoma to complete the quest and receive your reward.",
+    },
 
-    out_kaz_guardian = {
-        "Talk to Hari Pakhroib (I-11) to start the quest.",
-        "You will need to obtain a bunch of Wild Pamamas.",
-        "They drop from Opo-opos in Yuhtunga Jungle.",
-        "They can also be purchased from the Auction House under Food > Ingredients.",
-        "Take your Wild Pamamas to Ifrit's Cauldron's (G-6) entrance in Yhoator Jungle.",
-        "Note: Silent Oil & Prism Powder are recommended as Bombs aggro to magic and have long sensory range.",
-        "Don't worry about the Ice Clusters unless you want to explore. There are no flame spouts along this path.",
-        "Take the first right and follow the path to tunnel C on the first map.",
-        "Then just follow that path into the second map where you will find the Altar of Ashes at (I-9).",
-        "You do not need to actually shout your name, just trade the Wild Pamamas to the altar.",
-        "Return to Hari Pakhroib and speak with her to collect your 5k.",
-        "You may repeat this quest, but you must zone from Kazham before you can get it again. Warping to the nearby Home Point is sufficient.",
-        "Upon repeating this quest you may have to obtain a Wild Melon, or Wild Pineapple.",
+    out_kaz_discerning_eye = {
+        "Speak to Swift and accept the quest.",
+        "Swift will show you a picture of an NPC, you need to memorize.",
+        "Board the next airship.",
+        "Several NPCs will spawn on the ship that all look very similar to the one Swift showed you.",
+        "Speaking to the NPCs will give you an option to return a Dropped item to them.",
+        {
+            text = "You only have one chance to get it right.",
+            substeps = {
+                "If you choose correctly, you are given 500 gil.",
+                "If you choose incorrectly, you fail the quest.",
+            },
+        },
     },
 
     out_kaz_question_of_taste = {
-        "Talk to Etteh Sulaej at (J-9) in Kazham for a cutscene and a Letter to Angelica.",
-        "Take the letter to Windurst Waters and talk to Angelica at the Rarab Tail Hostelry. You will receive Angelica's letter for the chieftainness and the painting \"Final Fantasy\" that she wants you to hang in the Temple of Uggalepih.",
-        "Go back to Kazham and talk to Etteh Sulaej for another cutscene. You are instructed to go hang the picture yourself in the temple.",
-        "Go to (G-8) on the first map of the Temple of Uggalepih and hang the picture in the Stone Picture Frame on the south wall of the \"Paintbrush Room\". Trompe L'Oeil will appear.",
-        "Defeat the NM and then check the frame and to obtain a Ripped \"Final Fantasy\" painting.",
-        "If more than one person in your party needs this quest, the whole party will have to zone after the fight, and pop again.",
-        "Return to Etteh Sulaej. As a reward, you will receive 3000 Gil. The quest is now complete.",
+        "Talk to Etteh Sulaej J-9. You will receive the Letter to Angelica .",
+        "Take the letter to Windurst Waters , and talk to Angelica at the Rarab Tail Hostelry. Then you will receive Angelica's letter and a painting \"Final Fantasy\" that she wants you to hang in Temple of Uggalepih .",
+        "Go back to Kazham , talk to Etteh Sulaej .",
+        {
+            text = "Go to (G-8) on the first map for the Temple of Uggalepih , and hang the picture at Stone Picture Frame (it is on the south wall of the Paintbrush Room) to spawn the Golem NM, Trompe L'Oeil .",
+            substeps = {
+                "Temple of Uggalepih Survival Guide warp puts you a short distance from the Stone Frame.",
+            },
+        },
+        {
+            text = "Defeat the NM, then check the frame and you will obtain a Ripped \"Final Fantasy\" painting .",
+            substeps = {
+                "If in a party, there is a 10 minute wait between being able to respawn the NM.",
+            },
+        },
+        "Return to Etteh Sulaej . As a reward, you will receive 3000 Gil.",
+        "You can repeat the quest. The only difference is when you speak to Angelica , you will instead receive the \"Final Fantasy Part II\" key item rather than the original. The rest of the steps are the same.",
     },
 
-    out_kaz_grudging = {
-        "To be able to start this quest, you must have, at any point in the past, traded an to an Altar of Rancor and received a (e.g. during The Temple of Uggalepih).",
-        "You must zone out of Kazham after completing the previous quest A Question of Taste.",
-        "Speak with Jakoh Wahcondalo who will tell you to leave her village. The other NPCs in the room tell you to go the Den of Rancor/Temple of Uggalepih complex to be cleansed and then come back.",
-        "You get the title Excommunicate of Kazham as soon as this quest becomes active.",
-        "Travel to the Den of Rancor via either Home Point #1 or #2, or the level 128 Unity Concord NPC teleport and make your way to Map 1.",
-        "Obtain an from the Tonberry Imprecators here, then head to the Altar of Rancor at D/E-5.",
-        "Please note that these are not the lanterns that open the gate to the Sacrificial Chamber.",
-        "Trade the to the Altar of Rancor to receive a .",
-        "Head to the other Altar of Rancor at I/J-13. Trade the to it and you ill receive an .",
-        "Repeat this another three times to spawn a bomb NM called Rancor Torch which you must defeat.",
-        "Head back to Kazham and talk to the Chieftainess for your reward.",
+    out_nrg_thief_in_norg = {
+        "Speak with Jaucribaix in Norg (K-8) to begin the quest.",
+        "Speak to Sanosuke in Port Jeuno (H-8). (Inside the Duty Free Shop.)",
+        "Speak to Phoochuchu in Mhaura (H-8) (ground level; under the bridge).",
+        {
+            text = "Examine the door on the lower level in Bastok Mines (J-6). (Close to the Alchemy Guild.)",
+            substeps = {
+                "The door must be closed at the time it is examined. Examining the door while already opened by another player will result in the cutscene not triggering.",
+            },
+        },
+        {
+            text = "Enter the Waughroon Shrine through the Palborough Mines top floor.",
+            substeps = {
+                "You may use Domenic to get the cutscene.",
+            },
+        },
+        "Speak to Jaucribaix in Norg to receive a Banishing Charm .",
+        {
+            text = "Trade the Banishing Charm to the Burning Circle in Waughroon Shrine to begin a BC fight.",
+            substeps = {
+                "Inside the BC there will be three Demons : Rasetsu (DRK), Gaki (BLM), and Onki (SMN).",
+                "Onki will have an elemental summon, and all three demons are able to use their respective two-hour abilities.",
+                "There is a 30 minute time limit.",
+                "Trust Magic can be used in the BCNM.",
+            },
+        },
+        "After defeating the demons, you will receive the key item Charred helm .",
+        "Speak to Jaucribaix , he will request a Gold Thread .",
+        "Trade a Gold Thread to Jaucribaix .",
+        {
+            text = "Zone out of Norg , then return to Jaucribaix for your reward.",
+            substeps = {
+                "You can toss the Banishing Charm after completing the quest, as it serves no further purpose.",
+            },
+        },
     },
 
-    out_kaz_knife = {
-        "Mhebi Juhbily tells you to go away and shoos you away from the Shed she's standing in front of. Trade the to her, then run around behind her and check the Shed for a cutscene.",
-        "Speak with Vah Keshura in the Ryuhkowa's Mercenary Merchandise who will tell you about a kitchen in Temple of Uggalepih and an evil chef. Talk to her again for additional dialogue.",
-        "Obtain a from either a Tonberry Pursuer in the Temple of Uggalepih, or from a Tonberry Shadower in Yhoator Jungle, or from a Tonberry Trailer in Den of Rancor.",
-        "Travel to the Temple of Uggalepih using the Survival Guide.",
-        "If you don't have it registered, enter the Temple from J-12 in Yhoator Jungle, then head right and follow the path until you arrive at the junction at H-9 and head North. Once you arrive at the next intersection at G-7, head North again to the Survival Guide.",
-        "Head North and zone back into Yhoator Jungle then, staying on the ledge, head left and zone back into the Temple at H-11.",
-        "Head West then south until you reach a gate. Head through the gate and keep heading south until you reach H-10. Once there, turn west and go past the Granite Door.",
-        "Speak with Chef Nonberry, then trade them the and you will receive Nonberry's Knife.",
-        "If you trade anything other than a to Chef Nonberry, they will take the item traded and summon four chef NMs: Cook Nalberry who is a THF, Cook Minberry who is a NIN, Cook Solberry who is a BLM, and Cook Fulberry who is a SMN. They're capable of using their 2-hours and can be dangerous. It's recommended not to pop these. Optional: Speak with Vah Keshura again for additional dialogue.",
-        "Return to Mhebi Juhbily to complete the quest.",
-    },
-
-    out_kaz_missionary_man = {
-        "Speak with Rauteinot in Kazham G-9. He asks you to retrieve a slab of Elshimo Marble from Yuhtunga Jungle.",
-        "Elshimo Marble is Rare/Ex item and it drops from Ivory Lizards (level 32-35) in Yuhtunga Jungle.",
-        "They appear the most in Yuhtunga Jungle K-7.",
-        "Be prepared to take a significant amount of time just farming ONE slab of marble. Reports of going over 50 kills to actually obtain one Marble are not uncommon.",
-        "Trade the Elshimo Marble to Rauteinot to receive Rauteinot's Parcel.",
-        "Bring the parcel to Mulaujeant in Northern San d'Oria E-5. He is on the second level, a few steps North of the Blacksmith's Guild.",
-        "Wait one minute and talk to Mulaujeant again to receive a Sublime Statue of the Goddess to give to Rauteinot.",
-        "Take the statue to Rauteinot in Kazham to receive a scroll of Teleport-Yhoat.",
-    },
-
-    out_kaz_gullibles_travels = {
-        "Talk to Magriffon.",
-        "Trade him the amount of gil he asks for.",
-    },
-
-    out_kaz_even_more_gullibles = {
-        "You must zone if you have just completed Gullible's Travels.",
-        "Talk to Magriffon.",
-        "Trade him the 15,000-35,000 gil that he asks of you.",
-        "You will receive the title \"Even More Gullible's Travels\", and the Treasure Map.",
-        "Examine all three Blue Rafflesia in Yuhtunga Jungle at (F-7), (H-10), and (I-12). Each one will contain a Rafflesia Nectar.",
-        "After clicking on the final plant, you are told that the pollen makes you dizzy.",
-        "Rafflesia Nectar has no use and can be sold at the shop.",
-        "Talk to Magriffon to complete the quest.",
-    },
-
-    out_kaz_personal_hygiene = {
-        "Upon completion of Even More Gullible's Travels you will be bathed in a scent from the Rafflesia flowers. This is a scent that Opo-Opos love but Mithra hate. To get rid of this scent, you start by talking to Gatih Mijurabi in M&P's Market in Kazham. She'll mention that you have to go stand under a hot spring somewhere \"deep under the sea.\"",
-        "Note: Although you can start this quest before The Opo-opo and I, if you ever plan to do The Opo-opo and I, do not get the scent washed off until you have started The Opo-opo and I. Otherwise you will need to get the scent reapplied later (See below). Once you have started that quest, the scent is no longer necessary.",
-        "The hot spring is in Korroloka Tunnel at G-9 of the 3rd Map on the right. If you enter from the Zeruhn Mines, head to point B to reach the third map. If you enter from the Eastern Altepa Desert, head to point C to reach the third map.",
-        "There are three Jammer Leeches guarding the waterfall.",
-        "The mobs are roughly level 60,they will aggro at level 85 and they link.",
-        "Leeches aggro sound and track via scent. Killing the Leeches is not required for the completion of the quest; they can be avoided by applying Sneak.",
-        "The leeches can be slept while you wait the 5 minutes as well(by you or someone outside of your party and kited to Zeruhn Mines zone. SCH/RDM does well with this using the JA to make SleepII and Gravit become -ga.) I stood in the furthest corner of the eastern spring and when sneak ran out, I just slept the leech (as 75RDM/37BLM). As long as you are out of range of the other leeches to link, this works wonderfully.",
-        "Stand under the waterfall for roughly five minutes. When you leave the waterfall, you will receive a message that tells you the scent has been removed.",
-        "Upon reaching the waterfall, there will be a message that goes: \"The water in this spring is pleasant and tepid. This looks like a nice place to warm yourself up.\"",
-        "If you leave the waterfall too early, there will be a message that goes: \"You are not warm enough yet. You will need to spend more time than that in the spring to get your body heated up.\"",
-        "When you have been under the waterfall for the required amount of time, when you walk away from the waterfall you will receive the message: \"Your whole body is piping hot, and the smell of the Rafflesia pollen is gone!\"",
-        "Return to Gatih Mijurabi in Kazham for completion of the quest and your reward of the Mithran Stone.",
-        "If you complete this quest before starting The Opo-opo and I and need to reapply the scent, it is still possible to do so. After clearing the scent you may check all three flowers once per game day. It seems to be random but if you manage to get three nectar from checking the flowers, you'll have regained the scent. If you do not receive the nectar, you have not successfully acquired the scent.",
-    },
-
-    out_kaz_opo_opo_and_i = {
-        "Broken Mithran Rod - Can be obtained by breaking a Mithran Fishing Rod through fishing, or purchased from the Auction House.",
-        "See Breaking the Rod for tips & tricks.",
-        "Says \"Opopopopo! Opo-opo! Oppo! Oppo-opo!\"",
-        "Workbench - Can be crafted using Woodworking (7), or bought from the Auction House.",
-        "Says \"Opoh opo!\"",
-        "Ten of Coins (Card) - Obtained from Ten of Coins in the Outer Horutoto Ruins, or bought from the Auction House.",
-        "Says \"Opopoppo!\"",
-        "Sands of Silence - Obtained from Demon Magistrates and Demon Chancellors in Castle Zvahl Baileys, or bought from the Auction House.",
-        "Says \"Oh! Ohpo!\"",
-        "Wandering Bulb - Obtained from Utukkus in Fei'Yin, or bought from the Auction House.",
-        "Says \"Opopoh-o...\"",
-        "Giant Fish Bones - Obtained from Tonberry Stalkers in the Temple of Uggalepih.",
-        "Says \"Popo-o Popo-o!\"",
-        "Blackened Toad - Obtained from Brook Sahagins in the Sea Serpent Grotto, or bought from the Auction House.",
-        "Says \"Poppo-opo!\"",
-        "Wyvern Skull - Obtained from Hurricane Wyverns in Ifrit's Cauldron.",
-        "Says \"Po-oppo Opo-opo!\"",
-        "Ancient Salt - Obtained from Sand Diggers in the Quicksand Caves.",
-        "Says \"Opo-opo-po-opo-o! Popopo-opopo!\"",
-        "Lucky Egg - Obtained from Knight Crawlers in The Boyahda Tree.",
-        "Says \"Ohpo-opo! Poh-opo-o!\"",
-    },
-
-    out_kaz_trial_by_fire = {
-        "Speak to Ronta-Onta in Kazham. If you have sufficient fame, he will give you a Tuning fork of fire.",
-        "Travel to Ifrit's Cauldron and head to the Cloister of Flames.",
-        "To get to the Cloister of Flames, enter Ifrit's Cauldron from Yhoator Jungle at (I-5).",
-        "Upon entering, follow the right-hand wall (northwest). A flame spout will block your path and you can either wait for it to go down (may take up to 15 minutes), or trade an Ice Cluster to it.",
-        "Follow the path west. When it splits, continue west through the cave to the end of the path. Turn south and fall down to a lower level (drop P).",
-        "After falling, head back north until you come to two sets of posts at (H-7) and walk off the edge between them. Once you drop, there's only one path you can take. Do so, and take the first left.",
-        "Alternatively this is Home Point Ifrit's Cauldron #1, Map 7 (G-7)",
-        "Talk to any Unity Concord NPC and ask to be warped to a Wanted area. Choose Level 125 and choose Ifrit's Cauldron.",
-        "Put up Sneak and Invisible, then walk west, drop down, then follow the path south and take the first exit east (J to Lower Area) Ifrit's Cauldron H-8",
-        "Follow this path into the next room and take the south exit at Ifrit's Cauldron J-5",
-        "The tunnel here ends just to the east of a ledge flanked by small pillars. Drop between the pillars to the ledge below. Travel north, taking the first left, and into the Cloister.",
-        "Once you defeat Ifrit Prime, you will acquire the Whisper of Flames.",
-        "Return the Whisper to Ronta-Onta for your reward.",
-        "Alternatively, hold onto it and when you have all six whispers, you may start the quest The Moonlit Path to fight Fenrir Prime.",
-        "If you are collecting items for the Evoker's Ring, you will want the Egil's Torch from Ronta-Onta.",
-        "Everyone who is involved in the fight must have a tuning fork of the correct protocrystal.",
-        "There is no cap on this battle.",
-        "There is a 30-minute time limit.",
-        "You can buff up before entering the protocrystal, so feel free to do so and rest up while still outside.",
-        "Try to fight Ifrit Prime on Watersday and do not fight him on Firesday.",
-        "Keep up Barfira at all times.",
-        "Do not use Fire-based spells, weaponskills, or weapons that have Additional effect: Fire Damage|, as they will heal Ifrit Prime.",
-        "The battlefield is shaped like a long path up the side of a hill, with a switchback about halfway to the top. This allows the mages to stand above the fight (and out of easy reach of the avatar) while still being able to cast spells on party members.",
-    },
-
-    out_kaz_cloak_and_dagger = {
-        "Talk to Jakoh Wahcondalo in Kazham J-9 who will give you the Dagger of Trials and a Weapon Training Guide.",
-        "The Dagger of Trials has a latent effect that is active when the number of \"Weapon Skill Points\" it has accumulated is less than 300. The goal is to \"break\" the weapon by performing weaponskills and skillchains until the latent effect on the Dagger of Trials no longer functions. Please note the actual description of the weapon will not change. You must open your equipment menu and check if you are still receiving the elemental bonuses. The text, \"Latent Effect: HP+20, etc. etc.\" will STILL BE THERE. See the section below for details on Weapon Skill Points.",
-        "Optionally, you may talk to Jakoh Wahcondalo at any time to \"give up\" and cancel the quest.",
-        "Once the latent effect has been removed from the dagger, return to Kazham and trade the Dagger of Trials back to Jakoh Wahcondalo. She will take the weapon and give a Map to the Annals of Truth with instructions to head to Gustav Tunnel.",
-        "Travel to Gustav Tunnel (Unity Teleport Level 128) and find (Gustav Tunnel J-8) on the second map; click the ??? to spawn the quest NM named Baronial Bat. Be careful of the undead that roam the area.",
-        "Once the Baronial Bat is dead, return to the ??? and examine it to obtain the Annals of Truth.",
-        "Return the Annals of Truth to Jakoh Wahcondalo and she will award the weapon skill Evisceration.",
-    },
-
-    out_kaz_trial_size_fire = {
-        "Speak to Dodmos in Kazham, located at J-9 near the homepoint crystal. You must speak to Dodmos as a Summoner.",
-        "If you qualify, he will give you a Mini Tuning Fork of Fire.",
-        "This item is not a Key Item like the regular Tuning Forks, but is a Rare/Exclusive item that needs to go in your inventory.",
-        "When you are ready to go, return to Dodmos and trade him the Mini Tuning Fork of Fire (he does not keep the fork) and be warped to the Cloister of Flames for the fight.",
-        "Trade the Mini Tuning Fork to the protocrystal to enter the battle.",
-        "Note that if you do not trade the Mini Tuning Fork and instead just select the protocrystal, you will enter the regular level 60+ party avatar battle if you have the regular tuning fork key item.",
-        "Defeat him for your reward.",
-    },
-
-    -- ========================================================
-    -- NORG
-    -- ========================================================
-
-    out_nrg_forge_your_destiny = {
-        "Talk to Jaucribaix, in Norg on the upper level at the end of the hallway, (K-8), who will tell you about the ways of a samurai.",
-        "He requests a Bomb Steel and Sacred Branch and will tell you that if you want to know how to get those items to go talk to his assistants.",
-        "Go down the long steps and talk to Aeka, (I-8), who will give you the Oriental Steel.",
-        "Next talk to Ranemaud, (I-7), who will give you the Sacred Sprig.",
-        "If you need to reacquire these items (if you drop them or fail to defeat the NM), you can purchase them from these NPCs. Aeka will demand one Darksteel Ore for payment, and Ranemaud will want one Platinum Ore and two Gold Ore.",
-        "Using the Sacred Sprig and Oriental Steel, you must now retrieve the Sacred Branch and Bomb Steel. The following two steps can be done in either order.",
-        "Obtain a Hatchet and go to the far east end of The Sanctuary of Zi'Tah.",
-        "If multiple players in a party are completing this quest simultaneously, only one of them needs a hatchet.",
-        "At K-10 there is a pathway which leads to an unmapped area. Continue east straight to L-10 where you will see a large tree. There are rocks at the base of the tree that you can climb up in order to get close enough to the ??? to initiate the next sequence.",
-        "Trade or use your hatchet on the ??? and a Guardian Treant will spawn. (Your hatchet will not be consumed.)",
-        "Guardian Treant has a 10 minute respawn timer.",
-        "Kill the Guardian Treant and trade the Sacred Sprig to the ??? to receive the Sacred Branch.",
-        "Multiple people can trade the Sacred Sprig to the ??? to receive the Sacred Branch after the NM has been killed. You do not need to kill an NM for each person that requires a Sacred Branch.",
-        "Go to D-8 in Konschtat Highlands and look for the ??? inside a cave.",
-        "Trade the Oriental Steel to the ??? and Forger will spawn. When killed, Forger will drop one Bomb Steel.",
-        "Note that should you fail to defeat Forger, you will need to return to Aeka with a Darksteel Ore for a replacement Oriental Steel.",
-        "If there is more than one person with a Oriental Steel, it seems you have to wait a minute or two before you can respawn Forger even though the ??? is still there.",
-        "Once you have obtained the Sacred Branch and Bomb Steel, return to Norg and trade them to Jaucribaix. He will inform you that your reward will be ready in 3 in-game days (nearly 3 real life hours).",
-        "Return later and speak with Jaucribaix for a cutscene, in which Gilgamesh will hand you your Mumeito and give you the ability to become a Samurai.",
-        "The Mumeito is used during the Samurai AF Great Katana quest (The Sacred Katana). It is advisable to hold on to this weapon in storage; if it was dropped you will need to pay Ranemaud 30,000 gil in order to obtain a new Mumeito after you have accepted the quest.",
+    out_nrg_undying_pledge = {
+        "Speak to Stray Cloud for a cutscene.",
+        "Head towards Sea Serpent Grotto , you will get another cutscene shortly before you reach the zoneline.",
+        "Once inside Sea Serpent Grotto , head to (K-6) where you will find a ??? .",
+        "Check the ??? to spawn Glyryvilu .",
+        "Defeat Glyryvilu , then check the ??? again to receive the Caliginous Blade .",
+        "Return to Stray Cloud for your reward.",
     },
 
     out_nrg_black_market = {
-        "Speak to Muzaffar to start the quest.",
-        "He wants either four Northern Furs, four pieces of Eastern Pottery or four Southern Mummies.",
-        "Northern Furs drop from Gigas on Qufim Island and Delkfutt's Tower.",
-        "Eastern Pottery drops from Clockwork Pods in Fei'Yin or Garlaige Citadel, or Magic Pots in Delkfutt's Tower.",
-        "Southern Mummies drop from Liches in Western Altepa Desert.",
-        "These items may also be bought from Auction House Category: Others > Misc.",
-        "Trade four of any item to Muzaffar to receive a variable amount of gil.",
-        "When passing through Customs, there is a chance that you can be caught carrying these items, and your airship pass will be revoked for a short period of time.",
+        "Speak to Muzaffar to begin the quest.",
+        {
+            text = "Bring him either 4 Eastern Pottery , 4 Northern Fur , or 4 Southern Mummy to complete the quest:",
+            substeps = {
+                "Eastern Pottery x4 - 2000 gil, drops off Clockwork Pods in Garlaige Citadel or Fei'Yin .",
+                "Northern Fur x4 - 1500 gil, drops off Giant Hunter in Qufim Island or Giant Lobber in Lower Delkfutt's Tower or Middle Delkfutt's Tower .",
+                "Southern Mummy x4 - 3000 gil, drops off Liches in Western Altepa Desert .",
+            },
+        },
+        "All the required items can be found on the Auction House as well, under Others  Misc. 1.",
     },
 
-    out_nrg_mama_mia = {
-        "Speak to Mamaulabion to start the quest.",
-        "He wants you to obtain for him super-duper rare items that can only be obtained from the high level Avatar battles. He needs the following",
-        "Bubbly Water (Trial by Wind).",
-        "Egil's Torch (Trial by Fire).",
-        "Eye of Nept (Trial by Water).",
-        "Desert Light (Trial by Earth).",
-        "Elder Branch (Trial by Lightning).",
-        "Rust 'B' Gone (Trial by Ice).",
-        "Ancients' Key (The Moonlit Path).",
-        "The items can be traded as you receive them. Mamaulabion will hold onto all of them until he receives the seventh.",
-        "Items must be traded one at a time.",
-        "Speak to Mamaulabion after JP Midnight following the day you turned in your final item to receive the Evoker's Ring.",
-        "If you dispose of any of the items required for the quest prior to turning them in, you can obtain them again by completing the relevant Trial battles again.",
-        "If you have turned in an item for the quest but not yet completed it, you are still allowed to choose that item as a reward after defeating the relevant avatar, so choose carefully!",
-        "Mamaulabion will inform you of the items delivered thus far, as of the May 2011 update.",
-        "Upon completion of this quest, the above items no longer appear in the rewards list for defeating the Prime Avatars.",
+    out_nrg_bugi_soden = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Ryoma will grant you the key item Weapons Training Guide as well as the Kodachi of Trials . You will need to break the latent on the Kodachi of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Kodachi of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Kodachi of Trials back to Ryoma . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to the Labyrinth of Onzozo .",
+        {
+            text = "Take Silent Oil and Prism Powder with you and head to the Labyrinth of Onzozo . Once inside, follow the path to (H-9) and take the eastern tunnel. Continue northeast through the large room and take the tunnel at (J-8). In the next large room, curve around the eastern wall to the tunnel at (H-7); at the next intersection, head north. Continue north to the border of (I-5)/(I-6), where you will find the ??? to spawn the NM.",
+            substeps = {
+                "Use the Survival Guide teleport if available",
+            },
+        },
+        "This fight is against Megapod Megalops , a crab. It is weak to Ice and Lightning attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Ryoma to receive your reward.",
     },
 
-    out_nrg_stop_your_whining = {
-        "Travel to Norg and enter the Buccaneer's Quarters (J-8).",
-        "Talk to Washu standing on the right side of the wall in front of a door.",
-        "Washu will give you the Empty Barrel and tells you to fill it with Opo-Opo brew found in a Yhoator Jungle tree.",
-        "You will need to examine the ??? that spawns at random points in Yhoator Jungle. Consult the map to the right for the possible spawn points. The spawn points are noted in Light Blue.",
-        "thumb|253x253pxOnce you find the ??? the key item becomes Barrel of Opo-Opo Brew. An example of what this looks like can be seen in the picture to the right.",
-        "Return to Washu and she will give you a scroll of Hojo: Ichi",
+    out_rab_chasing_dreams = {
+        "First head to Rabao and talk to Rudolfo (J-7).",
+        "Talk to Zoriboh (F-6).",
+        "Head to Norg and talk to Sohyon (J-8).",
+        "Then talk to Washu to receive the Key Item : Washu's flask .",
+        {
+            text = "Head to Korroloka Tunnel . You will need to fill the flask by interacting with four different Giant Clam targets.",
+            substeps = {
+                "The first Giant Clam can be found at F-10 on Map 1 as you zone into Korroloka Tunnel from Zeruhn Mines .",
+                "The second Giant Clam can be found at K-6 on Map 3.",
+                "The third Giant Clam can be found at G-11 on Map 5.",
+                "The final Giant Clam can be found at I-10 on Map 2.",
+                "After examining all four Giant Clams , your Washu's flask will turn into a Flask of clam water .",
+            },
+        },
+        "Head to Norg and talk to Sohyon (J-8) to receive the Storeroom key .",
+        "Talk to Gimb (H-9).",
+        "Head to Port Bastok and talk to Kagetora (F-6).",
+        {
+            text = "Trade 5x Eastern Gem s to Patient Wheel (F-5).",
+            substeps = {
+                "These drop from Riparian Sahagin behind the silver door in Sea Serpent Grotto .",
+            },
+        },
+        "Head to Selbina and talk to Abelard at G-9).",
+        "Use the Swirling Vortex in Valkurm Dunes in the cave at (I-9) to Lufaise Meadows .",
+        "You will get a cut scene when you zone into Lufaise Meadows .",
+        "Head to Rabao , talk to Zoriboh (F-6).",
     },
 
-    out_nrg_trial_by_water = {
-        "Speak to Edal-Tahdal in Norg. If you have sufficient fame, he will give you a Tuning fork of water.",
-        "Travel to Den of Rancor and find the Cloister of Tides. Use Home Point #2 or Unity Accolades warp for the fastest way there. Otherwise you're in for a long walk",
-        "To get to the Cloister of Tides, head to the main entrance of Temple of Uggalepih at (J-11) in Yhoator Jungle) and go inside. One person will need a Paintbrush of Souls to enter the Den of Rancor.",
-        "From the entrance take every right until you zone back out to Yhoator Jungle, then take every left you can until you zone back into the Temple.",
-        "Take a right and once you come to the corner, head south. There is a wooden gate here that someone will have to open. Head south as far as you can, around the small square, then east until you come to a granite door. To get through this door, you need to kill the Temple Guardian. Once the Temple Guardian is dead, the door will open automatically and stay open for a couple of minutes.",
-        "WARNING: If you go through this door and it closes behind you, you cannot get back out unless someone kills the Temple Guardian on the previous side.",
-        "Head through the door and go north through the Manipulator room, following the path toward a another granite door.",
-        "Go through the door and have someone with the Paintbrush of Souls examine the stone picture frame on the east wall.",
-        "Once the prompt says: \"By focusing your thoughts on the paintbrush of souls, a new painting begins to appear on the canvas...\" you must then wait 30 seconds to a minute before advancing the dialogue, or the door will not open. If you fail to focus an image on the canvas, wait a few moments and try again.",
-        "A door will open to the north, head through it to enter the Den of Rancor.",
-        "Descending the path brings you to a room with many exits. Head to the southeast corner of that room and take the easternmost passage. Follow the right wall of that tunnel until you see a hole in the floor at (J-7).",
-        "Drop through the hole and head northeast, zoning into the Cloister of Tides.",
-        "Talk to any Unity Concord NPC and ask to be warped to a Wanted area. Choose Level 128 and choose Den of Rancor.",
-        "You will end up on a ledge on Den of Rancor G-12. Apply Sneak, Invisible and head NorthEast, hugging the wall to the exit at Den of Rancor I-6.",
-        "From Den of Rancor J-13 head northwards to the \"Drop D\" location at Den of Rancor J-7 and drop down.",
-        "Make your way to Den of Rancor J-7, grabbing the Home Point on the way for an easy return to the Battlefield.",
-        "After defeating Leviathan Prime, you will acquire Whisper of Tides.",
-        "Return the Whisper to Edal-Tahdal for your reward.",
-        "Alternatively, hold onto it and when you have all six whispers, you may start the quest The Moonlit Path to fight Fenrir Prime.",
-        "If you are collecting items for the Evoker's Ring, you will want the Eye of Nept from Edal-Tahdal.",
-        "Everyone who is involved in the fight must have a tuning fork of the correct protocrystal.",
-        "There is no cap on this battle.",
-        "There is a 30-minute time limit.",
-        "You can buff up before entering the protocrystal, so feel free to do so and rest up while still outside.",
-        "Try to fight Leviathan Prime on Lightningday and do not fight him on Watersday.",
-        "Keep up Barwatera at all times.",
-        "Leviathan will use his ability, Grand Fall. Beware, as this attack bypasses shadows.",
-        "He will also use Tidal Wave which can hit a 99THF/DNC for over 1.5k DMG, even when not on Watersday.",
-        "Do not use Water-based spells, weaponskills, or weapons that have Additional effect: Water Damage|, as they will heal Leviathan Prime.",
-        "The battlefield is shaped like a long path up the side of a hill, with a switchback about halfway to the top. This allows the mages to stand above the fight (and out of easy reach of the avatar) while still being able to cast spells on party members.",
-        "By all means, not possible for SMN75 to solo, due to its ability to heal itself.",
+    out_kaz_cloak_and_dagger = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Jakoh Wahcondalo (J-9, house next to the HP) will grant you the Weapons Training Guide as well as the Dagger of Trials . You will need to break the latent on the Dagger of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Dagger of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        {
+            text = "Trade the Dagger of Trials back to Jakoh Wahcondalo . This will give you the Map to the Annals of Truth . You will be instructed to travel to Gustav Tunnel .",
+            substeps = {
+                "The quickest way to the NM is the level 128 unity warp. This will put right inside the tunnel that's leading to the NM. You will also find a Grounds Tome close to your spawn point where you can get Sneak and Invisible.",
+            },
+        },
+        "Take Silent Oils and Prism Powders with you and head to Gustav Tunnel . Once inside, follow the path to (G-9) and take the western tunnel. At the fork in this tunnel, head east. In the large room, take the eastern tunnel at (I-8). The ??? to spawn the NM is at (I-9) Map 2.",
+        "Head north and hug the east wall.",
+        "The spawn is near the intersection of (I-9) and (J-9)",
+        "This fight is against Baronial Bat . It is weak to Wind and Light attacks. Once you kill it, re-examine the ??? to receive the Annals of Truth .",
+        "Go back and speak with Jakoh Wahcondalo to receive your reward.",
+    },
+
+    out_sra_divine_might = {
+        "Note: If you complete this quest, Zilart Mission 14 , will be considered completed as well.",
+        "!!!NOTE:!!! You must flag this quest at the blank target in The Shrine of Ru'Avitau or you WILL NOT receive credit and will have to re-aquire another Ark Pentasphere .",
+        {
+            text = "Enter The Shrine of Ru'Avitau from the (H-9) entrance in Ru'Aun Gardens .",
+            substeps = {
+                "Survival Guide puts you on the path to it, if you have it.",
+                "Home Point #5 is another fast alternative.",
+            },
+        },
+        "Head North a short distance to find a Blank Target at (G/H-11).",
+        "Examine the Blank Target for a cutscene.",
+        {
+            text = "Examine the Blank Target again for dialogue about how to obtain an Ark Pentasphere .",
+            substeps = {
+                "Divine Might now appears in your Outlands Quests log.",
+            },
+        },
+        {
+            text = "You, or someone in your group, will need to obtain an Ark Pentasphere .",
+            substeps = {
+                "Ark Pentaspheres are created by trading 1x Illuminink and 1x Parchment to the Qu'Hau Spring at (H-6) in Ro'Maeve during a full moon and between 18:00 and 06:00 game time.",
+                "Illuminink drops off Cursed Puppet and Magic Flagon in Ro'Maeve .",
+            },
+        },
+        "Trade the Ark Pentasphere to any of the Shimmering Circles in La'Loff Amphitheater to access the battlefield.",
+        {
+            text = "This battle has a 30 minute time limit and allows for a full alliance of 18 people will be allowed to enter.",
+            substeps = {
+                "This battle was initially uncapped at level 75 and was relatively challenging. Level 99 players should have little to no difficulty completing this.",
+            },
+        },
+        {
+            text = "You will need to defeat Ark Angel MR , Ark Angel TT , Ark Angel EV , Ark Angel HM , and Ark Angel GK in order to win.",
+            substeps = {
+                "Everyone should bring some form of re-raise in order to minimize down time.",
+                "The Ark Angels share alliance hate, so people should wait to re-raise until the entire alliance is down and the mobs are back at their starting position.",
+                "If you feel like you're about to die, try to move out of the center of the arena. People left in the center of the arena are often near impossible to raise again without getting aggro.",
+            },
+        },
+        "If you happen to have an alliance wipe, re-raise, heal, and then finish off whoever remains.",
+        {
+            text = "The general strategy at level 75 was to divide and conquer. Have one tank/kiter on each mob, while the rest of the group kills the others one by one.",
+            substeps = {
+                "Make sure someone is keeping the pets slept at all times. They can cause chaos if left alone for too long.",
+                "The Ark Angel TT should be defeated as fast as possible because he has access to wide selection of nasty spells.",
+                "Along with having a pet, the Ark Angel MR will also charm at least one player before she falls.",
+                "Every time the Ark Angel GK uses Meikyo Shisui , it will try to make a Light Skill Chain. This can be prevented if utsusemi absorbs any of the weaponskills.",
+                "When fighting the Ark Angel HM it is recommended to have as many people out of Mijin Gakure range as possible. This should not be a problem for players in 99 ilvl equipment.",
+                "The Ark Angel EV Spirits Within is very strong and can take out someone in just one hit.",
+            },
+        },
+        "Once you have finished the battle, return to the Blank Target in The Shrine of Ru'Avitau to choose your reward.",
+        "Note: You are only allowed to re-quest this once per Conquest Tally .",
+        "Drop your current earring. You will need to zone if you drop it in the same area, as the game checks your Recycle Bin as part of its inspection of your various inventories. The target will be unresponsive until you do this.",
+        "Receive the quest at the unmarked target (G/H-11) in the main entrance of The Shrine of Ru'Avitau . The game will mention your old quest reward by name and seems to track your prior selection.",
+        "The quest appears as a second Divine Might quest in your quest log with a different description.",
+        "Obtain a Light Ore .",
+        "If you need a new Ark Pentasphere (an already used one will no longer work - \"The Illuminink on the ark pentasphere has faded.\"), obtain an Illuminink and Parchment as well. This part can be done prior to accepting the actual quest.",
+        {
+            text = "Trade the Light Ore to the Qu'Hau Spring in Ro'Maeve during a Full Moon between 18:00 and 6:00 to receive the Moonlight ore . You cannot do this until the new quest has been started.",
+            substeps = {
+                "Warning: if you need both the Moonlight ore and the Ark Pentasphere , you must make TWO separate trades.",
+                "If all three items are traded, only the Moonlight ore will be obtained.",
+                "Each individual restarting this quest must possess their own Moonlight ore .",
+            },
+        },
+        {
+            text = "Trade the Illuminink and Parchment to the Qu'Hau Spring in Ro'Maeve during a Full Moon between 18:00 and 6:00 to obtain an Ark Pentasphere .",
+            substeps = {
+                "Only one alliance member needs the Ark Pentasphere to initiate the battle.",
+            },
+        },
+        "Enter and complete the Divine Might battlefield at La'Loff Amphitheater .",
+        "Return to the unmarked target in The Shrine of Ru'Avitau to pick up a new earring.",
+    },
+
+    out_rab_antidote = {
+        "Speak to Edigey to begin this quest.",
+        "Desert Venom drops off Doom Scorpions in Eastern Altepa Desert , Tulwar Scorpions in Western Altepa Desert , or purchased off the Auction House .",
+        {
+            text = "Trade the Desert Venom to Edigey for your reward.",
+            substeps = {
+                "The first time you complete this quest you will get a Dotanuki . Each time after you will only get gil.",
+            },
+        },
+    },
+
+    out_kaz_even_more_gullibles = {
+        "Zone after finishing the previous quest.",
+        "Return to Magriffon (I-7) who will give you Treasure map ( Key Item ) after you trade him more gil.",
+        "Go to the three places in Yuhtunga Jungle on the Treasure map : (F-7) (H-10) and (I-12).",
+        {
+            text = "At each spot on the map you will find a Blue Rafflesia .",
+            substeps = {
+                "Examining each Blue Rafflesia will give you a Rafflesia Nectar .",
+            },
+        },
+        "Return to Magriffon to finish the quest.",
+        "You must zone after completing Gullible's Travels before you can flag this quest.",
+        {
+            text = "After completing this quest, all Mithra in Kazham will be repulsed by you, but Opo-opos will be attracted to you.",
+            substeps = {
+                "The only way to fix this is by completing Personal Hygiene , however it is recommended that you finish The Opo-opo and I quest first so you can get an Opo-opo Crown .",
+            },
+        },
     },
 
     out_nrg_everyones_grudge = {
-        "Talk to Magephaud, who offers to tell you about the dangerous Tonberry attack Everyone's Grudge if you pay him 3 Gold Beastcoins.",
-        "Trade 3 Gold Beastcoins to Magephaud to receive the Tonberry key and complete the quest.",
-        "This can be done any number of times once you have the Tonberry key.",
-        "In the Temple of Uggalepih, open the door at (Temple of Uggalepih F-11).",
-        "The Tonberry Priest inside offers to clear your Tonberry rancor to minimize the damage done by Everyone's Grudge and other Tonberry rancor-based attacks.",
-        "The priest asks for a price of 250 to 6000 gil, depending on the intensity of your Tonberry rancor.",
+        {
+            text = "Speak to Magephaud in Norg (I-8) to begin the quest.",
+            substeps = {
+                "You must have defeated a Tonberry before being able to start this quest.",
+            },
+        },
+        "Trade him 3 Gold Beastcoins to receive the Tonberry key (Zilart) .",
+        "The reward Tonberry key (Zilart) allows accessing the Tonberry Priest to reset Tonberry Hate in exchange for a gil penance at any time.",
+        "This can range between 250 - 6,000 gil depending on how much you have accumulated.",
+        "The Tonberry Priest is located in the Temple of Uggalepih at (F-11) on Map 1 behind a blank targetable secret door. Fastest route is via the Survival Guide or Voidwatch Warp and heading south.",
+        "Caution: There is also a Tonberry key (Shantotto) from A Shantotto Ascension Missions , which is a temporary key item. Everyone's Grudge rewards the permanent key item.",
+        "If you are having issues resetting Tonberry Hate via this quest, then it is very possible you have the wrong key item.",
+        "Check with Magephaud in Norg to see if he requests the 3 Gold Beastcoins to be sure.",
+        "If Magephaud requests the beastcoins, then you should receive the Tonberry key (Zilart) to reset hate after providing the 3 Gold Beastcoins to him.",
     },
 
-    out_nrg_damp_scroll = {
-        "Before beginning the quest you need to acquire a Damp Scroll. Damp Scrolls can be acquired in two ways",
-        "Fish it up in the Sea Serpent Grotto",
-        "Buy it at the Auction House under Other -> Miscellaneous",
-        "With the Damp Scroll in your inventory, go and talk to Shivivi at (J-8) in Norg to start the quest. Shivivi tells you to dip the scroll in the hot spring on Horlais Peak.",
-        "From West Ronfaure head to Ghelsba Outpost. Stick to the left wall to enter Yughott Grotto. Run through the grotto and exit at the top entrance to Fort Ghelsba at (K-5). From this exit hug the left wall to enter Yughott Grotto through the hut at (J-8). Take the exit at (J-9) to Horlais Peak's hot spring.",
-        "Alternatively, if you have completed Beyond Infinity, you can pay 750 gil to teleport to Horlais Peak via Domenic in Lower Jeuno. Domenic places you in the battlefield lobby; exit to Yughott Grotto and enter Horlais Peak's hot spring area from (J-8).",
-        "Trade the scroll to the hot spring to complete the quest and receive a scroll of Jubaku: Ichi.",
+    out_kaz_grudging = {
+        "To begin this quest you must have traded an Unlit Lantern to the Altar of Rancor and received the Rancor Flame at some point before. It helps to have a Rancor Flame on you.",
+        {
+            text = "Once you have used a Rancor Flame , talk to Jakoh Wahcondalo in Kazham who will tell you to leave her village. The other NPCs in the room tell you to go the Den of Rancor / Temple of Uggalepih complex to be cleansed and then come back.",
+            substeps = {
+                "You get the title \"Excommunicate of Kazham\" as soon as this quest becomes active.",
+            },
+        },
+        {
+            text = "You will need to obtain at least 1 Unlit Lantern to cleanse the Rancor.",
+            substeps = {
+                "The lanterns are dropped by Tonberry Maledictors .",
+                "Ideally, it is easiest to use 4 players with 4 lanterns, however you just need to light all 4 lamps at the Altar. You can actually solo this by making 4 trips back and forth between the Rancor Flame and the altar. The altar seems to stay lit for quite a while.",
+            },
+        },
+        "Once you have the Unlit Lanterns , go back to the main entrance and make all right turns to exit at F-5. Now hug the left wall to re-enter the temple at H-11.",
+        "Once in the temple, head to I-10 and defeat the Temple Guardian to open the door.",
+        "Past the guardian's door, head north to I-7 inside the paintings room. A Paintbrush of souls is needed to proceed into the Den of Rancor .",
+        "Once you are in the Den of Rancor, go to the Altar of Rancor at D/E-5. You can easily get there by hugging the right wall from where you enter the Den. Once there, the Unlit Lanterns must be traded to the Altar of Rancor to receive a Rancor Flame .",
+        "Once you have your Rancor Flames, you want to visit the other Altar of Rancor at I/J-13. Trade the Rancor Flames to the Altar of Rancor.",
+        "After the fourth lantern is lit, a bomb NM called Rancor Torch will appear.",
+        "Kill the Rancor Torch and head back to Kazham and talk to the Chieftainess for your reward.",
     },
 
-    out_nrg_sahagins_stash = {
-        "Obtain a Silver Beastcoin. You can buy it from the Auction House under Others > Beast-made.",
-        "Speak to Laisrean behind the two shopkeepers at Norg H-7.",
-        "Exit Norg and head to the Cracked Wall at Sea Serpent Grotto H-6 (spot B).",
-        "Refer to the maps on the right.",
-        "Head to the spot F (Sea Serpent Grotto K-8).",
-        "The arrow indicates that you can only go one way here. Once you drop down, you can't go back the same way.",
-        "Once you've dropped down, continue along the path to the door in the southeast marked G (Sea Serpent Grotto N-14).",
-        "Here, examine the door (3-6 times) until you receive a message saying \"you see something silver glittering around the indentation\" in the door.",
-        "Trade a Silver Beastcoin to the door to pass through to point G (Sea Serpent Grotto G-11) on Map #2.",
-        "You get to keep the Silver Beastcoin; it isn't removed from your inventory.",
-        "From here, follow the tunnel until you arrive at the cliff (Sea Serpent Grotto H-8).",
-        "Once you've dropped down the cliff, follow this tunnel to the door at (Sea Serpent Grotto H-4).",
-        "Examine the ??? at (Sea Serpent Grotto H-3) for a cutscene where you receive the Sea Serpent Statue from Ren.",
-        "If you wish to return to Norg on foot from this point, travel to K (Sea Serpent Grotto F-7) on Map #2, which brings you to K (Sea Serpent Grotto M-10) on Map #1. From here it's a simple walk back to B and then back into Norg.",
-        "You may prefer to bring some form of Warp or Escape to avoid backtracking through Sea Serpent Grotto.",
-        "Take the statue back to Laisrean to receive a scroll of Utsusemi: Ichi.",
-        "For a different map that shows a path, see here.",
-        "Every monster in this area detects by sound, so some form of Sneak is necessary if you are low-leveled.",
-        "Silent Oils work, but Circumspection (5 Tabs for Sneak/Invisible effects) from the Grounds Tome outside Norg should be sufficient. There is a second Grounds Tome at the Silver Beastcoin door, halfway to the quest destination; you can cancel and repurchase Circumspection to renew the duration.",
-        "Invisible is not necessary.",
-        "At level 63 there are easy prey monsters near the end that are just low enough not to aggro.",
-        "The most popular way to raise your fame for flagging this quest is to complete the quest Mihgo's Amigo or Shady Business.",
-        "A way to check your Norg fame without travelling to Norg is to check the price of Rice Balls with Ghebi Damomohe in Lower Jeuno's Neptune's Spire.",
-        "If the price of the Rice Balls are 155g or lower, you should have sufficient reputation for this quest.",
+    out_rab_fish_favors_bold = {
+        "Before starting this quest, you must have fished up 100 different fish.",
+        "Doing the quest Fisherman's Heart , will allow you to see how many unique fish you have caught, by talking to Katsunaga in Mhaura .",
+        "Must have Rise of the Zilart / Chains of Promathia / Treasures of Aht Urhgan / Wings of the Goddess / Seekers of Adoulin / Scars of Abyssea expansions installed.",
+        "Talk to Irmilant to start the quest.",
+        {
+            text = "You will need to catch, in any order, the following 5 Legendary fish. Afterwards, you must trade them to Irmilant :",
+            substeps = {
+                "Matsya",
+                "Dragon's Tabernacle",
+                "Quicksilver Blade",
+                "Phantom Serpent",
+                "Lord of Ulbuka",
+            },
+        },
+        {
+            text = "If you have already caught one of these legendary fish prior to activating this quest, (see Katsunaga in Mhaura to check) you may purchase that fish from the Auction House, Bazaar or have someone else fish it up for you and it will still count towards quest completion. Basically, the only trigger to Irmilant accepting a fish is that it is registered under Katsunaga that it has been caught by you.",
+            substeps = {
+                "Example: You fished up Matsya for the Shaper's Shawl which caused Matsya to be registered by Katsunaga , you are able to purchase a Matsya off the Auction House and trade into Irmilant for credit.",
+            },
+        },
+        "After you trade in all five, trade your Ebisu Fishing Rod to him in order to upgrade it.",
+    },
+
+    out_nrg_forge_your_destiny = {
+        "Speak to Jaucribaix in Norg (K-8), near the Captain's Chamber, to begin the quest.",
+        "Speak to Aeka (I-8) to receive Oriental Steel .",
+        "Speak to Ranemaud (I-7) to receive a Sacred Sprig .",
+        {
+            text = "Travel to Konschtat Highlands (D-8), trade the Oriental Steel to the ??? inside the cave to spawn a Bomb Notorious Monster named Forger , approximately level 33.",
+            substeps = {
+                "The level 99 Unity warp (Sleepy Mabel) will place you close to this point at (G-7).",
+            },
+        },
+        {
+            text = "Once the Forger is defeated, a Bomb Steel will drop.",
+            substeps = {
+                "If you are defeated while fighting the Forger or somehow lose the Bomb Steel before the next part, Aeka can give you another Oriental Steel in exchange for a Darksteel Ore .",
+                "If you are doing the quest for multiple people, you must wait 4 minutes to re-spawn the Forger for another Bomb Steel .",
+            },
+        },
+        {
+            text = "Purchase a Hatchet and travel to The Sanctuary of Zi'Tah . You will find an area off of the map in the northern part of (K-10) that will take you to a block at (L-9). There you will find a ??? spot you may reach by climbing up a nearby rock. Trade the Hatchet to the ??? spot to spawn a Treant Notorious Monster named Guardian Treant .",
+            substeps = {
+                "Trailblazing Hatchet does not work. It must be a regular Hatchet.",
+                "The level 122 Unity warp (Keeper of Heiligtum) will place you close to this point at (K-12).",
+                "If you are doing the quest for multiple people, you only need to kill the Treant once.",
+            },
+        },
+        "Once the Treant is defeated, trade the Sacred Sprig to the ??? to receive a Sacred Branch .",
+        "Trade the Bomb Steel and the Sacred Branch to Jaucribaix.",
+        "Return in 72 in-game hours (3 real-life hours) to receive your reward.",
+    },
+
+    out_kaz_guardian = {
+        {
+            text = "Speak to Hari Pakhroib (I-11), who wants Wild Pamamas .",
+            substeps = {
+                "Wild Pamamas drop off Young Opo-opo in Yuhtunga Jungle .",
+                "They can also sometimes be found on the Auction House.",
+                "Despite what the NPC says, you don't need to bring Ice Cluster s, as there are no Flame Spouts on the path we'll be taking.",
+            },
+        },
+        {
+            text = "Head to Ifrit's Cauldron using the entrance from (G-6) in Yhoator Jungle .",
+            substeps = {
+                "The Survival Guide can also bring you there.",
+            },
+        },
+        {
+            text = "Once inside Ifrit's Cauldron , take the left path at the fork and continue on until you find the Altar of Ashes located at (I-9) on map 2. It's a black pillar near the edge of the path.",
+            substeps = {
+                "Alternatively, utilize Unity 125 teleport to travel quickly to Map 3, taking exit G > A > B to quickly reach (I-9) of Map 2.",
+            },
+        },
+        {
+            text = "Trade the Wild Pamamas to the Altar.",
+            substeps = {
+                "The NPC mentions needing to shout your name, but that's not necessary.",
+            },
+        },
+        "Return to Hari Pakhroib for your reward.",
+    },
+
+    out_kaz_gullibles_travels = {
+        "Speak to Magriffon (I-7) inside Celodekhi's B&B.",
+        "Trade him the gil he asks for.",
+    },
+
+    out_nrg_big_box = {
+        {
+            text = "Travel to Norg and speak with Ryoma to receive the quest.",
+            substeps = {
+                "If you just completed 20 in Pirate Years you will need to zone and re-enter Norg for Ryoma to begin this quest",
+            },
+        },
+        "Talk to Ensetsu in Port Bastok at (I-5), who tells you to speak with Leodarion .",
+        "Head to Rabao and talk to Leodarion at (F-8) on the west side of the lake near the windmill.",
+        {
+            text = "Leodarion will request an Oak Pole , which is purchasable via Sparks from a Records of Eminence NPC:",
+            substeps = {
+                "Rolandienne in Southern San d'Oria (G-10)",
+                "Isakoth in Bastok Markets (E-11)",
+                "Fhelm Jobeizat in Windurst Woods (J-10)",
+                "Eternal Flame in Western Adoulin (H-11)",
+            },
+        },
+        "After trading it to him, speak to Leodarion again on the next Vana'diel day. You will receive the Seance staff with instructions to travel to Mhaura .",
+        {
+            text = "Once in Mhaura , take the ferry to Selbina so that you will be traveling at nighttime.",
+            substeps = {
+                "Suitable ferry departure times for this quest leave Mhaura at 16:00 and 0:00.",
+            },
+        },
+        {
+            text = "The NM Enagakure will spawn on the main deck.",
+            substeps = {
+                "On the ferry departing at 0:00, it will already be on the deck and will disappear at 4:00.",
+                "On the ferry departing at 16:00, you must wait for night time at 20:00 for it to appear.",
+                "Make sure you have unloaded FastCS, as they will cause you to be booted straight to Selbina if zoning into the Mhaura-Selbina Ferry at night.",
+            },
+        },
+        "Once you have defeated Enagakure , make sure you have at least one inventory slot free and wait until the ferry docks in Selbina.",
+        "You will receive a cutscene, Ninja Hakama , and the quest will be complete.",
+    },
+
+    out_rab_indomitable_spirit = {
+        {
+            text = "To begin this quest in your log, you need the Serpent Rumors key item. It can be purchased from Fennella in Port Windurst (C-8) for 95,000 Guild Points with Fishing rank Adept or higher.",
+            substeps = {
+                "You can still obtain the other items needed for this quest before initiating it.",
+            },
+        },
+        {
+            text = "Turn in Liks and Gugrusaurus to Zaldon to obtain Opal Silk and Saber Shoot , respectively.",
+            substeps = {
+                "About a ~.5% chance to get each.",
+            },
+        },
+        "Speak to Irmilant in Rabao (G-7).",
+        "Trade the Opal Silk and Saber Shoot to Irmilant.",
+        "Return to Irmilant after conquest tally to receive your reward.",
     },
 
     out_nrg_not_your_vault = {
-        "Speak to Keal at (H-8) to start the quest.",
-        "Exit Norg (A) and make your way to the door marked (B).",
-        "Turn right and head to the door marked (C); then continue to the door at (D).",
-        "You should now be in a room with a boarded floor. Examine the ??? (E) in the room to receive a Sealed Iron Box.",
-        "Return to Norg (or, if your Homepoint is set at Norg, just Warp or get KO'd) and talk to Keal to receive Tonko: Ichi",
-        "Alternate Map.",
-        "Every monster in this area detects by sound, so some form of Sneak is needed if your level is low. Silent Oils work, but Circumspection (5 Tabs at the Grounds Tome right outside Norg may last long enough to reach the vault, and possibly even the return trip to Norg without any movement speed enhachments. Invisible is not necessary.",
-    },
-
-    out_nrg_shining_subligar = {
-        "Trade 10 Rusty Subligaria to Heiji, who is situated at the top of the ramp, just to the left of the large staircase in the main room.",
-        "Despite the quest description text, he will accept multiple subligaria in each trade.",
-        "He will give you the scroll of Kurayami: Ichi",
+        "Speak to Keal (H-8) to begin this quest. He walks around by the survival guide.",
+        "Exit Norg into Sea Serpent Grotto .",
+        "Once in Sea Serpent Grotto head South until you reach (H-7), go West from there.",
+        "Turn South at (F-7) and continue West, follow the path as it turns North at (B-7).",
+        "The ??? you're looking for is in the room at (C-5).",
+        "Examine the ??? to get the Key Item Sealed iron box .",
+        "Return to Keal to complete the quest.",
     },
 
     out_nrg_shining_leggings = {
@@ -340,394 +519,563 @@ Q.STEPS = {
         "He will give you the scroll of Dokumori: Ichi",
     },
 
-    out_nrg_sacred_katana = {
-        "Talk to Jaucribaix in Norg (K-8) as a Samurai; he asks you to bring him the Mumeito he gave you when you became a Samurai and a Handful of Crystal Scales.",
-        "If you dropped the Mumeito, Ranemaud will sell you another one for 30,000 gil after you accept the quest.",
-        "NOTE: From this point on, you can finish this quest on any job, including getting the reward.",
-        "Obtain a Sack of Fish Bait from Goblin Robbers in the Sanctuary of Zi'Tah.",
-        "Many Goblin Robbers can be found at (H-8) north of the outpost.",
-        "Trade the Sack of Fish Bait to the ??? at (E-8) near a lake in the Sanctuary of Zi'Tah to spawn a pugil NM: Isonade.",
-        "You can spawn this NM on any job.",
-        "Use Sneak to prevent the NM from aggroing the trader.",
-        "Defeat Isonade and reexamine the ??? to obtain a Handful of Crystal Scales.",
-        "If you change areas or lose connection, you will need another Sack of Fish Bait to spawn and defeat Isonade again. Be sure to check the ??? after defeating Isonade.",
-        "If you have multiple people on the quest, you only need to kill Isonade once. Therefore, one Sack of Fish Bait is enough for the entire group.",
-        "Return to Norg and trade the Mumeito to Jaucribaix to complete the quest.",
-    },
-
-    out_nrg_yomi_okuri = {
-        "After completing The Sacred Katana, you must change areas (logging out does not count as zoning) before you can initiate this quest.",
-        "Head to Norg and as a Samurai, talk to Jaucribaix (K-8) who will mention that a sacred ritual to guide the lost spirits of the dead is needed, but that he's missing a feather from a special bird, found only in the Labyrinth of Onzozo.",
-        "From this point on, you can be on any job to complete this quest, including receiving the reward.",
-        "Speak with Washu at (J-8) who will tell you to bring her a piece of Giant Sheep Meat, a Frost Turnip, a Bastore Sardine, and a Hecteyes Eye if you want the Washu's Tasty Wurst that is needed to lure the bird out.",
-        "After obtaining Washu's Tasty Wurst, head to Buburimu Peninsula and enter the Labyrinth of Onzozo.",
-        "Stick to the left wall all the way until you see a hut with a ??? at (F-8).",
-        "Click the ??? and choose to lay down the Washu's Tasty Wurst to spawn a Notorious Monster Roc, Ubume.",
-        "Be prepared for AoE Sleep from Horde Lullaby about every 30 seconds.",
-        "Ubume can be silenced.",
-        "Defeat Ubume and re-examine the ??? to obtain the Yomotsu Feather.",
-        "Return to Norg with the feather and speak with Jaucribaix.",
-        "Exit and re-enter Norg and speak with Jaucribaix again, and he will say that he has finally forged the katana, which he named the Yomotsu Hirasaka.",
-        "You will receive the Yomotsu Hirasaka and are asked to take it to Valkurm Dunes.",
-        "Travel to Valkurm Dunes and head to the secret beach at (B-7) in the upper Northwest corner of the map.",
-        "Fastest way there is via the Gustav Tunnel Survival Guide and exit.",
-        "Search the shoreline for a ??? spot, wait until nightfall (19:00 - 5:00), and click the spot and choose to initiate the ritual.",
-        "The Notorious Monsters Doman, a shadow, and Onryo, a ghost, will spawn.",
-        "Both are mages. Onryo can use Ancient Magic.",
-        "Both NMs are somewhat magic resistant. Doman's magic resistance could be as high as 50%.",
-        "Both NMs are resistant to Stun.",
-        "They can be slept by using Repose",
-        "If the ritual is initiated while under the effect of Sneak, the monsters will not attack and thus, can be picked off one by one. Note that when they spawn, everyone close enough need to have Sneak on, not just the one initiating the ritual.",
-        "Sneak will wear off when attacking a target, so be sure to be far enough from them before using a ranged or magical attack.",
-        "Using this method, you only need to fight one of them as long as you give the other one 3 minutes to de-spawn, before finishing off the one you chose to fight.",
-        "After defeating one or both of the NMs, re-examine the ??? to obtain the Faded Yomotsu Hirasaka.",
-        "If you get the message \"What do you think you are doing?!\" just wait a bit.",
-        "If multiple characters are in your party, it is possible for all of them to obtain the Faded Yomotsu Hirasaka after this battle, regardless of which one uses the Yomotsu Hirasaka on the ??? to begin the fight.",
-        "Make sure everyone are on the quest and have obtained the Yomotsu Hirasaka from Jaucribaix before the Valkurm Dunes Notorious Monsters.",
-        "If you change areas and don't examine the ???, you will need to repeat the fight.",
-        "Travel back to Norg and talk to Jaucribaix to complete the quest and obtain your reward.",
-    },
-
-    out_nrg_thief_in_norg = {
-        "Head to Norg and speak with Jaucribaix (K-8) for a cutscene.",
-        "Head to Port Jeuno and speak to Sanosuke (H-8) in the Duty Free Shop. OPTIONAL: Since you're in Jeuno, you might save some time if you flag Borghertz's Loyal Hands before proceeding.",
-        "Head to Mhaura and speak to Phoochuchu at (H-8), standing under the bridge.",
-        "Head to the lower portion of Bastok Mines. Near the alchemy guild, click on the door to the 'house' at (J-6) for a cutscene.",
-        "Head to Waughroon Shrine in Palborough Mines for another cutscene.",
-        "Teleporting from Lower Jeuno by speaking to Domenic will work.",
-        "You can use the nearby Home Point #3 to go to Palborough Mines Home Point #1, which is next to Waughroon Shrine.",
-        "Return to Norg and talk to Jaucribaix to receive a Banishing Charm.",
-        "He gives you another if you drop this one.",
-        "Return to Waughroon Shrine and trade the Banishing Charm to the Burning Circle to enter the BCNM.",
-        "Only one person needs a Banishing Charm to begin the fight. All party members that have this quest started still need to bring the charm to obtain a Charred Helm upon victory.",
-        "You DO NOT need to be on Samurai to enter the BCNM.",
-        "Alter Ego's may be used.",
-        "Buffs do not wear upon entry.",
-        "You lose Experience Points if defeated.",
-        "You can die and Reraise without aggro (assuming you die outside of the main circle), but the demons regen HP when not engaged in battle.",
-        "You must kill the following three demon NMs within a 30-minute time limit",
-        "Gaki (BLM)",
-        "Onki (SMN)",
-        "Assisted by Onibi",
-        "Rasetsu (DRK)",
-        "Demons appear to be level 66-67.",
-        "The demons are immune to all forms of Sleep and Silence; however, you can put Onibi to Sleep.",
-        "Paralyze, Bind, and Gravity affect the demons, with resistance building over time.",
-        "The demons use their 2-hour abilities at low HP.",
-        "When Onki uses Astral Flow, even if he has Onibi (an Elemental) out, he summons an Avatar named Ayakashi, which can be any of the 6 original Celestial Avatars.",
-        "Gaki can cast Burst in relatively quick succession, make sure to stun or have shadows.",
-        "Onki has approximately 3000 hit points. Rasetsu has approximately 7500 hit points. Gaki has approximately 6000 hit points.",
-        "Can be defeated by many combinations of two level 75 characters. Solo fight possible with some 75 jobs.",
-        "If your level 99 with decent enough level 119 gear and trusts you can easily win this fight, it might even be over kill.",
-        "After the three demons are slain, you receive a Charred Helm. The Banishing Charm can now be discarded.",
-        "Acquire a Gold Thread and trade it to Jaucribaix.",
-        "Return to Norg and report to Jaucribaix,",
-        "Zone out of Norg and wait about 1 minute (earth time) before the next step.",
-        "Speak to Jaucribaix to complete the quest.",
-    },
-
-    out_nrg_pirate_years = {
-        "With your main job as Ninja, speak with Ryoma in Norg at H-8 in a small corner at the dock overlooking the water, for a cutscene.",
-        "NOTE: You no longer need to be Ninja main job for the remainder of this quest.",
-        "Head to Port Bastok and talk to Kagetora in Warehouse #2 (F-6).",
-        "Speak with Ensetsu located at (I-5) in the northernmost house east of the warehouse.",
-        "Note: If you have the quest Chasing Dreams active, and are on the sixth step in the quest (when you must trade five Eastern Gems to Patient Wheel), you will have to talk to Kagetora a few more times until he gives you the correct cutscene.",
-        "Ensetsu provides additional background and sends you to Eastern Altepa Desert to investigate.",
-        "Head to the border of H-5/H-6 in Eastern Altepa Desert, clear the area, and click the ??? when your party is set.",
-        "Two NM spiders named Tsuchigumo will spawn.",
-        "You do not need to be a Ninja to spawn the NMs and get the Key Item.",
-        "Both spiders, if not engaged, will despawn after about five minutes.",
-        "The spiders are immune to sleep but they will spawn unaggressive if the ??? is checked under the effect of Sneak.",
-        "You must kill both spiders, even if using the Sneak method to spawn them. Only killing one will result in a \"There is nothing out of the ordinary here\" when re-examining the \"???\" on the ground.",
-        "If you kill one and died on the second one, you can come back here and the second one will not despawn. Once you kill it, you can examine the \"???\" to get the Key Item.",
-        "After you kill both Tsuchigumo, re-examine the ??? and you will receive a Trick Box. OPTIONAL: Return to Port Bastok and talk to Ensetsu.",
-        "See page for the optional dialogue.",
-        "Head to Norg and speak with Ryoma to complete the quest.",
-    },
-
-    out_nrg_big_box = {
+    out_nrg_shining_subligar = {
         "Trade 10 Rusty Subligaria to Heiji, who is situated at the top of the ramp, just to the left of the large staircase in the main room.",
         "Despite the quest description text, he will accept multiple subligaria in each trade.",
         "He will give you the scroll of Kurayami: Ichi",
     },
 
-    out_nrg_true_will = {
-        "Ryoma in Norg sends you to Yhoator Jungle at (I-7).",
-        "The fastest way there is via the Yhoator Jungle Survival Guide.",
-        "Examine the ??? at (I-7) to spawn 3 NM Sahagins",
-        "Kappa Akuso (Monk) Uses Hundred Fists.",
-        "Kappa Biwa (Bard) Uses Soul Voice.",
-        "Kappa Bonze (White Mage) Uses Benediction.",
-        "Kappa Bonze may be slept with Lullaby, Sleep or Repose. Akuso and Biwa appear to be immune to the effect.",
-        "Only one Kappa needs to be defeated, one strategy for doing this is to run to the Den of Rancor zone, let the other two Kappas move back to the spawn point, and fight one Kappa at the zone. As with other fights using this strategy, you must wait for the other two Kappas to de-spawn before defeating the one you choose to fight.",
-        "When using this strategy, it is highly recommended that you do not choose Kappa Akuso as the one you fight. If you do choose to fight Kappa Akuso, fight near the Ifrit's Cauldron zone. Zone immediately after he uses Hundred Fists and wait 20 seconds. Zone back into Yhoator Jungle and fight him again.",
-        "Kappa Akuso is also susceptible to Bind and Gravity which may prove to be an easier technique for avoiding Hundred Fists.",
-        "You are unable to sneak pop these mobs.",
-        "When using this strategy, this fight is known soloable by most jobs at 75 given a solo-friendly job/subjob, and by some jobs at 60.",
-        "Take caution if Woodland Sage pops, it aggros up to level 99.",
-        "Kill them and examine ??? again to get Old Trick Box (key item).",
-        "Take it back to Ryoma who then sends you to Rabao to talk with Leodarion at (F-8).",
-        "Leodarion sends you to Kuftal Tunnel.",
-        "Open a Treasure Coffer to receive Large Trick Box (key item).",
-        "This can be done as any job; the Large Trick Box can be attained by picking the lock as Thief, or with a Kuftal Coffer Key.",
-        "If you have the quest Knight Stalker (DRG AF) active, or a Borghertz's Hands quest active, it is possible that you may receive the Key Item associated with that quest, rather than the Large Trick Box.",
-        "Lastly, bring the Large Trick Box back to Leodarion to complete the quest and receive your reward.",
+    out_nrg_mama_mia = {
+        "Speak to Mamaulabion at (G-6) in Norg to activate the quest (this does not need to be done before obtaining the seven items).",
+        {
+            text = "Obtain the following seven items by selecting them as your reward after defeating the seven avatars below in the battles listed below",
+            substeps = {
+                "Trial by Fire ( Ifrit ): Egil's Torch",
+                "Trial by Ice ( Shiva ): Rust 'B' Gone",
+                "Trial by Wind ( Garuda ): Bubbly Water",
+                "Trial by Earth ( Titan ): Desert Light",
+                "Trial by Lightning ( Ramuh ): Elder Branch",
+                "Trial by Water ( Leviathan ): Eye of Nept",
+                "The Moonlit Path ( Fenrir ): Ancients' Key",
+            },
+        },
+        "Return all seven items to Mamaulabion (the items must be traded one at a time and it is not necessary to turn in all seven at once).",
+        "Wait until midnight (JST), then speak with Mamaulabion once more to receive the Evoker's Ring .",
     },
 
-    out_nrg_potential_within = {
-        "Talk to Jaucribaix in Norg as Samurai level 71+ to receive the Tachi of Trials and a Weapon Training Guide.",
-        "Your Great Katana skill must be at base 250 or higher. Gear and merits do not count towards your skill when activating this quest.",
-        "Use the Tachi of Trials until the latent effect disappears.",
-        "You must perform Weapon Skills and Skillchains on monsters that directly grant experience points.",
-        "Weapon Skills performed under Level Sync count.",
-        "Weapon Skills performed in Reives will count.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "You must accumulate 300 total points.",
-        "The latent effect vanishes when you have accumulated 300 WS points. You do not need to unequip and reequip the weapon for the latent effect to disappear.",
-        "Once you no longer receive the latent effect, head back to Norg and trade the Tachi of Trials back to Jaucribaix. The weapon is lost and you receive a Map to the Annals of Truth and instructions to head to Kuftal Tunnel.",
-        "NOTE:You can be any job from this part forward.",
-        "Once in Kuftal Tunnel go to (L-7) on the map to the right and click the ??? to spawn the NM named Kettenkaefer.",
-        "Once the NM is dead, reexamine the ??? to obtain the Annals of Truth.",
-        "Bring this back to Jaucribaix for your reward.",
-    },
-
-    out_nrg_bugi_soden = {
-        "You cannot unlock this quest if you already have another Weapon Skill quest active.",
-        "As Ninja, talk to Ryoma (H-8) in Norg who will give you the Kodachi of Trials and the Weapon Training Guide (key item)",
-        "Use the Kodachi of Trials until the latent effect disappears.",
-        "How to remove the latent effect",
-        "You must obtain 300 Weapon Skill Points.",
-        "Only Weapon Skills performed on Easy Prey or higher will count, even while under the effect of Level Sync.",
-        "Weapon Skills performed in Reives will count.",
-        "You receive 5 points for opening/soloing a weaponskill, 7 points for closing a Lv.1 Skillchain, 9 points for closing a Lv.2 Skillchain and 11 points for closing a level 3 Skillchain.",
-        "To check to see if the latent effect has disappeared simply open your equipment menu, and if the elemental bonuses granted by the Kodachi of Trials are gone you are done. The description of the weapon will not change.",
-        "Once you no longer receive the latent effect bonus, head back to Norg and trade the Kodachi of Trials back to Ryoma, who will take the weapon from you and give you a Map to the Annals of Truth (key item) and tell you to head to Labyrinth of Onzozo.",
-        "In the Labyrinth of Onzozo go to the lower right corner of I-5 and click the ??? to spawn the NM named Megapod Megalops. (Testimonials)",
-        "After defeating Megapod Megalops, re-examine the ??? to obtain the Annals of Truth (key item).",
-        "Bring this back to Ryoma for your reward.",
-    },
-
-    out_nrg_trial_size_water = {
-        "Speak to Verctissa (H-9) in Norg. You must speak to Verctissa as a Summoner.",
-        "If you qualify, she will give you a Mini Tuning Fork of Water.",
-        "This item is not a Key Item like the regular Tuning Forks, but is a Rare/Exclusive item that needs to go in your inventory.",
-        "When you are ready to go, return to Verctissa and trade her the Mini Tuning Fork of Water (she does not keep the fork) and be warped to the Cloister of Tides for the fight.",
-        "Trade the Mini Tuning Fork to the protocrystal to enter the battle.",
-        "Note that if you do not trade the Mini Tuning Fork and instead just select the protocrystal, you will enter the regular level 60+ party avatar battle if you have the regular tuning fork key item.",
-        "Defeat him for your reward.",
-        "See video for an example strategy.",
-    },
-
-    out_nrg_undying_pledge = {
-        "Talk to Stray Cloud in Norg for a cutscene to start the quest.",
-        "Head towards Sea Serpent Grotto; before you zone you will receive a cutscene.",
-        "Enter Sea Serpent Grotto and go to K-6, to the ??? in the open room.",
-        "Click on the ??? and an NM will appear, a Sea Monk by the name of Glyryvilu. The main damage from it is the Cross Attack special that it does often, which can do between 300-1025 damage, which can be absorbed by shadows. It can be debuffed.",
-        "After the battle, click on the ??? again to receive a cut-scene and the Caliginous Blade (key item).",
-        "Either waiting too long or zoning will cause the NM to respawn. ((See testimonials for more information)).",
-        "Return to Norg and talk with Stray Cloud for cutscene that completes the quest.",
-    },
-
-    -- ========================================================
-    -- OTHER OUTLANDS LOCATIONS
-    -- ========================================================
-
-    out_yut_wrath_of_opo_opos = {
-        "You must first have Zilart Mission 5 - Headstone Pilgrimage activated or completed.",
-        "After completing your business for ZM5 at the Cermet Headstone in Yuhtunga Jungle, trade a Garnet to the headstone. You will get a cutscene.",
-        "Garnets can be obtained from various Treasure Chests, purchased at the Auction House (under Materials > Goldsmithing) or synthesized.",
-        "At the end of the cutscene, you will receive the Opo-opo Necklace.",
-    },
-
-    out_cap_wandering_souls = {
-        "You must first have Zilart Mission 5 - Headstone Pilgrimage activated.",
-        "After completing your business for ZM5 at the Cermet Headstone in Cape Teriggan, trade a Rain Lily to the headstone. You will get a cutscene.",
-        "Rain Lilies can be purchased from Areebah in Upper Jeuno, Dabih Jajalioh in Ru'Lude Gardens or from Auction House: Materials >> Alchemy.",
-        "At the end of the cutscene, you will receive the Flagellant's Rope.",
-    },
-
-    out_zit_soul_searching = {
-        "You must first have completed Zilart Mission 7 - The Chamber of Oracles.",
-        "Once you have received the Key Item: Prismatic Fragment you can return to Sanctuary of Zi'Tah.",
-        "Check the Cermet Headstone (I-7). You will receive a cutscene and the Bat Earring.",
-    },
-
-    out_sra_divine_might = {
-        "Drop your current earring.",
-        "Receive the quest at the unmarked target (G/H-11) in the main entrance of The Shrine of Ru'Avitau.",
-        "The quest appears as a second Divine Might quest in your quest log with a different description.",
-        "Obtain a Light Ore.",
-        "If you need a new Ark Pentasphere, obtain an Illuminink and Parchment as well.",
-        "Warning: if you need both the Moonlight Ore and the Ark Pentasphere, you must make TWO separate trades. If all three items are traded, only the Moonlight Ore will be obtained.",
-        "Trade the Light Ore to Ro'Maeve's Qu'Hau Spring during the Full Moon between 18:00 and 6:00 to receive the Moonlight Ore.",
-        "As of May 2019, and most likely earlier, the weather requirement is removed.",
-        "Each individual restarting this quest must possess their own Moonlight Ore.",
-        "Trade the Illuminink and Parchment to Ro'Maeve's Qu'Hau Spring during the Full Moon between 18:00 and 6:00 to obtain an Ark Pentasphere.",
-        "Only one alliance member needs the Ark Pentasphere to initiate the battle.",
-        "As of May 2019, and most likely earlier, the weather requirement is removed.",
-        "Enter and complete the Divine Might battlefield at La'Loff Amphitheater.",
-        "Return to the unmarked target in The Shrine of Ru'Avitau to pick up a new earring.",
+    out_kaz_missionary_man = {
+        {
+            text = "Speak to Rauteinot who asks for a slab of Elshimo Marble .",
+            substeps = {
+                "Elshimo Marble drops off Ivory Lizard in Yuhtunga Jungle .",
+            },
+        },
+        "Trade the Elshimo Marble to Rauteinot . You will receive Rauteinot's parcel .",
+        "Head to Northern San d'Oria and speak to Mulaujeant at (E-5) near the Blacksmithing guild on the second floor.",
+        "Wait until one Earth minute has passed and speak to Mulaujeant again to be given the Sublime statue of the Goddess .",
+        "Return to Rauteinot for your reward.",
     },
 
     out_ead_open_sesame = {
-        "Speak to Lokpix (located right beside the Altepa telepoint, to which you can easily teleport with the corresponding white magic spell) and answer yes to both his questions. Note: This step does not need to be accomplished first but must be done prior to trading the items to him.",
-        "Obtain a Tremorstone by checking a ??? near the protocrystal in the Cloister of Tremors. This quest does not need to be active to obtain the Tremorstone.",
-        "Tip: A quick way to get here is to have level 20 or higher Summoner and follow the quest Trial Size Trial by Earth and obtain the Mini Tuning Fork of Earth to warp there instantly. Please note that if you completed this quest in the past, you cannot take this shortcut. Also see talk page for suggestion of directions.",
-        "You can also use Quicksand Caves Home Point #2. If you don't have it, Unity warp to Quicksand Caves (Level 125 category) and grab it.",
-        "Obtain one of the following (your choice)",
-        "Meteorite, dropped by Crawlers in West Sarutabaruta (only Crawlers around Starfall Hillock can drop the item), or excavated from the Mineral Vein in the Mog Garden.",
-        "Soil Gem, mid-level Goldsmithing, or Auction House.",
-        "Twelve Soil Geodes, dropped by high level monsters on Earthday or in earth weather. Can also be purchased from the Auction House.",
-        "Trade the Tremorstone and other item(s) to Lokpix to receive a Loadstone.",
+        {
+            text = "Speak to Lokpix in Eastern Altepa Desert at (G-7). He will request a Tremorstone in addition to one of the following options:",
+            substeps = {
+                "Meteorite",
+                "Soil Gem",
+                "Soil Geode x12.",
+            },
+        },
+        "You may find Unity Warp 125 to Quicksand Caves helpful to reach the Cloister of Tremors containing the Tremorstone in the west part of the caves. Alternatively, you can use Home Point #2 (Kuzotz -> Quicksand Caves) to be placed just outside the Cloister.",
+        {
+            text = "Trade him the items at the same time to receive your reward.",
+            substeps = {
+                "The Loadstone will allow you to open the weighted doors in Quicksand Caves solo.",
+            },
+        },
     },
 
-    -- ========================================================
-    -- RABAO
-    -- ========================================================
-
-    out_rab_missing_piece = {
-        "Talk to Alfesar in Rabao H-7. He needs your help in finding an Ancient tablet fragment in the Quicksand Caves.",
-        "The fragment spawns at one of five randomly chosen locations in the Quicksand Caves.",
-        "Spawn points on Map 1: (Quicksand Caves H-6), (Quicksand Caves H-10), (Quicksand Caves E-9)",
-        "Spawn points on Map 2: (Quicksand Caves D-9), (Quicksand Caves L-11)",
-        "To get to the ??? at (Quicksand Caves H-6) (Point 1 on the map), enter the Quicksand Caves from the Eastern Altepa Desert J-7 (Entrance #1 on the Map). You will zone in Quicksand Caves L-4 to begin your search.",
-        "All Anticans aggro to sound! So you may need to apply Sneak or Silent Oil.",
-        "When you fall down at Quicksand Caves I-7, be sure you are on the West wall.",
-        "There will be a beetle at the spawn point (Quicksand Caves H-6). The beetle doesn't aggro. If the ??? is not there, head out of the caves at Quicksand Caves D-5. You will exit at Eastern Altepa Desert H-8 (Entrance #2 on the Map).",
-        "To reach the other four points, again enter the Quicksand Caves from Eastern Altepa Desert J-7.",
-        "This time drop down at Quicksand Caves J-7, on the East wall.",
-        "You can check point 2 (Quicksand Caves H-10) and 3 (Quicksand Caves E-9).",
-        "If not at either point, drop down at (Quicksand Caves F-10). As you drop down, be sure you are on the East wall. Take Tunnel A (Quicksand Caves F-11).",
-        "Points 4 (Quicksand Caves D-9) and 5 (Quicksand Caves L-11) are on Map 2.",
-        "When you find the ???, check it and you will receive the Ancient tablet fragment.",
-        "If more than one person in your party needs the quest, the ??? will disappear once anyone clicks it and will instantly re-pop in one of the 5 locations (usually a different one, although the same one is possible).",
-        "You might obtain the Antican Tag from a non-related ??? while searching for the proper ???. This item is used to pop Tribunus VII-I and has nothing to do with this quest.",
-        "Return to Alfesar. He will give you the Tablet of Ancient Magic and the Letter from Alfesar.",
-        "Take both items to Charlaimagnat at the cathedral in Northern San d'Oria M-7. (He is on the lower level at the bottom of the stairs.) He asks for you to come back another day because he needs to decipher the tablet.",
-        "Zone and come back to Charlaimagnat after at least one Earth minute for your reward.",
-        "Simply logging out in front of him and logging back in does not work, you have to zone to another zone and come back.",
-        "A close zone is the Mog House in Northern San d'Oria",
+    out_kaz_personal_hygiene = {
+        {
+            text = "After completing Even More Gullible's Travels you will have a scent of the Rafflesia flowers on you.",
+            substeps = {
+                "This scent will repulse all Mithra in Kazham but is required to start the quest The Opo-opo and I .",
+            },
+        },
+        "Speak to Gatih Mijurabi (I-8) to begin this quest to remove the scent.",
+        "The hot springs is located in Korroloka Tunnel (G-9) on map 4.",
+        {
+            text = "Stand yourself under the waterfall for approximately 5 minutes.",
+            substeps = {
+                "When you are in the right spot, you will get the message that \"The water in this spring is pleasant and tepid. This looks like a nice place to warm yourself up.\"",
+                "When you exit the hot spring after standing under the waterfall for the right amount of time, you will get another message informing you that the smell of the Rafflesia pollen is gone.",
+            },
+        },
+        "The waterfall is guarded by several leeches that aggro to level 99 players.",
+        "Return to Gatih Mijurabi to complete the quest.",
+        "If you need to re-apply the scent for the quest The Opo-opo and I , you can check the three Rafflesia flowers in the Yuhtunga Jungle once per game day until you get the scent back.",
     },
 
-    out_rab_antidote = {
-        "Talk to Edigey. He needs Desert Venom so he can make an antidote for desert caravans.",
-        "Desert Venom drops from Doom Scorpion in Eastern Altepa Desert and Tulwar Scorpion in Western Altepa Desert or can be bought at Auction House Category: Others > Misc",
-        "Trade the Desert Venom to Edigey for your reward.",
-        "The first time you trade it to him, you will receive the Dotanuki.",
-        "Each subsequent time you repeat the quest, you will receive 1800 gil.",
+    out_nrg_damp_scroll = {
+        {
+            text = "To begin this quest you first need a Damp Scroll .",
+            substeps = {
+                "The Damp Scroll can either be fished up in Sea Serpent Grotto or purchased off the Auction House .",
+            },
+        },
+        "You need to have the Damp Scroll in your inventory when you speak to Shivivi to begin this quest.",
+        "Take the scroll to Horlais Peak (Hot Springs side) and trade it to the Hot Springs there.",
+        "This will transform the scroll into a Jubaku: Ichi (Scroll) .",
     },
 
-    out_rab_trial_by_wind = {
-        "Speak to Agado-Pugado in Rabao. If you have sufficient fame, he will give you a Tuning fork of wind.",
-        "Travel to Cape Teriggan and head to the Cloister of Gales.",
-        "To get to the Cloister of Gales, travel to F-7 in Cape Teriggan. From here, follow a tunnel west, off the map.",
-        "This area is filled with very dangerous creatures, such as manticores and high-level goblins. Sneak and Invisible are needed at all times.",
-        "Follow the left wall as it leads northeast, then northwest and you will eventually find the Cloister of Gales.",
-        "Target the protocrystal and select \"Trial by Wind\" to enter the battlefield.",
-        "Once you defeat Garuda Prime, you will acquire the Whisper of Gales (key item).",
-        "Return the Whisper to Agado-Pugado for your reward.",
-        "Alternatively, hold onto it and when you have all six whispers, you may start the quest The Moonlit Path to fight Fenrir Prime.",
-        "If you are collecting items for the Evoker's Ring, you will want the Bubbly Water from Agado-Pugado.",
-        "Everyone who is involved in the fight must have a tuning fork of the correct protocrystal.",
-        "There is no cap on this battle.",
-        "There is a 30-minute time limit.",
-        "You can buff up before entering the protocrystal, so feel free to do so and rest up while still outside.",
-        "Try to fight Garuda on and not on .",
-        "The battlefield is shaped like a long path up the side of hill, with a switchback about halfway to the top. This allows the mages to stand above the fight (and out of easy reach of the avatar) while still being able to cast spells upon the combatants.",
-        "If soloing as DRG make sure to have Call Wyvern ready as its a great chance the wyvern will die before the fight is over.(Wyvern died every prime fight for me since i didnt use Spirit Link to cure it as i didnt want Avatar to 2hr while I was down to about 10% hp due to ability use.)",
+    out_nrg_skyward_ho = {
+        "After completing VW Op. 115: Li'Telor Variant and receiving the Ashen stratum abyssite III from Kieran , this quest is automatically flagged.",
+        {
+            text = "Engage in and complete the 3 Tier III Voidwatch battles in the Tu'Lia region:",
+            substeps = {
+                "Aello in Ru'Aun Gardens (G-5), (I-11), (J-6)",
+                "Qilin in The Shrine of Ru'Avitau (map 2)(F-6), (F-9), (J-6)",
+                "Uptala in Ve'Lugannon Palace (D-5), (G-13), (M-8)",
+            },
+        },
+        {
+            text = "After defeating all 3, return to Norg and speak to Kieran at (H-8).",
+            substeps = {
+                "You cannot get the next cutscene if you do not speak to Kieran first. If you speak to Gilgamesh then Kieran, you must zone to get the cutscene from Gilgamesh.",
+            },
+        },
+        "Return to Norg and speak to Gilgamesh to complete the quest.",
     },
 
-    out_rab_kuftal_tour = {
-        "Talk to Datta, who asks you to participate in a tour of Kuftal Tunnel.",
-        "Make a party of two members below level 40.",
-        "There is no level cap, so your actual job level must be level 40 or below.",
-        "Level Sync works on this quest. Thus, you only need one level 40 or below player in the party, and then Level Sync to his or her level.",
-        "You can avoid aggro by renting a Chocobo to get there, and, once inside the tunnel, the only monsters around are Lizards who do not aggro.",
-        "Travel to Kuftal Tunnel via Survival Guide (or Western Altepa Desert) and examine the ??? that is just inside the entrance above the edge of the cliff to get a cutscene with Hawk Nose. Your party must be close to the ??? in order to receive cs.",
-        "Then return to Datta to get another cutscene and finish the quest.",
-        "Alter Egos cannot be used to complete this quest. However, after completing this quest, you can watch the cutscene with Hawk Nose again at the Goblin Footprint in Kuftal Tunnel. If you summon Alter Egos with Trust Magic and then rewatch this quest's cutscene, you'll see your summoned Alter Egos in the cutscene.",
+    out_zit_soul_searching = {
+        "Touch the Cermet Headstone with the key item in your posession after completing Zilart Mission 7 .",
+    },
+
+    out_nrg_stop_your_whining = {
+        "Travel to Norg and enter the Buccaneer's Quarters at (J-8).",
+        "Talk to Washu.",
+        "Washu will give you an Empty Barrel . You will need to fill it with Opo-Opo brew found in a Yhoator Jungle tree.",
+        "You will need to examine a ??? that spawns randomly in Yhoator Jungle .",
+        "Once you find the ??? the Empty Barrel will turn into a Barrel of Opo-Opo brew .",
+        "Return to Washu to complete the quest.",
+    },
+
+    out_rab_thanks_for_fish = {
+        "You must first complete the First Step Forward Records of Eminence objective",
+        "Speak to Jourdenaux while in possession of a Lu Shang's Fishing Rod to flag this quest.",
+        "This will unlock a new Records of Eminence category \"Fishing > Fishing (Tenacity)\"",
+        {
+            text = "You must now do the following:",
+            substeps = {
+                "Catch 60 different types of fish",
+                "Complete all Fishing (Tenacity) objectives",
+            },
+        },
+        "After completing all of the objectives, trade your Lu Shang's Fishing Rod to Jourdenaux to complete the quest and for your reward.",
+    },
+
+    out_kaz_firebloom_tree = {
+        "Soun Abralah needs a piece of unburnable wood from the Firebloom Tree.",
+        {
+            text = "Visit the Firebloom Tree Roots at Yuhtunga Jungle (H-9)",
+            substeps = {
+                "Survival Guide or Outpost warp and head northeast",
+            },
+        },
+        {
+            text = "Harvest the Eastern vine , Northern vine , Western vine , and Southern vine by clicking on the trees",
+            substeps = {
+                "No Hatchets required",
+                "The Western vine is in the tunnel.",
+            },
+        },
+        {
+            text = "Head to Ifrit's Cauldron to test the vines' fire resistance in the Flame Spouts.",
+            substeps = {
+                "You need to touch 3 Flame Spouts",
+                "Recommended to use the Survival Guide warp, then go K -> L -> H -> Ash Dragon area.",
+            },
+        },
+        {
+            text = "Return to the appropriate Firebloom Tree Root (only one will work, and it will match your remaining Key Item) and obtain wood",
+            substeps = {
+                "Again, no Hatchet is required.",
+            },
+        },
+        "Return to Soun Abralah for your reward.",
     },
 
     out_rab_immortal_lu_shang = {
-        "You first need to obtain a Broken Lu Shang's Rod before you may activate this quest.",
-        "It doesn't matter whether you break your own Lu Shang's Fishing Rod or buy a broken one.",
-        "Talk to Irmilant. He will offer to repair your rod. To do so, you must bring him one piece of ancient lumber and two light crystals.",
-        "Trade all four items to Irmilant and he will repair your Lu Shang's Fishing rod.",
+        {
+            text = "Trade Irmilant in Rabao (G-7) a Broken Lu Shang's Rod , a Piece of Ancient Lumber , and Light Crystal x2.",
+            substeps = {
+                "You DO NOT need to have completed The Competition / The Rivalry in order to complete this quest and have your rod fixed.",
+            },
+        },
+    },
+
+    out_rab_kuftal_tour = {
+        "Speak to Datta to begin the quest.",
+        {
+            text = "Form a party with at least 2 people below level 40.",
+            substeps = {
+                "Trusts and Adventuring Fellows do not count toward the requirements.",
+                "Level Sync does work.",
+            },
+        },
+        {
+            text = "Head to Kuftal Tunnel and examine the ??? near the entrance for a cutscene.",
+            substeps = {
+                "The Survival Guide is right at this entrance.",
+                "If you don't have that, you can purchase a Chocobo in Rabao to cross the desert without having to worry about aggro.",
+                "The only monsters near the ??? are Sand Lizards that don't aggro.",
+            },
+        },
+        "Once you get the cutscene in Kuftal Tunnel , return to Datta for your reward.",
+    },
+
+    out_rab_missing_piece = {
+        "Speak to Alfesar who asks you to help him find an Ancient tablet fragment .",
+        {
+            text = "The Ancient tablet fragment is found by checking one of 5 ??? s in the Quicksand Caves .",
+            substeps = {
+                "(H-6), (H-10), (E-9) on Map 1",
+                "(D-9), (L-11) on Map 2",
+                "As soon as the ??? is found, it instantly respawns in one of the 5 locations listed above.",
+            },
+        },
+        "Return to Alfesar who gives you Tablet of ancient magic and Letter from Alfesar .",
+        "Speak to Charlaimagnat , Northern San d'Oria (M-7).",
+        "Zone and return to Charlaimagnat after one earth minute for your reward.",
+    },
+
+    out_kaz_opo_opo_and_i = {
+        "Once you have finished Even More Gullible's Travels and received the scent, speak to Lulupp (G-7) by the docks for a cutscene.",
+        "You must trade these items in order to the following Opo-opo's:",
+        {
+            text = "Opo-opo / Item / Obtained",
+            substeps = {
+                "Lulupp (G-7) - Broken Mithran Fishing Rod - Purchased off the Auction House Or, break your rod by attempting to catch something \"too heavy\" for it. See notes below.",
+                "Kukupp (I-11) - Workbench - Crafted (level 7 woodworking) or purchased off the Auction House",
+                "Mumupp (J-9) - Ten of Coins - Dropped off Ten of Coins (Monster) in Outer Horutoto Ruins . This is the same place as the Ten of Cups for the quest The Kind Cardian , so see that quest's page for directions.",
+                "Roropp (H-9) - Sands of Silence - Drops off Demon Magistrate and Demon Chancellor in Castle Zvahl Baileys From the Survival Guide, proceed west to map 2, then take the stairs at H-6 or H-10 to reach the floor below. Or you can fall into the large holes on map 2.",
+                "Popopp (H-9) - Wandering Bulb - Drops off Utukku in Fei'Yin From the entrance or Home Point #1, go downstairs at G-9 and then proceed north. Alternatively if you have Home Point #2, you're already on the correct floor. Proceed south. There are several small rooms with doors - some of these have Utukkus in them, so use Wide Scan to find them.",
+                "Bubupp (I-8) - Giant Fish Bones - Drops off Tonberry Stalker",
+                "Tatapp (counter-clockwise around town) - Blackened Toad - Drops off Brook Sahagin in Sea Serpent Grotto . There are several around the lake at (J-12). This is the same place as the sparkling ??? for Rhapsodies of Vanadiel Mission 1-14 . There are more of them in the room at (M-14) to the southeast, if needed. Tatapp wanders around the whole town, moving in a counter-clockwise path. You will need to move your character and navigate your menu simultaneously to make the trade.",
+                "Kakapp (J-9) - Wyvern Skull - Drops off Hurricane Wyvern in Ifrit's Cauldron . From the Home Point, go north and east into map 7, dropping off a ledge at (J-4). Go south, then clockwise around the crater and east to (J-8), entering map 6. Proceed north on the only path available, to reach map 3. Go west to a square-shaped room. There are several wyverns here.",
+                "Lalapp (F-9) - Ancient Salt - Drops off Sand Digger in Quicksand Caves . These are in the same spot as the ??? for Zilart Mission 12 , so see that mission's page for directions.",
+                "Nenepp (I-11) - Lucky Egg - Drops off Knight Crawler in The Boyahda Tree Nenepp moves in and out of interaction range. Target them, wait, and be ready to menu very quickly to trade the item.",
+            },
+        },
+        {
+            text = "If you trade the items out of order, all progress is lost and you will have to start over from the beginning.",
+            substeps = {
+                "You will need to obtain a second copy of each item up to the point where you failed, and trade to them again.",
+                "When doing a do-over, the Opo-opos need to be traded their items again to count progress, but they won't actually take the item away from you the second time . Therefore in worst-case, you would only need 2 of each item total if you mess up.",
+            },
+        },
+        {
+            text = "If you forget how far you are into the quest, simply chat with the Opo-opo's on the list. They will say \"Opopopopo! Opo-opo! Oppo! Oppo-opo!\" and do a /bow emote if you have already traded them the correct item.",
+            substeps = {
+                "The Opo-Opos are in the correct order in Wide Scan , if you can't find them with the above coordinates. Make sure you are positioned such that all 10 appear in a single wide scan.",
+            },
+        },
+        {
+            text = "If the auction house doesn't have the Broken Mithran Fishing Rod : buy a Mithran Fishing Rod from Babubu in Port Windurst (C-8), and then try some common strategies to break it, such as those in this discussion thread: https://ffxiclopedia.fandom.com/wiki/Talk:Broken_Mithran_Rod#Breaking_the_Rod . The East Ronfaure strategy works at fishing level 1.",
+            substeps = {
+                "If you've never fished before: face the water, target yourself, then select \"fish\". If something bites, you will receive a message about your confidence in catching it, and then arrows will appear on your screen - press your left and right movement buttons (keyboard: A and D) to match them. When the fish's HP is fully depleted, press your confirm button (keyboard: enter key) to attempt to reel it in. In order to break the rod, you need to receive a very negative message (\"terrible feeling\", etc), successfully deplete the fish's HP, attempt to reel it in, and finally be told that the fish is \"too heavy\" for your rod to handle.",
+            },
+        },
+        "If the auction house doesn't have the Workbench : it's a low-level craft, so you can skill up woodworking and make it yourself. First do the quest Forest for the Trees to obtain the Trainee Axe , which gives +1 skill. Then follow the Woodworking Guide by Ohgami - just doing the Maple Lumber step should be enough to be able to craft the workbench. Materials can be bought from the guild shop NPCs, upstairs from where you get the axe.",
+    },
+
+    out_nrg_potential_within = {
+        "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
+        "Speaking with Jaucribaix will grant you the key item Weapons Training Guide as well as the Tachi of Trials . You will need to break the latent on the Tachi of Trials before completing the rest of the quest.",
+        {
+            text = "Breaking the Latent",
+            substeps = {
+                "With the Tachi of Trials equipped in your Main hand, fight experience-yielding mobs (\"Incredibly Easy Prey\" or higher) and perform Weapon Skills or close Skillchains to accumulate 300 \"Trial Points\".",
+            },
+        },
+        {
+            text = "Skillchain Level / Points",
+            substeps = {
+                "No Skillchain - 5",
+                "Level 1 - 7",
+                "Level 2 - 9",
+                "Level 3 - 11",
+            },
+        },
+        "Trade the Tachi of Trials back to Jaucribaix . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to Kuftal Tunnel .",
+        "Unity Warp(125) brings you relatively close, and at item level you will have no issues kiting everything on your way to spawn the NM.",
+        "Take Silent Oil and Prism Powder with you and head to Kuftal Tunnel . When you enter the tunnel, follow the path to the first junction and head north. Continue north through the large tunnel until you come to (I-5) and then head southeast. The ??? to spawn the NM is in this tunnel at (L-7).",
+        "This fight is against Kettenkaefer , a beetle. It is weak to Ice and Light attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "Go back and speak with Jaucribaix to receive your reward.",
+    },
+
+    out_nrg_sacred_katana = {
+        {
+            text = "Go to Norg and talk to Jaucribaix at (K-8) near the Captain's Chamber while on Samurai to initiate the quest.",
+            substeps = {
+                "You may change to a different job to complete the rest of this quest.",
+            },
+        },
+        {
+            text = "Travel to the The Sanctuary of Zi'Tah .",
+            substeps = {
+                "Kill Goblin Robbers to get a Sack of Fish Bait , a common drop.",
+            },
+        },
+        {
+            text = "Trade the Fish Bait to the ??? at (E-8) to pop Isonade , a fish NM.",
+            substeps = {
+                "Isonade has approximately 6,100 HP.",
+            },
+        },
+        "Re-examine the ??? to obtain the Handful of crystal scales .",
+        {
+            text = "Return to Norg and trade your Mumeito to Jaucribaix to complete the quest.",
+            substeps = {
+                "If you do not possess your Mumeito, Ranemaud at (I-7) can give you a new one for 30,000 gil.",
+            },
+        },
+    },
+
+    out_nrg_sahagins_stash = {
+        "Speak to Laisrean in Norg at (H-7) to begin this quest.",
+        "Exit Norg into Sea Serpent Grotto .",
+        "Head South until you reach the fork at (H-6), head East.",
+        "Turn South at (J-5).",
+        "Head East at (J-10).",
+        "Turn East at (K-12)",
+        {
+            text = "Go past the Silver Door at (N-14).",
+            substeps = {
+                "Examine the Door three times and trade it a Silver Beastcoin to get past it. You will keep the Silver Beastcoin.",
+            },
+        },
+        "Fall off the path to the one below at (H-8) and continue going North.",
+        "Follow this path until you find the ??? at (H-3). Interacting with it will give a Sea serpent statue .",
+        "Return to Laisrean for your reward.",
+    },
+
+    out_rab_search_for_goldmane = {
+        "Talk to Zoriboh and obtain Care package key item.",
+        "Speak to Quelveuiat (I-10) in Tavnazian Safehold .",
+        "Go to Riverne - Site A01 and go through the portals to the island at I-11. You will receive a cutscene upon reaching the island.",
+        {
+            text = "Trade a Copper Key to the Trunk for another cutscene.",
+            substeps = {
+                "Copper Key drops from Riverne Vulture in Riverne - Site A01 .",
+            },
+        },
+        "Travel to the Metalworks and talk to Vladinek (H-8).",
+        {
+            text = "Go to Bibiki Bay and take the Manaclipper to Purgonorgo Isle .",
+            substeps = {
+                "You can also use the Voidwatch teleport if you have Bismarck access.",
+            },
+        },
+        "Go to F-9 by the Weathered Boat.",
+        {
+            text = "Click the boat for a cutscene. After the cutscene the NM Rohemolipaud will spawn.",
+            substeps = {
+                "He will use Eagle Eye Shot .",
+                "Eventually, he will use Camouflage and the fight will end.",
+                "If in a party with multiple players that need the quest, there is a 3 minute wait between respawning the NM.",
+            },
+        },
+        "Click the Weathered Boat again to recieve a cutscene and a Deluxe Carbine .",
+        "Go back to Rabao and talk to Zoriboh to complete the quest, and for your 3,000 gil reward.",
+    },
+
+    out_kaz_trial_by_fire = {
+        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        {
+            text = "Map A / Map B",
+            substeps = {
+                "Map C",
+            },
+        },
+        "Speak with Ronta-Onta to obtain quest. If you are positive that you have the required fame but he is not allowing you to undertake this quest, continue speaking with him until his text changes. Once you have received the key item : Tuning fork of fire , you can now safely undertake the quest.",
+        {
+            text = "Travel to Yhoator Jungle and look for the entrance to Ifrit's Cauldron at (I-6). On the first map of Ifrit's Cauldron head to the Flame Spout at (H-6). Trade it an Ice Cluster to make it recede or wait for it to recede on its own, then continue to (F-6). On the second map (Map B), go to (I-8) to drop down to the seventh map. When you land (Map C) go to the drop at (H-7), then proceed to (G-6) to find the entrance to the Cloister of Flames .",
+            substeps = {
+                "Preferably, home point to Ifrit's Cauldron #1. If you don't have it yet, make sure to grab it on the way.",
+                "The Unity 125 warp places you within a short run to the home point. Go left to J follow the tunnel and walk off the ledge at the end of it (the north part of the middle area).",
+            },
+        },
+        "Defeat Ifrit Prime and you will receive a key item : Whisper of flames",
+        "Return to Ronta-Onta with the whisper and he will provide several reward options including the ability to summon Ifrit (Avatar) .",
+    },
+
+    out_nrg_trial_by_water = {
+        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        {
+            text = "Map A / Map B",
+            substeps = {
+                "Map 1 - Map 2",
+                "Map 6",
+            },
+        },
+        "Speak with Edal-Tahdal to obtain quest. If you are positive that you have the required fame but he is not allowing you to undertake this quest, continue speaking with him until his text changes. Once you have received the key item: Tuning fork of water , you can now safely undertake the quest.",
+        {
+            text = "Travel to Yhoator Jungle and look for the entrance to Temple of Uggalepih at (J-12). Inside, if you do not already have the Paintbrush of souls , be sure to get it as you will need it ahead. Travel to (F-5) of the first map of the Temple of Uggalepih (Map A) to return to Yhoator Jungle . In Yhoator Jungle , follow the left wall to re-enter Temple of Uggalepih . In Temple of Uggalepih (Map B), continue to (I-7). Use the Paintbrush of souls on the empty Picture frame to open the door to the Den of Rancor . On the first map of Den of Rancor (Map C), drop down the hole at (J-7) to the 6th map (Map D) and enter the Cloister of Tides at (I-7).",
+            substeps = {
+                "Home Point to Den of Rancor #2. If you do not have it yet. you may have HP #1 warp from Zilart missions.",
+                "The Survival Guide for Temple of Uggalepih is located at the (F-5) exit of the first map.",
+                "The Unity warp to Den of Rancor (under content level 128) allows you to bypass the need for a Paintbrush of souls .",
+            },
+        },
+        "Defeat Leviathan Prime and you will receive a Whisper of tides",
+        "Return to Edal-Tahdal with the whisper and he will provide several reward options including the ability to summon Leviathan (Avatar) .",
+    },
+
+    out_rab_trial_by_wind = {
+        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        "Speak with Agado-Pugado to obtain quest. If you are positive that you have the required fame but he is not allowing you to undertake this quest, continue speaking with him until his text changes. Once you have received the Tuning fork of wind , you can now safely undertake the quest.",
+        {
+            text = "Travel to Cape Teriggan (F-5) to enter the Cloister of Gales .",
+            substeps = {
+                "Preferably, home point to Cape Teriggan #1. If you don't have it yet, make sure to grab it on the way.",
+            },
+        },
+        "Defeat Garuda Prime and you will receive a Whisper of gales .",
+        "Return to Agado-Pugado with the whisper and she will provide several reward options including the ability to summon Garuda (Avatar) .",
+    },
+
+    out_kaz_trial_size_fire = {
+        "Speak with Dodmos in Kazham (J-9) to begin quest and obtain a Mini Tuning Fork of Fire .",
+        "You may prepare for the upcoming battle and whenever you are ready, trade Dodmos the tuning fork to be transported to the arena.",
+        "Trade the fork to the Fire Protocrystal to enter the fighting arena.",
+        "Defeat Ifrit Prime to complete quest.",
+    },
+
+    out_nrg_trial_size_water = {
+        "Speak with Verctissa in Norg (H-9) to begin quest and obtain a Mini Tuning Fork of Water .",
+        "You may prepare for the upcoming battle and whenever you are ready, trade Verctissa the tuning fork to be transported to the arena.",
+        "Trade the fork to the Water Protocrystal to enter the fighting arena.",
+        "Defeat Leviathan Prime to complete quest.",
     },
 
     out_rab_trial_size_wind = {
-        "Speak to Rahi Fohlatti in Rabao. You must speak to Rahi Fohlatti as a Summoner.",
-        "If you qualify, she will give you a Mini Tuning Fork of Wind.",
-        "This item is not a Key Item like the regular Tuning Forks, but is a Rare/Exclusive item that needs to go in your inventory.",
-        "When you are ready to go, return to Rahi Fohlatti and trade her the Mini Tuning Fork of Wind (she does not keep the fork) and be warped to the Cloister of Gales for the fight.",
-        "Trade the Mini Tuning Fork to the protocrystal to enter the battle.",
-        "Note that if you do not trade the Mini Tuning Fork and instead just select the protocrystal, you will enter the regular level 60+ party avatar battle if you have the regular tuning fork key item.",
-        "Defeat her for your reward.",
+        "Speak with Rahi Fohlatti in Rabao (G-9) to begin quest and obtain a Mini Tuning Fork of Wind .",
+        "You may prepare for the upcoming battle and whenever you are ready, trade Rahi Fohlatti the tuning fork to be transported to the arena.",
+        "Trade the fork to the Wind Protocrystal to enter the fighting arena.",
+        "Defeat Garuda Prime to complete quest.",
     },
 
-    out_rab_chasing_dreams = {
-        "First head to Rabao and talk to Rudolfo near the Auction House (J-7). You will get a cutscene involving a man named Chelvadurai, who is looking for his daughter, Sanctia.",
-        "Next head over by the tent close to the oasis and talk to Zoriboh at (F-6/7). You will get a cutscene. He will ask you to go find Sanctia.",
-        "Head to Norg. Go up the stairs and through the Oaken Door on the left and talk to Sohyon (J-8). You will get a cutscene.",
-        "Then talk to Washu, who is right behind Sohyon, and receive Washu's Flask.",
-        "Next head to Korroloka Tunnel to fill your flask with water from four Giant Clams.",
-        "The first Giant Clam can be found at F-10 on Map 1 as you zone into Korroloka Tunnel from Zeruhn Mines. Click on the Giant Clam in this room to partially fill your flask.",
-        "The second Giant Clam can be found at K-6 on Map 3.",
-        "To get there, cross over the bridge at F/G-9, and head west to Tunnel H. This will take you to Map 3.",
-        "Head west to Tunnel G. You will be on Map 2.",
-        "Head west to Tunnel F. You will be back on Map 3.",
-        "Head north, take the first right and head east until you reach the Giant Clam. Fill your flask again.",
-        "The third Giant Clam can be found at G-11 on Map 5.",
-        "Go back the way you came, but this time take Tunnel E. You will be on Map 2.",
-        "Head west to Tunnel D. You will be on Map 5.",
-        "Just follow the tunnel straight west to the Giant Clam. Fill up your flask.",
-        "The final Giant Clam can be found at I-10 on Map 2.",
-        "Head back the way you came onto Map 2.",
-        "Cross south over the bridge a H/I-8.",
-        "The path will veer west, then south until it reaches a T intersection.",
-        "Head east to the Giant Clam. Fill your flask up all the way.",
-        "Your flask will now be full and be changed into the Flask of Clam Water.",
-        "First, in Norg, talk to Sohyon (J-8). He'll give you a Storeroom Key.",
-        "Next, while still in Norg, talk to Gimb (H-9) who is near the Chocobo Renter.",
-        "Then, in Port Bastok talk to Kagetora (F-6) in the Tenshodo Warehouse 2 on the top floor.",
-        "After talking to him, go downstairs and out the door (on your left) and trade 5 Eastern Gems to Patient Wheel (F-5). Regardless of your answer, you will get a cut scene.",
-        "Eastern Gems drop from Stream Sahagin and River Sahagin in Yuhtunga Jungle, and from Pond Sahagin, Spring Sahagin, Riparian Sahagin and Lake Sahagin in Sea Serpent Grotto, or may be bought at the Auction House under Materials -> Goldsmithing.",
-        "Next, in Selbina, talk to the mayor Abelard at (G-9).",
-        "After that, take the Swirling Vortex in Valkurm Dunes in a cave at I-9 to Lufaise Meadows.",
-        "You will get a cutscene when you zone into Lufaise Meadows.",
-        "Finally, go back to Rabao. Talk to Zoriboh for your reward.",
+    out_nrg_true_will = {
+        "Speak with Ryoma in Norg to begin the quest.",
+        "Travel to (I-7) in Yhoator Jungle .",
+        "Once prepared, examine the ??? at (I-7) (northwest of Bloodlet Spring) to spawn 3 Sahagin NMs.",
+        "These mobs are:",
+        "After the Sahagin are defeated, examine the ??? again to receive the Old trick box . You will not get the KI until the mobs fully despawn, including the corpses.",
+        "Return to Ryoma for another cutscene.",
+        "Head to Rabao and speak with Leodarion at (F-7) on the west side of the lake near the windmill.",
+        {
+            text = "Go to Kuftal Tunnel and obtain a Kuftal Coffer Key .",
+            substeps = {
+                "Alternatively, you can purchase one from the Curio Vendor Moogle .",
+            },
+        },
+        "Find and open the Treasure Coffer to obtain the Large trick box .",
+        "Return to Leodarion to complete the quest.",
     },
 
-    out_rab_indomitable_spirit = {
-        "You must have the Serpent Rumors Key Item to flag this quest.",
-        "Purchased from Fennella for 95,000 Fishing Guild Points at Adept (78+) and higher rank.",
-        "Talk to Irmilant to start the quest.",
-        "He requests a Saber Shoot and Opal Silk, which can be obtained via the Inside the Belly quest involving Zaldon.",
-        "Saber Shoot can be obtained by trading Gugrusaurus to Zaldon.",
-        "Gugrusaurus bite on the Ship bound for Mhaura and Ship bound for Selbina during pirate attacks, on the Manaclipper during the routes to and from Purgonorgo Isle that are closest to Purgonorgo Isle, as well as on the Open sea route to Al Zahbi and Open sea route to Mhaura (no special requirements for these ferries).",
-        "Gugrusaurus bite on Meatball and Drill Calamary.",
-        "Drill Calamary can be obtained from the Inside the Belly quest by trading Sea Zombies to Zaldon.",
-        "Occasionally the Pirate's Chart Quest also yields a Drill Calamary.",
-        "Drill Calamary are a common Repeat Login Campaign item for 100 login points each from the Greeter Moogle.",
-        "Gugrusaurus can be obtained from the mog garden Coastal Fishing Net.",
-        "Opal Silk can be obtained by trading Lik to Zaldon.",
-        "Lik can be caught in Leremieu Lagoon in Lufaise Meadows.",
-        "Lik bite on Minnow and Dwarf Pugil.",
-        "Dwarf Pugils can be obtained by trading a Cave Cherax to Zaldon.",
-        "Occasionally the Brigand's Chart Quest or the Pirate's Chart Quest will also yield a Dwarf Pugil.",
-        "They now can also be gotten for 100 monthly login points each from the Greeter Moogle.",
-        "Lik can be obtained from the mog garden Pond Dredger.",
-        "Trade both items to Irmilant.",
-        "Return after the following Conquest update and talk to Irmilant to receive your reward.",
-        "The Serpent Rumors is not needed to receive either Saber Shoot or Opal Silk from Zaldon.",
-        "A Lu Shang's Fishing Rod or an Ebisu Fishing Rod is required to be able to catch Gugrusaurus and Lik. The latter is the reward from completing this quest so if you are doing this you will not have it but a friend can catch the fish for you as they can be traded or sold.",
-        "The Penguin Ring is recommended to be able to more easily weaken the more stubborn Gugrusaurus and Lik. If not using one of the EX baits, it is also recommended to use an Albatross Ring at the same time to allow yourself enough time to land the catch.",
-        "A Penguin Ring can be obtained by successfully completing the Brigand's Chart event. See Brigand's Chart Quest for more information.",
-        "Both charts may be obtained by turning in Bhefhel Marlins to Zaldon, also one of the eligible fish for Inside the Belly.",
-        "Level 78 Fishing is required in order to get the Serpent Rumors key item, so that is the absolute minimum level required to begin this quest; however, fishers lower than level 90 fishing will have a very difficult time reeling in the fish necessary for the quest. Close to level 100 fishing is highly recommended.",
-        "You will break your rod a lot trying to catch these fish, so consider either raising woodworking or bringing a woodworking mule along for repairs. Woodworking skill level of 68+ can repair a Broken Lu Shang's Rod, but you can possibly use up an entire stack of crystals or more per repair. Suggested skill level of 74+ for a better success rate. Please also be aware that you will lose your rod if you are repairing it when the Ferry docks, if a monster attacks you, or if someone casts a spell or song on you during your synth.",
-        "Some have had to turn in over 1000 fish for an item while others have received it after as little as 1 fish. Current estimates as well as tracking here on wiki have put results of both Opal Silk and Saber Shoot at about 1% each.",
-        "Additionally, the Seagull Ring obtained from Moblin Maze Mongers 'Aquatic Depopulation Team' can be substituted for the Penguin Ring. Other possible drops from Aquatic Depopulation Team include Brigand's Chart, Pirate's Chart, and another fishing enchantment ring: the Heron Ring. The multiple ebisu-related drops makes MMM Aquatic Depopulation Team a useful complementary route for catching Lik and Gugrusaurus.",
+    out_kaz_elshimo_list = {
+        "After starting Voidwatch Ops: Border Crossing and receiving the Ashen stratum abyssite , speak to Hildegard in Kazham to begin the Quest.",
+        {
+            text = "Engage in and complete the 3 Tier I Voidwatch battles in the Elshimo region:",
+            substeps = {
+                "Holy Moly - Yuhtunga Jungle - Rift Locations: (F-11), (G-6), (J-7).",
+                "Neith - Temple of Uggalepih - Rift Locations: Map 1: (I-9), (K-6) Map 2: (G-8).",
+                "Ildebrann - Ifrit's Cauldron - Rift Locations: Map 3: (F-9), Map 5: (F-9), (I-6).",
+            },
+        },
+        "Return to Hildegard to complete the Quest.",
+    },
+
+    out_rab_detour_to_zepwell = {
+        "After starting Voidwatch Ops: Border Crossing and receiving the Ashen stratum abyssite , speak to Gushing Spring in Rabao (G-8) to begin the Quest.",
+        {
+            text = "Engage in and complete the 3 Tier I Voidwatch battles in the Zepwell region:",
+            substeps = {
+                "Sabotender Campeador - Western Altepa Desert - Rift Locations: (G-10), (H-5), (L-6).",
+                "Malleator Maurok - Quicksand Caves - Rift Location: Map 3 (G-9)/(F-9).",
+                "Tangaroa - Kuftal Tunnel - Rift Locations: Map 2: (F-8), (J-9) Map 3: (I-8).",
+            },
+        },
+        "Return to Gushing Spring to complete the Quest.",
+    },
+
+    out_nrg_li_telor_variant = {
+        {
+            text = "Talk to Kieran after completing Voidwatch Ops: Border Crossing .",
+            substeps = {
+                "Note: Zilart Mission 14 - Ark Angels must be started before you can receive this cutscene.",
+            },
+        },
+        "Speak to Gilgamesh in Norg for a cutscene.",
+        "Return to Kieran for a cutscene and to receive your Ashen stratum abyssite II (the quest is flagged at this point).",
+        {
+            text = "Engage in and complete the three Tier II Voidwatch battles in the Li'Telor region:",
+            substeps = {
+                "Cath Palug in The Sanctuary of Zi'Tah (E-9), (F-8), (G-10 - Toward the Southeast corner of the quadrant - Survival Guide is very close by)",
+                "Modron in The Boyahda Tree Map 1: (G-5), (K-8) Map 2: (F-7 - Very close to 125 Unity Warp)",
+                "Mimic King in Ro'Maeve (E-7), (I-9), (K-7)",
+            },
+        },
+        "Return to Kieran, which will automatically finish this quest, reward you with Ashen stratum abyssite III , and begin the next quest.",
+    },
+
+    out_nrg_border_crossing = {
+        "Speak to Kieran in Norg (I-8) to receive a cutscene and the Key Item Ashen stratum abyssite .",
+        {
+            text = "Speak with the following NPCs to begin their respective subquests:",
+            substeps = {
+                "Hildegard in Kazham (F-9) to begin VW Op. 054: Elshimo List .",
+                "Gushing Spring in Rabao (G-8) to begin VW Op. 101: Detour to Zepwell .",
+            },
+        },
+        "Complete both subquests and return to Kieran to complete the quest.",
+    },
+
+    out_cap_wandering_souls = {
+        "Trade the Rain Lily to the Cermet Headstone while having Zilart Mission 5 activated (or already completed) to receive a Flagellant's Rope.",
+    },
+
+    out_yut_wrath_of_opo_opos = {
+        "Trade the Garnet to the Cermet Headstone in Yuhtunga Jungle (L-7) at any time during or after Zilart Mission 5 to receive an Opo-opo Necklace .",
+    },
+
+    out_nrg_yomi_okuri = {
+        "Speak to Jaucribaix in Norg (K-8)",
+        "Speak to Washu at (J-8)",
+        "Trade Washu Bastore Sardine , Frost Turnip , Giant Sheep Meat , and Hecteyes Eye to receive the key item Washu's tasty wurst .",
+        {
+            text = "Examine the ??? in Labyrinth of Onzozo (F-8) to spawn the Notorious Monster Ubume .",
+            substeps = {
+                "Easiest way is through Survival Guide will land you at Labyrinth of Onzozo (G-11) , near the zone to Buburimu Peninsula..",
+                "Alternate route is through Buburimu Peninsula .",
+            },
+        },
+        "Examine the ??? after defeating Ubume to receive the key item Yomotsu feather .",
+        "Return to Norg and speak to to Jaucribaix .",
+        "Exit Norg , re-enter, and speak to Jaucribaix to receive the key item Yomotsu Hirasaka .",
+        {
+            text = "Examine the ??? in Valkurm Dunes at (B-7) between 18:00 and 4:00 to spawn the Notorious Monsters Doman and Onryo .",
+            substeps = {
+                "Survival Guide to Gustav Tunnel will land you just outside (B-7)",
+                "Doman is a Fomor , Onryo is a Ghost , both are approximately level 52.",
+            },
+        },
+        "Examine the ??? after defeating Doman and Onryo and their corpses dissappear to receive the key item Faded Yomotsu Hirasaka .",
+        "Speak to Jaucribaix to receive your reward",
+    },
+
+    out_kaz_knife = {
+        "Trade Mhebi Juhbily (I-10) a Sandfish . When asked, tell her you give it to her. Then check the shed behind her for a cutscene.",
+        "Speak to Vah Keshura (H-9).",
+        {
+            text = "Obtain a Tonberry Board .",
+            substeps = {
+                "Tonberry Board 's drop off Tonberry Pursuers in the Temple of Uggalepih , Tonberry Shadowers in Yhoator Jungle , and from Tonberry Trailer in Den of Rancor .",
+            },
+        },
+        {
+            text = "Use a Unity Concord NPC warp to Temple of Uggalepih (lv125), or follow the directions below.",
+            substeps = {
+                "Head to (J-12) Yhoator Jungle to enter the Temple of Uggalepih .",
+                "Once inside, follow the path and go South at (J-7), then North at (H-9), then North once more at (G-7). This will lead you back outside to the Yhoator Jungle .",
+                "Head left and re-enter the Temple at (H-11).",
+            },
+        },
+        "Back inside, head west, then south until you reach (H-10).",
+        "Turn west once more and pass the Granite Door to reach the Tonberry Kitchen.",
+        "Speak to Chef Nonberry , then trade him the Tonberry Board .",
+        "He will give you the ( Key Item ) Nonberry's knife .",
+        "Return to Mhebi Juhbily for your reward.",
     },
 
 }

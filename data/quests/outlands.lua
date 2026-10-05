@@ -1,1098 +1,992 @@
 local M = {}
 
--- ============================================================
--- OUTLANDS QUESTS
---
--- Source:
--- XiQlog / BG-Wiki quest data
---
--- Category:
--- Outlands
---
--- Status is intentionally NOT stored here.
--- Status is provided by the tracker at runtime.
--- ============================================================
+-- Generated from BG-Wiki by tools/build_sandoria_quests.py.
+-- Tracker fields are preserved from the original CatsEyeXI data.
 
-M.zones = {
-
-    -- ========================================================
-    -- KAZHAM
-    -- ========================================================
+M = {
 
     {
-        name = 'Kazham',
-
-        quests = {
-
-            {
-                id = 'out_kaz_firebloom_tree',
-                name = 'The Firebloom Tree',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (H-9)',
-                npc = 'Soun Abralah',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_guardian',
-                name = 'Greetings to the Guardian',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (I-11)',
-                npc = 'Hari Pakhroib',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_question_of_taste',
-                name = 'A Question of Taste',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (J-9)',
-                npc = 'Jakoh Wahcondalo',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_grudging',
-                name = "Everyone's Grudging",
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (J-9)',
-                npc = 'Jakoh Wahcondalo',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_knife',
-                name = 'You Call That a Knife?',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (I-10)',
-                npc = 'Mhebi Juhbily',
-                req = '',
-                prereq = '',
-                reward = '',
-                items = 'Sandfish, Tonberry Board',
-            },
-
-            {
-                id = 'out_kaz_missionary_man',
-                name = 'Missionary Man',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (G-9)',
-                npc = 'Rauteinot',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_gullibles_travels',
-                name = "Gullible's Travels",
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (I-7)',
-                npc = 'Magriffon',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_even_more_gullibles',
-                name = "Even More Gullible's Travels",
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (I-7)',
-                npc = 'Magriffon',
-                req = '',
-                prereq = "Gullible's Travels",
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_personal_hygiene',
-                name = 'Personal Hygiene',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (I-8)',
-                npc = 'Gatih Mijurabi',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_opo_opo_and_i',
-                name = 'The Opo-opo and I',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (G-7)',
-                npc = 'Lulupp',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_trial_by_fire',
-                name = 'Trial by Fire',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (J-9)',
-                npc = 'Ronta-Onta',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_cloak_and_dagger',
-                name = 'Cloak and Dagger',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (J-9)',
-                npc = 'Jakoh Wahcondalo',
-                req = 'Dagger skill 230+',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_discerning_eye',
-                name = 'A Discerning Eye (Kazham)',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (H-7)',
-                npc = 'Swift',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_trial_size_fire',
-                name = 'Trial-Size Trial by Fire',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (J-9)',
-                npc = 'Dodmos',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_kaz_elshimo_list',
-                name = 'VW Op. 054: Elshimo List',
-                area = 'outlands',
-                zone = 'Kazham',
-                loc = 'Kazham (F-8)',
-                npc = 'Hildegard',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = 'Voidwatch Ops: Border Crossing',
-                reward = '',
-            },
-        },
+        id = "out_nrg_pirate_years",
+        name = "20 in Pirate Years",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-8)",
+        npc = "Ryoma",
+        description = "Norg has begun investigating an ancient scroll that was rediscovered as of late. Speak with Tenshodo member Kagetora in Bastok for more details...",
+        fame = "1",
+        level = "Level 40+ Ninja",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "Ayame and Kaede",
+        next_quest = "I'll Take the Big Box",
+        reward = "Anju / Zushio",
+        tracker_area = "outlands",
+        tracker_id = 143,
     },
-
-    -- ========================================================
-    -- NORG
-    -- ========================================================
 
     {
-        name = 'Norg',
-
-        quests = {
-
-            {
-                id = 'out_nrg_forge_your_destiny',
-                name = 'Forge Your Destiny',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (K-8)',
-                npc = 'Jaucribaix',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_black_market',
-                name = 'Black Market',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (I-8)',
-                npc = 'Muzaffar',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_mama_mia',
-                name = 'Mama Mia',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (G-6)',
-                npc = 'Mamaulabion',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_stop_your_whining',
-                name = 'Stop Your Whining',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (J-8)',
-                npc = 'Washu',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_trial_by_water',
-                name = 'Trial by Water',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-9)',
-                npc = 'Edal-Tahdal',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_everyones_grudge',
-                name = "Everyone's Grudge",
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (I-8)',
-                npc = 'Magephaud',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_damp_scroll',
-                name = 'Secret of the Damp Scroll',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (J-8)',
-                npc = 'Shivivi',
-                req = '',
-                prereq = '',
-                reward = '',
-                items = 'Damp Scroll',
-            },
-
-            {
-                id = 'out_nrg_sahagins_stash',
-                name = "The Sahagin's Stash",
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-7)',
-                npc = 'Laisrean',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_not_your_vault',
-                name = "It's Not Your Vault",
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Keal',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_shining_subligar',
-                name = 'Like a Shining Subligar',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (I-7)',
-                npc = 'Heiji',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_shining_leggings',
-                name = 'Like Shining Leggings',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (I-7)',
-                npc = 'Heizo',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_sacred_katana',
-                name = 'The Sacred Katana',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (K-8)',
-                npc = 'Jaucribaix',
-                req = 'SAM AF1',
-                prereq = '',
-                reward = '',
-                items = 'Sack of Fish Bait',
-            },
-
-            {
-                id = 'out_nrg_yomi_okuri',
-                name = 'Yomi Okuri',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (K-8)',
-                npc = 'Jaucribaix',
-                req = 'SAM AF2',
-                prereq = 'The Sacred Katana',
-                reward = '',
-                items = 'Bastore Sardine, Frost Turnip, Hecteyes Eye, Giant Sheep Meat',
-            },
-
-            {
-                id = 'out_nrg_thief_in_norg',
-                name = 'A Thief in Norg!?',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (K-8)',
-                npc = 'Jaucribaix',
-                req = 'SAM AF3',
-                prereq = 'Yomi Okuri',
-                reward = '',
-                items = 'Gold Thread',
-            },
-
-            {
-                id = 'out_nrg_pirate_years',
-                name = '20 in Pirate Years',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Ryoma',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_big_box',
-                name = "I'll Take the Big Box",
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Ryoma',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_true_will',
-                name = 'True Will',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Ryoma',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_potential_within',
-                name = 'The Potential Within',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (K-8)',
-                npc = 'Jaucribaix',
-                req = 'Great Katana skill 250+',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_bugi_soden',
-                name = 'Bugi Soden',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Ryoma',
-                req = 'Katana skill 250+',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_trial_size_water',
-                name = 'Trial-Size Trial by Water',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-9)',
-                npc = 'Verctissa',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_undying_pledge',
-                name = 'An Undying Pledge',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-9)',
-                npc = 'Stray Cloud',
-                req = '',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_border_crossing',
-                name = 'Voidwatch Ops: Border Crossing',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (I-8)',
-                npc = 'Kieran',
-                req = 'NOT IMPLEMENTED on this server, Lv.75+',
-                prereq = '',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_li_telor_variant',
-                name = "VW Op. 115: Li'Telor Variant",
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg',
-                npc = 'Kieran',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = 'Voidwatch Ops: Border Crossing',
-                reward = '',
-            },
-
-            {
-                id = 'out_nrg_skyward_ho',
-                name = 'Skyward Ho, Voidwatcher!',
-                area = 'outlands',
-                zone = 'Norg',
-                loc = 'Norg (H-8)',
-                npc = 'Kieran',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = "VW Op. 115: Li'Telor Variant",
-                reward = '',
-            },
-        },
+        id = "out_kaz_discerning_eye",
+        name = "A Discerning Eye (Kazham)",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (H-7)",
+        npc = "Swift",
+        description = "You have been asked to return a dropped item to its rightful owner. The passenger should be on the next airship flight.",
+        repeatable = "Yes",
+        title = "Discerning Individual Very Discerning Individual Extremely Discerning Individual",
+        pack = "Rise of the Zilart",
+        items = "Dropped item",
+        reward = "500 gil",
+        server_note = "NOT IMPLEMENTED on this server",
     },
-
-    -- ========================================================
-    -- RABAO
-    -- ========================================================
 
     {
-        name = 'Rabao',
-
-        quests = {
-
-            {
-                id = 'out_rab_chasing_dreams',
-                name = 'Chasing Dreams',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (F-6)',
-                npc = 'Zoriboh',
-                req = '',
-                prereq = '',
-                reward = 'Venerer Ring',
-                items = '5x Eastern Gem',
-            },
-
-            {
-                id = 'out_rab_antidote',
-                name = "Don't Forget the Antidote",
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (F-9)',
-                npc = 'Edigey',
-                req = '',
-                prereq = '',
-                reward = 'Dotanuki',
-            },
-
-            {
-                id = 'out_rab_indomitable_spirit',
-                name = 'Indomitable Spirit',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-7)',
-                npc = 'Irmilant',
-                req = '',
-                prereq = '',
-                reward = 'Ebisu Fishing Rod',
-            },
-
-            {
-                id = 'out_rab_immortal_lu_shang',
-                name = 'The Immortal Lu Shang',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-7)',
-                npc = 'Irmilant',
-                req = '',
-                prereq = '',
-                reward = "Lu Shang's Fishing Rod",
-            },
-
-            {
-                id = 'out_rab_kuftal_tour',
-                name = 'The Kuftal Tour',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (F-7)',
-                npc = 'Datta',
-                req = '',
-                prereq = '',
-                reward = '8,000 gil, Rabao Fame 4',
-            },
-
-            {
-                id = 'out_rab_missing_piece',
-                name = 'The Missing Piece',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (H-7)',
-                npc = 'Alfesar',
-                req = '',
-                prereq = '',
-                reward = 'Teleport-Altep Scroll',
-            },
-
-            {
-                id = 'out_rab_search_for_goldmane',
-                name = 'The Search for Goldmane',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (F-6)',
-                npc = 'Zoriboh',
-                req = 'NOT IMPLEMENTED on this server, CoP quest',
-                prereq = '',
-                reward = 'Deluxe Carbine, Rabao Fame 5',
-            },
-
-            {
-                id = 'out_rab_trial_by_wind',
-                name = 'Trial by Wind',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-9)',
-                npc = 'Agado-Pugado',
-                req = '',
-                prereq = '',
-                reward = 'Rabao Fame 2',
-            },
-
-            {
-                id = 'out_rab_trial_size_wind',
-                name = 'Trial-Size Trial by Wind',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-9)',
-                npc = 'Rahi Fohlatti',
-                req = '',
-                prereq = '',
-                reward = 'Garuda',
-            },
-
-            {
-                id = 'out_rab_fish_favors_bold',
-                name = 'Fish Favors the Bold',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-7)',
-                npc = 'Irmilant',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = 'Indomitable Spirit',
-                reward = 'Ebisu F. Rod +1',
-                items = '100 Fish Caught',
-            },
-
-            {
-                id = 'out_rab_thanks_for_fish',
-                name = 'Thanks for All the Fish',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (F-8)',
-                npc = 'Jourdenaux',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = '',
-                reward = "Lu Shang's Fishing Rod +1",
-                items = '60 Fish Types',
-            },
-
-            {
-                id = 'out_rab_detour_to_zepwell',
-                name = 'VW Op. 101: Detour to Zepwell',
-                area = 'outlands',
-                zone = 'Rabao',
-                loc = 'Rabao (G-8)',
-                npc = 'Gushing Spring',
-                req = 'NOT IMPLEMENTED on this server',
-                prereq = 'Voidwatch Ops: Border Crossing',
-                reward = '',
-            },
-        },
+        id = "out_kaz_question_of_taste",
+        name = "A Question of Taste",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (J-9)",
+        npc = "Jakoh Wahcondalo",
+        description = "It all started with a letter sent to Kazham's chieftainness by the young Windurstian artist, Angelica. Now, no one can stop the budding painter.",
+        fame = "6",
+        repeatable = "Yes",
+        pack = "Rise of the Zilart",
+        previous_quest = "A Pose by Any Other Name",
+        next_quest = "Everyone's Grudging",
+        items = "Angelica's letter / Letter to Angelica / \"Final Fantasy\" / Ripped \"Final Fantasy\" painting",
+        reward = "3,000 Gil",
+        tracker_area = "outlands",
+        tracker_id = 3,
     },
-
-    -- ========================================================
-    -- EASTERN ALTEPA DESERT
-    -- ========================================================
 
     {
-        name = 'Eastern Altepa Desert',
-
-        quests = {
-
-            {
-                id = 'out_ead_open_sesame',
-                name = 'Open Sesame',
-                area = 'outlands',
-                zone = 'Eastern Altepa Desert',
-                loc = 'Eastern Altepa Desert (G-7)',
-                npc = 'Lokpix',
-                req = '',
-                prereq = '',
-                reward = 'Loadstone (Key Item)',
-            },
-        },
+        id = "out_nrg_thief_in_norg",
+        name = "A Thief in Norg!?",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (L-8)",
+        npc = "Gilgamesh",
+        description = "At the close of the Great War, Gilgamesh's father trapped a terrible spirit within a helm. That helm has been stolen, and it is your job to hunt down the thief and get it back.",
+        level = "Level 50+ Samurai",
+        repeatable = "No",
+        title = "Paragon of Samurai Excellence",
+        pack = "Rise of the Zilart",
+        previous_quest = "Yomi Okuri",
+        items = "Gold Thread",
+        reward = "Myochin Kabuto",
+        tracker_area = "outlands",
+        tracker_id = 142,
     },
-
-    -- ========================================================
-    -- YUHTUNGA JUNGLE
-    -- ========================================================
 
     {
-        name = 'Yuhtunga Jungle',
-
-        quests = {
-
-            {
-                id = 'out_yut_wrath_of_opo_opos',
-                name = 'Wrath of the Opo-opos',
-                area = 'outlands',
-                zone = 'Yuhtunga Jungle',
-                loc = 'Yuhtunga Jungle (L-7)',
-                npc = 'Cermet Headstone',
-                req = 'Zilart Mission 5',
-                prereq = '',
-                reward = 'Opo-opo Necklace',
-                items = 'Garnet',
-            },
-        },
+        id = "out_nrg_undying_pledge",
+        name = "An Undying Pledge",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Stray Cloud",
+        description = "Find Stray Cloud's friend Gubokka in the Sea Serpent Grotto.",
+        fame = "4",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Caliginous Blade",
+        reward = "Light Buckler",
+        tracker_area = "outlands",
+        tracker_id = 149,
     },
-
-    -- ========================================================
-    -- CAPE TERIGGAN
-    -- ========================================================
 
     {
-        name = 'Cape Teriggan',
-
-        quests = {
-
-            {
-                id = 'out_cap_wandering_souls',
-                name = 'Wandering Souls',
-                area = 'outlands',
-                zone = 'Cape Teriggan',
-                loc = 'Cape Teriggan (H-5)',
-                npc = 'Cermet Headstone',
-                req = 'Zilart Mission 5',
-                prereq = '',
-                reward = "Flagellant's Rope",
-                items = 'Rain Lily',
-            },
-        },
+        id = "out_nrg_black_market",
+        name = "Black Market",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Muzaffar",
+        description = "Bring sets of either four northern furs, four pieces of eastern pottery, or four southern mummies for a hefty reward.",
+        fame = "1",
+        repeatable = "Yes",
+        title = "Black Marketeer",
+        pack = "Rise of the Zilart",
+        items = "Eastern Pottery x4 OR / Northern Fur x4 OR / Southern Mummy x4",
+        reward = "1,500~3,000 Gil",
+        tracker_area = "outlands",
+        tracker_id = 130,
     },
-
-    -- ========================================================
-    -- SANCTUARY OF ZI'TAH
-    -- ========================================================
 
     {
-        name = "Sanctuary of Zi'Tah",
-
-        quests = {
-
-            {
-                id = 'out_zit_soul_searching',
-                name = 'Soul Searching',
-                area = 'outlands',
-                zone = "Sanctuary of Zi'Tah",
-                loc = "Sanctuary of Zi'Tah (I-7)",
-                npc = 'Cermet Headstone',
-                req = 'Zilart Mission 7',
-                prereq = '',
-                reward = 'Bat Earring',
-            },
-        },
+        id = "out_nrg_bugi_soden",
+        name = "Bugi Soden",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-8)",
+        npc = "Ryoma",
+        description = "Wield the katana given to you by Ryoma until it has been drained of its power. Only then will you be ready to inherit the knowledge of the ancient ninja masters.",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Katana skill 250+, Level 71",
+        reward = "Blade: Ku weapon skill",
+        tracker_area = "outlands",
+        tracker_id = 147,
     },
-
-    -- ========================================================
-    -- SHRINE OF RU'AVITAU
-    -- ========================================================
 
     {
-        name = "Shrine of Ru'Avitau",
-
-        quests = {
-
-            {
-                id = 'out_sra_divine_might',
-                name = 'Divine Might',
-                area = 'outlands',
-                zone = "Shrine of Ru'Avitau",
-                loc = "Shrine of Ru'Avitau (G/H-11)",
-                npc = "Yve'noile",
-                req = 'Zilart Mission 13',
-                prereq = 'Zilart Mission 13',
-                reward = "Choice of earring (Abyssal/Beastly/Bushinomimi/Knight's/Suppanomimi)",
-                items = 'Illuminink, Parchment',
-            },
-        },
+        id = "out_rab_chasing_dreams",
+        name = "Chasing Dreams",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (F-6)",
+        npc = "Zoriboh",
+        description = "A young cargo hauler named Sanctia has suddenly left Rabao, and Zoriboh wants you to find her. According to Zoriboh, she has probably headed for Norg to board a ship bound for the Tavnazian Marquisate...",
+        repeatable = "No",
+        pack = "Chains of Promathia",
+        next_quest = "The Search for Goldmane",
+        items = "Promathia Mission 2-1 / Eastern Gem x5 / Washu's flask / Flask of clam water / Storeroom key",
+        reward = "Venerer Ring / 4,000 Gil",
+        tracker_area = "outlands",
+        tracker_id = 199,
     },
+
+    {
+        id = "out_kaz_cloak_and_dagger",
+        name = "Cloak and Dagger",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (J-9)",
+        npc = "Jakoh Wahcondalo",
+        description = "The Chieftainess has come up with a deadly new dagger technique, but needs you to help her devise a way of dodging it. However, you must first complete your training.",
+        repeatable = "No",
+        items = "Dagger skill 230+, Level 71",
+        reward = "Evisceration weapon skill",
+        tracker_area = "outlands",
+        tracker_id = 13,
+    },
+
+    {
+        id = "out_sra_divine_might",
+        name = "Divine Might",
+        area = "outlands",
+        zone = "The Shrine of Ru'Avitau",
+        loc = "The Shrine of Ru'Avitau (N/A)",
+        npc = "Yve'noile",
+        description = "Use the Ark Pentasphere at the La'Loff Amphitheater to confront and defeat all five Crystal Warriors simultaneously.",
+        repeatable = "Yes",
+        title = "Pentacide Perpetrator",
+        pack = "Rise of the Zilart",
+        previous_quest = "Zilart Mission 13",
+        next_quest = "Zilart Mission 15",
+        items = "Zilart Mission 13 complete / Illuminink (Also needed to do the quest a 2nd time) / Parchment (Also needed to do the quest a 2nd time) / Ark Pentasphere",
+        reward = "Shard of Apathy / Shard of Arrogance / Shard of Cowardice / Shard of Envy / Shard of Rage / One of the following: Abyssal Earring Beastly Earring Bushinomimi Knight's Earring Suppanomimi",
+        tracker_area = "outlands",
+        tracker_id = 163,
+    },
+
+    {
+        id = "out_rab_antidote",
+        name = "Don't Forget the Antidote",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (F-9)",
+        npc = "Edigey",
+        description = "Edigey wants you to bring him some sand scorpion poison so he can make an antidote, an essential item for the desert caravans.",
+        fame = "4",
+        repeatable = "Yes",
+        title = "Desert Hunter",
+        pack = "Rise of the Zilart",
+        items = "Desert Venom",
+        reward = "Dotanuki / 1,800 gil",
+        tracker_area = "outlands",
+        tracker_id = 192,
+    },
+
+    {
+        id = "out_kaz_even_more_gullibles",
+        name = "Even More Gullible's Travels",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (N/A)",
+        npc = "Magriffon",
+        description = "Magriffon has spent all of his (your?) money to save a maiden in distress. Now he needs someone to save him (again) from getting kicked out of the bed & breakfast before he has completed his \"top-secret\" mission.",
+        fame = "7",
+        repeatable = "No",
+        title = "Even More Gullible's Travels",
+        pack = "Rise of the Zilart",
+        previous_quest = "Gullible's Travels",
+        next_quest = "The Opo-opo and I",
+        items = "15,000 - 35,000 gil / Treasure map ( Key Item )",
+        reward = "Rafflesia Nectar x3",
+        tracker_area = "outlands",
+        tracker_id = 9,
+    },
+
+    {
+        id = "out_nrg_everyones_grudge",
+        name = "Everyone's Grudge",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Magephaud",
+        description = "Bring back three gold beastcoins if you want to learn how to rid yourself of the Tonberries' rancor.",
+        fame = "2",
+        repeatable = "Yes",
+        title = "Honorary Doctorate, Majoring in Tonberries",
+        pack = "Rise of the Zilart",
+        items = "Gold Beastcoin x3 / Gil (varies with hate)",
+        reward = "Tonberry key (Zilart) , access to reset Tonberry Hate",
+        tracker_area = "outlands",
+        tracker_id = 134,
+    },
+
+    {
+        id = "out_kaz_grudging",
+        name = "Everyone's Grudging",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (J-9)",
+        npc = "Jakoh Wahcondalo",
+        description = "You have been cursed by the Tonberries' rancor flames, and Kazham's chieftainness has ordered you out of the village.",
+        repeatable = "No",
+        title = "Excommunicate of Kazham",
+        pack = "Rise of the Zilart",
+        previous_quest = "A Question of Taste",
+        items = "Unlit Lantern / Paintbrush of souls / Rancor Flame",
+        reward = "11,000 gil",
+        tracker_area = "outlands",
+        tracker_id = 4,
+    },
+
+    {
+        id = "out_rab_fish_favors_bold",
+        name = "Fish Favors the Bold",
+        area = "outlands",
+        zone = "Rabao -",
+        loc = "Rabao - (G-7)",
+        npc = "Irmilant",
+        description = "The exalted fisherman has posed to you a challenge. Collect legendary fish from the four corners of Vana'diel.",
+        repeatable = "No",
+        title = "Exalted Fisherman",
+        pack = "Rise of the Zilart",
+        previous_quest = "Indomitable Spirit",
+        items = "Must have fished up 100 different fish / Ebisu Fishing Rod",
+        reward = "Ebisu F. Rod +1",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_nrg_forge_your_destiny",
+        name = "Forge Your Destiny",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (K-8)",
+        npc = "Jaucribaix",
+        description = "A lump of bomb steel and a sacred branch are required to make a new katana. You will have to ask Jaucribaix's pupils to find out where you can get these items.",
+        level = "Level 30+ any job",
+        repeatable = "No",
+        title = "Bushido Blade",
+        pack = "Rise of the Zilart",
+        next_quest = "The Sacred Katana",
+        items = "Bomb Steel (provided) / Sacred Branch (provided) / Hatchet",
+        reward = "Mumeito / Ability to become a Samurai .",
+        tracker_area = "outlands",
+        tracker_id = 129,
+    },
+
+    {
+        id = "out_kaz_guardian",
+        name = "Greetings to the Guardian",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (N/A)",
+        npc = "Hari Pakhroib",
+        description = "Take your offering to the guardian of Kazham to the altar on the crater of Mount Yuhtunga.",
+        fame = "7",
+        repeatable = "Yes",
+        title = "Kazham Caller",
+        pack = "Rise of the Zilart",
+        items = "First Completion: Wild Pamamas / Subsequent Completions: Wild Pamamas / -or- / Wild Melon",
+        reward = "5,000 gil",
+        tracker_area = "outlands",
+        tracker_id = 2,
+    },
+
+    {
+        id = "out_kaz_gullibles_travels",
+        name = "Gullible's Travels",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (N/A)",
+        npc = "Magriffon",
+        description = "Magriffon has given all his worldly possessions to save a pack of poor Opo-opos from starvation. Now he needs someone to save him from getting kicked out of the bed & breakfast before he has completed his \"top-secret\" mission.",
+        fame = "6",
+        repeatable = "No",
+        title = "Gullible's Travels",
+        pack = "Rise of the Zilart",
+        next_quest = "Even More Gullible's Travels",
+        items = "10,000-30,000 gil",
+        reward = "10000-30000 gil",
+        tracker_area = "outlands",
+        tracker_id = 8,
+    },
+
+    {
+        id = "out_nrg_big_box",
+        name = "I'll Take the Big Box",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-8)",
+        npc = "Ryoma",
+        description = "The trick box you brought back to Norg has been identified as a fake. Your assistance is required in finding the real box. Start your search by pressing Ensetsu in Bastok for more information.",
+        fame = "1",
+        level = "Level 50+ Ninja",
+        repeatable = "Yes",
+        pack = "Rise of the Zilart",
+        previous_quest = "20 in Pirate Years",
+        next_quest = "True Will and Borghertz's Lurking Hands",
+        items = "Oak Pole",
+        reward = "Ninja Hakama",
+        tracker_area = "outlands",
+        tracker_id = 144,
+    },
+
+    {
+        id = "out_rab_indomitable_spirit",
+        name = "Indomitable Spirit",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (G-7)",
+        npc = "Irmilant",
+        description = "Irmilant has asked you to bring the two base materials required to craft a legendary fishing rod. These materials seem to have found their way into the bellies of sea creatures that still elude the finest fishermen.",
+        repeatable = "No",
+        title = "Indomitable Fisher",
+        pack = "Rise of the Zilart",
+        next_quest = "Fish Favors the Bold",
+        items = "Serpent Rumors , Opal Silk , and Saber Shoot",
+        reward = "Ebisu Fishing Rod",
+        tracker_area = "outlands",
+        tracker_id = 201,
+    },
+
+    {
+        id = "out_nrg_not_your_vault",
+        name = "It's Not Your Vault",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Keal",
+        description = "Bring back a sealed iron box from the Sahagin-infested Norg vault.",
+        fame = "3",
+        level = "Level 5",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Sealed iron box",
+        reward = "Tonko: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 137,
+    },
+
+    {
+        id = "out_nrg_shining_leggings",
+        name = "Like Shining Leggings",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-7)",
+        npc = "Heizo",
+        description = "Ten pairs of rusty leggings are needed for the training of young ninjas. Heizo will accept them one at a time.",
+        fame = "3",
+        repeatable = "No",
+        title = "Looks Good in Leggings",
+        pack = "Rise of the Zilart",
+        items = "10 Rusty Leggings",
+        reward = "Dokumori: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 139,
+    },
+
+    {
+        id = "out_nrg_shining_subligar",
+        name = "Like a Shining Subligar",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (I-7)",
+        npc = "Heiji",
+        description = "Ten rusty subligaria are needed for the training of young ninjas. Heiji will accept them one at a time.",
+        fame = "3",
+        repeatable = "No",
+        title = "Looks Sublime in a Subligar",
+        pack = "Rise of the Zilart",
+        items = "10 Rusty Subligar",
+        reward = "Kurayami: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 138,
+    },
+
+    {
+        id = "out_nrg_mama_mia",
+        name = "Mama Mia",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Mamaulabion",
+        description = "Mamaulabion would like you to bring him any \"thuper-dee-duper, overflowing with thpethial power itemth\" you happen to come across in your travels. However, he was not able to provide you with any details on their whereabouts.",
+        fame = "4",
+        repeatable = "Yes",
+        pack = "Rise of the Zilart",
+        reward = "Evoker's Ring",
+        tracker_area = "outlands",
+        tracker_id = 131,
+    },
+
+    {
+        id = "out_kaz_missionary_man",
+        name = "Missionary Man",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (N/A)",
+        npc = "Rauteinot",
+        description = "First, find a slab of Elshimo marble in the Yuhtunga Jungle to help the young missionary realize his vision.",
+        fame = "3",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Elshimo Marble / Rauteinot's parcel / Sublime statue of the Goddess",
+        reward = "Teleport-Yhoat (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 7,
+    },
+
+    {
+        id = "out_ead_open_sesame",
+        name = "Open Sesame",
+        area = "outlands",
+        zone = "Eastern Altepa Desert",
+        loc = "Eastern Altepa Desert (N/A)",
+        npc = "Lokpix",
+        description = "There's supposedly a way to open that troublesome door in the Quicksand Caves by yourself. If you wish to know the secret, bring back a tremorstone and a meteorite. Should you lack a meteroite, either a soil gem or twelve soil geodes will suffice.",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Tremorstone and one of the following: 1x Meteorite or 1x Soil Gem or 12x Soil Geode",
+        reward = "Loadstone",
+        tracker_area = "outlands",
+        tracker_id = 165,
+    },
+
+    {
+        id = "out_kaz_personal_hygiene",
+        name = "Personal Hygiene",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (I-8)",
+        npc = "Gatih Mijurabi",
+        description = "The Mithra of Kazham are having a hard time holding in their lunches, thanks to the hideous odor you obtained after getting too close to the blue Rafflesia pollen. The only way to get clean is by taking a long dip in a hot spring located deep beneath the sea.",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "Even More Gullible's Travels",
+        items = "The scent from Even More Gullible's Travels .",
+        reward = "Mithran Stone",
+        tracker_area = "outlands",
+        tracker_id = 10,
+    },
+
+    {
+        id = "out_nrg_damp_scroll",
+        name = "Secret of the Damp Scroll",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (J-8)",
+        npc = "Shivivi",
+        description = "Take the damp scroll you have to Horlais Peak and dip it into the hot springs there. Only then will you be able to read it.",
+        fame = "3",
+        level = "Level 10",
+        repeatable = "No",
+        title = "Cracker of the Secret Code",
+        pack = "Rise of the Zilart",
+        items = "Damp Scroll",
+        reward = "Jubaku: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 135,
+    },
+
+    {
+        id = "out_nrg_skyward_ho",
+        name = "Skyward Ho, Voidwatcher!",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Kieran",
+        description = "Planar rifts have been reported in Ru'Aun Gardens, Ve'Lugannon Palace, and the Shrine of Ru'Avitau. Engage the Voidwalkers at each location and obliterate them!",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "VW Op. 115: Li'Telor Variant",
+        reward = "None",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_zit_soul_searching",
+        name = "Soul Searching",
+        area = "outlands",
+        zone = "The Sanctuary of Zi'Tah",
+        loc = "The Sanctuary of Zi'Tah (I-7)",
+        npc = "Cermet Headstone",
+        description = "Dispel the troubled souls of those who perished while on their pilgrimages.",
+        fame = "Outlands Fame Level: None",
+        repeatable = "No",
+        title = "Guider of Souls to the Sanctuary",
+        pack = "Rise of the Zilart",
+        items = "Zilart Mission 7 - The Chamber of Oracles / Key Item : Prismatic fragment",
+        reward = "Bat Earring",
+        tracker_area = "outlands",
+        tracker_id = 162,
+    },
+
+    {
+        id = "out_nrg_stop_your_whining",
+        name = "Stop Your Whining",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (J-8)",
+        npc = "Washu",
+        description = "Fill up an empty barrel with Opo-opo brew found fermenting in trees in Yhoator Jungle , and bring it back to Norg ASAP.",
+        fame = "4",
+        level = "Level 10",
+        repeatable = "No",
+        title = "Apprentice Sommelier",
+        pack = "Rise of the Zilart",
+        items = "Empty barrel / Barrel of Opo-Opo brew",
+        reward = "Hojo: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 132,
+    },
+
+    {
+        id = "out_rab_thanks_for_fish",
+        name = "Thanks for All the Fish",
+        area = "outlands",
+        zone = "Rabao -",
+        loc = "Rabao - (F-8)",
+        npc = "Jourdenaux",
+        description = "Lu Shang's fishing rod has a hidden power deep inside, which Jordenaux has offered to draw forth if he deems you worthy--by collecting 60 types of fish and fulfilling all Records of Eminence objectives in the \"Fishing (Tenacity)\" category.",
+        repeatable = "No",
+        title = "Fish Whisperer",
+        pack = "Rise of the Zilart",
+        items = "Lu Shang's Fishing Rod",
+        reward = "Lu Shang's Fishing Rod +1",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_kaz_firebloom_tree",
+        name = "The Firebloom Tree",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (H-9)",
+        npc = "Soun Abralah",
+        description = "Journey to the Yuhtunga Jungle and retrieve a piece of firebloom wood from the most fire-resistant side of the Firebloom Tree. To check the most fire-resistant side, you must take a vine from each side of the tree to Ifrit's Cauldron for testing.",
+        fame = "6",
+        repeatable = "Yes",
+        pack = "Rise of the Zilart",
+        items = "Northern vine / Eastern vine / Southern vine / Western vine / Firebloom Tree wood",
+        reward = "5,000 Gil",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_rab_immortal_lu_shang",
+        name = "The Immortal Lu Shang",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (G-7)",
+        npc = "Irmilant",
+        description = "Irmilant has said he will repair your broken Lu Shang's fishing rod. Along with the broken fishing rod, you must bring him a piece of ancient lumber and two light crystals.",
+        repeatable = "Yes",
+        title = "The Immortal Fisher, Lu Shang",
+        pack = "Rise of the Zilart",
+        items = "Broken Lu Shang's Rod / Piece of Ancient Lumber / Light Crystal x2",
+        reward = "Repaired Lu Shang's Fishing Rod",
+        tracker_area = "outlands",
+        tracker_id = 196,
+    },
+
+    {
+        id = "out_rab_kuftal_tour",
+        name = "The Kuftal Tour",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (F-7)",
+        npc = "Datta",
+        description = "You have been asked to participate in a tour planned by Datta. Travel to the cliff inside the entrance to the Kuftal Tunnel with a party of two or more people of level forty or less, then meet with Datta's partner, Hawk Nose.",
+        level = "Level 40 or lower",
+        repeatable = "No",
+        title = "Kuftal Tourist",
+        pack = "Rise of the Zilart",
+        items = "Any job Level 40 or lower / One other player",
+        reward = "8,000 gil",
+        tracker_area = "outlands",
+        tracker_id = 195,
+    },
+
+    {
+        id = "out_rab_missing_piece",
+        name = "The Missing Piece",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (H-7)",
+        npc = "Alfesar",
+        description = "The friar Alfesar has asked you to find the remaining part of a stone tablet that was found in the Quicksand Caves that lie beneath the Altepa Desert.",
+        fame = "4",
+        repeatable = "No",
+        title = "Acquirer of Ancient Arcanum",
+        pack = "Rise of the Zilart",
+        items = "Ancient tablet fragment",
+        reward = "Scroll of Teleport-Altep",
+        tracker_area = "outlands",
+        tracker_id = 193,
+    },
+
+    {
+        id = "out_kaz_opo_opo_and_i",
+        name = "The Opo-opo and I",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (G-7)",
+        npc = "Lulupp",
+        description = "The Opo-opo in Kazham love your new \"fragrance.\" Bring them what they want--in the correct order-- and they will make you their king!",
+        repeatable = "No",
+        title = "King of the Opo-opos",
+        pack = "Rise of the Zilart",
+        previous_quest = "Even More Gullible's Travels",
+        next_quest = "Personal Hygiene",
+        items = "Broken Mithran Fishing Rod / Workbench / Ten of Coins / Sands of Silence / Wandering Bulb / Giant Fish Bones / Blackened Toad / Wyvern Skull / Ancient Salt / Lucky Egg",
+        reward = "Opo-opo Crown / 3x Pamamas",
+        tracker_area = "outlands",
+        tracker_id = 11,
+    },
+
+    {
+        id = "out_nrg_potential_within",
+        name = "The Potential Within",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (K-8)",
+        npc = "Jaucribaix",
+        description = "Wield the katana given to you by Jaucribaix to find your true potential. When the blade has lost its power, then you will know you have been accepted.",
+        repeatable = "No",
+        items = "Great Katana skill 250+, Level 71",
+        reward = "Tachi: Kasha weapon skill",
+        tracker_area = "outlands",
+        tracker_id = 146,
+    },
+
+    {
+        id = "out_nrg_sacred_katana",
+        name = "The Sacred Katana",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (K-8)",
+        npc = "Jaucribaix",
+        description = "Your mumeito and a handful of crystal scales are needed to forge a katana that will be used in a Norg ritual.",
+        level = "Level 40+ Samurai",
+        repeatable = "Yes, after Memory reset",
+        pack = "Rise of the Zilart",
+        previous_quest = "Forge Your Destiny",
+        next_quest = "Yomi Okuri",
+        items = "Sack of Fish Bait / Mumeito",
+        reward = "Magoroku",
+        tracker_area = "outlands",
+        tracker_id = 140,
+    },
+
+    {
+        id = "out_nrg_sahagins_stash",
+        name = "The Sahagin's Stash",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-7)",
+        npc = "Laisrean",
+        description = "Bring back something from the Sahagins' storage area in the Sea Serpent Grotto . Anything will do.",
+        fame = "4",
+        repeatable = "No",
+        title = "Treasure-House Ransacker",
+        pack = "Rise of the Zilart",
+        items = "Silver Beastcoin / Sea serpent statue",
+        reward = "Utsusemi: Ichi (Scroll)",
+        tracker_area = "outlands",
+        tracker_id = 136,
+    },
+
+    {
+        id = "out_rab_search_for_goldmane",
+        name = "The Search for Goldmane",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (F-6)",
+        npc = "Zoriboh",
+        description = "How is little Sanctia doing? Zoriboh wants you to take her a present from her father and see that she is keeping out of trouble.",
+        repeatable = "No",
+        title = "Rookie Hero Instructor",
+        pack = "Chains of Promathia",
+        previous_quest = "Chasing Dreams",
+        items = "Promathia Mission 2-5 / Copper Key",
+        reward = "Deluxe Carbine / 3,000 gil",
+        server_note = "NOT IMPLEMENTED on this server, CoP quest",
+    },
+
+    {
+        id = "out_kaz_trial_by_fire",
+        name = "Trial by Fire",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (J-9)",
+        npc = "Ronta-Onta",
+        description = "Ring the tuning fork of fire upon the protocrystal in Ifrit's Cauldron . A path will open to the trial that awaits.",
+        fame = "6",
+        repeatable = "Yes",
+        title = "Heir of the Great Fire",
+        pack = "Rise of the Zilart",
+        next_quest = "The Moonlit Path / Mama Mia",
+        reward = "Choice of one: Pact with Ifrit / Ifrit's Blade / Fire Belt / Fire Ring / Egil's Torch / 10,000 gil",
+        tracker_area = "outlands",
+        tracker_id = 12,
+    },
+
+    {
+        id = "out_nrg_trial_by_water",
+        name = "Trial by Water",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-9)",
+        npc = "Edal-Tahdal",
+        description = "Ring the tuning fork of water upon the protocrystal in the Den of Rancor . A path will open to the trial that awaits.",
+        fame = "4",
+        repeatable = "Yes",
+        title = "Heir of the Great Water",
+        pack = "Rise of the Zilart",
+        next_quest = "The Moonlit Path / Mama Mia",
+        reward = "Choice of one: Pact with Leviathan / Leviathan's Rod / Water Ring / Water Belt / Eye of Nept / 10,000 Gil",
+        tracker_area = "outlands",
+        tracker_id = 133,
+    },
+
+    {
+        id = "out_rab_trial_by_wind",
+        name = "Trial by Wind",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (G-9)",
+        npc = "Agado-Pugado",
+        description = "Ring the tuning fork of wind upon the protocrystal in Cape Teriggan . A path will open to the trial that awaits.",
+        fame = "6",
+        repeatable = "Yes",
+        title = "Heir of the Great Wind",
+        pack = "Rise of the Zilart",
+        next_quest = "The Moonlit Path / Mama Mia",
+        reward = "Choice of one: Pact with Garuda / Garuda's Dagger / Wind Belt / Wind Ring / Bubbly Water / 10,000 Gil",
+        tracker_area = "outlands",
+        tracker_id = 194,
+    },
+
+    {
+        id = "out_kaz_trial_size_fire",
+        name = "Trial-Size Trial by Fire",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (J-9)",
+        npc = "Dodmos",
+        description = "The Rhinostery has developed a new \"mini\" tuning fork of fire. Ringing it upon the protocrystal in Ifrit's Cauldron will open the path to a one-on-one battle with the beast that awaits inside. However, only summoners are allowed to take up this challenge.",
+        fame = "3",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Summoner Level 20 or higher.",
+        reward = "Scroll of Instant Warp / Ifrit (Avatar)",
+        tracker_area = "outlands",
+        tracker_id = 15,
+    },
+
+    {
+        id = "out_nrg_trial_size_water",
+        name = "Trial-Size Trial by Water",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-9)",
+        npc = "Verctissa",
+        description = "The Rhinostery has developed a new \"mini\" tuning fork of water. Ringing it upon the protocrystal in the Den of Rancor will open the path to a one-on-one battle with the beast that awaits inside. However, only summoners are allowed to take up this challenge.",
+        fame = "3",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Summoner Level 20 or higher.",
+        reward = "Scroll of Instant Warp / Leviathan (Avatar)",
+        tracker_area = "outlands",
+        tracker_id = 148,
+    },
+
+    {
+        id = "out_rab_trial_size_wind",
+        name = "Trial-Size Trial by Wind",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (G-9)",
+        npc = "Rahi Fohlatti",
+        description = "The Rhinostery has developed a new \"mini\" tuning fork of wind. Ringing it upon the protocrystal in Cape Teriggan will open the path to a one-on-one battle with the beast that awaits inside. However, only summoners are allowed to take up this challenge.",
+        fame = "3",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        items = "Summoner Level 20 or higher.",
+        reward = "Scroll of Instant Warp / Garuda (Avatar)",
+        tracker_area = "outlands",
+        tracker_id = 197,
+    },
+
+    {
+        id = "out_nrg_true_will",
+        name = "True Will",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (H-8)",
+        npc = "Ryoma",
+        description = "The Sahagin have stolen Mitsunari's treasure and hid it somewhere in the jungle on Elshimo Island. It is your job to find it.",
+        level = "Level 50+ Ninja",
+        repeatable = "Yes",
+        title = "Paragon of Ninja Excellence",
+        pack = "Rise of the Zilart",
+        previous_quest = "I'll Take the Big Box",
+        items = "Kuftal Coffer Key",
+        reward = "Ninja Chainmail",
+        tracker_area = "outlands",
+        tracker_id = 145,
+    },
+
+    {
+        id = "out_kaz_elshimo_list",
+        name = "VW Op. 054: Elshimo List",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (N/A)",
+        npc = "Hildegard",
+        description = "Planar rifts have been reported in the Yuhtunga Jungle, Ifrit's Cauldron, and the Temple of Uggalepih. Engage the Voidwalkers at each location and obliterate them!",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "Voidwatch Ops: Border Crossing",
+        reward = "None",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_rab_detour_to_zepwell",
+        name = "VW Op. 101: Detour to Zepwell",
+        area = "outlands",
+        zone = "Rabao",
+        loc = "Rabao (N/A)",
+        npc = "Gushing Spring",
+        description = "Planar rifts have been reported in the Western Altepa Desert, the Kuftal Tunnel, and the Quicksand Caves. Engage the Voidwalkers at each location and obliterate them!",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "Voidwatch Ops: Border Crossing",
+        reward = "None",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_nrg_li_telor_variant",
+        name = "VW Op. 115: Li'Telor Variant",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Kieran",
+        description = "Planar rifts have been reported in the Sanctuary of Zi'tah, the Boyahda Tree, and Ro'Maeve. Engage the Voidwalkers at each location and obliterate them!",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        previous_quest = "Voidwatch Ops: Border Crossing",
+        next_quest = "Skyward Ho, Voidwatcher!",
+        items = "Zilart Mission 14 started",
+        reward = "Ashen stratum abyssite III",
+        server_note = "NOT IMPLEMENTED on this server",
+    },
+
+    {
+        id = "out_nrg_border_crossing",
+        name = "Voidwatch Ops: Border Crossing",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (N/A)",
+        npc = "Kieran",
+        description = "The Voidwatch has begun conducting secret operations outside of Jeuno and the three nations. Receive briefings from agents in Kazham and Rabao, then join the fight against the Voidwalkers!",
+        repeatable = "No",
+        pack = "Rise of the Zilart",
+        next_quest = "VW Op. 115: Li'Telor Variant",
+        items = "Adventurer's Certificate / Level 75 or higher",
+        reward = "Ashen stratum abyssite",
+        server_note = "NOT IMPLEMENTED on this server, Lv.75+",
+    },
+
+    {
+        id = "out_cap_wandering_souls",
+        name = "Wandering Souls",
+        area = "outlands",
+        zone = "Cape Teriggan",
+        loc = "Cape Teriggan (H-5)",
+        npc = "Cermet Headstone",
+        description = "Is there any way to soothe the spirits that wander about Cape Teriggan? Perhaps a rain lily...?",
+        repeatable = "No",
+        title = "Bearer of Bonds Beyond Time",
+        pack = "Rise of the Zilart",
+        items = "Zilart Mission 5 - Headstone Pilgrimage activated / Rain Lily",
+        reward = "Flagellant's Rope",
+        tracker_area = "outlands",
+        tracker_id = 161,
+    },
+
+    {
+        id = "out_yut_wrath_of_opo_opos",
+        name = "Wrath of the Opo-opos",
+        area = "outlands",
+        zone = "Yuhtunga Jungle",
+        loc = "Yuhtunga Jungle (I-6)",
+        npc = "Cermet Headstone",
+        description = "The Opo-opos are not happy that you stole their \"red treasure.",
+        repeatable = "No",
+        title = "Friend of the Opo-opos",
+        pack = "Rise of the Zilart",
+        items = "Zilart Mission 5 - Headstone Pilgrimage Active or Complete / Garnet",
+        reward = "Opo-opo Necklace",
+        tracker_area = "outlands",
+        tracker_id = 160,
+    },
+
+    {
+        id = "out_nrg_yomi_okuri",
+        name = "Yomi Okuri",
+        area = "outlands",
+        zone = "Norg",
+        loc = "Norg (L-8)",
+        npc = "Gilgamesh",
+        description = "Twenty years ago, a small nation was destroyed by the flames of war, and many died without reason. Your assistance is required in holding a ritual to send these troubled souls to their proper resting place in the afterlife.",
+        level = "Level 50+ Samurai",
+        repeatable = "Yes, after Memory reset",
+        pack = "Rise of the Zilart",
+        previous_quest = "The Sacred Katana",
+        next_quest = "A Thief in Norg!? Borghertz's Loyal Hands",
+        items = "Bastore Sardine / Frost Turnip / Giant Sheep Meat / Hecteyes Eye",
+        reward = "Myochin Sune-Ate",
+        tracker_area = "outlands",
+        tracker_id = 141,
+    },
+
+    {
+        id = "out_kaz_knife",
+        name = "You Call That a Knife?",
+        area = "outlands",
+        zone = "Kazham",
+        loc = "Kazham (I-10)",
+        npc = "Mhebi Juhbily",
+        description = "Mhebi wants to set her Tonberry free, but first, someone has to do something about his rusty knife.",
+        fame = "6",
+        repeatable = "No",
+        title = "Ya Done Good",
+        pack = "Rise of the Zilart",
+        items = "Sandfish / Tonberry Board",
+        reward = "7200 gil",
+        tracker_area = "outlands",
+        tracker_id = 6,
+    },
+
 }
-
--- ============================================================
--- QUEST TRACKER DATA
---
--- Mapeamento baseado no FFXI_QUEST_ID do XiQlog.
---
--- area = área do quest log enviado pelo servidor.
--- bit  = bit do quest dentro dessa área.
--- ============================================================
-
-local tracker_data = {
-
-    -- --------------------------------------------------------
-    -- KAZHAM
-    -- --------------------------------------------------------
-
-    out_kaz_guardian = {
-        area = 'outlands',
-        bit = 2,
-    },
-
-    out_kaz_question_of_taste = {
-        area = 'outlands',
-        bit = 3,
-    },
-
-    out_kaz_grudging = {
-        area = 'outlands',
-        bit = 4,
-    },
-
-    out_kaz_knife = {
-        area = 'outlands',
-        bit = 6,
-    },
-
-    out_kaz_missionary_man = {
-        area = 'outlands',
-        bit = 7,
-    },
-
-    out_kaz_gullibles_travels = {
-        area = 'outlands',
-        bit = 8,
-    },
-
-    out_kaz_even_more_gullibles = {
-        area = 'outlands',
-        bit = 9,
-    },
-
-    out_kaz_personal_hygiene = {
-        area = 'outlands',
-        bit = 10,
-    },
-
-    out_kaz_opo_opo_and_i = {
-        area = 'outlands',
-        bit = 11,
-    },
-
-    out_kaz_trial_by_fire = {
-        area = 'outlands',
-        bit = 12,
-    },
-
-    out_kaz_cloak_and_dagger = {
-        area = 'outlands',
-        bit = 13,
-    },
-
-    out_kaz_trial_size_fire = {
-        area = 'outlands',
-        bit = 15,
-    },
-
-    -- --------------------------------------------------------
-    -- NORG
-    -- --------------------------------------------------------
-
-    out_nrg_forge_your_destiny = {
-        area = 'outlands',
-        bit = 129,
-    },
-
-    out_nrg_black_market = {
-        area = 'outlands',
-        bit = 130,
-    },
-
-    out_nrg_mama_mia = {
-        area = 'outlands',
-        bit = 131,
-    },
-
-    out_nrg_stop_your_whining = {
-        area = 'outlands',
-        bit = 132,
-    },
-
-    out_nrg_trial_by_water = {
-        area = 'outlands',
-        bit = 133,
-    },
-
-    out_nrg_everyones_grudge = {
-        area = 'outlands',
-        bit = 134,
-    },
-
-    out_nrg_damp_scroll = {
-        area = 'outlands',
-        bit = 135,
-    },
-
-    out_nrg_sahagins_stash = {
-        area = 'outlands',
-        bit = 136,
-    },
-
-    out_nrg_not_your_vault = {
-        area = 'outlands',
-        bit = 137,
-    },
-
-    out_nrg_shining_subligar = {
-        area = 'outlands',
-        bit = 138,
-    },
-
-    out_nrg_shining_leggings = {
-        area = 'outlands',
-        bit = 139,
-    },
-
-    out_nrg_sacred_katana = {
-        area = 'outlands',
-        bit = 140,
-    },
-
-    out_nrg_yomi_okuri = {
-        area = 'outlands',
-        bit = 141,
-    },
-
-    out_nrg_thief_in_norg = {
-        area = 'outlands',
-        bit = 142,
-    },
-
-    out_nrg_pirate_years = {
-        area = 'outlands',
-        bit = 143,
-    },
-
-    out_nrg_big_box = {
-        area = 'outlands',
-        bit = 144,
-    },
-
-    out_nrg_true_will = {
-        area = 'outlands',
-        bit = 145,
-    },
-
-    out_nrg_potential_within = {
-        area = 'outlands',
-        bit = 146,
-    },
-
-    out_nrg_bugi_soden = {
-        area = 'outlands',
-        bit = 147,
-    },
-
-    out_nrg_trial_size_water = {
-        area = 'outlands',
-        bit = 148,
-    },
-
-    out_nrg_undying_pledge = {
-        area = 'outlands',
-        bit = 149,
-    },
-
-    -- --------------------------------------------------------
-    -- RABAO
-    -- --------------------------------------------------------
-
-    out_rab_missing_piece = {
-        area = 'outlands',
-        bit = 193,
-    },
-
-    out_rab_antidote = {
-        area = 'outlands',
-        bit = 192,
-    },
-
-    out_rab_trial_by_wind = {
-        area = 'outlands',
-        bit = 194,
-    },
-
-    out_rab_kuftal_tour = {
-        area = 'outlands',
-        bit = 195,
-    },
-
-    out_rab_immortal_lu_shang = {
-        area = 'outlands',
-        bit = 196,
-    },
-
-    out_rab_trial_size_wind = {
-        area = 'outlands',
-        bit = 197,
-    },
-
-    out_rab_chasing_dreams = {
-        area = 'outlands',
-        bit = 199,
-    },
-
-    out_rab_indomitable_spirit = {
-        area = 'outlands',
-        bit = 201,
-    },
-
-    -- --------------------------------------------------------
-    -- OTHER OUTLANDS LOCATIONS
-    -- --------------------------------------------------------
-
-    out_yut_wrath_of_opo_opos = {
-        area = 'outlands',
-        bit = 160,
-    },
-
-    out_cap_wandering_souls = {
-        area = 'outlands',
-        bit = 161,
-    },
-
-    out_zit_soul_searching = {
-        area = 'outlands',
-        bit = 162,
-    },
-
-    out_sra_divine_might = {
-        area = 'outlands',
-        bit = 163,
-    },
-
-    out_ead_open_sesame = {
-        area = 'outlands',
-        bit = 165,
-    },
-}
-
--- ============================================================
--- APPLY TRACKER DATA
--- ============================================================
-
-local function apply_tracker_data(
-    zones
-)
-    for _, zone_data in ipairs(
-        zones
-    ) do
-
-        for _, quest in ipairs(
-            zone_data.quests
-        ) do
-
-            local info =
-                tracker_data[
-                    quest.id
-                ]
-
-            if info ~= nil then
-
-                quest.tracker_area =
-                    info.area
-
-                quest.tracker_id =
-                    info.bit
-
-                quest.trackable = true
-
-            else
-
-                quest.tracker_area =
-                    quest.tracker_area
-                    or quest.area
-
-                quest.tracker_id =
-                    quest.tracker_id
-                    or quest.id
-
-                quest.trackable = false
-            end
-        end
-    end
-end
-
-apply_tracker_data(
-    M.zones
-)
 
 return M

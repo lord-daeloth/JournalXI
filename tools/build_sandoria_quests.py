@@ -30,6 +30,7 @@ EXTRA_QUESTS = {
     "windurst": {},
     "jeuno": {},
     "other": {},
+    "outlands": {},
 }
 
 TITLE_ALIASES = {
@@ -66,6 +67,9 @@ STEP_OVERRIDES = {
 
 SKIP_PAGES = {
     "jeuno": {"Unlocking a Myth"},
+    # These pages are categorized by their destination, but the game stores
+    # all three in the Bastok quest log.
+    "outlands": {"Faded Promises", "Shady Business", "Silence of the Rams"},
 }
 
 PRESERVE_OLD_RECORDS = {
