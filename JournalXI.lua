@@ -169,6 +169,43 @@ local function step_progress_key(kind, group, id, index)
     }, ':')
 end
 
+local function substep_progress_key(kind, group, id, index, subindex)
+    return step_progress_key(kind, group, id, index)
+        .. ':sub:' .. tostring(subindex or '')
+end
+
+local function step_substeps(step)
+    if type(step) == 'table' and type(step.substeps) == 'table' then
+        return step.substeps
+    end
+    return nil
+end
+
+local function step_is_checked(kind, group, id, index, step)
+    local key = step_progress_key(kind, group, id, index)
+    if config.step_progress[key] == true then return true end
+    local substeps = step_substeps(step)
+    if substeps == nil or #substeps == 0 then return false end
+    for subindex = 1, #substeps do
+        if config.step_progress[substep_progress_key(
+                kind, group, id, index, subindex)] ~= true then
+            return false
+        end
+    end
+    return true
+end
+
+local function set_step_checked(kind, group, id, index, step, checked)
+    local key = step_progress_key(kind, group, id, index)
+    config.step_progress[key] = checked and true or nil
+    local substeps = step_substeps(step)
+    if substeps == nil then return end
+    for subindex = 1, #substeps do
+        local subkey = substep_progress_key(kind, group, id, index, subindex)
+        config.step_progress[subkey] = checked and true or nil
+    end
+end
+
 local function complete_entry_steps(kind, group, item)
     if item.status ~= 'completed' or type(item.steps) ~= 'table' then return false end
     config.step_progress = config.step_progress or T{}
@@ -176,11 +213,18 @@ local function complete_entry_steps(kind, group, item)
     local entry_key = status_key(kind .. ':' .. group, item.id)
     if config.auto_completed_entries[entry_key] == true then return false end
     local changed = false
-    for index = 1, #item.steps do
+    for index, step in ipairs(item.steps) do
         local key = step_progress_key(kind, group, item.id, index)
         if config.step_progress[key] ~= true then
             config.step_progress[key] = true
             changed = true
+        end
+        for subindex = 1, #(step_substeps(step) or {}) do
+            local subkey = substep_progress_key(kind, group, item.id, index, subindex)
+            if config.step_progress[subkey] ~= true then
+                config.step_progress[subkey] = true
+                changed = true
+            end
         end
     end
     config.auto_completed_entries[entry_key] = true
@@ -192,11 +236,18 @@ local function clear_entry_steps(kind, group, item)
     config.step_progress = config.step_progress or T{}
     config.auto_completed_entries = config.auto_completed_entries or T{}
     local changed = false
-    for index = 1, #item.steps do
+    for index, step in ipairs(item.steps) do
         local key = step_progress_key(kind, group, item.id, index)
         if config.step_progress[key] ~= nil then
             config.step_progress[key] = nil
             changed = true
+        end
+        for subindex = 1, #(step_substeps(step) or {}) do
+            local subkey = substep_progress_key(kind, group, item.id, index, subindex)
+            if config.step_progress[subkey] ~= nil then
+                config.step_progress[subkey] = nil
+                changed = true
+            end
         end
     end
     local entry_key = status_key(kind .. ':' .. group, item.id)
@@ -410,14 +461,13 @@ local function step_text(step)
     return table.concat(parts, ' ')
 end
 
-local function draw_step(step, index, item, kind, group)
+local function draw_step(step, index, item, kind, group, hide_checked_substeps)
     config.step_progress = config.step_progress or T{}
     local key = step_progress_key(kind, group, item.id, index)
-    local checked = { config.step_progress[key] == true }
+    local checked = { step_is_checked(kind, group, item.id, index, step) }
     imgui.PushID(key)
     if imgui.Checkbox('##complete', checked) then
-        if checked[1] then config.step_progress[key] = true
-        else config.step_progress[key] = nil end
+        set_step_checked(kind, group, item.id, index, step, checked[1])
         save()
     end
     imgui.SameLine()
@@ -426,16 +476,44 @@ local function draw_step(step, index, item, kind, group)
     if checked[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
     imgui.TextWrapped(step_text(step))
     if checked[1] then imgui.PopStyleColor() end
+
+    local substeps = step_substeps(step)
+    if substeps ~= nil then
+        imgui.Indent(24)
+        for subindex, substep in ipairs(substeps) do
+            local subkey = substep_progress_key(kind, group, item.id, index, subindex)
+            local subchecked = config.step_progress[key] == true
+                or config.step_progress[subkey] == true
+            if not (hide_checked_substeps and subchecked) then
+                local value = { subchecked }
+                imgui.PushID(subkey)
+                if imgui.Checkbox('##complete', value) then
+                    config.step_progress[key] = nil
+                    config.step_progress[subkey] = value[1] and true or nil
+                    if step_is_checked(kind, group, item.id, index, step) then
+                        config.step_progress[key] = true
+                    end
+                    save()
+                end
+                imgui.SameLine()
+                if value[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
+                imgui.TextWrapped('- ' .. tostring(substep or ''))
+                if value[1] then imgui.PopStyleColor() end
+                imgui.PopID()
+            end
+        end
+        imgui.Unindent(24)
+    end
     imgui.PopID()
 end
 
-local function draw_steps(steps, item, kind, group)
+local function draw_steps(steps, item, kind, group, hide_checked_substeps)
     if type(steps) ~= 'table' or #steps == 0 then
         imgui.TextDisabled('No objectives are available for this entry.')
         return
     end
     for index, step in ipairs(steps) do
-        draw_step(step, index, item, kind, group)
+        draw_step(step, index, item, kind, group, hide_checked_substeps)
         if index < #steps then imgui.Spacing() end
     end
 end
@@ -443,8 +521,9 @@ end
 local function next_unchecked_step(steps, item, kind, group)
     config.step_progress = config.step_progress or T{}
     for index, step in ipairs(steps or {}) do
-        local key = step_progress_key(kind, group, item.id, index)
-        if config.step_progress[key] ~= true then return step, index end
+        if not step_is_checked(kind, group, item.id, index, step) then
+            return step, index
+        end
     end
     return nil, nil
 end
@@ -504,7 +583,7 @@ local function draw_details(item)
     end
     imgui.Separator()
     imgui.TextColored(colors.heading, 'Objectives')
-    draw_steps(item.steps, item, config.mode, current_group())
+    draw_steps(item.steps, item, config.mode, current_group(), false)
 end
 
 local function draw_main_window()
@@ -609,7 +688,8 @@ local function draw_tracker_window()
                 else
                     imgui.SameLine()
                 end
-                draw_step(step, index, item, config.tracked_kind, config.tracked_group)
+                draw_step(step, index, item, config.tracked_kind,
+                    config.tracked_group, true)
             else
                 imgui.SameLine()
                 imgui.TextColored(colors.completed, 'All objectives complete.')
@@ -631,7 +711,8 @@ local function draw_tracker_window()
             imgui.PushStyleColor(ImGuiCol_ChildBg, { 0, 0, 0, 0 })
             if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
                 apply_font_scale()
-                draw_steps(item.steps, item, config.tracked_kind, config.tracked_group)
+                draw_steps(item.steps, item, config.tracked_kind,
+                    config.tracked_group, false)
             end
             imgui.EndChild()
             imgui.PopStyleColor()
