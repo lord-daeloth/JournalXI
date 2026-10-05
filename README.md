@@ -42,8 +42,8 @@ addons register packet handlers for the same character progress data.
 ## Data
 
 The files under `data/` let JournalXI work without a network connection.
-San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, and Aht Urhgan quest
-metadata and walkthroughs
+San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, Aht Urhgan, and Crystal
+War quest metadata and walkthroughs
 are generated from the corresponding BG-Wiki quest pages with
 `tools/scrape_sandoria_quests.py` and `tools/build_sandoria_quests.py`. The
 Other data combines the Other, Selbina, Mhaura, Tavnazian Safehold, and Mog
@@ -62,6 +62,10 @@ The Aht Urhgan data combines the parent Aht Urhgan category with the Al Zahbi,
 Aht Urhgan Whitegate, and Nashmau quest categories. Its Whitegate continuation
 of `Lure of the Wildcat` has no entry in the Aht Urhgan quest-ID table, so it is
 included as a reference guide without automatic status detection.
+
+BG-Wiki's Crystal War category also contains `Lakeside Minuet` because it takes
+place in the past. The game files it in the Jeuno quest log, so JournalXI keeps
+that quest in its Jeuno data rather than duplicating it under Crystal War.
 
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise

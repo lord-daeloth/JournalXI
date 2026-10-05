@@ -32,6 +32,7 @@ EXTRA_QUESTS = {
     "other": {},
     "outlands": {},
     "whitegate": {},
+    "crystal": {},
 }
 
 TITLE_ALIASES = {
@@ -71,6 +72,8 @@ SKIP_PAGES = {
     # These pages are categorized by their destination, but the game stores
     # all three in the Bastok quest log.
     "outlands": {"Faded Promises", "Shady Business", "Silence of the Rams"},
+    # This quest takes place in the past, but the game files it under Jeuno.
+    "crystal": {"Lakeside Minuet"},
 }
 
 PRESERVE_OLD_RECORDS = {
@@ -101,12 +104,16 @@ def tracker_key(name: str) -> str:
         return "LURE_OF_THE_WILDCAT"
     if value == "THE_MOOGLES_PICNIC":
         return "THE_MOOGLE_PICNIC"
+    if value == "RE_DRAFTED_BY_THE_DUCHY":
+        return "REDRAFTED_BY_THE_DUCHY"
+    if value == "VW_OP_126_QUFIM_INCURSION":
+        return "VOIDWALKER_OP_126"
     return value
 
 
 def generated_id(area: str, name: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "_", ascii_text(name).lower()).strip("_")
-    prefix = {"jeuno": "jeu", "whitegate": "tau"}.get(area, area)
+    prefix = {"jeuno": "jeu", "whitegate": "tau", "crystal": "cw"}.get(area, area)
     return f"{prefix}_{slug}"
 
 
@@ -215,7 +222,7 @@ def render_metadata(
         quest = {
             "id": prior.get("id") or extra.get("id") or generated_id(area, name),
             "name": name,
-            "area": area,
+            "area": {"crystal": "crystal_war"}.get(area, area),
             "zone": ascii_text(row.get("zone")) or fallback_zone or ascii_text(prior.get("zone")),
             "loc": (
                 f"{ascii_text(row['zone'])} ({ascii_text(row['position']).strip('()')})"
@@ -245,7 +252,7 @@ def render_metadata(
         if tracker_id is None and "NOT IMPLEMENTED" not in server_note:
             tracker_id = extra.get("tracker_id", tracker_ids.get(tracker_key(name)))
         if tracker_id is not None and not tracker_area:
-            tracker_area = {"whitegate": "toau"}.get(area, area)
+            tracker_area = {"whitegate": "toau", "crystal": "wotg"}.get(area, area)
         if tracker_area:
             lines.append(f"        tracker_area = {lua_string(tracker_area)},")
         if tracker_id is not None:
