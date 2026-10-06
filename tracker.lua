@@ -17,6 +17,7 @@ local quest_categories = {
     'other',
     'whitegate',
     'crystal_war',
+    'adoulin',
 }
 
 local quest_category_names = {
@@ -28,6 +29,7 @@ local quest_category_names = {
     other = 'Other',
     whitegate = 'Whitegate',
     crystal_war = 'Crystal War',
+    adoulin = 'Adoulin',
 }
 
 -- The server's quest areas do not always match Journal categories.
@@ -42,6 +44,7 @@ local quest_tracker_categories = {
     other = 'other',
     toau = 'whitegate',
     wotg = 'crystal_war',
+    adoulin = 'adoulin',
 }
 
 local function get_quest_category_from_tracker_area(area)

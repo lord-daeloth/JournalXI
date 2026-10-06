@@ -42,8 +42,8 @@ addons register packet handlers for the same character progress data.
 ## Data
 
 The files under `data/` let JournalXI work without a network connection.
-San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, Aht Urhgan, and Crystal
-War quest metadata and walkthroughs
+San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, Aht Urhgan, Crystal War,
+and Adoulin quest metadata and walkthroughs
 are generated from the corresponding BG-Wiki quest pages with
 `tools/scrape_sandoria_quests.py` and `tools/build_sandoria_quests.py`. The
 Other data combines the Other, Selbina, Mhaura, Tavnazian Safehold, and Mog
@@ -66,6 +66,12 @@ included as a reference guide without automatic status detection.
 BG-Wiki's Crystal War category also contains `Lakeside Minuet` because it takes
 place in the past. The game files it in the Jeuno quest log, so JournalXI keeps
 that quest in its Jeuno data rather than duplicating it under Crystal War.
+
+Adoulin adds a new JournalXI quest category. BG-Wiki's `Geomancer Relic Armor`,
+`Rune Fencer Relic Armor`, `The Arciela Directive`, `The Ygnas Directive`, `The
+Silent Forest`, and `Winds of Eternity` pages have no entries in the Adoulin
+quest-ID table, so they are included as reference guides without automatic
+status detection.
 
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise

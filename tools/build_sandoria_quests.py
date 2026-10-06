@@ -33,6 +33,7 @@ EXTRA_QUESTS = {
     "outlands": {},
     "whitegate": {},
     "crystal": {},
+    "adoulin": {},
 }
 
 TITLE_ALIASES = {
@@ -108,6 +109,16 @@ def tracker_key(name: str) -> str:
         return "REDRAFTED_BY_THE_DUCHY"
     if value == "VW_OP_126_QUFIM_INCURSION":
         return "VOIDWALKER_OP_126"
+    aliases = {
+        "CAFE_TERIA": "CAFETERIA",
+        "F_A_I_L_URE_IS_NOT_AN_OPTION": "FAILURE_IS_NOT_AN_OPTION",
+        "MEG_ALOMANIAC": "MEGALOMANIAC",
+        "NOT_SO_CLEAN_BILL": "NOTSOCLEAN_BILL",
+        "SCAREDY_CATS": "SCAREDYCATS",
+        "WES_EASTERN_WAYPOINTS_HO": "WESEASTERN_WAYPOINTS_HO",
+    }
+    if value in aliases:
+        return aliases[value]
     return value
 
 
@@ -120,6 +131,8 @@ def generated_id(area: str, name: str) -> str:
 def parse_old_records(path: Path) -> dict[str, dict]:
     records = {}
     current = None
+    if not path.exists():
+        return records
     text = path.read_text(encoding="utf-8")
     for line in text.splitlines():
         if re.match(r"^\s*(?:\{|M\[#M \+ 1\]\s*=\s*\{)\s*$", line):
@@ -155,6 +168,8 @@ def parse_old_records(path: Path) -> dict[str, dict]:
 
 def parse_old_step_bodies(path: Path) -> dict[str, list[str]]:
     bodies = {}
+    if not path.exists():
+        return bodies
     current_id = None
     current_lines = []
     depth = 0

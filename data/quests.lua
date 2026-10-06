@@ -45,6 +45,7 @@ local quest_steps = {
     other = load_step_file('data/quests/steps/other'),
     whitegate = load_step_file('data/quests/steps/whitegate'),
     crystal_war = load_step_file('data/quests/steps/crystal'),
+    adoulin = load_step_file('data/quests/steps/adoulin'),
 }
 
 local function apply_steps(quest, step_data)
@@ -156,6 +157,7 @@ M.QUESTS = {
     other = load_quest_file('data/quests/other', 'other'),
     whitegate = load_quest_file('data/quests/whitegate', 'whitegate'),
     crystal_war = load_quest_file('data/quests/crystal', 'crystal_war'),
+    adoulin = load_quest_file('data/quests/adoulin', 'adoulin'),
 }
 
 function M.GetCategoryCounts()
