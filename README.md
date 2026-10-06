@@ -43,7 +43,7 @@ addons register packet handlers for the same character progress data.
 
 The files under `data/` let JournalXI work without a network connection.
 San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, Aht Urhgan, Crystal War,
-and Adoulin quest metadata and walkthroughs
+Adoulin, and Abyssea quest metadata and walkthroughs
 are generated from the corresponding BG-Wiki quest pages with
 `tools/scrape_sandoria_quests.py` and `tools/build_sandoria_quests.py`. The
 Other data combines the Other, Selbina, Mhaura, Tavnazian Safehold, and Mog
@@ -72,6 +72,11 @@ Adoulin adds a new JournalXI quest category. BG-Wiki's `Geomancer Relic Armor`,
 Silent Forest`, and `Winds of Eternity` pages have no entries in the Adoulin
 quest-ID table, so they are included as reference guides without automatic
 status detection.
+
+Abyssea adds a new JournalXI quest category containing all 192 BG-Wiki quest
+pages. They map one-to-one to the complete Abyssea quest-ID range from 0 through
+191, including storyline quests, Dominion Ops, and the repeatable Martello
+quests.
 
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise

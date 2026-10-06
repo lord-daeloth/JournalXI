@@ -34,6 +34,7 @@ EXTRA_QUESTS = {
     "whitegate": {},
     "crystal": {},
     "adoulin": {},
+    "abyssea": {},
 }
 
 TITLE_ALIASES = {
