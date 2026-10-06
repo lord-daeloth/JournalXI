@@ -18,18 +18,44 @@ PRESERVE_KEYS = {
 }
 
 
+def matching_brace(text: str, brace: int) -> int:
+    depth = 0
+    quote = None
+    escaped = False
+    line_comment = False
+    for index in range(brace, len(text)):
+        char = text[index]
+        if line_comment:
+            if char == "\n":
+                line_comment = False
+            continue
+        if quote is not None:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == quote:
+                quote = None
+            continue
+        if text[index:index + 2] == "--":
+            line_comment = True
+            continue
+        if char in {"'", '"'}:
+            quote = char
+        elif char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return index
+    raise ValueError("Unclosed Lua table")
+
+
 def table_block(text: str, marker: str) -> str:
     start = text.index(marker)
     brace = text.index("{", start)
-    depth = 0
-    for index in range(brace, len(text)):
-        if text[index] == "{":
-            depth += 1
-        elif text[index] == "}":
-            depth -= 1
-            if depth == 0:
-                return text[start:index + 1]
-    raise ValueError(f"Unclosed Lua table after {marker}")
+    end = matching_brace(text, brace)
+    return text[start:end + 1]
 
 
 def step_entries(text: str) -> dict[str, str]:
@@ -40,18 +66,10 @@ def step_entries(text: str) -> dict[str, str]:
     )
     for match in pattern.finditer(block):
         brace = block.index("{", match.start())
-        depth = 0
-        for index in range(brace, len(block)):
-            if block[index] == "{":
-                depth += 1
-            elif block[index] == "}":
-                depth -= 1
-                if depth == 0:
-                    end = index + 1
-                    if end < len(block) and block[end] == ",":
-                        end += 1
-                    entries[match.group(2) or match.group(3)] = block[match.start():end]
-                    break
+        end = matching_brace(block, brace) + 1
+        if end < len(block) and block[end] == ",":
+            end += 1
+        entries[match.group(2) or match.group(3)] = block[match.start():end]
     return entries
 
 

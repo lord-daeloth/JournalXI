@@ -92,6 +92,16 @@ retains its existing guides for tracker states without dedicated wiki pages,
 wiki pages without walkthrough content, and Promathia's combined `Three Paths`
 branch guide.
 
+Wings of the Goddess, Seekers of Adoulin, and Rhapsodies of Vana'diel mission
+walkthroughs are generated with `tools/build_modern_missions.py`. JournalXI
+retains its existing guides for WotG's page-less `A Dreamy Interlude`,
+Adoulin's page-less `An Emergency Convocation`, and Adoulin 5-2-2 because its
+BG-Wiki page currently has no extracted walkthrough steps.
+
+The three add-on scenarios, Abyssea storyline, and The Voracious Resurgence are
+generated with `tools/build_scenario_missions.py`. The existing Kupo Mission 12
+guide and any mission whose BG-Wiki page has no walkthrough are retained.
+
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise
 walkthrough documented by the HorizonXI and FFXIclopedia wikis.
