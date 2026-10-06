@@ -1,25 +1,9 @@
---[[
-    San d'Oria - Mission Database
-    ===============================
-
-    Mission IDs and walkthrough IDs are intentionally kept
-    as separate identifiers:
-
-    - M.MISSIONS uses the official numeric mission IDs consumed
-      by the mission tracker.
-    - M.STEPS uses the original walkthrough IDs such as 1-1,
-      1-2, 2-1, etc.
-
-    Both databases are kept in this single file.
-]]
+-- San d'Oria Mission data generated from BG-Wiki.
+-- Mission IDs remain the server-facing values used by the tracker.
 
 local ACTOR = require('data.actors')
 
 local M = {}
-
--- ============================================================
--- MISSION NAMES
--- ============================================================
 
 M.MISSIONS = {
     [0] = 'Smash the Orcish Scouts',
@@ -48,79 +32,141 @@ M.MISSIONS = {
     [23] = 'The Heir to the Light',
 }
 
--- ============================================================
--- MISSION STEPS
--- ============================================================
-
 M.STEPS = {
 
-    -- ========================================================
-    -- RANK 1
-    -- ========================================================
-
-    ['1-1'] = {
+    ["1-1"] = {
         name = "Smash the Orcish Scouts",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Hunt Orcish Fodders in East or West Ronfaure for an Orcish Axe.",
-            "Trade the Orcish Axe to any Gate Guard in San d'Oria.",
+            {
+                text = "Speak to any San d'Orian Gate Guard to begin this Mission.",
+                substeps = {
+                    "Ambrotien - Southern San d'Oria (K-10)",
+                    "Endracion - Southern San d'Oria (F-9)",
+                    "Grilau - Northern San d'Oria (D-8)",
+                },
+            },
+            {
+                text = "Go outside the city and kill Orcish Fodder until you receive an Orcish Axe .",
+                substeps = {
+                    "Orcish Fodder can be found in East Ronfaure and West Ronfaure .",
+                },
+            },
+            "After you receive an Orcish Axe return to the Gate Guard and trade them the Orcish Axe to finish the Mission.",
         },
     },
 
-    ['1-2'] = {
+    ["1-2"] = {
         name = "Bat Hunt",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Enter King Ranperre's Tomb from East Ronfaure at (H-11) and hunt Ding Bats at night for Orcish Mail Scales.",
-            "Examine " .. ACTOR.RANPERRE_TOMBSTONE_H10.text .. ".",
-            "The Ding Bats and tombstone can be handled in either order.",
-            "Trade the Orcish Mail Scales to any Gate Guard in San d'Oria.",
+            "Speak to any San d'Orian Gate Guard , and select \" Bat Hunt \" to begin this Mission.",
+            {
+                text = "Go to (H-11) in East Ronfaure to zone into King Ranperre's Tomb .",
+                substeps = {
+                    "If you do not have a map for King Ranperre's Tomb , one may be purchased from Violitte - Southern San d'Oria (G-10) or Elesca - Northern San d'Oria (I-8).",
+                },
+            },
+            {
+                text = "Kill Ding Bats in King Ranperre's Tomb (which spawn at night from 18:00 to 6:00) until you receive Orcish Mail Scales .",
+                substeps = {
+                    "This can be done before or after clicking the Tombstone .",
+                    "There are 2 Bats at the entrance and more around the Tombstone .",
+                },
+            },
+            {
+                text = "Touch the Tombstone at (H/I-10) for a cutscene.",
+                substeps = {
+                    "There is a ghost that aggros by it at night if low level. Can just click the Tombstone to lose aggro or use sneak .",
+                },
+            },
+            "Return to a Gate Guard and trade them the Orcish Mail Scales to complete the Mission.",
         },
     },
 
-    ['1-3'] = {
+    ["1-3"] = {
         name = "Save the Children",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Northern San d'Oria and speak with " .. ACTOR.ARNAU.text .. " in the Cathedral.",
-            "Travel through West Ronfaure and enter Ghelsba Outpost.",
-            "Make your way to " .. ACTOR.GHELSBA_HUT_DOOR.text .. " in the large open area.",
-            "Examine the Hut Door to enter the battlefield.",
-            "Defeat Fodderchief Vokdek, Strongarm Zodvad, and Sureshot Snatgat.",
-            "Examine " .. ACTOR.GHELSBA_HUT_DOOR.text .. " again after the battle.",
-            "Return to any Gate Guard in San d'Oria.",
+            "Talk to any Gate Guard and accept the Mission.",
+            {
+                text = "Next speak to Arnau in the Cathedral in Northern San d'Oria .",
+                substeps = {
+                    "He is the main NPC at the Altar in the Chapel section of the Cathedral.",
+                },
+            },
+            {
+                text = "After the cutscene, head to Ghelsba Outpost . The entrance is located at (E-4) in West Ronfaure .",
+                substeps = {
+                    "The map for Ghelsba Outpost may be purchased for 600 Gil from either Elesca at (I-8) in Northern San d'Oria or Violitte at (G-10) in Southern San d'Oria .",
+                },
+            },
+            "Make your way to the Hut Door in the large area around (G-9). The door itself is located at (F-10).",
+            {
+                text = "Interact with the Hut Door and clear the BCNM Save the Children . You will obtain Orcish hut key .",
+                substeps = {
+                    "Up to 6 people are allowed into this BCNM if they are on or have completed this Mission.",
+                    "When entering the battlefield, a Level Restriction (Status) effect will be applied (level unlimited), which serves to reset TP, desummons Trusts , and prevents exp loss if you're defeated. Trusts can be used in the battlefield: be sure to wait until your trust magic Recast Time is ready, and summon them after entering the battlefield but before entering combat.",
+                    "You will fight 3 Orcs .",
+                },
+            },
+            "Interact with the Hut Door after clearing the BCNM for a cutscene.",
+            {
+                text = "Return to a Gate Guard to complete the Mission and receive Rank 2.",
+                substeps = {
+                    "(Optional): There is an additional cutscene at Arnau after speaking with the Gate Guard .",
+                },
+            },
         },
     },
 
-    -- ========================================================
-    -- RANK 2
-    -- ========================================================
-
-    ['2-1'] = {
+    ["2-1"] = {
         name = "The Rescue Drill",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to La Theine Plateau and speak with " .. ACTOR.GALAIHAURAT.text .. ".",
-            "Continue down the canyon and speak with " .. ACTOR.EQUESOBILLOT.text .. " at (F-6).",
-            "Enter Ordelle's Caves and follow the left wall to " .. ACTOR.RUILLONT.text .. " by the pond.",
-            "Return to La Theine Plateau. " .. ACTOR.DEAUFRAIN.text .. ", " .. ACTOR.EQUESOBILLOT.text .. ", and " .. ACTOR.GALAIHAURAT.text .. " are the three who may provide the Bronze Sword.",
-            "Speak with them again until you find the one carrying the Bronze Sword, then trade it to " .. ACTOR.RUILLONT.text .. " in Ordelle's Caves.",
-            "Return to La Theine Plateau and speak with " .. ACTOR.VICORPASSE.text .. " to receive the Rescue Training Certificate.",
-            "Return to any Gate Guard in San d'Oria.",
+            "Trade enough Crystals to any San d'Orian Conquest Overseer to raise your Rank bar and unlock this mission, one crystal should be enough.",
+            "Speak to any Gate Guard and accept the mission.",
+            {
+                text = "Head to La Theine Plateau and speak to Galaihaurat at (E-6), at the very top of the cliffs.",
+                substeps = {
+                    "If you are already level 99, the fastest travel option is the warp to Abyssea - La Theine via Horst that puts you at at (E-4).",
+                    "Other alternatives are Outpost Warp / Survival Guide to West Ronfaure and zoning into La Theine Plateau or Ordelle's Caves Survival Guide .",
+                },
+            },
+            "At the east side of (F-6), head down the ramp.",
+            {
+                text = "Continue into Ordelle's Caves at (F-7), in a tunnel at the south of the canyon.",
+                substeps = {
+                    "(Optional) : You can talk to Equesobillot , Deaufrain , Vicorpasse , Augevinne , Yaucevouchat , Laurisse , and Narvecaint for some additional dialogue as you head down into and through the canyon.",
+                },
+            },
+            "Once inside Ordelle's Caves , follow the left wall and talk to Ruillont at (G-3) in the corner behind a rock, in the small pond.",
+            {
+                text = "Go back to La Theine Plateau . Either Deaufrain (halfway up the ramp out of the canyon), Equesobillot (at the top of the ramp out of the canyon) or Galaihaurat (at the top of the cliffs by a wall next to the canyon) will have the Bronze Sword needed to progress the mission.",
+                substeps = {
+                    "The NPC which has the sword seems to be entirely random for each player.",
+                },
+            },
+            "Head back to Ruillont in Ordelle's Caves , and trade his Bronze Sword to him.",
+            "Go back to La Theine Plateau and talk to Vicorpasse (F-6) for Rescue training certificate .",
+            "Return to a Gate Guard to complete the mission.",
         },
     },
 
-    ['2-2'] = {
+    ["2-2"] = {
         name = "The Davoi Report",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to La Theine Plateau and enter Jugner Forest at (M-8), then follow the right side of Jugner Forest to Davoi at (G-12).",
-            "Find " .. ACTOR.ZANTAVIAT.text .. " just inside Davoi.",
-            "Walk south to the pond around (J-8).",
-            "Examine " .. ACTOR.DAVOI_REPORT_QQ_J8.text .. " on the south bank to obtain the Lost Document.",
-            "Return to " .. ACTOR.ZANTAVIAT.text .. " to receive the Temple Knights' Davoi Report.",
-            "Return to any Gate Guard in San d'Oria.",
-            "Enter the " .. ACTOR.PAPAL_CHAMBERS.text .. " on the top floor of the Cathedral in Northern San d'Oria.",
+            "If you wish to complete this Mission, trade enough Crystals to a Conquest Overseer to raise your Rank bar and unlock it.",
+            {
+                text = "Talk to any Gate Guard and accept the Mission.",
+                substeps = {
+                    "There are two in Southern San d'Oria , Ambrotien at (K-6) and Endracion at (F-9). There is also a gate guard in Northern San d'Oria , Grilau at (D-8).",
+                    "A map of Davoi can be purchased for 3000 Gil from Elesca at (I-8) of North San d'Oria or Violitte at (G-10) of Southern San d'Oria , but it is not required.",
+                },
+            },
+            "Make your way to Davoi . To reach Davoi , zone into Jugner Forest from La Theine Plateau at (M-8). Then follow the right wall of Jugner Forest to the zone into Davoi at (G-12).",
+            "Talk to the NPC Zantaviat just inside the zone.",
+            "Walk south until you reach a pond at (J-8). On the South bank of the pond you will find a ! targetable location. Click on it to receive the Lost document .",
+            "Return to Zantaviat to recieve the Temple Knights' Davoi report .",
+            "Return to a Gate Guard .",
+            "Examine the Door: Papal Chambers , which is on the top floor of the Cathedral in Northern San d'Oria .",
+            "After the cutscene, the Mission will be completed.",
         },
     },
 
@@ -157,244 +203,497 @@ M.STEPS = {
         },
     },
 
-    -- ========================================================
-    -- RANK 3
-    -- ========================================================
-
-    ['3-1'] = {
+    ["3-1"] = {
         name = "Infiltrate Davoi",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and examine " .. ACTOR.PRINCES_ROYAL_ROOM.text .. ".",
-            "Travel through Jugner Forest and enter Davoi from (G-12).",
-            "Follow the right wall until the path turns north, then take the left path at the three-way intersection to reach the bridge.",
-            "Wait on the bridge and speak with " .. ACTOR.QUEMARICOND.text .. " to receive the Royal Knights' Davoi Report.",
-            "Return to Chateau d'Oraguille and speak with Prince Trion in " .. ACTOR.PRINCES_ROYAL_ROOM.text .. ".",
+            "This Mission is Required.",
+            "Trade enough Crystals (1+) to the Conquest NPC to raise your Rank bar and unlock the Mission.",
+            "Accept the mission Infiltrate Davoi from the Gate Guard .",
+            "Speak to Prince Trion who can be reached by clicking on the Door: Prince Royal's Rm at (G/H-7) of Chateau d'Oraguille for a cutscene. It is the room on the North side of the court yard.",
+            {
+                text = "Zone into Davoi for a cutscene.",
+                substeps = {
+                    "Invisible is recommended for this Mission, bring Prism Powders or have a spell for Invisiblity.",
+                    "Follow the right wall of Jugner Forest to the zone into Davoi at (G-12).",
+                    "A map of Davoi can be purchased for 3,000 Gil from Elesca at I-8 of Northern San d'Oria or Violitte at G-10 of Southern San d'Oria .",
+                },
+            },
+            "Speak with Quemaricond , patrolling around (H-7), when it is safe to drop Invisibility. You will obtain Royal Knights' Davoi report .",
+            "Return to Prince Trion to complete the Mission.",
         },
     },
 
-    ['3-2'] = {
+    ["3-2"] = {
         name = "The Crystal Spring",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Crystalwater Spring at (J-9) in Jugner Forest and obtain a Crystal Bass.",
-            "Trade the Crystal Bass to any Gate Guard in San d'Oria.",
-            "Enter Chateau d'Oraguille and speak with " .. ACTOR.CHALVATOT.text .. ".",
+            "Trade enough Crystals (1+) to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            {
+                text = "Talk to any Gate Guard and accept the Mission.",
+                substeps = {
+                    "There are two in Southern San d'Oria , Ambrotien at (K-6) and Endracion at (F-9). There is also a gate guard in Northern San d'Oria , Grilau at (D-8).",
+                },
+            },
+            {
+                text = "Buy a Crystal Bass from the Auction House (  Food  Fish) or you can catch one in Jugner Forest .",
+                substeps = {
+                    "It is MUCH easier to buy one from the Auction House . Crystal Bass cap at 35 for fishing, so plan accordingly.",
+                    "See below for fishing tips.",
+                },
+            },
+            "Trade the Crystal Bass to the Gate Guard .",
+            "Enter Chateau d'Oraguille for a cutscene.",
+            {
+                text = "Talk to Chalvatot located in the late Queen Leaute's Garden by her Tombstone (F-7) inside Chateau d'Oraguille for a cutscene. Afterwards the Mission is completed.",
+                substeps = {
+                    "Repeating this Missions is similar to Mission 1-2 . You do not need to zone between repeating, you also do not have to repeat the steps in Chateau d'Oraguille .",
+                },
+            },
         },
     },
 
-    ['3-3'] = {
+    ["3-3"] = {
         name = "Appointment to Jeuno",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Speak with " .. ACTOR.HALVER.text .. " at Chateau d'Oraguille.",
-            "Examine the " .. ACTOR.GREAT_HALL.text .. " behind Halver.",
-            "Travel to the San d'Orian Embassy in Ru'Lude Gardens and speak with " .. ACTOR.NELCABRIT.text .. ".",
-            "Travel to Lower Delkfutt's Tower and enter the basement through the Cermet Door at (E-8) if you already have a Delkfutt's Key.",
-            "If you do not have a Delkfutt's Key, climb the tower to the tenth floor. Use the teleports and stairways to reach Upper Delkfutt's Tower, then go to (H-7), defeat Mimas if necessary, and enter Porphyrion's room.",
-            "Defeat Porphyrion and obtain a Delkfutt's Key.",
-            "Use the elevator beside Porphyrion at (H-8) to descend, then take the long staircase down to the basement.",
-            "In the basement, head east to the large room and use the Delkfutt's Key on the Cermet Door at (L-8).",
-            "Return to the San d'Orian Embassy in Ru'Lude Gardens and examine the Embassy door to complete the mission.",
+            "Trade enough Crystals (3+ if you skipped the last mission) to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Speak to Halver in Chateau d'Oraguille at (I-9).",
+            "Click the Door: Great Hall behind Halver for a cutscene. You will obtain Letter to the ambassador .",
+            {
+                text = "Head to the San d'Orian Embassy in Ru'Lude Gardens (H-9) and speak with Nelcabrit .",
+                substeps = {
+                    "If you already possess the Delkfutt Key (trade it to the door) or the Delkfutt key (no trading needed) then you may skip this climb:",
+                    "If you do not possess the Key, start the climb process detailed below:",
+                },
+            },
+            "Head to Lower Delkfutt's Tower using the Survival Guide teleportation, Outpost warp, or Home Point warp.",
+            "You will now likely need to climb to the 10th floor of Delkfutt's Tower in order to gain a Delkfutt Key in order to access the Basement of the Tower:",
         },
     },
 
-    -- ========================================================
-    -- RANK 4
-    -- ========================================================
-
-    ['4-1'] = {
+    ["4-1"] = {
         name = "Magicite",
         steps = {
-            "Speak with " .. ACTOR.NELCABRIT.text .. " and enter the " .. ACTOR.SAN_DORIAN_EMBASSY_DOOR.text .. " in Ru'Lude Gardens.",
-            "Examine the " .. ACTOR.AUDIENCE_CHAMBER.text .. " to receive the Letter to Aldo.",
-            "Enter Neptune's Spire in Lower Jeuno and speak with " .. ACTOR.ALDO.text .. " to receive the Silver Bell.",
-            "If you still need the Yagudo Torch, speak with " .. ACTOR.PAYA_SABYA.text .. " at (I-8) in Upper Jeuno, then speak with " .. ACTOR.MUCKVIX.text .. " at (H-9) in Lower Jeuno.",
-            "Speak with " .. ACTOR.SATTAL_MANSAL.text .. " at (J-8): trade a Quadav Charm for the Coruscant Rosary, then trade a Quadav Augury Shell for the Black Matinee Necklace.",
-            "In Upper Jeuno, speak with " .. ACTOR.BAUDIN.text .. " at (G-8) and trade him Coeurl Meat for the Crest of Davoi.",
-            "The prerequisite key items are shared between the three nations' Magicite missions, so only missing items need to be obtained.",
-
-            "The three Magicite locations can be completed in any order.",
-            "Davoi: travel to (G-7), avoid or defeat the Orcs, use Sneak if needed, and pass through the Wall of Dark Arts into Monastic Cavern to obtain Optistone.",
-            "Castle Oztroja: follow the right wall to the Brass Door at (H-9), light the torch, continue south, turn right to the next Brass Door, and enter the Altar Room to obtain Orastone.",
-            "Beadeaux: follow the left wall to (H-7), enter Qulun Dome, open the inner door, and obtain Aurastone.",
-
-            "Return to the " .. ACTOR.AUDIENCE_CHAMBER.text .. " after obtaining all three Magicites.",
-            "Return to " .. ACTOR.NELCABRIT.text .. " at the San d'Orian Embassy.",
+            "First head to a Conquest Overseer either in your home city or Jeuno . Trade them enough Crystals (4+), until your Rank bar is almost or completely full.",
+            {
+                text = "To flag the Mission, speak with Nelcabrit , then click the Door: San d'Orian Emb. in Ru'Lude Gardens (G-10) for the Archducal audience permit .",
+                substeps = {
+                    "The 3rd door on the left in the San d'Orian Embassy is the correct one.",
+                },
+            },
+            "Click on the Door: Audience Chamber in Ru'Lude Gardens (H-5) for a cutscene and the Letter to Aldo .",
+            {
+                text = "Speak to Aldo in Lower Jeuno , in the back of the Neptune's Spire Tenshodo H.Q. for a cutscene and the Silver bell .",
+                substeps = {
+                    "If you have done this mission in another Nation then you already have the bell, but you still need to talk to him for a cutscene.",
+                },
+            },
+            "Obtain the 3 Magicite Key Items. See below for details .",
+            "Click the Audience Chamber in Ru'Lude Gardens (H-5) after obtaining all 3 Magicites for a cutscene and your reward (either an Airship Pass , or, if you already have one, 20,000 Gil).",
+            "Return to Nelcabrit in the San d'Orian Embassy to complete the mission, receive 10,000 Gil and Message to Jeuno (San d'Oria) .",
         },
     },
 
-    -- ========================================================
-    -- RANK 5
-    -- ========================================================
-
-    ['5-1'] = {
+    ["5-1"] = {
         name = "The Ruins of Fei'Yin",
         steps = {
-            "Travel to Chateau d'Oraguille.",
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria and accept the mission.",
-            "Speak with " .. ACTOR.HALVER.text .. " to receive the New Fei'Yin Seal.",
-            "Travel to Fei'Yin and enter " .. ACTOR.QU_BIA_ARENA.text .. ".",
-            "Enter the Rank 5 battlefield and defeat Archlich Taber'quoan. Ancient Sorcerers and Ancient Warriors will also appear during the battle.",
-            "Return to " .. ACTOR.HALVER.text .. ".",
+            "Head to Chateau d'Oraguille in Northern San d'Oria via HP #2 as the fastest route.",
+            "Zone into Chateau d'Oraguille for a cutscene that includes King Destin.",
+            "Visit any Gate Guard and accept the Mission.",
+            {
+                text = "Return to Chateau d'Oraguille and speak to Halver to receive New Fei'Yin seal .",
+                substeps = {
+                    "If you are low level, you might want to use Trusts or form a party of lvl 50+ players.",
+                },
+            },
+            {
+                text = "Go to Fei'Yin (located in the northeast corner of Beaucedine Glacier ) for a cutscene with Zeid . You will have to reach the Qu'Bia Arena and clear the BCNM \" The Rank 5 Mission \".",
+                substeps = {
+                    "The majority of enemies in Fei'Yin detect by sound, however there are several that detect spellcasting.",
+                    "Quick Travel options:",
+                    "From the entrance of Fei'Yin:",
+                },
+            },
+            "You will be able to prepare outside of the BC, however all buffs will wear upon entering. Plan accordingly and click the Burning Circle when ready to take on The Rank 5 Mission .",
+            "You only need to kill the Archlich to win.",
+            {
+                text = "You will be facing Archlich Taber'quoan . The Archlich will spawn with 2 Ancient Sorcerers . Ancient Warriors will also spawn in the hallway and run to help of the Archlich during the fight.",
+                substeps = {
+                    "The Archlich is a BLM , and will cast spells like Sleepga II and Freeze , he may also use Manafont .",
+                    "The lesser skeletons have very little HP and can be easily taken out by an AoE spell.",
+                    "Focus attacks on the Archlich, a Paladin with Invincible is useful for managing the many extra mobs. A Monk using Hundred Fists also shines in this fight, due to the skeleton blunt penalty.",
+                },
+            },
+            "When you win, you'll be given another cutscene and receive Burnt seal .",
+            "Return to Halver to complete the Mission.",
         },
     },
 
-    ['5-2'] = {
+    ["5-2"] = {
         name = "The Shadow Lord",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria to accept the mission.",
-            "Speak with " .. ACTOR.HALVER.text .. " at Chateau d'Oraguille.",
-            "Examine the " .. ACTOR.PRINCES_ROYAL_ROOM.text .. ".",
-            "Travel to Castle Zvahl Keep and proceed to the " .. ACTOR.THRONE_ROOM.text .. ".",
-            "Enter the Throne Room battlefield and defeat the Shadow Lord in both forms.",
-            "Return to Chateau d'Oraguille and speak with " .. ACTOR.HALVER.text .. " to complete the mission.",
-            "Examine the " .. ACTOR.GREAT_HALL.text .. ".",
-            "Examine the " .. ACTOR.PRINCES_ROYAL_ROOM.text .. " again to unlock Trust: Trion.",
+            "Trade 2 Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard.",
+            "Speak to Halver for a some text about Prince Trion .",
+            {
+                text = "Examine Door: Prince Royal's Rm for a cutscene with Trion.",
+                substeps = {
+                    "If you're not using Trusts and are level 55-60, form a full party of players.",
+                },
+            },
+            "You will have to reach the Throne Room in Castle Zvahl Keep and clear the BCNM \" The Shadow Lord Battle \".",
+            "Castle Zvahl Keep Home Point #1 is fastest way. If you don't have the HP unlocked already, check the instructions below .",
+            "Click on the door to the Throne Room for a cutscene.",
+            "Click on the door again and select \" The Shadow Lord Battle \" to start the BCNM.",
+            {
+                text = "After you clear the BCNM, you'll get another cutscene. At the end, you'll be returned to the entrance of Castle Zvahl Baileys . You will also receive the Shadow fragment .",
+                substeps = {
+                    "You can start the Zilart Missions and continue with Rhapsodies of Vanadiel Mission 1-12 from this point on, ranking up is optional.",
+                },
+            },
+            "Return to Halver for your reward: Rank 6 and 20,000 Gil.",
+            "Check the door to the Great Hall for a final cutscene involving the royal family.",
+            {
+                text = "While you're here, check Door: Prince Royal's Rm at the back of Chateau d'Oraguille for an additional cutscene and to learn Trust: Trion , assuming you have the local trust permit by now.",
+                substeps = {
+                    "Trust: Volker and Trust: Ajido-Marujido are also now available if you been initiated and have the Bastok Trust permit and Windurst Trust permit respectively. Talk to Lucius in the Metalworks at (I-9), and to Apururu in Windurst Woods at (H-9).",
+                },
+            },
         },
     },
 
-    -- ========================================================
-    -- RANK 6
-    -- ========================================================
-
-    ['6-1'] = {
+    ["6-1"] = {
         name = "Leaute's Last Wishes",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Speak with " .. ACTOR.HALVER.text .. " at Chateau d'Oraguille.",
-            "Enter the " .. ACTOR.GREAT_HALL.text .. " and receive the King's request for a Dreamrose.",
-            "Speak with " .. ACTOR.HALVER.text .. " again.",
-            "Travel to Western Altepa Desert and examine " .. ACTOR.DREAMROSE_G7.text .. " at (G-7) to face Sabotender Enamorado.",
-            "Defeat Sabotender Enamorado.",
-            "Examine " .. ACTOR.DREAMROSE_G7.text .. " again to receive the Dreamrose.",
-            "Return to " .. ACTOR.HALVER.text .. ".",
-            "Travel to " .. ACTOR.QUEEN_LEAUTE_GARDEN.text .. " at (F-8).",
-            "Receive the Piece of Paper after completing the event at the Garden.",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Head to Chateau d'Oraguille and speak with Halver .",
+            {
+                text = "Select the Great Hall door for a cutscene.",
+                substeps = {
+                    "Make sure to get the cutscene where the King asks you to retrieve a Dreamrose .",
+                },
+            },
+            "Speak with Halver again.",
+            {
+                text = "Go to (G-7) in Western Altepa Desert . The Dreamrose is butted up against Revelation Rock, in the southern section of the oasis (look for the body of water on your map).",
+                substeps = {
+                    "The Unity Warp (Level 125) will bring you close.",
+                    "Alternatively, you could use the Survival Guide .",
+                },
+            },
+            {
+                text = "Check the Dreamrose to spawn Sabotender Enamorado .",
+                substeps = {
+                    "If you're low level, it is recommended that you bring enough people, pets and/or Trusts to reduce the damage done by 1000 Needles . It is possible to do it with less, but spreading the damage out will help any HP concerns.",
+                },
+            },
+            "Check the Dreamrose after defeating the NM to receive the Dreamrose .",
+            "Return to Halver .",
+            "Go toward the Garden at (F-8) for another cutscene. At the end of the cutscene, you'll receive the Piece of paper .",
         },
     },
 
-    ['6-2'] = {
+    ["6-2"] = {
         name = "Ranperre's Final Rest",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and speak with Prince Trion in " .. ACTOR.PRINCES_ROYAL_ROOM.text .. ".",
-            "Travel to King Ranperre's Tomb and make your way to " .. ACTOR.HEAVY_STONE_DOOR.text .. ".",
-            "Examine the Heavy Stone Door to face Corrupted Soffeil, Corrupted Yorgos, and Corrupted Ulbrig.",
-            "Defeat all three Skeletons.",
-            "Examine " .. ACTOR.HEAVY_STONE_DOOR.text .. " again and enter the chamber.",
-            "Examine the tombstone inside to receive the Ancient San d'Orian Book.",
-            "Return to any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Speak with the Gate Guard three times about the book; after the guard says it will take time to decipher, return later and speak with the guard again.",
-            "Follow the Gate Guard's instructions and return to Prince Trion in " .. ACTOR.PRINCES_ROYAL_ROOM.text .. ".",
-            "Return to " .. ACTOR.HEAVY_STONE_DOOR.text .. " in King Ranperre's Tomb and examine it again.",
-            "Return to any Gate Guard in San d'Oria.",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "You'll be instructed to go see Prince Trion . Visit him in his room at (H-7) in Chateau d'Oraguille",
+            "If you're low level, gather a party or use Trusts .",
+            {
+                text = "Head for (H-8) in King Ranperre's Tomb on Map 1.",
+                substeps = {
+                    "The Proto-Waypoint warp to Jugner Forest is the fastest way to get to the location in King Ranperre's Tomb .",
+                },
+            },
+            {
+                text = "When ready, check the Heavy Stone Door to spawn three (3) Skeleton NMs: Corrupted Soffeil (BLM), Corrupted Yorgos (WAR) and Corrupted Ulbrig (BLM).",
+                substeps = {
+                    "They can be pulled one by one using Sneak .",
+                    "All 3 must be slain.",
+                    "The NMs are immune to Sleep and Lullaby .",
+                    "They will use Blood Saber , so keep damage negating buffs up to reduce the HP regained.",
+                    "Corrupted Yorgos has approximately 7250 HP.",
+                },
+            },
+            {
+                text = "When defeated, check the Heavy Stone Door again, and enter. Check the Tombstone inside for a cutscene, at the end of which, you'll receive the Ancient San d'Orian book .",
+                substeps = {
+                    "(Optional) : Return to Prince Trion , and you will be instructed to go see the Gate Guard .",
+                },
+            },
+            "Talk to any Gate Guard . A cutscene will play out saying they sent the book to scholars to decipher.",
+            "You must talk to the Gate Guard once more to have them tell you that the deciphering will take some time.",
+            "Zone and talk to the Guard again who will tell you to see Prince Trion .",
+            "Return to Prince Trion and speak with him for a cutscene. You may need to talk to him twice.",
+            "Return to the Heavy Stone Door in King Ranperre's Tomb again for another cutscene. You'll be instructed to defeat enemies, but you only need to activate the door again.",
+            "Return to a Gate Guard to complete the Mission.",
         },
     },
 
-    -- ========================================================
-    -- RANK 7
-    -- ========================================================
-
-    ['7-1'] = {
+    ["7-1"] = {
         name = "Prestige of the Papsque",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Northern San d'Oria and enter the " .. ACTOR.PAPAL_CHAMBERS.text .. " on the third floor of the Cathedral.",
-            "Travel to Chateau d'Oraguille and enter Bostaunieux Oubliette.",
-            "Reach the Sewer Lid around (E-7/E-8) and speak with the attendant beside it to descend.",
-            "Follow the right wall through the lower area and zone into West Ronfaure.",
-            "Examine " .. ACTOR.WEST_RONFAURE_PAPSQUE_QQ_E8.text .. " to face Marauder Dvogzog.",
-            "Defeat Marauder Dvogzog.",
-            "Examine the same target again to receive the Ancient San d'Orian Tablet.",
-            "Return to Northern San d'Oria and enter the " .. ACTOR.PAPAL_CHAMBERS.text .. ".",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Head to the Cathedral in Northern San d'Oria and go to the Papal Chambers , located on the third floor at (M-6).",
+            {
+                text = "If you're low level, form a party and/or use Trusts .",
+                substeps = {
+                    "Sneaking is recommended, bring some Silent Oils .",
+                },
+            },
+            {
+                text = "Head to Bostaunieux Oubliette , which can be accessed from Chateau d'Oraguille (I-8). If you already explored the place, alternate paths are available below.",
+                substeps = {
+                    "Head for (E-7/8) and use Sneak . Speak to Couchatorage standing by the Sewer Lid to drop down to Map 2. Be sure to grab the Survival Guide nearby if this is your first time here.",
+                    "Follow the right wall and you'll eventually zone to West Ronfaure at (E-8). There will be a ??? in front of you.",
+                },
+            },
+            {
+                text = "When prepared, check the ??? to spawn an Orc NM Marauder Dvogzog .",
+                substeps = {
+                    "It is a level 67 MNK with approximately 16,000 HP, capable of using Hundred Fists .",
+                },
+            },
+            {
+                text = "Check the ??? again to receive the Ancient San d'Orian tablet .",
+                substeps = {
+                    "Should you fall off of the ledge, you'll need to run back through the Oubliette and fight the NM again.",
+                },
+            },
+            "Return to the Cathedral and visit the Papal Chambers for the final cutscene.",
+            "Unity Warp : If you have dropped down the Sewer Lid in Bostaunieux Oubliette at least once, the Level 122 Unity Warp can teleport you directly to Bostaunieux Oubliette , right at the zone line to West Ronfaure .",
+            "Proto-Waypoint : The West Ronfaure Proto-Waypoint will get you directly to your destination, provided you've already unlocked it.",
         },
     },
 
-    ['7-2'] = {
+    ["7-2"] = {
         name = "The Secret Weapon",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and head toward (F-7).",
-            "Return to any Gate Guard in San d'Oria to receive the mission.",
-            "Travel through Ghelsba Outpost to Yughott Grotto and enter " .. ACTOR.HORLAIS_PEAK.text .. ".",
-            "Enter the battlefield and defeat Darokbok of Clan Reaper, Derakbak of Clan Wolf, Jagidbod of Clan Reaper, Wolf Clan Warmachine, and Reaper Clan Warmachine.",
-            "Receive the Crystal Dowser, then return to any Gate Guard in San d'Oria.",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission.",
+            "Speak with a Gate Guard who will instruct you to go to the Garden in Chateau d'Oraguille .",
+            "Head for Chateau d'Oraguille and go towards (F-8). You will receive a cutscene.",
+            "Return to the Gate Guard to receive the Mission.",
+            {
+                text = "If you're low level, gather a party and/or use Trusts .",
+                substeps = {
+                    "Only players who are on 7-2 or have completed it may enter.",
+                    "It is recommended that you bring a BLM and/or a BRD for sleeping the mobs.",
+                },
+            },
+            {
+                text = "You will have to reach Horlais Peak , accessible via travelling through Ghelsba Outpost and Yughott Grotto .",
+                substeps = {
+                    "Yughott Grotto Home Point #1 places you right ouside the entrance to the Peak.",
+                },
+            },
+            {
+                text = "Once you're there, get ready and enter the BC.",
+                substeps = {
+                    "The fight is against 3 Orcs and 2 Warmachines :",
+                    "Darokbok of Clan Reaper (Level 68, PLD )",
+                    "Derakbak of Clan Wolf (Level 68, DRG )",
+                    "Jagidbod of Clan Reaper (Level 68, RNG )",
+                    "Wolf Clan Warmachine (Level 68)",
+                    "Reaper Clan Warmachine (Level 68)",
+                    "Open the fight with Elemental Seal + Sleepga II . Fight the Warmachines first, then the Paladin, the Dragoon and Wyvern, and the Ranger last. A Melee/NIN can pretty easily solo any of the NMs. Prioritize the Warmachines.",
+                },
+            },
+            "When finished, you'll receive another cutscene, and receive the Crystal dowser .",
+            "Head back to San d'Oria and speak to any Gate Guard to finish the mission.",
         },
     },
 
-    -- ========================================================
-    -- RANK 8
-    -- ========================================================
-
-    ['8-1'] = {
+    ["8-1"] = {
         name = "Coming of Age",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and speak with " .. ACTOR.HALVER.text .. ".",
-            "Examine the two doors to the Princes' quarters if you want to hear their additional dialogue.",
-            "Travel to Eastern Altepa Desert and enter Quicksand Caves at (H-10).",
-            "Reach Map 2, drop through the hole at (E-11), and continue to " .. ACTOR.FOUNTAIN_OF_KINGS.text .. ".",
-            "Examine " .. ACTOR.FOUNTAIN_OF_KINGS.text .. " to face Honor and Valor.",
-            "Defeat Honor and Valor, then examine the Fountain again to receive the Drops of Amnio.",
-            "Return to " .. ACTOR.HALVER.text .. ".",
-            "Wait until after Japanese midnight, then zone into Northern San d'Oria.",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Go to Chateau d'Oraguille , where you'll receive a cutscene upon entering.",
+            {
+                text = "Speak to Halver for instructions.",
+                substeps = {
+                    "(Optional) : Interact with the two doors to the Princes' quarters for short cutscenes.",
+                },
+            },
+            {
+                text = "Travel to the Quicksand Caves Map 2.",
+                substeps = {
+                    "The cave entrance at Eastern Altepa Desert (H-10) will place you on Map 2.",
+                },
+            },
+            "You will need to drop down a hole at (E-11) to reach an isolated portion of the map.",
+            "Once you drop down, travel to the Fountain of Kings at (G-14).",
+            {
+                text = "Clear the area and check Fountain of Kings . This will spawn 2 Kraken NMs: Honor and Valor :",
+                substeps = {
+                    "You can pull them one at a time, they will not link, but will aggro to sound.",
+                    "Valor uses Hundred Fists .",
+                    "Honor casts Paralyga and Silencega .",
+                    "It is possible to land Blind and Gravity on either, but both resist Sleep .",
+                    "Letting one depop and then defeating the other makes this a lot easier to deal with.",
+                },
+            },
+            "Check the Fountain of Kings again, after the bodies disappear, for some Drops of Amnio .",
+            "Return to Halver .",
+            "Wait 1 Earth minute, then exit the Chateau (into Northern San d'Oria ) for another cutscene.",
         },
     },
 
-    ['8-2'] = {
+    ["8-2"] = {
         name = "Lightbringer",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and examine the " .. ACTOR.GREAT_HALL.text .. ".",
-            "Speak with " .. ACTOR.RAHAL.text .. " at (H-9) to receive the Crystal Dowser and instructions.",
-            "Travel to Temple of Uggalepih and obtain a Prelate Key from the required Tonberries.",
-            "Reach Map 2 and continue to the door at (I-10).",
-            "If the Temple Guardian blocks the route, defeat it to open the way, then continue through the nearby passage.",
-            "Pass through the door at (J-10).",
-            "Examine " .. ACTOR.UGGALEPIH_LIGHTBRINGER_QQ_G10.text .. ", " .. ACTOR.UGGALEPIH_LIGHTBRINGER_QQ_H10_1.text .. ", and " .. ACTOR.UGGALEPIH_LIGHTBRINGER_QQ_I10.text .. " to collect the three Pieces of a Broken Key.",
-            "After obtaining all three pieces, examine the second door at (H-10), then examine " .. ACTOR.UGGALEPIH_LIGHTBRINGER_QQ_H10_2.text .. ".",
-            "Defeat Nio-Hum and Nio-A.",
-            "Examine " .. ACTOR.UGGALEPIH_LIGHTBRINGER_QQ_H10_2.text .. " again.",
-            "Return to Chateau d'Oraguille and examine the " .. ACTOR.GREAT_HALL.text .. ".",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Head to Chateau d'Oraguille and check the Great Hall door for a cutscene.",
+            "Speak with Rahal (H-9, western door directly across from the entry way) to receive the Crystal dowser and further instructions.",
+            {
+                text = "Head to the Temple of Uggalepih and farm a Prelate Key from the Tonberry Stabbers on Map 3/4.",
+                substeps = {
+                    "See the note below before farming the key. Alternatively you may farm Tonberry Choppers in the Yhoator Jungle or Tonberry Slashers in the Den of Rancor .",
+                    "Several Tonberry Slashers spawn in the large room near the Den of Rancor Unity Warp (Level 128).",
+                },
+            },
+            {
+                text = "Make your way through the Temple until you reach the door at (I-10) on Map 2, that can only be opened by killing the Temple Guardian .",
+                substeps = {
+                    "The Temple of Uggalepih Geomagnetic Fount is closest.",
+                    "Alternate Route: Take the Survival Guide to Temple . Exit out to Yhoator Jungle. Go around the corner to entrance #3 back into the temple, and you will be on Map 2.",
+                    "The Guardian will not be there and the door will be open if someone has defeated it in the last 15 minutes.",
+                },
+            },
+            {
+                text = "Pass into the big room, and head upstairs and through the door at (J-10) which requires the Prelate Key .",
+                substeps = {
+                    "Note : The door on top of the east set of stairs can be bypassed without a Prelate Key . One way of doing this is summoning a Trust that moves away from you, such as Yoran-Oran , engaging an enemy in front of the door, and hoping that the Trust runs through the door. This is a much faster method than dealing with the low drop rate of the key.",
+                    "You only need 1 Prelate Key to open this door for yourself or an entire party. As soon as someone makes it behind this door they can open it for anyone else coming through.",
+                },
+            },
+            {
+                text = "In the south hallway examine the three ??? in any order. From west to east, they are in the first (G-10), third (H-10), and fourth rooms (I-10). The fourth room has multiple ??? , ensure you get the message \"Obtained key item: Piece of a broken key .\"",
+                substeps = {
+                    "Each ??? will provide a Piece of a broken key .",
+                    "Each player in the party must obtain the 3 Piece of a broken key in order to complete the final cutscene.",
+                },
+            },
+            {
+                text = "After you have all 3 keys, select the second door (H-10) to spawn 2 Doll NMs: Nio-Hum and Nio-A .",
+                substeps = {
+                    "Both have around 6500 HP, do regular Doll attacks, and cannot be slept .",
+                    "You may pull one at a time if Sneak is activated before spawning.",
+                    "The Dolls are aggressive to magic so you may not pull with magic.",
+                },
+            },
+            {
+                text = "After the Dolls have been defeated, check the door again for a cutscene.",
+                substeps = {
+                    "This cutscene will detail that you failed to find the sword you came here for, it is the correct cutscene. You can warp out after this.",
+                },
+            },
+            "Return to Chateau d'Oraguille and check the Great Hall door for a cutscene.",
+            "You will be awarded Rank 9 and 80,000 Gil .",
+            {
+                text = "Details",
+                substeps = {
+                    "Temple of Uggalepih Map 1 - Temple of Uggalepih Map 2 - Temple of Uggalepih Map 3 - Temple of Uggalepih Map 4 - Temple of Uggalepih Composite Map",
+                },
+            },
         },
     },
 
-    -- ========================================================
-    -- RANK 9
-    -- ========================================================
-
-    ['9-1'] = {
+    ["9-1"] = {
         name = "Breaking Barriers",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Travel to Chateau d'Oraguille and examine the " .. ACTOR.GREAT_HALL.text .. ".",
-            "The three objectives must be completed in order. Before entering Eldieme Necropolis alone, obtain a Magicked Astrolabe from Churano-Shurano in Windurst Waters (F-8) to open the required doors.",
-            "First, travel to Cape Terrigan and reach the Valley of Sorrows entrance at (J-8). Cross to (I-8) and examine " .. ACTOR.VALLEY_OF_SORROWS_QQ_I8.text .. " to receive the Figure of Titan.",
-            "Next, travel to Xarcabard and reach (H-7). Examine " .. ACTOR.XARCABARD_QQ_H7.text .. " near the clustered trees to receive the Figure of Garuda.",
-            "Finally, enter the southern Eldieme Necropolis entrance from Batallia Downs at (I-10).",
-            "Reach the southern room and drop through the center hole at (G-9), then follow the route through Maps 2 and 3 and exit back to Batallia Downs at (J-9).",
-            "Reach " .. ACTOR.BATALLIA_BREAKING_BARRIERS_QQ_J11.text .. " near the Stone Monument and examine it to face Suparna and Suparna Fledgling.",
-            "Defeat both, then examine the same target again to receive the Figure of Leviathan.",
-            "Return to Chateau d'Oraguille and examine the " .. ACTOR.GREAT_HALL.text .. ".",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            {
+                text = "(Optional) : The following are optional steps you can take.",
+                substeps = {
+                    "Interact with the two doors to the Princes' Quarters for short cutscenes.",
+                    "Speak with Curilla and Rahal for small talk about the previous Mission. They will also have different dialogue after the KIs are obtained but before the Mission is completed.",
+                },
+            },
+            "Go to the Chateau and check the Great Hall door for a cutscene.",
+            "You must now travel to 3 ??? and obtain 3 Key Items .",
+            "Note: The following steps must be done in order.",
+            {
+                text = "In Valley of Sorrows , if you don't have a mount like the chocobo or raptor then Sneak and Invisible across to (I-8) and check the ??? to receive the Figure of Titan .",
+                substeps = {
+                    "The Survival Guide in Valley of Sorrows is the same entrance.",
+                    "Alternatively, the Unity Warp (Level 135) for Valley of Sorrows may be used.",
+                    "Otherwise go to Cape Teriggan and head to the (J-8) entrance to Valley of Sorrows . This is the same entrance used for Adamantoise / Aspidochelone .",
+                },
+            },
+            {
+                text = "Head for Xarcabard and go to (H-7) upper level.",
+                substeps = {
+                    "The Survival Guide for Xarcabard brings you to (H-9), almost due south of the ramp you need to ascend.",
+                },
+            },
+            "The ??? is in a group of 3 clustered trees with their leaves to the west of the ramp (still in H-7).",
+            "Select the ??? to obtain the Figure of Garuda .",
+            "Note: Purchase a Magicked astrolabe from Churano-Shurano in Windurst Waters (F-8) to open the doors in the Eldieme Necropolis by yourself.",
+            {
+                text = "Head for the southern Eldieme Necropolis entrance at (I-10) in Batallia Downs .",
+                substeps = {
+                    "The Survival Guide to Eldieme Necropolis is located just inside this entrance.",
+                },
+            },
+            "Make your way to the southern room, and then to the center hole at (G-9). You will likely need Sneak in the basement, do so before dropping down.",
+            {
+                text = "Now on map 2, Follow the immediate path heading East to reach map 3. Head to the exit at (J-9) into Batallia Downs .",
+                substeps = {
+                    "Optional: If Ahtu is up, kill it first, it should not pose a problem to anyone in the party.",
+                },
+            },
+            {
+                text = "Check the ??? (J-11) near the cliff to spawn two Greater Bird NMs: Suparna ( WAR ) and Suparna Fledgling ( WHM ).",
+                substeps = {
+                    "Note: There are multiple ??? on this island. Check the one near the Stone Monument at the rear of this island.",
+                    "They can both use Horde Lullaby and Massacre Elegy as well as their own respective abilities, such as Mighty Strikes and Benediction , and typical Greater Bird TP attacks.",
+                },
+            },
+            "Defeat both NMs, once the corpses despawn check the ??? again to receive a cutscene and the Figure of Leviathan .",
+            "Head back to the Chateau and check the Great Hall door for a final cutscene, completing the Mission.",
         },
     },
 
-    ['9-2'] = {
+    ["9-2"] = {
         name = "The Heir to the Light",
         steps = {
-            "Speak with any " .. ACTOR.GATE_GUARD.text .. " in San d'Oria.",
-            "Zone into Northern San d'Oria for the Rites of Succession.",
-            "Zone into Chateau d'Oraguille.",
-            "Travel to Fei'Yin and continue to " .. ACTOR.QU_BIA_ARENA.text .. ".",
-            "Enter The Heir to the Light battlefield. The first battle consists of Death Clan Destroyer, Yukvok of Clan Death, three Worgbut of Clan Death, three Rallbrog of Clan Death, and three Vangknok of Clan Death.",
-            "Defeat the first group, then continue to the second battle with Prince Trion. Defeat Warlord Rojgnoj, Rojgnoj's Left Hand, and Rojgnoj's Right Hand.",
-            "Zone into Northern San d'Oria.",
-            "Return to Chateau d'Oraguille and examine the " .. ACTOR.GREAT_HALL.text .. ".",
-            "Travel to King Ranperre's Tomb and examine " .. ACTOR.HEAVY_STONE_DOOR.text .. ".",
-            "Return to Chateau d'Oraguille and speak with " .. ACTOR.HALVER.text .. ".",
-            "Return to Northern San d'Oria and visit the Papal Chambers to learn what happened to Shamonde.",
-            "Zone into Southern San d'Oria for the final epilogue.",
+            "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            {
+                text = "Zone into Northern San d'Oria for a lengthy cutscene.",
+                substeps = {
+                    "If you accepted the Mission from the Northern San d'Oria gate guard, you can talk to Arnau to see they are still preparing the Rites.",
+                    "You will be prohibited from zoning into Chateau d'Oraguille due to increased security until you've triggered the cutscene in Northern San d'Oria .",
+                },
+            },
+            "Zone into Chateau d'Oraguille for a cutscene.",
+            "Head to Fei'Yin for a cutscene.",
+            {
+                text = "Make your way to Qu'Bia Arena for a two-part BCNM fight, \" The Heir to the Light \".",
+                substeps = {
+                    "Use Fei'Yin Home Point #1 or Domenic to teleport right outside the arena, then walk a short distance to zone into the small room with the Burning Circle .",
+                },
+            },
+            {
+                text = "Part One will have Death Clan Destroyer ( WHM Warmachine ), Yukvok of Clan Death (Unsleepable Orc RNG ), 3 Worgbut of Clan Death , 3 Rallbrog of Clan Death , and 3 Vangknok of Clan Death ( Orcs , Sleepable).",
+                substeps = {
+                    "Open with Elemental Seal + Sleepga II or Horde Lullaby , and start attacking the Ranger mob first. Make sure you silence the Warmachine, as it is a WHM who can Curaga and wake everything up. Defeat the Ranger, followed by the Warmachine, and then take our the rest.",
+                    "Sleep the last mob before killing it, and give yourself a rest. There will be no time after the first part of the fight to rest.",
+                },
+            },
+            {
+                text = "Part Two will include Prince Trion fighting by your side, against 3 Orc NMs, Warlord Rojgnoj ( PLD unsleepable), Rojgnoj's Left Hand ( BLM ), and Rojgnoj's Right Hand ( DRK ).",
+                substeps = {
+                    "Trion will randomly attack a mob, and should be helped. Preferably, the order to kill the NMs is BLM > PLD > DRK. Trion can be cured and can die in the BC. Should he die, you will be ejected from the BC. Despite being a Paladin, he isn't great at keeping himself alive.",
+                    "Keep the other mobs silenced, a Paladin with Invincible is useful here for keeping attention.",
+                },
+            },
+            "Upon clearing the battlefield, zone into Northern San d'Oria for a cutscene.",
+            "Head to the Chateau and check the Great Hall door for another cutscene.",
+            "Make your way to (H-8) in King Ranperre's Tomb and check the Heavy Stone Door -- the same from a previous mission -- for yet another cutscene.",
+            {
+                text = "Go back to the Chateau and speak to Halver and you will receive your rewards.",
+                substeps = {
+                    "(Optional) : Exit to Northern San d'Oria and proceed to the Papal Chamber door .",
+                },
+            },
+            "Zone into Southern San d'Oria for a final epilogue cutscene!",
         },
     },
 

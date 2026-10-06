@@ -78,6 +78,14 @@ pages. They map one-to-one to the complete Abyssea quest-ID range from 0 through
 191, including storyline quests, Dominion Ops, and the repeatable Martello
 quests.
 
+The San d'Oria, Bastok, and Windurst mission walkthroughs are generated from
+their corresponding BG-Wiki mission pages with `tools/build_nation_missions.py`.
+The branching rank 2-3 missions retain JournalXI's server-tested combined paths,
+and Bastok 8-1 retains its existing walkthrough because BG-Wiki currently has
+no walkthrough content for that page. The pre-rebuild mission data is preserved
+by the Git tag `missions-original-before-bgwiki` and the adjacent
+`JournalXI-missions-original.zip` archive.
+
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise
 walkthrough documented by the HorizonXI and FFXIclopedia wikis.
