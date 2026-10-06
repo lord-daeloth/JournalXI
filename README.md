@@ -86,6 +86,12 @@ no walkthrough content for that page. The pre-rebuild mission data is preserved
 by the Git tag `missions-original-before-bgwiki` and the adjacent
 `JournalXI-missions-original.zip` archive.
 
+Rise of the Zilart, Chains of Promathia, and Treasures of Aht Urhgan mission
+walkthroughs are generated with `tools/build_expansion_missions.py`. JournalXI
+retains its existing guides for tracker states without dedicated wiki pages,
+wiki pages without walkthrough content, and Promathia's combined `Three Paths`
+branch guide.
+
 BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
 metadata comes from BG-Wiki, while its five objectives use the matching concise
 walkthrough documented by the HorizonXI and FFXIclopedia wikis.

@@ -35,7 +35,9 @@ def table_block(text: str, marker: str) -> str:
 def step_entries(text: str) -> dict[str, str]:
     block = table_block(text, "M.STEPS =")
     entries = {}
-    pattern = re.compile(r"^    \[['\"]([^'\"]+)['\"]\] = \{", re.MULTILINE)
+    pattern = re.compile(
+        r"^    \[(?:(['\"])([^'\"]+)\1|(\d+))\] = \{", re.MULTILINE
+    )
     for match in pattern.finditer(block):
         brace = block.index("{", match.start())
         depth = 0
@@ -48,7 +50,7 @@ def step_entries(text: str) -> dict[str, str]:
                     end = index + 1
                     if end < len(block) and block[end] == ",":
                         end += 1
-                    entries[match.group(1)] = block[match.start():end]
+                    entries[match.group(2) or match.group(3)] = block[match.start():end]
                     break
     return entries
 
