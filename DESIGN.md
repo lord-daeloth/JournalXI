@@ -10,7 +10,8 @@ the normal workflow visible without extra navigation windows.
 
 - `JournalXI.lua` owns settings, selection, filtering, commands, and rendering.
 - `tracker.lua` owns packet parsing and mission/quest progress status.
-- `data/` owns the offline guide content copied from Journal.
+- `data/` owns the offline guide content assembled from the sources documented
+  in `DATA_NOTES.md`.
 
 Keeping packet decoding separate from presentation makes the risky game-state
 logic reusable while allowing the interface to evolve independently.
@@ -31,10 +32,7 @@ logic reusable while allowing the interface to evolve independently.
 - Status filters replace special-case hide/show controls.
 - The details pane uses the remaining width instead of a configurable divider.
 
-## Suggested follow-up phases
+## Release status
 
-1. In-game compatibility and packet-status testing on Ashita 4.16.
-2. Keyboard/gamepad-friendly navigation and optional compact list mode.
-3. Favorites or multiple pinned entries, only if one tracker proves too limiting.
-4. Data corrections kept in JournalXI first, then optionally synchronized back to
-   Journal after validation.
+Version 1.0 targets CatsEyeXI on Ashita 4.16. Assault and Campaign Ops guides
+remain the main areas awaiting broad live-completion testing.

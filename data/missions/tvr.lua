@@ -1,8 +1,6 @@
 -- The Voracious Resurgence mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -1227,12 +1225,12 @@ M.STEPS = {
     [508] = {
         name = 'Oshasha Violation',
         steps = {
-            "Speak with " .. ACTOR.ANDREINE.text .. " in the Celennia Memorial Library.",
+            "Speak with Andreine. in the Celennia Memorial Library.",
             "Travel to Marjami Ravine.",
-            "Examine " .. ACTOR.BIBLIOMANIACS_LAIR.text .. " at (I-10).",
+            "Examine Bibliomaniac's Lair (I-10). at (I-10).",
             "Defeat Brash Gramk-Droog, Velkk Defiler, and Velkk Inquisitor.",
-            "Examine " .. ACTOR.BIBLIOMANIACS_LAIR.text .. " again after the battle.",
-            "Return to " .. ACTOR.ANDREINE.text .. ".",
+            "Examine Bibliomaniac's Lair (I-10). again after the battle.",
+            "Return to Andreine..",
         },
     },
 
@@ -1359,9 +1357,9 @@ M.STEPS = {
     [562] = {
         name = 'Magh Bihu on the Prowl',
         steps = {
-            "Speak with " .. ACTOR.MANDRAGORA_WARDEN.text .. " and trade Acidic Humus.",
+            "Speak with Mandragora Warden (F-4). and trade Acidic Humus.",
             "Complete the Magh Bihu event.",
-            "Return to " .. ACTOR.MANDRAGORA_WARDEN.text .. " and trade a Watermelon.",
+            "Return to Mandragora Warden (F-4). and trade a Watermelon.",
             "Complete the final event.",
         },
     },

@@ -1,8 +1,6 @@
 -- Bastok Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -153,32 +151,32 @@ M.STEPS = {
     ['2-3'] = {
         name = "The Emissary",
         steps = {
-            "Speak with " .. ACTOR.GATE_GUARD.text .. ".",
-            "Speak with " .. ACTOR.NAJI.text .. " to begin the embassy mission.",
+            "Speak with Gate Guard..",
+            "Speak with Naji (J-8). to begin the embassy mission.",
             "Choose whether to visit San d'Oria or Windurst first.",
 
             "San d'Oria first: travel to Northern San d'Oria and speak with Baraka at the Bastokan Consulate.",
             "Speak with Helaku at (K-10) inside the Bastokan Consulate.",
-            "Travel to Chateau d'Oraguille and speak with " .. ACTOR.HALVER.text .. ".",
+            "Travel to Chateau d'Oraguille and speak with Halver (I-9)..",
             "Travel to Ghelsba Outpost and defeat Warchief Vatgit at (H-7).",
             "Return to Northern San d'Oria and speak with Helaku again.",
             "Travel to Port Windurst and speak with Melek at (F-6) inside the Bastokan Consulate.",
-            "Enter Heavens Tower and speak with " .. ACTOR.KUPIPI.text .. " through the Clerical Chamber door.",
+            "Enter Heavens Tower and speak with Kupipi. through the Clerical Chamber door.",
             "Travel to Giddeus and complete the battle at Balga's Dais.",
             "Return to Port Windurst and speak with Melek again.",
 
             "Windurst first: travel to Port Windurst and speak with Melek at (F-6) inside the Bastokan Consulate.",
-            "Enter Heavens Tower and speak with " .. ACTOR.KUPIPI.text .. " through the Clerical Chamber door.",
+            "Enter Heavens Tower and speak with Kupipi. through the Clerical Chamber door.",
             "Travel to Giddeus and defeat Eyy Mon the Ironbreaker at (G-7).",
             "Trade the Aspir Knife to Uu Zhoumo.",
             "Return to Port Windurst and speak with Melek again.",
             "Travel to Northern San d'Oria and speak with Helaku at (K-10).",
-            "Travel to Chateau d'Oraguille and speak with " .. ACTOR.HALVER.text .. ".",
-            "Travel to " .. ACTOR.HORLAIS_PEAK.text .. " and enter the battlefield.",
+            "Travel to Chateau d'Oraguille and speak with Halver (I-9)..",
+            "Travel to battlefield entrance. and enter the battlefield.",
             "Defeat the Dread Dragon.",
             "Return to Northern San d'Oria and speak with Helaku.",
 
-            "Return to Bastok and speak with " .. ACTOR.NAJI.text .. " after completing both paths.",
+            "Return to Bastok and speak with Naji (J-8). after completing both paths.",
         },
     },
 
@@ -529,19 +527,19 @@ M.STEPS = {
     ['8-1'] = {
         name = "The Chains That Bind Us",
         steps = {
-            "Speak with " .. ACTOR.GATE_GUARD.text .. ".",
-            "Speak with " .. ACTOR.IRON_EATER.text .. ".",
+            "Speak with Gate Guard..",
+            "Speak with Iron Eater (J-8)..",
             "Enter Quicksand Caves from Western Altepa Desert at (G-5).",
             "Reach (H-8) and pass through the weighted door.",
             "Continue through the next weighted door at (I-10) and reach (G-11).",
-            "Examine " .. ACTOR.QUICKSAND_QQ_G11.text .. " to face Triarius IV-XIV, Princeps IV-XLV, and Centurio IV-VII.",
+            "Examine ??? (G-11). to face Triarius IV-XIV, Princeps IV-XLV, and Centurio IV-VII.",
             "Defeat all three Antica.",
             "Examine the Galka Statue again.",
             "Return to Western Altepa Desert and enter Quicksand Caves from the entrance around (C/D-11).",
             "Pass through the weighted door at (K-8) and continue to the next area.",
             "Use the weight device at (G-8) and reach the ??? at (H-8) in front of the mural.",
             "Examine the ???.",
-            "Return to " .. ACTOR.IRON_EATER.text .. ".",
+            "Return to Iron Eater (J-8)..",
         },
     },
 

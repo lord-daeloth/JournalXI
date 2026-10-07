@@ -1,8 +1,6 @@
 -- San d'Oria Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -173,33 +171,33 @@ M.STEPS = {
     ['2-3'] = {
         name = "Journey Abroad",
         steps = {
-            "Speak with " .. ACTOR.HALVER.text .. " at Chateau d'Oraguille.",
+            "Speak with Halver (I-9). at Chateau d'Oraguille.",
             "Choose whether to visit Bastok or Windurst first. The two paths can be completed in either order.",
 
             "Bastok First:",
-            "Travel to Bastok and speak with " .. ACTOR.SAVAE_E_PALEADE.text .. ", " .. ACTOR.PIUS.text .. ", and " .. ACTOR.GROHM.text .. ".",
+            "Travel to Bastok and speak with Savae E. Paleade (I-9)., Pius (J-8)., and Grohm (G-9)..",
             "In Palborough Mines, trade a Pickaxe to a Mythril Seam to obtain Mine Gravel.",
             "On the third floor, trade the Gravel to the Refiner, pull the lever, drop to the second floor, pull the second lever, and obtain Mythril Sand.",
-            "Return to " .. ACTOR.SAVAE_E_PALEADE.text .. " and trade the Mythril Sand.",
-            "Travel to Windurst Woods and speak with " .. ACTOR.MOURICES.text .. ".",
-            "Enter Heavens Tower and speak with " .. ACTOR.KUPIPI.text .. " in the Clerical Chamber to receive the Dark Key.",
+            "Return to Savae E. Paleade (I-9). and trade the Mythril Sand.",
+            "Travel to Windurst Woods and speak with Mourices (F/G-10)..",
+            "Enter Heavens Tower and speak with Kupipi. in the Clerical Chamber to receive the Dark Key.",
             "Travel through Giddeus to Balga's Dais and enter the Rank 2 Final Mission battlefield.",
             "Defeat Searcher and Black Dragon.",
-            "Return to Windurst Woods and speak with " .. ACTOR.MOURICES.text .. " to receive the Kindred Report.",
+            "Return to Windurst Woods and speak with Mourices (F/G-10). to receive the Kindred Report.",
 
             "Windurst First:",
-            "Travel to Windurst Woods and speak with " .. ACTOR.MOURICES.text .. ".",
-            "Enter Heavens Tower and speak with " .. ACTOR.KUPIPI.text .. " in the Clerical Chamber to receive the Shield Offering.",
+            "Travel to Windurst Woods and speak with Mourices (F/G-10)..",
+            "Enter Heavens Tower and speak with Kupipi. in the Clerical Chamber to receive the Shield Offering.",
             "Enter Giddeus from West Sarutabaruta at (F-8), then drop through the hole at (G-8) and head north to (G/H-7).",
             "Defeat Zhuu Buxu the Silent twice to obtain two Parana Shields.",
-            "Travel west to (F-7) and speak with " .. ACTOR.UU_ZHOUMO.text .. " to offer the Shield Offering.",
-            "Return to " .. ACTOR.MOURICES.text .. " and trade the two Parana Shields.",
-            "Travel to Bastok and speak with " .. ACTOR.SAVAE_E_PALEADE.text .. ", " .. ACTOR.PIUS.text .. ", and " .. ACTOR.GROHM.text .. ".",
-            "Travel through Palborough Mines, obtain Mine Gravel and turn it into Mythril Sand, then return to " .. ACTOR.SAVAE_E_PALEADE.text .. ".",
+            "Travel west to (F-7) and speak with Uu Zhoumo (F-7). to offer the Shield Offering.",
+            "Return to Mourices (F/G-10). and trade the two Parana Shields.",
+            "Travel to Bastok and speak with Savae E. Paleade (I-9)., Pius (J-8)., and Grohm (G-9)..",
+            "Travel through Palborough Mines, obtain Mine Gravel and turn it into Mythril Sand, then return to Savae E. Paleade (I-9)..",
             "Enter Waughroon Shrine and complete the Rank 2 Final Mission against Seeker and Dark Dragon.",
-            "Return to " .. ACTOR.SAVAE_E_PALEADE.text .. " to receive the Kindred Report.",
+            "Return to Savae E. Paleade (I-9). to receive the Kindred Report.",
 
-            "Return to " .. ACTOR.HALVER.text .. " at Chateau d'Oraguille after both national paths are complete.",
+            "Return to Halver (I-9). at Chateau d'Oraguille after both national paths are complete.",
         },
     },
 
@@ -254,18 +252,61 @@ M.STEPS = {
     ["3-3"] = {
         name = "Appointment to Jeuno",
         steps = {
-            "Trade enough Crystals (3+ if you skipped the last mission) to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
+            "Trade enough crystals to a San d'Orian Conquest Overseer to raise your Rank bar, then accept Appointment to Jeuno from any San d'Orian Gate Guard.",
             "Speak to Halver in Chateau d'Oraguille at (I-9).",
-            "Click the Door: Great Hall behind Halver for a cutscene. You will obtain Letter to the ambassador .",
+            "Examine the Door: Great Hall behind Halver for a cutscene and the Letter to the Ambassador key item.",
+            "Travel to the San d'Orian Embassy in Ru'Lude Gardens (H-9) and speak with Nelcabrit.",
             {
-                text = "Head to the San d'Orian Embassy in Ru'Lude Gardens (H-9) and speak with Nelcabrit .",
+                text = "Prepare for the full climb through Delkfutt's Tower, then travel through Port Jeuno and Qufim Island to enter Lower Delkfutt's Tower at (F-6).",
                 substeps = {
-                    "If you already possess the Delkfutt Key (trade it to the door) or the Delkfutt key (no trading needed) then you may skip this climb:",
-                    "If you do not possess the Key, start the climb process detailed below:",
+                    "Sneak or Silent Oil protects against bats and weapons; Invisible or Prism Powder protects against Goblins and Gigas.",
+                    "Magic Pots and Dolls aggro magic, so avoid casting near them.",
+                    "Set a Home Point in Jeuno or bring a way to Warp after finishing inside the tower.",
                 },
             },
-            "Head to Lower Delkfutt's Tower using the Survival Guide teleportation, Outpost warp, or Home Point warp.",
-            "You will now likely need to climb to the 10th floor of Delkfutt's Tower in order to gain a Delkfutt Key in order to access the Basement of the Tower:",
+            {
+                text = "Climb Lower Delkfutt's Tower from floors 1 through 3.",
+                substeps = {
+                    "Floor 1: follow the right wall to the stairs at (E/F-6).",
+                    "Floor 2: follow the left wall to the stairs at (I-9).",
+                    "Floor 3: follow the right wall to the teleporter at (G-6).",
+                },
+            },
+            {
+                text = "Continue through Middle Delkfutt's Tower from floors 4 through 6.",
+                substeps = {
+                    "Floor 4: follow the right wall past two teleporters and take the stairs at (J-6).",
+                    "Floor 5: enter the hallway on the right at (I-7), then follow the left wall to the northbound stairs at (H-10).",
+                    "Floor 6: follow the right wall from the top of the stairs to the teleporter at (J-10).",
+                },
+            },
+            {
+                text = "Continue the climb through floors 7 through 9.",
+                substeps = {
+                    "Floor 7: cross the large room northwest to the stairs at (G-7).",
+                    "Floor 8: follow the left wall to the stairs at (J-7).",
+                    "Floor 9: head south and take the stairs at (J-10), which return you to floor 8.",
+                    "Floor 8 again: head west and take the stairs at (G-10); do not fall through the hole.",
+                    "Floor 9 again: follow the left wall to the teleporter at (F-6), which leads to floor 10.",
+                },
+            },
+            {
+                text = "On floor 10 of Upper Delkfutt's Tower, go southeast through the door and hallway to the guarded door at (H-7).",
+                substeps = {
+                    "Defeat or avoid Mimas at the door, then enter Porphyrion's room.",
+                    "Pull Porphyrion into the hallway if needed to avoid linking the surrounding Gigas.",
+                    "Defeat Porphyrion and obtain a Delkfutt Key. Examine the glowing target after the fight if it appears to receive the key-item version.",
+                },
+            },
+            "Use the Delkfutt Key on the elevator at (H-8) in Porphyrion's room, then descend the long spiral staircase to the basement.",
+            {
+                text = "In the basement, head east into the large room and examine San d'Oria's Cermet Door at (L/M-8) for a cutscene.",
+                substeps = {
+                    "Trade the item version of the Delkfutt Key to the door if the key-item version was not obtained.",
+                    "If no cutscene plays, verify that you are using San d'Oria's middle door rather than the Bastok or Windurst door.",
+                },
+            },
+            "Return to the San d'Orian Embassy in Ru'Lude Gardens and examine the Door: San d'Orian Emb. at the back of the embassy to complete the mission and receive Rank 4 and 5,000 gil.",
         },
     },
 

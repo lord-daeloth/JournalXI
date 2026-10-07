@@ -1,8 +1,6 @@
 -- Windurst Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -285,31 +283,31 @@ M.STEPS = {
     ['2-3'] = {
         name = "The Three Kingdoms",
         steps = {
-            "Speak with " .. ACTOR.GATE_GUARD.text .. ".",
-            "Speak with " .. ACTOR.KUPIPI.text .. " in Heavens Tower.",
+            "Speak with Gate Guard..",
+            "Speak with Kupipi. in Heavens Tower.",
 
             "Bastok Path:",
-            "Travel to Bastok and speak with " .. ACTOR.PATT_POTT.text .. ".",
+            "Travel to Bastok and speak with Patt-Pott (I-7)..",
             "Speak with Pius at (J-8), then Grohm at (G-9).",
             "Travel to Palborough Mines and obtain Mine Gravel from a Mythril Seam at (F-7) or (I-8).",
             "Place the Gravel in the Refiner, operate the levers as required, and obtain Mythril Sand.",
-            "Return to Metalworks and trade the Mythril Sand to " .. ACTOR.PATT_POTT.text .. ".",
+            "Return to Metalworks and trade the Mythril Sand to Patt-Pott (I-7)..",
             "Travel to Northern San d'Oria and speak with Kasaroro at (H-9).",
-            "Speak with " .. ACTOR.HALVER.text .. ".",
+            "Speak with Halver (I-9)..",
             "Enter Horlais Peak and complete the required battlefield.",
             "Return to Northern San d'Oria and speak with Kasaroro again.",
 
             "San d'Oria Path:",
             "Travel to Northern San d'Oria and speak with Heruze-Moruze, then Helaku at (K-10).",
-            "Speak with " .. ACTOR.HALVER.text .. " when directed.",
+            "Speak with Halver (I-9). when directed.",
             "Travel to Ghelsba Outpost and defeat Warchief Vatgit.",
             "Return to Northern San d'Oria and speak with Kasaroro.",
-            "Return to Bastok and speak with " .. ACTOR.PATT_POTT.text .. ".",
+            "Return to Bastok and speak with Patt-Pott (I-7)..",
             "Speak with Pius at (J-8), then Grohm at (G-9).",
             "Enter Waughroon Shrine and complete the required battlefield.",
-            "Return to " .. ACTOR.PATT_POTT.text .. ".",
+            "Return to Patt-Pott (I-7)..",
 
-            "Return to " .. ACTOR.KUPIPI.text .. " after both paths are complete.",
+            "Return to Kupipi. after both paths are complete.",
         },
     },
 

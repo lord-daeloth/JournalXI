@@ -1,8 +1,6 @@
 -- Seekers of Adoulin mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -1137,7 +1135,7 @@ M.STEPS = {
     [306] = {
         name = 'An Emergency Convocation',
         steps = {
-            "Proceed to the " .. ACTOR.PALACE_ADOULIN.text .. ".",
+            "Proceed to the Palace..",
             "Attend the emergency convocation.",
         },
     },
@@ -1376,9 +1374,9 @@ M.STEPS = {
     [338] = {
         name = 'The Key to the Turris',
         steps = {
-            "Reach the bottom of " .. ACTOR.TURRIS.text .. ".",
+            "Reach the bottom of Ra'Kaznar Turris..",
             "Examine the Ominous Postern.",
-            "If the route requires the Silvery Plate, travel to Outer Ra'Kaznar and examine " .. ACTOR.OUTER_RAKAZNAR_QQ_C7.text .. ".",
+            "If the route requires the Silvery Plate, travel to Outer Ra'Kaznar and examine ??? (C-7)..",
         },
     },
 

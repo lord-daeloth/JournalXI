@@ -1,8 +1,6 @@
 -- Zilart Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -45,7 +43,7 @@ M.STEPS = {
         name = "The Outlands",
         steps = {
             "Continue to Norg after reaching Rank 6 in your home nation.",
-            "Enter " .. ACTOR.NORG_OAKEN_DOOR_L8.text .. " in Norg.",
+            "Enter Oaken Door (L-8). in Norg.",
         },
     },
 
@@ -274,7 +272,7 @@ M.STEPS = {
         steps = {
             "Zone into Ru'Aun Gardens.",
             "Enter the Shrine of Ru'Avitau.",
-            "To face all five Ark Angels at once, examine " .. ACTOR.SHRINE_RUAVITAU_BLANK_TARGET_H11.text .. " twice, then obtain an Ark Pentasphere.",
+            "To face all five Ark Angels at once, examine Blank target (H-11). twice, then obtain an Ark Pentasphere.",
             "Use the red portals in Ru'Aun Gardens to reach the five La'Loff Amphitheater battlefields.",
             "Defeat Ark Angel HM, Ark Angel TT, Ark Angel MR, Ark Angel EV, and Ark Angel GK.",
             "Alternatively, use the Ark Pentasphere at La'Loff Amphitheater and defeat all five Ark Angels in the same battle.",
@@ -297,10 +295,10 @@ M.STEPS = {
     ['28'] = {
         name = "The Celestial Nexus",
         steps = {
-            "Enter " .. ACTOR.SHRINE_RUAVITAU.text .. " from Ru'Aun Gardens at (I-6).",
+            "Enter Shrine of Ru'Avitau. from Ru'Aun Gardens at (I-6).",
             "Pass through the first yellow door at (J-7), then continue west through the second yellow door to reach the room with the two Monoliths at (H-7).",
             "Continue south around the square hallway to the room with the two Dark Elementals around (H-10).",
-            "Go north and descend the stairs to " .. ACTOR.CELESTIAL_NEXUS.text .. " at (H-9).",
+            "Go north and descend the stairs to Celestial Nexus (H-9). at (H-9).",
             "Enter the battlefield and defeat Eald'narche.",
         },
     },

@@ -1,8 +1,6 @@
 -- Wings of the Goddess mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -1060,7 +1058,7 @@ M.STEPS = {
         name = "A Dreamy Interlude",
         steps = {
             "After the required time has passed, change zones.",
-            "Return to " .. ACTOR.VERIDICAL_CONFLUX_WOTG.text .. ".",
+            "Return to Veridical Conflux (F-5)..",
             "Examine the Veridical Conflux again.",
         },
     },

@@ -1,8 +1,6 @@
 -- Promathia Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -354,11 +352,11 @@ M.STEPS = {
         name = "The Enduring Tumult of War",
         steps = {
             "Travel to Port Bastok.",
-            "Speak with " .. ACTOR.CID.text .. " in Metalworks.",
+            "Speak with Cid (H-8). in Metalworks.",
             "Enter Pso'Xja from the (F-7) entrance in Beaucedine Glacier.",
-            "Follow the path without dropping down until you reach " .. ACTOR.PSOXJA_STONE_DOOR_H8.text .. " around (H-8).",
+            "Follow the path without dropping down until you reach Stone Door (H-8). around (H-8).",
             "Examine the Stone Door to face Nunyunuwi.",
-            "Defeat Nunyunuwi, then examine " .. ACTOR.PSOXJA_STONE_DOOR_H8.text .. " again.",
+            "Defeat Nunyunuwi, then examine Stone Door (H-8). again.",
             "Take the elevator to the bottom level.",
             "Follow the hallway to the next Stone Door.",
             "Examine the Stone Door to enter Promyvion-Vahzl.",
@@ -381,26 +379,26 @@ M.STEPS = {
     ['5-3'] = {
         name = "Three Paths",
         steps = {
-            "Travel to Bastok Metalworks and speak with " .. ACTOR.CID.text .. ". Complete the three paths in any order.",
+            "Travel to Bastok Metalworks and speak with Cid (H-8).. Complete the three paths in any order.",
 
-            "Past Sins: travel to Tavnazian Safehold and speak with " .. ACTOR.DESPACHIAIRE.text .. " at (K-10), then travel to Windurst Woods and speak with Perih Vashai at (K-7).",
-            "Travel to Bibiki Bay, reach Purgonorgo Isle, and examine " .. ACTOR.PURGONORGO_QQ.text .. " at (H-11). Speak with Yoran-Oran at (E-5) in Windurst Walls for additional dialogue.",
+            "Past Sins: travel to Tavnazian Safehold and speak with Despachiaire (K-10). at (K-10), then travel to Windurst Woods and speak with Perih Vashai at (K-7).",
+            "Travel to Bibiki Bay, reach Purgonorgo Isle, and examine ??? Warmachine (H-11). at (H-11). Speak with Yoran-Oran at (E-5) in Windurst Walls for additional dialogue.",
             "Zone into Oldton Movalpolos, then travel to Mine Shaft #2716 and face Chekochuk, Movamuq, Swipostik, Trikotrak, and Bugbby.",
-            "Defeat all five opponents, return to " .. ACTOR.CID.text .. ", then travel to Newton Movalpolos and obtain a Gold Key.",
-            "Return to " .. ACTOR.MINE_SHAFT_2716.text .. " and trade the Gold Key to the Shaft Entrance, then return to " .. ACTOR.CID.text .. ".",
+            "Defeat all five opponents, return to Cid (H-8)., then travel to Newton Movalpolos and obtain a Gold Key.",
+            "Return to Mine Shaft #2716. and trade the Gold Key to the Shaft Entrance, then return to Cid (H-8)..",
 
-            "The Pursuit of Paradise: travel to La Theine Plateau and examine " .. ACTOR.LA_THEINE_COP_QQ_G6.text .. " at (G-6).",
+            "The Pursuit of Paradise: travel to La Theine Plateau and examine ??? (G-6). at (G-6).",
             "Enter Pso'Xja through the tower at (J-8) in Beaucedine Glacier, pass through the sixteen Stone Doors, descend the elevator, and examine the Avatar Gate.",
-            "Travel to Upper Jeuno and speak with " .. ACTOR.MONBERAUX.text .. " at (G-10) to receive the Envelope, then travel to Ru'Lude Gardens and speak with " .. ACTOR.PHERIMOCIEL.text .. " at (G-6).",
-            "Return to Upper Jeuno and speak with " .. ACTOR.MONBERAUX.text .. " again. Enter Batallia Downs and examine the ??? near (K-8) twice to obtain the Delkfutt Recognition Device.",
+            "Travel to Upper Jeuno and speak with Monberaux (G-10). at (G-10) to receive the Envelope, then travel to Ru'Lude Gardens and speak with Pherimociel. at (G-6).",
+            "Return to Upper Jeuno and speak with Monberaux (G-10). again. Enter Batallia Downs and examine the ??? near (K-8) twice to obtain the Delkfutt Recognition Device.",
             "Enter Lower Delkfutt's Tower, examine the Cermet Door at (H-5), defeat Disaster Idol, and examine the Cermet Door again.",
-            "Return to Pso'Xja through the (H-10) entrance in Beaucedine Glacier, follow the right wall to (I-8), pass through the wall, drop down, take the elevator to the Avatar Gate, and examine it before returning to " .. ACTOR.CID.text .. ".",
+            "Return to Pso'Xja through the (H-10) entrance in Beaucedine Glacier, follow the right wall to (I-8), pass through the wall, drop down, take the elevator to the Avatar Gate, and examine it before returning to Cid (H-8)..",
 
-            "Where Messengers Gather: travel to Southern San d'Oria and speak with " .. ACTOR.HINAREE.text .. " at (B-6), then zone into Port San d'Oria and speak with " .. ACTOR.CHASALVIGE.text .. " in Northern San d'Oria.",
-            "Travel to Windurst Waters and speak with " .. ACTOR.KERUTOTO.text .. " at (J-8), then speak with " .. ACTOR.YORAN_ORAN.text .. " at (E-5) in Windurst Walls.",
+            "Where Messengers Gather: travel to Southern San d'Oria and speak with Hinaree (B-6). at (B-6), then zone into Port San d'Oria and speak with Chasalvige (L-6). in Northern San d'Oria.",
+            "Travel to Windurst Waters and speak with Kerutoto. at (J-8), then speak with Yoran-Oran (E-5). at (E-5) in Windurst Walls.",
             "Enter Boneyard Gully in Attohwa Chasm and defeat Shikaree X, Shikaree Y, and Shikaree Z.",
             "Travel to Uleguerand Range and enter Bearclaw Pinnacle through the hole at (J-9). Enter the Flames for the Dead battlefield and defeat Snoll Tzar.",
-            "Use Shu'Meyo Salt during the battle to extend the time available when needed, then return to " .. ACTOR.CID.text .. " after all three paths are complete.",
+            "Use Shu'Meyo Salt during the battle to extend the time available when needed, then return to Cid (H-8). after all three paths are complete.",
         },
     },
 
@@ -523,10 +521,10 @@ M.STEPS = {
         name = "Fire in the Eyes of Men",
         steps = {
             "Travel to Oldton or Newton Movalpolos.",
-            "Examine " .. ACTOR.MINE_SHAFT_2716.text .. ".",
-            "Return to Bastok Metalworks and speak with " .. ACTOR.CID.text .. ".",
+            "Examine Mine Shaft #2716..",
+            "Return to Bastok Metalworks and speak with Cid (H-8)..",
             "Wait one Vana'diel day.",
-            "Speak with " .. ACTOR.CID.text .. " again.",
+            "Speak with Cid (H-8). again.",
         },
     },
 
@@ -635,17 +633,17 @@ M.STEPS = {
         name = "A Fate Decided",
         steps = {
             "Enter the Grand Palace of Hu'Xzoi.",
-            "Examine " .. ACTOR.PARTICLE_GATE.text .. " at (H-8).",
+            "Examine Particle Gate. at (H-8).",
             "Escort the Quasilumin from (J-8) to the transporter at (L-7).",
             "Continue to the escort point at (L-8) on the second map.",
             "Continue to the escort point at (I-10).",
             "Follow the route to the transporter at (G-12).",
             "Continue to the escort point at (G-10) on the first map.",
             "Use the transporter at (G-4) to return to the second map.",
-            "Continue to (H-8) and examine " .. ACTOR.CERMET_PORTAL.text .. ".",
+            "Continue to (H-8) and examine Cermet Portal..",
             "Defeat Ix'ghrah.",
             "Examine the Cermet Portal again.",
-            "Continue to " .. ACTOR.GATE_OF_THE_GODS.text .. " and travel toward the Garden of Ru'Hmet.",
+            "Continue to Gate of the Gods. and travel toward the Garden of Ru'Hmet.",
         },
     },
 

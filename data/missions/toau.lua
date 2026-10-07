@@ -1,8 +1,6 @@
 -- Aht Urhgan Mission data generated from BG-Wiki.
 -- Mission IDs remain the server-facing values used by the tracker.
 
-local ACTOR = require('data.actors')
-
 local M = {}
 
 M.MISSIONS = {
@@ -794,7 +792,7 @@ M.STEPS = {
             "Equip one of the accepted chest pieces for the imperial ceremony.",
             "Equip gloves, leg armor, and boots.",
             "Remove all main-hand and off-hand equipment.",
-            "Examine " .. ACTOR.IMPERIAL_GATE.text .. " at (L-8).",
+            "Examine Imperial Gate Door. at (L-8).",
             "Complete the coronation cutscene.",
         },
     },

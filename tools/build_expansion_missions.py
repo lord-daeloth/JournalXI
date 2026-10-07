@@ -86,8 +86,6 @@ def main() -> None:
         f"-- {config['prefix'].rstrip()} data generated from BG-Wiki.",
         "-- Mission IDs remain the server-facing values used by the tracker.",
         "",
-        "local ACTOR = require('data.actors')",
-        "",
         "local M = {}",
         "",
         missions,

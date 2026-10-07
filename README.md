@@ -1,127 +1,92 @@
 # JournalXI
 
-JournalXI is a streamlined Ashita v4 mission and quest browser for CatsEyeXI.
-It reuses Journal's offline mission and quest guide data and its packet-based
-progress tracker, but presents them in a smaller, conventional ImGui interface.
+JournalXI is a compact mission and quest journal for CatsEyeXI running on
+Ashita v4. It combines offline walkthroughs with live mission and quest status
+tracking in a straightforward ImGui interface.
 
-## Current features
+## Features
 
-- Mission and quest modes with category selectors.
-- Live Active, Completed, and Not started status filters.
+- Browse missions and quests by story line or region.
+- Filter entries by Active, Completed, or Not started status.
 - Search by name, zone, NPC, or location.
-- Quest metadata and full mission/quest objective lists.
-- One compact tracker window for either a mission or a quest.
-- Persistent window state, filters, selections, and tracked entry.
-- Automatic hiding outside the game world and during cutscenes.
+- Read quest metadata and step-by-step walkthroughs without leaving the game.
+- Track one mission or quest in a separate resizable window.
+- Check off individual steps and substeps; progress is saved per character.
+- Automatically mark every step when the game reports an entry as completed.
+- Collapse the tracker to the next unfinished step.
+- Adjust tracker opacity and interface text size.
+- Preserve window positions, sizes, filters, selections, and tracked progress.
+- Hide automatically outside the game world and during cutscenes.
 
-## Commands
+## Requirements
 
-```text
-/jxi
-/jxi show
-/jxi hide
-/jxi missions
-/jxi quests
-/jxi tracker
-/jxi untrack
-```
+- CatsEyeXI
+- Ashita v4.16 or a compatible Ashita v4 release
 
-`/journalxi` accepts the same arguments.
+JournalXI is designed around CatsEyeXI's mission and quest data. Status
+detection may not match retail or other private servers.
 
 ## Installation
 
-Place the `JournalXI` directory in `Ashita/addons`, then use:
+1. Download or clone this repository.
+2. Place the `JournalXI` folder in `Ashita/addons`.
+3. In game, load the addon:
 
 ```text
 /addon load JournalXI
 ```
 
-JournalXI and Journal should not be loaded together while testing because both
-addons register packet handlers for the same character progress data.
+Do not load the original Journal addon at the same time. Both addons monitor
+the same mission and quest progress packets.
 
-## Data
+## Using JournalXI
 
-The files under `data/` let JournalXI work without a network connection.
-San d'Oria, Bastok, Windurst, Jeuno, Other, Outlands, Aht Urhgan, Crystal War,
-Adoulin, and Abyssea quest metadata and walkthroughs
-are generated from the corresponding BG-Wiki quest pages with
-`tools/scrape_sandoria_quests.py` and `tools/build_sandoria_quests.py`. The
-Other data combines the Other, Selbina, Mhaura, Tavnazian Safehold, and Mog
-House quest categories. Existing CatsEyeXI quest-log IDs are retained so active
-and completed status detection continues to match the server. The server-specific
-`Unity Concord` reference entry is also retained even though it is not listed in
-those BG-Wiki categories.
+Select **Missions** or **Quests** at the top of the main window, then choose a
+story line or region from the selector on the left. The status checkboxes and
+search field control which entries appear in the list.
 
-The Outlands category also lists `Faded Promises`, `Shady Business`, and
-`Silence of the Rams` because they take place in Outlands zones. The game files
-them in the Bastok quest log, so JournalXI keeps them in its Bastok data. BG-Wiki
-currently provides no walkthrough for `Like Shining Leggings` or `Like a Shining
-Subligar`; JournalXI retains its existing walkthroughs for those two quests.
+Select an entry to view its details and objectives. Use **Track objectives** to
+open the tracker. Objective checkboxes are shared between the main window and
+tracker and remain saved after reloading the addon.
 
-The Aht Urhgan data combines the parent Aht Urhgan category with the Al Zahbi,
-Aht Urhgan Whitegate, and Nashmau quest categories. Its Whitegate continuation
-of `Lure of the Wildcat` has no entry in the Aht Urhgan quest-ID table, so it is
-included as a reference guide without automatic status detection.
+The tracker can be resized normally. Use its `^` button to collapse it to the
+current title and next unfinished objective; use `v` to expand it again.
 
-BG-Wiki's Crystal War category also contains `Lakeside Minuet` because it takes
-place in the past. The game files it in the Jeuno quest log, so JournalXI keeps
-that quest in its Jeuno data rather than duplicating it under Crystal War.
+## Commands
 
-Adoulin adds a new JournalXI quest category. BG-Wiki's `Geomancer Relic Armor`,
-`Rune Fencer Relic Armor`, `The Arciela Directive`, `The Ygnas Directive`, `The
-Silent Forest`, and `Winds of Eternity` pages have no entries in the Adoulin
-quest-ID table, so they are included as reference guides without automatic
-status detection.
+`/journalxi` and `/jxi` are interchangeable.
 
-Abyssea adds a new JournalXI quest category containing all 192 BG-Wiki quest
-pages. They map one-to-one to the complete Abyssea quest-ID range from 0 through
-191, including storyline quests, Dominion Ops, and the repeatable Martello
-quests.
+```text
+/jxi              Toggle the main JournalXI window
+/jxi show         Open the main window
+/jxi hide         Close the main window
+/jxi missions     Open the main window in Missions mode
+/jxi quests       Open the main window in Quests mode
+/jxi tracker      Toggle the tracker window
+/jxi untrack      Stop tracking the current entry
+```
 
-The San d'Oria, Bastok, and Windurst mission walkthroughs are generated from
-their corresponding BG-Wiki mission pages with `tools/build_nation_missions.py`.
-The branching rank 2-3 missions retain JournalXI's server-tested combined paths,
-and Bastok 8-1 retains its existing walkthrough because BG-Wiki currently has
-no walkthrough content for that page. The pre-rebuild mission data is preserved
-by the Git tag `missions-original-before-bgwiki` and the adjacent
-`JournalXI-missions-original.zip` archive.
+## Notes
 
-Rise of the Zilart, Chains of Promathia, and Treasures of Aht Urhgan mission
-walkthroughs are generated with `tools/build_expansion_missions.py`. JournalXI
-retains its existing guides for tracker states without dedicated wiki pages,
-wiki pages without walkthrough content, and Promathia's combined `Three Paths`
-branch guide.
+Objective checkboxes are intentionally manual. FFXI does not expose reliable
+progress for every individual walkthrough step, so JournalXI only automates
+the overall Active and Completed states reported by the game.
 
-Wings of the Goddess, Seekers of Adoulin, and Rhapsodies of Vana'diel mission
-walkthroughs are generated with `tools/build_modern_missions.py`. JournalXI
-retains its existing guides for WotG's page-less `A Dreamy Interlude`,
-Adoulin's page-less `An Emergency Convocation`, and Adoulin 5-2-2 because its
-BG-Wiki page currently has no extracted walkthrough steps.
+Assault and Campaign Ops walkthroughs are included but have not yet been
+verified through live completion of every operation. Campaign Ops in
+particular may need corrections to nation-specific NPCs, locations, or enemies.
 
-The three add-on scenarios, Abyssea storyline, and The Voracious Resurgence are
-generated with `tools/build_scenario_missions.py`. The existing Kupo Mission 12
-guide and any mission whose BG-Wiki page has no walkthrough are retained.
+JournalXI's guide data is stored locally and does not require network access
+while playing. See [DATA_NOTES.md](DATA_NOTES.md) for data provenance,
+generation details, and known source exceptions.
 
-BG-Wiki currently has no page content for `Altana's Sorrow`. Its category
-metadata comes from BG-Wiki, while its five objectives use the matching concise
-walkthrough documented by the HorizonXI and FFXIclopedia wikis.
+## Credits
 
-BG-Wiki currently provides metadata but no walkthrough for `Acting in Good
-Faith`, `Hat in Hand`, or `The Root of the Problem`. JournalXI retains its
-existing walkthroughs for those three Windurst quests.
+- Mission and quest information is primarily sourced from
+  [BG-Wiki](https://www.bg-wiki.com/ffxi/Main_Page).
+- JournalXI began as a streamlined alternative to the approved Journal addon
+  and retains portions of its progress-tracking approach and guide data.
+- Additional source attribution is retained in the relevant data files and
+  [DATA_NOTES.md](DATA_NOTES.md).
 
-BG-Wiki currently provides metadata but no walkthrough for `Shadows of the
-Departed`, `Storms of Fate`, or `Your Crystal Ball`. JournalXI retains its
-existing walkthroughs for the first two; `Your Crystal Ball` uses the matching
-walkthrough documented by FFXIclopedia.
-
-Other gameplay information was originally assembled from the sources credited
-by Journal, including BG-Wiki and related FFXI addon projects. See `LICENSE` and
-the source-file comments for attribution details.
-
-## Testing status
-
-The Assault and Campaign Ops walkthroughs load correctly but have not yet been
-verified through live completion of every operation. Campaign Ops need extra
-review for nation-specific NPCs, locations, enemies, and the entries documented
-with counterpart data because BG-Wiki has no dedicated national page.
+JournalXI is released under the [MIT License](LICENSE).

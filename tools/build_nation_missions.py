@@ -13,7 +13,7 @@ from build_sandoria_quests import ascii_text, lua_string, render_step
 
 PRESERVE_KEYS = {
     "bastok": {"2-3", "8-1"},
-    "sandoria": {"2-3"},
+    "sandoria": {"2-3", "3-3"},
     "windurst": {"2-3"},
 }
 
@@ -114,8 +114,6 @@ def main() -> None:
     lines = [
         f"-- {prefix.rstrip()} data generated from BG-Wiki.",
         "-- Mission IDs remain the server-facing values used by the tracker.",
-        "",
-        "local ACTOR = require('data.actors')",
         "",
         "local M = {}",
         "",

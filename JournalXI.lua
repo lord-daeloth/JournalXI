@@ -1,6 +1,6 @@
 addon.name = 'JournalXI'
 addon.author = 'Daeloth'
-addon.version = '0.1.0'
+addon.version = '1.0.0'
 addon.desc = 'A streamlined mission and quest journal for CatsEyeXI.'
 
 require('common')
