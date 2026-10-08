@@ -48,7 +48,7 @@ M.STEPS = {
         name = "The Truth Beckons",
         steps = {
             {
-                text = "Examine one of the Abyssean Cavernous Maw below to enter one of the Abyssea zones. A convenient maw is located near the Survival Guide in Buburimu Peninsula , but any maw below will do.",
+                text = "Examine one of the Abyssean Cavernous Maw below to enter one of the Abyssea zones. A convenient maw is located near the Survival Guide in Buburimu Peninsula, but any maw below will do.",
                 substeps = {
                     "Vision zones:",
                     "Scars zones:",
@@ -75,70 +75,70 @@ M.STEPS = {
     ["162"] = {
         name = "Dawn of Death",
         steps = {
-            "This quest automatically is flagged after completing the previous quest, The Truth Beckons .",
-            "Before progressing, you must obtain a new Traverser stone from Joachim . You will need to wait until his restock timer is up.",
+            "This quest automatically is flagged after completing the previous quest, The Truth Beckons.",
+            "Before progressing, you must obtain a new Traverser stone from Joachim. You will need to wait until his restock timer is up.",
             {
                 text = "Examine any of the following Cavernous Maws to begin the corresponding quests.",
                 substeps = {
                     "This can be done if you have the 1 hour lockout from the last quest but still have a Traverser Stone.",
-                    "After flagging one of these quests, you unlock the ability to teleport to the corresponding maw for a fee of 200 Cruor .",
-                    "Teleportation can be done via these abyssea maw teleportation NPCs .",
+                    "After flagging one of these quests, you unlock the ability to teleport to the corresponding maw for a fee of 200 Cruor.",
+                    "Teleportation can be done via these abyssea maw teleportation NPCs.",
                 },
             },
             "You must complete any three of these sub-quests to proceed with the next main Abyssea quest.",
             "Vision of Abyssea",
             {
-                text = "Examine the Cavernous Maw in Konschtat Highlands at (I-12) to start the quest To Paste a Peiste .",
+                text = "Examine the Cavernous Maw in Konschtat Highlands at (I-12) to start the quest To Paste a Peiste.",
                 substeps = {
                     "Survival Guide in North Gustaberg is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) for the quest Megadrile Menace .",
+                text = "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) for the quest Megadrile Menace.",
                 substeps = {
                     "Unity Wanted Battle lv.99 to Tahrongi Canyon is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in La Theine Plateau at (E-4) for the quest A Goldstruck Gigas .",
+                text = "Examine the Cavernous Maw in La Theine Plateau at (E-4) for the quest A Goldstruck Gigas.",
                 substeps = {
                     "Survival Guide in West Ronfaure is close.",
                 },
             },
             "Scars of Abyssea",
             {
-                text = "Examine the Cavernous Maw in Jugner Forest at (J-8) to start the quest the quest The Beast of Bastore .",
+                text = "Examine the Cavernous Maw in Jugner Forest at (J-8) to start the quest the quest The Beast of Bastore.",
                 substeps = {
                     "Survival Guide in Jugner Forest is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) for the quest A Fluttery Fiend .",
+                text = "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) for the quest A Fluttery Fiend.",
                 substeps = {
                     "Survival Guide in Buburimu Peninsula is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in Valkurm Dunes at (I-9) for the quest A Delectable Demon .",
+                text = "Examine the Cavernous Maw in Valkurm Dunes at (I-9) for the quest A Delectable Demon.",
                 substeps = {
                     "Survival Guide in Valkurm Dunes is close.",
                 },
             },
             "Heroes of Abyssea",
             {
-                text = "Examine the Cavernous Maw in Xarcabard at (H-8) to start the quest the quest A Man-eating Mite .",
+                text = "Examine the Cavernous Maw in Xarcabard at (H-8) to start the quest the quest A Man-eating Mite.",
                 substeps = {
                     "Survival Guide in Xarcabard is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in North Gustaberg at (G-6) for the quest An Ulcerous Uragnite .",
+                text = "Examine the Cavernous Maw in North Gustaberg at (G-6) for the quest An Ulcerous Uragnite.",
                 substeps = {
                     "Survival Guide in Oldton Movalpolos is close.",
                 },
             },
             {
-                text = "Examine the Cavernous Maw in South Gustaberg at (J-10) for the quest A Beaked Blusterer .",
+                text = "Examine the Cavernous Maw in South Gustaberg at (J-10) for the quest A Beaked Blusterer.",
                 substeps = {
                     "Home Point #1 in Bastok Mines is close.",
                 },
@@ -149,8 +149,8 @@ M.STEPS = {
     ["163"] = {
         name = "A Goldstruck Gigas",
         steps = {
-            "Examine the Cavernous Maw in La Theine Plateau at (E-4) while in possession of a Traverser stone .",
-            "Defeat the Notorious Monster Briareus .",
+            "Examine the Cavernous Maw in La Theine Plateau at (E-4) while in possession of a Traverser stone.",
+            "Defeat the Notorious Monster Briareus.",
             "Exit Abyssea - La Theine for a cutscene that finishes the quest.",
             "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
             {
@@ -173,8 +173,8 @@ M.STEPS = {
     ["164"] = {
         name = "To Paste a Peiste",
         steps = {
-            "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone .",
-            "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat .",
+            "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone.",
+            "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat.",
             { note = "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary. The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized." },
             "Exit Abyssea - Konschtat for a cutscene that finishes the quest.",
             "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
@@ -198,8 +198,8 @@ M.STEPS = {
     ["165"] = {
         name = "Megadrile Menace",
         steps = {
-            "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) while in possession of a Traverser stone .",
-            "Defeat the Notorious Monster Glavoid .",
+            "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) while in possession of a Traverser stone.",
+            "Defeat the Notorious Monster Glavoid.",
             "Exit Abyssea - Tahrongi for a cutscene that finishes the quest.",
             "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
             {
@@ -222,7 +222,7 @@ M.STEPS = {
     ["166"] = {
         name = "The Forbidden Frontier",
         steps = {
-            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: To Paste a Peiste , A Goldstruck Gigas , or Megadrile Menace .",
+            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: To Paste a Peiste, A Goldstruck Gigas, or Megadrile Menace.",
             "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
         },
     },
@@ -273,7 +273,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Upon completing Dawn of Death Joachim will ask you to travel to the stone circle in La Theine Plateau and meet a mystery man. He'll only be available to you between the hours of 18:00 and 05:00 (dusk to dawn). Travel to the ??? in the stone circle (G-6) and click on the ??? for a cutscene. This will complete this quest and automatically start you on the quest An Officer and a Pirate .",
+                text = "Upon completing Dawn of Death Joachim will ask you to travel to the stone circle in La Theine Plateau and meet a mystery man. He'll only be available to you between the hours of 18:00 and 05:00 (dusk to dawn). Travel to the ??? in the stone circle (G-6) and click on the ??? for a cutscene. This will complete this quest and automatically start you on the quest An Officer and a Pirate.",
                 substeps = {
                     "Unity Warp 99 to La Theine is the fastest way to this location.",
                 },
@@ -341,16 +341,16 @@ M.STEPS = {
     ["171"] = {
         name = "Champions of Abyssea",
         steps = {
-            "This quest is triggered automatically after completing Tenuous Existence .",
+            "This quest is triggered automatically after completing Tenuous Existence.",
         },
     },
 
     ["172"] = {
         name = "The Beast of Bastore",
         steps = {
-            "Examine the Cavernous Maw in Jugner Forest at (J-8) while in possession of a Traverser stone . You will receive a cutscene with Kuchi Eyjhann.",
+            "Examine the Cavernous Maw in Jugner Forest at (J-8) while in possession of a Traverser stone. You will receive a cutscene with Kuchi Eyjhann.",
             {
-                text = "Defeat the Notorious Monster Sedna .",
+                text = "Defeat the Notorious Monster Sedna.",
                 substeps = {
                     "Refer to the Abyssea - Vunkerl page for the flowchart for details on spawning this monster.",
                 },
@@ -377,9 +377,9 @@ M.STEPS = {
     ["173"] = {
         name = "A Delectable Demon",
         steps = {
-            "Examine the Cavernous Maw in Valkurm Dunes at (I-9) while in possession of a Traverser stone . You will receive a cutscene with Kuchi Eyjhann.",
+            "Examine the Cavernous Maw in Valkurm Dunes at (I-9) while in possession of a Traverser stone. You will receive a cutscene with Kuchi Eyjhann.",
             {
-                text = "Defeat the Notorious Monster Cirein-croin .",
+                text = "Defeat the Notorious Monster Cirein-croin.",
                 substeps = {
                     "Refer to the Abyssea - Misareaux page for the flowchart for details on spawning this monster.",
                 },
@@ -406,9 +406,9 @@ M.STEPS = {
     ["174"] = {
         name = "A Fluttery Fiend",
         steps = {
-            "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) while in possession of a Traverser stone . You will receive a cutscene with Reinhard.",
+            "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) while in possession of a Traverser stone. You will receive a cutscene with Reinhard.",
             {
-                text = "Defeat the Notorious Monster Itzpapalotl .",
+                text = "Defeat the Notorious Monster Itzpapalotl.",
                 substeps = {
                     "Refer to the Abyssea - Attohwa page for the flowchart for details on spawning this monster.",
                 },
@@ -435,7 +435,7 @@ M.STEPS = {
     ["175"] = {
         name = "Scars of Abyssea",
         steps = {
-            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Delectable Demon , The Beast of Bastore , or A Fluttery Fiend .",
+            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Delectable Demon, The Beast of Bastore, or A Fluttery Fiend.",
             "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
         },
     },
@@ -443,9 +443,9 @@ M.STEPS = {
     ["176"] = {
         name = "A Beaked Blusterer",
         steps = {
-            "Examine the Cavernous Maw in South Gustaberg at (J-10) while in possession of a Traverser stone . You will receive a cutscene with Orgis.",
+            "Examine the Cavernous Maw in South Gustaberg at (J-10) while in possession of a Traverser stone. You will receive a cutscene with Orgis.",
             {
-                text = "Defeat the Notorious Monster Bennu .",
+                text = "Defeat the Notorious Monster Bennu.",
                 substeps = {
                     "Refer to the Abyssea - Altepa page for the flowchart for details on spawning this monster.",
                 },
@@ -472,9 +472,9 @@ M.STEPS = {
     ["177"] = {
         name = "A Man-eating Mite",
         steps = {
-            "Examine the Cavernous Maw in Xarcabard at (H-8) while in possession of a Traverser stone . You will receive a cutscene with Alberic.",
+            "Examine the Cavernous Maw in Xarcabard at (H-8) while in possession of a Traverser stone. You will receive a cutscene with Alberic.",
             {
-                text = "Defeat the Notorious Monster Resheph .",
+                text = "Defeat the Notorious Monster Resheph.",
                 substeps = {
                     "Refer to the Abyssea - Uleguerand page for the flowchart for details on spawning this monster.",
                 },
@@ -501,9 +501,9 @@ M.STEPS = {
     ["178"] = {
         name = "An Ulcerous Uragnite",
         steps = {
-            "Examine the Cavernous Maw in North Gustaberg at G-7) (North-east corner) while in possession of a Traverser stone . You will receive a cutscene with Rurukaka.",
+            "Examine the Cavernous Maw in North Gustaberg at G-7) (North-east corner) while in possession of a Traverser stone. You will receive a cutscene with Rurukaka.",
             {
-                text = "Defeat the Notorious Monster Amphitrite .",
+                text = "Defeat the Notorious Monster Amphitrite.",
                 substeps = {
                     "Refer to the Abyssea - Grauberg page for the flowchart for details on spawning this monster.",
                 },
@@ -530,7 +530,7 @@ M.STEPS = {
     ["179"] = {
         name = "Heroes of Abyssea",
         steps = {
-            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Beaked Blusterer , A Man-eating Mite , or An Ulcerous Uragnite .",
+            "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Beaked Blusterer, A Man-eating Mite, or An Ulcerous Uragnite.",
             "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
         },
     },
@@ -605,7 +605,7 @@ M.STEPS = {
             {
                 text = "Enter the Hall of the Gods between 18:00 - and 5:00 for a cutscene.",
                 substeps = {
-                    "The next mission, Emissaries of God , is not flagged until you've seen its first cutscene.",
+                    "The next mission, Emissaries of God, is not flagged until you've seen its first cutscene.",
                 },
             },
         },
@@ -627,15 +627,15 @@ M.STEPS = {
             {
                 text = "The titles necessary are:",
                 substeps = {
-                    "Iratham Capturer: Iratham in Abyssea - Tahrongi .",
-                    "Kutharei Unhorser: Kutharei in Abyssea - Misareaux .",
-                    "Sippoy Capturer: Sippoy in Abyssea - Vunkerl .",
-                    "Yaanei Crasher: Yaanei in Abyssea - Attohwa .",
-                    "Rani Decrowner: Rani in Abyssea - Altepa .",
-                    "Raja Regicide: Raja in Abyssea - Grauberg .",
+                    "Iratham Capturer: Iratham in Abyssea - Tahrongi.",
+                    "Kutharei Unhorser: Kutharei in Abyssea - Misareaux.",
+                    "Sippoy Capturer: Sippoy in Abyssea - Vunkerl.",
+                    "Yaanei Crasher: Yaanei in Abyssea - Attohwa.",
+                    "Rani Decrowner: Rani in Abyssea - Altepa.",
+                    "Raja Regicide: Raja in Abyssea - Grauberg.",
                 },
             },
-            "Talk to Joachim after killing all 6 Abyssea Caturae for a cutscene and receive the Abyssite of discernment .",
+            "Talk to Joachim after killing all 6 Abyssea Caturae for a cutscene and receive the Abyssite of discernment.",
             {
                 text = "Enter the Hall of the Gods between 18:00 - and 5:00 for a cutscene.",
                 substeps = {
@@ -650,7 +650,7 @@ M.STEPS = {
         steps = {
             "Head to Qufim Island (F-7) (Follow the wall NW from Home Point #1).",
             "Click on the Transcendental Radiance with a Traverser stone in your key items.",
-            "Select \"Proceed\" to spend 10,000 Cruor to obtain a Crimson traverser stone , automatically enter Abyssea - Empyreal Paradox , and receive a cutscene.",
+            "Select \"Proceed\" to spend 10,000 Cruor to obtain a Crimson traverser stone, automatically enter Abyssea - Empyreal Paradox, and receive a cutscene.",
             "The next quest is automatically flagged upon cutscene completion.",
         },
     },
@@ -658,13 +658,13 @@ M.STEPS = {
     ["184"] = {
         name = "The Wyrm God",
         steps = {
-            "Enter Abyssea - Empyreal Paradox through the Transcendental Radiance in Qufim Island at (F-7) for a key item: Crimson traverser stone .",
+            "Enter Abyssea - Empyreal Paradox through the Transcendental Radiance in Qufim Island at (F-7) for a key item: Crimson traverser stone.",
             {
                 text = "Examine the Transcendental Radiance in the Abyssea - Empyreal Paradox for a short cutscene, examine it again to enter a battlefield.",
                 substeps = {
-                    "Your fight is against Shinryu , a Wyrm-type creature.",
+                    "Your fight is against Shinryu, a Wyrm-type creature.",
                     "When his wings are up, he will absorb damage when he is readying a weaponskill or casting spells.",
-                    "He has a weaponskill Mighty Guard , he will gain a large reduction to physical and magical damage.",
+                    "He has a weaponskill Mighty Guard, he will gain a large reduction to physical and magical damage.",
                     "He has a weaponskill called Cosmic Breath that does conal damage with additional effect Plague and Attack Down.",
                     "He has a weaponskill called Gyre Charge that is AoE damage with additional effect Paralyze.",
                     "His regular melee attacks are considered weaponskills, keep this in mind when trying to get the Red, Blue, and Green staggers.",

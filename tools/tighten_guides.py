@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Move obvious guide commentary out of tracker objectives.
+"""Tighten objective text and move obvious commentary into guide notes.
 
 This intentionally uses conservative rules. It normalizes common wiki spacing,
-moves informational sub-bullets into attached notes, and converts standalone
-notes into the JournalXI note type without rewriting action text.
+removes redundant sequencing words from clear actions, moves informational
+sub-bullets into attached notes, and converts standalone notes into the
+JournalXI note type.
 """
 
 from __future__ import annotations
@@ -18,6 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PURE_STRING = re.compile(r"^(\s*)(['\"].*['\"])(,?)$")
 FIELD_STRING = re.compile(r"^(\s*)(text|note)\s*=\s*(['\"].*['\"])(,?)$")
+INLINE_NOTE = re.compile(r"^(\s*)\{\s*note\s*=\s*(['\"].*['\"])\s*\}(,?)$")
 
 NOTE_PREFIXES = (
     "note:", "note :", "note -", "note that", "notes:", "important note:", "warning:",
@@ -63,6 +65,29 @@ def normalize(value: str) -> str:
     return re.sub(r"\s{2,}", " ", value).strip()
 
 
+def tighten_wording(value: str) -> str:
+    # Question marks and exclamation points are excluded because FFXI uses
+    # "???" and "!" as object names.
+    value = re.sub(r"\s+([,.;:])", r"\1", value)
+    match = re.match(
+        r"^(?:next|then|finally|afterwards?|now),?\s+(.*)$",
+        value,
+        flags=re.IGNORECASE,
+    )
+    if match is None:
+        return value
+    remainder = match.group(1)
+    auxiliary = re.match(
+        r"^(?:you (?:will need to|must|should)|you can)\s+(.*)$",
+        remainder,
+        flags=re.IGNORECASE,
+    )
+    candidate = auxiliary.group(1) if auxiliary is not None else remainder
+    if not looks_like_action(candidate):
+        return value
+    return candidate[0].upper() + candidate[1:]
+
+
 def looks_like_action(value: str) -> bool:
     lowered = value.lstrip("- *(").lower()
     return lowered.startswith(ACTION_PREFIXES)
@@ -92,6 +117,39 @@ def normalized_line(line: str) -> str:
     # Leave untouched strings byte-for-byte. Re-encode only entries that are
     # actually moved into the note model so release diffs stay reviewable.
     return line
+
+
+def clean_text_lines(lines: list[str]) -> tuple[list[str], int]:
+    output = []
+    changed = 0
+    for line in lines:
+        match = FIELD_STRING.match(line)
+        if match is not None:
+            value = try_decode(match.group(3))
+            cleaned = tighten_wording(value) if value is not None else None
+            if cleaned is not None and cleaned != value:
+                line = (f"{match.group(1)}{match.group(2)} = {encode(cleaned)}"
+                        f"{match.group(4)}")
+                changed += 1
+        else:
+            match = INLINE_NOTE.match(line)
+            if match is not None:
+                value = try_decode(match.group(2))
+                cleaned = tighten_wording(value) if value is not None else None
+                if cleaned is not None and cleaned != value:
+                    line = (f"{match.group(1)}{{ note = {encode(cleaned)} }}"
+                            f"{match.group(3)}")
+                    changed += 1
+            else:
+                match = PURE_STRING.match(line)
+                if match is not None:
+                    value = try_decode(match.group(2))
+                    cleaned = tighten_wording(value) if value is not None else None
+                    if cleaned is not None and cleaned != value:
+                        line = f"{match.group(1)}{encode(cleaned)}{match.group(3)}"
+                        changed += 1
+        output.append(line)
+    return output, changed
 
 
 def migrate_substep_blocks(lines: list[str]) -> tuple[list[str], int]:
@@ -242,16 +300,17 @@ def expand_standalone_note_markers(lines: list[str], top_indent: int) -> list[st
     return output
 
 
-def process(path: Path, write: bool) -> tuple[int, int]:
+def process(path: Path, write: bool) -> tuple[int, int, int]:
     lines = [normalized_line(line) for line in path.read_text(encoding="utf-8").splitlines()]
     lines, attached = migrate_substep_blocks(lines)
     lines = merge_duplicate_note_blocks(lines)
     top_indent = 12 if path.parent.name == "missions" else 8
     lines, standalone = migrate_standalone_notes(lines, top_indent)
     lines = expand_standalone_note_markers(lines, top_indent)
+    lines, cleaned = clean_text_lines(lines)
     if write:
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    return attached, standalone
+    return attached, standalone, cleaned
 
 
 def main() -> None:
@@ -260,13 +319,16 @@ def main() -> None:
     args = parser.parse_args()
     paths = sorted((ROOT / "data" / "missions").glob("*.lua"))
     paths += sorted((ROOT / "data" / "quests" / "steps").glob("*.lua"))
-    attached = standalone = 0
+    attached = standalone = cleaned = 0
     for path in paths:
-        path_attached, path_standalone = process(path, args.write)
+        path_attached, path_standalone, path_cleaned = process(path, args.write)
         attached += path_attached
         standalone += path_standalone
+        cleaned += path_cleaned
     action = "Moved" if args.write else "Would move"
-    print(f"{action} {attached} substep notes and {standalone} standalone notes")
+    clean_action = "Cleaned" if args.write else "Would clean"
+    print(f"{action} {attached} substep notes and {standalone} standalone notes; "
+          f"{clean_action.lower()} {cleaned} guide strings")
 
 
 if __name__ == "__main__":

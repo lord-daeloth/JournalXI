@@ -51,7 +51,7 @@ M.STEPS = {
         name = "That Which Curdles Blood",
         steps = {
             {
-                text = "You are tasked with creating an Enfeeblement Kit of Silence , Enfeeblement Kit of Sleep , Enfeeblement Kit of Poison , or Enfeeblement Kit of Blindness .",
+                text = "You are tasked with creating an Enfeeblement Kit of Silence, Enfeeblement Kit of Sleep, Enfeeblement Kit of Poison, or Enfeeblement Kit of Blindness.",
                 substeps = {
                     "If you do not recall which item you have been tasked with creating, speak with one of the NPCs listed below. They will give you the recipes for making the components, but you do not have to talk to them at any point in the gathering of ingredients or the synthing of items.",
                 },
@@ -59,14 +59,14 @@ M.STEPS = {
             {
                 text = "For the kit, you will need:",
                 substeps = {
-                    "Padded Box : Earth Crystal , Bast Parchment x2, Inferior Cocoon (Can also be made from a Woodworking Kit 5 from guild NPC)",
-                    "Fine Parchment : Dark Crystal , Parchment , Pumice Stone (You will need to make two of these)",
-                    "Enchanted Ink : Dark Crystal , Black Ink , Magicked Blood (You will need to make two of these}",
-                    "A Silencing Potion , Sleeping Potion , Poison Potion , or Blinding Potion (It will depend on which enfeeblement kit you are told to make)",
+                    "Padded Box: Earth Crystal, Bast Parchment x2, Inferior Cocoon (Can also be made from a Woodworking Kit 5 from guild NPC)",
+                    "Fine Parchment: Dark Crystal, Parchment, Pumice Stone (You will need to make two of these)",
+                    "Enchanted Ink: Dark Crystal, Black Ink, Magicked Blood (You will need to make two of these}",
+                    "A Silencing Potion, Sleeping Potion, Poison Potion, or Blinding Potion (It will depend on which enfeeblement kit you are told to make)",
                 },
             },
             {
-                text = "Once you have obtained all the components, combine them together with an Earth Crystal .",
+                text = "Once you have obtained all the components, combine them together with an Earth Crystal.",
                 substeps = {
                     "As a note, all of the components can be traded, but the enfeeblement kit itself cannot, and therefore must be synthed by the player doing the mission.",
                     "Synths can fail, so it may be wise to have access to extra ingredients.",
@@ -82,20 +82,20 @@ M.STEPS = {
         name = "Sugar-coated Directive",
         steps = {
             {
-                text = "You are given 6 Key Item seals ( Domina's scarlet seal , Domina's cerulean seal , Domina's emerald seal , Domina's amber seal , Domina's violet seal , Domina's azure seal ) and instructed to attach at least 3 of them to the Protocrystals found around Vana'diel .",
+                text = "You are given 6 Key Item seals ( Domina's scarlet seal, Domina's cerulean seal, Domina's emerald seal, Domina's amber seal, Domina's violet seal, Domina's azure seal ) and instructed to attach at least 3 of them to the Protocrystals found around Vana'diel.",
                 substeps = {
-                    "Protocrystals are found in the Cloister of Storms , Cloister of Frost , Cloister of Flames , Cloister of Tremors , Cloister of Tides and Cloister of Gales .",
+                    "Protocrystals are found in the Cloister of Storms, Cloister of Frost, Cloister of Flames, Cloister of Tremors, Cloister of Tides and Cloister of Gales.",
                 },
             },
             {
-                text = "Click each Protocrystal once, then click again for the option to enter a Battlefield entitled Sugar-coated Directive .",
+                text = "Click each Protocrystal once, then click again for the option to enter a Battlefield entitled Sugar-coated Directive.",
                 substeps = {
                     "Enter the battlefield and defeat a weakened version of the corresponding Prime Avatar.",
                     "The Avatar will not die until it has tried to use its Astral Flow ability 5 times.",
                 },
             },
             {
-                text = "After the battle, click the crystal again to attach the seal and receive a counterseal Key Item ( Scarlet counterseal , Cerulean counterseal , Emerald counterseal , Amber counterseal , Violet counterseal , Azure counterseal ).",
+                text = "After the battle, click the crystal again to attach the seal and receive a counterseal Key Item ( Scarlet counterseal, Cerulean counterseal, Emerald counterseal, Amber counterseal, Violet counterseal, Azure counterseal ).",
                 notes = {
                     "Note: If you leave the area before receiving the counterseal Key Item, you can simply return in order to obtain it; the battle is not repeated.",
                 },
@@ -116,9 +116,9 @@ M.STEPS = {
     ["4"] = {
         name = "Enemy of the Empire (I)",
         steps = {
-            "Talk to Andrause at (I-8) in Norg .",
+            "Talk to Andrause at (I-8) in Norg.",
             {
-                text = "You will be given 3 specific monsters from which you must acquire a Soul Plate using a Soultrapper .",
+                text = "You will be given 3 specific monsters from which you must acquire a Soul Plate using a Soultrapper.",
                 substeps = {
                     "Andrause will offer to sell you a Soultrapper and 12 Blank Soul Plates for 800 Gil.",
                     "You can buy another 12 Blank Soul Plates from him each day (after JP Midnight).",
@@ -132,17 +132,17 @@ M.STEPS = {
                 substeps = {
                     "Equip the Soultrapper into your Ranged slot, and the Blank Soul Plates into your Ammo slot.",
                     "You can then use the Soultrapper via the Inventory onto a target, or alternatively, use a macro line /item \"Soultrapper\" <t> or any equivalent.",
-                    "The Soultrapper cannot be used while under the effect of Sneak or Invisible .",
+                    "The Soultrapper cannot be used while under the effect of Sneak or Invisible.",
                     "Sometimes you'll fail taking a picture. Just try again!",
                 },
             },
             {
-                text = "Andrause will mention which monsters he's \" investigating \", and depending on the monsters chosen, you may need a Silver Beastcoin , Mtl. Beastcoin or Gold Beastcoin to gain access to them:",
+                text = "Andrause will mention which monsters he's \" investigating \", and depending on the monsters chosen, you may need a Silver Beastcoin, Mtl. Beastcoin or Gold Beastcoin to gain access to them:",
                 substeps = {
-                    "Monsters found in the open area: Bigclaw (M-14), Brook Sahagin , Riparian Sahagin , Rivulet Sahagin , Royal Leech , Undead Bats and Grotto Pugil .",
-                    "Monsters found behind the Silver Beastcoin door: Grotto Pugil , Sea Bonze .",
-                    "Monsters found behind the Mythril Beastcoin door: Blubber Eyes , Bog Sahagin , Marsh Sahagin , Rock Crab , Razorjaw Pugil , Sahagin Parasite , Swamp Sahagin .",
-                    "Monsters found behind the Gold Beastcoin door: Coastal Sahagin , Devil Manta , Delta Sahagin , Dire Bat , Lagoon Sahagin , Mousse , Robber Crab , Shore Sahagin .",
+                    "Monsters found in the open area: Bigclaw (M-14), Brook Sahagin, Riparian Sahagin, Rivulet Sahagin, Royal Leech, Undead Bats and Grotto Pugil.",
+                    "Monsters found behind the Silver Beastcoin door: Grotto Pugil, Sea Bonze.",
+                    "Monsters found behind the Mythril Beastcoin door: Blubber Eyes, Bog Sahagin, Marsh Sahagin, Rock Crab, Razorjaw Pugil, Sahagin Parasite, Swamp Sahagin.",
+                    "Monsters found behind the Gold Beastcoin door: Coastal Sahagin, Devil Manta, Delta Sahagin, Dire Bat, Lagoon Sahagin, Mousse, Robber Crab, Shore Sahagin.",
                 },
             },
             {
@@ -173,7 +173,7 @@ M.STEPS = {
             },
             "The following fight is trivial at level cap, but if you're at a lower level, prepare to battle:",
             {
-                text = "Interacting with the Outcropping again will start a fight against 3 Tenshodo agents named Renfred , Bompupu and Gorattz and consume the Black book Key Item.",
+                text = "Interacting with the Outcropping again will start a fight against 3 Tenshodo agents named Renfred, Bompupu and Gorattz and consume the Black book Key Item.",
                 substeps = {
                     "Trust Magic can not be used in this fight.",
                     "You will keep your buffs: Phalanx will negate all damage from this fight except Bompupu 's nukes.",
@@ -193,7 +193,7 @@ M.STEPS = {
                     "Once an agent is defeated, any of his or her remaining clones will despawn after a couple of seconds.",
                 },
             },
-            "When all 3 agents are down, you will be rewarded a Cactuar key , which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno .",
+            "When all 3 agents are down, you will be rewarded a Cactuar key, which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno.",
             "Interact with the Outcropping again for a cutscene.",
         },
     },
@@ -209,7 +209,7 @@ M.STEPS = {
         name = "Shantotto in Chains",
         steps = {
             {
-                text = "Click the Ensorcelled Door at (B-10) south-west corner in Ro'Maeve .",
+                text = "Click the Ensorcelled Door at (B-10) south-west corner in Ro'Maeve.",
                 substeps = {
                     "There is no cutscene, but you will be told about a \"hexagonal depression\" on the door.",
                 },
@@ -224,22 +224,22 @@ M.STEPS = {
                     "Note: If you are in a party/alliance, everyone in the group will obtain the Key Item if it drops.",
                 },
             },
-            "If relying on damage from Trusts , refer to the Damage Type table to select the appropriate Trust for each NM.",
+            "If relying on damage from Trusts, refer to the Damage Type table to select the appropriate Trust for each NM.",
             {
-                text = "Luminous blue fragment from Lode Golem at (E-9/10) in Ro'Maeve .",
+                text = "Luminous blue fragment from Lode Golem at (E-9/10) in Ro'Maeve.",
                 substeps = {
-                    "Only takes Magic damage from Darkness elemental ( Ice Water , Earth , and Dark ) spells.",
+                    "Only takes Magic damage from Darkness elemental ( Ice Water, Earth, and Dark ) spells.",
                     "Quick Draw also works.",
                 },
             },
             {
-                text = "Luminous purple fragment from Fired Urn at (K-9/10) in Ro'Maeve .",
+                text = "Luminous purple fragment from Fired Urn at (K-9/10) in Ro'Maeve.",
                 substeps = {
                     "Only takes Slashing damage.",
                 },
             },
             {
-                text = "Luminous yellow fragment from Steely Weapon at (G-10/11) in Ro'Maeve .",
+                text = "Luminous yellow fragment from Steely Weapon at (G-10/11) in Ro'Maeve.",
                 substeps = {
                     "Only takes damage from Ranged weapons.",
                     "Ninja's Daken Job Trait does not work.",
@@ -247,23 +247,23 @@ M.STEPS = {
             },
             { note = "Note: The NMs in The Sanctuary of Zi'Tah only appear between the hours of 17:00 and 7:00 Vana'diel Time." },
             {
-                text = "Luminous green fragment from Holey Horror at (H-8) in The Sanctuary of Zi'Tah .",
+                text = "Luminous green fragment from Holey Horror at (H-8) in The Sanctuary of Zi'Tah.",
                 substeps = {
                     "Only takes Piercing damage (not Ranged damage.)",
                     "Ninja's Daken Job Trait does work.",
                 },
             },
             {
-                text = "Luminous red fragment from Skeleton Scuffler at (F-8) in The Sanctuary of Zi'Tah .",
+                text = "Luminous red fragment from Skeleton Scuffler at (F-8) in The Sanctuary of Zi'Tah.",
                 substeps = {
                     "Only takes Blunt damage",
                     "Quick Draw can also damage it, but its damage is severely reduced.",
                 },
             },
             {
-                text = "Luminous beige fragment from Blest Bones at (F-7) in The Sanctuary of Zi'Tah .",
+                text = "Luminous beige fragment from Blest Bones at (F-7) in The Sanctuary of Zi'Tah.",
                 substeps = {
-                    "Only takes Magic damage from Light elemental ( Thunder , Fire , Wind , and Light ) spells.",
+                    "Only takes Magic damage from Light elemental ( Thunder, Fire, Wind, and Light ) spells.",
                     "Quick Draw also works.",
                 },
             },
@@ -275,7 +275,7 @@ M.STEPS = {
     ["8"] = {
         name = "Fountain of Trouble",
         steps = {
-            "In order to receive the cutscene from the Moon Spiral in Full Moon Fountain , you have to have at least 1 sap Key Item in your possession:",
+            "In order to receive the cutscene from the Moon Spiral in Full Moon Fountain, you have to have at least 1 sap Key Item in your possession:",
             {
                 text = "The 8 elemental saps can be found at various locations throughout Toraimarai Canal and have the effect of weakening the Astral Flow ability of the corresponding Fomor's avatar in the battlefield awaiting you in the next mission.",
                 substeps = {
@@ -286,14 +286,14 @@ M.STEPS = {
             {
                 text = "The elemental saps appear as glowing ??? s at the following locations:",
                 substeps = {
-                    "Dark sap crystal : (F-8) Map 1",
-                    "Earth sap crystal : (J-8) or (H-7) Map 1",
-                    "Water sap crystal : (H-7) or (J-9) Map 1",
-                    "Fire sap crystal : (J-9) Map 1; (F-10) or (J-8) Map 2",
-                    "Ice sap crystal : (I-8) or (H-7) Map 2",
-                    "Light sap crystal : (G-8) Map 2 (one of two places)",
-                    "Lightning sap crystal : (H-7) Map 1; (G-10/11) Map 2",
-                    "Wind sap crystal : (H-9) or (J-9) Map 2",
+                    "Dark sap crystal: (F-8) Map 1",
+                    "Earth sap crystal: (J-8) or (H-7) Map 1",
+                    "Water sap crystal: (H-7) or (J-9) Map 1",
+                    "Fire sap crystal: (J-9) Map 1; (F-10) or (J-8) Map 2",
+                    "Ice sap crystal: (I-8) or (H-7) Map 2",
+                    "Light sap crystal: (G-8) Map 2 (one of two places)",
+                    "Lightning sap crystal: (H-7) Map 1; (G-10/11) Map 2",
+                    "Wind sap crystal: (H-9) or (J-9) Map 2",
                 },
             },
             "Once one or more saps are collected, check the Moon Spiral in Full Moon Fountain to watch the cutscene and complete the mission.",
@@ -304,20 +304,20 @@ M.STEPS = {
         name = "Battaru Royale",
         steps = {
             {
-                text = "After the initial cutscene from the Moon Spiral , click it again while possessing at least one elemental sap Key Item to receive the option to enter the Battaru Royale battlefield.",
+                text = "After the initial cutscene from the Moon Spiral, click it again while possessing at least one elemental sap Key Item to receive the option to enter the Battaru Royale battlefield.",
                 notes = {
                     "Trusts can be summoned in this fight (relevant if you're doing it below item level 119.)",
                 },
             },
             {
-                text = "The battle is against 8 Tarutaru Fomor mobs, one for each element. ( Clone of Boulders , Clone of Torrents , Clone of Gusts , Clone of Flames , Clone of Glaciers , Clone of Sparks , Clone of Lights , Clone of Shadows )",
+                text = "The battle is against 8 Tarutaru Fomor mobs, one for each element. ( Clone of Boulders, Clone of Torrents, Clone of Gusts, Clone of Flames, Clone of Glaciers, Clone of Sparks, Clone of Lights, Clone of Shadows )",
                 substeps = {
                     "Each Fomor will cast elemental and enfeebling spells of their corresponding element.",
                     "Each Fomor will summon an avatar of their corresponding element when they reach about 50% HP, and the avatar will use its associated Astral Flow ability before despawing.",
                     "The Fomors have access to all their usual TP abilities.",
                 },
             },
-            "Successfully completing the battle will result in the awarding of a Chocobo key , which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno .",
+            "Successfully completing the battle will result in the awarding of a Chocobo key, which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno.",
         },
     },
 
@@ -334,18 +334,18 @@ M.STEPS = {
             {
                 text = "Your goal is to get to the Mahogany Door in the Sacrificial Chamber for a cutscene. Along the way, there will be glowing ??? s in the Temple of Uggalepih and Den of Rancor that give tablet Key Items which will be helpful in the upcoming battlefield. Each tablet will grant a specific buff.",
                 substeps = {
-                    "At max level, you only need 1 tablet to get the cutscene from the Mahogany Door : one possible way is to warp to Den of Rancor Home Point #1, exit south via the switch, grab the Tablet of Hexes: Blight at (H-9), warp back to Den of Rancor Home Point #1, and continue to the Sacrificial Chamber .",
+                    "At max level, you only need 1 tablet to get the cutscene from the Mahogany Door: one possible way is to warp to Den of Rancor Home Point #1, exit south via the switch, grab the Tablet of Hexes: Blight at (H-9), warp back to Den of Rancor Home Point #1, and continue to the Sacrificial Chamber.",
                     "If you're attempting the upcoming battle below level 99, collecting all the tablets will make the fight easier.",
                 },
             },
             {
                 text = "Tablets can be found at the following locations:",
                 substeps = {
-                    "Tablets found in Temple of Uggalepih :",
-                    "Tablets found in Den of Rancor :",
+                    "Tablets found in Temple of Uggalepih:",
+                    "Tablets found in Den of Rancor:",
                 },
             },
-            "In the Sacrificial Chamber , check the Mahogany Door and then check again to begin the fight for the next mission: Project: Shantottofication .",
+            "In the Sacrificial Chamber, check the Mahogany Door and then check again to begin the fight for the next mission: Project: Shantottofication.",
         },
     },
 
@@ -355,12 +355,12 @@ M.STEPS = {
             {
                 text = "After the initial cutscene, click the Mahogany Door in the Sacrificial Chamber again for the option to the enter the Project: Shantottofication battlefield.",
                 substeps = {
-                    "The tablet Key Items are consumed upon entry and each one grants a buff. Possessing a full set will grant a +150 resistance to Earth , Water , Wind , Fire , Ice and Thunder magic, +150 to STR, VIT, DEX, AGI, MND, INT and CHR, a 3x multiplier to HP and MP, and a special Reraise that does not confer Weakness upon use.",
-                    "The tablets are not necessary to begin the fight, and it is soloable by most Jobs in 119 gear with Trusts .",
+                    "The tablet Key Items are consumed upon entry and each one grants a buff. Possessing a full set will grant a +150 resistance to Earth, Water, Wind, Fire, Ice and Thunder magic, +150 to STR, VIT, DEX, AGI, MND, INT and CHR, a 3x multiplier to HP and MP, and a special Reraise that does not confer Weakness upon use.",
+                    "The tablets are not necessary to begin the fight, and it is soloable by most Jobs in 119 gear with Trusts.",
                 },
             },
             {
-                text = "The fight is against D. Shantotto and Shantotto :",
+                text = "The fight is against D. Shantotto and Shantotto:",
                 substeps = {
                     "D. Shantotto casts high level magic spells and uses Scythe weaponskills, including Salvation Scythe, which does AoE damage and inflicts poison and paralysis.",
                     "Shantotto casts high level magic spells and uses staff weaponskills, including Divine Malison, which does AoE damage and inflicts stun, slow, silence and plague.",
@@ -374,7 +374,7 @@ M.STEPS = {
                     "If the party wipes after the rage mode is triggered, it will not be repeated if a second attempt is made without exiting the battlefield.",
                 },
             },
-            "Successful completion of the fight will award a Tonberry key , which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno .",
+            "Successful completion of the fight will award a Tonberry key, which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno.",
         },
     },
 
@@ -387,7 +387,7 @@ M.STEPS = {
                     "Entering via any other means (including the Mog House or HP Warp) will not trigger the final cutscene.",
                 },
             },
-            "You will be awarded a Behemoth key , which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno for Blitzer Poleyn , Desultor Tassets or Tatsu. Sitagoromo .",
+            "You will be awarded a Behemoth key, which can be redeemed at the Treasure Coffer in Tenshodo Headquarters in Lower Jeuno for Blitzer Poleyn, Desultor Tassets or Tatsu. Sitagoromo.",
         },
     },
 

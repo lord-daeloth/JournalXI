@@ -6,11 +6,11 @@ Q.STEPS = {
 
     jeu_a_candlelight_vigil = {
         "Speak to Ilumida in Upper Jeuno at (G-8) to begin this quest.",
-        "Speak to Rouliette at (H-9) in the Temple of the Goddess .",
+        "Speak to Rouliette at (H-9) in the Temple of the Goddess.",
         {
-            text = "Rouliette will provide you with the Holy candle once you complete the quest Candle-making .",
+            text = "Rouliette will provide you with the Holy candle once you complete the quest Candle-making.",
             substeps = {
-                "Obtain a Lanolin Cube from Battering Rams in La Theine Plateau or Rams in Lufaise Meadows , Abyssea - La Theine , or Caedarva Mire .",
+                "Obtain a Lanolin Cube from Battering Rams in La Theine Plateau or Rams in Lufaise Meadows, Abyssea - La Theine, or Caedarva Mire.",
             },
         },
         "Return and speak to Ilumida in Upper Jeuno at (G-8) to complete the quest.",
@@ -22,30 +22,30 @@ Q.STEPS = {
         {
             text = "Go to Pashhow Marshlands Outpost and examine the Outpost Gate for a cutscene.",
             substeps = {
-                "The dialogue in this cutscene will imply you only have 2 days to turn in the Warding Oils , but you can take as long as you need.",
+                "The dialogue in this cutscene will imply you only have 2 days to turn in the Warding Oils, but you can take as long as you need.",
             },
         },
-        "Obtain three Warding Oils from Emerald Quadav in Beadeaux .",
+        "Obtain three Warding Oils from Emerald Quadav in Beadeaux.",
         "Trade the oils to the Outpost Gate for a cutscene.",
-        "Go to Bastok Mines and speak to Wobke .",
-        "Head to Batallia Downs and examine the ??? on a headstone located at (H-6) to spawn 5 NM tigers called Badshah .",
-        "Kill Badshah and re-examine the ??? to obtain Silver Comet's collar .",
+        "Go to Bastok Mines and speak to Wobke.",
+        "Head to Batallia Downs and examine the ??? on a headstone located at (H-6) to spawn 5 NM tigers called Badshah.",
+        "Kill Badshah and re-examine the ??? to obtain Silver Comet's collar.",
         "Speak to Nevela to complete the quest.",
     },
 
     jeu_a_clock_most_delicate = {
         "Speak to Collet for a cutscene.",
         "Check the Door: House to the West of Collet for another cutscene (to the right of Marble Bridge).",
-        "The Key Item you need to complete this quest can only be obtained by completing the quest Deal with Tenshodo .",
+        "The Key Item you need to complete this quest can only be obtained by completing the quest Deal with Tenshodo.",
         "Check the Door: House West of Collet again to complete the quest.",
     },
 
     jeu_a_furious_finale = {
         "Speak to Laila as a level 66 Dancer or higher to begin this quest.",
-        "Head to Grauberg (S) or North Gustaberg (S) and kill Young, Amber, Amethyst and Veteran Quadav there until you get a Dancer's Testimony .",
-        "Trade the Dancer's Testimony to Laila who will teleport you to Qu'Bia Arena .",
+        "Head to Grauberg (S) or North Gustaberg (S) and kill Young, Amber, Amethyst and Veteran Quadav there until you get a Dancer's Testimony.",
+        "Trade the Dancer's Testimony to Laila who will teleport you to Qu'Bia Arena.",
         {
-            text = "Trade the Testimony to the Burning Circle there to enter a battle against Laila .",
+            text = "Trade the Testimony to the Burning Circle there to enter a battle against Laila.",
             substeps = {
                 "There is a 10 minute time limit for this fight.",
                 "If you have the \"Rhapsody in Umber\" Key Item, you are able to summon Trust Magic to aid you.",
@@ -63,9 +63,9 @@ Q.STEPS = {
         "Examine the Door:Merchant's House at (G-11) on the upper level behind Greyson in Lower Jeuno for a cutscene (HP #1).",
         "From this point on, you can complete the quest on any job",
         {
-            text = "Trade a piece of Mahogany Lumber to Osker near the chocobos and Brutus at (G-7) in Upper Jeuno .",
+            text = "Trade a piece of Mahogany Lumber to Osker near the chocobos and Brutus at (G-7) in Upper Jeuno.",
             substeps = {
-                "You will receive a Tamer's whistle , and be instructed to head to The Eldieme Necropolis .",
+                "You will receive a Tamer's whistle, and be instructed to head to The Eldieme Necropolis.",
             },
         },
         {
@@ -79,7 +79,7 @@ Q.STEPS = {
         {
             text = "Examining the sarcophagus will spawn three NM's:",
             substeps = {
-                "2 Tigers named Taifun and Trombe , and a hound named Sturm .",
+                "2 Tigers named Taifun and Trombe, and a hound named Sturm.",
                 "Only Sturm needs to be defeated to proceed.",
                 "The tigers can be charmed to help you in this fight.",
             },
@@ -88,27 +88,27 @@ Q.STEPS = {
     },
 
     jeu_a_quaternary_trial_in_tandem = {
-        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive .",
-        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +3 .",
-        "Trade the Tandem Necklace +3 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4449 .",
+        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive.",
+        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +3.",
+        "Trade the Tandem Necklace +3 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4449.",
         {
-            text = "Your Adventuring Fellow must Weapon Skill any Vermin type monster that give XP 20 times while you wear the Tandem Necklace +3 .",
+            text = "Your Adventuring Fellow must Weapon Skill any Vermin type monster that give XP 20 times while you wear the Tandem Necklace +3.",
             substeps = {
                 "Weapon Skills must hit in order to count.",
-                "Set your Adventuring Fellow to Fierce Attacker for this quest, and do not equip your Adventuring Fellow with a club, in order to avoid Moonlight and Starlight .",
-                "Since your Fellow is capped at 85, you can fight Wamourae and Wamoura Princes in Mount Zhayolm , Spinners in Mamook , and Gnats in Meriphataud Mountains (S) .",
+                "Set your Adventuring Fellow to Fierce Attacker for this quest, and do not equip your Adventuring Fellow with a club, in order to avoid Moonlight and Starlight.",
+                "Since your Fellow is capped at 85, you can fight Wamourae and Wamoura Princes in Mount Zhayolm, Spinners in Mamook, and Gnats in Meriphataud Mountains (S).",
             },
         },
-        "You will get a message in your chat log showing remaining times needed when a successful Weapon Skill is completed by your Adventuring Fellow .",
-        "After your Adventuring Fellow Weapon Skills 20 times, trade the Tandem Necklace +3 to the Magian Moogle (Blue) to receive a Dark Meed .",
+        "You will get a message in your chat log showing remaining times needed when a successful Weapon Skill is completed by your Adventuring Fellow.",
+        "After your Adventuring Fellow Weapon Skills 20 times, trade the Tandem Necklace +3 to the Magian Moogle (Blue) to receive a Dark Meed.",
         "Trade the Dark Meed to Luto Mewrilah to complete the quest.",
     },
 
     jeu_a_reputation_in_ruins = {
         {
-            text = "In Upper Jeuno , speak to Migliorozz (H-9), Temple of the Goddess) who will give you either a Phoenix pearl or a Phoenix armlet .",
+            text = "In Upper Jeuno, speak to Migliorozz (H-9), Temple of the Goddess) who will give you either a Phoenix pearl or a Phoenix armlet.",
             substeps = {
-                "Which item you obtain depends on your progress in Chains of Promathia Missions .",
+                "Which item you obtain depends on your progress in Chains of Promathia Missions.",
             },
         },
         {
@@ -117,30 +117,30 @@ Q.STEPS = {
                 "The Survival Guide (Fauregandi Region) will be the closest quick travel to the tower. The Unity Warp Lv.125 will place you at (I-9) on the ramp going down to the east, a level below the tower.",
             },
         },
-        "Go up the stairs and into the small room at (I-8) where you will find a ??? .",
+        "Go up the stairs and into the small room at (I-8) where you will find a ???.",
         {
-            text = "When you examine the ??? , Gargoyle-Iota and Gargoyle-Kappa will spawn.",
+            text = "When you examine the ???, Gargoyle-Iota and Gargoyle-Kappa will spawn.",
             substeps = {
                 "The doors to this room will close as soon as the NM's spawn and will only open once they are defeated.",
                 "Both NM's can switch between physical and magical immunity at will. They will glow Blue or Yellow when they switch immunity.",
             },
         },
-        "Examine the ??? once the NM's are defeated to obtain a Blue bracelet .",
+        "Examine the ??? once the NM's are defeated to obtain a Blue bracelet.",
         {
-            text = "Head down the stairs to (H-9) where you will find a blue door that only opens if you have a Blue bracelet .",
+            text = "Head down the stairs to (H-9) where you will find a blue door that only opens if you have a Blue bracelet.",
             notes = {
                 "Note: The mention of blue or green doors are identified by the color of the light atop their door-ways. Depending on the players screen configuration these soft colors can sometimes look similar.",
             },
         },
-        "Drop down the hole and head to (H-7) where you will find another ??? .",
+        "Drop down the hole and head to (H-7) where you will find another ???.",
         {
-            text = "Checking the ??? will spawn Gargoyle-Lambda and Gargoyle-Mu .",
+            text = "Checking the ??? will spawn Gargoyle-Lambda and Gargoyle-Mu.",
             substeps = {
                 "The doors to this room will close as soon as the NM's spawn and will only open once they are defeated.",
                 "They have the exact same immunity as the previous NM's.",
             },
         },
-        "Examine the ??? after the NM's are defeated to obtain a Green bracelet .",
+        "Examine the ??? after the NM's are defeated to obtain a Green bracelet.",
         {
             text = "Return back to the entrance of this tower in the room with the stairwell (I-8) or by whatever means is fastest for you:",
             substeps = {
@@ -148,9 +148,9 @@ Q.STEPS = {
                 "You can also warp out, return to the Survival Guide and come back in through the entrance from Beaucedine Glacier 's tower at (G-9).",
             },
         },
-        "Return upstairs (I-8), go down this hall (where the you acquired the Blue bracelet earlier) towards the end of the path where a green door is on the right. It will open for you with the Green bracelet .",
+        "Return upstairs (I-8), go down this hall (where the you acquired the Blue bracelet earlier) towards the end of the path where a green door is on the right. It will open for you with the Green bracelet.",
         {
-            text = "Head to (G-8) where you will find a Crystal Receptor .",
+            text = "Head to (G-8) where you will find a Crystal Receptor.",
             substeps = {
                 "This device temporarily creates a set of platforms that lets you cross the path on the floor below which last 120 seconds.",
             },
@@ -167,46 +167,46 @@ Q.STEPS = {
     },
 
     jeu_a_thousand_cuts = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at H-8 in Lower Jeuno . Choose the \"Brown Envelope\".",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at H-8 in Lower Jeuno. Choose the \"Brown Envelope\".",
         "As stated, simply die to a DoT effect.",
     },
 
     jeu_a_trial_in_tandem = {
-        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive .",
-        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) (the one with the orange ball on it's head, on the left by the crates) for a cutscene and a Tandem Necklace .",
-        "Trade the Tandem Necklace to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4444 .",
+        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive.",
+        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) (the one with the orange ball on it's head, on the left by the crates) for a cutscene and a Tandem Necklace.",
+        "Trade the Tandem Necklace to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4444.",
         "You must defeat 30 of any type of monster that give XP to your Adventuring Fellow while wearing the Tandem Necklace while your Fellow is present.",
-        "After you defeat 30 monsters, trade the Tandem Necklace to the Magian Moogle (Blue) to receive a Copper Meed .",
+        "After you defeat 30 monsters, trade the Tandem Necklace to the Magian Moogle (Blue) to receive a Copper Meed.",
         "Trade the Copper Meed to Luto Mewrilah to complete the quest.",
     },
 
     jeu_a_trial_in_tandem_revisited = {
         "Speak with Luto Mewrilah for a cutscene that begins the quest and the Magian Mooglehood missive",
-        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +4 .",
-        "Trade the Tandem Necklace +4 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 5054 .",
+        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +4.",
+        "Trade the Tandem Necklace +4 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 5054.",
         {
-            text = "Your Adventuring Fellow must Weapon Skill any Undead type monster that give XP 30 times while you wear the Tandem Necklace +4 .",
+            text = "Your Adventuring Fellow must Weapon Skill any Undead type monster that give XP 30 times while you wear the Tandem Necklace +4.",
             substeps = {
                 "Weapon Skills must hit in order to count.",
             },
         },
-        "After your Adventuring Fellow Weapon Skills 30 times, trade the Tandem Necklace +4 to the Magian Moogle (Blue) to receive a Gold Meed .",
+        "After your Adventuring Fellow Weapon Skills 30 times, trade the Tandem Necklace +4 to the Magian Moogle (Blue) to receive a Gold Meed.",
         "Acquire x20 Kindred's Crest if you don't already have them.",
         "Trade the Gold Meed with x20 Kindred's Crest to Luto Mewrilah to complete the quest",
     },
 
     jeu_a_trial_in_tandem_redux = {
-        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive .",
-        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +1 .",
-        "Trade the Tandem Necklace +1 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4445 .",
+        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive.",
+        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +1.",
+        "Trade the Tandem Necklace +1 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4445.",
         {
             text = "You must defeat 25 Bird-type creatures that give XP to your Adventuring Fellow while wearing the Tandem Necklace +1 while your Fellow is present.",
             substeps = {
-                "Since your Fellow is capped at 75, Seaboard Vultures in Misareaux Coast just outside the north exit from Tavnazian Safehold will give them experience. Other alternatives include Condors in Meriphataud Mountains (S) .",
+                "Since your Fellow is capped at 75, Seaboard Vultures in Misareaux Coast just outside the north exit from Tavnazian Safehold will give them experience. Other alternatives include Condors in Meriphataud Mountains (S).",
             },
         },
-        "After you defeat 25 Bird-type creatures , trade the Tandem Necklace +1 to the Magian Moogle (Blue) to receive a Silver Meed .",
+        "After you defeat 25 Bird-type creatures, trade the Tandem Necklace +1 to the Magian Moogle (Blue) to receive a Silver Meed.",
         "Trade the Silver Meed to Luto Mewrilah to complete the quest.",
     },
 
@@ -234,11 +234,11 @@ Q.STEPS = {
 
     jeu_rg_apocalypse_nigh = {
         { note = "Note: You must zone and wait until the next game day after completing the previous quest." },
-        "Enter the palace in Ru'Lude Gardens .",
+        "Enter the palace in Ru'Lude Gardens.",
         {
-            text = "Zone into Sealion's Den for a cutscene and then speak with Sueleen to head to Al'Taieu .",
+            text = "Zone into Sealion's Den for a cutscene and then speak with Sueleen to head to Al'Taieu.",
             substeps = {
-                "You may receive a cutscene with Sueleen if this is your first time returning to Sealion's Den since your first visit to Al'Taieu. Zone back to Tavnazian Safehold and re-enter Sealion's Den for the correct cutscene with Prishe .",
+                "You may receive a cutscene with Sueleen if this is your first time returning to Sealion's Den since your first visit to Al'Taieu. Zone back to Tavnazian Safehold and re-enter Sealion's Den for the correct cutscene with Prishe.",
             },
         },
         "Zone into the Grand Palace of Hu'Xzoi and click the entrance to The Garden of Ru'Hmet (Gate of the Gods) for a cutscene.",
@@ -249,12 +249,12 @@ Q.STEPS = {
                 "If you are on RoV you might encounter a cut scene after pressing Descend on the elevator.",
             },
         },
-        "Check the Transcendental Radiance again to enter the BC against Eald'narche and Kam'lanaut .",
+        "Check the Transcendental Radiance again to enter the BC against Eald'narche and Kam'lanaut.",
     },
 
     jeu_rg_highest_mountains = {
         {
-            text = "Speak to Maat on a level 51 job. He will ask you for three key items guarded by monsters in Xarcabard . If this is your first time heading to Xarcabard you may use the Unity level 125 -> Xarcabard warp to get there. Monster Position Key Item Boreal Tiger (I-5) Round frigicite Boreal Coeurl (J-6) Square frigicite Boreal Hound (G-10) Triangular frigicite The Notorious Monsters stand guard in caves have fairly large aggro range and will respawn within about 5 minutes after being defeated. As of the February 2012 update, the ??? spot will always be present at the far end of the cave, you will receive the key item once you touch it. As a result, you do not need to defeat the Notorious Monsters. You can simply hold them while examining the spots. These NMs will no longer use draw-in, and you may run away afterwards. They will not chase you for very far. Tested this as a lv 51 on 3/12/24 and the Coeurl at least did Draw-in several times. Will not draw-in if you do not engage. You also solo these Notorious Monsters now with relative ease using Trusts . Otherwise you may ride through the cave on a Mount to receive the key items, and then either remount or run out. Speak to Maat once you have all three key items to complete the quest.",
+            text = "Speak to Maat on a level 51 job. He will ask you for three key items guarded by monsters in Xarcabard. If this is your first time heading to Xarcabard you may use the Unity level 125 -> Xarcabard warp to get there. Monster Position Key Item Boreal Tiger (I-5) Round frigicite Boreal Coeurl (J-6) Square frigicite Boreal Hound (G-10) Triangular frigicite The Notorious Monsters stand guard in caves have fairly large aggro range and will respawn within about 5 minutes after being defeated. As of the February 2012 update, the ??? spot will always be present at the far end of the cave, you will receive the key item once you touch it. As a result, you do not need to defeat the Notorious Monsters. You can simply hold them while examining the spots. These NMs will no longer use draw-in, and you may run away afterwards. They will not chase you for very far. Tested this as a lv 51 on 3/12/24 and the Coeurl at least did Draw-in several times. Will not draw-in if you do not engage. You also solo these Notorious Monsters now with relative ease using Trusts. Otherwise you may ride through the cave on a Mount to receive the key items, and then either remount or run out. Speak to Maat once you have all three key items to complete the quest.",
             substeps = {
                 "Monster - Position - Key Item",
                 "Boreal Tiger - (I-5) - Round frigicite",
@@ -274,7 +274,7 @@ Q.STEPS = {
 
     jeu_uj_axe_the_competition = {
         "You cannot start this quest if you have another Weapon Skill Quest active. You must return to the person that gave said quest and quit it to start another.",
-        "Speaking with Brutus will grant you the key item Weapons Training Guide as well as the Pick of Trials . You will need to break the latent on the Pick of Trials before completing the rest of the quest.",
+        "Speaking with Brutus will grant you the key item Weapons Training Guide as well as the Pick of Trials. You will need to break the latent on the Pick of Trials before completing the rest of the quest.",
         {
             text = "Breaking the Latent",
             substeps = {
@@ -290,8 +290,8 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Trade the Pick of Trials back to Brutus . This will give you the key item Map to the Annals of Truth . You will be instructed to travel to the Temple of Uggalepih .",
-        "Bring some form of Sneak and Invisible with you and head to the Temple of Uggalepih .",
+        "Trade the Pick of Trials back to Brutus. This will give you the key item Map to the Annals of Truth. You will be instructed to travel to the Temple of Uggalepih.",
+        "Bring some form of Sneak and Invisible with you and head to the Temple of Uggalepih.",
         "If you enter the temple conventionally from the Jungle. Follow the path to to the T-intersection and head north. Follow the path and exit the Temple.",
         {
             text = "The Voidwatch warp is the fastest method, followed by the Survival Guide warp.",
@@ -301,13 +301,13 @@ Q.STEPS = {
                 "Once outside the Temple, follow the right wall heading North and then immediately East to zone into the Temple again (exit 5 on Temple Map 3). Once inside, follow the path South to the ??? at (G-9) to spawn the NM.",
             },
         },
-        "This fight is against Yallery Brown , a sapling. It is weak to Fire and Dark attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth .",
+        "This fight is against Yallery Brown, a sapling. It is weak to Fire and Dark attacks. Once you kill it, re-examine the ??? to receive the key item Annals of Truth.",
         "Go back and speak with Brutus to receive your reward.",
     },
 
     jeu_beam_me_up_no_not_there = {
         "You must zone after completing Further Founts before you are able to accept this quest.",
-        "Speak to Anastase and select the blank option. You will be given a Geomagnetic compass .",
+        "Speak to Anastase and select the blank option. You will be given a Geomagnetic compass.",
         {
             text = "Choose 1 of 3 options that will warp you to a random location. Note that for the more difficult options, you may be warped into a location where you will immediately aggro one or more monsters, even at level 99. Once there you must realign your Prototype attuner using the Geomagnetic Compass to the Geomagnetic Fount in that location (the Escape spell can be used to reposition to a closer dungeon entrance where applicable).",
             substeps = {
@@ -319,36 +319,36 @@ Q.STEPS = {
         {
             text = "Return to Anastase after successfully realigning the Prototype attuner to complete the quest.",
             substeps = {
-                "If you fail and return to Anastase he will commiserate with you and give you 1 Trail Cookie . You are able to try again.",
+                "If you fail and return to Anastase he will commiserate with you and give you 1 Trail Cookie. You are able to try again.",
             },
         },
     },
 
     jeu_beat_around_the_bushin = {
         "Speak to Vola to begin this quest with Monk as your main job.",
-        "Exit the Tenshodo through the Door: \"Neptune's Spire\" to get a cutscene with Atori-Tutori .",
+        "Exit the Tenshodo through the Door: \"Neptune's Spire\" to get a cutscene with Atori-Tutori.",
         {
-            text = "Obtain a Wyrm Beard from Nidhogg or Early Bird Catches the Wyrm .",
+            text = "Obtain a Wyrm Beard from Nidhogg or Early Bird Catches the Wyrm.",
             substeps = {
                 "Trade the Wyrm Beard to the Door: \"Neptune's Spire\" for a cutscene. This is the interior door next to Domenic, not the exterior door with the same name.",
             },
         },
-        "Speak to Degenhard , Bastok Markets (I-10).",
+        "Speak to Degenhard, Bastok Markets (I-10).",
         {
-            text = "Obtain a Behemoth Tongue from King Behemoth or Horns of War .",
+            text = "Obtain a Behemoth Tongue from King Behemoth or Horns of War.",
             substeps = {
                 "Trade the Behemoth Tongue to the Door: \"Neptune's Spire\" for another cutscene.",
             },
         },
         {
-            text = "Speak to Maat , Ru'Lude Gardens (H-5).",
+            text = "Speak to Maat, Ru'Lude Gardens (H-5).",
             substeps = {
-                "Obtain an Adamantoise Egg from Aspidochelone or The Hills Are Alive .",
+                "Obtain an Adamantoise Egg from Aspidochelone or The Hills Are Alive.",
                 "Trade the Adamantoise Egg to the Door: \"Neptune's Spire\" for a cutscene.",
             },
         },
         {
-            text = "Finally, trade a Brown Belt to the same door for the final cutscene and a Black Belt .",
+            text = "Trade a Brown Belt to the same door for the final cutscene and a Black Belt.",
             substeps = {
                 "The Brown Belt is lost when trading it to the door.",
             },
@@ -357,9 +357,9 @@ Q.STEPS = {
 
     jeu_beyond_infinity = {
         {
-            text = "After completing the previous quest, the Nomad Moogle will give you the option to warp to a BCNM. It is a 6-person battle against Atori-Tutori . The fight is difficult and there is an optional, but STRONGLY recommended, sidequest to acquire an item to enfeeble Atori-Tutori beforehand. See below for details.",
+            text = "After completing the previous quest, the Nomad Moogle will give you the option to warp to a BCNM. It is a 6-person battle against Atori-Tutori. The fight is difficult and there is an optional, but STRONGLY recommended, sidequest to acquire an item to enfeeble Atori-Tutori beforehand. See below for details.",
             substeps = {
-                "Since you can purchase multiple of these items, just get 3 .",
+                "Since you can purchase multiple of these items, just get 3.",
             },
         },
         {
@@ -375,9 +375,9 @@ Q.STEPS = {
                 "Additionally, Domenic in Lower Jeuno (J-7) will warp you to any of these Burning Circle zones after completing this quest.",
             },
         },
-        "Fight and defeat Atori-Tutori . He is level 99 and uses Hundred Fists which removes all enfeebling effects on him.",
+        "Fight and defeat Atori-Tutori. He is level 99 and uses Hundred Fists which removes all enfeebling effects on him.",
         {
-            text = "If you are defeated, you may enter the fight again by paying 1 Merit Point or 5 High Kindred's Crests to the Nomad Moogle .",
+            text = "If you are defeated, you may enter the fight again by paying 1 Merit Point or 5 High Kindred's Crests to the Nomad Moogle.",
             notes = {
                 "Keep in mind that besides obtaining seals from mobs, two easier ways exist to obtain various seals:",
             },
@@ -386,13 +386,13 @@ Q.STEPS = {
         {
             text = "You can get an enfeebling item ( Olde Rarab Tail ) from Degenhard in Bastok Markets (I-10). HP #4 is closest. Head south, down the stairs, and he is on the left.",
             substeps = {
-                "Degenhard will not accept the trade before flagging the quest Beyond Infinity .",
-                "NOTICE: Once you have accepted the quest Beyond Infinity don't warp yet, instead talk to Maat (You may need to talk to him several times to get him to bring up 'paying a visit to Degenhard '. If you don't do this step you won't be allowed to trade items to Degenhard for an Olde Rarab Tail .",
+                "Degenhard will not accept the trade before flagging the quest Beyond Infinity.",
+                "NOTICE: Once you have accepted the quest Beyond Infinity don't warp yet, instead talk to Maat (You may need to talk to him several times to get him to bring up 'paying a visit to Degenhard '. If you don't do this step you won't be allowed to trade items to Degenhard for an Olde Rarab Tail.",
             },
         },
         "Talk to Degenhard Bastok Markets (I-10) (Home Point #4) at least once to hear about the items he wants (otherwise he won't accept them!).",
         {
-            text = "Trade Degenhard a Seasoning Stone , Fossilized Fang , and Fossilized Bone for an Olde Rarab Tail .",
+            text = "Trade Degenhard a Seasoning Stone, Fossilized Fang, and Fossilized Bone for an Olde Rarab Tail.",
             substeps = {
                 "These items have been available from the Repeat Login Campaign for a measly 10 points for years, with no sign that they will be removed.",
                 "May 2025 Repeat Login Campaign removed these items, and likely will become rotating in availability by month.",
@@ -456,13 +456,13 @@ Q.STEPS = {
                 "The level required to fight Maat is at least level 66.",
             },
         },
-        "To check which jobs that you have beaten Maat with, enter Feretory and talk to Teyrnon . Instincts associated with jobs on which you have defeated Maat will cost 5,000 Infamy instead of 10,000. However, if you have already bought an instinct at 10,000, it will not be listed again.",
-        "Upon defeating Maat for the last time, speak with him to receive the cutscene and your new Maat's Cap .",
+        "To check which jobs that you have beaten Maat with, enter Feretory and talk to Teyrnon. Instincts associated with jobs on which you have defeated Maat will cost 5,000 Infamy instead of 10,000. However, if you have already bought an instinct at 10,000, it will not be listed again.",
+        "Upon defeating Maat for the last time, speak with him to receive the cutscene and your new Maat's Cap.",
     },
 
     jeu_blessed_radiance = {
         "Speak to Luto for a cutscene.",
-        "In Lower Jeuno , enter Neptune's Spire and examine the first door on the left for a cutscene.",
+        "In Lower Jeuno, enter Neptune's Spire and examine the first door on the left for a cutscene.",
         "At the following locations you will need to call your Adventuring Fellow and use the proper HELM tool to retrieve the key items:",
         {
             text = "Maze of Shakhrami",
@@ -508,14 +508,14 @@ Q.STEPS = {
             },
         },
         {
-            text = "Touch the ??? spot for a brief cutscene; once it is finished the slime and your Adventuring Fellow will pop. Defeat the slime, then talk to your fellow to trigger a comment about Vitrallum . Touch the ??? to receive Vitrallum .",
+            text = "Touch the ??? spot for a brief cutscene; once it is finished the slime and your Adventuring Fellow will pop. Defeat the slime, then talk to your fellow to trigger a comment about Vitrallum. Touch the ??? to receive Vitrallum.",
             substeps = {
                 "The slime can be spawned again 3 minutes after it's killed.",
             },
         },
-        "Return to Luto Mewrilah in Upper Jeuno .",
+        "Return to Luto Mewrilah in Upper Jeuno.",
         {
-            text = "You will then need to go to the northern part of the lake in Jugner Forest . From East Ronfaure , enter King Ranperre's Tomb . Exit King Ranperre's Tomb from (K-5), and examine the ??? spot next to the lake around (G-5) for a cutscene that completes the quest.",
+            text = "You will then need to go to the northern part of the lake in Jugner Forest. From East Ronfaure, enter King Ranperre's Tomb. Exit King Ranperre's Tomb from (K-5), and examine the ??? spot next to the lake around (G-5) for a cutscene that completes the quest.",
             substeps = {
                 "The Geomagnetic Fount to Jugner Forest is the fastest way there if you have already attuned to it beforehand.",
                 "Using Nexus Cape on someone who has access is another fast method.",
@@ -525,9 +525,9 @@ Q.STEPS = {
 
     jeu_uj_borghertz_calling_hands = {
         "Travel to the Durable Shields shop and speak with Guslam in Upper Jeuno (H-8) on Summoner to begin the quest.",
-        "Head to the Sea Serpent Grotto :",
+        "Head to the Sea Serpent Grotto:",
         "Find and open a Coffer in one of the locations mentioned above. You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         {
             text = "If this is your first AF you must do the following, otherwise skip these steps:",
             substeps = {
@@ -538,38 +538,38 @@ Q.STEPS = {
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the key item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the key item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_chasing_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on Ranger to begin the quest.",
         "Go to Garlaige Citadel",
-        "Either obtain a Garlaige Coffer Key or pick the lock as a Thief .",
+        "Either obtain a Garlaige Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_dragon_hands = {
-        "Travel to the Durable Shields shop in Upper Jeuno , and speak with Guslam located at (H-8) on Dragoon to begin the quest.",
+        "Travel to the Durable Shields shop in Upper Jeuno, and speak with Guslam located at (H-8) on Dragoon to begin the quest.",
         "Go to The Boyahda Tree",
-        "Either obtain a Boyahda Coffer Key or pick the lock as a Thief .",
+        "Either obtain a Boyahda Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
@@ -578,7 +578,7 @@ Q.STEPS = {
         {
             text = "Curio Vendor Moogle sells Zvahl Coffer Key (please note \" Rhapsody in Umber \" is required).",
             substeps = {
-                "Alternatively, you can farm the key or pick the lock as a Thief .",
+                "Alternatively, you can farm the key or pick the lock as a Thief.",
             },
         },
         {
@@ -588,7 +588,7 @@ Q.STEPS = {
             },
         },
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         {
             text = "If this is your first AF, you must do the following.",
             substeps = {
@@ -604,54 +604,54 @@ Q.STEPS = {
                 "You must be BRD for the next step.",
             },
         },
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_healing_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on White Mage to begin the quest.",
-        "Go to Beadeaux and find a Treasure Coffer .",
-        "Either obtain a Beadeaux Coffer Key or pick the lock as a Thief . (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
+        "Go to Beadeaux and find a Treasure Coffer.",
+        "Either obtain a Beadeaux Coffer Key or pick the lock as a Thief. (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_loyal_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on Samurai to begin the quest.",
-        "Go to Kuftal Tunnel . Coffers spawn at (H-7) and (H-6) on Map 1 and (K-11), (G-9), (H-9), (J-7), (J-8), (I-4), (F-6), (D-9) on Map 2.",
-        "Either obtain a Kuftal Coffer Key or pick the lock as a Thief .",
+        "Go to Kuftal Tunnel. Coffers spawn at (H-7) and (H-6) on Map 1 and (K-11), (G-9), (H-9), (J-7), (J-8), (I-4), (F-6), (D-9) on Map 2.",
+        "Either obtain a Kuftal Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_lurking_hands = {
         "Travel to \"Durable Shields\" in Upper Jeuno and speak with Guslam located at (H-8) to begin the quest.",
         "Go to Ifrit's Cauldron",
-        "Either obtain a Cauldron Coffer Key and use it to open one of the chests found in the area, or pick the lock as a Thief .",
+        "Either obtain a Cauldron Coffer Key and use it to open one of the chests found in the area, or pick the lock as a Thief.",
         "You will receive a Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "Speak to Deadly Minnow inside of the Durable Shields shop.",
         "Head to Lower Jeuno inside the Tenshodo area. Speak with Yin Pocanakhu at (J-8) and then trade 1,000 gil to continue.",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
@@ -663,21 +663,21 @@ Q.STEPS = {
                 "Churano-Shurano Windurst Waters (F-8), you can purchase a Permanent Key Item: Magicked astrolabe for 10,000 Gil. This allows you to open doors in The Eldieme Necropolis solo.",
             },
         },
-        "Either obtain an Eldieme Necropolis Coffer Key or pick the lock as a Thief .",
+        "Either obtain an Eldieme Necropolis Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first time completing a Boghertz's Hands quest for any job, you must do the following:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_sneaky_hands = {
         "Travel to the Durable Shields shop in Upper Jeuno and speak with Guslam located at (H-8) on Thief to begin the quest.",
-        "Go to Davoi , then travel to Monastic Cavern , and locate a Treasure Coffer .",
+        "Go to Davoi, then travel to Monastic Cavern, and locate a Treasure Coffer.",
         {
             text = "Either obtain a Davoi Coffer Key to open it, or pick the lock.",
             substeps = {
@@ -696,23 +696,23 @@ Q.STEPS = {
         "Go to Port Jeuno and head to the crates near the Auction House and Duty-Free Shop at (H-8).",
         "Click on the ??? toolbox atop the crates to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_sorcerous_hands = {
         "Travel to the Durable Shields shop in Upper Jeuno and speak with Guslam located at (H-8) as a Black Mage to begin the quest.",
-        "Go to Garlaige Citadel and find a Treasure Coffer .",
-        "Either obtain a Garlaige Coffer Key or pick the lock as a Thief . (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
+        "Go to Garlaige Citadel and find a Treasure Coffer.",
+        "Either obtain a Garlaige Coffer Key or pick the lock as a Thief. (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
         "You will receive a Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
@@ -724,69 +724,69 @@ Q.STEPS = {
                 "Churano-Shurano Windurst Waters (F-8), you can purchase a Permanent Key Item: Magicked astrolable for 10,000 Gil. This allows you to open doors in The Eldieme Necropolis solo.",
             },
         },
-        "Either obtain a Eldieme Coffer Key or pick the lock as a Thief .",
+        "Either obtain a Eldieme Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If This is your first AF you must do the following.",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_striking_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on Monk to begin the quest.",
-        "Go to Crawler's Nest and find a Treasure Coffer .",
-        "Either obtain a Nest Coffer Key or pick the lock as a Thief . (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
+        "Go to Crawler's Nest and find a Treasure Coffer.",
+        "Either obtain a Nest Coffer Key or pick the lock as a Thief. (Key is sold for 5,000 gil from the Curio Vendor Moogle )",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first AF you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_vermillion_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) in Upper Jeuno on Red Mage to begin the quest.",
         {
-            text = "Go to The Eldieme Necropolis and find a Treasure Coffer .",
+            text = "Go to The Eldieme Necropolis and find a Treasure Coffer.",
             substeps = {
                 "Churano-Shurano Windurst Waters (F-8), you can purchase a Permanent Key Item: Magicked astrolabe for 10,000 Gil. This allows you to open doors in The Eldieme Necropolis solo.",
             },
         },
-        "Either obtain a Eldieme Coffer Key or pick the lock as a Thief . (Key is sold for 5,000 gil from the Curio Vendor Moogle and \"Rhapsody in Umber\" )",
+        "Either obtain a Eldieme Coffer Key or pick the lock as a Thief. (Key is sold for 5,000 gil from the Curio Vendor Moogle and \"Rhapsody in Umber\" )",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If this is your first Artifact gear set (AF) you must do the following, otherwise skip these steps:",
         "Go to Port Jeuno and head down to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Key Item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_uj_borghertz_warring_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on Warrior to begin the quest.",
         {
-            text = "Go to The Eldieme Necropolis and find a Treasure Coffer .",
+            text = "Go to The Eldieme Necropolis and find a Treasure Coffer.",
             substeps = {
                 "You can purchase a Magicked astrolabe from Churano-Shurano in Windurst Waters at (F-8) for 10,000 gil. This allows you to open doors in Eldieme Necropolis by yourself.",
             },
         },
         {
-            text = "Obtain a Eldieme Coffer Key - farm it or buy it from the Curio Vendor Moogle , or simply pick the Treasure Coffer lock as a Thief . You do not need to be on Warrior when opening this coffer.",
+            text = "Obtain a Eldieme Coffer Key - farm it or buy it from the Curio Vendor Moogle, or simply pick the Treasure Coffer lock as a Thief. You do not need to be on Warrior when opening this coffer.",
             substeps = {
                 "There is a chance that the coffer is in the Northwest section of map 2 (exit 7), which normally requires going to Beaucedine Glacier and then going south to Batallia Downs to access the entrance, on a ledge.",
             },
         },
         "You will receive Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         {
             text = "If this is your first time completing a Boghertz's Hands quest for any job, you must do the following:",
             substeps = {
@@ -794,34 +794,34 @@ Q.STEPS = {
                 "Head to Lower Jeuno inside the Tenshodo area. Speak with Yin Pocanakhu at (J-8) and then trade 1,000 gil to continue.",
             },
         },
-        "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8) underground beside Digaga .",
+        "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8) underground beside Digaga.",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn the NM Dark Spark .",
-        "Once Dark Spark is defeated, examine one of the torches for the Shadow flames .",
+        "Click on one of the torches to spawn the NM Dark Spark.",
+        "Once Dark Spark is defeated, examine one of the torches for the Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is now complete.",
     },
 
     jeu_uj_borghertz_wild_hands = {
         "Travel to the Durable Shields shop and speak with Guslam located at (H-8) on Beastmaster to begin the quest.",
         "Go to Crawler's Nest",
-        "Either obtain a Nest Coffer Key or pick the lock as a Thief .",
+        "Either obtain a Nest Coffer Key or pick the lock as a Thief.",
         "You will receive a key item Old gauntlets from the coffer.",
-        "Return to Upper Jeuno and speak to Guslam . He will inform you he is unable to repair the gauntlets.",
+        "Return to Upper Jeuno and speak to Guslam. He will inform you he is unable to repair the gauntlets.",
         "If This is your first AF you must do the following.",
         "Go to Port Jeuno and head to the crates near the AH and Jeuno Duty-Free Shop at (H-8).",
         "Click on the ??? to receive a cutscene.",
         "Travel to Castle Zvahl Baileys and go to (F-8) on the first map.",
-        "Click on one of the torches to spawn Dark Spark .",
-        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames .",
+        "Click on one of the torches to spawn Dark Spark.",
+        "Once Dark Spark is defeated, examine the same torch you used to spawn it. You will receive the key item Shadow flames.",
         "Return to Port Jeuno and examine the ??? again. After the cutscene, the quest is complete.",
     },
 
     jeu_candle_making = {
         {
-            text = "Rouliette in the Goddess Temple will agree to make you a candle if you bring her a Lanolin Cube .",
+            text = "Rouliette in the Goddess Temple will agree to make you a candle if you bring her a Lanolin Cube.",
             substeps = {
-                "Lanolin Cubes drop off Battering Rams in La Theine Plateau or Rams in Lufaise Meadows , Abyssea - La Theine , or Caedarva Mire .",
+                "Lanolin Cubes drop off Battering Rams in La Theine Plateau or Rams in Lufaise Meadows, Abyssea - La Theine, or Caedarva Mire.",
             },
         },
         "Trade her the Lanolin Cube to complete the quest.",
@@ -831,9 +831,9 @@ Q.STEPS = {
         "Speak to Luto for a cutscene to begin the quest.",
         "Go to Ru'Lude Gardens (H-7) and speak to Muhoho on the balcony of the Grand Ducal Palace.",
         "Go to Bastok Mines (H-7) and speak to Gelzerio in Boytz's Knicknacks.",
-        "Go to Windurst Waters north map (F-10) and speak to Chamama in the Rarab Tail Hostelry to receive Jar of reversion dust .",
+        "Go to Windurst Waters north map (F-10) and speak to Chamama in the Rarab Tail Hostelry to receive Jar of reversion dust.",
         {
-            text = "Return to Upper Jeuno and speak to Luto, then go to Lower Delkfutt's Tower .",
+            text = "Return to Upper Jeuno and speak to Luto, then go to Lower Delkfutt's Tower.",
             substeps = {
                 "Ensure that you have your Signal Pearl in your inventory/Wardrobe/Satchel/Sack. You may receive another from speaking with your Fellow.",
                 "First go to (J-9) and examine the ??? spot, then to (I-5) to examine another ??? spot. Go to (J-9) and examine the ??? spot in the pool to pop a NM named Illusory Pot and your Adventuring Fellow.",
@@ -849,7 +849,7 @@ Q.STEPS = {
             },
         },
         "To teach a new job to your Adventuring Fellow, simply visit any city Rendezvous Point with the manual in your inventory. Tactics Manuals are not consumed, and are not exclusive allowing you to trade or buy them from Bazaars to learn all three extra jobs.",
-        "You can buy the remaining manuals from Ajahkeem for Fellow Points .",
+        "You can buy the remaining manuals from Ajahkeem for Fellow Points.",
         "If you select the correct option during the cutscene (left), you get an additional dialog at the end, but it doesn't seem to affect anything else:",
         "Fellow: I was impressed you were able to tell which was the real me, <name>.",
         "Luto: Maybe when people trust each other fully, you can see rrright past their exterior and into their soul.",
@@ -857,8 +857,8 @@ Q.STEPS = {
     },
 
     jeu_child_s_play = {
-        "Karl tells you that he will give you a Wonder Magic Set if you bring him a White Rock .",
-        "Trade a White Rock to Karl and he will give you the Wonder Magic Set .",
+        "Karl tells you that he will give you a Wonder Magic Set if you bring him a White Rock.",
+        "Trade a White Rock to Karl and he will give you the Wonder Magic Set.",
     },
 
     jeu_uj_chocobo_on_the_loose = {
@@ -883,13 +883,13 @@ Q.STEPS = {
     },
 
     jeu_uj_chocobos_wounds = {
-        "To begin, speak to Brutus at (G-7) on any job level 20 or higher, this starts the quest Chocobo on the Loose! .",
+        "To begin, speak to Brutus at (G-7) on any job level 20 or higher, this starts the quest Chocobo on the Loose!.",
         "Speak to him two more times to start the correct quest, and choose \"Nope, never!\".",
         {
             text = "Obtain Gausebit Grass x4.",
             substeps = {
                 "They can be purchased from the Auction House under Weapons > Ammo & Misc. > Pet Items",
-                "Can be farmed in Meriphataud Mountains from Crane Flies , or in Dangruf Wadi from Wadi Hares .",
+                "Can be farmed in Meriphataud Mountains from Crane Flies, or in Dangruf Wadi from Wadi Hares.",
                 "Do not confuse this with Gysahl Greens which are sold from the stables NPC. They do not work.",
             },
         },
@@ -901,7 +901,7 @@ Q.STEPS = {
                 "You can use a macro or chat command to speed up the process: /item 'gausebit grass' <t>",
             },
         },
-        "Once the chocobo eats the Gausebit Grass x4, you are presented with a Chocobo license .",
+        "Once the chocobo eats the Gausebit Grass x4, you are presented with a Chocobo license.",
         {
             text = "You don't need to zone before starting the next quest, Full Speed Ahead!",
             substeps = {
@@ -914,7 +914,7 @@ Q.STEPS = {
         {
             text = "Speak with Luto Mewrilah for a cutscene that begins the quest.",
             substeps = {
-                "If you do not get a cutscene from Luto Mewrilah try speaking to Ajahkeem .",
+                "If you do not get a cutscene from Luto Mewrilah try speaking to Ajahkeem.",
             },
         },
         {
@@ -928,10 +928,10 @@ Q.STEPS = {
         {
             text = "Player's job / Fellow's job / Spells/Abilities/Weapon Skills/etc",
             substeps = {
-                "WAR , RNG - NIN/BLM - Utsusemi, Dokumori, Sleepga, Elemental Magic, Blade: Ku",
-                "BLU , COR , DNC - PLD/NIN - Utsusemi, Dokumori, Protect IV, Shell III, Flash, Invincible, Shield Bash",
-                "BST , SMN , PUP , DRG - BST/BLM (?) - Crab pet, Tier 1 Elemental Magic, Familiar",
-                "BLM , RDM , THF - RDM/NIN - Tier 3 Elemental Magic, Chainspell",
+                "WAR, RNG - NIN/BLM - Utsusemi, Dokumori, Sleepga, Elemental Magic, Blade: Ku",
+                "BLU, COR, DNC - PLD/NIN - Utsusemi, Dokumori, Protect IV, Shell III, Flash, Invincible, Shield Bash",
+                "BST, SMN, PUP, DRG - BST/BLM (?) - Crab pet, Tier 1 Elemental Magic, Familiar",
+                "BLM, RDM, THF - RDM/NIN - Tier 3 Elemental Magic, Chainspell",
             },
         },
         "Once your Fellow reaches 10%-20% HP, he/she will give up. Your Adventuring Fellow 's level cap will be raised to 70.",
@@ -955,9 +955,9 @@ Q.STEPS = {
             },
         },
         "Trade all four cards to Chululu for your measly reward.",
-        "Every real-life day you can obtain another random card from speaking with Chululu .",
+        "Every real-life day you can obtain another random card from speaking with Chululu.",
         {
-            text = "Note : Speak with Chululu again to obtain the All in the Cards quest.",
+            text = "Note: Speak with Chululu again to obtain the All in the Cards quest.",
             substeps = {
                 "She will give you five of one type of card a real-life day. Allowing you and other players to quickly trade each other the cards.",
             },
@@ -965,7 +965,7 @@ Q.STEPS = {
     },
 
     jeu_comeback_queen = {
-        "Speak to Laila in Upper Jeuno (G-7) for a cutscene and Wyatt's proposal .",
+        "Speak to Laila in Upper Jeuno (G-7) for a cutscene and Wyatt's proposal.",
         {
             text = "Speak to Harmodios in Bastok Markets (K-10) inside the music shop.",
             substeps = {
@@ -976,7 +976,7 @@ Q.STEPS = {
         {
             text = "Speak to Rhea Myuliah in Upper Jeuno (G-7).",
             substeps = {
-                "You will have to perform in front of an audience, you must hold their attention during the performance, Rhea Myuliah will allow you to ' practice' .",
+                "You will have to perform in front of an audience, you must hold their attention during the performance, Rhea Myuliah will allow you to ' practice'.",
                 "When people move away from you, try to use the proper dance to get their attention back. It seems slightly luck-based.",
             },
         },
@@ -1001,7 +1001,7 @@ Q.STEPS = {
                 "You only need to light all 12 before 1:00. You can return to Zauko after that for credit.",
             },
         },
-        "Repeating this quest a second time grants the Lamp lighter's membership card . This item functions similar to the Marble Bridge coaster . You receive a notification when you zone into Lower Jeuno if Zauko is looking for assistance.",
+        "Repeating this quest a second time grants the Lamp lighter's membership card. This item functions similar to the Marble Bridge coaster. You receive a notification when you zone into Lower Jeuno if Zauko is looking for assistance.",
         "If nobody accepts Zauko 's quest before 1:00 game time, Vhana Ehgaklywha can be seen lighting the streetlamps.",
     },
 
@@ -1009,10 +1009,10 @@ Q.STEPS = {
         {
             text = "Speak to Naruru to begin this quest. She cannot find her Super soup pot and she wants you to bring her a new one from the Culinarians' Guild",
             substeps = {
-                "A Super soup pot is obtained from the related quest Hoist the Jelly, Roger .",
+                "A Super soup pot is obtained from the related quest Hoist the Jelly, Roger.",
             },
         },
-        "Once you have the Super soup pot , speak to Naruru for your reward.",
+        "Once you have the Super soup pot, speak to Naruru for your reward.",
     },
 
     jeu_crest_of_davoi_quest = {
@@ -1025,14 +1025,14 @@ Q.STEPS = {
         {
             text = "Trade him a Gold Orcmask to complete the quest.",
             substeps = {
-                "Gold Orcmask drops off Orcish Troopers in Davoi and Monastic Cavern and from the Orcish Overlord in Monastic Cavern .",
+                "Gold Orcmask drops off Orcish Troopers in Davoi and Monastic Cavern and from the Orcish Overlord in Monastic Cavern.",
             },
         },
     },
 
     jeu_disappointment_valley = {
-        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at (H-8) in Lower Jeuno . Choose the \"Red Envelope\".",
+        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at (H-8) in Lower Jeuno. Choose the \"Red Envelope\".",
         "Examine the northernmost book in the Windurst Waters Optistery (G-8) without any equipment on.",
     },
 
@@ -1108,26 +1108,26 @@ Q.STEPS = {
     },
 
     jeu_fistful_of_fury = {
-        "Vola sees you wish to attain the rank of Brown Belt , but requires you perform a test. He requires:",
+        "Vola sees you wish to attain the rank of Brown Belt, but requires you perform a test. He requires:",
         {
             text = "A Nue Fang",
             substeps = {
-                "Either gained by killing Nue , a NM Tiger in Beaucedine Glacier or the BCNM 50 Eye of the Tiger",
+                "Either gained by killing Nue, a NM Tiger in Beaucedine Glacier or the BCNM 50 Eye of the Tiger",
             },
         },
         {
             text = "A Dodo Skin",
             substeps = {
-                "Either gained by killing the Deadly Dodo , a NM Cockatrice in Sauromugue Champaign or the KSNM 30 Moa Constrictors",
+                "Either gained by killing the Deadly Dodo, a NM Cockatrice in Sauromugue Champaign or the KSNM 30 Moa Constrictors",
             },
         },
         {
             text = "A Morbolger Vine",
             substeps = {
-                "Either gained by killing Morbolger , a NM Morbol in Ordelle's Caves or the KSNM 30 Contaminated Colosseum",
+                "Either gained by killing Morbolger, a NM Morbol in Ordelle's Caves or the KSNM 30 Contaminated Colosseum",
             },
         },
-        "Trade all 3 items to Vola to receive your Brown Belt .",
+        "Trade all 3 items to Vola to receive your Brown Belt.",
     },
 
     jeu_full_speed_ahead = {
@@ -1170,7 +1170,7 @@ Q.STEPS = {
                 "If you take too long it will \"Run off into the sunset...\" presumably to meet other raptors and do raptor things.",
             },
         },
-        "Once you have successfully fed the raptor rendezvous with Syrillia at (E-6) who will warp you back. Stay mounted when talking to Syrillia .",
+        "Once you have successfully fed the raptor rendezvous with Syrillia at (E-6) who will warp you back. Stay mounted when talking to Syrillia.",
         "A comfortable example route: J-8 -> /cheer -> I-7 -> H-6 -> /cheer -> G-6 -> F-7 -> /cheer -> E-6",
         {
             text = "Return to Mapitoto in Upper Jeuno for your reward.",
@@ -1189,12 +1189,12 @@ Q.STEPS = {
                 "Abandoned Village A church standing in an abandoned village - Davoi (I-8) - On a ledge to your left right before the broken bridge going west. - (600 EXP)",
                 "Malediction Beyond a hall wrapped in curses - Beadeaux (G-7) - In the basement behind the first mute. - (600 EXP)",
                 "Faeries An abode of faeries worshipping a living god - Castle Oztroja (G-8) - Close to the entrance, behind the statue (you must go around). - (600 EXP)",
-                "City Ruins A city swallowed by the land - Quicksand Caves (F-7) - Take the (D-12) entrance from Western Altepa Desert . You will need a Loadstone or multiple persons to open the doors unless you're a Galka. - (750 EXP)",
+                "City Ruins A city swallowed by the land - Quicksand Caves (F-7) - Take the (D-12) entrance from Western Altepa Desert. You will need a Loadstone or multiple persons to open the doors unless you're a Galka. - (750 EXP)",
                 "Grotto An eroded cave where space twists and turns - Sea Serpent Grotto (J-5) - Behind Mythril Door. - (750 EXP)",
                 "Shrine A temple where those who have lost darkness reside - Temple of Uggalepih (H-8) - Map Two - Located inside the hidden room, next to a potential coffer spawn location. (750 EXP) Unity Warp (125) puts you closest to this one.",
                 "Forest Moss that glistens deep with a gigantic tree - The Boyahda Tree (D-4) - Map One - On a ledge north of the northern tree. - (900 EXP)",
-                "Urban Locale A city constructed by nomadic beastmen - Oldton Movalpolos (K-11) - Requires travelling through Newton Movalpolos . - (750 EXP) While in Oldton Movalpolos travel to E-13, talk to Twinkbrix , and win a gamble against him to receive a Shaft gate operating dial . 10,000 gil gives the highest success rate - alternatively, trading 2,716 gil on Lightsday also gives the highest success rate. While owning the key item, trade 2,000 gil to teleport to Mineshaft 2716. Exit out of Mineshaft 2716 into Newton Movalpolos and travel to the furnace at K-8. You will be heading south from here, if the fence/gate is restricting you from going south, you will need a Firesand (drops from Moblin Roadman/Engineer). Trade the Firesand to the furnace to move the fence/gate. Drop off at I/J-9 and continue running south. You will now be heading to E-9 (4 on the Map) and exit back into Oldton Movalpolos . The geomagnetic fount is on the left near the opening of the tunnel.",
-                "Belfry Another beautiful ring of a bell - Riverne - Site B01 (C-10) - Requires two Giant Scales . - (900 EXP) If you already have the HP for this zone, then you only need 1 Giant Scale and the Fount is much closer than the entrance. If you don't have the HP, get it at the same time at E-8.",
+                "Urban Locale A city constructed by nomadic beastmen - Oldton Movalpolos (K-11) - Requires travelling through Newton Movalpolos. - (750 EXP) While in Oldton Movalpolos travel to E-13, talk to Twinkbrix, and win a gamble against him to receive a Shaft gate operating dial. 10,000 gil gives the highest success rate - alternatively, trading 2,716 gil on Lightsday also gives the highest success rate. While owning the key item, trade 2,000 gil to teleport to Mineshaft 2716. Exit out of Mineshaft 2716 into Newton Movalpolos and travel to the furnace at K-8. You will be heading south from here, if the fence/gate is restricting you from going south, you will need a Firesand (drops from Moblin Roadman/Engineer). Trade the Firesand to the furnace to move the fence/gate. Drop off at I/J-9 and continue running south. You will now be heading to E-9 (4 on the Map) and exit back into Oldton Movalpolos. The geomagnetic fount is on the left near the opening of the tunnel.",
+                "Belfry Another beautiful ring of a bell - Riverne - Site B01 (C-10) - Requires two Giant Scales. - (900 EXP) If you already have the HP for this zone, then you only need 1 Giant Scale and the Fount is much closer than the entrance. If you don't have the HP, get it at the same time at E-8.",
                 "Darkness The farthest reaches of the blackest depths - Castle Zvahl Keep (H-8) - It is located in the middle of the first room. - (900 EXP)",
             },
         },
@@ -1227,25 +1227,25 @@ Q.STEPS = {
     },
 
     jeu_go_with_the_flow = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
         {
-            text = "Talk to Nantoto at H-8 in Lower Jeuno . Nantoto will offer various letters.",
+            text = "Talk to Nantoto at H-8 in Lower Jeuno. Nantoto will offer various letters.",
             substeps = {
                 "The letters she offers are based on the number of unique Records of Eminence objectives you have completed.",
             },
         },
         {
-            text = "The objective asks you to \"Outfit yourself with a certain shield after wresting it from the hands of the villain who stole it, then examine the records of an individual who thought constantly of Ouschrahd .\"",
+            text = "The objective asks you to \"Outfit yourself with a certain shield after wresting it from the hands of the villain who stole it, then examine the records of an individual who thought constantly of Ouschrahd.\"",
             substeps = {
-                "Obtain and equip a Mahogany Shield .",
+                "Obtain and equip a Mahogany Shield.",
                 "Travel to the Stone Monument at (E-12) in Vunkerl Inlet (S) and examine it.",
             },
         },
     },
 
     jeu_golden_rule = {
-        "You must have already spoken to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks).",
-        "Talk to Nantoto at H-8 in Lower Jeuno . Select the \"White Envelope\".",
+        "You must have already spoken to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks).",
+        "Talk to Nantoto at H-8 in Lower Jeuno. Select the \"White Envelope\".",
         {
             text = "Cast any Raise spell on a KO'd character once.",
             substeps = {
@@ -1257,7 +1257,7 @@ Q.STEPS = {
     jeu_hook_line_and_sinker = {
         "Speak to Omer to begin this quest.",
         {
-            text = "The item Omer asks for drops off Krakens fished up in Qufim Island .",
+            text = "The item Omer asks for drops off Krakens fished up in Qufim Island.",
             substeps = {
                 "No fishing skill is required to pull this up.",
             },
@@ -1267,17 +1267,17 @@ Q.STEPS = {
     },
 
     jeu_impermanence = {
-        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at (H-8) in Lower Jeuno . Select the \"Green Envelope\".",
+        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at (H-8) in Lower Jeuno. Select the \"Green Envelope\".",
         {
-            text = "Obtain a Bruised Starfruit and a Faded Crystal .",
+            text = "Obtain a Bruised Starfruit and a Faded Crystal.",
             substeps = {
-                "To obtain a Bruised Starfruit , either purchase from the Auction House (Misc. 1), or from Cursed Weapons in Xarcabard .",
-                "To obtain a Faded Crystal , trade any regular crystal to any Telepoint .",
+                "To obtain a Bruised Starfruit, either purchase from the Auction House (Misc. 1), or from Cursed Weapons in Xarcabard.",
+                "To obtain a Faded Crystal, trade any regular crystal to any Telepoint.",
             },
         },
         {
-            text = "Travel to (I-8) in Map 2 of The Temple of Uggalepih .",
+            text = "Travel to (I-8) in Map 2 of The Temple of Uggalepih.",
             substeps = {
                 "The Proto-Waypoint is the fastest if you have it, or use the Unity 125 teleport.",
             },
@@ -1290,7 +1290,7 @@ Q.STEPS = {
         {
             text = "You may either defeat monsters in order to obtain the required items or select three ???s on the ground in the zones to obtain the key items instead. Three key items will combine into the required item.",
             substeps = {
-                "If you are attempting this solo you will need the various forms of Sneak and Invisible :",
+                "If you are attempting this solo you will need the various forms of Sneak and Invisible:",
                 "You will need to cancel invisible (not sneak) when the coast is clear in order to select the ??? and then reapply each time. Bringing some form of Reraise such as a Scroll of Instant Reraise is recommended.",
             },
         },
@@ -1299,7 +1299,7 @@ Q.STEPS = {
         { note = "Note: If at any point you possess one of the three items in any of your inventories, clicking a??? in that zone will result in the prompt \"There is nothing out of the ordinary here.\", regardless of how many other key items of that type which you have already collected." },
         "The required items may be obtained in any order and are as follows:",
         {
-            text = "Bomb Coal which drops from Explosures or can be received after obtaining three Bomb coal fragments from ??? targets in Garlaige Citadel .",
+            text = "Bomb Coal which drops from Explosures or can be received after obtaining three Bomb coal fragments from ??? targets in Garlaige Citadel.",
             substeps = {
                 "All three ??? pieces may be obtained on Map 2 in Garlaige Citadel at (G-6), (H-7), and (I-8). Avoid falling in any holes in the floor on the way there.",
                 "Use a Pouch of weighted stones (key item) to get past the first Banishing Gate up ahead soon.",
@@ -1315,7 +1315,7 @@ Q.STEPS = {
         {
             text = "Exoray Mold which drops from Exorays ( U ) or can be received after obtaining three Exoray mold crumbs from ??? targets in Crawler's Nest",
             substeps = {
-                "The first ??? may be found on the path from (I-10) on Map 1 heading towards map 3 (B). Use Sneak to avoid Exorays .",
+                "The first ??? may be found on the path from (I-10) on Map 1 heading towards map 3 (B). Use Sneak to avoid Exorays.",
                 "The second ??? is at (I-6) on Map 3 further along the same path.",
                 "The last ??? piece is located among the Exorays on Map 2 at (G-10).",
             },
@@ -1323,7 +1323,7 @@ Q.STEPS = {
         {
             text = "Ancient Papyrus which drops from Liches ( C ) or can be received after obtaining three Ancient papyrus shreds from ??? targets in The Eldieme Necropolis",
             substeps = {
-                "Zone in to The Eldieme Necropolis from (I/J-10) in Batallia Downs .",
+                "Zone in to The Eldieme Necropolis from (I/J-10) in Batallia Downs.",
                 "The three ???s are located at (F-7), (F-9), and (H-9) on Map 1.",
                 "Run in and make a left where the road forks past the ghosts and follow the hallway.",
                 "When the road forks at the Hellhounds, if the path to the leftis open and you see Liches around a Brazier (flame) then proceed that way the first ??? will be in the left corner of the room.",
@@ -1346,7 +1346,7 @@ Q.STEPS = {
 
     jeu_in_the_mood_for_love = {
         "Speak to Odasel outside Gems by Kshama (H-9) to begin this quest.",
-        "Travel to Lufaise Meadows and defeat the Gigas there until they drop a Chameleon Diamond .",
+        "Travel to Lufaise Meadows and defeat the Gigas there until they drop a Chameleon Diamond.",
         "Trade the Chameleon Diamond to Odasel to complete this quest.",
         "Speak to Matoaka inside the shop for an additional cutscene.",
     },
@@ -1359,7 +1359,7 @@ Q.STEPS = {
                 "You must choose \"I surely do.\" and then \"Never!\" to continue.",
             },
         },
-        "She will then ask for a Stardust pebble .",
+        "She will then ask for a Stardust pebble.",
         {
             text = "Speak with the mithran dancer Rhea Myuliah next to her.",
             substeps = {
@@ -1375,14 +1375,14 @@ Q.STEPS = {
         },
         "Return to Rhea Myuliah in Upper Jeuno to discover what the pebbles are. She'll also reveal they used to lay at the bottom of Lake Mechieume in Jugner Forest twenty years ago.",
         {
-            text = "Travel to the past and go to (I-5) in Jugner Forest (S) .",
+            text = "Travel to the past and go to (I-5) in Jugner Forest (S).",
             substeps = {
-                "It is relatively close to the Batallia Downs (S) zone line. You can travel via the Survival Guide there or through the Cavernous Maw .",
+                "It is relatively close to the Batallia Downs (S) zone line. You can travel via the Survival Guide there or through the Cavernous Maw.",
                 "You could also travel via Recall-Jugner if you have that option available.",
             },
         },
         {
-            text = "Touch the glowing pebbles targetable location near the shore for a cutscene and to receive the Stardust pebble .",
+            text = "Touch the glowing pebbles targetable location near the shore for a cutscene and to receive the Stardust pebble.",
             notes = {
                 "Note: This spot is not actually glowing, unlike other targetable locations in the game. It is simply a targetable spot in the environment. Target around at (I-5) and pay attention to your target names in order to find the spot.",
             },
@@ -1391,8 +1391,8 @@ Q.STEPS = {
     },
 
     jeu_leonine_excruciation = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at H-8 in Lower Jeuno . Choose the \"Purple Envelope\".",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at H-8 in Lower Jeuno. Choose the \"Purple Envelope\".",
         {
             text = "Go to Abyssea - Uleguerand and defeat Apademak once.",
             substeps = {
@@ -1445,31 +1445,31 @@ Q.STEPS = {
                 "(I-8) - Rinzei",
             },
         },
-        "Once you have spoken to all 20 people, return to Ajithaam . He will take your White Sentinel badge and give you a White invitation card .",
+        "Once you have spoken to all 20 people, return to Ajithaam. He will take your White Sentinel badge and give you a White invitation card.",
     },
 
     jeu_martial_mastery = {
-        "Talk to the Nomad Moogle near Maat .",
-        "Give him 15 merits to receive Heart of the bushin , which allows you to access the Merit Weapon Skills .",
-        "357 Skill in a weapon is required to use the Merit Weapon Skills , but not necessary to complete this quest.",
+        "Talk to the Nomad Moogle near Maat.",
+        "Give him 15 merits to receive Heart of the bushin, which allows you to access the Merit Weapon Skills.",
+        "357 Skill in a weapon is required to use the Merit Weapon Skills, but not necessary to complete this quest.",
     },
 
     jeu_middle_lands_investigation = {
-        "After completing the previous quest and zoning out and back into Ru'Lude Gardens , speak to Anastase and select the first option to expand the warp options.",
+        "After completing the previous quest and zoning out and back into Ru'Lude Gardens, speak to Anastase and select the first option to expand the warp options.",
         "At this point, you must discover eleven Geomagnetic Founts hidden throughout Vana'diel by using the hints provided upon asking Anastase about his predictions:",
         {
             text = "Location Name / Details",
             substeps = {
                 "Green Light - \"A green light at the end of a dark prison\" West Ronfaure (E-8) - must travel through Bostaunieux Oubliette to reach the fount. (900 EXP) Using the Unity warp (content level 122) places you directly beside the zone entrance. Avoid dropping down after zoning out.",
                 "Clear Waters - \"A roaring dragon bound for clear waters\" North Gustaberg (D-8) - must travel through Dangruf Wadi to reach the fount. It is on the north side of the river near the entrance on a rock. (750 EXP) (Optional) There is a Stone Monument for the quest An Explorer's Footsteps if you continue heading east into the cave at the end of the path.",
-                "Crowned Tower - \"A tower crowned with the name of an orchid\" West Sarutabaruta (F-4) - At the entrance of the Outer Horutoto Ruins , located on the platform above the staircase leading down into the ruins. (320 EXP) Taking the survival guide will cut the distance in half compared to leaving from Windurst.",
-                "Deep Cliffs - \"The depths of cliffs that cleave plains in twain\" La Theine Plateau (H-10), inside the valley, just outside the exit from Ordelle's Caves . You need to run through the caves and exit near Morbolger. (600 EXP) (Optional) There is a Cermet Headstone containing the Water fragment for Zilart Mission 5 if you continue going southwest to the end of the chasm.",
+                "Crowned Tower - \"A tower crowned with the name of an orchid\" West Sarutabaruta (F-4) - At the entrance of the Outer Horutoto Ruins, located on the platform above the staircase leading down into the ruins. (320 EXP) Taking the survival guide will cut the distance in half compared to leaving from Windurst.",
+                "Deep Cliffs - \"The depths of cliffs that cleave plains in twain\" La Theine Plateau (H-10), inside the valley, just outside the exit from Ordelle's Caves. You need to run through the caves and exit near Morbolger. (600 EXP) (Optional) There is a Cermet Headstone containing the Water fragment for Zilart Mission 5 if you continue going southwest to the end of the chasm.",
                 "Windmill - \"The power to run through a windmill-dotted land\" Konschtat Highlands (L-5) - must walk across the spine to reach the fount. (500 EXP) Taking the survival guide to Gusgen Mines will get you there quickly.",
                 "Dust Cloud - \"The foot of a precipice where dust clouds rage\" Tahrongi Canyon (I-9) - It's between a rock formation and the east wall. (500 EXP) The Buburimu Peninsula survival guide will get you close.",
-                "Lakeside - \"Crimson shears sleeping by a forested lakeside\" Jugner Forest (G-5) - must travel through King Ranperre's Tomb . (750 EXP)",
+                "Lakeside - \"Crimson shears sleeping by a forested lakeside\" Jugner Forest (G-5) - must travel through King Ranperre's Tomb. (750 EXP)",
                 "Swamps - \"Ceaseless raindrops in swampy land\" Pashhow Marshlands (I-7) - SE corner, next to the Luremarsh in a puddle. (500 EXP)",
                 "Backbone - \"A mountain range where dragon bones form an arc\" Meriphataud Mountains (G-8) - NE corner of Square (500 EXP)",
-                "Crags - \"Gigantic crags where undying feathers rain down\" Attohwa Chasm (J-8) - At the top of Parradamo Tor . (900 EXP)",
+                "Crags - \"Gigantic crags where undying feathers rain down\" Attohwa Chasm (J-8) - At the top of Parradamo Tor. (900 EXP)",
                 "Silver - \"A corridor hidden by a silver shield\" Uleguerand Range (H-7) - At the top of the mountain, on the trail behind the Ice Waterfall that disappears when no weather is present. It is located directly next to Home Point Crystal #1 (2000 EXP)",
             },
         },
@@ -1477,8 +1477,8 @@ Q.STEPS = {
     },
 
     jeu_minnow_wrangler = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at H-8 in Lower Jeuno . Choose the \"Yellow Envelope\".",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at H-8 in Lower Jeuno. Choose the \"Yellow Envelope\".",
         {
             text = "Fish up 1 gil.",
             substeps = {
@@ -1492,7 +1492,7 @@ Q.STEPS = {
     jeu_mirror_images = {
         "Speak to Luto for a cutscene.",
         "Head to Fei'Yin and enter Qu'Bia Arena at (K-8). ( Home Point #1 is the closest.)",
-        "This is a Lv.50 capped fight against a single Dark Knight demon, Vassago . He has a very long melee delay, about 3,500 HP, and uses a unique move Blighted Gloom.",
+        "This is a Lv.50 capped fight against a single Dark Knight demon, Vassago. He has a very long melee delay, about 3,500 HP, and uses a unique move Blighted Gloom.",
         "Recommend setting your fellow to Stalwart Shield, as it can tank and cure itself.",
         {
             text = "Blighted Gloom will always be preceded by a dialogue from your fellow: \"Here it comes! Get back!.\" Turn and allow your fellow to get hate back.",
@@ -1511,7 +1511,7 @@ Q.STEPS = {
         { note = "Note: You must zone after finishing Girl in the Looking Glass before you can start this quest." },
         "Speak to Luto Mewrilah for a cutscene.",
         {
-            text = "In Port San d'Oria , head to Cargo Room B near Home Point #1 and speak to Portaure (H-9) for another cutscene that allows you to start a Burning Circle fight.",
+            text = "In Port San d'Oria, head to Cargo Room B near Home Point #1 and speak to Portaure (H-9) for another cutscene that allows you to start a Burning Circle fight.",
             substeps = {
                 "The battlefield was designed to be soloable by players at level 30.",
                 "Trust Magic can not be used.",
@@ -1533,10 +1533,10 @@ Q.STEPS = {
 
     jeu_mixed_signals = {
         "With your Signal Pearl or Tactics Pearl in your inventory but NOT equipped, speak to Ratoto by the Upper Jeuno Guide Stone at (I-10).",
-        "Afterwards, speak to Luto.",
+        "Speak to Luto.",
         "Go to Southern San d'Oria and speak to Raimbroy at (E-8). (Located inside Raimbroy's Grocery)",
         "Return to Luto for another cutscene.",
-        "Head to Map 2 (M-8) in Beadeaux , enter Qulun Dome and check the ??? spot at (I-6) for a cutscene. (The same ??? spot for Whence Blows the Wind , Genkai 3.)",
+        "Head to Map 2 (M-8) in Beadeaux, enter Qulun Dome and check the ??? spot at (I-6) for a cutscene. (The same ??? spot for Whence Blows the Wind, Genkai 3.)",
         "Return to Luto for a cutscene that completes the quest.",
         "You will receive one of the following \"Homemade\" items randomly at the end of the quest.",
         "Homemade Bread",
@@ -1554,18 +1554,18 @@ Q.STEPS = {
 
     jeu_mysteries_of_beadeaux_i = {
         "Speak to Sattal-Mansal to begin this quest.",
-        "Head to Beadeaux and kill De'Vyu Headhunter (I-9/I-10) to obtain a Quadav Charm .",
+        "Head to Beadeaux and kill De'Vyu Headhunter (I-9/I-10) to obtain a Quadav Charm.",
         "Trade the Quadav Charm to Sattal-Mansal to complete this quest.",
     },
 
     jeu_mysteries_of_beadeaux_ii = {
         "Speak to Sattal-Mansal to begin this quest.",
-        "Head to Beadeaux and kill Go'Bhu Gascon (F-6) to obtain a Quadav Augury Shell .",
+        "Head to Beadeaux and kill Go'Bhu Gascon (F-6) to obtain a Quadav Augury Shell.",
         "Return the Quadav Augury Shell to Sattal-Mansal for your reward.",
     },
 
     jeu_never_to_return = {
-        "After completing Your Crystal Ball , have Kurou-Morou read your fortune on at least three different game days.",
+        "After completing Your Crystal Ball, have Kurou-Morou read your fortune on at least three different game days.",
         "Asking for your fourth reading will trigger this quest.",
         {
             text = "Trade a Horn Hairpin to Kurou-Morou to complete the quest.",
@@ -1581,52 +1581,52 @@ Q.STEPS = {
     },
 
     jeu_rg_northward = {
-        "Radeivepart requests that you bring him a Flame Degen .",
+        "Radeivepart requests that you bring him a Flame Degen.",
         {
             text = "A Flame Degen can be obtained in many ways:",
             substeps = {
                 "Purchased off the auction house.",
-                "Purchased with Sparks of Eminence .",
+                "Purchased with Sparks of Eminence.",
                 "Crafted.",
-                "Rarely drops from Napalm .",
+                "Rarely drops from Napalm.",
             },
         },
         "Trade the Flame Degen to Radeivepart to complete the quest.",
     },
 
     jeu_now_recording = {
-        "After completing The Geomagnetron , return to Darcia and ask if she has more work for you.",
+        "After completing The Geomagnetron, return to Darcia and ask if she has more work for you.",
         "Darcia will grant you a Temporary geomagnetron and ask you to return to one of the Geomagnetic Founts.",
         {
             text = "Travel to one of the locations and attune the device to the Geomagnetic Fount found there. The experience points reward received will depend on the chosen fount:",
             substeps = {
-                "Ranguemont Pass : Southeastern corner, (J-10) - 200 EXP",
-                "Yughott Grotto : (J-7), in the pond - 200 EXP",
-                "King Ranperre's Tomb : (K-6), nearest to Jugner Forest Proto-Waypoint - 300 EXP",
-                "Monastic Cavern : First Map, (H-10)",
-                "The Eldieme Necropolis : Second map (J-10). Fall from first floor (F-8) - 400 EXP",
-                "Ordelle's Caves : Hidden Apparatus Area (F-12)",
-                "Gusgen Mines : Last map, NW corner (G-7)",
-                "Dangruf Wadi : (E-11), after falling in the hole in the hidden tunnel - 300 EXP",
-                "Korroloka Tunnel : Fifth map (G-9)",
-                "Palborough Mines : Second map (J-8)",
-                "Gustav Tunnel : First map, at the pond closest to the Cape Teriggan exit (G-10) - 500 EXP",
-                "Labyrinth of Onzozo : (J-5), Off the map in the northeast (access from the south).",
-                "Maze of Shakhrami : First map (K-9) - 300 EXP",
-                "Garlaige Citadel : (G-8)",
-                "Crawlers' Nest : First map (F-7) - 400 EXP",
-                "Outer Horutoto Ruins : (G-7)",
-                "Inner Horutoto Ruins : Second map (G-7)",
-                "Toraimarai Canal : (I-6) towards Inner Horutoto Ruins",
+                "Ranguemont Pass: Southeastern corner, (J-10) - 200 EXP",
+                "Yughott Grotto: (J-7), in the pond - 200 EXP",
+                "King Ranperre's Tomb: (K-6), nearest to Jugner Forest Proto-Waypoint - 300 EXP",
+                "Monastic Cavern: First Map, (H-10)",
+                "The Eldieme Necropolis: Second map (J-10). Fall from first floor (F-8) - 400 EXP",
+                "Ordelle's Caves: Hidden Apparatus Area (F-12)",
+                "Gusgen Mines: Last map, NW corner (G-7)",
+                "Dangruf Wadi: (E-11), after falling in the hole in the hidden tunnel - 300 EXP",
+                "Korroloka Tunnel: Fifth map (G-9)",
+                "Palborough Mines: Second map (J-8)",
+                "Gustav Tunnel: First map, at the pond closest to the Cape Teriggan exit (G-10) - 500 EXP",
+                "Labyrinth of Onzozo: (J-5), Off the map in the northeast (access from the south).",
+                "Maze of Shakhrami: First map (K-9) - 300 EXP",
+                "Garlaige Citadel: (G-8)",
+                "Crawlers' Nest: First map (F-7) - 400 EXP",
+                "Outer Horutoto Ruins: (G-7)",
+                "Inner Horutoto Ruins: Second map (G-7)",
+                "Toraimarai Canal: (I-6) towards Inner Horutoto Ruins",
             },
         },
         "Return to Darcia to complete the quest.",
     },
 
     jeu_over_ninety_thousand = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
         {
-            text = "Talk to Nantoto at H-8 in Lower Jeuno . Nantoto will offer various letters. This one is the gold envelope.",
+            text = "Talk to Nantoto at H-8 in Lower Jeuno. Nantoto will offer various letters. This one is the gold envelope.",
             substeps = {
                 "You need to finish 600 different RoE objectives before you can start this quest.",
             },
@@ -1634,41 +1634,41 @@ Q.STEPS = {
         {
             text = "The objective asks you to deal 99,999 damage in a single attack.",
             substeps = {
-                "All jobs are capable of achieving this feat on Dimgruzub .",
+                "All jobs are capable of achieving this feat on Dimgruzub.",
             },
         },
     },
 
     jeu_painful_memory = {
-        "Speak with Mertaire at the Merry Minsterel Meadhouse in Lower Jeuno to begin the quest. You will receive Mertaire's bracelet .",
+        "Speak with Mertaire at the Merry Minsterel Meadhouse in Lower Jeuno to begin the quest. You will receive Mertaire's bracelet.",
         "Travel to Ranguemont Pass and head to the pool at E-5.",
         {
-            text = "Activating the Waters of Oblivion will spawn the NM Tros .",
+            text = "Activating the Waters of Oblivion will spawn the NM Tros.",
             substeps = {
                 "One NM pop will clear for multiple people if doing in a group.",
             },
         },
-        "Click on the Waters of Oblivion once Tros is defeated for a cutscene. At the conclusion of the cutscene you will receive your Paper Knife .",
-        "You do not need to be on Bard to activate the Waters of Oblivion , only that you have Mertaire's bracelet . Therefore, if you have a higher level job you can switch to that job and defeat Tros easily.",
+        "Click on the Waters of Oblivion once Tros is defeated for a cutscene. At the conclusion of the cutscene you will receive your Paper Knife.",
+        "You do not need to be on Bard to activate the Waters of Oblivion, only that you have Mertaire's bracelet. Therefore, if you have a higher level job you can switch to that job and defeat Tros easily.",
     },
 
     jeu_panta_rhei = {
-        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks).",
-        "Talk to Nantoto at (H-8) in Lower Jeuno . Nantoto will offer various letters.",
+        "Talk to Duberasson at (H-11) in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks).",
+        "Talk to Nantoto at (H-8) in Lower Jeuno. Nantoto will offer various letters.",
         {
-            text = "Obtain a Starfall Tear , Siren's Tear , and Ahriman Tears .",
+            text = "Obtain a Starfall Tear, Siren's Tear, and Ahriman Tears.",
             substeps = {
                 "Starfall Tear is obtained by trading a single Pugil Scales to the Twinkle Tree at (I-6) in West Sarutabaruta between the hours of 0:00 and 3:00.",
                 "Siren's Tear is obtained by touching the ??? along the bank of the Obere Creek at (J-8) and (J-9) in North Gustaberg with no main or sub weapons equipped. Once touched, the ??? moves to another random spot along the bank.",
                 "Ahriman Tears is obtained from Odoba in the Alchemist's Guild. You must be Initiate rank or higher to purchase it.",
             },
         },
-        "Travel to the Luck Rune located at the southeast corner of (H-7) (lower cliff) in Beaucedine Glacier .",
+        "Travel to the Luck Rune located at the southeast corner of (H-7) (lower cliff) in Beaucedine Glacier.",
         "Trade the three tears to the Luck Rune to complete the objective.",
     },
 
     jeu_past_reflections = {
-        "Zone after the previous quest. Speak to Luto for a cutscene that begins this quest. (If you receive a conversation about Fellow Points, speak to her again.) She will ask you to retrieve a book from the Optistery .",
+        "Zone after the previous quest. Speak to Luto for a cutscene that begins this quest. (If you receive a conversation about Fellow Points, speak to her again.) She will ask you to retrieve a book from the Optistery.",
         "Go to Windurst Waters (Home Point #1) and speak to Tosuka-Porika at (Northern, G-8) for a brief cutscene.",
         "In the cutscene you will be requested to gather the following food:",
         {
@@ -1697,16 +1697,16 @@ Q.STEPS = {
         "Speak to Bki Tbujhja Lower Jeuno H-8, inside the Merry Minstrel, for a hint on where you need to go next.",
         { note = "(Optional) Speak to Mataligeat for some extra dialogue about Lewenhart." },
         {
-            text = "Travel through the tunnel in Valkurm Dunes (C-6) to the \"Secret Beach\" and examine the Song Runes (B-7) for a last cutscene .",
+            text = "Travel through the tunnel in Valkurm Dunes (C-6) to the \"Secret Beach\" and examine the Song Runes (B-7) for a last cutscene.",
             substeps = {
-                "A quick way to reach the destination is to Survival Guide to Gustav Tunnel , then exit to Valkurm Dunes.",
+                "A quick way to reach the destination is to Survival Guide to Gustav Tunnel, then exit to Valkurm Dunes.",
                 "If you haven't been to this survival guide yet, Unity Warp (level 128) and then having a /BLM use Escape will put you right at this exit.",
             },
         },
     },
 
     jeu_uj_path_of_the_beastmaster = {
-        "Complete the prior quests Chocobo's Wounds and Save My Son .",
+        "Complete the prior quests Chocobo's Wounds and Save My Son.",
         {
             text = "Speak to Brutus in Upper Jeuno (G-7) for a cutscene.",
             substeps = {
@@ -1718,7 +1718,7 @@ Q.STEPS = {
     },
 
     jeu_petals_of_recollection = {
-        "Talk to Nantoto at H-8 in Lower Jeuno .",
+        "Talk to Nantoto at H-8 in Lower Jeuno.",
         "She asks you to light a firework from a place that has special meaning to you.",
         "You will be given 1 Ouka Ranman to use at any location, anywhere. After you use the firework, you will get the message \"This place is now known as a location that brings memories flooding back to you\".",
     },
@@ -1726,23 +1726,23 @@ Q.STEPS = {
     jeu_prelude_to_puissance = {
         "Talk to the Nomad Moogle next to Maat to begin the quest.",
         {
-            text = "Retrieve a Seasoning Stone , which drops off nearly all level 90+ regular monsters outside of Abyssea and trade it to the Nomad Moogle .",
+            text = "Retrieve a Seasoning Stone, which drops off nearly all level 90+ regular monsters outside of Abyssea and trade it to the Nomad Moogle.",
             substeps = {
                 "The Seasoning Stone is also available from the Login Campaign for only 5 points.",
             },
         },
         {
-            text = "You will receive Soul gem clasp and access to the level 95 cap fight, Beyond Infinity .",
+            text = "You will receive Soul gem clasp and access to the level 95 cap fight, Beyond Infinity.",
             substeps = {
                 "When Atori-Tutori asks if you are ready, say 'Yes'. This does not start the BCNM fight, it merely advances the quest line.",
             },
         },
-        "This quest is now technically completed. Continue to the next quest and win the BCNM Beyond Infinity .",
+        "This quest is now technically completed. Continue to the next quest and win the BCNM Beyond Infinity.",
     },
 
     jeu_pretty_little_things = {
         "Talk to Zona Shodhun to start the quest.",
-        "She won't come out and say it at first, but she would like a Yellow Rock .",
+        "She won't come out and say it at first, but she would like a Yellow Rock.",
         {
             text = "Yellow Rock can be bought off auction houses; Materials > Goldsmithing.",
             substeps = {
@@ -1772,24 +1772,24 @@ Q.STEPS = {
 
     jeu_remembrance_of_flowers_past = {
         {
-            text = "Talk to Nantoto at (H-8) in Lower Jeuno .",
+            text = "Talk to Nantoto at (H-8) in Lower Jeuno.",
             substeps = {
-                "Choose the \"Rainbow Envelope\" .",
+                "Choose the \"Rainbow Envelope\".",
             },
         },
         {
             text = "Use an Ouka Ranman in the same location you chose in the Petals of Recollection objective.",
             substeps = {
-                "If you do not remember where that was, go to Geuhbe at Lower Jeuno G-9 and choose Jeuno Quests 2 > To Kill Mocking Birds (pt. 3). If you want to skip through all the text, the location is mentioned in the fourth to last bit of dialogue by \"???\" .",
+                "If you do not remember where that was, go to Geuhbe at Lower Jeuno G-9 and choose Jeuno Quests 2 > To Kill Mocking Birds (pt. 3). If you want to skip through all the text, the location is mentioned in the fourth to last bit of dialogue by \"???\".",
             },
         },
     },
 
     jeu_researchers_from_the_west = {
-        "Speak to Anastase in Ru'Lude Gardens and choose to partake in his quest to receive the Prototype attuner .",
+        "Speak to Anastase in Ru'Lude Gardens and choose to partake in his quest to receive the Prototype attuner.",
         "At this point, you must discover four additional Proto-Waypoints hidden throughout Vana'diel by using the hints provided upon asking Anastase about his prognostications.",
         {
-            text = "After discovering each Proto-Waypoints , speak to the NPC standing nearby to activate teleportation:",
+            text = "After discovering each Proto-Waypoints, speak to the NPC standing nearby to activate teleportation:",
             substeps = {
                 "<Port>: A geomagnetic fount located in a port named after a young woman. Pure white beaches... Clay... Disembowelment...",
                 "<Dwelling>: A geomagnetic fount located in a dwelling located in plains dotted by craggy outcroppings. A long-necked beast... A chef in search of meat from the beast... \"The Old Lady\"...",
@@ -1797,7 +1797,7 @@ Q.STEPS = {
                 "<Fort>: A geomagnetic fount located in a hard-to-find locale carved out of rock. Samurai and ninjas... Pirates... Contraband...",
             },
         },
-        "Once you have spoken to all four NPCs, return to Anastase .",
+        "Once you have spoken to all four NPCs, return to Anastase.",
     },
 
     jeu_rg_riding_on_clouds = {
@@ -1807,15 +1807,15 @@ Q.STEPS = {
             text = "A reminder that Kindred's seals can be acquired from:",
             substeps = {
                 "Any normal mob level 50-69 that checks as Easy Prey or higher.",
-                "Exchanged 3:1 (or 2:1 during certain campaigns ) for other seal types from Shemo .",
+                "Exchanged 3:1 (or 2:1 during certain campaigns ) for other seal types from Shemo.",
                 "The Greeter Moogle for 5 points each, if redemption for a login points campaign is currently active.",
             },
         },
         {
-            text = "In return for a Seal, you will receive either a Smiling stone , Scowling stone , Somber stone , or Spirited stone .",
+            text = "In return for a Seal, you will receive either a Smiling stone, Scowling stone, Somber stone, or Spirited stone.",
             substeps = {
-                "Three clues will refer to someone in one person each in San d'Oria , Bastok , and Windurst .",
-                "The final clue will refer to someone in either Selbina or Mhaura .",
+                "Three clues will refer to someone in one person each in San d'Oria, Bastok, and Windurst.",
+                "The final clue will refer to someone in either Selbina or Mhaura.",
                 "The above are in no particular order, but all four locations are guaranteed.",
             },
         },
@@ -1941,15 +1941,15 @@ Q.STEPS = {
                 "If she mentions \"spreading the wonder of tarut cards\", then that's the wrong quest ( All in the Cards ). Say no and talk to her again.",
             },
         },
-        "Chululu gives you Magic trash .",
-        "The Magic trash can only be disposed of in the Incinerator in Garlaige Citadel .",
+        "Chululu gives you Magic trash.",
+        "The Magic trash can only be disposed of in the Incinerator in Garlaige Citadel.",
         {
             text = "To access the Incinerator, you need a Garlaige Key",
             substeps = {
-                "The key is dropped by Fallen Evacuee in Garlaige Citadel . Found in the rooms right near the entrance to the zone on Map 1.",
+                "The key is dropped by Fallen Evacuee in Garlaige Citadel. Found in the rooms right near the entrance to the zone on Map 1.",
             },
         },
-        "To reach the Incinerator, pass through the first two Banishing Gates in Garlaige Citadel .",
+        "To reach the Incinerator, pass through the first two Banishing Gates in Garlaige Citadel.",
         "After you get through the Second Banishing Gate, go to (I-7) on the map (3) and trade your key to the Crematory Hatch to enter the Incinerator Room.",
         "Speak with Mashira who will dispose of the trash for you.",
         "Return to Chululu for your reward.",
@@ -1959,15 +1959,15 @@ Q.STEPS = {
                 "Map 1 - Map 2 - Map 3",
             },
         },
-        "This quest sends you to the same Incinerator Room as the quest Making Amens! . It is recommended you pick up that quest if you want to save the trouble of farming the key twice.",
+        "This quest sends you to the same Incinerator Room as the quest Making Amens!. It is recommended you pick up that quest if you want to save the trouble of farming the key twice.",
     },
 
     jeu_save_my_sister = {
         "Speak to Baudin to begin this quest. (Quest never shows in Current Log)",
         "Speak to Mailloquetat (H-9) for a cutscene.",
-        "Return to Baudin .",
+        "Return to Baudin.",
         {
-            text = "Speak to Neraf-Najiruf , Ru'Lude Gardens (G-7) who will hand you a Ducal Guard's lantern .",
+            text = "Speak to Neraf-Najiruf, Ru'Lude Gardens (G-7) who will hand you a Ducal Guard's lantern.",
             substeps = {
                 "You may need to speak to Neraf-Najiruf twice to receive the lantern.",
             },
@@ -1982,8 +1982,8 @@ Q.STEPS = {
                 "Fourth Brazier: (H-9)",
             },
         },
-        "Return to Baudin .(Obtain reward and title at this point. Quest shows as success as well)",
-        "Speak to Neraf-Najiruf .",
+        "Return to Baudin.(Obtain reward and title at this point. Quest shows as success as well)",
+        "Speak to Neraf-Najiruf.",
     },
 
     jeu_lj_save_my_son = {
@@ -2025,7 +2025,7 @@ Q.STEPS = {
     },
 
     jeu_uj_scattered_into_shadow = {
-        "Speak to Brutus at (G-7) in Upper Jeuno who will give you three Aquaflora Key Items .",
+        "Speak to Brutus at (G-7) in Upper Jeuno who will give you three Aquaflora Key Items.",
         "You can be on any job from here on.",
         {
             text = "Examine the pools on map 2 of Fei'Yin located at (H-8), (H-5) and lastly (F-5). They are the little green marks on the map.",
@@ -2036,25 +2036,25 @@ Q.STEPS = {
         {
             text = "When the pool located at (F-5) is inspected an NM named Dabotz's Ghost will spawn. The ghost can actually spawn at any pool but it seems (F-5) was only available after the other 2 were used.",
             substeps = {
-                "Dabotz's Ghost is a Black Mage and can cast various Black Magic spells including Tornado .",
+                "Dabotz's Ghost is a Black Mage and can cast various Black Magic spells including Tornado.",
                 "Dabotz's Ghost uses curse often.",
                 "Take off Sneak if you have it on, he will spawn in the water of the pool and you can't get to him unless he aggros you.",
             },
         },
-        "After defeating Dabotz's Ghost , check the pool at (F-5) again.",
+        "After defeating Dabotz's Ghost, check the pool at (F-5) again.",
         "Return to Brutus for a cutscene.",
         {
-            text = "Next head to Castle Oztroja and kill the monsters to find an Oztroja Chest Key .",
+            text = "Head to Castle Oztroja and kill the monsters to find an Oztroja Chest Key.",
             substeps = {
-                "Alternatively, you can purchase one from the Curio Vendor Moogle .",
+                "Alternatively, you can purchase one from the Curio Vendor Moogle.",
             },
         },
-        "Use the key to open a chest inside the castle to receive a Beast Collar .",
+        "Use the key to open a chest inside the castle to receive a Beast Collar.",
         {
-            text = "Trade the Beast Collar to the Opo-opo NPC Tebhi .",
+            text = "Trade the Beast Collar to the Opo-opo NPC Tebhi.",
             substeps = {
                 "Tebhi likes to roam the indoor pond that is near the brass door to the magicite for city missions.",
-                "Tebhi will dissapear for 3 minutes after accepting the Beast Collar .",
+                "Tebhi will dissapear for 3 minutes after accepting the Beast Collar.",
             },
         },
         "Return to Brutus for your reward.",
@@ -2062,19 +2062,19 @@ Q.STEPS = {
 
     jeu_searching_for_the_right_words = {
         "Speak to Kurou-Morou after completing the prerequisite quests.",
-        "Speak to Ilumida ( Upper Jeuno G-8) until she gives you a cutscene requesting you obtain a Moondrop .",
+        "Speak to Ilumida ( Upper Jeuno G-8) until she gives you a cutscene requesting you obtain a Moondrop.",
         {
-            text = "Travel to The Boyahda Tree and examine a ??? at H-8 in 2nd map of The Boyahda Tree between 19:00 and 04:00 to spawn an Ahriman NM Agas .",
+            text = "Travel to The Boyahda Tree and examine a ??? at H-8 in 2nd map of The Boyahda Tree between 19:00 and 04:00 to spawn an Ahriman NM Agas.",
             substeps = {
                 "Home Point #1 (Cloister of Storms) is close to the objective.",
             },
         },
-        "Once defeated, examine the ??? again between the hours of 19:00 and 04:00 to get the Moondrop .",
+        "Once defeated, examine the ??? again between the hours of 19:00 and 04:00 to get the Moondrop.",
         "Return to Upper Jeuno and talk to Ilumida for your reward.",
         "You may speak to Kurou-Morou once more to see a cutscene, but it is not necessary for your reward.",
         "Agas will not spawn during a New Moon (type /clock) as the moon must be visible to some degree.",
-        "Agas uses Level 5 Petrify , which will petrify any characters with a level divisible by 5.",
-        "Only one person in the party needs to spawn Agas to get the whole party their Moondrop .",
+        "Agas uses Level 5 Petrify, which will petrify any characters with a level divisible by 5.",
+        "Only one person in the party needs to spawn Agas to get the whole party their Moondrop.",
         "Casts Tier 3 single target and AoE-aga black magic spells.",
         {
             text = "Agas is soloable at level 75 by a Beastmaster with the charmable mobs around the area. A couple of Summoners would also work.",
@@ -2101,7 +2101,7 @@ Q.STEPS = {
 
     jeu_rg_shattering_stars = {
         "This Limit break only applies to jobs before the Treasures of Aht Urhgan expansion.",
-        "Speak to Maat on any level 66-70 Job . He will ask you bring a testimony for your job to him.",
+        "Speak to Maat on any level 66-70 Job. He will ask you bring a testimony for your job to him.",
         "Click on a Testimony below for details on what monsters drop them and how to find the monsters.",
         {
             text = "Testimonies",
@@ -2115,7 +2115,7 @@ Q.STEPS = {
         },
         "Once you trade the testimony to Maat, he will ask if you are ready.",
         "If you are rematching Maat on a job that is not your first, keep in mind that each job has an 'assigned' BCNM location, and you will be unable to enter the fight by trading the testimony to a Burning Circle other than your 'assigned' one.",
-        "The time limit is 10 minutes , but after about 5 minutes from engaging Maat, he will begin to use Asuran Fists . This tends to hurt much more than his other moves.",
+        "The time limit is 10 minutes, but after about 5 minutes from engaging Maat, he will begin to use Asuran Fists. This tends to hurt much more than his other moves.",
         "Your Support Job will be removed when you enter the battlefield, therefore you will lose all buffs (except for food) and TP.",
         "If you have the \"Rhapsody in Umber\" Key Item, you are able to summon Trust Magic to aid you.",
         "To win, you must either get Maat's HP close to 0 or satisfy a special condition for certain jobs.",
@@ -2129,27 +2129,27 @@ Q.STEPS = {
                 "Note: If you possess one already, you will not be able to steal another.",
             },
         },
-        "When Maat gives up, you will receive the title \"Maat Masher\" and a Scroll of Instant Warp .",
+        "When Maat gives up, you will receive the title \"Maat Masher\" and a Scroll of Instant Warp.",
         "Return to Ru'Lude Gardens and speak to Maat to complete the quest. *as of 2026 he doesn't appear to have post-win dialogue other than when you get your 6th win to get the trust and when you get your Maat's cap.",
         { note = "Note: You keep your testimony after the fight. If you have not yet gained access to Aht Urhgan Whitegate via the quest The Road to Aht Urhgan you may trade your testimony afterwards under the advanced path option and complete the quest." },
     },
 
     jeu_shifty_shades_of_prey = {
         "Talk to Nantoto at H-8 in Lower Jeuno after you have completed 100 unique Records of Eminence quests.",
-        "She asks you to kill shadows in The Eldieme Necropolis .",
+        "She asks you to kill shadows in The Eldieme Necropolis.",
         {
-            text = "Kill 10 Formor family monsters in The Eldieme Necropolis .",
+            text = "Kill 10 Formor family monsters in The Eldieme Necropolis.",
             substeps = {
                 "You must first activate the Records of Eminence quest under Other -> RoE Quests -> Culling The Darkness to get credit.",
             },
         },
         "When you kill the last shadow you will complete the Records of Eminence quest and receive 1500 sparks and 2500 exp.",
-        "Report back to Nantoto for a short cutscene to complete the quest and obtain the 5 Copper A.M.A.N Vouchers .",
+        "Report back to Nantoto for a short cutscene to complete the quest and obtain the 5 Copper A.M.A.N Vouchers.",
     },
 
     jeu_shiver_me_timbers = {
-        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame , the NPC who deals in Sparks ).",
-        "Talk to Nantoto at H-8 in Lower Jeuno . Choose the \"Black Envelope\".",
+        "Talk to Duberasson at H-11 in Western Adoulin (he is near the residential area, right next to Eternal Flame, the NPC who deals in Sparks ).",
+        "Talk to Nantoto at H-8 in Lower Jeuno. Choose the \"Black Envelope\".",
         {
             text = "Defeat the Tier 1 Aht Urghan Voidwatch Notorious Monster Dimgruzub once.",
             substeps = {
@@ -2208,31 +2208,31 @@ Q.STEPS = {
             substeps = {
                 "You must first activate the Records of Eminence quest under Other -> RoE Quests -> Telepoint Pilgrimage before clicking the telepoints",
                 "If you have previously gotten all of the gate key crystals, you must do all six again.",
-                "Dem gate crystal , Holla gate crystal , Mea gate crystal , Yhoator gate crystal , Altepa gate crystal , Vahzl gate crystal",
+                "Dem gate crystal, Holla gate crystal, Mea gate crystal, Yhoator gate crystal, Altepa gate crystal, Vahzl gate crystal",
             },
         },
         "When you click on the 6th telepoint you will complete the Records of Eminence quest and receive 1500 sparks and 2500 exp.",
-        "Report back to Nantoto for a short cutscene to complete the quest and obtain the 3 Copper Vouchers .",
+        "Report back to Nantoto for a short cutscene to complete the quest and obtain the 3 Copper Vouchers.",
     },
 
     jeu_tenshodo_membership = {
-        "Enter Neptune's Spire in Lower Jeuno .",
+        "Enter Neptune's Spire in Lower Jeuno.",
         "Talk to Ghebi Damomohe at the counter.",
-        "Select the third, blank line of dialogue. Ghebi Damomohe will inform you that you need either a Tenshodo Invite OR a Tenshodo application form .",
-        "To get the Tenshodo application form :",
+        "Select the third, blank line of dialogue. Ghebi Damomohe will inform you that you need either a Tenshodo Invite OR a Tenshodo application form.",
+        "To get the Tenshodo application form:",
         "Head to Port Bastok and into Warehouse #2 upper level.",
-        "Once inside, talk to Jabbar to receive the Tenshodo application form .",
-        "Return to Ghebi Damomohe to receive a Tenshodo Invite and Tenshodo Member's Card . You may now freely come and go from the Tenshodo back room.",
-        "If you'd prefer to buy a Tenshodo Invite :",
+        "Once inside, talk to Jabbar to receive the Tenshodo application form.",
+        "Return to Ghebi Damomohe to receive a Tenshodo Invite and Tenshodo Member's Card. You may now freely come and go from the Tenshodo back room.",
+        "If you'd prefer to buy a Tenshodo Invite:",
         "Search the Auction House (AH > Others > Misc.) for a Tenshodo Invite and trade it to Ghebi Damomohe to complete the quest. Please note that buying the Tenshodo Invite does NOT bypass the Jeuno Fame required for the quest.",
     },
 
     jeu_pj_antique_collector = {
         "Speak to Imasuke to begin this quest.",
         {
-            text = "Head to Qufim Island and kill Dancing Weapons until you obtain a Kaiser Sword .",
+            text = "Head to Qufim Island and kill Dancing Weapons until you obtain a Kaiser Sword.",
             substeps = {
-                "Kaiser Swords can also sometimes be found at the Auction House .",
+                "Kaiser Swords can also sometimes be found at the Auction House.",
             },
         },
         "Trade the Kaiser Sword to Imasuke to complete this quest.",
@@ -2240,13 +2240,13 @@ Q.STEPS = {
 
     jeu_pj_circle_of_time = {
         {
-            text = "Speak to Mertaire in Lower Jeuno , who tells you to take the Star ring (tarnished) to an antique collector.",
+            text = "Speak to Mertaire in Lower Jeuno, who tells you to take the Star ring (tarnished) to an antique collector.",
             substeps = {
                 "Quest wont be listed in log yet.",
             },
         },
         {
-            text = "Speak to Imasuke (E-6) in Port Jeuno .",
+            text = "Speak to Imasuke (E-6) in Port Jeuno.",
             substeps = {
                 "You must have your current job set to Bard to receive the cutscene.",
                 "After speaking with him, you may change to any job.",
@@ -2258,9 +2258,9 @@ Q.STEPS = {
                 "You must now wait one Earth minute before you can retrieve the ring.",
             },
         },
-        "Retrieve the Star ring (indecipherable) by examining the Perennial Snow .",
+        "Retrieve the Star ring (indecipherable) by examining the Perennial Snow.",
         "Go back to Imasuke who tells you to find someone who can translate the ring.",
-        "Head to Chateau d'Oraguille and speak to Chalvatot at (F-7) to receive the Moon ring .",
+        "Head to Chateau d'Oraguille and speak to Chalvatot at (F-7) to receive the Moon ring.",
         "Listen to his instructions and travel to Monastic Cavern via Davoi @ (H-11)",
         {
             text = "Walk to the small circular room at (I-8) with the altar in it",
@@ -2268,7 +2268,7 @@ Q.STEPS = {
                 "Be careful of the True Sight Orcish Warlord that roams the area",
             },
         },
-        "After clearing the Orcs , examine the altar to spawn Bugaboo",
+        "After clearing the Orcs, examine the altar to spawn Bugaboo",
         "Defeat him, then examine the altar again for a cutscene.",
         "Return and speak to Chalvatot for your reward, and to complete the quest.",
     },
@@ -2281,19 +2281,19 @@ Q.STEPS = {
 
     jeu_the_flying_machine_of_eld = {
         "Approach the chocobo stable in Upper Jeuno (G-7).",
-        "Complete the The Celestial Nexus II , on any difficulty , to get the Broken flying machine Key Item.",
-        "Report back to Mapitoto .",
+        "Complete the The Celestial Nexus II, on any difficulty, to get the Broken flying machine Key Item.",
+        "Report back to Mapitoto.",
         "Interact with the Strange Apparatus in Fei'Yin (G-6 map 1).",
         {
-            text = "You will need to proceed to the basement (H-9, Map 1) or warp to the Fauregandi -> Fei'Yin -> Home Point #2 .",
+            text = "You will need to proceed to the basement (H-9, Map 1) or warp to the Fauregandi -> Fei'Yin -> Home Point #2.",
             substeps = {
-                "Then proceed back upstairs from (E-7, Map 2) to (G/H-6, Map 1) to run through the fake wall and to the Apparatus. All apparatuses are hidden like this.",
+                "Proceed back upstairs from (E-7, Map 2) to (G/H-6, Map 1) to run through the fake wall and to the Apparatus. All apparatuses are hidden like this.",
             },
         },
         "Obtain a Ve'Lugannon Coffer Key and open a coffer in Ve'Lugannon Palace to obtain the Levitation device Key Item.",
         "Obtain Doctor Status from any Strange Apparatus and return to the one in Fei'Yin and examine the Apparatus.",
         {
-            text = "You will not be able to obtain Doctor Status from the apparatus in Fei'Yin .",
+            text = "You will not be able to obtain Doctor Status from the apparatus in Fei'Yin.",
             substeps = {
                 "Once obtained, the status will persist after obtaining it in another zone and returning.",
             },
@@ -2301,7 +2301,7 @@ Q.STEPS = {
                 "Warning: Don't accidentally trade your items to a Strange Apparatus in a zone other than Fei'Yin for this quest! You will lose them.",
             },
         },
-        "Trade the Green Chip and Infinity Core to the apparatus in Fei'Yin .",
+        "Trade the Green Chip and Infinity Core to the apparatus in Fei'Yin.",
         "Trade the stacks of Clusters to obtain the Whirring engine Key Item.",
         {
             text = "Return to Mapitoto to get the Levitus key Key Item.",
@@ -2327,17 +2327,17 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_i = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of dhalmel leather , a steel ingot , a square of linen cloth , and a peridot ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of dhalmel leather, a steel ingot, a square of linen cloth, and a peridot; or a Goblin Stew 880.",
             substeps = {
-                "Dhalmel Leather : AH  Materials  Leathercraft",
-                "Steel Ingot : AH  Materials  Smithing",
-                "Linen Cloth : AH  Materials  Clothcraft",
-                "Peridot : AH  Materials  Goldsmithing",
+                "Dhalmel Leather: AH  Materials  Leathercraft",
+                "Steel Ingot: AH  Materials  Smithing",
+                "Linen Cloth: AH  Materials  Clothcraft",
+                "Peridot: AH  Materials  Goldsmithing",
             },
         },
         "After trading the items, your Gobbiebag capacity will be increased by 5 slots to a new total of 35.",
-        "If you have a Mog Satchel , it is also upgraded immediately to the same maximum capacity.",
-        "If you have a Mog Sack , talk to an Artisan Moogle and ask for an upgrade after completing this quest to increase your Mog Sack capacity by 5 as well.",
+        "If you have a Mog Satchel, it is also upgraded immediately to the same maximum capacity.",
+        "If you have a Mog Sack, talk to an Artisan Moogle and ask for an upgrade after completing this quest to increase your Mog Sack capacity by 5 as well.",
         "If you do not yet have a Mog Satchel and/or Mog Sack but you acquire one later, it is automatically upgraded to the maximum capacity of your Gobbiebag.",
         {
             text = "Averaged Cross-Server Auction House Total Price of Materials / Goblin Stew 880 Cost",
@@ -2350,12 +2350,12 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_ii = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of ram leather , a mythril ingot , a square of wool cloth , and a turquoise ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of ram leather, a mythril ingot, a square of wool cloth, and a turquoise; or a Goblin Stew 880.",
             substeps = {
-                "Ram Leather : AH  Materials  Leathercraft",
-                "Mythril Ingot : AH  Materials  Goldsmithing",
-                "Wool Cloth : AH  Materials  Clothcraft",
-                "Turquoise : AH  Materials  Goldsmithing",
+                "Ram Leather: AH  Materials  Leathercraft",
+                "Mythril Ingot: AH  Materials  Goldsmithing",
+                "Wool Cloth: AH  Materials  Clothcraft",
+                "Turquoise: AH  Materials  Goldsmithing",
             },
         },
         {
@@ -2369,12 +2369,12 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_iii = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of tiger leather , a gold ingot , a square of velvet cloth , and a painite ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of tiger leather, a gold ingot, a square of velvet cloth, and a painite; or a Goblin Stew 880.",
             substeps = {
-                "Tiger Leather : AH  Materials  Leathercraft",
-                "Gold Ingot : AH  Materials  Goldsmithing",
-                "Velvet Cloth : AH  Materials  Clothcraft",
-                "Painite : AH  Materials  Goldsmithing",
+                "Tiger Leather: AH  Materials  Leathercraft",
+                "Gold Ingot: AH  Materials  Goldsmithing",
+                "Velvet Cloth: AH  Materials  Clothcraft",
+                "Painite: AH  Materials  Goldsmithing",
             },
         },
         {
@@ -2388,12 +2388,12 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_iv = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a cermet chunk , a darksteel ingot , a square of silk cloth , and a goshenite ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a cermet chunk, a darksteel ingot, a square of silk cloth, and a goshenite; or a Goblin Stew 880.",
             substeps = {
-                "Cermet Chunk : AH  Materials  Alchemy",
-                "Darksteel Ingot : AH  Materials  Smithing",
-                "Silk Cloth : AH  Materials  Clothcraft",
-                "Goshenite : AH  Materials  Goldsmithing",
+                "Cermet Chunk: AH  Materials  Alchemy",
+                "Darksteel Ingot: AH  Materials  Smithing",
+                "Silk Cloth: AH  Materials  Clothcraft",
+                "Goshenite: AH  Materials  Goldsmithing",
             },
         },
         {
@@ -2407,13 +2407,13 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_ix = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix an Orichalcum Ingot , a Square of Peiste Leather , a square of Oil-Soaked Cloth , and an Oxblood Orb ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix an Orichalcum Ingot, a Square of Peiste Leather, a square of Oil-Soaked Cloth, and an Oxblood Orb; or a Goblin Stew 880.",
             substeps = {
-                "All items are purchasable at the Auction House , but Peiste Skins can only be farmed in areas requiring the Wings of the Goddess expansion.",
-                "Orichalcum Ingot : AH  Materials  Goldsmithing",
-                "Oil-Soaked Cloth : AH  Materials  Clothcraft",
-                "Peiste Leather : AH  Materials  Leathercraft",
-                "Oxblood Orb : AH  Materials  Bonecraft",
+                "All items are purchasable at the Auction House, but Peiste Skins can only be farmed in areas requiring the Wings of the Goddess expansion.",
+                "Orichalcum Ingot: AH  Materials  Goldsmithing",
+                "Oil-Soaked Cloth: AH  Materials  Clothcraft",
+                "Peiste Leather: AH  Materials  Leathercraft",
+                "Oxblood Orb: AH  Materials  Bonecraft",
             },
         },
         {
@@ -2427,13 +2427,13 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_v = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of bugard leather , a paktong ingot , a square of Moblinweave , and a rhodonite ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of bugard leather, a paktong ingot, a square of Moblinweave, and a rhodonite; or a Goblin Stew 880.",
             substeps = {
-                "All items are purchasable at the Auction House , but the materials can only be farmed in areas requiring the Chains of Promathia expansion.",
-                "Bugard Leather : AH  Materials  Leathercraft",
-                "Paktong Ingot : AH  Materials  Smithing",
-                "Moblinweave : AH  Materials  Clothcraft",
-                "Rhodonite : AH  Materials  Goldsmithing",
+                "All items are purchasable at the Auction House, but the materials can only be farmed in areas requiring the Chains of Promathia expansion.",
+                "Bugard Leather: AH  Materials  Leathercraft",
+                "Paktong Ingot: AH  Materials  Smithing",
+                "Moblinweave: AH  Materials  Clothcraft",
+                "Rhodonite: AH  Materials  Goldsmithing",
             },
         },
         {
@@ -2447,14 +2447,14 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_vi = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of balloon cloth , a shakudo ingot , a high quality eft skin , and an iolite ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of balloon cloth, a shakudo ingot, a high quality eft skin, and an iolite; or a Goblin Stew 880.",
             substeps = {
                 "The items this time are all direct enemy drops, rather than crafted.",
-                "All items are purchasable at the Auction House , but can only be farmed in areas requiring the Chains of Promathia expansion.",
-                "Shakudo Ingot : AH  Materials  Smithing",
-                "Iolite : AH  Materials  Goldsmithing",
-                "Balloon Cloth : AH  Materials  Clothcraft",
-                "H.Q. Eft Skin : AH  Materials  Leathercraft",
+                "All items are purchasable at the Auction House, but can only be farmed in areas requiring the Chains of Promathia expansion.",
+                "Shakudo Ingot: AH  Materials  Smithing",
+                "Iolite: AH  Materials  Goldsmithing",
+                "Balloon Cloth: AH  Materials  Clothcraft",
+                "H.Q. Eft Skin: AH  Materials  Leathercraft",
             },
         },
         {
@@ -2468,13 +2468,13 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_vii = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of lynx leather , an adaman ingot , a square of rainbow cloth , and a deathstone ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of lynx leather, an adaman ingot, a square of rainbow cloth, and a deathstone; or a Goblin Stew 880.",
             substeps = {
-                "All items are purchasable at the Auction House , but Lynx Hides can only be farmed in areas requiring the Wings of the Goddess expansion.",
-                "Adaman Ingot : AH  Materials  Smithing",
-                "Deathstone : AH  Materials  Goldsmithing",
-                "Rainbow Cloth : AH  Materials  Clothcraft",
-                "Lynx Leather : AH  Materials  Leathercraft",
+                "All items are purchasable at the Auction House, but Lynx Hides can only be farmed in areas requiring the Wings of the Goddess expansion.",
+                "Adaman Ingot: AH  Materials  Smithing",
+                "Deathstone: AH  Materials  Goldsmithing",
+                "Rainbow Cloth: AH  Materials  Clothcraft",
+                "Lynx Leather: AH  Materials  Leathercraft",
             },
         },
         {
@@ -2488,13 +2488,13 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_viii = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a square of smilodon leather , an electrum ingot , a square of cilice , and an angelstone ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a square of smilodon leather, an electrum ingot, a square of cilice, and an angelstone; or a Goblin Stew 880.",
             substeps = {
-                "All items are purchasable at the Auction House , but Smilodon Hides can only be farmed in areas requiring the Wings of the Goddess expansion.",
-                "Angelstone : AH  Materials  Goldsmithing",
-                "Electrum Ingot : AH  Materials  Goldsmithing",
-                "Cilice : AH  Materials  Clothcraft",
-                "Smilodon Leather : AH  Materials  Leathercraft",
+                "All items are purchasable at the Auction House, but Smilodon Hides can only be farmed in areas requiring the Wings of the Goddess expansion.",
+                "Angelstone: AH  Materials  Goldsmithing",
+                "Electrum Ingot: AH  Materials  Goldsmithing",
+                "Cilice: AH  Materials  Clothcraft",
+                "Smilodon Leather: AH  Materials  Leathercraft",
             },
         },
         {
@@ -2508,13 +2508,13 @@ Q.STEPS = {
     jeu_the_gobbiebag_part_x = {
         "Speak to Bluffnix in Muckvix's Junk Shop located in Lower Jeuno at (H-9).",
         {
-            text = "Trade Bluffnix a Molybdenum Ingot , a square of griffon leather , a square of foulard , and an angel skin orb ; or a Goblin Stew 880 .",
+            text = "Trade Bluffnix a Molybdenum Ingot, a square of griffon leather, a square of foulard, and an angel skin orb; or a Goblin Stew 880.",
             substeps = {
-                "All items are purchasable at the Auction House .",
-                "Molybdenum Ingot : AH  Materials  Smithing",
-                "Foulard : AH  Materials  Clothcraft",
-                "Griffon Leather : AH  Materials  Leathercraft",
-                "Angel Skin Orb : AH  Materials  Bonecraft",
+                "All items are purchasable at the Auction House.",
+                "Molybdenum Ingot: AH  Materials  Smithing",
+                "Foulard: AH  Materials  Clothcraft",
+                "Griffon Leather: AH  Materials  Leathercraft",
+                "Angel Skin Orb: AH  Materials  Bonecraft",
             },
         },
         {
@@ -2527,24 +2527,24 @@ Q.STEPS = {
 
     jeu_the_goblin_tailor = {
         {
-            text = "Speak to Guttrix , who will offer to make you Race Specific Equipment (RSE) if you bring him a Magical pattern .",
+            text = "Speak to Guttrix, who will offer to make you Race Specific Equipment (RSE) if you bring him a Magical pattern.",
             substeps = {
-                "Magical patterns are found in Treasure Chests in Gusgen Mines , Ordelle's Caves , and Maze of Shakhrami .",
+                "Magical patterns are found in Treasure Chests in Gusgen Mines, Ordelle's Caves, and Maze of Shakhrami.",
                 "You need to find the chests at the right time. Treasure maps for the zones are below (blue squares are chest spawns).",
-                "Alternately, adventurers in possession of the \"Rhapsody in White\" can purchase these keys for 2,500g from a Curio Vendor Moogle .",
+                "Alternately, adventurers in possession of the \"Rhapsody in White\" can purchase these keys for 2,500g from a Curio Vendor Moogle.",
             },
         },
         {
             text = "Each race is given a game week ( Firesday to Darksday ) to find a pattern. At the end of that game week, it will become the next race's turn.",
             substeps = {
-                "The race order is Hume Male -> Hume Female -> Elvaan Male -> Elvaan Female -> Tarutaru Male -> Tarutaru Female -> Mithra -> Galka .",
+                "The race order is Hume Male -> Hume Female -> Elvaan Male -> Elvaan Female -> Tarutaru Male -> Tarutaru Female -> Mithra -> Galka.",
                 "Each game week is 7 hours 40 minutes 48 seconds, meaning about every 8 hours the pattern changes.",
                 "The following sites provide RSE calendar details:",
                 "You must open the treasure chest when it is your race's week or you will not get the pattern.",
                 "You may only have one pattern on you at a time. However, there is no limit to the number of patterns you may re-obtain (as long as it is within your RSE week).",
             },
         },
-        "Turn the pattern into Guttrix , who will give you the option to craft it into one of the following four (4) armors:",
+        "Turn the pattern into Guttrix, who will give you the option to craft it into one of the following four (4) armors:",
         {
             text = "Race / Armor / Race / Armor",
             substeps = {
@@ -2555,7 +2555,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "All four armor pieces can be upgraded via the event Strange Happenings in Vana'diel .",
+            text = "All four armor pieces can be upgraded via the event Strange Happenings in Vana'diel.",
             substeps = {
                 "Duplicates of the armor pieces can be bought from a Curio Moogle for 100,000 gil per piece if you have the key item \"Rhapsody in Umber\". (Regardless of whether The Goblin Tailor has ever been completed).",
             },
@@ -2566,7 +2566,7 @@ Q.STEPS = {
         {
             text = "In addition to the armor, there are RSE ammo pieces for players if they wish to obtain them.",
             substeps = {
-                "These are not obtained from Guttrix , but NMs instead.",
+                "These are not obtained from Guttrix, but NMs instead.",
             },
         },
         {
@@ -2588,7 +2588,7 @@ Q.STEPS = {
 
     jeu_the_kind_cardian = {
         { note = "(Optional) Speak to Panta's family and Bozz again for some extra dialogue." },
-        "Speak to Apururu , Windurst Woods (H-9) for a cutscene.",
+        "Speak to Apururu, Windurst Woods (H-9) for a cutscene.",
         "Head to West Sarutabaruta (F-11) and enter the Outer Horutoto Ruins (Dahlia Tower).",
         {
             text = "Ten of Cups spawns at (J-8), in the small room with the large locked door. Kill it until you receive a Ten of Cups item.",
@@ -2596,19 +2596,19 @@ Q.STEPS = {
                 "Bring someone with Treasure Hunter to improve the drop rate.",
                 "\"Ten of X\" enemies spawn in groups of 3 here, with a chance for 0, 1, or 2 enemies of each suit. Once killed, they respawn after 15 minutes. You might be here a while.",
                 "Alternatively, buy the card at the Auction House.",
-                "If you happen to get a Ten of Coins item, consider saving it for the quest The Opo-opo and I .",
+                "If you happen to get a Ten of Coins item, consider saving it for the quest The Opo-opo and I.",
             },
         },
-        "Give the Ten of Cups item to Apururu .",
+        "Give the Ten of Cups item to Apururu.",
         { note = "(Optional) return to Monberaux for some extra dialogue." },
-        "Return to Panta-Putta , Lower Jeuno (G-10) to complete this quest.",
+        "Return to Panta-Putta, Lower Jeuno (G-10) to complete this quest.",
     },
 
     jeu_the_lost_cardian = {
-        "Speak to Naruru , Teigero-Bangero , and Panta-Putta . No one knows where the Two of Swords has gone.",
-        "Speak to Bozz , Upper Jeuno (G-9)",
+        "Speak to Naruru, Teigero-Bangero, and Panta-Putta. No one knows where the Two of Swords has gone.",
+        "Speak to Bozz, Upper Jeuno (G-9)",
         {
-            text = "Speak to Monberaux , Upper Jeuno (G-10 in the infirmary) to get a cutscene.",
+            text = "Speak to Monberaux, Upper Jeuno (G-10 in the infirmary) to get a cutscene.",
             substeps = {
                 "You may have to speak to Monberaux more than once to receive the cutscene about the special patient.",
             },
@@ -2616,7 +2616,7 @@ Q.STEPS = {
         {
             text = "After the cutscene, the quest will be completed and you will receive your reward.",
             substeps = {
-                "The next quest, The Kind Cardian , will be automatically started.",
+                "The next quest, The Kind Cardian, will be automatically started.",
             },
         },
     },
@@ -2722,14 +2722,14 @@ Q.STEPS = {
         {
             text = "Travel to Buburimu Peninsula at (G-9) and examine the Song Runes for a cutscene.",
             substeps = {
-                "To arrive at the location: go to the beach just west of Mhaura via the ramp at (H-9). Head to the southwest corner and into the water. There will be a tunnel which leads to the next beach area over, where you will find the Song Runes .",
+                "To arrive at the location: go to the beach just west of Mhaura via the ramp at (H-9). Head to the southwest corner and into the water. There will be a tunnel which leads to the next beach area over, where you will find the Song Runes.",
             },
         },
         "Trade a Parchment to the Song Runes in Buburimu Peninsula at (G-9) for a Poetic Parchment and to complete the quest.",
     },
 
     jeu_the_requiem = {
-        "Speak to Bki Tbujhja to begin the quest; she will request a flask of holy water .",
+        "Speak to Bki Tbujhja to begin the quest; she will request a flask of holy water.",
         {
             text = "Trade Bki Tbujhja the Holy Water and you will be asked to travel to The Eldieme Necropolis and to visit the tomb of a great bard of yesteryear. Once there you are to purify the tomb and play the requiem. She returns the flask of holy water and sends you on your way.",
             notes = {
@@ -2741,8 +2741,8 @@ Q.STEPS = {
             text = "Travel to The Eldieme Necropolis via (F-5) in Batallia Downs and head for a room with five unbroken sarcophagi at D-4.",
             substeps = {
                 "You will have to travel through Beaucedine Glacier to reach the barrow containing the proper entrance to the Necropolis complex.",
-                "If you have unlocked the Lycopodium (NPC) teleport service for Batallia Downs , trading one of the accepted flowers to the sparkling light (blank target) at (F-5) teleports the player to the elevated portion of the map.",
-                "The quickest way is to take the Voidwatch warp to Beaucedine Glacier .",
+                "If you have unlocked the Lycopodium (NPC) teleport service for Batallia Downs, trading one of the accepted flowers to the sparkling light (blank target) at (F-5) teleports the player to the elevated portion of the map.",
+                "The quickest way is to take the Voidwatch warp to Beaucedine Glacier.",
             },
         },
         {
@@ -2752,34 +2752,34 @@ Q.STEPS = {
             },
         },
         {
-            text = "Defeat all three NMs that spawn, then interact with the same sarcophagus again. You will get a cutscene and receive the Star ring (tarnished) .",
+            text = "Defeat all three NMs that spawn, then interact with the same sarcophagus again. You will get a cutscene and receive the Star ring (tarnished).",
             substeps = {
                 "If you have multiple people doing this quest, they can trade their holy water to the correct sarcophagus after the fight and they will get the cutscene and ring.",
             },
         },
-        "Return to Bki Tbujhja and receive your Choral Slippers .",
+        "Return to Bki Tbujhja and receive your Choral Slippers.",
     },
 
     jeu_the_road_to_aht_urhgan = {
         "Talk to Faursel (Neptune's Spire J-8) for a cutscene.",
         "He will give you three options to choose from. The third is a hidden option on the bottom. Choose the hidden option.",
         "Talk to Faursel a second time for another cutscene and choose \"I want to go\".",
-        "Faursel will give you four ways to proceed: the Advanced path, the Intermediate path, the Beginner path, or paying 500,000 Gil .",
+        "Faursel will give you four ways to proceed: the Advanced path, the Intermediate path, the Beginner path, or paying 500,000 Gil.",
         {
             text = "Collect the required item(s) for Faursel. See the options below for your options.",
             substeps = {
-                "Tip! You can buy Coffer Keys from the Curio Moogle for 5,000 Gil if you have the \"Rhapsody in Umber\" . If you have not progressed in Rhapsodies of Vana'diel , now it is by far the easiest choice even though it is \"Advanced\".",
+                "Tip! You can buy Coffer Keys from the Curio Moogle for 5,000 Gil if you have the \"Rhapsody in Umber\". If you have not progressed in Rhapsodies of Vana'diel, now it is by far the easiest choice even though it is \"Advanced\".",
             },
         },
         "Trade the requested item(s) to him. He will tell you to return tomorrow.",
         {
-            text = "Zone and return to Lower Jeuno the next game day. Talk to Faursel again to obtain the Boarding permit .",
+            text = "Zone and return to Lower Jeuno the next game day. Talk to Faursel again to obtain the Boarding permit.",
             substeps = {
-                "If you wish to skip obtaining the request items, you can pay him 500,000 Gil .",
-                "If you chose not to pay the gil, you are instructed to go to Mhaura and ride the ship to Al Zahbi .",
+                "If you wish to skip obtaining the request items, you can pay him 500,000 Gil.",
+                "If you chose not to pay the gil, you are instructed to go to Mhaura and ride the ship to Al Zahbi.",
             },
         },
-        "After completing this quest approach Naja Salaheem at Aht Urhgan Whitegate (I-10) to begin Aht Urhgan Mission 1: Land of Sacred Serpents .",
+        "After completing this quest approach Naja Salaheem at Aht Urhgan Whitegate (I-10) to begin Aht Urhgan Mission 1: Land of Sacred Serpents.",
         { note = "Note: If you are on Rhapsodies of Vanadiel Mission 2-5, simply select \"Where's Tenzen?\" and you will get a Boarding permit for free." },
         { note = "Note: The NPC Jijiroon in Nashmau will later say: \"Jijiroon saaaw boat flying throoo air over Wawaaam Wooodland, and--whoosh!--out flew adventooorer! That loook fun.\"" },
         "Trade any one of the following:",
@@ -2821,7 +2821,7 @@ Q.STEPS = {
         {
             text = "Speak to Laila in Upper Jeuno (G-7).",
             substeps = {
-                "To complete this quest, you must have a Block of Yagudo Glue . It would save time to obtain it before the next step.",
+                "To complete this quest, you must have a Block of Yagudo Glue. It would save time to obtain it before the next step.",
             },
         },
         {
@@ -2869,18 +2869,18 @@ Q.STEPS = {
             text = "Head to Grauberg (S) and examine the ??? in Witchfire Glen at (F-5) for a cutscene. (The ??? in the middle of the set of three closely-packed trees very slightly NW of the Veridical Conflux.)",
             substeps = {
                 "You must be on your Dancer job to initiate this cutscene.",
-                "Fastest method of travel is to use the lightsworm at any maw outside of Jeuno to enter Walk of Echoes , then exit with the conflux",
+                "Fastest method of travel is to use the lightsworm at any maw outside of Jeuno to enter Walk of Echoes, then exit with the conflux",
             },
         },
         {
-            text = "Examine the ??? again to spawn the NM Migratory Hippogryph .",
+            text = "Examine the ??? again to spawn the NM Migratory Hippogryph.",
             substeps = {
                 "If you zone after examining it the first time, you must examine it again as a Dancer, therefore you must be on Dancer for the duration of this fight.",
             },
         },
-        "Examine the ??? after defeating the NM for a cutscene to receive the The Essence of Dance .",
+        "Examine the ??? after defeating the NM for a cutscene to receive the The Essence of Dance.",
         {
-            text = "\"Open\" the Key Item : The Essence of Dance .",
+            text = "\"Open\" the Key Item: The Essence of Dance.",
             substeps = {
                 "Can be easily located under the Permanent Key Items menu, just after any Gate Crystal Key Items you may possess.",
             },
@@ -2890,25 +2890,25 @@ Q.STEPS = {
 
     jeu_the_wonder_magic_set = {
         {
-            text = "Talk to Naruru , Teigero-Bangero , or Panta-Putta located in the merchant's house in Lower Jeuno (G-10), for a cutscene.",
+            text = "Talk to Naruru, Teigero-Bangero, or Panta-Putta located in the merchant's house in Lower Jeuno (G-10), for a cutscene.",
             substeps = {
                 "There is no Fame requirement to receive the cutscene",
             },
         },
         {
-            text = "Talk to Panta-Putta . He wants you to bring him a Wonder Magic Set .",
+            text = "Talk to Panta-Putta. He wants you to bring him a Wonder Magic Set.",
             substeps = {
-                "The Wonder Magic Set is obtained from the related quest Child's Play .",
+                "The Wonder Magic Set is obtained from the related quest Child's Play.",
             },
         },
         "Return to Panta-Putta to complete the quest.",
     },
 
     jeu_to_kill_mocking_birds = {
-        "Talk to Nantoto at H-8 in Lower Jeuno .",
+        "Talk to Nantoto at H-8 in Lower Jeuno.",
         "Activate the Records of Eminence quest under Other -> RoE Quests -> Grudge to get credit.",
         {
-            text = "Defeat one Yagudo High Priest in Castle Oztroja .",
+            text = "Defeat one Yagudo High Priest in Castle Oztroja.",
             substeps = {
                 "The priest is through the trap door at the top of the castle.",
                 "Refer to the Brass Statue page for passwords that allow access to the Yagudo High Priest's area.",
@@ -3004,9 +3004,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3031,9 +3031,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3058,9 +3058,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3085,9 +3085,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3112,9 +3112,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3139,9 +3139,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3166,9 +3166,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3193,9 +3193,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3220,9 +3220,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3247,9 +3247,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3274,9 +3274,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3301,9 +3301,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3328,9 +3328,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3355,9 +3355,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3382,9 +3382,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3409,9 +3409,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3436,9 +3436,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3463,9 +3463,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3490,9 +3490,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3517,9 +3517,9 @@ Q.STEPS = {
                 "Level 3 - 11",
             },
         },
-        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped .",
+        "Once you have acquired enough Weapon Skill Points, your new Weapon Skill will appear under your list of Weapon Skills, but only with your Vigil Weapon still equipped.",
         {
-            text = "Return to Zalsuhm and trade him your Vigil Weapon .",
+            text = "Return to Zalsuhm and trade him your Vigil Weapon.",
             substeps = {
                 "He will unlock your new Weapon Skill for use with any weapon and return the Vigil Weapon to you.",
             },
@@ -3527,12 +3527,12 @@ Q.STEPS = {
     },
 
     jeu_vw_op_115_valkurm_duster = {
-        "This quest is automatically flagged after completing A New Menace , but you must complete the quest No Rest for the Weary to receive White stratum abyssite VI which is required to spawn Ig-Alima .",
+        "This quest is automatically flagged after completing A New Menace, but you must complete the quest No Rest for the Weary to receive White stratum abyssite VI which is required to spawn Ig-Alima.",
         "Defeat Ig-Alima in Valkurm Dunes (F-8), (K-7) or (K-8) to complete the quest.",
     },
 
     jeu_vw_op_118_buburimu_squall = {
-        "This quest is automatically flagged after completing A New Menace , but you must complete the quest No Rest for the Weary to receive White stratum abyssite VI which is required to spawn Botulus Rex .",
+        "This quest is automatically flagged after completing A New Menace, but you must complete the quest No Rest for the Weary to receive White stratum abyssite VI which is required to spawn Botulus Rex.",
         "Defeat Botulus Rex in Buburimu Peninsula at (F-9), (H-9) or (J-9) to complete the quest.",
     },
 
@@ -3546,7 +3546,7 @@ Q.STEPS = {
         {
             text = "Either you or a player assisting you must have the following Key Items for this quest:",
             substeps = {
-                "Crimson orb , Yagudo torch , Silver bell , Coruscant rosary , and Black matinee necklace from the mission Magicite .",
+                "Crimson orb, Yagudo torch, Silver bell, Coruscant rosary, and Black matinee necklace from the mission Magicite.",
             },
         },
         "Speak to Maat on a level 56 job. He will ask you for three key items deep in the beastmen strongholds.",
@@ -3568,7 +3568,7 @@ Q.STEPS = {
                 "(H-6) - Yagudo crest",
             },
         },
-        "A ??? spot appears in each of these areas, and are close to True-Sight/Sound Notorious Monsters .",
+        "A ??? spot appears in each of these areas, and are close to True-Sight/Sound Notorious Monsters.",
         {
             text = "Details",
             substeps = {
@@ -3576,7 +3576,7 @@ Q.STEPS = {
             },
         },
         { note = "Note: Either you or a player assisting you must possess a Crimson orb from a mini-quest below." },
-        "To obtain the Orcish crest , head to Davoi and enter the Monastic Cavern at (H-11).",
+        "To obtain the Orcish crest, head to Davoi and enter the Monastic Cavern at (H-11).",
         "Exit the Monastic Cavern at (I-8).",
         {
             text = "Proceed to the (J-9) entrance to Monastic Cavern. You or a partner will need a Crimson orb from Sedal-Godjal to access it though.",
@@ -3586,19 +3586,19 @@ Q.STEPS = {
             },
         },
         "Once inside Monastic Cavern, stick to the west wall and proceed to the ??? at (J-6) to get the Orcish Crest.",
-        "After following the path mentioned above up to the J-9 entrance, speak to Sedal-Godjal in Davoi at (J-8) just north of the (J-9) Wall of Banishing .",
-        "Proceed to and touch the Wall of Banishing to the south at (J-9), then return to him to get the White orb .",
+        "After following the path mentioned above up to the J-9 entrance, speak to Sedal-Godjal in Davoi at (J-8) just north of the (J-9) Wall of Banishing.",
+        "Proceed to and touch the Wall of Banishing to the south at (J-9), then return to him to get the White orb.",
         {
-            text = "From there head to and touch the ponds at (L-9) -> (I-6) [follow the river upstream] -> (E-8) -> (H-10). The ponds can be touched in any order, but you'll need to make your way back to Sedal-Godjal .",
+            text = "From there head to and touch the ponds at (L-9) -> (I-6) [follow the river upstream] -> (E-8) -> (H-10). The ponds can be touched in any order, but you'll need to make your way back to Sedal-Godjal.",
             substeps = {
-                "After each pond, the orb will turn into a darker orb color: Pink orb > Red orb > Blood orb .",
-                "Touching the 4th will grant the Cursed orb , and you will have Curse inflicted on you. This can be removed through normal means like Holy Water or Cursna .",
+                "After each pond, the orb will turn into a darker orb color: Pink orb > Red orb > Blood orb.",
+                "Touching the 4th will grant the Cursed orb, and you will have Curse inflicted on you. This can be removed through normal means like Holy Water or Cursna.",
             },
         },
-        "Return to Sedal-Godjal to get the final Crimson orb .",
-        "After obtaining the Crimson orb , return to the Wall of Banishing you were previously at in Davoi , (J-9).",
+        "Return to Sedal-Godjal to get the final Crimson orb.",
+        "After obtaining the Crimson orb, return to the Wall of Banishing you were previously at in Davoi, (J-9).",
         {
-            text = "Once inside Monastic Cavern , to get to the ??? at (J-6), stick to the west wall to avoid true-sight Notorious Monsters.",
+            text = "Once inside Monastic Cavern, to get to the ??? at (J-6), stick to the west wall to avoid true-sight Notorious Monsters.",
             substeps = {
                 "The Crest is in some weird cave-flower-looking stalks before the cliff. Do not fall down the cliff.",
             },
@@ -3611,18 +3611,18 @@ Q.STEPS = {
         },
         { note = "Note: Either you or a player assisting you must possess the Silver bell, Coruscant rosary, and Black matinee necklace from the mission Magicite before you may get this crest. Note: It is also recommended to bring some form of Sneak for this; Invisible is not needed. Silent Oils from the Curio Moogle are preferred, as you should use The Mute to silence yourself before running through Beadeaux. This prevents The Afflictor from cursing you which inflicts a super gravity effect on you." },
         {
-            text = "To obtain the Quadav crest , proceed to Beadeaux (K-6) and enter the tunnel (do not forget to grab The Mute here).",
+            text = "To obtain the Quadav crest, proceed to Beadeaux (K-6) and enter the tunnel (do not forget to grab The Mute here).",
             substeps = {
                 "To the eastern half of the map, first go to the tunnel starting at (H-7) (marked \"A\") to go to map 2.",
                 "Get muted by The Mute at (G-7) so you can pass by The Afflictor safely at (G-8) and others back on map 1. This will make you silenced for approximately 10 minutes, so have Silent Oil as needed to stay safely sneak'ed as mentioned above.",
                 "Proceed to (F-8) (marked \"B\") to return to map 1.",
                 "Go to the ramp to the second level at (E-10), and navigate to (I-9).",
-                "Now make your way to K-6. You don't need to go through the trenches; you can drop from the second level to the first.",
+                "Make your way to K-6. You don't need to go through the trenches; you can drop from the second level to the first.",
             },
         },
         "Follow the path to (M-8) and enter Qulun Dome (there are enemies beyond this zone switch, prepare accordingly).",
         "You are almost there, proceed through the door to the right after zoning. This requires the key items mentioned above.",
-        "One true-sound NM, Ruby Quadav , guards the first room. You should be fine to run past if it is on the far side of the room. Otherwise this NM is level 71-73 and will likely stomp you or take a long time with a party of trusts.",
+        "One true-sound NM, Ruby Quadav, guards the first room. You should be fine to run past if it is on the far side of the room. Otherwise this NM is level 71-73 and will likely stomp you or take a long time with a party of trusts.",
         "Once inside the main room, the ??? is along the west wall in the northern part of (I-7). Hug the south wall to avoid several other true-sound NMs. Do not drop off the ledge.",
         "Interact with the ??? to obtain the crest. If you aggro too many enemies, just go to the left and zone",
         {
@@ -3633,7 +3633,7 @@ Q.STEPS = {
         },
         { note = "Note: The Yagudo Crest is located on the 4th floor of Castle Oztroja at H-6. Note: Lower level players may want to bring and use a Reraise item such as an Instant Reraise. Note: Either you or a player assisting you must possess the Yagudo torch to progress." },
         {
-            text = "To obtain the Yagudo crest , find the 3 passwords throughout the zone and open the 3 password trap door on the fourth floor.",
+            text = "To obtain the Yagudo crest, find the 3 passwords throughout the zone and open the 3 password trap door on the fourth floor.",
             substeps = {
                 "The passwords reset when the game day changes so you may want to time your journey accordingly.",
                 "On the climb you will find 3 of the passwords. You may guess any one of them from the list below.",
@@ -3710,18 +3710,18 @@ Q.STEPS = {
     },
 
     jeu_uj_wings_of_gold = {
-        "Speak to Brutus as a level 40 or higher Beastmaster .",
+        "Speak to Brutus as a level 40 or higher Beastmaster.",
         "From this point on, you can complete the quest on any job.",
         {
             text = "Kill monsters on the 7th to 10th floor of Upper Delkfutt's Tower until you get a Delkfutt Chest Key",
             substeps = {
-                "Alternatively, you can purchase one from the Curio Vendor Moogle .",
+                "Alternatively, you can purchase one from the Curio Vendor Moogle.",
             },
         },
-        "Use the key to open a chest in the zone to receive a Guiding bell .",
+        "Use the key to open a chest in the zone to receive a Guiding bell.",
         "Return to Brutus for your reward.",
         {
-            text = "The following monsters drop the Delkfutt Chest Key :",
+            text = "The following monsters drop the Delkfutt Chest Key:",
             substeps = {
                 "Gigas Wallwatcher",
                 "Gigas Kettlemaster",
@@ -3741,17 +3741,17 @@ Q.STEPS = {
     },
 
     jeu_yet_another_trial_in_tandem = {
-        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive .",
-        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +2 .",
-        "Trade the Tandem Necklace +2 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4446 .",
+        "Speak with Luto Mewrilah for a cutscene that begins the quest and provides the Magian Mooglehood missive.",
+        "Speak to the Magian Moogle in Ru'Lude Gardens at (H-5) for a cutscene and a Tandem Necklace +2.",
+        "Trade the Tandem Necklace +2 to the Magian Moogle (Blue) in Ru'Lude Gardens at (H-5) to start Magian Trial 4446.",
         {
-            text = "Your Adventuring Fellow must Weapon Skill any type of monster that give XP to your Adventuring Fellow 20 times while you wear the Tandem Necklace +2 .",
+            text = "Your Adventuring Fellow must Weapon Skill any type of monster that give XP to your Adventuring Fellow 20 times while you wear the Tandem Necklace +2.",
             substeps = {
                 "Weapon Skills must hit in order to count.",
-                "Set your Adventuring Fellow to Fierce Attacker for this quest, and do not equip your Adventuring Fellow with a club, in order to avoid Moonlight and Starlight . Moonlight and Starlight do not count for Magian Trial 4446 .",
+                "Set your Adventuring Fellow to Fierce Attacker for this quest, and do not equip your Adventuring Fellow with a club, in order to avoid Moonlight and Starlight. Moonlight and Starlight do not count for Magian Trial 4446.",
             },
         },
-        "After your Adventuring Fellow Weapon Skills 20 times, trade the Tandem Necklace +2 to the Magian Moogle (Blue) to receive a Mythril Meed .",
+        "After your Adventuring Fellow Weapon Skills 20 times, trade the Tandem Necklace +2 to the Magian Moogle (Blue) to receive a Mythril Meed.",
         "Trade the Mythril Meed to Luto Mewrilah to complete the quest.",
     },
 

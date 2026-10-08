@@ -8,28 +8,28 @@ Q.STEPS = {
         "Speak to Naja Salaheem in Aht Urhgan Whitegate (I-10) for a cutscene that begins the quest.",
         "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9).",
         "Speak to Yoyoroon in Nashmau in (G-6).",
-        "Obtain a Timeworn Talisman from Ephramadian Shades in Arrapago Reef or Caedarva Mire .",
+        "Obtain a Timeworn Talisman from Ephramadian Shades in Arrapago Reef or Caedarva Mire.",
         {
-            text = "Trade the Timeworn Talisman and a Sutlac , Irmik Helvasi , or even both to Yoyoroon in Nashmau.",
+            text = "Trade the Timeworn Talisman and a Sutlac, Irmik Helvasi, or even both to Yoyoroon in Nashmau.",
             substeps = {
                 "There is a chance that his appraisal of the item will fail. Trading both at once along with the talisman gives the highest chance for success.",
                 "Should the appraisal fail, you will have to obtain another Timeworn Talisman as well as any food items that you traded him.",
-                "Yoyoron will not accept Sutlac +1 or Irmik Helvasi +1 .",
+                "Yoyoron will not accept Sutlac +1 or Irmik Helvasi +1.",
             },
         },
-        "Should your appraisal succeed, you will have to zone and talk to Yoyoroon again to receive the Talisman of the rebel gods .",
-        "Return to Imperial Whitegate for a cutscene to receive the key items: Talisman key and spatial pressure barometer .",
+        "Should your appraisal succeed, you will have to zone and talk to Yoyoroon again to receive the Talisman of the rebel gods.",
+        "Return to Imperial Whitegate for a cutscene to receive the key items: Talisman key and spatial pressure barometer.",
         {
             text = "Enter Hazhalm Testing Grounds and examine the Entry Gate to view a cutscene.",
             substeps = {
-                "This is the same area as Einherjar . The quickest way is to use the Caedarva Mire Home Point .",
+                "This is the same area as Einherjar. The quickest way is to use the Caedarva Mire Home Point.",
             },
         },
         {
             text = "Examine the Entry Gate again to enter a BCNM.",
             substeps = {
-                "Your opponent will be Odin Prime , he can cast spells like Paralyze, Dispelga, and elemental magic.",
-                "Odin Prime can also spawn up to 3 Odin Images .",
+                "Your opponent will be Odin Prime, he can cast spells like Paralyze, Dispelga, and elemental magic.",
+                "Odin Prime can also spawn up to 3 Odin Images.",
                 "At a low percentage, Odin can use Zantetsuken if he stays alive for an extended period of time.",
             },
         },
@@ -57,7 +57,7 @@ Q.STEPS = {
 
     tau_wg_against_all_odds = {
         {
-            text = "While on Corsair, head to the Shararat Teahouse in Aht Urhgan Whitegate at (K-12) for a cutscene and the key item, Life float .",
+            text = "While on Corsair, head to the Shararat Teahouse in Aht Urhgan Whitegate at (K-12) for a cutscene and the key item, Life float.",
             substeps = {
                 "The rest of this quest may be completed on any job.",
                 "If you lose the battle, you may return to get another key item after one real life day (midnight JST).",
@@ -67,7 +67,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Head to the The Ashu Talif in Arrapago Reef through the Dvucca Isle Staging Point or Alzadaal Undersea Ruins .",
+            text = "Head to the The Ashu Talif in Arrapago Reef through the Dvucca Isle Staging Point or Alzadaal Undersea Ruins.",
             substeps = {
                 "Option A:",
                 "Option B:",
@@ -76,7 +76,7 @@ Q.STEPS = {
         },
         "Approach the Cutter for a cutscene.",
         {
-            text = "Examine the Cutter to enter a battlefield against Yazquhl and Gowam .",
+            text = "Examine the Cutter to enter a battlefield against Yazquhl and Gowam.",
             substeps = {
                 "Up to six people may enter the fight.",
                 "There is no level cap, and buffs will wear on entry.",
@@ -86,7 +86,7 @@ Q.STEPS = {
             },
         },
         "You will receive your reward immediately following the cutscene after the fight.",
-        "After receiving the quest Against All Odds , you may commission Corsair Artifact Armor from Leleroon. You may chose the order in which you receive the armor and may commission a new piece immediately after the last piece was completed.",
+        "After receiving the quest Against All Odds, you may commission Corsair Artifact Armor from Leleroon. You may chose the order in which you receive the armor and may commission a new piece immediately after the last piece was completed.",
         {
             text = "Corsair Artifact Armor",
             substeps = {
@@ -129,11 +129,11 @@ Q.STEPS = {
             },
         },
         "Right after answering all his questions, Waoud will tell you which kind of treasure he's interested in, but you won't be able to progress until the next Vana'diel day and until you zone at least once.",
-        "When Waoud asks for the treasure, he will use the following clues (Make sure you read the item entries themselves for important info!) :",
+        "When Waoud asks for the treasure, he will use the following clues (Make sure you read the item entries themselves for important info!):",
         {
             text = "\"The treasure I would have you seek is a pinch of golden sand. It is said to glow with the light of the sun and be found only on a certain beach.\"",
             substeps = {
-                "Sunsand , Valkurm Dunes (H-9) Only spawns during dust storms.",
+                "Sunsand, Valkurm Dunes (H-9) Only spawns during dust storms.",
                 "This is the only requested item that can be purchased at the Auction House (  Other  Misc.)",
             },
         },
@@ -141,23 +141,23 @@ Q.STEPS = {
             text = "\"The treasure I would have you seek is a jewel. It is said to glow with a bluish tint and be found near the bank of a certain river.\"",
             substeps = {
                 "Unequip your Main and Sub weapons in order to pick this item up!",
-                "Siren's Tear , North Gustaberg near (J-9) along the river, use tab button to seek out the blank spot. (Appears as a ???)",
+                "Siren's Tear, North Gustaberg near (J-9) along the river, use tab button to seek out the blank spot. (Appears as a ???)",
             },
         },
         {
             text = "\"The treasure I would have you seek is a precious stone. It is said to be as red as blood and found in a land of geysers.\"",
             substeps = {
-                "Dangruf Stone , Dangruf Wadi (I/J-5)",
+                "Dangruf Stone, Dangruf Wadi (I/J-5)",
             },
         },
         {
-            text = "Trade him the item and he will tell you to go to Aydeewa Subterrane .",
+            text = "Trade him the item and he will tell you to go to Aydeewa Subterrane.",
             substeps = {
                 "Keep the requested item in your inventory. You won't get the next cutscene at the pond if you don't have the item on you.",
             },
         },
         {
-            text = "Enter Aydeewa Subterrane at (G-7) in Bhaflau Thickets , and proceed to the platform at (H-9) for a cutscene. During the cutscene, choose to take his hand to continue.",
+            text = "Enter Aydeewa Subterrane at (G-7) in Bhaflau Thickets, and proceed to the platform at (H-9) for a cutscene. During the cutscene, choose to take his hand to continue.",
             substeps = {
                 "The Voidwatch warp is the fastest shortcut to this location.",
                 "Make sure to take his hand. If you refuse him every time instead, the entire quest will reset and you'll have to start over from the beginning.",
@@ -176,13 +176,13 @@ Q.STEPS = {
         "Zone into Salaheem's Sentinels for a cutscene.",
         "Speak to Abquhbah for information about the Weapons.",
         {
-            text = "Trade the Vigil Weapon from Nyzul Isle Investigation assault that corresponds to the Mythic Weapon which you ultimately plan to create to Abquhbah .",
+            text = "Trade the Vigil Weapon from Nyzul Isle Investigation assault that corresponds to the Mythic Weapon which you ultimately plan to create to Abquhbah.",
             substeps = {
                 "If you have already completed a Mythic Weapon that matches the Vigil Weapon you are trying to trade, he will not accept the Vigil Weapon.",
                 "Abquhbah will not take the traded weapon without the Runic key from clearing Nyzul Isle Investigation floor 100.",
             },
         },
-        "Next, defeat all of the following Notorious Monsters (in any order) to obtain their titles.",
+        "Defeat all of the following Notorious Monsters (in any order) to obtain their titles.",
         {
             text = "This may be done before starting the quest, and need not be your current title.",
             substeps = {
@@ -193,11 +193,11 @@ Q.STEPS = {
             text = "Alternative Battlefields may NOT be done before starting the quest:",
             substeps = {
                 "If you haven't previously obtained the title, you can examine the entrance to the battlefield for each of the beastman kings (Jade Sepulcher (Gulool Ja Ja), Navukgo Execution Chamber (Gurfurlur the Menacing), Talacca Cove (Medusa)) and defeat the specified beastman leaders.",
-                "See Alternative Battlefields section .",
+                "See Alternative Battlefields section.",
             },
         },
         {
-            text = "All 3 Aht Urhgan Beastmen Leaders :",
+            text = "All 3 Aht Urhgan Beastmen Leaders:",
             substeps = {
                 "Gulool Ja Ja - \"Shining Scale Rifler\"",
                 "Gurfurlur the Menacing - \"Troll Subjugator\"",
@@ -205,7 +205,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "All 4 Salvage Chariots :",
+            text = "All 4 Salvage Chariots:",
             substeps = {
                 "Battleclad Chariot ( Zhayolm Remnants ) - \"Star Charioteer\"",
                 "Long-Armed Chariot ( Silver Sea Remnants ) - \"Moon Charioteer\"",
@@ -240,9 +240,9 @@ Q.STEPS = {
 
     tau_wg_beginnings = {
         {
-            text = "Begin this quest by speaking to Waoud (J-10) once your Blue Mage is level 40 and you have completed Aht Urhgan Mission 2 .",
+            text = "Begin this quest by speaking to Waoud (J-10) once your Blue Mage is level 40 and you have completed Aht Urhgan Mission 2.",
             substeps = {
-                "You will need to zone and speak to him again if you did not originally watch the \"extra\" cutscene for completing the quest An Empty Vessel .",
+                "You will need to zone and speak to him again if you did not originally watch the \"extra\" cutscene for completing the quest An Empty Vessel.",
             },
         },
         {
@@ -273,11 +273,11 @@ Q.STEPS = {
         {
             text = "You will obtain a Permanent Key Item after each cutscene:",
             substeps = {
-                "Brand of the Stoneserpent from Nareema at the Azouph Isle Staging Point .",
-                "Brand of the Galeserpent from Nahshib at the Dvucca Isle Staging Point .",
-                "Brand of the Skyserpent from Daswil at the Mamool Ja Staging Point .",
-                "Brand of the Flameserpent from Waudeen at the Halvung Staging Point .",
-                "Brand of the Springserpent from Meyaada at the Ilrusi Atoll Staging Point .",
+                "Brand of the Stoneserpent from Nareema at the Azouph Isle Staging Point.",
+                "Brand of the Galeserpent from Nahshib at the Dvucca Isle Staging Point.",
+                "Brand of the Skyserpent from Daswil at the Mamool Ja Staging Point.",
+                "Brand of the Flameserpent from Waudeen at the Halvung Staging Point.",
+                "Brand of the Springserpent from Meyaada at the Ilrusi Atoll Staging Point.",
             },
         },
         "After you have all five Brand Key Items, speak to Waoud again to finish the quest.",
@@ -285,9 +285,9 @@ Q.STEPS = {
 
     tau_arr_breaking_bonds = {
         {
-            text = "Obtain a Corsair's Testimony from Merrow Icedancers , Merrow Kabukidancers , Merrow Chantress , or Lamia Fatedealer .",
+            text = "Obtain a Corsair's Testimony from Merrow Icedancers, Merrow Kabukidancers, Merrow Chantress, or Lamia Fatedealer.",
             substeps = {
-                "Take the Runic Portal to Ilrusi Atoll Staging Point and head to (F-8) Arrapago Reef (Map 2) for easy access to two Merrow Icedancers .",
+                "Take the Runic Portal to Ilrusi Atoll Staging Point and head to (F-8) Arrapago Reef (Map 2) for easy access to two Merrow Icedancers.",
                 "Remember to set the Records of Eminence quest under RoE -> Objective -> Tutorial -> Level Cap Increase -> Level Cap Increase: 75 (COR)",
             },
         },
@@ -298,7 +298,7 @@ Q.STEPS = {
                 "The ??? is the same ??? used in the Luck of the Draw quest.",
             },
         },
-        "Upon trading the testimony to the ??? , you will receive another short cutscene and then be teleported to Talacca Cove .",
+        "Upon trading the testimony to the ???, you will receive another short cutscene and then be teleported to Talacca Cove.",
         {
             text = "Trade the Corsair's Testimony to the Rock Slab to enter a BCNM.",
             substeps = {
@@ -311,9 +311,9 @@ Q.STEPS = {
 
     tau_coming_full_circle = {
         "Return to the tombstone in Caedarva Mire for a cutscene.",
-        "After the cutscene is over, trade your statless Mythic to the tombstone. You will now obtain the fully unlocked level 75 mythic weapon which can be further upgraded through Trial of the Magians .",
+        "After the cutscene is over, trade your statless Mythic to the tombstone. You will now obtain the fully unlocked level 75 mythic weapon which can be further upgraded through Trial of the Magians.",
         {
-            text = "Return and examine the Palace doors (Imperial Whitegate) in Whitegate .",
+            text = "Return and examine the Palace doors (Imperial Whitegate) in Whitegate.",
             substeps = {
                 "The mythic must be in your inventory, regardless of level.",
             },
@@ -321,7 +321,7 @@ Q.STEPS = {
         {
             text = "Approach Naja to initiate a cutscene to receive 3 Imperial Silver Pieces and complete the quest.",
             substeps = {
-                "If you want to make another Mythic then trade a new Vigil Weapon to Abquhbah to repeat this series of Mythic Quests . He will ask to confirm cancellation of the weapon even though it is done and return the Vigil Weapon .",
+                "If you want to make another Mythic then trade a new Vigil Weapon to Abquhbah to repeat this series of Mythic Quests. He will ask to confirm cancellation of the weapon even though it is done and return the Vigil Weapon.",
             },
         },
     },
@@ -331,7 +331,7 @@ Q.STEPS = {
         "There is a small chance that Ququroon will fail to make the stew. If this happens, do not panic. The quest will still be considered to be completed.",
         "This quest is repeatable once every real life minute.",
         "This quest must be completed during the Rat Race quest, though it is not a prerequisite for that quest. You can flag Rat Race immediately with no knowledge of this quest.",
-        "If you complete this quest prior to being to the part of Rat Race where you need a Nashmau Stew , you will need to do this quest yet again.",
+        "If you complete this quest prior to being to the part of Rat Race where you need a Nashmau Stew, you will need to do this quest yet again.",
     },
 
     tau_wg_delivering_goods = {
@@ -349,13 +349,13 @@ Q.STEPS = {
         },
         "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9).",
         "Examine the Acid-eaten Door in Mount Zhayolm at (I-9) to receive a short cutscene.",
-        "Trade 3 Slabs of Plumbago to the Acid-eaten Door to receive the lightning cell .",
+        "Trade 3 Slabs of Plumbago to the Acid-eaten Door to receive the lightning cell.",
         "Examine the Blank Target in Nyzul Isle Staging Point at (J-8/9) for a cutscene.",
         {
             text = "Examine the Runic Seal in Alzadaal Undersea Ruins (I-8/9) to start the BCNM fight.",
             substeps = {
-                "In this fight, you will be against Alexander .",
-                "Alexander can spawn up to three Alexander Images .",
+                "In this fight, you will be against Alexander.",
+                "Alexander can spawn up to three Alexander Images.",
                 "Trust magic may not be used in this battlefield.",
                 "At low HP, Alexander will use Divine Judgment dealing high damage to everyone in range.",
             },
@@ -364,18 +364,18 @@ Q.STEPS = {
     },
 
     tau_duties_tasks_and_deeds = {
-        "Talk to Paparoon on the first floor in (G-7) Nashmau under the archway and select every option. Upon asking about Assault Memoires, you will receive 5 items. He will give you the five assault logs for recording the re-completion of each Assault .",
+        "Talk to Paparoon on the first floor in (G-7) Nashmau under the archway and select every option. Upon asking about Assault Memoires, you will receive 5 items. He will give you the five assault logs for recording the re-completion of each Assault.",
         {
             text = "Obtain the required items:",
             substeps = {
-                "Salvage : (and Nyzul Isle Uncharted Area Survey ):",
-                "Nyzul Isle :",
-                "Einherjar :",
-                "Assault :",
+                "Salvage: (and Nyzul Isle Uncharted Area Survey ):",
+                "Nyzul Isle:",
+                "Einherjar:",
+                "Assault:",
             },
         },
         { note = "Note that if you decide to change weapons, all progress on this quest will be reset (any traded Alexandrite or items will be lost and Assault logs will need to be dropped so they can be received again before the quest can be restarted)." },
-        "Once all the items have been given to Paparoon , speak to him again to receive Paparoon's sealed invitation .",
+        "Once all the items have been given to Paparoon, speak to him again to receive Paparoon's sealed invitation.",
     },
 
     tau_wg_embers_of_his_past = {
@@ -393,25 +393,25 @@ Q.STEPS = {
         {
             text = "Click on on Withered Petals (L-6, southeast portion near the coastal cliffs) between 18:00-06:00.",
             substeps = {
-                "After the cutscene you'll end up in Aht Urhgan Whitegate .",
+                "After the cutscene you'll end up in Aht Urhgan Whitegate.",
             },
         },
         {
-            text = "Trade a Hydrangea to Fari-Wari .",
+            text = "Trade a Hydrangea to Fari-Wari.",
             substeps = {
-                "Hydrangea is dropped by Hilltroll Red Mage , Hilltroll Warrior , and Hilltroll Puppetmaster in Mount Zhayolm .",
+                "Hydrangea is dropped by Hilltroll Red Mage, Hilltroll Warrior, and Hilltroll Puppetmaster in Mount Zhayolm.",
                 "You can also buy it from Auction House",
             },
         },
         {
-            text = "Trade the Hydrangea to the Withered Petals in Mount Zhayolm .",
+            text = "Trade the Hydrangea to the Withered Petals in Mount Zhayolm.",
             substeps = {
                 "Does not have to be at night.",
             },
         },
-        "Return to Fari-Wari for a cutscene and an Imperial Gold Piece .",
+        "Return to Fari-Wari for a cutscene and an Imperial Gold Piece.",
         "Speak to Fari-Wari after this to learn Trust Gadalar.",
-        "Speak to Fari-Wari after the day changes to receive a Mercenary Camp Entry Slip .",
+        "Speak to Fari-Wari after the day changes to receive a Mercenary Camp Entry Slip.",
     },
 
     tau_wg_equipped_for_all = {
@@ -428,25 +428,25 @@ Q.STEPS = {
             text = "Examine the ??? in Arrapago Reef (H-10) as Corsair, level 40 or higher, for a cutscene.",
             substeps = {
                 "Use the Arrapago Reef Survival Guide to get there quickly.",
-                "If you don't have the Survival Guide you can get it by walking from Nashmau or take the long way by using the Azouph Isle Staging Point from Aht Urhgan Whitegate .",
-                "You will need a Lamian Fang Key to get to the ??? .",
+                "If you don't have the Survival Guide you can get it by walking from Nashmau or take the long way by using the Azouph Isle Staging Point from Aht Urhgan Whitegate.",
+                "You will need a Lamian Fang Key to get to the ???.",
                 "To get to the ??? spot, you must use the Lamian Fang Key on the Iron Gate at (J-10), then go west on the small map to another Iron Gate. (This Iron Gate is unlocked.)",
-                "During the cutscene, you will be asked a question. The correct answer is Maze of Shakhrami , however it is okay if you guess incorrectly.",
+                "During the cutscene, you will be asked a question. The correct answer is Maze of Shakhrami, however it is okay if you guess incorrectly.",
             },
         },
         {
-            text = "Head to Maze of Shakhrami Map 2 (K-9). You will find an Iron Door in the room in the northwestern corner of (K-9). Examining the door will spawn Lost Soul .",
+            text = "Head to Maze of Shakhrami Map 2 (K-9). You will find an Iron Door in the room in the northwestern corner of (K-9). Examining the door will spawn Lost Soul.",
             substeps = {
                 "The closest warp is the Unity Warp 119 to Buburimu Peninsula which will put you at the zone line. Take exit H to map 2.",
-                "Next closest is the Abyssea - Attohwa warp. Then go to (F-6) and and zone into Maze of Shakhrami . Take exit H to map 2.",
+                "Next closest is the Abyssea - Attohwa warp. Then go to (F-6) and and zone into Maze of Shakhrami. Take exit H to map 2.",
                 "You can also Survival Guide to Buburimu Peninsula which is right next to the Abyssea warp.",
                 "Otherwise, starting on Map 1, take exit C to Map 2. Take exit F to Map 1. Take exit H to Map 2.",
                 "You do not need to be a COR to spawn this NM.",
             },
         },
-        "Defeat the Lost Soul and check the Iron Door again for a cutscene with Imutira and to obtain a Wheel lock trigger .",
+        "Defeat the Lost Soul and check the Iron Door again for a cutscene with Imutira and to obtain a Wheel lock trigger.",
         "Return to the ??? in the Arrapago Reef for another cutscene.",
-        "Speak to Ratihb , Aht Urhgan Whitegate (J-12) for your reward (you may have to speak to him twice).",
+        "Speak to Ratihb, Aht Urhgan Whitegate (J-12) for your reward (you may have to speak to him twice).",
     },
 
     tau_alz_fear_of_dark_2 = {
@@ -487,7 +487,7 @@ Q.STEPS = {
             text = "After zoning and waiting 1 minute, talk to Hishahma again to find out whether you were correct:",
             substeps = {
                 "If you get one of the two things right, you will receive 200 Imperial Standing.",
-                "If you get both things right, you will receive a ??? Box .",
+                "If you get both things right, you will receive a ??? Box.",
             },
         },
     },
@@ -496,7 +496,7 @@ Q.STEPS = {
         "While the quest Ode to the Serpents is active, speak to Talhaal in Al Zahbi (H-6).",
         "Speak to Fari-Wari in Aht Urhgan Whitegate (K-12).",
         {
-            text = "In Wajaom Woodlands kill Wajaom Tigers until you get a Rusty Medal .",
+            text = "In Wajaom Woodlands kill Wajaom Tigers until you get a Rusty Medal.",
             substeps = {
                 "Tigers spawn near (E-8), (F-7) and (K-9).",
             },
@@ -512,7 +512,7 @@ Q.STEPS = {
     },
 
     tau_five_seconds_of_fame = {
-        "Talk to Balakaf (I-5) in Aht Urhgan Whitegate .",
+        "Talk to Balakaf (I-5) in Aht Urhgan Whitegate.",
         "You can record a case once a day in Vana'diel time.",
         "A Pickpocket's Paradise. (15:00~)",
         "Special of the Day. (5:00~)",
@@ -529,16 +529,16 @@ Q.STEPS = {
             },
         },
         {
-            text = "Trade Tinnin's Fang , Sarameya's Hide , and Tyger's Tail to the Seaprince's Tombstone (In the cemetery at (E-10), west exit of Nashmau or Caedarva Mire HP) in Caedarva Mire to receive Serpentking Zahak relief .",
+            text = "Trade Tinnin's Fang, Sarameya's Hide, and Tyger's Tail to the Seaprince's Tombstone (In the cemetery at (E-10), west exit of Nashmau or Caedarva Mire HP) in Caedarva Mire to receive Serpentking Zahak relief.",
             substeps = {
                 "These come from the Zeni NM System",
-                "May also be obtained at a much lower rate from Nyzul Isle Uncharted Campaign and Gobbie Mystery Box .",
+                "May also be obtained at a much lower rate from Nyzul Isle Uncharted Campaign and Gobbie Mystery Box.",
             },
         },
         "Head to Nyzul Isle Staging Point and select Forging a New Myth from the Runic Seal (I-9).",
-        "Your battle begins against a single foe: Zahak .",
+        "Your battle begins against a single foe: Zahak.",
         "After Zahak disappears, Balrahn will spawn.",
-        "Completing the BC will reward you with Serpentking Zahak relief shard .",
+        "Completing the BC will reward you with Serpentking Zahak relief shard.",
     },
 
     tau_get_the_picture = {
@@ -549,16 +549,16 @@ Q.STEPS = {
                 "Notes regarding this Quest",
             },
         },
-        "If you take the correct picture: If you take the correct picture, you will receive an Imperial Silver Piece . You must then zone and wait until JP Midnight in order to take the next one.",
+        "If you take the correct picture: If you take the correct picture, you will receive an Imperial Silver Piece. You must then zone and wait until JP Midnight in order to take the next one.",
         "If you take the wrong picture: You must zone, speak to him again, and trade him an Ahriman Lens to fix his camera.",
         "If you wish to attempt this quest without any guidance, these are his descriptions of the pictures he needs.",
-        "First Picture : First, I want t' see the volcano that can be glimpsed from the Wajaom Woodland. I'll never forget the plumes of smoke billowing from its peak, even though it was a cloudy day when I saw it with me own eyes.",
-        "Second & Third Picture : Next, I want t' see the \"Lovers' Rocks\" in Arrapago Reef. Standing in the snow and looking upon those two pillars standing side by side always made me think of my dear wife.",
-        "Fourth Picture : Next, I want t' see the ruins that can be glimpsed from Mount Zhayolm. I still remember the sight of them bathed in the gentle glow of the evening sun.",
-        "Fifth Picture : Next, I want t' see the flows of lava seeping from the heights of Halvung. It was quite the spectacle for a young lad traipsing through in the wee hours of the morning.",
-        "Sixth Picture : Next, I want t' see the ruins in the Aydeewa Subterrane. The howl of the wind there seemed to speak volumes to me...",
-        "Seventh Picture : Next, I want t' see the waterfall in Mamook. I was lost for words in its beauty, an opalescent thread reflecting the light of the sun.",
-        "Eighth Picture : Next, I want t' see the graveyard in Caedarva Mire. By nightfall, I began t' imagine the tombstones to be monstrous men... That place be more than a mite terrifying.",
+        "First Picture: First, I want t' see the volcano that can be glimpsed from the Wajaom Woodland. I'll never forget the plumes of smoke billowing from its peak, even though it was a cloudy day when I saw it with me own eyes.",
+        "Second & Third Picture: Next, I want t' see the \"Lovers' Rocks\" in Arrapago Reef. Standing in the snow and looking upon those two pillars standing side by side always made me think of my dear wife.",
+        "Fourth Picture: Next, I want t' see the ruins that can be glimpsed from Mount Zhayolm. I still remember the sight of them bathed in the gentle glow of the evening sun.",
+        "Fifth Picture: Next, I want t' see the flows of lava seeping from the heights of Halvung. It was quite the spectacle for a young lad traipsing through in the wee hours of the morning.",
+        "Sixth Picture: Next, I want t' see the ruins in the Aydeewa Subterrane. The howl of the wind there seemed to speak volumes to me...",
+        "Seventh Picture: Next, I want t' see the waterfall in Mamook. I was lost for words in its beauty, an opalescent thread reflecting the light of the sun.",
+        "Eighth Picture: Next, I want t' see the graveyard in Caedarva Mire. By nightfall, I began t' imagine the tombstones to be monstrous men... That place be more than a mite terrifying.",
         "Here is a cheat sheet for all pictures.",
         {
             text = "Request / Picture Location / Conditions / Required Items / Cutscene Option",
@@ -581,7 +581,7 @@ Q.STEPS = {
                 "Recommended order of travel from quickest location to get to, to slowest: 8, 1, 7, 5, 6, 2/3, 4",
             },
         },
-        "Trade this Imperial Gold Piece to Balakaf . You will then receive it back, and you'll be allowed to flag the next quest Five Seconds of Fame .",
+        "Trade this Imperial Gold Piece to Balakaf. You will then receive it back, and you'll be allowed to flag the next quest Five Seconds of Fame.",
     },
 
     tau_wg_give_peace_a_chance = {
@@ -589,7 +589,7 @@ Q.STEPS = {
         "Head to Wajaom Woodlands (K-7) and check the ??? at night (after 20:00 game time) for a cutscene.",
         "Return to Mishhar for a cutscene.",
         {
-            text = "Head to Mamook using the (E-12) entrance in Wajaom Woodlands .",
+            text = "Head to Mamook using the (E-12) entrance in Wajaom Woodlands.",
             substeps = {
                 "Voidwatch teleport to Mamook (Entrance) is the fastest route.",
             },
@@ -602,15 +602,15 @@ Q.STEPS = {
         "Speak to Tehf Kimasnahya in Aht Urhgan Whitegate at (F-8).",
         "Speak to Ekhu Pesshyadha in Aht Urhgan Whitegate at (H-6).",
         "Speak to Zabahf in Aht Urhgan Whitegate at (F-8).",
-        "Speak to Ekhu Pesshyadha to receive the Vial of luminous water .",
-        "Speak to Tehf Kimasnahya .",
-        "Go to the lower level of Aht Urhgan Whitegate (J-10) to trigger a cutscene. (Near the NPC Hajaom .)",
-        "Speak to Tehf Kimasnahya .",
+        "Speak to Ekhu Pesshyadha to receive the Vial of luminous water.",
+        "Speak to Tehf Kimasnahya.",
+        "Go to the lower level of Aht Urhgan Whitegate (J-10) to trigger a cutscene. (Near the NPC Hajaom.)",
+        "Speak to Tehf Kimasnahya.",
         "Zone and then speak to Tehf Kimasnahya again to receive your reward.",
     },
 
     tau_wg_keeping_notes = {
-        "Trade a Parchment and a Black Ink to Ahkk Jharcham .",
+        "Trade a Parchment and a Black Ink to Ahkk Jharcham.",
     },
 
     tau_wg_led_astray = {
@@ -623,7 +623,7 @@ Q.STEPS = {
             },
         },
         "Talk to Rubahah at (F-9) and repeat this process, and then Cacaroon at (G-11) and do the same thing.",
-        "Walk to (I-11) (Down the ramp beside the ferry) for a cutscene to obtain the Letter from Bernahn .",
+        "Walk to (I-11) (Down the ramp beside the ferry) for a cutscene to obtain the Letter from Bernahn.",
         "Speak to Tataroon at (G-8) in Nashmau to complete the quest and obtain your reward.",
     },
 
@@ -643,7 +643,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Ensure you have a Lamian Fang Key . You can farm it as a drop in Arrapago Reef , but that's not recommended. It's better that you grab the free one mentioned earlier.",
+            text = "Ensure you have a Lamian Fang Key. You can farm it as a drop in Arrapago Reef, but that's not recommended. It's better that you grab the free one mentioned earlier.",
             substeps = {
                 "Lamian Fang Keys drop from Lamiae and Draugers in the area.",
             },
@@ -652,7 +652,7 @@ Q.STEPS = {
         {
             text = "Click on the ??? (NOT the shining spot labeled \"-\") at the North East corner of (H-10) for a cutscene. It's located on a ship, on a raised wooden platform.",
             substeps = {
-                "It's possible to get a different cutscene that starts with Zweeha upon clicking the ??? . Clicking the ??? may also direct you to investigate a pier to the northwest. If this happens, keep clicking until you get the correct cutscene that starts with Wasuhd and Mutihb before proceeding to the next step.",
+                "It's possible to get a different cutscene that starts with Zweeha upon clicking the ???. Clicking the ??? may also direct you to investigate a pier to the northwest. If this happens, keep clicking until you get the correct cutscene that starts with Wasuhd and Mutihb before proceeding to the next step.",
             },
         },
         {
@@ -662,7 +662,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Go around the left side of the lake in the large room until you find a ??? spot and examine it for a cutscene and the key item Forgotten hexagun .",
+            text = "Go around the left side of the lake in the large room until you find a ??? spot and examine it for a cutscene and the key item Forgotten hexagun.",
             substeps = {
                 "The ??? is not next to the water, it is at the NW corner, on a rock, close to the tunnel entrance going West.",
             },
@@ -676,7 +676,7 @@ Q.STEPS = {
         "Lure of the Wildcat (Bastok)",
         "Lure of the Wildcat (Windurst)",
         "Lure of the Wildcat (Jeuno)",
-        "Completing each for the Lure of the Wildcats quests in the starting nations allows you to teleport from that nation to Aht Urhgan Whitegate from the quest starter for 300 gil once you have joined Salaheem's Sentinels .",
+        "Completing each for the Lure of the Wildcats quests in the starting nations allows you to teleport from that nation to Aht Urhgan Whitegate from the quest starter for 300 gil once you have joined Salaheem's Sentinels.",
         "Naja Salaheem will also reward you with Imperial currency for each of the quests that you complete.",
     },
 
@@ -731,17 +731,17 @@ Q.STEPS = {
         },
         "You no longer have to be on Corsair for the rest of this quest.",
         {
-            text = "You are asked to fish up a Hydrogauge .",
+            text = "You are asked to fish up a Hydrogauge.",
             substeps = {
-                "The item you need must be fished up in Al Zahbi , Aht Urhgan Whitegate , Nashmau , or the Ferry - Nashmau/Al Zahbi .",
+                "The item you need must be fished up in Al Zahbi, Aht Urhgan Whitegate, Nashmau, or the Ferry - Nashmau/Al Zahbi.",
                 "You may use any rod and bait",
                 "The fishing message you will receive is the standard item message, \"You feel something pulling at your line\".",
                 "Complete the fishing mini-game. When the fish gauge turns dark grey, press the Action button (A on Xbox controller) to reel in the fish/item",
             },
         },
-        "Once you've fished up a Hydrogauge , trade it to Leleroon , Nashmau (G-7).",
+        "Once you've fished up a Hydrogauge, trade it to Leleroon, Nashmau (G-7).",
         {
-            text = "Head to (G-8) in Wajaom Woodlands and trade the Hydrogauge to the Leypoint .",
+            text = "Head to (G-8) in Wajaom Woodlands and trade the Hydrogauge to the Leypoint.",
             substeps = {
                 "This can be reached quickly using an Olduum Ring",
                 "The Survival Guide is also fairly close-by.",
@@ -753,7 +753,7 @@ Q.STEPS = {
 
     tau_bas_no_strings_attached = {
         "Talk to Shamarhaan (F-9) in Bastok Markets - short run from HP#2.",
-        "Head to Aht Urhgan Whitegate , and talk to Iruki-Waraki (K-9, top floor).",
+        "Head to Aht Urhgan Whitegate, and talk to Iruki-Waraki (K-9, top floor).",
         {
             text = "Speak with Ghatsad in Aht Urhgan Whitegate (I-7), inside of the Automaton Workshop.",
             substeps = {
@@ -761,13 +761,13 @@ Q.STEPS = {
             },
         },
         {
-            text = "Take the northern Port Ephramad ferry to Nashmau and go through North Gate to Caedarva Mire . Head NE/NW to the (I-6) zone to Arrapago Reef .",
+            text = "Take the northern Port Ephramad ferry to Nashmau and go through North Gate to Caedarva Mire. Head NE/NW to the (I-6) zone to Arrapago Reef.",
             substeps = {
                 "Taking the survival guide to Arrapago Reef works as well.",
             },
         },
         {
-            text = "Find the ??? at (H-10) on the first boat, hidden beneath the stairs, to receive Antique automaton .",
+            text = "Find the ??? at (H-10) on the first boat, hidden beneath the stairs, to receive Antique automaton.",
             substeps = {
                 "THIS IS NOT THE??? THAT YOU CHECK FOR CORSAIR, IT IS ON THE SOUTHERN BOAT OF H-10",
             },
@@ -776,64 +776,64 @@ Q.STEPS = {
             },
         },
         "Speak to Ghatsad.",
-        "Wait until the next Vana'diel day and speak to Ghatsad to receive your new Automaton .",
+        "Wait until the next Vana'diel day and speak to Ghatsad to receive your new Automaton.",
         {
-            text = "Speak with Iruki-Waraki (K-9, top floor) in Aht Urhgan Whitegate to complete the quest and receive your Animator . You will also be asked to choose a name for your Automaton from a list.",
+            text = "Speak with Iruki-Waraki (K-9, top floor) in Aht Urhgan Whitegate to complete the quest and receive your Animator. You will also be asked to choose a name for your Automaton from a list.",
             substeps = {
-                "You can choose from more names if you opt to rename your Automaton .",
+                "You can choose from more names if you opt to rename your Automaton.",
             },
         },
     },
 
     tau_nas_not_meant_to_be = {
-        "Speak to Fhe Maksojha .",
+        "Speak to Fhe Maksojha.",
         "Head to Caedarva Mire and click the ??? at (K-8).",
-        "Speak to Fhe Maksojha .",
-        "Return to the ??? in Caedarva Mire .",
-        "Click the ??? to spawn to NM's Lamia No 27 and Moshdahn .",
+        "Speak to Fhe Maksojha.",
+        "Return to the ??? in Caedarva Mire.",
+        "Click the ??? to spawn to NM's Lamia No 27 and Moshdahn.",
         "Defeat the NM's, then check the ??? again.",
         "Return to Fhe Maksojha for your reward.",
     },
 
     tau_wg_ode_to_serpents = {
         "Speak to Fari-Wari in Aht Urhgan Whitegate (K-12) for a cutscene that begins the quest.",
-        "With the key item Biyaada's letter , go to Al Zahbi and speak to Gaweesh (G-8) and Talhaal (H-6).",
-        "Complete the quests When the Bow Breaks and Fist of the People .",
+        "With the key item Biyaada's letter, go to Al Zahbi and speak to Gaweesh (G-8) and Talhaal (H-6).",
+        "Complete the quests When the Bow Breaks and Fist of the People.",
         "Speak to Fari-Wari to complete the quest.",
     },
 
     tau_wg_olduum = {
-        "Make sure you do not leave without picking up a few Pickaxe .",
-        "Speak to Dkhaaya for a cutscene and to obtain Dkhaaya's research journal .",
+        "Make sure you do not leave without picking up a few Pickaxe.",
+        "Speak to Dkhaaya for a cutscene and to obtain Dkhaaya's research journal.",
         {
-            text = "Enter Aydeewa Subterrane through the cave at (I-7) in Bhaflau Thickets .",
+            text = "Enter Aydeewa Subterrane through the cave at (I-7) in Bhaflau Thickets.",
             substeps = {
                 "It is a short trek north if exiting Whitegate at (G/H-7).",
             },
         },
         {
-            text = "Head to the room at (H-9) and begin mine in this room until you find one of three key items; Electrocell , Electropot , or Electrolocomotive .",
+            text = "Head to the room at (H-9) and begin mine in this room until you find one of three key items; Electrocell, Electropot, or Electrolocomotive.",
             substeps = {
-                "This is the same room where you finish the Blue Mage Flag Quest .",
+                "This is the same room where you finish the Blue Mage Flag Quest.",
             },
         },
-        "Return to Dkhaaya who will reward you with a Lightning Band .",
-        "At this point the quest is completed, however, if you trade the Lightning Band to the Leypoint at Wajaom Woodlands (G-8) it will transform into an Olduum Ring .",
-        "If you drop your Olduum Ring , speak to Dkhaaya to repeat the quest.",
+        "Return to Dkhaaya who will reward you with a Lightning Band.",
+        "At this point the quest is completed, however, if you trade the Lightning Band to the Leypoint at Wajaom Woodlands (G-8) it will transform into an Olduum Ring.",
+        "If you drop your Olduum Ring, speak to Dkhaaya to repeat the quest.",
     },
 
     tau_wg_omens = {
         "(Wait one in game day since completing the last quest and re-zone into Aht Urhgan Whitegate if you haven't already.)",
         "Speak to Waoud to begin the quest.",
         {
-            text = "Raubahn will direct you to find and kill a Flan in the Navukgo Execution Chamber .",
+            text = "Raubahn will direct you to find and kill a Flan in the Navukgo Execution Chamber.",
             substeps = {
                 "Travel via the Home Point in the part of Mount Zhayolm just outside the chamber or the Mount Zhayolm Unity warps (level 128 or 135) is quickest.",
                 "You do not have to be on Blue Mage to enter or complete this BCNM.",
             },
         },
         {
-            text = "When in the Navukgo Execution Chamber , examine the Decorative Bronze Gate to start a BC fight.",
+            text = "When in the Navukgo Execution Chamber, examine the Decorative Bronze Gate to start a BC fight.",
             substeps = {
                 "Trust Magic is allowed.",
             },
@@ -841,10 +841,10 @@ Q.STEPS = {
                 "Up to 18 people can enter, but more people will cause more Immortal Flans to spawn.",
             },
         },
-        "Return to Aht Urhgan Whitegate and speak to Waoud .",
+        "Return to Aht Urhgan Whitegate and speak to Waoud.",
         "You will be given a Sealed Immortal envelope",
         "Deliver the envelope to Lathuya @ Aht Urhgan Whitegate F-8, on the second floor inside the stall.",
-        "Zone into Wajaom Woodlands from Aht Urhgan Whitegate (G/H-10 Stairwell), then head toward the south and zone into the Aydeewa Subterrane entrance at (K-9). There are no enemies in this small tunnel. (There IS a Phlebotomic Slug on upper step that can be pulled, but will not aggro) . Examine the unnamed target by the pond at (H-7) for a cutscene.",
+        "Zone into Wajaom Woodlands from Aht Urhgan Whitegate (G/H-10 Stairwell), then head toward the south and zone into the Aydeewa Subterrane entrance at (K-9). There are no enemies in this small tunnel. (There IS a Phlebotomic Slug on upper step that can be pulled, but will not aggro). Examine the unnamed target by the pond at (H-7) for a cutscene.",
         "Return to Aht Urhgan Whitegate and speak to Lathuya.",
     },
 
@@ -858,35 +858,35 @@ Q.STEPS = {
                 "Obtain the required items: Sleeping Potion x1, Chai x1",
             },
         },
-        "Return to Iruki-Waraki and trade him the items for a cut-scene. He then asks you to arrange a meeting with the thief in Nashmau .",
-        "Head to Nashmau , and seek out Dnegan for a cut-scene(@H-6 on the second floor).",
+        "Return to Iruki-Waraki and trade him the items for a cut-scene. He then asks you to arrange a meeting with the thief in Nashmau.",
+        "Head to Nashmau, and seek out Dnegan for a cut-scene(@H-6 on the second floor).",
         {
-            text = "Warning: Do NOT select the option \"Ask about the Automaton\" in this cut-scene. Speaking with him will start a cutscene, during which you will be approached by Yafahb .",
+            text = "Warning: Do NOT select the option \"Ask about the Automaton\" in this cut-scene. Speaking with him will start a cutscene, during which you will be approached by Yafahb.",
             substeps = {
-                "You will be given 3 chat options: Ask about the Automaton, Ask about getting around Nashmau , or invite the thief to have tea with you. Do not ask about the Automaton !",
+                "You will be given 3 chat options: Ask about the Automaton, Ask about getting around Nashmau, or invite the thief to have tea with you. Do not ask about the Automaton !",
                 "If you do, you will end the cutscene and be forced to wait a game day before resuming. Choose either of the other options.",
             },
         },
         "The next part of the cutscene takes you to Nashmau Port, and you'll see Iruki 's plan in action. He has set-up a tea shop, and as you approach he asks what you would like to drink.",
         {
-            text = "You are then presented with 3 options. Chai , Coffee or \"I'll pass, thanks\".",
+            text = "You are then presented with 3 options. Chai, Coffee or \"I'll pass, thanks\".",
             substeps = {
-                "Choose either drink. Regardless of your drink choice, Iruki will convince the thief to have Chai .",
+                "Choose either drink. Regardless of your drink choice, Iruki will convince the thief to have Chai.",
             },
         },
-        "The next part of this quest is long winded and leaves you stuck in a remote area, so bring either a Warp Ring or an Scroll of Instant Warp .",
-        "The final ??? for this quest is located in Caedarva Mire , at (K-5), which is actually part of the Azouph Isle map. However, you will need to travel through Arrapago Reef to reach it.",
-        "The quickest way to reef is the Survival Guide to reef .",
+        "The next part of this quest is long winded and leaves you stuck in a remote area, so bring either a Warp Ring or an Scroll of Instant Warp.",
+        "The final ??? for this quest is located in Caedarva Mire, at (K-5), which is actually part of the Azouph Isle map. However, you will need to travel through Arrapago Reef to reach it.",
+        "The quickest way to reef is the Survival Guide to reef.",
         {
-            text = "If you used the survival guide to reef , zone out then grab yourself a Lamian Fang Key and zone into the reef from (I-6). The key can be acquired from a ??? near a pond a short way from the zone.",
+            text = "If you used the survival guide to reef, zone out then grab yourself a Lamian Fang Key and zone into the reef from (I-6). The key can be acquired from a ??? near a pond a short way from the zone.",
             substeps = {
                 "If you did not use the Survival guide, take the Azouph Isle staging point then head to I-6 for the Lamian Fang Key and then enter reef entrance 1.",
             },
         },
-        "For the reef you are going to need Silent Oils and Prism Powders , sub Dancer , or etc.",
-        "You'll find yourself at (I-11) on the map when you first zone into reef .",
+        "For the reef you are going to need Silent Oils and Prism Powders, sub Dancer, or etc.",
+        "You'll find yourself at (I-11) on the map when you first zone into reef.",
         {
-            text = "Apply Sneak (Status) and Invisible (Status) , and run around to the Iron Gate at (J-10). Trade the Lamian Fang Key to open it, and head inside.",
+            text = "Apply Sneak (Status) and Invisible (Status), and run around to the Iron Gate at (J-10). Trade the Lamian Fang Key to open it, and head inside.",
             substeps = {
                 "From inside, take the north path on this map, and you'll reach (J-8) back on the first map. Open the door located there and go through.",
                 "Head to J-6 (Caedarva Mire 6)",
@@ -895,10 +895,10 @@ Q.STEPS = {
         {
             text = "Once in Caedarva Mire Apply Invisible (Status) then head to K-6 and click the ??? behind the tree.",
             substeps = {
-                "This area has Mosshorn rams and Elder Treants , so take care not to gain unwanted attention. The ??? you seek is located next to a tree a short distance from the zone.",
+                "This area has Mosshorn rams and Elder Treants, so take care not to gain unwanted attention. The ??? you seek is located next to a tree a short distance from the zone.",
             },
         },
-        "Enjoy the final cut-scene. Once it is complete you will receive your Puppetry Churidars .",
+        "Enjoy the final cut-scene. Once it is complete you will receive your Puppetry Churidars.",
     },
 
     tau_promotion_captain = {
@@ -915,7 +915,7 @@ Q.STEPS = {
         {
             text = "Enter Aydeewa Subterrane from Wajaom Woodlands (I-10).",
             substeps = {
-                "This is the same entrance next to the Aydeewa Subterrane Survival Guide .",
+                "This is the same entrance next to the Aydeewa Subterrane Survival Guide.",
             },
         },
         {
@@ -928,7 +928,7 @@ Q.STEPS = {
         "Repeat the same process but at (E-7). Ensure that you have planted mature scourshrooms in both spots.",
         "Zone and wait for the game day to change.",
         {
-            text = "Return to both patches of mushrooms between 04:00 and 06:00 game-time to harvest young Scourshroom .",
+            text = "Return to both patches of mushrooms between 04:00 and 06:00 game-time to harvest young Scourshroom.",
             substeps = {
                 "You will need at least 2 young Scourshrooms to complete the quest.",
             },
@@ -943,7 +943,7 @@ Q.STEPS = {
     },
 
     tau_wg_promo_cpl = {
-        "Talk to Naja to receive the Quartz transmitter .",
+        "Talk to Naja to receive the Quartz transmitter.",
         {
             text = "Find the Warhorse Hoofprint and click on it to place the Quartz Transmitter.",
             substeps = {
@@ -955,7 +955,7 @@ Q.STEPS = {
 
     tau_wg_promo_1lt = {
         "The quest is started by entering the Salaheem's Sentinels office.",
-        "Trade Abquhbah 5 Imperial Gold Pieces .",
+        "Trade Abquhbah 5 Imperial Gold Pieces.",
         "Wait until the game day changes and zone.",
         "Talk to Abquhbah to start the first trial.",
         "Trial 1: Logic Puzzle",
@@ -1063,7 +1063,7 @@ Q.STEPS = {
 
     tau_wg_promo_lc = {
         "After accepting the quest, talk to Nafiwaa at the Alchemist's Guild in Aht Urhgan Whitegate (G-5).",
-        "After receiving the 5 test tube key items, visit various ponds in Bhaflau Thickets and Wajaom Woodlands :",
+        "After receiving the 5 test tube key items, visit various ponds in Bhaflau Thickets and Wajaom Woodlands:",
         {
             text = "Empty test tube / Pond Location / Test tube",
             substeps = {
@@ -1076,7 +1076,7 @@ Q.STEPS = {
         },
         "Return to Nafiwaa for a cutscene and begin the mixing process.",
         {
-            text = "The quality of the mixture determines your imperial currency reward. The best quality possible is Luminium .",
+            text = "The quality of the mixture determines your imperial currency reward. The best quality possible is Luminium.",
             substeps = {
                 "To obtain Luminium choose Test Tube #3 three times, Test Tube #2 once, Test Tube #4 once, and Test Tube #5 once.",
             },
@@ -1087,7 +1087,7 @@ Q.STEPS = {
 
     tau_wg_promo_pfc = {
         {
-            text = "Trade an Imp Wing to Naja Salaheem .",
+            text = "Trade an Imp Wing to Naja Salaheem.",
             substeps = {
                 "Imp Wings can be obtained by killing Orderly Imps in Caedarva Mire (Map 1) or bought in the Auction House (Materials  Alchemy 1).",
             },
@@ -1096,11 +1096,11 @@ Q.STEPS = {
 
     tau_wg_promo_2lt = {
         "Enter Naja's office to start the quest.",
-        "Trade 3 Imperial Gold Pieces to Abquhbah , he will give you the Officer Academy manual .",
+        "Trade 3 Imperial Gold Pieces to Abquhbah, he will give you the Officer Academy manual.",
         "Trade 2 Imperial Mythril Pieces to Abquhbah to start the first trial.",
         "Trial 1: Memory You will be shown a scene for a short period of time, and then asked questions about the scene. Get them all right to pass.",
         "Trade 2 Imperial Mythril Pieces to Abquhbah to start the second trial.",
-        "Trial 2: Proof of competence You will be asked to retrieve a proof of your competence, namely a piece of Beastmen equipment, to then trade to Abquhbah .",
+        "Trial 2: Proof of competence You will be asked to retrieve a proof of your competence, namely a piece of Beastmen equipment, to then trade to Abquhbah.",
         {
             text = "Examples include:",
             substeps = {
@@ -1118,7 +1118,7 @@ Q.STEPS = {
             },
         },
         "Upgraded beastmen items (such as Lamian Kaman or Lamian Kaman +1 ) will not work.",
-        "Beastmen items from the west ( Yagudo , Orc , Goblin , et cetera) will not work.",
+        "Beastmen items from the west ( Yagudo, Orc, Goblin, et cetera) will not work.",
         "Trade 2 Imperial Mythril Pieces to Abquhbah to start the third trial.",
         "Trial 3: Trivia You will be asked 8 trivia questions. Get at least 7 correct to pass. The answers are below:",
         "Fulfill requests without fail.",
@@ -1138,24 +1138,24 @@ Q.STEPS = {
     },
 
     tau_wg_promo_sgt = {
-        "Talk to Naja. When presented an option, choose Balrahn Way .",
-        "Go to Balrahn Way for another cutscene. When presented an option, choose Where have you been .",
-        "Obtain a Sutlac and head off to Nashmau .",
+        "Talk to Naja. When presented an option, choose Balrahn Way.",
+        "Go to Balrahn Way for another cutscene. When presented an option, choose Where have you been.",
+        "Obtain a Sutlac and head off to Nashmau.",
         {
-            text = "At (H-9) in Nashmau , another cutscene will take place.",
+            text = "At (H-9) in Nashmau, another cutscene will take place.",
             substeps = {
                 "Choose No, let's keep trying!",
                 "If you choose the wrong answer during the cutscene, you will need to wait for a new game day before repeating the cutscene.",
             },
         },
-        "Trade a Sutlac to Totoroon .",
+        "Trade a Sutlac to Totoroon.",
         "Exit East to Caedarva Mire and go to (I-10). Check the ??? on the East side of the pond for a cutscene.",
         "Return to Naja to complete the quest.",
     },
 
     tau_wg_promo_sgtmaj = {
         "Naja will require you to successfully complete three mini-games. If you fail any portion, wait one real-life minute and speak to Naja again.",
-        "Trial 1 : Push-ups",
+        "Trial 1: Push-ups",
         {
             text = "In this trial, you must count three NPCs doing push-ups and determine who did the least.",
             substeps = {
@@ -1163,16 +1163,16 @@ Q.STEPS = {
                 "It is either one of the three, or none.",
             },
         },
-        "Trial 2 : Sit-ups",
+        "Trial 2: Sit-ups",
         {
             text = "In this trial, you must give a \"message advancement prompt\" with proper timing as the three NPCs do sit-ups. To pass, you must time at least 9 out of 10 advancements prompts correctly.",
             substeps = {
                 "You must press enter/accept when a sit-up is completely finished.",
-                "You can practice indefinitely with Abquhbah .",
+                "You can practice indefinitely with Abquhbah.",
                 "The real challenge will involve three NPCs with slightly different timings. You must press enter/accept when the slowest NPC finishes.",
             },
         },
-        "Trial 3 : Running",
+        "Trial 3: Running",
         {
             text = "In this final trial, you must give prompts to the three NPCs so that they finish running at the same time.",
             substeps = {
@@ -1187,7 +1187,7 @@ Q.STEPS = {
     tau_wg_promo_sp = {
         "After accepting the quest, find the Warhorse Hoofprint located somewhere in the Aht Urhgan regions.",
         {
-            text = "Click on the Warhorse Hoofprint to receive the Dark Rider hoofprint .",
+            text = "Click on the Warhorse Hoofprint to receive the Dark Rider hoofprint.",
             substeps = {
                 "The Warhorse Hoofprint now shows up on widescan as of the December 2015 update and is found in four different zones:",
             },
@@ -1203,21 +1203,21 @@ Q.STEPS = {
                 "Note: At this point, you can now commission Dhima Polevhia to craft three Artifact pieces. See her page for details.",
             },
         },
-        "Travel to Bastok Markets and talk to Shamarhaan at (F-9) who gives a cut-scene and the key item Valkeng's memory chip from his own Automaton . He also tells you to retrieve an item from Mount Zhayolm .",
+        "Travel to Bastok Markets and talk to Shamarhaan at (F-9) who gives a cut-scene and the key item Valkeng's memory chip from his own Automaton. He also tells you to retrieve an item from Mount Zhayolm.",
         {
-            text = "Travel to Mount Zhayolm and reach the position (L-8) to investigate the ??? located on a round steam vent on the ground to receive the key item Toggle switch .",
+            text = "Travel to Mount Zhayolm and reach the position (L-8) to investigate the ??? located on a round steam vent on the ground to receive the key item Toggle switch.",
             substeps = {
                 "The easiest way to reach the location is via Voidwatch warp. From where you spawn head north and then turn left to move towards the south part of the map.",
             },
         },
         {
-            text = "After obtaining Valkeng's memory chip and the Toggle switch , find your way to Talacca Cove for a battle.",
+            text = "After obtaining Valkeng's memory chip and the Toggle switch, find your way to Talacca Cove for a battle.",
             substeps = {
-                "The entrance is next to the Caedarva Mire Home Point . This will bring you straight in front of your destination.",
+                "The entrance is next to the Caedarva Mire Home Point. This will bring you straight in front of your destination.",
             },
         },
         {
-            text = "Examine the Rock Slab in the North-Western direction of the area for a cut-scene and to enter the battlefield to fight Shamarhaan's old military Automaton , Valkeng . The BCNM battle may include a party of up to 6 with a time limit of 30 minutes.",
+            text = "Examine the Rock Slab in the North-Western direction of the area for a cut-scene and to enter the battlefield to fight Shamarhaan's old military Automaton, Valkeng. The BCNM battle may include a party of up to 6 with a time limit of 30 minutes.",
             substeps = {
                 "Trust Magic is usable inside the battle.",
             },
@@ -1229,7 +1229,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Valkeng is an Automaton type mob beginning as a Harlequin Frame and every 30 seconds, will change into a different frame depending on the grand total of damage types it has received during the battle. Valkeng will never return to its initial Harlequin Frame .",
+            text = "Valkeng is an Automaton type mob beginning as a Harlequin Frame and every 30 seconds, will change into a different frame depending on the grand total of damage types it has received during the battle. Valkeng will never return to its initial Harlequin Frame.",
             substeps = {
                 "If 50% or more of its damage taken has been from Melee attacks, it will change to its Valoredge Frame form.",
                 "If 50% or more of its damage taken has been from Ranged attacks, it will change to its Sharpshot Frame form.",
@@ -1245,12 +1245,12 @@ Q.STEPS = {
                 "Stormwaker Frame form:",
             },
         },
-        "Upon defeating Valkeng , a cut-scene will occur. Choice of answer during will not affect any outcome.",
+        "Upon defeating Valkeng, a cut-scene will occur. Choice of answer during will not affect any outcome.",
         "Return to Bastok Markets and speak to Shamarhaan for a cut-scene. Again, the answer to the question will not matter.",
         "Travel back to Aht Urhgan Whitegate to speak with Iruki-Waraki once again for a cut-scene.",
         "Travel to Nashmau and speak with Sajhra at (H-9) in the docks for another cut-scene.",
         "Return to Iruki-Waraki in Aht Urhgan Whitegate and speak with him for one last cut-scene and to receive your reward: Puppetry Taj",
-        "After receiving the quest Puppetmaster Blues , you may commission Puppetmaster Artifact Armor from Dhima Polevhia .",
+        "After receiving the quest Puppetmaster Blues, you may commission Puppetmaster Artifact Armor from Dhima Polevhia.",
         "You may choose the order in which you receive the armor. You must wait until the next Vana'diel day to receive the piece you chose, and may commission a new piece immediately after the last piece was completed.",
         {
             text = "Puppetmaster Artifact Armor",
@@ -1264,10 +1264,10 @@ Q.STEPS = {
     },
 
     tau_nas_rat_race = {
-        "Speak to Kakkaroon .",
+        "Speak to Kakkaroon.",
         "Speak to Nadee Periyaha Aht Urhgan Whitegate (H-9).",
         "Speak to Cacaroon Aht Urhgan Whitegate (G-11).",
-        "Trade Cacaroon one Imperial Bronze Piece .",
+        "Trade Cacaroon one Imperial Bronze Piece.",
         {
             text = "Now you must complete Cook-a-roon? for a Nashmau Stew",
             substeps = {
@@ -1288,25 +1288,25 @@ Q.STEPS = {
             },
         },
         "Trade a Pickaxe to the same unnamed target for another cutscene.",
-        "Head South to zone out of Mount Zhayolm , then zone back in.",
+        "Head South to zone out of Mount Zhayolm, then zone back in.",
         "Trade a Mythril Pick to the same unnamed target for the final cutscene and your reward.",
     },
 
     tau_royal_painter_escort = {
         {
-            text = "Trade Halshaob one Imperial Silver Piece .",
+            text = "Trade Halshaob one Imperial Silver Piece.",
             substeps = {
                 "You are only allowed to do this quest once every 24 hours.",
             },
         },
         {
-            text = "Head to the Cutter, located in the Arrapago Reef .",
+            text = "Head to the Cutter, located in the Arrapago Reef.",
             substeps = {
                 "To get there, first travel to Dvucca Isle Staging Point and exit into the Mire.",
-                "Head East to (G-9) and zone into Arrapago Reef .",
+                "Head East to (G-9) and zone into Arrapago Reef.",
                 "Head North to (H-8) to find the Cutter.",
                 "The Survival Guide in Caedarva Mire puts you on the north side of the zone, which is a short run to G-8.",
-                "The Arrapago Ring , purchased with 100 Imperial standing accolades , will teleport you in front of the Cutter.",
+                "The Arrapago Ring, purchased with 100 Imperial standing accolades, will teleport you in front of the Cutter.",
             },
         },
         "The battle has a 30 minute time limit.",
@@ -1336,7 +1336,7 @@ Q.STEPS = {
         {
             text = "Once the NPC completes her painting, a treasure chest will spawn on deck.",
             substeps = {
-                "Two treasure chests will spawn if you kill Black Bartholomew .",
+                "Two treasure chests will spawn if you kill Black Bartholomew.",
             },
         },
     },
@@ -1344,31 +1344,31 @@ Q.STEPS = {
     tau_wg_saga_of_skyserpent = {
         "Speak to Fari-Wari at the Shararat Teahouse in Aht Urhgan Whitegate (K-12) for a cutscene that begins the quest.",
         {
-            text = "Go to Wajaom Woodlands (C-8) to enter Halvung . Go to (H-11) and examine the ??? to acquire a Lilac ribbon .",
+            text = "Go to Wajaom Woodlands (C-8) to enter Halvung. Go to (H-11) and examine the ??? to acquire a Lilac ribbon.",
             substeps = {
-                "Fastest way is using Wajaom Woodlands Survival Guide .",
+                "Fastest way is using Wajaom Woodlands Survival Guide.",
             },
         },
         "Speak to Fari-Wari.",
         "Wait a game day and speak to Fari-Wari to complete the quest.",
-        "You may only get the cutscenes in Aht Urhgan Whitegate when General Rughadjeen is in Al Zahbi .",
+        "You may only get the cutscenes in Aht Urhgan Whitegate when General Rughadjeen is in Al Zahbi.",
     },
 
     tau_scouting_the_ashu_talif = {
         {
-            text = "Trade Halshaob 3 Imperial Bronze Pieces .",
+            text = "Trade Halshaob 3 Imperial Bronze Pieces.",
             substeps = {
                 "You are only allowed to do this quest once every 24 hours.",
             },
         },
         {
-            text = "Head to the Cutter, located in the Arrapago Reef .",
+            text = "Head to the Cutter, located in the Arrapago Reef.",
             substeps = {
                 "To get there, first travel to Dvucca Isle Staging Point and exit into the Mire.",
-                "Head West to (G-9) and zone into Arrapago Reef .",
+                "Head West to (G-9) and zone into Arrapago Reef.",
                 "Head North to (H-8) to find the Cutter.",
                 "The Survival Guide in Caedarva Mire puts you on the north side of the zone, which is a short run to G-8.",
-                "The Arrapago Ring , purchased with 100 Imperial standing accolades , will teleport you in front of the Cutter.",
+                "The Arrapago Ring, purchased with 100 Imperial standing accolades, will teleport you in front of the Cutter.",
             },
         },
         "The battle has a 30 minute time limit.",
@@ -1382,32 +1382,32 @@ Q.STEPS = {
         {
             text = "After the NM leaves, waves of Watch Imps will begin to spawn.",
             substeps = {
-                "They primarily cast Ancient Magic . Their magic can potentially do 550+ damage per cast to a Item Level 119 character. Additionally, they have a longer casting range than normal and can hit you anywhere on the ship.",
+                "They primarily cast Ancient Magic. Their magic can potentially do 550+ damage per cast to a Item Level 119 character. Additionally, they have a longer casting range than normal and can hit you anywhere on the ship.",
             },
         },
-        "After a few rounds of Watch Imps , every one in your party will be given several temporary items to help in the fight.",
+        "After a few rounds of Watch Imps, every one in your party will be given several temporary items to help in the fight.",
         "Shortly after receiving the temporary items, Swiftwinged Gekko will appear again.",
         "Afterwords, you will be fighting waves of Ashu Talif's crew members and Watch Imps together.",
         "Swiftwinged Gekko will appear randomly inbetween waves.",
         {
             text = "The last wave of this assault has Swiftwinged Gekko appearing with a wave of Crew Members/Imps.",
             substeps = {
-                "This is your last chance to finish off Swiftwinged Gekko .",
+                "This is your last chance to finish off Swiftwinged Gekko.",
             },
         },
         {
             text = "Once everything is defeated, the treasure spawns.",
             substeps = {
-                "You can exit via the Lifeboat Ramp (where you entered) or by using Cutter Fireflies or Warp .",
+                "You can exit via the Lifeboat Ramp (where you entered) or by using Cutter Fireflies or Warp.",
             },
         },
     },
 
     tau_wg_soothing_waters = {
         "Speak to Fari-Wari in Aht Urhgan Whitegate (K-12) for a cutscene that begins the quest.",
-        "Go to (G-9) and talk to Eunheem .",
-        "Talk to Nadeey at (K-7) inside the Walahra Temple. (You may get a cutscene upon entry for The Rider Cometh .)",
-        "Talk to Mihli Aliapoh in Al Zahbi (H-7), who tells you to obtain a Colorful Hair .",
+        "Go to (G-9) and talk to Eunheem.",
+        "Talk to Nadeey at (K-7) inside the Walahra Temple. (You may get a cutscene upon entry for The Rider Cometh.)",
+        "Talk to Mihli Aliapoh in Al Zahbi (H-7), who tells you to obtain a Colorful Hair.",
         {
             text = "Use the (I-7) Bhaflau Thickets entrance to Aydeewa Subterrane ( not the Survival Guide entrance), and find the ??? at (H-8) after sliding down the ramp. Trade the Colorful Hair for a cutscene.",
             substeps = {
@@ -1423,11 +1423,11 @@ Q.STEPS = {
     tau_wg_striking_a_balance = {
         "Speak to Wazyih at (F-11) to begin the quest.",
         "Talk to Saliyahf at (G-7).",
-        "Return to Wazyih .",
+        "Return to Wazyih.",
         "Walk towards the crates at (F-9).",
-        "Return to Saliyahf .",
+        "Return to Saliyahf.",
         "Speak to Wazyih again.",
-        "You must now find a targetable location in Al Zahbi to find Munahda's package . The following are the potential locations:",
+        "You must now find a targetable location in Al Zahbi to find Munahda's package. The following are the potential locations:",
         "(G-7) in the water",
         "(G-8) entrance to the south tunnel",
         "(I-10) Chocobo alley",
@@ -1441,8 +1441,8 @@ Q.STEPS = {
             },
         },
         "Zone back in to Aht Urhgan Whitegate from Al Zahbi for a cutscene.",
-        "Return to Wazyih at (F-11) in Aht Urhgan Whitegate .",
-        "Finally, speak to Saliyahf at (G-7) for your reward and to finish the quest.",
+        "Return to Wazyih at (F-11) in Aht Urhgan Whitegate.",
+        "Speak to Saliyahf at (G-7) for your reward and to finish the quest.",
     },
 
     tau_wg_such_sweet_sorrow = {
@@ -1452,32 +1452,32 @@ Q.STEPS = {
 
     tau_targeting_the_captain = {
         {
-            text = "Trade Halshaob one Imperial Mythril Piece .",
+            text = "Trade Halshaob one Imperial Mythril Piece.",
             substeps = {
                 "You are only allowed to do this quest once every 24 hours.",
             },
         },
         {
-            text = "Head to the Cutter, located in the Arrapago Reef .",
+            text = "Head to the Cutter, located in the Arrapago Reef.",
             substeps = {
                 "To get there, first travel to Dvucca Isle Staging Point and exit into the Mire.",
-                "Head East to (G-9) and zone into Arrapago Reef .",
+                "Head East to (G-9) and zone into Arrapago Reef.",
                 "Head North to (H-8) to find the Cutter.",
                 "The Survival Guide in Caedarva Mire puts you on the north side of the zone, which is a short run to G-8.",
-                "The Arrapago Ring , purchased with 100 Imperial standing accolades , will teleport you in front of the Cutter.",
+                "The Arrapago Ring, purchased with 100 Imperial standing accolades, will teleport you in front of the Cutter.",
             },
         },
         "The battle has a 30 minute time limit.",
         {
-            text = "Make your way to the cabin of the ship. Along the way you will run into 2 Windjammer Imps .",
+            text = "Make your way to the cabin of the ship. Along the way you will run into 2 Windjammer Imps.",
             substeps = {
                 "They are great for building TP for the NM fight ahead.",
             },
         },
         {
-            text = "Inside the cabin you will find 2 NM's: Cutthroat Kabsalah and his pet Bubbly .",
+            text = "Inside the cabin you will find 2 NM's: Cutthroat Kabsalah and his pet Bubbly.",
             substeps = {
-                "Cutthroat Kabsalah is a COR and has access to Wild Card .",
+                "Cutthroat Kabsalah is a COR and has access to Wild Card.",
                 "Cutthroat Kabsalah double attacks almost every time.",
                 "Bubbly is an Opo-opo and has access to all their regular TP moves.",
             },
@@ -1494,30 +1494,30 @@ Q.STEPS = {
                 "If you successfully surprise the captain, he will say something indicating his surprise.",
             },
         },
-        "The ideal strategy is to have someone kite Cutthroat Kabsalah while the rest of the party focuses on killing Bubbly .",
-        "Once Bubbly is down, everyone can take out Cutthroat Kabsalah .",
+        "The ideal strategy is to have someone kite Cutthroat Kabsalah while the rest of the party focuses on killing Bubbly.",
+        "Once Bubbly is down, everyone can take out Cutthroat Kabsalah.",
         "After both NM's are defeated, treasure chests will spawn on the boat.",
         "Barbarossa's Zerehs can be found in either of the first two chests.",
-        "The third chest contains ??? Gloves which sometimes appraise into Barbarossa's Moufles .",
+        "The third chest contains ??? Gloves which sometimes appraise into Barbarossa's Moufles.",
     },
 
     tau_the_art_of_war = {
         "This time, Hishahma requests your assistance in figuring out the best way to kill certain kinds of monsters.",
         {
-            text = "Similar to Finding Faults , you travel to a beastman stronghold and spawn a NM.",
+            text = "Similar to Finding Faults, you travel to a beastman stronghold and spawn a NM.",
             substeps = {
                 "This time the NM needs to be killed.",
             },
         },
         {
-            text = "Orobon : Arrapago Reef , (E-11 Map 2) - Ornery Orobon",
+            text = "Orobon: Arrapago Reef, (E-11 Map 2) - Ornery Orobon",
             substeps = {
                 "You may need one Lamian Fang Key to reach the ???",
-                "A Lamian Fang Key is not required if you travel via the Ilrusi Atoll Staging Point .",
+                "A Lamian Fang Key is not required if you travel via the Ilrusi Atoll Staging Point.",
             },
         },
         {
-            text = "Wamouracampa : Halvung , (L-8) - Wheel Wamoura",
+            text = "Wamouracampa: Halvung, (L-8) - Wheel Wamoura",
             substeps = {
                 "Reach this using the Halvung Survival Guide warp",
                 "This NM takes 0 damage until you cause it to lower its defenses.",
@@ -1525,7 +1525,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Puk : Mamook , (G-8) (upstairs) - Carpophagous Puk",
+            text = "Puk: Mamook, (G-8) (upstairs) - Carpophagous Puk",
             substeps = {
                 "Reach this using the Mamook entrance from Mamool Ja Staging Point or Aht Urghan Whitegate -> Bhaflau Thickets HP #1.",
                 "The NM will try to run away around 90% HP and will despawn if it reaches the end of its path.",
@@ -1544,8 +1544,8 @@ Q.STEPS = {
                 "Remember to set the Records of Eminence quest under RoE -> Objective -> Tutorial -> Level Cap Increase -> Level Cap Increase: 75 (BLU)",
             },
         },
-        "Obtain a Blue Mage's Testimony from Mamool Ja Mimickers .",
-        "Trade the testimony to the Imperial Whitegate and you will be teleported to Jade Sepulcher .",
+        "Obtain a Blue Mage's Testimony from Mamool Ja Mimickers.",
+        "Trade the testimony to the Imperial Whitegate and you will be teleported to Jade Sepulcher.",
         {
             text = "Trade the testimony to the Ornamental Door to initiate a battle.",
             substeps = {
@@ -1559,13 +1559,13 @@ Q.STEPS = {
     tau_wg_die_is_cast = {
         "Speak to Ratihb (J-12) in Aht Urhgan Whitegate to start this quest.",
         "Speak to Ekhu Pesshyadha (H-6). You can pick any option to proceed with this cutscene.",
-        "Speak to Jijiroon (H-8) in Nashmau . You can pick any option again to proceed with this cutscene.",
-        "Go up the stairs at (H-8) and zone into Caedarva Mire .",
-        "Obtain a Lamian Fang Key from the ??? at (I-7) if possible, otherwise obtain it from Merrows inside Arrapago Reef .",
-        "Travel to Arrapago Reef by way of the (I-6) entrance from Caedarva Mire .",
-        "Go to (F-10) on Map 1 to change onto Map 2, follow the right wall straight north (@ K-10 Map 2) once on this map to find a ??? .",
+        "Speak to Jijiroon (H-8) in Nashmau. You can pick any option again to proceed with this cutscene.",
+        "Go up the stairs at (H-8) and zone into Caedarva Mire.",
+        "Obtain a Lamian Fang Key from the ??? at (I-7) if possible, otherwise obtain it from Merrows inside Arrapago Reef.",
+        "Travel to Arrapago Reef by way of the (I-6) entrance from Caedarva Mire.",
+        "Go to (F-10) on Map 1 to change onto Map 2, follow the right wall straight north (@ K-10 Map 2) once on this map to find a ???.",
         "Click the ??? to see a cutscene.",
-        "Click it again to spawns an Imp NM named Bukki .",
+        "Click it again to spawns an Imp NM named Bukki.",
         "Defeat Bukki and check the ??? again to get the Bag of gold pieces and complete this part of the quest.",
         "Return to Aht Urhgan Whitegate and speak to Ratihb to complete this quest and receive your reward.",
     },
@@ -1577,11 +1577,11 @@ Q.STEPS = {
         {
             text = "Head to (I-8) in Bhaflau Thickets and check an ??? there to spawn Plague Chigoe NM.",
             substeps = {
-                "Plague Chigoe attacks very fast, even faster then normal Chigoes .",
-                "Each hit by this NM Aspirs MP .",
+                "Plague Chigoe attacks very fast, even faster then normal Chigoes.",
+                "Each hit by this NM Aspirs MP.",
             },
         },
-        "Once defeated, check the ??? for Map of Caedarva Mire .",
+        "Once defeated, check the ??? for Map of Caedarva Mire.",
     },
 
     tau_wg_prince_and_hopper = {
@@ -1611,18 +1611,18 @@ Q.STEPS = {
 
     tau_the_rider_cometh = {
         "Enter the Walahra Temple in Aht Urhgan Whitegate at (J/K-8) for a cutscene.",
-        "Speak to Yoyoroon in Nashmau in (G-6), upper level stalls. If you speak to Yoyoroon as a Blue Mage , you will have to change jobs and speak to him again. After the cutscene, you will receive a Message from Yoyoroon .",
+        "Speak to Yoyoroon in Nashmau in (G-6), upper level stalls. If you speak to Yoyoroon as a Blue Mage, you will have to change jobs and speak to him again. After the cutscene, you will receive a Message from Yoyoroon.",
         {
-            text = "Obtain a Timeworn Talisman from Ephramadian Shades in Arrapago Reef or Caedarva Mire .",
+            text = "Obtain a Timeworn Talisman from Ephramadian Shades in Arrapago Reef or Caedarva Mire.",
             substeps = {
                 "Recommend using Survival Guide to Caedarva Mire and riding west then south to find Shades there or even further into Arrapago Reef (where you did the Cutter Mission CS's)",
                 "Alternatively, purchase and use an Arrapago Ring with 100 Imperial standing accolades from Asrahd at Aht Urhgan Whitegate (I-8). It will put you right next to some Ephramadian Shades near the Cutter.",
             },
         },
-        "Trade the Timeworn Talisman and a Sutlac , Irmik Helvasi , or even both to Yoyoroon in Nashmau. There is a chance that his appraisal of the item will fail. Trading both at once along with the talisman gives the highest chance for success.",
-        "Should your appraisal succeed, you will have to zone and talk to Yoyoroon again to receive the Talisman of the rebel gods .",
+        "Trade the Timeworn Talisman and a Sutlac, Irmik Helvasi, or even both to Yoyoroon in Nashmau. There is a chance that his appraisal of the item will fail. Trading both at once along with the talisman gives the highest chance for success.",
+        "Should your appraisal succeed, you will have to zone and talk to Yoyoroon again to receive the Talisman of the rebel gods.",
         {
-            text = "Enter the Walahra Temple in Aht Urhgan Whitegate at (J/K-8) for a cutscene to receive the Talisman key .",
+            text = "Enter the Walahra Temple in Aht Urhgan Whitegate at (J/K-8) for a cutscene to receive the Talisman key.",
             substeps = {
                 "If you do not get a cutscene, inspect the Imperial Whitegate instead.",
             },
@@ -1633,7 +1633,7 @@ Q.STEPS = {
         {
             text = "Enter Hazhalm Testing Grounds and examine the Entry Gate to view a cutscene.",
             substeps = {
-                "This is the same area as Einherjar . The quickest way is to use the Caedarva Mire Home Point .",
+                "This is the same area as Einherjar. The quickest way is to use the Caedarva Mire Home Point.",
             },
         },
         "Examine the Entry Gate again to enter a BCNM.",
@@ -1642,55 +1642,55 @@ Q.STEPS = {
     },
 
     tau_wg_wayward_automaton = {
-        "Speak with Iruki-Waraki at (K-9) in Aht Urhgan Whitegate . He'll tell you about how he wants to recover his stolen Automaton.",
+        "Speak with Iruki-Waraki at (K-9) in Aht Urhgan Whitegate. He'll tell you about how he wants to recover his stolen Automaton.",
         "You can tell the Automaton belongs to Iruki-Waraki because it has a very unique personality. He asks you to go to Nashmau and search for the culprit.",
-        "Once in Nashmau proceed to (H-6) (second floor) and speak with Dnegan . They mention seeing a Puppetmaster in the area recently and he lost his gil pouch in Caedarva Mire .",
+        "Once in Nashmau proceed to (H-6) (second floor) and speak with Dnegan. They mention seeing a Puppetmaster in the area recently and he lost his gil pouch in Caedarva Mire.",
         {
-            text = "Exit Nashmau by the East gate into Caedarva Mire . The Spawn Point is on an island on the lake just outside. ( I-10 )",
+            text = "Exit Nashmau by the East gate into Caedarva Mire. The Spawn Point is on an island on the lake just outside. ( I-10 )",
             substeps = {
                 "You can access the island from the east side of the lake by walking across a bridge of lily pads (green patches on the water).",
                 "Stay near the lake as there are Chigoes further out around it.",
-                "Clicking on the ??? spawns a NM called Caedarva Toad . Defeat it and check the ??? again for a cutscene.",
+                "Clicking on the ??? spawns a NM called Caedarva Toad. Defeat it and check the ??? again for a cutscene.",
             },
         },
-        "Go back to Iruki-Waraki in Aht Urhgan Whitegate to receive your Turbo Animator .",
+        "Go back to Iruki-Waraki in Aht Urhgan Whitegate to receive your Turbo Animator.",
     },
 
     tau_wg_three_men_closet = {
         "Speak to Kubhe Ijyuhla at (I-8) in the Serpentking Square to begin the Quest. The rest of the Quest involves running around Whitegate and watching cutscenes.",
-        "Head to the (G/H-10) boundary and exit into Wajaom Woodlands through the Ironbound Gate . As you zone, you'll watch the cutscene.",
-        "Head back to Kubhe , who started the Quest, for another cutscene.",
+        "Head to the (G/H-10) boundary and exit into Wajaom Woodlands through the Ironbound Gate. As you zone, you'll watch the cutscene.",
+        "Head back to Kubhe, who started the Quest, for another cutscene.",
         {
             text = "Speak with Ratihb inside the Shararat Teahouse at (J-12).",
             substeps = {
                 "If the cutscene does not involve Foudeel and Wahboud, speak to him again for the correct cutscene.",
             },
         },
-        "Next is Tehf Kimasnahya at (F-8) on the Balrahn's Way , who explains the entire thing.",
-        "Finally, return to Kubhe to complete the Quest. She rewards you with an Imperial Bronze Piece .",
+        "Next is Tehf Kimasnahya at (F-8) on the Balrahn's Way, who explains the entire thing.",
+        "Return to Kubhe to complete the Quest. She rewards you with an Imperial Bronze Piece.",
     },
 
     tau_totoroon_s_treasure_hunt = {
-        "Talk to Totoroon and he'll ask for \"Sweets, with shooogary taste, yooo know?\" Trade Totoroon a Date , Pamamas , or Kazham Pineapple . Wild Pamamas do not work. The sweets you trade to Totoroon will influence which zone has the treasure.",
-        "Trading Date will make the treasure zone Bhaflau Thickets or Wajaom Woodlands .",
-        "Trading Pamamas will make the treasure zone Bhaflau Thickets or Wajaom Woodlands .",
-        "Trading Kazham Pineapple will make the treasure zone Caedarva Mire or Mount Zhayolm .",
-        "Acquire appropriate gathering tools and travel to the indicated treasure zone. See zone sections below for more information about the gathering tool , gathering points map and NM . Find the ??? Box by Harvesting , Logging , or Mining within the treasure zone.",
-        "First time completion of this quest may not yield the ??? Box , instead a message \"You have a feeling might find something here!\", if this occurs just simply return to Totoroon to complete this quest.",
-        "A NM has a chance of spawning while Harvesting , Logging , or Mining when this quest is active.",
+        "Talk to Totoroon and he'll ask for \"Sweets, with shooogary taste, yooo know?\" Trade Totoroon a Date, Pamamas, or Kazham Pineapple. Wild Pamamas do not work. The sweets you trade to Totoroon will influence which zone has the treasure.",
+        "Trading Date will make the treasure zone Bhaflau Thickets or Wajaom Woodlands.",
+        "Trading Pamamas will make the treasure zone Bhaflau Thickets or Wajaom Woodlands.",
+        "Trading Kazham Pineapple will make the treasure zone Caedarva Mire or Mount Zhayolm.",
+        "Acquire appropriate gathering tools and travel to the indicated treasure zone. See zone sections below for more information about the gathering tool, gathering points map and NM. Find the ??? Box by Harvesting, Logging, or Mining within the treasure zone.",
+        "First time completion of this quest may not yield the ??? Box, instead a message \"You have a feeling might find something here!\", if this occurs just simply return to Totoroon to complete this quest.",
+        "A NM has a chance of spawning while Harvesting, Logging, or Mining when this quest is active.",
         "Killing the NM is not required, but if killed, the ??? Box will no longer be available from subsequent gathering attempts.",
-        "Only one ??? Box can be harvested. The NM will not spawn on further Harvesting , Logging , or Mining attempts after you find the ??? Box .",
-        "Once you have the ??? Box , speak with Totoroon to complete the quest. If a NM spawned upon a gathering, this validates the quest.",
-        "If you have previously completed the quest there will be no cutscene ending the quest. There is no point in returning to Totoroon .",
-        "Identify the ??? Box by trading it to Memeroon at (G-8) behind the Survival Guide .",
-        "Bring multiple Sickles for Harvesting in this zone, Sickles will break occasionally. Refer to the Bhaflau Thickets Harvesting points map . Harvesting with a Sickle has a chance of producing a ??? Box . The NM Berried Chigoe and five Chigoe's Nit may spawn while Harvesting when this quest is active.",
-        "Bring multiple Hatchets for Logging in this zone, Hatchets will break occasionally. Refer to the Caedarva Mire Logging points map . Logging with a Hatchet has a chance of producing a ??? Box . The NM Ravin Raven may spawn while Logging when this quest is active.",
-        "Bring multiple Pickaxes for Mining in this zone, Pickaxes will break occasionally. Refer to the Mount Zhayolm Mining points map . Mining with a Pickaxe has a chance of producing a ??? Box . The NM Ancient Bombs may spawn while Mining when this quest is active.",
-        "Bring multiple Sickles for Harvesting in this zone, Sickles will break occasionally. Refer to the Wajaom Woodlands Harvesting points map . Harvesting with a Sickle has a chance of producing a ??? Box . The NM Berried Chigoe and five Chigoe's Nit may spawn while Harvesting when this quest is active.",
+        "Only one ??? Box can be harvested. The NM will not spawn on further Harvesting, Logging, or Mining attempts after you find the ??? Box.",
+        "Once you have the ??? Box, speak with Totoroon to complete the quest. If a NM spawned upon a gathering, this validates the quest.",
+        "If you have previously completed the quest there will be no cutscene ending the quest. There is no point in returning to Totoroon.",
+        "Identify the ??? Box by trading it to Memeroon at (G-8) behind the Survival Guide.",
+        "Bring multiple Sickles for Harvesting in this zone, Sickles will break occasionally. Refer to the Bhaflau Thickets Harvesting points map. Harvesting with a Sickle has a chance of producing a ??? Box. The NM Berried Chigoe and five Chigoe's Nit may spawn while Harvesting when this quest is active.",
+        "Bring multiple Hatchets for Logging in this zone, Hatchets will break occasionally. Refer to the Caedarva Mire Logging points map. Logging with a Hatchet has a chance of producing a ??? Box. The NM Ravin Raven may spawn while Logging when this quest is active.",
+        "Bring multiple Pickaxes for Mining in this zone, Pickaxes will break occasionally. Refer to the Mount Zhayolm Mining points map. Mining with a Pickaxe has a chance of producing a ??? Box. The NM Ancient Bombs may spawn while Mining when this quest is active.",
+        "Bring multiple Sickles for Harvesting in this zone, Sickles will break occasionally. Refer to the Wajaom Woodlands Harvesting points map. Harvesting with a Sickle has a chance of producing a ??? Box. The NM Berried Chigoe and five Chigoe's Nit may spawn while Harvesting when this quest is active.",
     },
 
     tau_wg_transformations = {
-        "Speak with Waoud at (J-10) as a level 50+ Blue Mage .",
+        "Speak with Waoud at (J-10) as a level 50+ Blue Mage.",
         {
             text = "Ask for a divination by selecting the \"Gaze away.\" dialogue option. He will inform you that \"Your fate lies beyond the gate of nobility\".",
             substeps = {
@@ -1698,22 +1698,22 @@ Q.STEPS = {
             },
         },
         {
-            text = "Go to the Imperial Whitegate door at (L-8) in Aht Urhgan Whitegate , and check it for a cut scene.",
+            text = "Go to the Imperial Whitegate door at (L-8) in Aht Urhgan Whitegate, and check it for a cut scene.",
             substeps = {
                 "You may receive several other cutscenes from this door, depending on your progress in various areas. Continue to examine the door until you receive the correct cutscene.",
             },
         },
         "The quest is now listed in your current quest log. At this point, you do not need to be on Blue Mage to continue the quest.",
         {
-            text = "Your next goal is to obtain two cutscenes in the Alzadaal Undersea Ruins . The easiest way to achieve this is to do the following:",
+            text = "Your next goal is to obtain two cutscenes in the Alzadaal Undersea Ruins. The easiest way to achieve this is to do the following:",
             substeps = {
-                "Use the Runic Portal in Whitegate to go to Nyzul Isle Staging Point .",
+                "Use the Runic Portal in Whitegate to go to Nyzul Isle Staging Point.",
                 "Use the north exit from the staging point, and step on the North-East teleporter on the large map that you are on (toward Silver Sea Remnants ) at (H-8).",
                 "After teleporting, use the east teleporter in the next room.",
                 "In the next room, use the west teleporter.",
                 "Once you arrive at (H-9), walk towards the exit to get the first cutscene.",
                 "Turn around and take the west teleport in the same room.",
-                "Walk south towards the exit to get the second cutscene (Avoid the Apex Archaic Cogs , which aggro true sight, true sound, and magic.)",
+                "Walk south towards the exit to get the second cutscene (Avoid the Apex Archaic Cogs, which aggro true sight, true sound, and magic.)",
             },
         },
         {
@@ -1723,15 +1723,15 @@ Q.STEPS = {
             },
         },
         {
-            text = "After the above two cutscenes, it is time to progress to a battle. You'll need to have an Imperial Silver Piece , Remnants Permit , or Captain Wildcat badge , and follow the directions in the next step. You cannot access the area where the battle occurs via the rest of the ruins, only these specific entrances.",
+            text = "After the above two cutscenes, it is time to progress to a battle. You'll need to have an Imperial Silver Piece, Remnants Permit, or Captain Wildcat badge, and follow the directions in the next step. You cannot access the area where the battle occurs via the rest of the ruins, only these specific entrances.",
             substeps = {
-                "Either use the Home Point to Caedarva Mire , or go to Nashmau and use the west exit to Caedarva Mire .",
+                "Either use the Home Point to Caedarva Mire, or go to Nashmau and use the west exit to Caedarva Mire.",
             },
         },
         {
             text = "Use the teleporter at (I-9) (the one to the right when entering the room), then examine the blank spot in the North-West corner of (G-7) for a cutscene.",
             substeps = {
-                "Examine the blank spot again to spawn a Nepionic Soulflayer .",
+                "Examine the blank spot again to spawn a Nepionic Soulflayer.",
             },
         },
         {
@@ -1740,7 +1740,7 @@ Q.STEPS = {
                 "If you zone after defeating the Soulflayer, but without triggering the final cutscene, you must fight it again.",
             },
         },
-        "After flagging the quest Transformations , you may commission Blue Mage Artifact Armor from Lathuya . You can choose the order in which you receive the armor and may commission a new piece one Vana'diel day after the last piece has been completed.",
+        "After flagging the quest Transformations, you may commission Blue Mage Artifact Armor from Lathuya. You can choose the order in which you receive the armor and may commission a new piece one Vana'diel day after the last piece has been completed.",
         {
             text = "Blue Mage Artifact Armor",
             substeps = {
@@ -1759,7 +1759,7 @@ Q.STEPS = {
         "Trade Cacaroon 1,000 gil for another cutscene.",
         "Zone into Mamook from the Mamool Ja Staging Point exit.",
         "Head northwest to (E-8) and check the Viscous Liquid for a cutscene.",
-        "Examine the Viscous Liquid again to spawn Mamool Ja (NM) .",
+        "Examine the Viscous Liquid again to spawn Mamool Ja (NM).",
         "Examine the Viscous Liquid after the NM is defeated for a cutscene.",
         "Return to Milazahn for your reward.",
     },
@@ -1774,37 +1774,37 @@ Q.STEPS = {
         },
         "Speak to Yoyoroon in Nashmau in (G-6).",
         {
-            text = "Obtain a Timeworn Talisman to be appraised, along with Sutlac and/or Irmik Helvasi to persuade Yoyoroon .",
+            text = "Obtain a Timeworn Talisman to be appraised, along with Sutlac and/or Irmik Helvasi to persuade Yoyoroon.",
             substeps = {
-                "The Timeworn Talisman drops from Ephramadian Shades in Arrapago Reef or Caedarva Mire .",
-                "Sutlac can be purchased from Yafaaf (J-12) Aht Urhgan Whitegate , and Irmik Helvasi can be purchased from Fayeewah (K-12) Aht Urhgan Whitegate , both NPCs are in the Shararat Teahouse.",
+                "The Timeworn Talisman drops from Ephramadian Shades in Arrapago Reef or Caedarva Mire.",
+                "Sutlac can be purchased from Yafaaf (J-12) Aht Urhgan Whitegate, and Irmik Helvasi can be purchased from Fayeewah (K-12) Aht Urhgan Whitegate, both NPCs are in the Shararat Teahouse.",
             },
         },
         {
-            text = "Trade the Timeworn Talisman and a Sutlac , Irmik Helvasi , or even both to Yoyoroon in Nashmau . There is a chance that his appraisal of the item will fail. Trading both at once along with the talisman gives the highest chance for success.",
+            text = "Trade the Timeworn Talisman and a Sutlac, Irmik Helvasi, or even both to Yoyoroon in Nashmau. There is a chance that his appraisal of the item will fail. Trading both at once along with the talisman gives the highest chance for success.",
             substeps = {
                 "Should the appraisal fail, you will have to obtain another Timeworn Talisman as well as any food items that you traded him.",
             },
         },
-        "Once your appraisal succeeds, you must zone and talk to Yoyoroon again to receive the Talisman of the rebel gods .",
-        "Examine the Imperial Whitegate door in Aht Urhgan Whitegate at (L8/9) for a cutscene to receive the key items: Talisman key and Spatial pressure barometer .",
+        "Once your appraisal succeeds, you must zone and talk to Yoyoroon again to receive the Talisman of the rebel gods.",
+        "Examine the Imperial Whitegate door in Aht Urhgan Whitegate at (L8/9) for a cutscene to receive the key items: Talisman key and Spatial pressure barometer.",
         {
             text = "Enter Hazhalm Testing Grounds and examine the Entry Gate to view a cutscene.",
             substeps = {
-                "This is the same area as Einherjar . The quickest way is to use the Caedarva Mire Home Point .",
+                "This is the same area as Einherjar. The quickest way is to use the Caedarva Mire Home Point.",
             },
         },
         {
-            text = "Examine the Entry Gate again to enter a BCNM .",
+            text = "Examine the Entry Gate again to enter a BCNM.",
             substeps = {
-                "Your opponent will be Odin Prime , who casts spells such as Paralyze, Dispelga, and elemental magic.",
-                "Odin Prime will periodically summon an Odin Image , up to three in total.",
+                "Your opponent will be Odin Prime, who casts spells such as Paralyze, Dispelga, and elemental magic.",
+                "Odin Prime will periodically summon an Odin Image, up to three in total.",
                 "Below 50%, Odin Prime may use Zantetsuken, which inflicts Death on all players within a 30' radius. This can be avoided by using /heal or by running out of range.",
             },
         },
         "After winning the battle, you will enter a cutscene where you will choose your reward.",
         "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) for a cutscene.",
-        "Speak to Naja Salaheem in Aht Urhgan Whitegate (I-10) for a cutscene which completes the quest, along with an Imperial Gold Piece .",
+        "Speak to Naja Salaheem in Aht Urhgan Whitegate (I-10) for a cutscene which completes the quest, along with an Imperial Gold Piece.",
     },
 
     tau_vw_op_050_aht_urhgan_assault = {
@@ -1814,7 +1814,7 @@ Q.STEPS = {
                 "Quickest way is to exit Aht Urhgan Whitegate through the Ironbound Gate at (H-10).",
             },
         },
-        "Choose to participate in voidwatch operations to receive key item Amber stratum abyssite .",
+        "Choose to participate in voidwatch operations to receive key item Amber stratum abyssite.",
         {
             text = "Defeat the following Voidwatch notorious monsters in Aht Urhgan areas",
             substeps = {
@@ -1828,8 +1828,8 @@ Q.STEPS = {
     },
 
     tau_vw_op_068_subterranean_skirmish = {
-        "Speaking with Camille at the end of the previous quest will reward you with an upgrade to Amber stratum abyssite II .",
-        "Defeat Morta in Aydeewa Subterrane .Map 1: (G-8), (I-8) Map 2: (F-8)",
+        "Speaking with Camille at the end of the previous quest will reward you with an upgrade to Amber stratum abyssite II.",
+        "Defeat Morta in Aydeewa Subterrane.Map 1: (G-8), (I-8) Map 2: (F-8)",
         "Return to Camille to complete the quest.",
     },
 
@@ -1837,7 +1837,7 @@ Q.STEPS = {
         "Speak to Ulamaal to begin this quest.",
         "Speak to Fochacha at (I-9).",
         "Head to the Alchemy Guild at (G-5) for a cutscene.",
-        "Begin harvesting Wajaom Woodlands to obtain the Rainbow berry .",
+        "Begin harvesting Wajaom Woodlands to obtain the Rainbow berry.",
         "Speak to Ulamaal for your reward.",
     },
 
@@ -1845,7 +1845,7 @@ Q.STEPS = {
         { note = "Warning: Trust Magic cannot be used in this BCNM, but the fight is targeted at level 75." },
         "Approach Naja Salaheem in Aht Urhgan Whitegate (I-10) for a cutscene that begins the quest.",
         {
-            text = "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) to receive the Imperial missive .",
+            text = "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) to receive the Imperial missive.",
             substeps = {
                 "The quest now appears under Aht Urhgan: Current Quests.",
             },
@@ -1854,35 +1854,35 @@ Q.STEPS = {
         {
             text = "You must speak to representatives from the main nations, these can be done in any order.",
             substeps = {
-                "Speak to Halver in Chateau d'Oraguille (I-9) to receive the San d'Orian approval letter .",
-                "Speak to Iron Eater in Metalworks (J-8) to receive the Bastokan approval letter .",
-                "Speak to Kupipi in Heavens Tower to receive the Windurstian approval letter .",
+                "Speak to Halver in Chateau d'Oraguille (I-9) to receive the San d'Orian approval letter.",
+                "Speak to Iron Eater in Metalworks (J-8) to receive the Bastokan approval letter.",
+                "Speak to Kupipi in Heavens Tower to receive the Windurstian approval letter.",
             },
         },
-        "Return to the Audience Chamber in Ru'Lude Gardens at (H-6) for the Jeunoan approval letter .",
+        "Return to the Audience Chamber in Ru'Lude Gardens at (H-6) for the Jeunoan approval letter.",
         {
-            text = "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) to receive the present for Megomak .",
+            text = "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) to receive the present for Megomak.",
             substeps = {
                 "To save time buy 3 Slabs of Plumbago from the AH or you can choose to farm them from Troll enemies in Mount Zhayolm or through mining.",
             },
         },
         {
-            text = "Examine the Acid-eaten Door in Mount Zhayolm at the northwest corner of (I-9) to receive the Megomak's shopping list .",
+            text = "Examine the Acid-eaten Door in Mount Zhayolm at the northwest corner of (I-9) to receive the Megomak's shopping list.",
             substeps = {
-                "The door is past the Gates of Halvung near Halvung Staging Point , not the other one.",
+                "The door is past the Gates of Halvung near Halvung Staging Point, not the other one.",
             },
         },
-        "Trade 3 Slabs of Plumbago to the Acid-eaten Door to receive the lightning cell .",
+        "Trade 3 Slabs of Plumbago to the Acid-eaten Door to receive the lightning cell.",
         "Examine the blank target on the single dark lamp at the Nyzul Isle Staging Point in Alzadaal Undersea Ruins (J-8/9) for a cutscene.",
         {
             text = "Examine the Runic Seal in Alzadaal Undersea Ruins (I-8/9) to start the BCNM fight.",
             substeps = {
-                "In this fight, you will be against Alexander .",
-                "Alexander can spawn up to three Alexander Images .",
+                "In this fight, you will be against Alexander.",
+                "Alexander can spawn up to three Alexander Images.",
                 "At low HP, Alexander will use Divine Judgment dealing high damage to everyone in range.",
             },
         },
-        "Upon defeating the BCNM you will receive the Whisper of radiance .",
+        "Upon defeating the BCNM you will receive the Whisper of radiance.",
         "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) for a cutscene.",
         "Speak to Naja Salaheem to choose your reward.",
     },
@@ -1895,17 +1895,17 @@ Q.STEPS = {
             },
         },
         {
-            text = "Head to Wajaom Woodlands (D-9) and zone into Aydeewa Subterrane .",
+            text = "Head to Wajaom Woodlands (D-9) and zone into Aydeewa Subterrane.",
             substeps = {
                 "Reach (G-10) on map 3 for a cutscene.",
             },
         },
         "Return to Tsetseroon to offically begin this quest.",
-        "Trade Tsetseroon a Tin Ore and a Cobalt Jellyfish . He will give you a Pot of Tsetseroon's stew .",
+        "Trade Tsetseroon a Tin Ore and a Cobalt Jellyfish. He will give you a Pot of Tsetseroon's stew.",
         {
             text = "Return to Aydeewa Subterrane (G-10 Map 3) and check the ??? at the top of the damaged stairwell for a cutscene.",
             substeps = {
-                "Choose to look into Wawaroon's bag for a Map of Aydeewa Subterrane .",
+                "Choose to look into Wawaroon's bag for a Map of Aydeewa Subterrane.",
             },
         },
         "Return to Tsetseroon for an Imperial Bronze Piece and to complete the quest.",
@@ -1914,7 +1914,7 @@ Q.STEPS = {
 
     tau_alz_when_bow_breaks = {
         "While the quest Ode to the Serpents is active, speak to Gaweesh in Al Zahbi (G-8).",
-        "In Wajaom Woodlands kill Aht Urhgan Attercops (Spiders) until you get a Frayed Arrow .",
+        "In Wajaom Woodlands kill Aht Urhgan Attercops (Spiders) until you get a Frayed Arrow.",
         {
             text = "Go to Giwahb Watchtower in Wajaom Woodlands (F-5) and trade the Frayed Arrow to the door for a cutscene that completes the quest.",
             substeps = {

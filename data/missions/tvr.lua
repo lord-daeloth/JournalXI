@@ -78,14 +78,14 @@ M.STEPS = {
             },
             "Touch the Disturbed Dirt at (K-9) for a cutscene.",
             {
-                text = "Touch the Disturbed Dirt again to spawn Gloom Phantom .",
+                text = "Touch the Disturbed Dirt again to spawn Gloom Phantom.",
                 substeps = {
                     "You have 15 minutes to complete this confrontation.",
-                    "NM has approximately 30k HP and can use Blood Weapon and Brazen Rush .",
+                    "NM has approximately 30k HP and can use Blood Weapon and Brazen Rush.",
                 },
             },
             {
-                text = "After defeating Gloom Phantom , touch the Disturbed Dirt for another cutscene.",
+                text = "After defeating Gloom Phantom, touch the Disturbed Dirt for another cutscene.",
                 substeps = {
                     "If you zone before receiving this cutscene, simply check the dirt again.",
                 },
@@ -102,39 +102,39 @@ M.STEPS = {
                     "From the Home Point #3, take the stairs mid-ways on the right, go up then bust a left, cross the bridge on your right and make an immediate right, open the door and Gumbah will be in the back room. This NPC is NOT sitting next to the Home Point, instead they're in the back room of a home.",
                 },
             },
-            "Speak to Brygid in Bastok Markets HP #4 (K-9) twice .",
+            "Speak to Brygid in Bastok Markets HP #4 (K-9) twice.",
             "After agreeing to assist her, Brygid will instruct you to select one of a list of NPCs to cosplay for her fashion show's contest.",
             "You are to attempt to dress like your selected NPC exactly, ignoring any weapons and focusing on head/body/hands/legs/feet. The list includes:",
             {
-                text = "Azima :",
+                text = "Azima:",
                 substeps = {
                     "Azima is impossible to copy. Her present-day clothing is completely unobtainable for players.",
-                    "Cosplaying as Azima from the past will win you first prize, netting you an extra 2,000 Gil .",
-                    "A /lockstyle combination of Coven Hat , Marduk's Jubbah , Mdk. Dastanas +1 , Mdk. Shalwar +1 , and Arch. Sabots +1 only earned 20,202 Gil for first place.",
+                    "Cosplaying as Azima from the past will win you first prize, netting you an extra 2,000 Gil.",
+                    "A /lockstyle combination of Coven Hat, Marduk's Jubbah, Mdk. Dastanas +1, Mdk. Shalwar +1, and Arch. Sabots +1 only earned 20,202 Gil for first place.",
                 },
             },
             {
-                text = "Naji :",
+                text = "Naji:",
                 substeps = {
-                    "Gavial Mail , Breeches , and Battle Boots . No head or hand wear.",
+                    "Gavial Mail, Breeches, and Battle Boots. No head or hand wear.",
                 },
             },
             {
-                text = "Black Mud :",
+                text = "Black Mud:",
                 substeps = {
-                    "Wool Hat , Doublet , Slops , and Ash Clogs . No hand wear.",
+                    "Wool Hat, Doublet, Slops, and Ash Clogs. No hand wear.",
                 },
             },
             {
-                text = "Michea :",
+                text = "Michea:",
                 substeps = {
-                    "Gambison , Brais , Gaiters . No head or hand wear.",
+                    "Gambison, Brais, Gaiters. No head or hand wear.",
                 },
             },
             {
-                text = "Nbu Latteh :",
+                text = "Nbu Latteh:",
                 substeps = {
-                    "Bronze Harness , Scale Cuisses , and Scale Greaves . No head or hand coverings.",
+                    "Bronze Harness, Scale Cuisses, and Scale Greaves. No head or hand coverings.",
                 },
             },
             {
@@ -156,7 +156,7 @@ M.STEPS = {
                     "Proceed West and take the first opening to your right up the stairs. Make an immediate left then another right, cross the catwalk landing you at Gumbah house @ (J-7) for a cutscene.",
                 },
             },
-            "Head to Korroloka Tunnel either through Zeruhn Mines from Bastok Mines or via the Survival Guide warp to Zeruhn Mines .",
+            "Head to Korroloka Tunnel either through Zeruhn Mines from Bastok Mines or via the Survival Guide warp to Zeruhn Mines.",
             {
                 text = "Interact with the Stalagmite targetable location in Korroloka Tunnel (D-9, Map 1) for a cutscene.",
                 substeps = {
@@ -190,8 +190,8 @@ M.STEPS = {
                     "Habida-Jubida - Dream Flower Petal - (  Materials  Alchemy 1)",
                 },
             },
-            "Return to Kupipi for another cutscene. She will ask for a White Rolanberry . (Alternatively, a Ripe White Rolanberry will also work.)",
-            "The White , Ripe White and Rolanberry 854 can be purchased from the Auction House (  Food  Ingredients) if you wish to skip the NM farm, or can be farmed from the chain of force pop Crawler NMs within Crawler's Nest . Rolanberries can be purchased from NPCs in Jeuno :",
+            "Return to Kupipi for another cutscene. She will ask for a White Rolanberry. (Alternatively, a Ripe White Rolanberry will also work.)",
+            "The White, Ripe White and Rolanberry 854 can be purchased from the Auction House (  Food  Ingredients) if you wish to skip the NM farm, or can be farmed from the chain of force pop Crawler NMs within Crawler's Nest. Rolanberries can be purchased from NPCs in Jeuno:",
             {
                 text = "Purchased From...",
                 substeps = {
@@ -201,7 +201,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Each of the types of Rolanberries can be bought and sold on the Auction House . (  Food  Ingredients)",
+                text = "Each of the types of Rolanberries can be bought and sold on the Auction House. (  Food  Ingredients)",
                 substeps = {
                     "It is not recommended to buy the base Rolanberries from the Auction House if you decide to do the Crawler NM climb.",
                 },
@@ -221,7 +221,7 @@ M.STEPS = {
                     "Map with NM Pop Locations",
                     "Map with NM Pop Locations",
                     "Obtaining a White Rolanberry",
-                    "Pellio in Rolanberry Fields at (F-11) exchanges Rolanberry 854s for White Rolanberries. Fastest way to reach Pellio is the Crawler's Nest Survival Guide warp, then immediately exit to Rolanberry Fields. When traded a Rolanberry 854 , he will reward you with either a White Rolanberry or Ripe White Rolanberry . The chance for getting either the NQ or the HQ White Rolanberry is an equal 50:50. Pellio will not accept a Rolanberry 854 until after the cutscene where Kupipi mentions the White Rolanberry.",
+                    "Pellio in Rolanberry Fields at (F-11) exchanges Rolanberry 854s for White Rolanberries. Fastest way to reach Pellio is the Crawler's Nest Survival Guide warp, then immediately exit to Rolanberry Fields. When traded a Rolanberry 854, he will reward you with either a White Rolanberry or Ripe White Rolanberry. The chance for getting either the NQ or the HQ White Rolanberry is an equal 50:50. Pellio will not accept a Rolanberry 854 until after the cutscene where Kupipi mentions the White Rolanberry.",
                 },
             },
             {
@@ -231,7 +231,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Speak to Shantotto in Windurst Walls (K-7) for the final cutscene and your reward of 20,000 Gil .",
+                text = "Speak to Shantotto in Windurst Walls (K-7) for the final cutscene and your reward of 20,000 Gil.",
                 substeps = {
                     "You may not receive the title automatically by completing the Mission, but you should still unlock it. You can verify that it is obtained by speaking to Burute-Sorute in Windurst Walls at (H-10), and look under the 400 Gil option.",
                 },
@@ -252,15 +252,15 @@ M.STEPS = {
             {
                 text = "Head to northeast corner of East Sarutabaruta (J-8) and check the Disturbed Earth for a cutscene. It is South of the Tower and close to the canyon's wall.",
                 substeps = {
-                    "Fastest route is the Unity Warp (Level 99) to East Sarutabaruta or alternatively the Survival Guide to Inner Horutoto Ruins .",
+                    "Fastest route is the Unity Warp (Level 99) to East Sarutabaruta or alternatively the Survival Guide to Inner Horutoto Ruins.",
                 },
             },
             {
                 text = "Clicking the Disturbed Earth will spawn a battle with a Yagudo Vicar (WHM), Yagudo Centurion (BLM), and two Yagudo Underlings (NIN, MNK).",
                 substeps = {
                     "You have 15 minutes to complete this confrontation.",
-                    "Each enemy NM has approximately 30k HP and access to their job's SP Ability .",
-                    "King of Spades (PLD) assists the players, and you will automatically lose the fight if he dies .",
+                    "Each enemy NM has approximately 30k HP and access to their job's SP Ability.",
+                    "King of Spades (PLD) assists the players, and you will automatically lose the fight if he dies.",
                     "AA TT Trust Sleepga will work on the NMs.",
                 },
             },
@@ -272,7 +272,7 @@ M.STEPS = {
     ["158"] = {
         name = "Zhuu Buxu's Gambit",
         steps = {
-            "Speak to Kupipi in Heavens Tower (Windurst Walls, HP #1) for a cutscene to receive Star-crested summons . Zoning after the last mission is not required.",
+            "Speak to Kupipi in Heavens Tower (Windurst Walls, HP #1) for a cutscene to receive Star-crested summons. Zoning after the last mission is not required.",
             "Speak to Tosuka-Porika in Windurst Waters HP #1 in the east wing of the Optistery (G-8) (Map 1) for another cutscene.",
             {
                 text = "Touch the Worn Chest in the storage room of the basement area of Giddeus on the second map at (F-6).",
@@ -284,9 +284,9 @@ M.STEPS = {
                 },
             },
             {
-                text = "Touch the Worn Chest again after the battle for a cutscene and to get the Strange doll .",
+                text = "Touch the Worn Chest again after the battle for a cutscene and to get the Strange doll.",
                 substeps = {
-                    "If you zone before touching the Worn Chest , you can return and check it to continue without fighting again.",
+                    "If you zone before touching the Worn Chest, you can return and check it to continue without fighting again.",
                 },
             },
             "Return to Tosuka-Porika in Windurst Waters for a cutscene and your reward.",
@@ -312,7 +312,7 @@ M.STEPS = {
             },
             "Open up your Temporary Key Item menu and examine the Piece of evidence in your Temporary Key Items to see a cipher.",
             {
-                text = "Speak to Kohlo-Lakolo for another cutscene. He will ask if you deciphered the evidence, say yup .",
+                text = "Speak to Kohlo-Lakolo for another cutscene. He will ask if you deciphered the evidence, say yup.",
                 substeps = {
                     "Even though you probably didn't, it seems your character did.",
                 },
@@ -320,16 +320,16 @@ M.STEPS = {
             {
                 text = "Travel to the The Boyahda Tree and visit any of the three Muggy Air sites at (D-5), (H-6), and (H-9) Map 1, bottom floor.",
                 substeps = {
-                    "The best option is to take the Proto-Waypoint to The Boyahda Tree , which places you on Map 1 in (D-4).",
-                    "You may instead take the Unity Warp (Level 125) to The Boyahda Tree . Once there, turn around to zone to Map 1.",
+                    "The best option is to take the Proto-Waypoint to The Boyahda Tree, which places you on Map 1 in (D-4).",
+                    "You may instead take the Unity Warp (Level 125) to The Boyahda Tree. Once there, turn around to zone to Map 1.",
                     "May need to travel to all 3 spots as one activates the cutscene.",
                 },
             },
             {
                 text = "Touching the active site will immediately spawn the Templar Crawler NM. The active site will have a white glowing animation. Not all sites will be active, so keep looking at the different positions.",
                 substeps = {
-                    "Deals enhanced damage via Poison Breath .",
-                    "Appears to gain an additional Protect buff after using Cocoon .",
+                    "Deals enhanced damage via Poison Breath.",
+                    "Appears to gain an additional Protect buff after using Cocoon.",
                 },
             },
             "Each party member will receive a Sublime lucky egg upon defeating the NM.",
@@ -364,7 +364,7 @@ M.STEPS = {
             },
             "Touch the Secluded Spot again after defeating her for a cutscene.",
             {
-                text = "Return to Kohlo-Lakolo for another cutscene and to receive the Magicked doll .",
+                text = "Return to Kohlo-Lakolo for another cutscene and to receive the Magicked doll.",
                 notes = {
                     "(Optional): Speak to the S.O.B.s for more dialogue.",
                 },
@@ -395,7 +395,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Return to Quemaricond for a cutscene to receive Quemaricond's report .",
+                text = "Return to Quemaricond for a cutscene to receive Quemaricond's report.",
                 substeps = {
                     "Escape then re-enter Davoi is the fastest path.",
                 },
@@ -410,10 +410,10 @@ M.STEPS = {
             "Speak with Halver for a cutscene to begin the Mission. Re-zoning is not required if continuing from the previous Mission.",
             "Head towards Queen Leaute's Memorial Garden (F-7) to the west of the Central Garden for a cutscene.",
             {
-                text = "Head to Attohwa Chasm with some Sickles and harvest at the glowing flower Harvesting Point (H-8) to receive Solidago flower .",
+                text = "Head to Attohwa Chasm with some Sickles and harvest at the glowing flower Harvesting Point (H-8) to receive Solidago flower.",
                 substeps = {
                     "Trailblazing Sickles or the +1 variant do not work at this harvesting point.",
-                    "This is a specific location , you cannot just find any harvesting point in the zone.",
+                    "This is a specific location, you cannot just find any harvesting point in the zone.",
                     "Unity Warp 125 is the fastest way to get there.",
                     "The Harvesting Point can disappear after getting the KI for your character only, in case you escorted others to the spot together.",
                     "The Harvesting Point counts for RoE Harvesting goals.",
@@ -435,7 +435,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Head to Ranguemont Pass .",
+                text = "Head to Ranguemont Pass.",
                 substeps = {
                     "Survival Guide (Fauregandi/Ranguemont Pass) is the fastest way to get there.",
                 },
@@ -444,7 +444,7 @@ M.STEPS = {
                 text = "Touch the Vicious Claw Marks at (J-8) to begin a confrontation with Harnessed Smilodon (WAR).",
                 substeps = {
                     "Has approximately 35k HP.",
-                    "Uses Mighty Strikes .",
+                    "Uses Mighty Strikes.",
                 },
             },
             "Touch the Vicious Claw Marks again after defeating the tiger for a cutscene with Altennia.",
@@ -480,7 +480,7 @@ M.STEPS = {
             "Speak with Halver for a cutscene to begin the Mission.",
             "Speak with Rahal in the Royal Knight's Quarters for another cutscene.",
             {
-                text = "Head to Beaucedine Glacier .",
+                text = "Head to Beaucedine Glacier.",
                 substeps = {
                     "The quickest way is via Survival Guide (Fauregandi).",
                 },
@@ -498,8 +498,8 @@ M.STEPS = {
             {
                 text = "Touch the Point of Interest at the lowest left corner intersection of (J-6)/(I-6) for a final cutscene.",
                 substeps = {
-                    "This is located on the lowest level, next to the Mirror Pond .",
-                    "Fastest route is Unity warp 128 Fei'Yin and zone out into Beaucedine Glacier . Can mount here",
+                    "This is located on the lowest level, next to the Mirror Pond.",
+                    "Fastest route is Unity warp 128 Fei'Yin and zone out into Beaucedine Glacier. Can mount here",
                     "You will receive Hi-Elixir Tank after the cutscene.",
                 },
             },
@@ -513,13 +513,13 @@ M.STEPS = {
             {
                 text = "Zone into Fei'Yin from Beaucedine Glacier for a cutscene.",
                 substeps = {
-                    "The Unity Concord (Level 128) Warp to Fei'Yin is quickest. Simply turn around and rezone into Fei'Yin .",
+                    "The Unity Concord (Level 128) Warp to Fei'Yin is quickest. Simply turn around and rezone into Fei'Yin.",
                 },
             },
             {
                 text = "Head to Fei'Yin Map 2 at (H-7).",
                 substeps = {
-                    "If you already have the gizmo doll, use above Unity warp. If you got above cutscene before getting doll use the Fei'Yin HP #2 instead of navigating Map 1 to exit A .",
+                    "If you already have the gizmo doll, use above Unity warp. If you got above cutscene before getting doll use the Fei'Yin HP #2 instead of navigating Map 1 to exit A.",
                 },
             },
             "Trade the Doll Gizmo to the NPC Talos for a cutscene.",
@@ -580,7 +580,7 @@ M.STEPS = {
             {
                 text = "Zone into Palborough Mines from North Gustaberg for a cutscene.",
                 substeps = {
-                    "Closest teleport is the Abyssea - Grauberg warp to the Cavernous Maw .",
+                    "Closest teleport is the Abyssea - Grauberg warp to the Cavernous Maw.",
                     "Escaping from Palborough Mines HP puts you right at the entrance.",
                 },
             },
@@ -588,19 +588,19 @@ M.STEPS = {
                 text = "Touch the Perversion's Refuge (H-9) on Map 3 for a cutscene.",
                 substeps = {
                     "This is North of Palborough Mines Home Point #1.",
-                    "If you don't have the HP you can also use Waughroon Shrine teleport from Domenic .",
+                    "If you don't have the HP you can also use Waughroon Shrine teleport from Domenic.",
                 },
             },
             {
-                text = "Touch the Perversion's Refuge again to begin a confrontation with Mind-warped Scorpion .",
+                text = "Touch the Perversion's Refuge again to begin a confrontation with Mind-warped Scorpion.",
                 substeps = {
                     "Has approximately 50k HP.",
                     "Has an en-Drain effect on melee hits.",
                 },
             },
-            "Touch the Perversion's Refuge once more for a cutscene and a reward Iapetus .",
+            "Touch the Perversion's Refuge once more for a cutscene and a reward Iapetus.",
             {
-                text = "Return to Iron Eater for the final cutscene and a reward Seafood Gratin .",
+                text = "Return to Iron Eater for the final cutscene and a reward Seafood Gratin.",
                 notes = {
                     "Optional: Speak with Iron Eater again for some additional dialogue.",
                 },
@@ -613,20 +613,20 @@ M.STEPS = {
         steps = {
             "Speak with Naja Salaheem in Aht Urghan Whitegate (I-10) for a cutscene to begin the Mission.",
             {
-                text = "Head to Wajaom Woodlands (H-13) and select the glowing Savage Scars behind the Engraved Tablet , for a cutscene.",
+                text = "Head to Wajaom Woodlands (H-13) and select the glowing Savage Scars behind the Engraved Tablet, for a cutscene.",
                 substeps = {
                     "Use Survival guide warp to Aydeewa Subterrane or Unity warp 125 for Wajaom Woodlands for faster travel.",
                 },
             },
             {
-                text = "Select the Savage Scars again to battle the Returned Soulflayer , with a 15 minute time limit.",
+                text = "Select the Savage Scars again to battle the Returned Soulflayer, with a 15 minute time limit.",
                 substeps = {
                     "Has approximately 100k HP.",
-                    "Can use both Azure Lore and Unbridled Learning .",
+                    "Can use both Azure Lore and Unbridled Learning.",
                     "May use Mind Purge, removing all buffs on a single player.",
                 },
             },
-            "Select the Savage Scars again for a cutscene and to receive a Lock of golden hair .",
+            "Select the Savage Scars again for a cutscene and to receive a Lock of golden hair.",
             {
                 text = "Return to speak with Naja Salaheem again in Aht Urghan Whitegate (I-10) for your rewards.",
                 substeps = {
@@ -652,8 +652,8 @@ M.STEPS = {
             {
                 text = "Travel to Caedarva Mire Map 4 ( Hediva Isle ).",
                 substeps = {
-                    "The Unity Warp (Lv. 135, Shedu) to Caedarva Mire is the fastest way, but requires either Captain Mercenary Rank or a Remnants Permit from Salvage .",
-                    "Alternatively, take the Runic Portal to the Nyzul Isle Staging Point in Alzadaal Undersea Ruins .",
+                    "The Unity Warp (Lv. 135, Shedu) to Caedarva Mire is the fastest way, but requires either Captain Mercenary Rank or a Remnants Permit from Salvage.",
+                    "Alternatively, take the Runic Portal to the Nyzul Isle Staging Point in Alzadaal Undersea Ruins.",
                 },
             },
             "When you're ready, go north east through a slightly hidden path and touch the Savage Scars at (I-6) beside the Engraved Tablet for a cutscene.",
@@ -680,16 +680,16 @@ M.STEPS = {
             {
                 text = "Speak with Ghatsad in the Automaton Workshop (I-7) in Aht Urhgan Whitegate HP #1 for a cutscene.",
                 substeps = {
-                    "You will receive a Gift for Megomak .",
+                    "You will receive a Gift for Megomak.",
                 },
             },
-            "Head to Mount Zhayolm (I-9) via the Halvung Staging Point .",
+            "Head to Mount Zhayolm (I-9) via the Halvung Staging Point.",
             "For the next step, you will need the Cast metal plate permanent Key Item.",
-            "Head to the Gates of Halvung near the Halvung Staging Point at (J-7) and open it with the Cast metal plate .",
+            "Head to the Gates of Halvung near the Halvung Staging Point at (J-7) and open it with the Cast metal plate.",
             {
                 text = "Go through the gate you just opened and head southwest. Find the ramp at the central part of (I-8) and go up. Head west then south to reach the Acid-eaten Door at (I-9 NW corner). Click it for a cutscene.",
                 substeps = {
-                    "You will lose the Gift for Megomak .",
+                    "You will lose the Gift for Megomak.",
                 },
             },
             {
@@ -710,7 +710,7 @@ M.STEPS = {
             {
                 text = "Return to the Acid-eaten Door in Mount Zhayolm at (I-9) for a cutscene.",
                 substeps = {
-                    "You will lose the Pure white ampoule .",
+                    "You will lose the Pure white ampoule.",
                 },
             },
             "Return to Ghatsad (I-7) in Aht Urhgan Whitegate for the final cutscene and your reward.",
@@ -737,16 +737,16 @@ M.STEPS = {
             },
             "Head to and examine the Survey Point at (K-7) of Map 2 of Aydeewa Subterrane for a cutscene.",
             "Head south then hug the wall west to examine the Survey Point at the intersection of (I-9)/(J-9) for another cutscene.",
-            "Proceed to (E-9), and then west down the ramp (marked as D ). This room is full of aggressive Chigoes .",
-            "You will be on Map 5 of Aydeewa Subterrane . Examine Survey Point at (F-8) for another cutscene.",
+            "Proceed to (E-9), and then west down the ramp (marked as D ). This room is full of aggressive Chigoes.",
+            "You will be on Map 5 of Aydeewa Subterrane. Examine Survey Point at (F-8) for another cutscene.",
             "After the cutscene, head south west towards the exit marked as F to transition to Map 3.",
             "After the map changes, drop down, follow the path, and make your way south to (G-10).",
-            "Once you approach the stairs you'll see a brief cutscene. After this inspect the Final Survey Point .",
+            "Once you approach the stairs you'll see a brief cutscene. After this inspect the Final Survey Point.",
             {
-                text = "Examine the Final Survey Point again to begin a confrontation with Missabikong , a Marolith .",
+                text = "Examine the Final Survey Point again to begin a confrontation with Missabikong, a Marolith.",
                 substeps = {
                     "Has approximately 150k HP.",
-                    "Missabikong has undispellable Shock Spikes and tends to spam Subduction , Metamorphic Blast , and Enervating Grasp .",
+                    "Missabikong has undispellable Shock Spikes and tends to spam Subduction, Metamorphic Blast, and Enervating Grasp.",
                     "Can use Mighty Strikes and multiple AoE TP moves, especially at low HP.",
                     "Susceptible to Darkness and absorbs Thunder, including associated skillchains (Light included).",
                     "Vulnerable to Blunt Damage",
@@ -774,7 +774,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Head to the Jade Sepulcher .",
+                text = "Head to the Jade Sepulcher.",
                 substeps = {
                     "Fastest way is by Home Point #1 to Bhaflau Thickets Map 2.",
                     "Another way is to go to Mamool Ja Staging Point to Bhaflau Thickets Map 2 and head North.",
@@ -798,7 +798,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Head back to Aht Urhgan Whitegate and examine Imperial Whitegate for the final cutscene and the Thunder Hammer .",
+                text = "Head back to Aht Urhgan Whitegate and examine Imperial Whitegate for the final cutscene and the Thunder Hammer.",
                 notes = {
                     "Note: Do not discard the Thunder Hammer. You will need it for a later Mission.",
                 },
@@ -820,9 +820,9 @@ M.STEPS = {
             {
                 text = "Head to Arrapago Reef Map 1 and interact with the ??? at the North East corner of (H-10) on a ship for a cutscene to begin the Mission.",
                 substeps = {
-                    "This is easiest via the Arrapago Reef Survival Guide . Alternatively, from where you obtained the Lamian Fang Key, head to (I-6) to zone into Arrapago Reef .",
+                    "This is easiest via the Arrapago Reef Survival Guide. Alternatively, from where you obtained the Lamian Fang Key, head to (I-6) to zone into Arrapago Reef.",
                     "The ??? target is the same for the Corsair Job quest: at the center of the ships bow, immediately left of the glowing, nameless target.",
-                    "The correct cutscene mentions Pteraketos and Sealord Skin .",
+                    "The correct cutscene mentions Pteraketos and Sealord Skin.",
                 },
             },
             {
@@ -837,14 +837,14 @@ M.STEPS = {
             {
                 text = "Directions for if you are missing the Survival Guide",
                 substeps = {
-                    "If you lack the Caedarva Mire Survival Guide, either walk from the prior cutscene area, or return to town and warp to Ilrusi Atoll Staging Point . Assuming that you're starting from the prior area: From the ship you are on now (Map 1), proceed to (F-10) to cross over to Map 2 (B). This is the same map as if you take the Ilrusi Atoll Staging Point , and the paths converge at the next point. Proceed to (D-10) to cross over to Map 3 (C). Continue to (F-9) to use a Lamian Fang Key on door \" E \". Through the gate, turn right and go through another gate. Wind your way around to (F-6) and zone to obtain the Survival Guide warp in Caedarva Mire. You will need it for the next Mission too. Return to the Reef to (F-7) to trade a Hamsi to the Apkallu Guide for a cutscene and resume the Mission.",
+                    "If you lack the Caedarva Mire Survival Guide, either walk from the prior cutscene area, or return to town and warp to Ilrusi Atoll Staging Point. Assuming that you're starting from the prior area: From the ship you are on now (Map 1), proceed to (F-10) to cross over to Map 2 (B). This is the same map as if you take the Ilrusi Atoll Staging Point, and the paths converge at the next point. Proceed to (D-10) to cross over to Map 3 (C). Continue to (F-9) to use a Lamian Fang Key on door \" E \". Through the gate, turn right and go through another gate. Wind your way around to (F-6) and zone to obtain the Survival Guide warp in Caedarva Mire. You will need it for the next Mission too. Return to the Reef to (F-7) to trade a Hamsi to the Apkallu Guide for a cutscene and resume the Mission.",
                 },
             },
-            "After the cutscene with the Apkallu Guide , head west and click the Camp Remnants (F-7) to begin a confrontation with:",
+            "After the cutscene with the Apkallu Guide, head west and click the Camp Remnants (F-7) to begin a confrontation with:",
             {
                 text = "Encounter",
                 substeps = {
-                    "2 Merrow Kabukidancers Merrows can strip your gear with Torrent. Torrent is a move which can be evaded with gear and water specific evasion. 2 Qutrub 2 Mamool Ja Divers (Sahagin) Trusts may be used. Call them BEFORE checking the Camp Remnants . It is not a difficult fight overall with a trust healer/support and Malignance/Empyrean +2/3 or Nyame R0. AoEs behave abnormally in this fight and only hit the primary target, meaning that AoE sleep/petrification will not work. Because of this, make sure that you're buffed and have DT equipment on before popping if you're using trusts. The foes can still be individually slept if you so choose, except for the Qutrubs.",
+                    "2 Merrow Kabukidancers Merrows can strip your gear with Torrent. Torrent is a move which can be evaded with gear and water specific evasion. 2 Qutrub 2 Mamool Ja Divers (Sahagin) Trusts may be used. Call them BEFORE checking the Camp Remnants. It is not a difficult fight overall with a trust healer/support and Malignance/Empyrean +2/3 or Nyame R0. AoEs behave abnormally in this fight and only hit the primary target, meaning that AoE sleep/petrification will not work. Because of this, make sure that you're buffed and have DT equipment on before popping if you're using trusts. The foes can still be individually slept if you so choose, except for the Qutrubs.",
                 },
             },
             {
@@ -857,7 +857,7 @@ M.STEPS = {
                 text = "Return to the ??? on the Corsair ship at (H-10) Map 1 of Arrapago Reef for the final cutscene and your reward.",
                 substeps = {
                     "You can obtain another Lamian Fang Key from the ??? in Caedarva Mire map 1 at (I-7) if the game day has rolled over straight outside of Arrapago Reef.",
-                    "Alternatively, you can simply walk back. From the Camp Remnants : go to C to reach Map 2. From there, go to B . From there you can reach the Corsair ship.",
+                    "Alternatively, you can simply walk back. From the Camp Remnants: go to C to reach Map 2. From there, go to B. From there you can reach the Corsair ship.",
                 },
             },
         },
@@ -884,14 +884,14 @@ M.STEPS = {
                 text = "Proceed to (G-8) in Wajaom Woodlands to examine the Leypoint for a cutscene.",
                 substeps = {
                     "You may use an Olduum Ring to teleport directly to the spot.",
-                    "Alternatively, use the Wajaom Woodlands Survival Guide or Unity Warp .",
+                    "Alternatively, use the Wajaom Woodlands Survival Guide or Unity Warp.",
                 },
             },
             {
-                text = "Travel to (G-9) in Aydeewa Subterrane from Wajaom Woodlands .",
+                text = "Travel to (G-9) in Aydeewa Subterrane from Wajaom Woodlands.",
                 substeps = {
-                    "To get here, first go to (E-10) in Wajaom Woodlands , Entrance 8 on the map to enter the Aydeewa Subterrane (Map 3).",
-                    "Follow the path, along the left wall the whole way, do not drop down , and take Exit 7 at (J-8).",
+                    "To get here, first go to (E-10) in Wajaom Woodlands, Entrance 8 on the map to enter the Aydeewa Subterrane (Map 3).",
+                    "Follow the path, along the left wall the whole way, do not drop down, and take Exit 7 at (J-8).",
                 },
             },
             {
@@ -914,7 +914,7 @@ M.STEPS = {
                     "Speaking to Dkhaaya before Ghatsad will give you a mini-cutscene where he tells you he cannot fix the aeropearl and send you to Ghatsad.",
                 },
             },
-            "Head to Alzadaal Undersea Ruins and defeat the Qiqirns in the area to spawn Panaiveriyamman , an Acrolith NM.",
+            "Head to Alzadaal Undersea Ruins and defeat the Qiqirns in the area to spawn Panaiveriyamman, an Acrolith NM.",
             {
                 text = "Encounter",
                 notes = {
@@ -937,7 +937,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Acquire a Lamian Fang Key once again and head back to the ??? (H-10) Map 1 Arrapago Reef .",
+                text = "Acquire a Lamian Fang Key once again and head back to the ??? (H-10) Map 1 Arrapago Reef.",
                 substeps = {
                     "Survival guide warp to Arrapago Reef.",
                 },
@@ -965,7 +965,7 @@ M.STEPS = {
             {
                 text = "Head to (H-6) between Ethereal Ingress #3 & #5 in Reisenjima and examine Suspicious Overgrowth for a cutscene.",
                 substeps = {
-                    "Gessho will ask for 3 Hoptoad and an Eastern Ginger .",
+                    "Gessho will ask for 3 Hoptoad and an Eastern Ginger.",
                 },
             },
             "Trade the items to the Suspicious Overgrowth for a cutscene.",
@@ -990,7 +990,7 @@ M.STEPS = {
                 text = "Click the Aspirants Grounds again to enter \"Nii's Last Stand,\" a 10 minute solo BCNM fight. Trusts cannot be summoned.",
                 substeps = {
                     "Will receive message \"Only your party leader may inspect the entrance\". You must disband from party to complete this solo fight.",
-                    "Fair Warning : Fight is very easy and the mobs hit for 1 HP.",
+                    "Fair Warning: Fight is very easy and the mobs hit for 1 HP.",
                 },
             },
             {
@@ -1090,7 +1090,7 @@ M.STEPS = {
             {
                 text = "Speak with Shantotto in Windurst Walls (K-7) HP #3 to begin the mission.",
                 substeps = {
-                    "Koru-Moru will ask for the Spectral Crimson , Spect. Goldenrod and Luminicloth .",
+                    "Koru-Moru will ask for the Spectral Crimson, Spect. Goldenrod and Luminicloth.",
                 },
             },
             {
@@ -1106,16 +1106,16 @@ M.STEPS = {
         name = "Altennia Burns Bright",
         steps = {
             {
-                text = "Speak to Halver in Chateau d'Oraguille for a cutscene to begin the mission. The Memorian, the Magicked Doll will be activated in this cutscene. You will also receive Trion's directive afterwards. Speak with Rahal in the Royal Knight's quarters for another cutscene. The Memorian, the Magicked Doll will be activated in this cutscene. Retrieving Lost Memories Show Previous Mission Memories (Warning: may break page on mobile) The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters , second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4 , and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille . Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia . After restoring all memories, you will receive the Depleted Memorian . This will only be received after you have finished The Voracious Resurgence Mission 7-4 . Return to Shantotto for a cutscene, where she will take the Depleted Memorian . Head to Ifrit's Cauldron with multiple Pickaxes . Locate Mining Points around the zone to obtain Ember-encrusted orichalcum . Ostalie , Southern San d'Oria (E-9) near HP #4 sells Pickaxes. Use the Ifrit's Cauldron Unity warp (iLvl 125), and follow the provided route to visit every location until it is found. There are 7 correct Mining Points and 5 wrong ones. The correct spots are: Map 5 (G-8), Map 3 (J-7), Map 3 (F-7), Map 4 (F-7), Map 1 (F-9), Map 1 (G-8), Map 7 (I-10). Most of the correct spots are located outdoors and will give the key item on the very first hit. The correct mining spot cycles with the other correct ones so you only have to check them if doing this with multiple people. The correct mining spot can only be seen by players who are on this mission and don't already have the Ember-encrusted orichalcum in their inventory. If a mining spot gives items then it is not the correct mining spot. If you receive the \"Event skipped.\" message due to aggro when mining the correct spot, your log will not show that you received the key item. Check your Temporary Key Items list to be sure you received it in this case. Return to Rahal for the final cutscene and your reward. At this point, the Memorian, the Magicked Doll will also signal that your quest is complete if you have obtained all of the other memories. See the hidden mission entry for details on this sub-task and retrieving the rest of the memories if you did not receive the . Depleted Memorian at the end of this mission.",
+                text = "Speak to Halver in Chateau d'Oraguille for a cutscene to begin the mission. The Memorian, the Magicked Doll will be activated in this cutscene. You will also receive Trion's directive afterwards. Speak with Rahal in the Royal Knight's quarters for another cutscene. The Memorian, the Magicked Doll will be activated in this cutscene. Retrieving Lost Memories Show Previous Mission Memories (Warning: may break page on mobile) The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters, second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4, and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille. Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia. After restoring all memories, you will receive the Depleted Memorian. This will only be received after you have finished The Voracious Resurgence Mission 7-4. Return to Shantotto for a cutscene, where she will take the Depleted Memorian. Head to Ifrit's Cauldron with multiple Pickaxes. Locate Mining Points around the zone to obtain Ember-encrusted orichalcum. Ostalie, Southern San d'Oria (E-9) near HP #4 sells Pickaxes. Use the Ifrit's Cauldron Unity warp (iLvl 125), and follow the provided route to visit every location until it is found. There are 7 correct Mining Points and 5 wrong ones. The correct spots are: Map 5 (G-8), Map 3 (J-7), Map 3 (F-7), Map 4 (F-7), Map 1 (F-9), Map 1 (G-8), Map 7 (I-10). Most of the correct spots are located outdoors and will give the key item on the very first hit. The correct mining spot cycles with the other correct ones so you only have to check them if doing this with multiple people. The correct mining spot can only be seen by players who are on this mission and don't already have the Ember-encrusted orichalcum in their inventory. If a mining spot gives items then it is not the correct mining spot. If you receive the \"Event skipped.\" message due to aggro when mining the correct spot, your log will not show that you received the key item. Check your Temporary Key Items list to be sure you received it in this case. Return to Rahal for the final cutscene and your reward. At this point, the Memorian, the Magicked Doll will also signal that your quest is complete if you have obtained all of the other memories. See the hidden mission entry for details on this sub-task and retrieving the rest of the memories if you did not receive the. Depleted Memorian at the end of this mission.",
                 substeps = {
                     "Show Previous Mission Memories (Warning: may break page on mobile)",
-                    "The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters , second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4 , and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille . Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia . After restoring all memories, you will receive the Depleted Memorian . This will only be received after you have finished The Voracious Resurgence Mission 7-4 . Return to Shantotto for a cutscene, where she will take the Depleted Memorian .",
+                    "The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters, second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4, and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille. Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia. After restoring all memories, you will receive the Depleted Memorian. This will only be received after you have finished The Voracious Resurgence Mission 7-4. Return to Shantotto for a cutscene, where she will take the Depleted Memorian.",
                 },
             },
             {
                 text = "Show Previous Mission Memories (Warning: may break page on mobile)",
                 substeps = {
-                    "The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters , second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4 , and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille . Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia . After restoring all memories, you will receive the Depleted Memorian . This will only be received after you have finished The Voracious Resurgence Mission 7-4 . Return to Shantotto for a cutscene, where she will take the Depleted Memorian .",
+                    "The following portion of this mission is Not required to continue in the missions, but the background received makes these following cutscenes worth completing. Speaking to the following NPCs will give a cutscene. These can be done anytime. Honoi-Gomoi in Windurst Waters, second floor from the back of the Trader's Home at (E-7, South Map) Dancing Wolf in Rabao (G-7) Rahi Fohlatti in Rabao (G-9) Ghatsad in Aht Urhgan Whitegate (I-7) Zone into Palborough Mines from North Gustaberg Casting Escape after warping to the Home Point takes you to the entrance. Alternately, you can take the Survival Guide to Oldton Movalpolos and walk back outside to North Gustaberg, then head north. The two below are part of The Voracious Resurgence Mission 7-4, and you may have them completed if you did the above steps already. Speak to Halver in Chateau d'Oraguille for Trion and Excenmille. Speak with Rahal in the Royal Knight's quarters for Rahal and Altennia. After restoring all memories, you will receive the Depleted Memorian. This will only be received after you have finished The Voracious Resurgence Mission 7-4. Return to Shantotto for a cutscene, where she will take the Depleted Memorian.",
                 },
             },
             {
@@ -1178,7 +1178,7 @@ M.STEPS = {
             {
                 text = "Head to Qufim Island near the entrance to Lower Delkfutt's Tower and examine the targetable location called Before Delkfutt's Tower at (G-6) for a cutscene.",
                 substeps = {
-                    "Fastest route is the Survival Guide to Qufim Island .",
+                    "Fastest route is the Survival Guide to Qufim Island.",
                 },
             },
             {
@@ -1210,9 +1210,9 @@ M.STEPS = {
                 },
             },
             {
-                text = "Head to Batallia Downs (S) at the eastern edge of (G-7) and touch the shiny Secret Entrance to enter The Eldieme Necropolis (S) .",
+                text = "Head to Batallia Downs (S) at the eastern edge of (G-7) and touch the shiny Secret Entrance to enter The Eldieme Necropolis (S).",
                 substeps = {
-                    "The Survival Guide or Campaign Warp to Batallia Downs (S) will place you close to the Secret Entrance .",
+                    "The Survival Guide or Campaign Warp to Batallia Downs (S) will place you close to the Secret Entrance.",
                 },
             },
             {
@@ -1255,7 +1255,7 @@ M.STEPS = {
             "Head to Leafallia and examine the Odyssean Passage for a cutscene.",
             "Touch the nearby Test of Talents for another cutscene.",
             {
-                text = "Touch the Test of Talents again to enter a solo BCNM against the Shadow Lord .",
+                text = "Touch the Test of Talents again to enter a solo BCNM against the Shadow Lord.",
                 substeps = {
                     "You must disband from party or have no other members in the same zone.",
                     "You may use buffs that carry over on zone like haste for this fight.",
@@ -1283,29 +1283,29 @@ M.STEPS = {
             {
                 text = "Speak with Oscarnot inside for a cutscene.",
                 substeps = {
-                    "If the bidding closes for the Auria Collection you will need to talk to Zemerine before talking to Gama-Shama .",
+                    "If the bidding closes for the Auria Collection you will need to talk to Zemerine before talking to Gama-Shama.",
                 },
             },
-            "Speak with Gama-Shama in the Silver Knife . He will mention how it was hard to procure his Esthete's Masque and how he obtained his attire from Runje Desaali .",
+            "Speak with Gama-Shama in the Silver Knife. He will mention how it was hard to procure his Esthete's Masque and how he obtained his attire from Runje Desaali.",
             {
                 text = "Speak to Runje Desaali in Eastern Adoulin (J-10) until she shows you the Esthete's Masque and hint at wanting some specific equipment that is in high demand.",
                 substeps = {
                     "Quickest from the Castle Adoulin gates waypoint.",
                 },
             },
-            "Make sure you get the dialogue about the mask before you trade or you will need a new item .",
+            "Make sure you get the dialogue about the mask before you trade or you will need a new item.",
             {
                 text = "Trade her an Item Level 106 or 115 Wildskeeper Reive Weapon, Armor, or Rare/Ex Accessory. She will give you 4000 or 6000 Bayld depending on the item and the cutscene will continue.",
                 substeps = {
-                    "It may be worth looking to see if you have a Kupon AW-WK or Mog Kupon AW-WK already, before participating in a Wildskeeper Reive .",
+                    "It may be worth looking to see if you have a Kupon AW-WK or Mog Kupon AW-WK already, before participating in a Wildskeeper Reive.",
                     "Records of Eminence NPCs can also trade all 6 Wildkeeper Reive Key Items for a weapon.",
                 },
             },
-            "After trading in any applicable item, she then unlocks new shop items. Ask her What does Geosuke recommend? .",
+            "After trading in any applicable item, she then unlocks new shop items. Ask her What does Geosuke recommend?.",
             {
-                text = "Buy a Esthete's Masque , Esthete's Coat and Esthete's Hose from Runje Desaali .",
+                text = "Buy a Esthete's Masque, Esthete's Coat and Esthete's Hose from Runje Desaali.",
                 substeps = {
-                    "Each piece is 30,000 Bayld . You need all 3 for 90,000 Bayld to continue.",
+                    "Each piece is 30,000 Bayld. You need all 3 for 90,000 Bayld to continue.",
                 },
             },
             {
@@ -1345,7 +1345,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Next, travel to Mine Shaft #2716 and interact with the Shaft Entrance for a cutscene.",
+                text = "Travel to Mine Shaft #2716 and interact with the Shaft Entrance for a cutscene.",
                 substeps = {
                     "Tarnotik will warp you to Mine Shaft #2716 if you trade a Snow Lily to him.",
                     "The Home Point warp to Newton Movalpolos is closest.",
@@ -1366,7 +1366,7 @@ M.STEPS = {
             {
                 text = "Directions if you want to unlock the Proto-Waypoint",
                 substeps = {
-                    "To unlock the Proto-Waypoint, travel through Newton Movalpolos . While in Oldton Movalpolos , travel to (E-13), talk to Twinkbrix and trade 2,716 gil for teleportation to Mine Shaft #2716 . Exit into Newton Movalpolos , and travel to the furnace at (K-8). You will be heading south from here. If the fence/gate is restricting you from going south. You will need a Firesand . You may farm one from Moblin Roadman /Engineer/Headman. Trade the Firesand to the furnace to move the fence/gate. Drop off at (I/J-9), and continue running south. Head to (E-9) (4 on the Map), and exit back into Oldton Movalpolos . The Geomagnetic Fount is on the left near the opening of the tunnel. Alternatively , take the Home Point to Newton Movalpolos and walk through the revolving gate (may need a Firesand ). Go south towards exit 4 on the map by dropping down at (J-9), and zone back into Oldton Movalpolos .",
+                    "To unlock the Proto-Waypoint, travel through Newton Movalpolos. While in Oldton Movalpolos, travel to (E-13), talk to Twinkbrix and trade 2,716 gil for teleportation to Mine Shaft #2716. Exit into Newton Movalpolos, and travel to the furnace at (K-8). You will be heading south from here. If the fence/gate is restricting you from going south. You will need a Firesand. You may farm one from Moblin Roadman /Engineer/Headman. Trade the Firesand to the furnace to move the fence/gate. Drop off at (I/J-9), and continue running south. Head to (E-9) (4 on the Map), and exit back into Oldton Movalpolos. The Geomagnetic Fount is on the left near the opening of the tunnel. Alternatively, take the Home Point to Newton Movalpolos and walk through the revolving gate (may need a Firesand ). Go south towards exit 4 on the map by dropping down at (J-9), and zone back into Oldton Movalpolos.",
                 },
             },
         },
@@ -1402,13 +1402,13 @@ M.STEPS = {
                 text = "Speak to Tarnotik in Oldton Movalpolos for a cutscene (K-10) to begin the mission.",
                 substeps = {
                     "The Proto-Waypoint warp takes you to (K-10) which is closest.",
-                    "Or Survival Guide to Oldton Movalpolos .",
+                    "Or Survival Guide to Oldton Movalpolos.",
                 },
             },
             {
                 text = "Enter Mine Shaft #2716 for a cutscene.",
                 substeps = {
-                    "Tarnotik will warp you directly to Mine Shaft #2716 by trading a Snow Lily .",
+                    "Tarnotik will warp you directly to Mine Shaft #2716 by trading a Snow Lily.",
                     "Home Point warp to Newton Movalpolos is closest.",
                     "Twinkbrix in Oldton Movalpolos will warp you directly to Mine Shaft #2716 by trading 10k Gil.",
                 },
@@ -1440,13 +1440,13 @@ M.STEPS = {
                 text = "Equip your upgraded Prime Weapon and interact with the Heroes' Gambit targetable location at (J-9) in Xarcabard for a cutscene.",
                 substeps = {
                     "The unity warp 125 to Xarcabard will take you close to it.",
-                    "Excludes Duban and Loughnashade .",
+                    "Excludes Duban and Loughnashade.",
                 },
             },
             {
                 text = "Return to Castle Zvahl Keep and interact with the Valhallan Rift at (G-7) for a cutscene.",
                 substeps = {
-                    "It is located directly across from the Home Point .",
+                    "It is located directly across from the Home Point.",
                     "The Rift is not visible if you have not advanced to this point in the story.",
                 },
             },
@@ -1457,12 +1457,12 @@ M.STEPS = {
                     "You will be assisted by the Destiny Destroyers. They do very little damage but are very strong defensively. Keep reraise active. If you wipe, the Destiny Destroyers can tank Chaos long enough for you to recover.",
                     "Chaos frequently casts a potent dispel which erases everything, including stances, and strips pieces of gear.",
                     "Chaos is difficult to enfeeble, though not immune. Manafont will remove all enfeebles, in any case.",
-                    "Contrary to lore up to this point, any weapon can deal damage to Chaos , not just Prime Weapons.",
+                    "Contrary to lore up to this point, any weapon can deal damage to Chaos, not just Prime Weapons.",
                     "After triggering the pre-fight cutscene, you can change to any job regardless of possession of a prime weapon.",
                 },
             },
-            "After the cutscene, you will be moved to Xarcabard .",
-            "Return to and interact with the Heroes' Gambit targetable location at (J-9) in Xarcabard for another cutscene and receive your gil reward and lose the Despairing psyche .",
+            "After the cutscene, you will be moved to Xarcabard.",
+            "Return to and interact with the Heroes' Gambit targetable location at (J-9) in Xarcabard for another cutscene and receive your gil reward and lose the Despairing psyche.",
         },
     },
 
@@ -1478,7 +1478,7 @@ M.STEPS = {
             {
                 text = "Interact with the Heroes' Gambit for a cutscene to begin the mission.",
                 substeps = {
-                    "You will once again obtain the Despairing psyche .",
+                    "You will once again obtain the Despairing psyche.",
                 },
             },
             {
@@ -1509,10 +1509,10 @@ M.STEPS = {
                 },
             },
             {
-                text = "Interact with the Moogle Meeting targetable location in La Theine Plateau at (H-10) for a cutscene. To get here you have to exit from Map 3 in Ordelle's Caves .",
+                text = "Interact with the Moogle Meeting targetable location in La Theine Plateau at (H-10) for a cutscene. To get here you have to exit from Map 3 in Ordelle's Caves.",
                 substeps = {
                     "Proto-Waypoint teleport to La Theine Plateau if you have it unlocked.",
-                    "Survival guide to Ordelle's Caves entrance then proceed to B. Then follow path D from Map 1. When you get to path D on Map 2, drop down the southeast hole at (H-11). This will lead you directly to Map 3 of Ordelle's Caves and the 3rd exit to La Theine Plateau .",
+                    "Survival guide to Ordelle's Caves entrance then proceed to B. Then follow path D from Map 1. When you get to path D on Map 2, drop down the southeast hole at (H-11). This will lead you directly to Map 3 of Ordelle's Caves and the 3rd exit to La Theine Plateau.",
                 },
             },
             {
@@ -1575,8 +1575,8 @@ M.STEPS = {
             {
                 text = "After watching the previous mission cutscene you'll automatically be on this mission.",
                 substeps = {
-                    "Speaking with Gama-Shama in the Silver Knife , he will inform you of being able to fully upgrade Prime Weapons .",
-                    "Speak to Elijah to begin collecting Voracious Psyches .",
+                    "Speaking with Gama-Shama in the Silver Knife, he will inform you of being able to fully upgrade Prime Weapons.",
+                    "Speak to Elijah to begin collecting Voracious Psyches.",
                 },
             },
         },

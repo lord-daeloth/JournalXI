@@ -5,9 +5,9 @@ local Q = {}
 Q.STEPS = {
 
     abyssea_a_beaked_blusterer = {
-        "Examine the Cavernous Maw in South Gustaberg at (J-10) while in possession of a Traverser stone . You will receive a cutscene with Orgis.",
+        "Examine the Cavernous Maw in South Gustaberg at (J-10) while in possession of a Traverser stone. You will receive a cutscene with Orgis.",
         {
-            text = "Defeat the Notorious Monster Bennu .",
+            text = "Defeat the Notorious Monster Bennu.",
             substeps = {
                 "Refer to the Abyssea - Altepa page for the flowchart for details on spawning this monster.",
             },
@@ -31,9 +31,9 @@ Q.STEPS = {
     },
 
     abyssea_a_delectable_demon = {
-        "Examine the Cavernous Maw in Valkurm Dunes at (I-9) while in possession of a Traverser stone . You will receive a cutscene with Kuchi Eyjhann.",
+        "Examine the Cavernous Maw in Valkurm Dunes at (I-9) while in possession of a Traverser stone. You will receive a cutscene with Kuchi Eyjhann.",
         {
-            text = "Defeat the Notorious Monster Cirein-croin .",
+            text = "Defeat the Notorious Monster Cirein-croin.",
             substeps = {
                 "Refer to the Abyssea - Misareaux page for the flowchart for details on spawning this monster.",
             },
@@ -57,9 +57,9 @@ Q.STEPS = {
     },
 
     abyssea_a_fluttery_fiend = {
-        "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) while in possession of a Traverser stone . You will receive a cutscene with Reinhard.",
+        "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) while in possession of a Traverser stone. You will receive a cutscene with Reinhard.",
         {
-            text = "Defeat the Notorious Monster Itzpapalotl .",
+            text = "Defeat the Notorious Monster Itzpapalotl.",
             substeps = {
                 "Refer to the Abyssea - Attohwa page for the flowchart for details on spawning this monster.",
             },
@@ -83,8 +83,8 @@ Q.STEPS = {
     },
 
     abyssea_a_goldstruck_gigas = {
-        "Examine the Cavernous Maw in La Theine Plateau at (E-4) while in possession of a Traverser stone .",
-        "Defeat the Notorious Monster Briareus .",
+        "Examine the Cavernous Maw in La Theine Plateau at (E-4) while in possession of a Traverser stone.",
+        "Defeat the Notorious Monster Briareus.",
         "Exit Abyssea - La Theine for a cutscene that finishes the quest.",
         "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
         {
@@ -110,9 +110,9 @@ Q.STEPS = {
     },
 
     abyssea_a_man_eating_mite = {
-        "Examine the Cavernous Maw in Xarcabard at (H-8) while in possession of a Traverser stone . You will receive a cutscene with Alberic.",
+        "Examine the Cavernous Maw in Xarcabard at (H-8) while in possession of a Traverser stone. You will receive a cutscene with Alberic.",
         {
-            text = "Defeat the Notorious Monster Resheph .",
+            text = "Defeat the Notorious Monster Resheph.",
             substeps = {
                 "Refer to the Abyssea - Uleguerand page for the flowchart for details on spawning this monster.",
             },
@@ -140,7 +140,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Altepa) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -154,7 +154,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Altepa) to complete the quest.",
@@ -165,7 +165,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Attohwa) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -179,7 +179,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Attohwa) to complete the quest.",
@@ -190,7 +190,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Grauberg) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -204,7 +204,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Grauberg) to complete the quest.",
@@ -215,7 +215,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Konschtat) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -229,7 +229,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Konschtat) to complete the quest.",
@@ -240,7 +240,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (La Theine) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -254,7 +254,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (La Theine) to complete the quest.",
@@ -265,7 +265,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Misareaux) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -279,7 +279,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Misareaux) to complete the quest.",
@@ -290,7 +290,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Tahrongi) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -304,7 +304,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Tahrongi) to complete the quest.",
@@ -315,7 +315,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Uleguerand) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -329,7 +329,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Uleguerand) to complete the quest.",
@@ -340,7 +340,7 @@ Q.STEPS = {
         {
             text = "Speak to the Machine Outfitter (Vunkerl) near the entrance of zone, and choose \"Assist with upgrades\" to accept the quest.",
             substeps = {
-                "You will obtain a Fuel reservoir .",
+                "You will obtain a Fuel reservoir.",
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
         },
@@ -354,7 +354,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to upgrade the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir .",
+                "Although it is not in the log, the Fuel reservoir will be replaced with the Cracked fuel reservoir.",
             },
         },
         "Return to the Machine Outfitter (Vunkerl) to complete the quest.",
@@ -403,11 +403,11 @@ Q.STEPS = {
                 "He is located near Conflux #07.",
             },
         },
-        "Next talk to Kenapa-Keppa (A) in the northeast corner of (I-7) to receive Bucket of compound compost .",
+        "Talk to Kenapa-Keppa (A) in the northeast corner of (I-7) to receive Bucket of compound compost.",
         {
             text = "Click the Lycopodium Rootprint targetable location which is west of the mountain at (H-7).",
             substeps = {
-                "This will spawn Rubicund Adenium , a Mandragora .",
+                "This will spawn Rubicund Adenium, a Mandragora.",
             },
         },
         "Bring it to Kenapa-Keppa (A) to capture it, making sure not to let it despawn along the way (keep it within 20').",
@@ -419,7 +419,7 @@ Q.STEPS = {
     abyssea_a_ward_to_end_all_wards = {
         "Speak to Belgidiveau (A) at (F-4), the base camp (Veridical Conflux #01).",
         {
-            text = "Belgidiveau wishes for you to trade him a part of an Abyssean monster, such as NM pop items or a part of a Voragean .",
+            text = "Belgidiveau wishes for you to trade him a part of an Abyssean monster, such as NM pop items or a part of a Voragean.",
             substeps = {
                 "Multiple items are \"High Strength\" and yield the greatest fame/rewards.",
                 "Many other items work. They tend to be tier 1 NM pop items that drop from ordinary monsters within Abyssea.",
@@ -431,7 +431,7 @@ Q.STEPS = {
 
     abyssea_addled_mind_undying_dreams = {
         "Speak to Silver Owl (A) at (D-7), Veridical Conflux #03, to begin this quest.",
-        "He will request that you bring him Pinch of moist Dangruf sulfur .",
+        "He will request that you bring him Pinch of moist Dangruf sulfur.",
         {
             text = "This item is obtained from any color Pyxis chest, in any Abyssean zone.",
             substeps = {
@@ -441,7 +441,7 @@ Q.STEPS = {
                 "The key item has been observed to be obtained upon opening the first Pyxis. It does not appear to be very rare.",
             },
         },
-        "Once you have the Pinch of moist Dangruf sulfur , return to Silver Owl (A) to complete the quest.",
+        "Once you have the Pinch of moist Dangruf sulfur, return to Silver Owl (A) to complete the quest.",
     },
 
     abyssea_an_acrididaen_anodyne = {
@@ -452,8 +452,8 @@ Q.STEPS = {
             },
         },
         "Go to the small grass area in the south-east part of (I-10) by the bones. Veridical Conflux #03 is nearby, but you may need to wait for smoke to stop at (J-9) to get through. You may be better off just running to the location from the base camp.",
-        "In the grass, move around and use the /clap emote until a glowing Rockhopper targetable location appears on the ground. Interact with it to get a Rockhopper .",
-        "Speak to Yoran-Oran (A) to receive Phial of counteragent .",
+        "In the grass, move around and use the /clap emote until a glowing Rockhopper targetable location appears on the ground. Interact with it to get a Rockhopper.",
+        "Speak to Yoran-Oran (A) to receive Phial of counteragent.",
         "Examine the Gasponia targetable flowers in the vicinity of (F-8)/(F-9). Veridical Conflux #00 is nearby.",
         "Speak to Yoran-Oran (A) to receive your reward.",
         "Possible augments include:",
@@ -467,9 +467,9 @@ Q.STEPS = {
     abyssea_an_eye_for_revenge = {
         "Speak to Curilla (A) at (E-3) while in possession of Vial of lambent potion (Obtained from the previous quest).",
         {
-            text = "Defeat Lugarhoo to receive Lugarhoo's eyeball .",
+            text = "Defeat Lugarhoo to receive Lugarhoo's eyeball.",
             substeps = {
-                "He is spawned to the southwest of Veridical Conflux #05 on the border of (G-11)/(H-11). You need a Filthy Gnole Claw to pop it, which drops from nearby Luisons . You do not need to proc it for the key item to drop. All party members with the quest active will receive the key item.",
+                "He is spawned to the southwest of Veridical Conflux #05 on the border of (G-11)/(H-11). You need a Filthy Gnole Claw to pop it, which drops from nearby Luisons. You do not need to proc it for the key item to drop. All party members with the quest active will receive the key item.",
             },
         },
         "Return to Curilla (A) to complete the quest.",
@@ -480,7 +480,7 @@ Q.STEPS = {
         {
             text = "Trade a Malachite to Garnev (A) for your reward and to complete the quest.",
             substeps = {
-                "Malachite comes from Gold Sturdy Pyxis and Abyssea - Attohwa NMs like Maahes .",
+                "Malachite comes from Gold Sturdy Pyxis and Abyssea - Attohwa NMs like Maahes.",
             },
         },
         "Zoning is required in order to repeat this quest.",
@@ -498,9 +498,9 @@ Q.STEPS = {
     },
 
     abyssea_an_ulcerous_uragnite = {
-        "Examine the Cavernous Maw in North Gustaberg at G-7) (North-east corner) while in possession of a Traverser stone . You will receive a cutscene with Rurukaka.",
+        "Examine the Cavernous Maw in North Gustaberg at G-7) (North-east corner) while in possession of a Traverser stone. You will receive a cutscene with Rurukaka.",
         {
-            text = "Defeat the Notorious Monster Amphitrite .",
+            text = "Defeat the Notorious Monster Amphitrite.",
             substeps = {
                 "Refer to the Abyssea - Grauberg page for the flowchart for details on spawning this monster.",
             },
@@ -558,7 +558,7 @@ Q.STEPS = {
 
     abyssea_bad_communication = {
         "Speak to Ferdechiond (A) (I-9) near Conflux #00 to begin the quest",
-        "You will receive Espionage pearlsack .",
+        "You will receive Espionage pearlsack.",
         {
             text = "Travel to and examine the 3 ??? that Ferdechiond marks on the map.",
             substeps = {
@@ -577,7 +577,7 @@ Q.STEPS = {
     abyssea_beneath_a_blood_red_sky = {
         "Head to Qufim Island (F-7) (Follow the wall NW from Home Point #1).",
         "Click on the Transcendental Radiance with a Traverser stone in your key items.",
-        "Select \"Proceed\" to spend 10,000 Cruor to obtain a Crimson traverser stone , automatically enter Abyssea - Empyreal Paradox , and receive a cutscene.",
+        "Select \"Proceed\" to spend 10,000 Cruor to obtain a Crimson traverser stone, automatically enter Abyssea - Empyreal Paradox, and receive a cutscene.",
         "The next quest is automatically flagged upon cutscene completion.",
     },
 
@@ -591,7 +591,7 @@ Q.STEPS = {
         },
         "Head to the Fay Pond at (F-5) in the Witchfire Glen area of the map via Conflux #5.",
         {
-            text = "You must trade Twinkle Powder to the Fay Pond for a chance to receive the Pinch of pixie dust .",
+            text = "You must trade Twinkle Powder to the Fay Pond for a chance to receive the Pinch of pixie dust.",
             substeps = {
                 "Bring multiples as the chance of obtaining the pixie dust is random.",
             },
@@ -602,7 +602,7 @@ Q.STEPS = {
 
     abyssea_boreal_blossoms = {
         "Talk to Oruga (A) to start this quest. She is at (K-9) south (through the tunnel) at Conflux #5 near the fire.",
-        "She will ask you to procure three Frostblooms .",
+        "She will ask you to procure three Frostblooms.",
         {
             text = "There are three areas that they can be obtained, and at each one there are three spawn points nearby.",
             substeps = {
@@ -617,10 +617,10 @@ Q.STEPS = {
 
     abyssea_bringing_down_the_mountain = {
         "Speak with Diegai (A) at the border of (H-7)/(I-7) near Veridical Conflux #07.",
-        "Travel to (J-8) and speak with Baladanzo (A) . There is no quick way there, just walk from Conflux #07.",
+        "Travel to (J-8) and speak with Baladanzo (A). There is no quick way there, just walk from Conflux #07.",
         "Defeat Bog Body Qutrub mobs around (J-5) near Conflux #08 until they drop 10 Gunpowder Swathes",
         {
-            text = "Return to Baladanzo at (J-8) and trade him all 10 Gunpowder Swathe .",
+            text = "Return to Baladanzo at (J-8) and trade him all 10 Gunpowder Swathe.",
             substeps = {
                 "Alternatively, you may trade the items one at a time, though it is not required.",
             },
@@ -631,7 +631,7 @@ Q.STEPS = {
     abyssea_brothers_in_arms = {
         "Talk to Zazarg (A) at (G-7) Conflux #7.",
         {
-            text = "You are tasked to defeat Blanga .",
+            text = "You are tasked to defeat Blanga.",
             substeps = {
                 "He is force popped near Conflux #8. See his page for details.",
             },
@@ -644,11 +644,11 @@ Q.STEPS = {
         {
             text = "Speak to Brugaire (A) at (L-6), northeast of Conflux #8, to begin the quest.",
             substeps = {
-                "You will be given a Prismatic Elixir .",
+                "You will be given a Prismatic Elixir.",
             },
         },
         {
-            text = "You must spawn Teekesselchen , use the Elixir on it, and defeat the NM.",
+            text = "You must spawn Teekesselchen, use the Elixir on it, and defeat the NM.",
             substeps = {
                 "Anyone on this quest can use an Elixir and receive credit.",
             },
@@ -660,7 +660,7 @@ Q.STEPS = {
 
     abyssea_brygid_the_stylist_strikes_back = {
         {
-            text = "Speak to Brygid (A) at (D-11), near Conflux #8, while wearing at least 1 piece of Empyrean Armor .",
+            text = "Speak to Brygid (A) at (D-11), near Conflux #8, while wearing at least 1 piece of Empyrean Armor.",
             substeps = {
                 "You cannot use upgraded iLvl 119 Empyrean Gear it must be original Empyrean Armor",
             },
@@ -679,7 +679,7 @@ Q.STEPS = {
     abyssea_catering_capers = {
         "Talk to Regine (A) located at (E-3) near Veridical Conflux #01.",
         {
-            text = "She gives you 3 Hatchets and requests you log 3 Plateau Chestnuts from the trees in Abyssea - La Theine .",
+            text = "She gives you 3 Hatchets and requests you log 3 Plateau Chestnuts from the trees in Abyssea - La Theine.",
             substeps = {
                 "You can bring your own Hatchets obtained by other means.",
                 "Logging Points exist between Conflux #01 and Conflux #02, around Puks, West/South of Conflux #07 and in the Opo-opo.",
@@ -690,7 +690,7 @@ Q.STEPS = {
     },
 
     abyssea_champions_of_abyssea = {
-        "This quest is triggered automatically after completing Tenuous Existence .",
+        "This quest is triggered automatically after completing Tenuous Existence.",
     },
 
     abyssea_chocobo_panic = {
@@ -705,15 +705,15 @@ Q.STEPS = {
             text = "To obtain Indigo abyssite of confluence (non-repeatable):",
             substeps = {
                 "Trade a Woozyshroom to the Chocobo next to Kuoh Rehl. Kuoh Rehl will comment that the chocobo will not eat anything else now until it's satisfied.",
-                "Trade the Chocobo 9 more Woozyshrooms , one at a time, to complete the quest and receive the Indigo abyssite of confluence .",
-                "Kuoh Rhel will then inform you that she will not allow you to feed the chocobo any more Woozyshrooms .",
+                "Trade the Chocobo 9 more Woozyshrooms, one at a time, to complete the quest and receive the Indigo abyssite of confluence.",
+                "Kuoh Rhel will then inform you that she will not allow you to feed the chocobo any more Woozyshrooms.",
             },
         },
     },
 
     abyssea_classrooms_without_borders = {
         "Speak to Moreno-Toeno (A) at (K-5) near conflux #1 to begin the quest.",
-        "Go to Conflux #7 and defeat Manigordo for three Manigordo Tusks , or acquire them by any other means such as the Auction House .",
+        "Go to Conflux #7 and defeat Manigordo for three Manigordo Tusks, or acquire them by any other means such as the Auction House.",
         {
             text = "Trade the tusks to Moreno-Toeno (A) to complete the quest.",
             substeps = {
@@ -726,9 +726,9 @@ Q.STEPS = {
     abyssea_cleansing_the_canyon = {
         "Speak with Kupipi (A) at (H-12) to begin the quest.",
         {
-            text = "She will request x3 Sanguinets .",
+            text = "She will request x3 Sanguinets.",
             substeps = {
-                "These drop from Abyssea-unique monsters families (such as Clionid, Murex, Amoeban, etc.) in every Abyssea zone. They can also be purchased on the Auction House .",
+                "These drop from Abyssea-unique monsters families (such as Clionid, Murex, Amoeban, etc.) in every Abyssea zone. They can also be purchased on the Auction House.",
             },
         },
         "Trade her the Sanguinets to complete the quest.",
@@ -738,7 +738,7 @@ Q.STEPS = {
         {
             text = "Speak to Jonette (A) at (G-7) by Conflux #3.",
             substeps = {
-                "Interact with the ??? that can appear at the following spots to receive a Torn recipe page :",
+                "Interact with the ??? that can appear at the following spots to receive a Torn recipe page:",
                 "The ??? moves every 10 minutes in the order above.",
             },
         },
@@ -751,11 +751,11 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Attohwa) at (I-9) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Paralysis trap fluid .",
+                "You will receive Paralysis trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Rear Trap .",
+            text = "Travel to the nearest Rear Trap.",
             substeps = {
                 "A nearby one is a 30 second walk southwest of the Resistance Sapper.",
             },
@@ -771,7 +771,7 @@ Q.STEPS = {
         {
             text = "Once in place, check the Rear Trap again to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -787,11 +787,11 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Misareaux) at (I-7) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Paralysis trap fluid .",
+                "You will receive Paralysis trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Rear Trap .",
+            text = "Travel to the nearest Rear Trap.",
             substeps = {
                 "A nearby one is at located at (I-7) on the path behind the Chocobo Tamer (Misareaux) nearby.",
             },
@@ -807,7 +807,7 @@ Q.STEPS = {
         {
             text = "Once in place, check the Rear Trap again to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -823,11 +823,11 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Vunkerl) at (I-9) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Paralysis trap fluid .",
+                "You will receive Paralysis trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Rear Trap .",
+            text = "Travel to the nearest Rear Trap.",
             substeps = {
                 "A nearby one is at Veridical Conflux #05. Head north to (G-11).",
             },
@@ -843,7 +843,7 @@ Q.STEPS = {
         {
             text = "Once in place, check the Rear Trap again to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Paralysis trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -859,11 +859,11 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Attohwa) at (F-9) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Weakening trap fluid .",
+                "You will receive Weakening trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Fore Trap .",
+            text = "Travel to the nearest Fore Trap.",
             substeps = {
                 "A nearby one is at Veridical Conflux #04. From there, head north through the Chasm Gnats to (E-6) to find it.",
                 "The other trap is at (F-10), but further from a conflux.",
@@ -880,7 +880,7 @@ Q.STEPS = {
         {
             text = "Once in place, check the Fore Trap again to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -896,13 +896,13 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Misareaux) at (I-7) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Weakening trap fluid .",
+                "You will receive Weakening trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Fore Trap .",
+            text = "Travel to the nearest Fore Trap.",
             substeps = {
-                "A nearby one is at Veridical Conflux #02 . From there, head east to (K-8) to find it.",
+                "A nearby one is at Veridical Conflux #02. From there, head east to (K-8) to find it.",
                 "The other trap is at (G-4).",
             },
         },
@@ -917,7 +917,7 @@ Q.STEPS = {
         {
             text = "Once in place, click the Fore Trap again and select Cease trap fluid infusion to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -933,11 +933,11 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Vunkerl) at (I-9) near Veridical Conflux #00 to activate the quest",
             substeps = {
-                "You will receive Weakening trap fluid .",
+                "You will receive Weakening trap fluid.",
             },
         },
         {
-            text = "Travel to the nearest Fore Trap .",
+            text = "Travel to the nearest Fore Trap.",
             substeps = {
                 "A nearby one is at Veridical Conflux #02. From there, head north to (H-5) through the River Murex to find it.",
                 "The other trap is at (J-12).",
@@ -954,7 +954,7 @@ Q.STEPS = {
         {
             text = "Once in place, check the Fore Trap again to begin the infusion process.",
             substeps = {
-                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle , but you will have no indication of this.",
+                "If done correctly, you will be told to report back to the Resistance Sapper. You will also obtain a Weakening trap fluid bottle, but you will have no indication of this.",
             },
         },
         {
@@ -966,70 +966,70 @@ Q.STEPS = {
     },
 
     abyssea_dawn_of_death = {
-        "This quest automatically is flagged after completing the previous quest, The Truth Beckons .",
-        "Before progressing, you must obtain a new Traverser stone from Joachim . You will need to wait until his restock timer is up.",
+        "This quest automatically is flagged after completing the previous quest, The Truth Beckons.",
+        "Before progressing, you must obtain a new Traverser stone from Joachim. You will need to wait until his restock timer is up.",
         {
             text = "Examine any of the following Cavernous Maws to begin the corresponding quests.",
             substeps = {
                 "This can be done if you have the 1 hour lockout from the last quest but still have a Traverser Stone.",
-                "After flagging one of these quests, you unlock the ability to teleport to the corresponding maw for a fee of 200 Cruor .",
-                "Teleportation can be done via these abyssea maw teleportation NPCs .",
+                "After flagging one of these quests, you unlock the ability to teleport to the corresponding maw for a fee of 200 Cruor.",
+                "Teleportation can be done via these abyssea maw teleportation NPCs.",
             },
         },
         "You must complete any three of these sub-quests to proceed with the next main Abyssea quest.",
         "Vision of Abyssea",
         {
-            text = "Examine the Cavernous Maw in Konschtat Highlands at (I-12) to start the quest To Paste a Peiste .",
+            text = "Examine the Cavernous Maw in Konschtat Highlands at (I-12) to start the quest To Paste a Peiste.",
             substeps = {
                 "Survival Guide in North Gustaberg is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) for the quest Megadrile Menace .",
+            text = "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) for the quest Megadrile Menace.",
             substeps = {
                 "Unity Wanted Battle lv.99 to Tahrongi Canyon is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in La Theine Plateau at (E-4) for the quest A Goldstruck Gigas .",
+            text = "Examine the Cavernous Maw in La Theine Plateau at (E-4) for the quest A Goldstruck Gigas.",
             substeps = {
                 "Survival Guide in West Ronfaure is close.",
             },
         },
         "Scars of Abyssea",
         {
-            text = "Examine the Cavernous Maw in Jugner Forest at (J-8) to start the quest the quest The Beast of Bastore .",
+            text = "Examine the Cavernous Maw in Jugner Forest at (J-8) to start the quest the quest The Beast of Bastore.",
             substeps = {
                 "Survival Guide in Jugner Forest is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) for the quest A Fluttery Fiend .",
+            text = "Examine the Cavernous Maw in Buburimu Peninsula at (F-7) for the quest A Fluttery Fiend.",
             substeps = {
                 "Survival Guide in Buburimu Peninsula is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in Valkurm Dunes at (I-9) for the quest A Delectable Demon .",
+            text = "Examine the Cavernous Maw in Valkurm Dunes at (I-9) for the quest A Delectable Demon.",
             substeps = {
                 "Survival Guide in Valkurm Dunes is close.",
             },
         },
         "Heroes of Abyssea",
         {
-            text = "Examine the Cavernous Maw in Xarcabard at (H-8) to start the quest the quest A Man-eating Mite .",
+            text = "Examine the Cavernous Maw in Xarcabard at (H-8) to start the quest the quest A Man-eating Mite.",
             substeps = {
                 "Survival Guide in Xarcabard is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in North Gustaberg at (G-6) for the quest An Ulcerous Uragnite .",
+            text = "Examine the Cavernous Maw in North Gustaberg at (G-6) for the quest An Ulcerous Uragnite.",
             substeps = {
                 "Survival Guide in Oldton Movalpolos is close.",
             },
         },
         {
-            text = "Examine the Cavernous Maw in South Gustaberg at (J-10) for the quest A Beaked Blusterer .",
+            text = "Examine the Cavernous Maw in South Gustaberg at (J-10) for the quest A Beaked Blusterer.",
             substeps = {
                 "Home Point #1 in Bastok Mines is close.",
             },
@@ -1069,7 +1069,7 @@ Q.STEPS = {
         {
             text = "Enter the Hall of the Gods between 18:00 - and 5:00 for a cutscene.",
             substeps = {
-                "The next mission, Emissaries of God , is not flagged until you've seen its first cutscene.",
+                "The next mission, Emissaries of God, is not flagged until you've seen its first cutscene.",
             },
         },
     },
@@ -1077,7 +1077,7 @@ Q.STEPS = {
     abyssea_desert_rain_i_attohwa = {
         "Only one Ward Warden / Desert Rain / Crimson Carpet quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Resistance Sapper (Attohwa) at (F-9) (Veridical Conflux #00) and to begin the quest.",
-        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack .",
+        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack.",
         {
             text = "Travel to the spot marked on your map.",
             substeps = {
@@ -1101,7 +1101,7 @@ Q.STEPS = {
     abyssea_desert_rain_i_misareaux = {
         "Only one Ward Warden / Desert Rain / Crimson Carpet quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Resistance Sapper (Misareaux) at (I-7) (Veridical Conflux #00) and to begin the quest.",
-        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack .",
+        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack.",
         {
             text = "Travel to the spot marked on your map.",
             substeps = {
@@ -1111,7 +1111,7 @@ Q.STEPS = {
         {
             text = "Interact with the smaller Repair Trunk and begin filling your bag.",
             substeps = {
-                "There are three types of items: oil cloth, triangular flask, and elongated flask. The more you pack, the more rewards you get, but if you pack too much it will tear and you will fail the quest. Statuses of the sack varies from \"perfectly sound condition\" , \"feels a little bit taunt\" , \"showing signs of stretching\" , and \"squeaking under tension\" .",
+                "There are three types of items: oil cloth, triangular flask, and elongated flask. The more you pack, the more rewards you get, but if you pack too much it will tear and you will fail the quest. Statuses of the sack varies from \"perfectly sound condition\", \"feels a little bit taunt\", \"showing signs of stretching\", and \"squeaking under tension\".",
             },
         },
         {
@@ -1125,7 +1125,7 @@ Q.STEPS = {
     abyssea_desert_rain_i_vunkerl = {
         "Only one Ward Warden / Desert Rain / Crimson Carpet quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Resistance Sapper (Vunkerl) at (I-9) (Veridical Conflux #00) and to begin the quest.",
-        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack .",
+        "A spot on the map will be marked with a Target marker, and you will receive a Magicked flaxen sack.",
         {
             text = "Travel to the spot marked on your map.",
             substeps = {
@@ -1153,21 +1153,21 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Attohwa) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters. They seem to be more effective if you walk slowly past monsters with your chocobo close to you .",
-                "Obtain 6 Stamina Apples ; Use these on the chocobo when you are not nearby monsters. This will cause health to only have around a 10% chance to tic down, thus effectively extending your timer and the chocobo's health.",
-                "Obtain a minimum of 6 Azouph Greens . Using these on a chocobo raises it's health by 5%. You can only use these once every few minutes. If you try too often, you will receive a message that your chocobo is full.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters. They seem to be more effective if you walk slowly past monsters with your chocobo close to you.",
+                "Obtain 6 Stamina Apples; Use these on the chocobo when you are not nearby monsters. This will cause health to only have around a 10% chance to tic down, thus effectively extending your timer and the chocobo's health.",
+                "Obtain a minimum of 6 Azouph Greens. Using these on a chocobo raises it's health by 5%. You can only use these once every few minutes. If you try too often, you will receive a message that your chocobo is full.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
-                "Obtain a few M. Counteragents . There are a few Miasma that will appear on the path you need to take and will cause you to lose a lot of time if you cannot remove them right away.",
+                "Obtain a few M. Counteragents. There are a few Miasma that will appear on the path you need to take and will cause you to lose a lot of time if you cannot remove them right away.",
             },
         },
-        "Guide the chocobo to the Repair Crate located at (G-7) (tunnel near the Schnitter , not Inugami ) avoiding all aggro. You can use Silent Oil and Prism Powder on yourself, and your chocobo will continue to follow you as normal.",
+        "Guide the chocobo to the Repair Crate located at (G-7) (tunnel near the Schnitter, not Inugami ) avoiding all aggro. You can use Silent Oil and Prism Powder on yourself, and your chocobo will continue to follow you as normal.",
         {
             text = "You will receive a message when the chocobo is close enough and can be loaded.",
             substeps = {
                 "If a monster is in line-of-sight of a chocobo, it will run back to the last safe spot without monsters.",
                 "You will know it is running if it says \"Kweh!?\" in the log.",
                 "If it begins to run, quickly run back to it and interact for it to stop.",
-                "Recommended path: Use a Stamina Apple off the bat. Head straight north to the dead and, turn left and walk slightly north of the AT-04 Martello > Dark Miasma might be up past the martello > Use a Silent Oil here (You can get ambushed here if you do not use an oil, and your chocobo will run), turn north and hug the right wall when you can, and walk through the rocks > Dark Miasma might be up right before the Martello > AT-06 Martello > You will now reach the Schnitters . Go to the far wall and turn south, hug the wall and enter the tunnel to get to the target.",
+                "Recommended path: Use a Stamina Apple off the bat. Head straight north to the dead and, turn left and walk slightly north of the AT-04 Martello > Dark Miasma might be up past the martello > Use a Silent Oil here (You can get ambushed here if you do not use an oil, and your chocobo will run), turn north and hug the right wall when you can, and walk through the rocks > Dark Miasma might be up right before the Martello > AT-06 Martello > You will now reach the Schnitters. Go to the far wall and turn south, hug the wall and enter the tunnel to get to the target.",
                 "If a monster is in line-of-sight of a chocobo, it will run back to the last safe spot without monsters.",
             },
         },
@@ -1179,7 +1179,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Guide the chocobo back to the Chocobo Tamer (Attohwa) , and speak to them to complete the escort.",
+            text = "Guide the chocobo back to the Chocobo Tamer (Attohwa), and speak to them to complete the escort.",
             substeps = {
                 "Retrace your steps to get there. It is the quickest way.",
             },
@@ -1194,7 +1194,7 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Misareaux) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
                 "Blinkers last around one Earth Minute. You will see a message in the log when they wear off.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
             },
@@ -1220,7 +1220,7 @@ Q.STEPS = {
                 "If you are completing this quest just to complete it, only load one supply. More will slow down the chocobo.",
             },
         },
-        "Guide the chocobo back to the Chocobo Tamer (Misareaux) , and speak to them to complete the escort.",
+        "Guide the chocobo back to the Chocobo Tamer (Misareaux), and speak to them to complete the escort.",
         "Talk to the Resistance Sapper (Misareaux) once again to complete the quest and to receive your reward.",
     },
 
@@ -1231,7 +1231,7 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Vunkerl) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
                 "Blinkers last around one Earth Minute. You will see a message in the log when they wear off.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
             },
@@ -1253,325 +1253,325 @@ Q.STEPS = {
                 "If you are completing this quest just to complete it, only load one supply. More will slow down the chocobo.",
             },
         },
-        "Guide the chocobo back to the Chocobo Tamer (Vunkerl) , and speak to them to complete the escort.",
+        "Guide the chocobo back to the Chocobo Tamer (Vunkerl), and speak to them to complete the escort.",
         "Talk to the Resistance Sapper (Vunkerl) once again to complete the quest and to receive your reward",
     },
 
     abyssea_destiny_odyssey = {
         "Zone after completing the previous quest.",
         {
-            text = "Speak to Goraow (A) at (H-4). He will request a Sanguine Spike .",
+            text = "Speak to Goraow (A) at (H-4). He will request a Sanguine Spike.",
             substeps = {
-                "Sanguine Spikes drop from the Peiste Notorious Monster Gukumatz .",
+                "Sanguine Spikes drop from the Peiste Notorious Monster Gukumatz.",
             },
         },
         "Trade the Sanguine Spike to Goraow (A) for your reward.",
     },
 
     abyssea_dominion_op_01_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Sand Sweepers , which are located around (D-10) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Sand Sweepers, which are located around (D-10).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_01_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Sinister Seidels , which are located around (J-5) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Sinister Seidels, which are located around (J-5).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_01_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Mechanical Menaces , which are located around (G-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Mechanical Menaces, which are located around (G-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_02_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Surveyors , which are located around (D-12) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Surveyors, which are located around (D-12).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_02_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Monitors , which are located around (L-5) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Monitors, which are located around (L-5).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_02_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Spectators , which are located around (G-7) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Spectators, which are located around (G-7).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_03_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Bonfires , which are located around (E-11) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Bonfires, which are located around (E-11).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_03_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Stygian Djinns , which are located around (K-7) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Stygian Djinns, which are located around (K-7).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_03_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Sub-zero Gears , which are located around (F-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Sub-zero Gears, which are located around (F-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_04_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Dune Manticores , which are located around (F-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Dune Manticores, which are located around (F-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_04_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Faunus Wyverns , which are located around (I-10) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Faunus Wyverns, which are located around (I-10).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_04_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #6 .",
-        "Defeat 5 Snowflakes , which are located around (G-5) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #6.",
+        "Defeat 5 Snowflakes, which are located around (G-5).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_05_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Manigordos , which are located around (G-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Manigordos, which are located around (G-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_05_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Putrid Peapuks , which are located around (I-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Putrid Peapuks, which are located around (I-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_05_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #6 .",
-        "Defeat 5 Verglas Golems , which are located around (G-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #6.",
+        "Defeat 5 Verglas Golems, which are located around (G-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_06_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Camelopardalis , which are located around (F-7) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Camelopardalis, which are located around (F-7).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_06_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Glade Wivres , which are located around (J-7) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Glade Wivres, which are located around (J-7).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_06_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #6 .",
-        "Defeat 5 Olyphants , which are located around (F-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #6.",
+        "Defeat 5 Olyphants, which are located around (F-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_07_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Desert Puks , which are located around (G-10) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Desert Puks, which are located around (G-10).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_07_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Sensenmann , which are located around (D-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Sensenmann, which are located around (D-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_07_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #6 .",
-        "Defeat 5 Svelldrakes , which are located around (I-5) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #6.",
+        "Defeat 5 Svelldrakes, which are located around (I-5).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_08_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Ergdrakes , which are located around (G-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Ergdrakes, which are located around (G-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_08_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Deimobugards , which are located around (F-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Deimobugards, which are located around (F-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_08_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #6 .",
-        "Defeat 5 Adasaurus , which are located around (J-5) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #6.",
+        "Defeat 5 Adasaurus, which are located around (J-5).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_09_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Dune Cockatrice , which are located around (H-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Dune Cockatrice, which are located around (H-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_09_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Peak Pugils , which are located around (H-11) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Peak Pugils, which are located around (H-11).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_09_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Ectozoon , which are located around (L-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Ectozoon, which are located around (L-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_10_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Gastornis , which are located around (I-89) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Gastornis, which are located around (I-89).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_10_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Glen Crabs , which are located around (G-11) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Glen Crabs, which are located around (G-11).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_10_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Hoarmite , which are located around (K-7) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Hoarmite, which are located around (K-7).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_11_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Nannakolas , which are located around (I-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Nannakolas, which are located around (I-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_11_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Seelies , which are located around (F-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Seelies, which are located around (F-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_11_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Ermit Imps , which are located around (E-8) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Ermit Imps, which are located around (E-8).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_12_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Akrabs , which are located around (H-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Akrabs, which are located around (H-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_12_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Unseelies , which are located around (F-6) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Unseelies, which are located around (F-6).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_12_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #7 .",
-        "Defeat 5 Benumbed Vodorigas , which are located around (D-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #7.",
+        "Defeat 5 Benumbed Vodorigas, which are located around (D-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_13_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Fear Deargs , which are located around (E-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Fear Deargs, which are located around (E-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_13_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Goblin Plunderers , which are located around (I-12) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Goblin Plunderers, which are located around (I-12).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_13_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Bluffalo , which are located around (K-9) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Bluffalo, which are located around (K-9).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_14_altepa = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #8 .",
-        "Defeat 5 Barrens Treants , which are located around (F-11) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #8.",
+        "Defeat 5 Barrens Treants, which are located around (F-11).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_14_grauberg = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #4 .",
-        "Defeat 5 Goblin Meatgrinders , which are located around (J-11) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #4.",
+        "Defeat 5 Goblin Meatgrinders, which are located around (J-11).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dominion_op_14_uleguerand = {
-        "Accept the quest from the Dominion Sergeant located near Conflux #5 .",
-        "Defeat 5 Sierra Tigers , which are located around (I-10) .",
+        "Accept the quest from the Dominion Sergeant located near Conflux #5.",
+        "Defeat 5 Sierra Tigers, which are located around (I-10).",
         "Report to any Dominion Sergeant to complete the quest.",
-        "For more information, see Dominion Ops .",
+        "For more information, see Dominion Ops.",
     },
 
     abyssea_dropping_the_bomb = {
         "Speak to Veit (A) at (H-4). He is northeast of Conflux #5.",
         {
-            text = "He will request a Powder Casket . These can be obtained by defeating Brine Crab , which are fished up in the nearby stream.",
+            text = "He will request a Powder Casket. These can be obtained by defeating Brine Crab, which are fished up in the nearby stream.",
             substeps = {
                 "To fish up the Brine Crab almost any pole/bait combination works. The crabs will have the \"ferociously bites\" message.",
                 "The drop rate is U from the brine crab. Treasure Hunter is strongly encouraged.",
             },
         },
-        "After obtaining the Powder Casket , trade it back to Veit (A) .",
+        "After obtaining the Powder Casket, trade it back to Veit (A).",
         "There is a chance he will not accept the casket because it has \"moisture\" inside. You will have to obtain another casket.",
         "After you trade an acceptable casket, you will complete the quest.",
         "The Versa Breeches will have a random on them.",
@@ -1592,15 +1592,15 @@ Q.STEPS = {
         {
             text = "The titles necessary are:",
             substeps = {
-                "Iratham Capturer: Iratham in Abyssea - Tahrongi .",
-                "Kutharei Unhorser: Kutharei in Abyssea - Misareaux .",
-                "Sippoy Capturer: Sippoy in Abyssea - Vunkerl .",
-                "Yaanei Crasher: Yaanei in Abyssea - Attohwa .",
-                "Rani Decrowner: Rani in Abyssea - Altepa .",
-                "Raja Regicide: Raja in Abyssea - Grauberg .",
+                "Iratham Capturer: Iratham in Abyssea - Tahrongi.",
+                "Kutharei Unhorser: Kutharei in Abyssea - Misareaux.",
+                "Sippoy Capturer: Sippoy in Abyssea - Vunkerl.",
+                "Yaanei Crasher: Yaanei in Abyssea - Attohwa.",
+                "Rani Decrowner: Rani in Abyssea - Altepa.",
+                "Raja Regicide: Raja in Abyssea - Grauberg.",
             },
         },
-        "Talk to Joachim after killing all 6 Abyssea Caturae for a cutscene and receive the Abyssite of discernment .",
+        "Talk to Joachim after killing all 6 Abyssea Caturae for a cutscene and receive the Abyssite of discernment.",
         {
             text = "Enter the Hall of the Gods between 18:00 - and 5:00 for a cutscene.",
             substeps = {
@@ -1611,11 +1611,11 @@ Q.STEPS = {
 
     abyssea_explosive_endeavors = {
         "Speak to Fontoumant (A) at (H-7), Veridical Conflux #04, to begin the quest.",
-        "You will be given Anti-Abyssean grenade #01 , Anti-Abyssean grenade #02 , Anti-Abyssean grenade #03 .",
+        "You will be given Anti-Abyssean grenade #01, Anti-Abyssean grenade #02, Anti-Abyssean grenade #03.",
         {
-            text = "Examine the Dark Fissure targetable locations in the canyons at (F-6), (F-7), and (H-6). Select the option Attack the darkness! .",
+            text = "Examine the Dark Fissure targetable locations in the canyons at (F-6), (F-7), and (H-6). Select the option Attack the darkness!.",
             substeps = {
-                "The first fissure at (H-6) is just past Fontoumant (A) amongst some Pasture Funguars .",
+                "The first fissure at (H-6) is just past Fontoumant (A) amongst some Pasture Funguars.",
                 "The second two are in the same chasm where Ordelle's Caves would be. It is quickest just to run to it from Veridical Conflux #04.",
             },
         },
@@ -1630,42 +1630,42 @@ Q.STEPS = {
             text = "Speak to Teigero-Bangero (A) at (E-7) to begin the quest.",
             substeps = {
                 "Conflux #8 is closest, head southwest through the Helter-Skelters and Speltercaps.",
-                "You will receive a Smudged letter .",
+                "You will receive a Smudged letter.",
             },
         },
         {
             text = "Travel to Abyssea - Attohwa and deliver the Smudged letter to Naruru (A) at the entrance.",
             substeps = {
-                "She will give you a Yellow linkpearl .",
+                "She will give you a Yellow linkpearl.",
             },
         },
         "Return to Teigero-Bangero (A) in Abyssea - Vunkerl and speak to him to complete the quest.",
         {
-            text = "After completing the quest, head to Abyssea - Misareaux . You are looking for Panta-Putta (A) .",
+            text = "After completing the quest, head to Abyssea - Misareaux. You are looking for Panta-Putta (A).",
             substeps = {
-                "It is recommended to use Widescan . He roams a very wide area. He makes a round trip from Conflux #00 > #04 > #07 > Repeat",
+                "It is recommended to use Widescan. He roams a very wide area. He makes a round trip from Conflux #00 > #04 > #07 > Repeat",
             },
         },
         {
-            text = "Trade him the Taru Tot Toyset to receive a Jester's hat .",
+            text = "Trade him the Taru Tot Toyset to receive a Jester's hat.",
             substeps = {
-                "The Taru Tot Toyset will not be lost .",
+                "The Taru Tot Toyset will not be lost.",
             },
         },
-        "Finally return to Naruru (A) in Abyssea - Attohwa to trade the Jester's hat for a Jester's Hat .",
+        "Return to Naruru (A) in Abyssea - Attohwa to trade the Jester's hat for a Jester's Hat.",
     },
 
     abyssea_fear_of_the_dark_iii = {
         "Speak to Secodiand (A) at (E-3) to start the quest.",
         {
-            text = "Bring back 3 Clionid Wings .",
+            text = "Bring back 3 Clionid Wings.",
             substeps = {
                 "These can easily be farmed up from the Veld Clionids around the (D-4)/(D-5) area in the same zone, or obtained off the auction house.",
-                "It is recommended to save Sanguinets dropped from these monsters if you plan to max fame for Abyssea - Vunkerl , as its quick claim to fame quest, A Ward to End All Wards , accepts this item.",
+                "It is recommended to save Sanguinets dropped from these monsters if you plan to max fame for Abyssea - Vunkerl, as its quick claim to fame quest, A Ward to End All Wards, accepts this item.",
             },
         },
         {
-            text = "This quest can be completed multiple times to build fame quickly in Abyssea - La Theine .",
+            text = "This quest can be completed multiple times to build fame quickly in Abyssea - La Theine.",
             substeps = {
                 "Around 10 stacks, or 120 wings, are required for rank 6 fame.",
             },
@@ -1716,7 +1716,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "Upon completing Dawn of Death Joachim will ask you to travel to the stone circle in La Theine Plateau and meet a mystery man. He'll only be available to you between the hours of 18:00 and 05:00 (dusk to dawn). Travel to the ??? in the stone circle (G-6) and click on the ??? for a cutscene. This will complete this quest and automatically start you on the quest An Officer and a Pirate .",
+            text = "Upon completing Dawn of Death Joachim will ask you to travel to the stone circle in La Theine Plateau and meet a mystery man. He'll only be available to you between the hours of 18:00 and 05:00 (dusk to dawn). Travel to the ??? in the stone circle (G-6) and click on the ??? for a cutscene. This will complete this quest and automatically start you on the quest An Officer and a Pirate.",
             substeps = {
                 "Unity Warp 99 to La Theine is the fastest way to this location.",
             },
@@ -1725,7 +1725,7 @@ Q.STEPS = {
 
     abyssea_flown_the_coop = {
         {
-            text = "Speak to Brutus (A) in Abyssea - Attohwa (H-8). He will trade you Gysahl Greens .",
+            text = "Speak to Brutus (A) in Abyssea - Attohwa (H-8). He will trade you Gysahl Greens.",
             substeps = {
                 "This location is at Veridical Conflux #08. If you have not gone to this location yet, you need to speak to Red Ghost (A) who will teleport you above the ledge.",
             },
@@ -1737,11 +1737,11 @@ Q.STEPS = {
             },
         },
         {
-            text = "A Chocobo NPC will appear upon trading Gysahl Greens .",
+            text = "A Chocobo NPC will appear upon trading Gysahl Greens.",
             substeps = {
                 "Your goal is to sneak up behind the Chocobo NPC and examine it, should it see you, it will get spooked and run away.",
                 "Chocobos behave the following ways:",
-                "After a certain amount of time has elapsed or the Chocobo has spooked too many times, it will run away and you will have to lure it back with another Gysahl Greens , but you need to supply it.",
+                "After a certain amount of time has elapsed or the Chocobo has spooked too many times, it will run away and you will have to lure it back with another Gysahl Greens, but you need to supply it.",
                 "There is a minute cool-down before you can get another chocobo to appear.",
             },
         },
@@ -1759,7 +1759,7 @@ Q.STEPS = {
         {
             text = "Teleport to Veridical Conflux #04. You need to walk into the Caoineag and find the targetable Tahrongi Cacti location at (F-6).",
             substeps = {
-                "You must click it between 20:00 and 4:00 game time for Cup of Tahrongi cactus water .",
+                "You must click it between 20:00 and 4:00 game time for Cup of Tahrongi cactus water.",
             },
         },
         {
@@ -1774,12 +1774,12 @@ Q.STEPS = {
     abyssea_for_want_of_a_pot = {
         "Speak to Naruru (A) at (G-10) (Veridical Conflux #01) to begin this quest.",
         {
-            text = "Go to (H-8) and interact with the targetable location Cargo Crate to receive a Damaged stewpot .",
+            text = "Go to (H-8) and interact with the targetable location Cargo Crate to receive a Damaged stewpot.",
             substeps = {
-                "The quickest way here is by going to Veridical Conflux #06 and head south past the Spuks .",
+                "The quickest way here is by going to Veridical Conflux #06 and head south past the Spuks.",
             },
         },
-        "Return to Naruru (A) and speak to her to give her the Damaged stewpot .",
+        "Return to Naruru (A) and speak to her to give her the Damaged stewpot.",
         {
             text = "Head to Windurst Waters (North) and speak to Ranpi-Monpi at (D-9).",
             substeps = {
@@ -1787,31 +1787,31 @@ Q.STEPS = {
             },
         },
         {
-            text = "You will need to obtain some Sieglinde Putty .",
+            text = "You will need to obtain some Sieglinde Putty.",
             substeps = {
                 "This can be done multiple ways. If you have Alchemy 30 you can craft it, it can be bought from Odoba in the Alchemy guild for 4,000 gil if you are an Apprentice Alchemist, or you can just buy it off the AH.",
             },
         },
-        "Once you get the Sieglinde Putty , trade it to Ranpi-Monpi . You will receive Naruru's stewpot .",
+        "Once you get the Sieglinde Putty, trade it to Ranpi-Monpi. You will receive Naruru's stewpot.",
         "Return to Naruru (A) in Abyssea - Attohwa to complete the quest.",
     },
 
     abyssea_frozen_flame_redux = {
         "Talk to Guilboire (A) at (F-7) (Conflux #7) to begin this quest.",
-        "He will provide you with two key items, the Snoll reflector and Experiment cheat sheet .",
+        "He will provide you with two key items, the Snoll reflector and Experiment cheat sheet.",
         "Walk north to (G-5) and find the Impact Point location.",
         "The Notorious Monster Frost Bomb Mk-II will spawn to the west.",
         "Run up and attack it, which will raise its HP. Your goal is to raise its HP to at least 50%. The higher it is, the more Cruor reward you receive.",
         {
-            text = "Pull it towards the Impact Point . It will use Hypothermal Combustion regardless of its current TP. This will deal damage to the point, but not to you.",
+            text = "Pull it towards the Impact Point. It will use Hypothermal Combustion regardless of its current TP. This will deal damage to the point, but not to you.",
             substeps = {
                 "If you disengage, you will fail this quest. This makes Trust Magic more difficult to use if they pull hate.",
             },
         },
         {
-            text = "Examine the Impact Point to receive a Frosted snoll reflector .",
+            text = "Examine the Impact Point to receive a Frosted snoll reflector.",
             substeps = {
-                "If in a party, all players can receive the Frosted snoll reflector from the same Frost Bomb Mk-II as long as they click the Impact Point before it uses Hypothermal Combustion .",
+                "If in a party, all players can receive the Frosted snoll reflector from the same Frost Bomb Mk-II as long as they click the Impact Point before it uses Hypothermal Combustion.",
             },
         },
         {
@@ -1826,17 +1826,17 @@ Q.STEPS = {
     abyssea_full_of_himself_alchemist = {
         "Speak to Julio (A) at (F-10) (Northwest of Conflux #02).",
         {
-            text = "He will ask for 3 Purple Polypores .",
+            text = "He will ask for 3 Purple Polypores.",
             substeps = {
                 "Purple Polypores drop off of Shadow Funguars to the northeast, around (G-8)/(H-8), next to Conflux #04.",
                 "The drop rate is fairly low, so a Thief with Treasure Hunter is recommended.",
             },
         },
         {
-            text = "Trade him three Purple Polypores to complete the quest and receive two Soothing Potions .",
+            text = "Trade him three Purple Polypores to complete the quest and receive two Soothing Potions.",
             substeps = {
-                "The followup quest, The Walking Wounded , requires 5 Soothing Potions . However, you can't start that quest until fame level 4.",
-                "It is advised to stockpile your potions until you are able to start that quest, since this pair of quests is the easiest way to max fame in Abyssea - Konschtat .",
+                "The followup quest, The Walking Wounded, requires 5 Soothing Potions. However, you can't start that quest until fame level 4.",
+                "It is advised to stockpile your potions until you are able to start that quest, since this pair of quests is the easiest way to max fame in Abyssea - Konschtat.",
                 "30 completions of this quest and 12 completions of the following quest (using the 60 accumulated Potions from this quest) will max out zone fame.",
             },
         },
@@ -1848,8 +1848,8 @@ Q.STEPS = {
         {
             text = "He asks for one purchasable \"Goblin\" item and tells you one of three locations.",
             substeps = {
-                "Possible items :",
-                "Possible locations :",
+                "Possible items:",
+                "Possible locations:",
             },
         },
         {
@@ -1863,7 +1863,7 @@ Q.STEPS = {
     },
 
     abyssea_gift_of_light = {
-        "Speak to Amaura (A) at (E-3) near Conflux #01 to begin the quest. She asks for a Sunbeam fragment .",
+        "Speak to Amaura (A) at (E-3) near Conflux #01 to begin the quest. She asks for a Sunbeam fragment.",
         {
             text = "Examine the Jagged Cliff targetable location at the southeast corner of (J-6) for a mini game. Jagged Cliff",
             substeps = {
@@ -1878,9 +1878,9 @@ Q.STEPS = {
             },
         },
         {
-            text = "Once you have the Sunbeam fragment , return to Amaura (A) at (E-3) for your reward.",
+            text = "Once you have the Sunbeam fragment, return to Amaura (A) at (E-3) for your reward.",
             substeps = {
-                "If you already have a Hi-Reraiser , you must dispose of it to complete the quest.",
+                "If you already have a Hi-Reraiser, you must dispose of it to complete the quest.",
             },
         },
         "Zoning is required to repeat this quest.",
@@ -1888,14 +1888,14 @@ Q.STEPS = {
 
     abyssea_hazy_prospects = {
         { note = "Note: To unlock this you need Rank 2 fame in Abyssea - Attohwa. Completing about 6 quests should get you to Rank 2. Commonly doing Something in the Air once, Wayward Wares once, and then repeating Crimson Carpet II (Attohwa) 4 times should get you Rank 2." },
-        "Speak to Harith (A) at (G-10) to accept the quest and obtain Miasmal counteragent recipe .",
+        "Speak to Harith (A) at (G-10) to accept the quest and obtain Miasmal counteragent recipe.",
         {
-            text = "Craft, or otherwise obtain, one or more Miasmal Counteragents .",
+            text = "Craft, or otherwise obtain, one or more Miasmal Counteragents.",
             substeps = {
                 "The item can only be crafted with the recipe in possession. The major ingredients are purchasable from NPCs:",
-                "Salinator : Upih Khachla in Windurst Waters North - (H-9) for 4,048 Gil",
-                "2x Distilled Water : Buy just about anywhere. 3 places in Windurst Waters .",
-                "Seashell : Shih Tayuun in Windurst Woods - (H-13) for 90 Gil.",
+                "Salinator: Upih Khachla in Windurst Waters North - (H-9) for 4,048 Gil",
+                "2x Distilled Water: Buy just about anywhere. 3 places in Windurst Waters.",
+                "Seashell: Shih Tayuun in Windurst Woods - (H-13) for 90 Gil.",
             },
         },
         {
@@ -1903,7 +1903,7 @@ Q.STEPS = {
             substeps = {
                 "One is located close to Veridical Conflux #03.",
                 "Another is located right next to Veridical Conflux #07.",
-                "You will not receive a message when you trade the M. Counteragent , but you know you were sucessful if the Miasma vanishes and lets you walk through.",
+                "You will not receive a message when you trade the M. Counteragent, but you know you were sucessful if the Miasma vanishes and lets you walk through.",
             },
         },
         "Return to Harith (A) to complete the quest.",
@@ -1918,10 +1918,10 @@ Q.STEPS = {
         {
             text = "Speak to Ken (A) at (G-8), north of Conflux #4, to begin this quest.",
             substeps = {
-                "Depending on whether or not you completed the quest All by Myself , you may have to speak to him twice.",
+                "Depending on whether or not you completed the quest All by Myself, you may have to speak to him twice.",
             },
         },
-        "Examine each crate behind Ken (A) , and obtain the Soulgauger SGR-1 and purchase some Blank Gauger Plates from the other.",
+        "Examine each crate behind Ken (A), and obtain the Soulgauger SGR-1 and purchase some Blank Gauger Plates from the other.",
         "Capture a Gauger Plate from any Notorious Monster in Abyssea.",
         "Return the plate to Ken (A) for your reward.",
         "Zoning is not required to repeat this quest, but it is limited to one completion per Vana'diel day.",
@@ -1942,7 +1942,7 @@ Q.STEPS = {
     },
 
     abyssea_heroes_of_abyssea_quest = {
-        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Beaked Blusterer , A Man-eating Mite , or An Ulcerous Uragnite .",
+        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Beaked Blusterer, A Man-eating Mite, or An Ulcerous Uragnite.",
         "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
     },
 
@@ -1953,11 +1953,11 @@ Q.STEPS = {
                 "You'll need to speak to Kupipi (A) at (H-12) beforehand if you've never done so before.",
             },
         },
-        "Next speak with Kopuro-Popuro (A) at (F-9) in the Western Encampment near Veridical Conflux #03.",
+        "Speak with Kopuro-Popuro (A) at (F-9) in the Western Encampment near Veridical Conflux #03.",
         {
             text = "You'll be tasked with retrieving a Ripe starfruit from the Bottomless Box next to him, in order to do this however you must gain its affection.",
             substeps = {
-                "You're suggested to use various emotes such /cheer, /clap, /praise, /smile or /joy to gain the affection of the Bottomless Box .",
+                "You're suggested to use various emotes such /cheer, /clap, /praise, /smile or /joy to gain the affection of the Bottomless Box.",
             },
         },
         "Return to Apururu (A) to complete the quest.",
@@ -1965,33 +1965,33 @@ Q.STEPS = {
 
     abyssea_his_bridge_his_beloved = {
         {
-            text = "Speak to Cheupirudaux (A) (E-7), near Conflux #04 or Conflux #08 in Abyssea - Vunkerl .",
+            text = "Speak to Cheupirudaux (A) (E-7), near Conflux #04 or Conflux #08 in Abyssea - Vunkerl.",
             substeps = {
-                "He will give you a Woodworker's belt and x2 Viscous Spittle .",
+                "He will give you a Woodworker's belt and x2 Viscous Spittle.",
             },
         },
         {
             text = "Examine the Derelict Bridge targetable location at (F-7).",
             substeps = {
-                "If it creaks, trade x2 Viscous Spittle .",
-                "If it wavers, trade x4 Viscous Spittle .",
-                "If it crumbles, trade x5 Viscous Spittle .",
+                "If it creaks, trade x2 Viscous Spittle.",
+                "If it wavers, trade x4 Viscous Spittle.",
+                "If it crumbles, trade x5 Viscous Spittle.",
             },
         },
         "Return to Cheupirudaux to receive your reward.",
         "Zoning is required to repeat this quest.",
         {
-            text = "Speak to Cheupirudaux (A) (E-7), near Conflux #04 or Conflux #08 in Abyssea - Vunkerl .",
+            text = "Speak to Cheupirudaux (A) (E-7), near Conflux #04 or Conflux #08 in Abyssea - Vunkerl.",
             substeps = {
-                "He will give you the Woodworker's belt , but you will have to have to obtain your own Viscous Spittle from Spitting Spiders east of Conflux #05.",
+                "He will give you the Woodworker's belt, but you will have to have to obtain your own Viscous Spittle from Spitting Spiders east of Conflux #05.",
             },
         },
         {
             text = "Repeat the process above, examine a bridge, and make repairs the the bridge with Spittle accordingly:",
             substeps = {
-                "If it creaks, trade x2 Viscous Spittle .",
-                "If it wavers, trade x4 Viscous Spittle .",
-                "If it crumbles, trade x5 Viscous Spittle .",
+                "If it creaks, trade x2 Viscous Spittle.",
+                "If it wavers, trade x4 Viscous Spittle.",
+                "If it crumbles, trade x5 Viscous Spittle.",
             },
         },
         "It is likely the more bridges you repair, the more Cruor you receive. It is unknown if fame earned varies or not based on how many bridges repaired.",
@@ -2001,10 +2001,10 @@ Q.STEPS = {
     abyssea_home_home_on_the_range = {
         "Talk to the Moogle (A) at (F-7) Conflux #7. He will ask you to find him materials.",
         "Retrieve a Piece of sodden oak lumber from the Lumber Chest at Conflux #1 near the maw.",
-        "Return to the Moogle (A) , who takes the log then asks for a Sodden linen cloth .",
+        "Return to the Moogle (A), who takes the log then asks for a Sodden linen cloth.",
         "You can find one in the Fabric Chest at Conflux #6.",
         {
-            text = "After you turn that into him, the final item he needs is a Dhorme khimaira's mane .",
+            text = "After you turn that into him, the final item he needs is a Dhorme khimaira's mane.",
             substeps = {
                 "You must defeat Dhorme Khimaira to obtain this. It will drop to everyone who has this quest active.",
             },
@@ -2024,15 +2024,15 @@ Q.STEPS = {
             },
         },
         { note = "Note that there are seven total crates around the area. Only three will give you an item. There is also one hiding behind the Maw exit." },
-        "Speak to Raibaht (A) .",
+        "Speak to Raibaht (A).",
         "Return to Ayame (A) to complete the quest.",
     },
 
     abyssea_i_dream_of_flowers = {
         "Speak to Goraow (A) at Abyssea - Misareaux (G-5), northeast of Conflux #5.",
-        "Trade Goraow a Lilac .",
+        "Trade Goraow a Lilac.",
         "Examine the Grassy Mound in Abyssea - Misareaux at (K-12), near Conflux #8.",
-        "Trade the Lilac to the Grassy Mound .",
+        "Trade the Lilac to the Grassy Mound.",
         "Speak to Goraow (A) to complete the quest.",
     },
 
@@ -2041,7 +2041,7 @@ Q.STEPS = {
         {
             text = "You must speak to the following four NPCs:",
             substeps = {
-                "Purere (A) at the same Conflux as Tyamah (A) .",
+                "Purere (A) at the same Conflux as Tyamah (A).",
                 "Latifah (A) at Conflux #6.",
                 "Valderotaux (A) at Conflux #5. (He is through the southern tunnel).",
                 "Polly (A) at Conflux #1.",
@@ -2069,14 +2069,14 @@ Q.STEPS = {
 
     abyssea_let_there_be_light = {
         "Talk to Zauko (A) at (K-9) near Conflux #5.",
-        "Then interact with the Coal Casket behind him for a Torch coal .",
+        "Interact with the Coal Casket behind him for a Torch coal.",
         {
             text = "Walk to the second encampment near Conflux #6 and place the coal into the Coal Casket next to the flames.",
             substeps = {
                 "The Torch coal is destroyed when you use a conflux, so you must walk to each encampment.",
             },
         },
-        "Afterwards, walk to the third encampment near Conflux #7 and place the coal into the Coal Casket next to the flames.",
+        "Walk to the third encampment near Conflux #7 and place the coal into the Coal Casket next to the flames.",
         {
             text = "You may then use Conflux #7 to warp back to Conflux #5 to get back to Zauko (A) for your reward.",
             substeps = {
@@ -2088,7 +2088,7 @@ Q.STEPS = {
 
     abyssea_look_out_below = {
         {
-            text = "Speak to Baldric (A) at Outpost 2 which is at (J-5) Conflux #6. He asks you to find Fresh Snowfall locations, and load them with the Subniveal mines and Firesand .",
+            text = "Speak to Baldric (A) at Outpost 2 which is at (J-5) Conflux #6. He asks you to find Fresh Snowfall locations, and load them with the Subniveal mines and Firesand.",
             notes = {
                 "Note that actual Firesand is not needed.",
             },
@@ -2114,17 +2114,17 @@ Q.STEPS = {
         "You must zone after completing Motherly Love in order to start this quest.",
         "Speak to Alisa (A) (C-11), at the outpost near Conflux #8, to begin the quest.",
         "She will return the Moon pendant to you to bury for her.",
-        "Walk south through the tunnel and up by the Surveyors .",
+        "Walk south through the tunnel and up by the Surveyors.",
         "Interact with the ??? at (D-11) on the concrete slab for a cutscene.",
-        "Afterwards, interact with it once more for a Emerald abyssite of expertise .",
+        "Interact with it once more for a Emerald abyssite of expertise.",
         "Return and speak with Alisa (A) to complete the quest.",
     },
 
     abyssea_looking_for_lookouts = {
         "Speak to Colti (A) in Abyssea - Attohwa at (H-8) (Veridical Conflux #08) to begin this quest.",
-        "You will receive x5 Parradamo supply pack .",
+        "You will receive x5 Parradamo supply pack.",
         {
-            text = "You must speak to 5 Resistance Fighter NPCs scattered around the Parradamo Tor . (Check the very pretty map for approximate locations.)",
+            text = "You must speak to 5 Resistance Fighter NPCs scattered around the Parradamo Tor. (Check the very pretty map for approximate locations.)",
             substeps = {
                 "A Hume Female Resistance Fighter can be found at the southern base of the Parradamo Tor at (J-9).",
                 "A Tarutaru Resistance Fighter can be found partway up the southern base of the Parradamo Tor wandering around the cliff at (J-9).",
@@ -2139,12 +2139,12 @@ Q.STEPS = {
 
     abyssea_lost_memories = {
         "Speak to Halver (A) at (L-11), near Veridical Conflux #06.",
-        "He will request two Lambent Scales .",
-        "Lambent Scales drop from Farfadets , a Thief with a high level of Treasure Hunter is recommended as the drop rate is not superb.",
+        "He will request two Lambent Scales.",
+        "Lambent Scales drop from Farfadets, a Thief with a high level of Treasure Hunter is recommended as the drop rate is not superb.",
         {
-            text = "Trade the Lambent Scales to Halver (A) .",
+            text = "Trade the Lambent Scales to Halver (A).",
             substeps = {
-                "You will complete the quest, and receive Vial of lambent potion . This is used for the next quest.",
+                "You will complete the quest, and receive Vial of lambent potion. This is used for the next quest.",
             },
         },
         "Completing this quest 8 more times gives enough fame to open up Rank 6 fame quest with Glenne (A) across from Halver (A)",
@@ -2156,9 +2156,9 @@ Q.STEPS = {
         "You do not need to zone after completing The Mysterious Head Patrol to start this quest.",
         "Talk to Eight of Clubs (A) at (H-8), southeast of Conflux #5, to begin this quest.",
         {
-            text = "Interact with the Faint Glister targetable location at the northwest corner of (J-8) to obtain an Elegant gemstone .",
+            text = "Interact with the Faint Glister targetable location at the northwest corner of (J-8) to obtain an Elegant gemstone.",
             substeps = {
-                "This is south of Conflux #8, or a short walk from Eight of Clubs (A) .",
+                "This is south of Conflux #8, or a short walk from Eight of Clubs (A).",
             },
         },
         "Return to Eight of Clubs (A) to complete the quest.",
@@ -2170,8 +2170,8 @@ Q.STEPS = {
     },
 
     abyssea_megadrile_menace = {
-        "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) while in possession of a Traverser stone .",
-        "Defeat the Notorious Monster Glavoid .",
+        "Examine the Cavernous Maw in Tahrongi Canyon at (H-12) while in possession of a Traverser stone.",
+        "Defeat the Notorious Monster Glavoid.",
         "Exit Abyssea - Tahrongi for a cutscene that finishes the quest.",
         "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
         {
@@ -2191,20 +2191,20 @@ Q.STEPS = {
     },
 
     abyssea_missing_in_action = {
-        "Speak to Iron Eater (A) (K-7) Abyssea - Misareaux to activate the quest and to receive Iron Eater's pearlsack .",
-        "Travel to Conflux #3 and speak to Mathurin (A) .",
-        "Travel to Conflux #5 and head to the northeast corner of (G-5) to speak to Quasim (A) .",
-        "Travel to Conflux #6 and head South to the northwest corner of (G-8) to speak to Fariel (A) .",
+        "Speak to Iron Eater (A) (K-7) Abyssea - Misareaux to activate the quest and to receive Iron Eater's pearlsack.",
+        "Travel to Conflux #3 and speak to Mathurin (A).",
+        "Travel to Conflux #5 and head to the northeast corner of (G-5) to speak to Quasim (A).",
+        "Travel to Conflux #6 and head South to the northwest corner of (G-8) to speak to Fariel (A).",
         "Head back to and speak with Iron Eater (A) to receive your reward.",
     },
 
     abyssea_motherly_love = {
         "Speak to Alisa (A) (C-11), at the outpost near Conflux #8, to begin the quest.",
-        "Speak to Malene (A) nearby to learn about the monster Bugul Noz .",
-        "Travel to Conflux #6, and obtain a Sabulous Clay from the Fear Dearg .",
+        "Speak to Malene (A) nearby to learn about the monster Bugul Noz.",
+        "Travel to Conflux #6, and obtain a Sabulous Clay from the Fear Dearg.",
         "Spawn Bugul Noz at the ??? in (E-10).",
-        "Defeat him and you will obtain the Moon pendant .",
-        "Return and speak to Alisa (A) .",
+        "Defeat him and you will obtain the Moon pendant.",
+        "Return and speak to Alisa (A).",
         "Speak to Malene (A) to complete the quest.",
     },
 
@@ -2212,7 +2212,7 @@ Q.STEPS = {
         {
             text = "Speak to Raibaht (A) at (I-13)",
             substeps = {
-                "He will give you a Vat of martello fuel .",
+                "He will give you a Vat of martello fuel.",
                 "If you zone out of Abyssea - Konschtat at any point during this quest, you may have to restart it.",
             },
         },
@@ -2221,17 +2221,17 @@ Q.STEPS = {
         {
             text = "Move to the side of the Martello that is mentioned within the menu, and replenish the Martello.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
-        "Return to Raibaht (A) , he will request that you replenish a Martello via the Refuel and Replenish (Konschtat) quest.",
+        "Return to Raibaht (A), he will request that you replenish a Martello via the Refuel and Replenish (Konschtat) quest.",
     },
 
     abyssea_out_of_touch = {
         "Speak to Glenne (A) at (L-11), Veridical Conflux #06.",
-        "She will give you a Rainbow-colored linkpearl .",
+        "She will give you a Rainbow-colored linkpearl.",
         {
-            text = "Locate and speak to Aaveleon (A) . He has a fairly large roaming pattern that includes most of Abyssea - La Theine.",
+            text = "Locate and speak to Aaveleon (A). He has a fairly large roaming pattern that includes most of Abyssea - La Theine.",
             substeps = {
                 "Wide scan greatly aids in tracking him down.",
                 "Roaming path seems to be along the main roads, but he may also wander into the valleys.",
@@ -2248,9 +2248,9 @@ Q.STEPS = {
             },
         },
         {
-            text = "You must procure a Gauger Plate of one of the following NMs in Abyssea - Konschtat :",
+            text = "You must procure a Gauger Plate of one of the following NMs in Abyssea - Konschtat:",
             substeps = {
-                "Kukulkan , Turul , Fistule , Bloodeye Vileberry , Eccentric Eve , Depths Digester are confirmed to work. More NMs might be eligible.",
+                "Kukulkan, Turul, Fistule, Bloodeye Vileberry, Eccentric Eve, Depths Digester are confirmed to work. More NMs might be eligible.",
             },
         },
         "Return to Naji (A) and trade one of your acceptable Gauger Plates to complete the quest.",
@@ -2261,7 +2261,7 @@ Q.STEPS = {
         "Talk to Excenmille (A) at (G-11) to begin this quest. He is east of Conflux #5.",
         "Obtain Puppet's Blood from Desert Puks just to the north.",
         "Use the blood to pop Waugyl at (F-9).",
-        "Defeat Waugyl , then everyone with the quest active will receive the Waugyl's claw .",
+        "Defeat Waugyl, then everyone with the quest active will receive the Waugyl's claw.",
         "Return and speak to Excenmille (A) to collect your reward.",
         "Zoning is required to repeat this quest.",
     },
@@ -2270,7 +2270,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Altepa) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2285,7 +2285,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Altepa) to complete the quest.",
@@ -2295,7 +2295,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Attohwa) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2310,7 +2310,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Attohwa) to complete the quest.",
@@ -2320,7 +2320,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Grauberg) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2335,7 +2335,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Grauberg) to complete the quest.",
@@ -2345,7 +2345,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Konschtat) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2360,7 +2360,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Konschtat) to complete the quest.",
@@ -2370,7 +2370,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (La Theine) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2385,7 +2385,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (La Theine) to complete the quest.",
@@ -2395,7 +2395,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Misareaux) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2410,7 +2410,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Misareaux) to complete the quest.",
@@ -2420,7 +2420,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Tahrongi) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2435,7 +2435,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Tahrongi) to complete the quest.",
@@ -2445,7 +2445,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Uleguerand) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2460,7 +2460,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Uleguerand) to complete the quest.",
@@ -2470,7 +2470,7 @@ Q.STEPS = {
         "Only one Refuel and Replenish or A Mightier Martello quest can be completed per Vana'dielian day, regardless of Abyssea area.",
         "Speak to the Machine Outfitter (Vunkerl) near the entrance of zone, and choose \"Assist with replenishment\" to accept the quest.",
         {
-            text = "You will receive Vat of martello fuel .",
+            text = "You will receive Vat of martello fuel.",
             substeps = {
                 "You cannot zone at any point during the quest, or you lose the key item and you must restart.",
             },
@@ -2485,7 +2485,7 @@ Q.STEPS = {
         {
             text = "The log will tell you a direction to stand in order to replenish the device, but the menu will tell you a different direction. Best results are achieve by following the direction in the menu.",
             substeps = {
-                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat .",
+                "Although not told to you, the Vat of martello fuel is replaced with an Empty fuel vat.",
             },
         },
         "Report to the Machine Outfitter (Vunkerl) to complete the quest.",
@@ -2498,11 +2498,11 @@ Q.STEPS = {
                 "Captain Rashid's linkpearl",
                 "Captain Argus's linkpearl",
                 "Captain Helga's linkpearl",
-                "Seal of the resistance .",
+                "Seal of the resistance.",
             },
         },
         "Speak to Argus (A) at (D-7) - Conflux #03, then walk north/east.",
-        "Speak to Helga (A) at (G-5) - Conflux #05, then walk north through the Mesa Wivre .",
+        "Speak to Helga (A) at (G-5) - Conflux #05, then walk north through the Mesa Wivre.",
         "Speak to Rashid (A) at (F-10) - Conflux #02, then walk northwest.",
         "Return to Ayame (A) to complete the quest. She will take the Seal of the resistance back from you.",
     },
@@ -2511,18 +2511,18 @@ Q.STEPS = {
         {
             text = "Speak to Piketo-Puketo (A) in the Western Encampment at (F-9). Veridical Conflux #03 is nearby.",
             substeps = {
-                "He'll give you Vial of flower-wower fertilizer .",
+                "He'll give you Vial of flower-wower fertilizer.",
             },
         },
-        "Next travel to the large tree at (G-7). Veridical Conflux #04 is nearby.",
+        "Travel to the large tree at (G-7). Veridical Conflux #04 is nearby.",
         "Click the Gnarled Root targetable location below in the pathway to inject the fertilizer.",
-        "Lastly, click the Fragmented Nutshell up top, on the slope by the tree for Tahrongi tree nut .",
+        "Lastly, click the Fragmented Nutshell up top, on the slope by the tree for Tahrongi tree nut.",
         "Return to Piketo-Puketo (A) to complete the quest.",
         "Zoning is required to repeat this quest.",
     },
 
     abyssea_scars_of_abyssea_quest = {
-        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Delectable Demon , The Beast of Bastore , or A Fluttery Fiend .",
+        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: A Delectable Demon, The Beast of Bastore, or A Fluttery Fiend.",
         "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
     },
 
@@ -2533,7 +2533,7 @@ Q.STEPS = {
                 "Veridical Conflux #08 is the closest teleport nearby.",
             },
         },
-        "Your objective is to obtain a Chipped linkshell , Cracked linkshell , AND Grimy linkshell from various ??? targetable locations throughout the zone.",
+        "Your objective is to obtain a Chipped linkshell, Cracked linkshell, AND Grimy linkshell from various ??? targetable locations throughout the zone.",
         {
             text = "There are 5 areas where a ??? can spawn to obtain one of the linkshells.",
             substeps = {
@@ -2559,14 +2559,14 @@ Q.STEPS = {
         {
             text = "Cannau (A) is walking around (G-6).",
             substeps = {
-                "Trade her a Pea Soup or Emerald Soup .",
+                "Trade her a Pea Soup or Emerald Soup.",
             },
         },
         "Head to Conflux #6, then go west to (I-5).",
         {
             text = "Search for Wanzo-Unzozo (A) in the area.",
             substeps = {
-                "Speak with him then trade him a Flint Stone .",
+                "Speak with him then trade him a Flint Stone.",
             },
         },
         {
@@ -2583,10 +2583,10 @@ Q.STEPS = {
     abyssea_secret_agent_man = {
         "Speak to Helga (A) at (G-5), southeast of Veridical Conflux #06 to begin the quest.",
         {
-            text = "Speak to Naji (A) at (J-5). He will give you Naji's gauger plate .",
+            text = "Speak to Naji (A) at (J-5). He will give you Naji's gauger plate.",
             substeps = {
                 "To get here the quickest, use Veridical Conflux #08, then head southwest while hugging the left cliff.",
-                "Naji will appear as if he has Invisible (Status) cast on him. His name does show, and he is also on Widescan .",
+                "Naji will appear as if he has Invisible (Status) cast on him. His name does show, and he is also on Widescan.",
             },
         },
         "Return and speak to Helga (A) to complete the quest. You will hand over Naji's gauger plate to her.",
@@ -2595,10 +2595,10 @@ Q.STEPS = {
     abyssea_shady_business_redux = {
         "Speak to Talib (A) at (D-7), slightly north/east of Veridical Conflux #03. He is running around this area, so look around a bit.",
         {
-            text = "He will request that you provide him with 4 Limule Pincers .",
+            text = "He will request that you provide him with 4 Limule Pincers.",
             substeps = {
-                "Limule Pincers drop off of various members of the Limule family . In particular, some spawn in Abyssea - Konschtat around (E-8)/(F-8), a short walk from Talib (A) .",
-                "They can also be purchased on the Auction House .",
+                "Limule Pincers drop off of various members of the Limule family. In particular, some spawn in Abyssea - Konschtat around (E-8)/(F-8), a short walk from Talib (A).",
+                "They can also be purchased on the Auction House.",
             },
         },
         "Trade the items to Talib (A) to complete the quest.",
@@ -2624,14 +2624,14 @@ Q.STEPS = {
             text = "You must talk to all 3 of the following NPCs for this quest:",
             substeps = {
                 "Biggorf (A) is behind Chumimi (A) on the left hand side at (G-7).",
-                "Chemioue (A) is just South of Chumimi (A) , take first left. (G-7).",
+                "Chemioue (A) is just South of Chumimi (A), take first left. (G-7).",
                 "Tapoh Lihzeh (A) is on the top side of the rock at the (G-6)/(G-7) border.",
             },
         },
-        "Each NPC will give you two facts about a fiend (described below). You must then report them to Chumimi (A) .",
+        "Each NPC will give you two facts about a fiend (described below). You must then report them to Chumimi (A).",
         "Answer them both correctly and Chumimi (A) will respond \"The information you've provided corroborates with my own research perfectly! I appreciate your efforts. I must get working on my report, but please take this as a token of my thanks!\". You will be rewarded 250 (500 Cruor first time) and a possible job seal.",
-        "Answer incorrectly and Chumimi (A) will respond \"The information you've provided seems reasonable enough. I appreciate your efforts. I must get working on my report, but please take this as a token of my thanks!\". 200 Cruor is rewarded and NO Seal .",
-        "All 3 NPCs will describe a symptom of being attacked (headaches, chest pain, ringing ears, or dizziness) and a single descriptor from a category below. Two will give the same piece of information (correct answer) while the third will say something different (wrong answer). After speaking to all three you should have a matching symptom and a matching shape/color/habitat to report to Chumimi (A) .",
+        "Answer incorrectly and Chumimi (A) will respond \"The information you've provided seems reasonable enough. I appreciate your efforts. I must get working on my report, but please take this as a token of my thanks!\". 200 Cruor is rewarded and NO Seal.",
+        "All 3 NPCs will describe a symptom of being attacked (headaches, chest pain, ringing ears, or dizziness) and a single descriptor from a category below. Two will give the same piece of information (correct answer) while the third will say something different (wrong answer). After speaking to all three you should have a matching symptom and a matching shape/color/habitat to report to Chumimi (A).",
         {
             text = "Shape",
             substeps = {
@@ -2664,7 +2664,7 @@ Q.STEPS = {
 
     abyssea_slip_slidin_away = {
         "Michilca (A) is at the base camp. Talk to her to begin.",
-        "Head to Conflux #7, and continue south past the Surveyors .",
+        "Head to Conflux #7, and continue south past the Surveyors.",
         "Head towards the western cliff near the gears.",
         {
             text = "You must start falling down the cliff at approximately 1/3 of the distance from the north wall and begin falling down.",
@@ -2677,7 +2677,7 @@ Q.STEPS = {
         {
             text = "After speaking to him, NPCs will begin falling down the cliff. Your goal is to target each one, and \"talk\" or examine them to make them stop falling and slide towards the cliff.",
             substeps = {
-                "Wobble left and right depending on what side the NPCs are falling, but be careful not to fall off yourself .",
+                "Wobble left and right depending on what side the NPCs are falling, but be careful not to fall off yourself.",
                 "There will be 3 waves of 2-3 NPCs in each wave.",
                 "Position your camera and your character like the image below. Even if the NPCs fall past you, but you interact with the in time, they will still be saved.",
             },
@@ -2695,10 +2695,10 @@ Q.STEPS = {
         {
             text = "You will receive prompts and have the option to keep going or stop.",
             substeps = {
-                "The first message is \"The meat appears to be almost done\", you may get a Galkan Sausage .",
-                "The second message is \"A mouthwatering aroma permeates the air\", you may get a Galkan Sausage +1 .",
-                "The third message is \"A burnt smell pervades the air\", you may get a Galkan Sausage +2 .",
-                "The final message is \"An overpowering burnt spell pervades the air\", you may get a Galkan Sausage +3 .",
+                "The first message is \"The meat appears to be almost done\", you may get a Galkan Sausage.",
+                "The second message is \"A mouthwatering aroma permeates the air\", you may get a Galkan Sausage +1.",
+                "The third message is \"A burnt smell pervades the air\", you may get a Galkan Sausage +2.",
+                "The final message is \"An overpowering burnt spell pervades the air\", you may get a Galkan Sausage +3.",
                 "There is a chance that the sausage will randomly burn at any point, resulting in a Galkan Sausage -1 or nothing. Hungry Wolf will not take Galkan Sausage -1.",
             },
         },
@@ -2707,7 +2707,7 @@ Q.STEPS = {
     },
 
     abyssea_soil_and_green = {
-        "Speak to Sieglinde (A) at (K-7). She will give you the Mineral gauge for dummies .",
+        "Speak to Sieglinde (A) at (K-7). She will give you the Mineral gauge for dummies.",
         {
             text = "Find a Logging Point and interact with it, the mineral gauge will respond with a color.",
             substeps = {
@@ -2715,9 +2715,9 @@ Q.STEPS = {
             },
         },
         {
-            text = "Return to Sieglinde (A) .",
+            text = "Return to Sieglinde (A).",
             substeps = {
-                "If the mineral gauge is red or yellow, Sieglinde (A) will give you the Tube of alchemical fertilizer . Interact with a Logging Point again.",
+                "If the mineral gauge is red or yellow, Sieglinde (A) will give you the Tube of alchemical fertilizer. Interact with a Logging Point again.",
                 "If the mineral gauge is blue or if you examined a logging point after getting the fertilizer, speak to Sieglinde (A) again to finish the quest.",
             },
         },
@@ -2727,7 +2727,7 @@ Q.STEPS = {
     abyssea_something_in_the_air = {
         "Speak to Yoran-Oran (A) in Abyssea - Attohwa at (G-10).",
         {
-            text = "Examine the Gasponia targetable location flowers in the vicinity of (F-8)/(F-9) until you receive Gasponia stamen .",
+            text = "Examine the Gasponia targetable location flowers in the vicinity of (F-8)/(F-9) until you receive Gasponia stamen.",
             substeps = {
                 "The Gasponia flowers are near Veridical Conflux #00.",
             },
@@ -2740,19 +2740,19 @@ Q.STEPS = {
         {
             text = "She will ask for you to defeat one of the 5 mentioned monsters:",
             substeps = {
-                "Cuelebre , Adze , Minhocao , Chukwa , or Mictlantecuhtli",
+                "Cuelebre, Adze, Minhocao, Chukwa, or Mictlantecuhtli",
             },
         },
         {
             text = "If you defeat one with the quest active, you will receive a Bloodied arrow upon the first time completing the quest.",
             substeps = {
-                "If you are completing this quest a second time or more, you will instead receive a Crimson bloodstone .",
+                "If you are completing this quest a second time or more, you will instead receive a Crimson bloodstone.",
             },
         },
         {
             text = "Return to Kupipi (A) to complete the quest.",
             substeps = {
-                "Evoliths with Katana Weapon Skill : Critical Hit Rate +3% have been reported, along with Double Attack +6%.",
+                "Evoliths with Katana Weapon Skill: Critical Hit Rate +3% have been reported, along with Double Attack +6%.",
             },
         },
     },
@@ -2813,9 +2813,9 @@ Q.STEPS = {
     },
 
     abyssea_the_beast_of_bastore = {
-        "Examine the Cavernous Maw in Jugner Forest at (J-8) while in possession of a Traverser stone . You will receive a cutscene with Kuchi Eyjhann.",
+        "Examine the Cavernous Maw in Jugner Forest at (J-8) while in possession of a Traverser stone. You will receive a cutscene with Kuchi Eyjhann.",
         {
-            text = "Defeat the Notorious Monster Sedna .",
+            text = "Defeat the Notorious Monster Sedna.",
             substeps = {
                 "Refer to the Abyssea - Vunkerl page for the flowchart for details on spawning this monster.",
             },
@@ -2855,7 +2855,7 @@ Q.STEPS = {
         {
             text = "Travel to Elmemague (A) at (I-9) near Veridical Conflux #00.",
             substeps = {
-                "Using a Verdical Conflux will change your supply pack into a Pack of molten slag , and you will fail.",
+                "Using a Verdical Conflux will change your supply pack into a Pack of molten slag, and you will fail.",
                 "You will receive a Letter of receipt and Flee status.",
             },
         },
@@ -2871,7 +2871,7 @@ Q.STEPS = {
     abyssea_the_egg_enthusiast = {
         "Speak to Ranpi-Monpi (A) at (L-6), northeast of Conflux #8, to begin the quest.",
         {
-            text = "You must interact with one of three Earthy Mound targetable locations in order to obtain a Wivre egg .",
+            text = "You must interact with one of three Earthy Mound targetable locations in order to obtain a Wivre egg.",
             substeps = {
                 "One can be found near (H-8)/(I-8).",
                 "One is at (J-10), near Conflux #3.",
@@ -2880,7 +2880,7 @@ Q.STEPS = {
         },
         { note = "Note: You can use Confluxes TO OBTAIN the egg, it does not affect the outcome." },
         {
-            text = "After collecting the Wivre egg , you must return to Ranpi-Monpi (A) without breaking it.",
+            text = "After collecting the Wivre egg, you must return to Ranpi-Monpi (A) without breaking it.",
             substeps = {
                 "This means you cannot use Confluxes to warp back and cannot be attacked by any monster.",
                 "Additional ways the egg can break: Taking too long after obtaining the egg, or even losing HP by switching gear on the way back to Ranpi-Monpi (A) !",
@@ -2896,13 +2896,13 @@ Q.STEPS = {
     },
 
     abyssea_the_forbidden_frontier = {
-        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: To Paste a Peiste , A Goldstruck Gigas , or Megadrile Menace .",
+        "Speak to Joachim in Port Jeuno (H-8) after starting the quests: To Paste a Peiste, A Goldstruck Gigas, or Megadrile Menace.",
         "Speak to Joachim after completing all three quests to receive a cutscene completing this quest.",
     },
 
     abyssea_the_mysterious_head_patrol = {
         "Speak to Eight of Hearts (A) at (H-13), southwest of Conflux #2, to start this quest.",
-        "He will request a Silver pocket watch .",
+        "He will request a Silver pocket watch.",
         {
             text = "Obtain this item from Eight of Clubs (A) at (H-8).",
             substeps = {
@@ -2926,13 +2926,13 @@ Q.STEPS = {
 
     abyssea_the_secret_ingredient = {
         {
-            text = "Speak to Nogelle (A) (K-5) at Conflux #1, who will ask you to retrieve a chunk of Badlands Salt .",
+            text = "Speak to Nogelle (A) (K-5) at Conflux #1, who will ask you to retrieve a chunk of Badlands Salt.",
             substeps = {
-                "Other types of salt do not work, it must be a Badlands Salt which is .",
+                "Other types of salt do not work, it must be a Badlands Salt which is.",
             },
         },
         {
-            text = "Fish at Conflux #6 until you catch a Badlands Crab , which drop the salt.",
+            text = "Fish at Conflux #6 until you catch a Badlands Crab, which drop the salt.",
             substeps = {
                 "The drop rate is U Uncommon, around 30%.",
             },
@@ -2945,11 +2945,11 @@ Q.STEPS = {
         "Speak with Cleades (A) at (G-5). Take Veridical Conflux #06 and head southeast to reach him.",
         "Next to Cleades (A) are some Lined Boxes which you can obtain your Soulgauger SGR-1 and purchase Gauger Plates for 5 Cruor each. You can buy up to 12 Gauger Plates at once.",
         {
-            text = "Much like using a Soultrapper , you will equip the Soulgauger SGR-1 and Gauger Plates and then look for an NM to get a good quality capture of. Unlike when farming Zeni , you do not need to lower the mob's HP.",
+            text = "Much like using a Soultrapper, you will equip the Soulgauger SGR-1 and Gauger Plates and then look for an NM to get a good quality capture of. Unlike when farming Zeni, you do not need to lower the mob's HP.",
             substeps = {
                 "You need to have a good distance (~5 yalms) and frontal angle on the mob. Distance and angle appear to the major factors in appraisal of your captures.",
-                "Only NMs in Abyssea - Konschtat can be captured with the Soulgauger SGR-1 . It cannot be used in other Abyssea areas.",
-                "Good NM suggestions are Guimauve and Pavan , since they are close by and do not aggro.",
+                "Only NMs in Abyssea - Konschtat can be captured with the Soulgauger SGR-1. It cannot be used in other Abyssea areas.",
+                "Good NM suggestions are Guimauve and Pavan, since they are close by and do not aggro.",
             },
         },
         {
@@ -2965,14 +2965,14 @@ Q.STEPS = {
     abyssea_the_titus_touch = {
         "Speak to Titus (A) at (G-11), at Conflux #5, to begin the quest.",
         {
-            text = "He will request a clump of Windurstian Tea Leaves .",
+            text = "He will request a clump of Windurstian Tea Leaves.",
             substeps = {
-                "Titus (A) synthesizes the Bottle of military ink , but this item is only used during the cutscene and is not given to you.",
+                "Titus (A) synthesizes the Bottle of military ink, but this item is only used during the cutscene and is not given to you.",
             },
         },
-        "After trading him the leaves, he provides you with a Military ink package .",
+        "After trading him the leaves, he provides you with a Military ink package.",
         {
-            text = "Deliver the package to Chumimi (A) at the Oasis near Revelation Rock , (G-7).",
+            text = "Deliver the package to Chumimi (A) at the Oasis near Revelation Rock, (G-7).",
             substeps = {
                 "The closest conflux is #7.",
             },
@@ -2982,7 +2982,7 @@ Q.STEPS = {
 
     abyssea_the_truth_beckons = {
         {
-            text = "Examine one of the Abyssean Cavernous Maw below to enter one of the Abyssea zones. A convenient maw is located near the Survival Guide in Buburimu Peninsula , but any maw below will do.",
+            text = "Examine one of the Abyssean Cavernous Maw below to enter one of the Abyssea zones. A convenient maw is located near the Survival Guide in Buburimu Peninsula, but any maw below will do.",
             substeps = {
                 "Vision zones:",
                 "Scars zones:",
@@ -3006,30 +3006,30 @@ Q.STEPS = {
     },
 
     abyssea_the_unmarked_tomb = {
-        "Talk to Oiheaurese (A) at (G-7), near Conflux 7 at the Oasis of Revelation Rock, who asks for a Wyvern egg .",
+        "Talk to Oiheaurese (A) at (G-7), near Conflux 7 at the Oasis of Revelation Rock, who asks for a Wyvern egg.",
         {
             text = "Speak with Yachemidot (A) at (J-9).",
             substeps = {
-                "The best way to get there is to just walk from Oiheaurese (A) .",
-                "You will receive a Wyvern egg .",
+                "The best way to get there is to just walk from Oiheaurese (A).",
+                "You will receive a Wyvern egg.",
             },
         },
         {
             text = "Travel to Meriphataud Mountains and head to (K-8), along the eastern edge of the Spine.",
             substeps = {
                 "Taking the Survival Guide to Castle Oztroja is most efficient.",
-                "Interact with the ??? to obtain the Wyvern egg shell .",
+                "Interact with the ??? to obtain the Wyvern egg shell.",
             },
         },
-        "Return to Yachemidot (A) at (J-9) in Abyssea - Altepa to receive the Emerald abyssite of lenity .",
-        "Finally, talk to Oiheaurese (A) at (G-7) to complete the quest.",
+        "Return to Yachemidot (A) at (J-9) in Abyssea - Altepa to receive the Emerald abyssite of lenity.",
+        "Talk to Oiheaurese (A) at (G-7) to complete the quest.",
     },
 
     abyssea_the_walking_wounded = {
         "Speak to Rashid (A) at (F-10 to begin the quest. He is located to the northwest of Veridical Conflux #02.",
         "He will ask you to trade a Soothing Potion to each of the five nearby Resistance Fighter NPCs.",
         {
-            text = "After trading each Resistance Fighter , return to Rashid (A) to complete the quest.",
+            text = "After trading each Resistance Fighter, return to Rashid (A) to complete the quest.",
             substeps = {
                 "To repeat this quest, you must speak with Rashid (A) to initiate it in your log.",
             },
@@ -3038,13 +3038,13 @@ Q.STEPS = {
     },
 
     abyssea_the_wyrm_god = {
-        "Enter Abyssea - Empyreal Paradox through the Transcendental Radiance in Qufim Island at (F-7) for a key item: Crimson traverser stone .",
+        "Enter Abyssea - Empyreal Paradox through the Transcendental Radiance in Qufim Island at (F-7) for a key item: Crimson traverser stone.",
         {
             text = "Examine the Transcendental Radiance in the Abyssea - Empyreal Paradox for a short cutscene, examine it again to enter a battlefield.",
             substeps = {
-                "Your fight is against Shinryu , a Wyrm-type creature.",
+                "Your fight is against Shinryu, a Wyrm-type creature.",
                 "When his wings are up, he will absorb damage when he is readying a weaponskill or casting spells.",
-                "He has a weaponskill Mighty Guard , he will gain a large reduction to physical and magical damage.",
+                "He has a weaponskill Mighty Guard, he will gain a large reduction to physical and magical damage.",
                 "He has a weaponskill called Cosmic Breath that does conal damage with additional effect Plague and Attack Down.",
                 "He has a weaponskill called Gyre Charge that is AoE damage with additional effect Paralyze.",
                 "His regular melee attacks are considered weaponskills, keep this in mind when trying to get the Red, Blue, and Green staggers.",
@@ -3055,15 +3055,15 @@ Q.STEPS = {
 
     abyssea_threadbare_tribulations = {
         {
-            text = "Speak to Ponono (A) at (H-7) in Abyssea - Attohwa .",
+            text = "Speak to Ponono (A) at (H-7) in Abyssea - Attohwa.",
             substeps = {
                 "This location is at Veridical Conflux #08. If you have not gone to this location yet, you need to speak to Red Ghost (A) who will teleport you above the ledge.",
             },
         },
         {
-            text = "She will ask you for x3 Amoeban Pseudopods .",
+            text = "She will ask you for x3 Amoeban Pseudopods.",
             substeps = {
-                "These can either be farmed from Crevice Amoeban in Abyssea - Attohwa ; located southeast and southwest of Veridical Conflux #00, or purchased from the Auction House .",
+                "These can either be farmed from Crevice Amoeban in Abyssea - Attohwa; located southeast and southwest of Veridical Conflux #00, or purchased from the Auction House.",
             },
         },
         {
@@ -3076,8 +3076,8 @@ Q.STEPS = {
     },
 
     abyssea_to_paste_a_peiste = {
-        "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone .",
-        "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat .",
+        "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone.",
+        "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat.",
         { note = "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary. The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized." },
         "Exit Abyssea - Konschtat for a cutscene that finishes the quest.",
         "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
@@ -3099,13 +3099,13 @@ Q.STEPS = {
 
     abyssea_unbreak_his_heart = {
         "Speak to Joulet (A) in Abyssea - La Theine at (H-7), Veridical Conflux #04.",
-        "Offer to mend the fishing rod. He will give you a Broken Willow Fishing Rod .",
+        "Offer to mend the fishing rod. He will give you a Broken Willow Fishing Rod.",
         "Either repair the rod with a Light Crystal ( Woodworking Level 10 cap), or purchase one by other means.",
         "Trade a Willow Fishing Rod to Gallijaux (A) at (L-12), Veridical Conflux #06, to complete the quest.",
         {
             text = "Zoning is required to repeat this quest.",
             substeps = {
-                "Physically exiting the zone is required, not just logging off. The fastest way to do this will be to teleport back to Conflux #01 after quest completion, exit via the Cavernous Maw , and re-enter the zone.",
+                "Physically exiting the zone is required, not just logging off. The fastest way to do this will be to teleport back to Conflux #01 after quest completion, exit via the Cavernous Maw, and re-enter the zone.",
             },
         },
     },
@@ -3114,9 +3114,9 @@ Q.STEPS = {
         "Speak to Yurim (A) at the base camp (K-7) to begin the quest.",
         "She says she wants you to get something for her research, but forgets what it is.",
         {
-            text = "Optional: Trade her an Apple Pie and she will remember she needs a Murex Spicule .",
+            text = "Optional: Trade her an Apple Pie and she will remember she needs a Murex Spicule.",
             substeps = {
-                "If you trade her an Apple Pie +1 , the dialogue flavor text changes.",
+                "If you trade her an Apple Pie +1, the dialogue flavor text changes.",
             },
         },
         "Escarp Murex spawn just to the west at (J-7).",
@@ -3139,12 +3139,12 @@ Q.STEPS = {
         {
             text = "Interact with a ??? location at (C-8) in Skyrend for a cutscene.",
             substeps = {
-                "This is further past Azdaja 's ??? , at the very end of the canyon.",
+                "This is further past Azdaja 's ???, at the very end of the canyon.",
             },
         },
-        "Kill Sensenmann until you receive the Decaying Molar , or purchase it on the Auction House.",
+        "Kill Sensenmann until you receive the Decaying Molar, or purchase it on the Auction House.",
         {
-            text = "Spawn and defeat Xibalba with the molar and obtain an Ominous Skull .",
+            text = "Spawn and defeat Xibalba with the molar and obtain an Ominous Skull.",
             substeps = {
                 "He can Doom even iLevel 119 characters, so be ready.",
             },
@@ -3160,11 +3160,11 @@ Q.STEPS = {
     },
 
     abyssea_wanted_medical_supplies = {
-        "Talk to Yasuji (A) , who is at (G-7) near Conflux #3, and accept the quest.",
+        "Talk to Yasuji (A), who is at (G-7) near Conflux #3, and accept the quest.",
         {
             text = "Find a Blue Sturdy Pyxis and open it.",
             substeps = {
-                "There is a chance that you will receive the Medical supply chest . It appears to be proportional to the Pyxis level.",
+                "There is a chance that you will receive the Medical supply chest. It appears to be proportional to the Pyxis level.",
                 "Using Forbidden Keys to open the chest will not give you the key item, you must open it manually.",
                 "\"Peering between the cracks\" does not show the Medical supply chest inside, so you need to open every blue chest you spawn.",
             },
@@ -3178,14 +3178,14 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Attohwa) at (F-9) (Veridical Conflux #00) and to begin the quest.",
             substeps = {
-                "You will receive Magicked hempen sack .",
-                "This sack will disappear when you zone or log out only if it is filled first! .",
+                "You will receive Magicked hempen sack.",
+                "This sack will disappear when you zone or log out only if it is filled first!.",
             },
         },
         {
             text = "Travel to the Target marked on your map.",
             substeps = {
-                "Quickest way to the target: Warp to Veridical Conflux #06. Head west across the bridge and past the incorrect crates . Go through then tunnel and hug the right wall. Eventually you will exit to Skeletons. You will need sneak here. Continue hugging the right wall until you get to hounds. Watch for the true sound NM Gieremund and avoid it. Continue hugging the right wall to re-enter through a crack past the hounds. Eventually you will get to another outdoor area with a rock bridge. You will walk back into another nook at (G-6) and you will find the correct crates. Backtrack to Veridical Conflux #06 by now hugging the left wall. Remember that you cannot warp or you will lose the key item.",
+                "Quickest way to the target: Warp to Veridical Conflux #06. Head west across the bridge and past the incorrect crates. Go through then tunnel and hug the right wall. Eventually you will exit to Skeletons. You will need sneak here. Continue hugging the right wall until you get to hounds. Watch for the true sound NM Gieremund and avoid it. Continue hugging the right wall to re-enter through a crack past the hounds. Eventually you will get to another outdoor area with a rock bridge. You will walk back into another nook at (G-6) and you will find the correct crates. Backtrack to Veridical Conflux #06 by now hugging the left wall. Remember that you cannot warp or you will lose the key item.",
             },
         },
         {
@@ -3209,8 +3209,8 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Misareaux) at (I-7) (Veridical Conflux #00) and to begin the quest.",
             substeps = {
-                "You will receive Magicked hempen sack .",
-                "This sack will disappear when you zone or log out only if it is filled first! .",
+                "You will receive Magicked hempen sack.",
+                "This sack will disappear when you zone or log out only if it is filled first!.",
             },
         },
         "Travel to the Target marked on your map (Veridical Conflux #05, beware Flame Skimmer).",
@@ -3235,8 +3235,8 @@ Q.STEPS = {
         {
             text = "Speak to the Resistance Sapper (Vunkerl) at (I-9) (Veridical Conflux #00) and to begin the quest.",
             substeps = {
-                "You will receive Magicked hempen sack .",
-                "This sack will disappear when you zone or log out only if it is filled first! .",
+                "You will receive Magicked hempen sack.",
+                "This sack will disappear when you zone or log out only if it is filled first!.",
             },
         },
         "Travel to the Target marked on your map.",
@@ -3262,9 +3262,9 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Attohwa) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters. They seem to be more effective if you walk slowly past monsters with your chocobo close to you .",
-                "Obtain 6 Stamina Apples ; Use these on the chocobo when you are not nearby monsters. This will cause health to only have around a 10% chance to tic down, thus effectively extending your timer and the chocobo's health.",
-                "Obtain a minimum of 6 Azouph Greens . Using these on a chocobo raises it's health by 5%. You can only use these once every few minutes. If you try too often, you will receive a message that your chocobo is full.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters. They seem to be more effective if you walk slowly past monsters with your chocobo close to you.",
+                "Obtain 6 Stamina Apples; Use these on the chocobo when you are not nearby monsters. This will cause health to only have around a 10% chance to tic down, thus effectively extending your timer and the chocobo's health.",
+                "Obtain a minimum of 6 Azouph Greens. Using these on a chocobo raises it's health by 5%. You can only use these once every few minutes. If you try too often, you will receive a message that your chocobo is full.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
                 "Obtain a few M. Counteragent s. There are a few Miasma that will appear on the path you need to take and will cause you to lose a lot of time if you cannot remove them right away.",
             },
@@ -3287,7 +3287,7 @@ Q.STEPS = {
                 "If you are completing this quest just to complete it, only load one supply. More will slow down the chocobo.",
             },
         },
-        "Retrace your steps to guide the chocobo back to the Chocobo Tamer (Attohwa) , and speak to them to complete the escort.",
+        "Retrace your steps to guide the chocobo back to the Chocobo Tamer (Attohwa), and speak to them to complete the escort.",
         "Talk to the Resistance Sapper (Attohwa) once again to complete the quest and to receive your reward",
         "Effects on Bastion:",
         {
@@ -3304,7 +3304,7 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Misareaux) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
                 "Blinkers last around one Earth Minute. You will see a message in the log when they wear off.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
             },
@@ -3324,7 +3324,7 @@ Q.STEPS = {
                 "If you are completing this quest just to complete it, only load one supply. More will slow down the chocobo.",
             },
         },
-        "Guide the chocobo back to the Chocobo Tamer (Misareaux) , and speak to them to complete the escort.",
+        "Guide the chocobo back to the Chocobo Tamer (Misareaux), and speak to them to complete the escort.",
         "Talk to the Resistance Sapper (Misareaux) once again to complete the quest and to receive your reward.",
         "Effects on Bastion:",
         {
@@ -3341,7 +3341,7 @@ Q.STEPS = {
         {
             text = "Speak to the Chocobo Tamer (Vunkerl) located near the Resistance Sapper to purchase supplies and begin the escort.",
             substeps = {
-                "Obtain a minimum of 6 Chocobo Blinkers ; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
+                "Obtain a minimum of 6 Chocobo Blinkers; use these on the chocobo by trading them from your inventory. This will limit its field of vision to what is directly in front of it, making it very simple to guide around monsters.",
                 "Blinkers last around one Earth Minute. You will see a message in the log when they wear off.",
                 "The chocobo's HP gradually decreases during the quest. It is important to be quick with this quest.",
             },
@@ -3361,7 +3361,7 @@ Q.STEPS = {
                 "If you are completing this quest just to complete it, only load one supply. More will slow down the chocobo.",
             },
         },
-        "Guide the chocobo back to the Chocobo Tamer (Vunkerl) , and speak to them to complete the escort.",
+        "Guide the chocobo back to the Chocobo Tamer (Vunkerl), and speak to them to complete the escort.",
         "Talk to the Resistance Sapper (Vunkerl) once again to complete the quest and to receive your reward.",
         "Effects on Bastion:",
         {
@@ -3380,7 +3380,7 @@ Q.STEPS = {
                 "Vial of purification agent (blk.)",
                 "Vial of purification agent (brz.)",
                 "Vial of purification agent (slv.)",
-                "Vial of purification agent (gld.) .",
+                "Vial of purification agent (gld.).",
             },
         },
         {
@@ -3394,10 +3394,10 @@ Q.STEPS = {
     },
 
     abyssea_wayward_wares = {
-        "Speak with Chapi Galepilai (A) (G-10), Abyssea - Attohwa .",
+        "Speak with Chapi Galepilai (A) (G-10), Abyssea - Attohwa.",
         "You will be asked to retrieve missing supply packs. There are three total.",
         {
-            text = "Examine at least one of the three Supply Points located around the Crevice Amoeban / Treacle Slugs :",
+            text = "Examine at least one of the three Supply Points located around the Crevice Amoeban / Treacle Slugs:",
             substeps = {
                 "Pulse martello repair pack (G-8)",
                 "Clone ward reinforcement pack (F-9)",
@@ -3415,7 +3415,7 @@ Q.STEPS = {
             },
         },
         {
-            text = "She'll give you a Pickaxe and asks you to excavate a Hardened Bone from Excavation Points , or purchased on the Auction House .",
+            text = "She'll give you a Pickaxe and asks you to excavate a Hardened Bone from Excavation Points, or purchased on the Auction House.",
             substeps = {
                 "She'll only give you one so any extras from failure or repeating the quest will require your to bring own.",
             },
@@ -3423,8 +3423,8 @@ Q.STEPS = {
         {
             text = "Excavation Points are located at (E-5), scattered around the dragon skeleton. This is a little walk from Veridical Conflux #06.",
             substeps = {
-                "Mine until you find a Hardened Bone ; multiple bones can be mined in a single session.",
-                "Various other junk can be obtained rather than the Hardened Bone. There is a respawn timer on the Excavation Points .",
+                "Mine until you find a Hardened Bone; multiple bones can be mined in a single session.",
+                "Various other junk can be obtained rather than the Hardened Bone. There is a respawn timer on the Excavation Points.",
             },
         },
         {
@@ -3470,7 +3470,7 @@ Q.STEPS = {
     abyssea_whither_the_whisker = {
         "Speak to Rahal (A) at (F-4).",
         {
-            text = "Procure a Black Whisker , which drops from Slaughterous Smilodons or can be purchased on the Auction House .",
+            text = "Procure a Black Whisker, which drops from Slaughterous Smilodons or can be purchased on the Auction House.",
             substeps = {
                 "They are located northeast of Veridical Conflux #04 at (G-8).",
             },

@@ -121,8 +121,8 @@ M.STEPS = {
                     "Windurst Woods (J-10)",
                 },
             },
-            "The feature to watch certain starting cutscenes later (via Tales' Beginning , was added in the July 2023 Version Update",
-            "After completing this Mission, you will have access to both Escha - Zi'Tah and Escha - Ru'Aun .",
+            "The feature to watch certain starting cutscenes later (via Tales' Beginning, was added in the July 2023 Version Update",
+            "After completing this Mission, you will have access to both Escha - Zi'Tah and Escha - Ru'Aun.",
         },
     },
 
@@ -146,14 +146,14 @@ M.STEPS = {
             {
                 text = "If you picked the Selbina path:",
                 substeps = {
-                    "Talk to Naillina at (F-9) in the Mayor's Residence .",
+                    "Talk to Naillina at (F-9) in the Mayor's Residence.",
                     "Choose the first dialogue option: \"You wanted an adventurer?\"",
                 },
             },
             {
                 text = "If you picked the Mhaura path:",
                 substeps = {
-                    "Talk to Numi Adaligo at (F-9) in the Governor's House .",
+                    "Talk to Numi Adaligo at (F-9) in the Governor's House.",
                     "Choose the first dialogue option: \"You're searching for adventurers?\"",
                 },
             },
@@ -165,21 +165,21 @@ M.STEPS = {
         steps = {
             "Complete the path that you started in the previous Mission.",
             {
-                text = "Purchase from the Auction House or farm 3x Bee Pollen from Huge Wasps in La Theine Plateau or Konschtat Highlands .",
+                text = "Purchase from the Auction House or farm 3x Bee Pollen from Huge Wasps in La Theine Plateau or Konschtat Highlands.",
                 substeps = {
-                    "If you choose to farm the Pollen, the best area is in Konschtat Highlands around the Crag of Dem . There are about 12-15 spawns that you will find as you run around the Crag, and by the time you make a lap they will have respawned.",
-                    "In La Theine Plateau , the spawns are spread out with only 3-4 at each of the valleys.",
-                    "Be sure to use Wide Scan under your Map menu to help find the Huge Wasps .",
+                    "If you choose to farm the Pollen, the best area is in Konschtat Highlands around the Crag of Dem. There are about 12-15 spawns that you will find as you run around the Crag, and by the time you make a lap they will have respawned.",
+                    "In La Theine Plateau, the spawns are spread out with only 3-4 at each of the valleys.",
+                    "Be sure to use Wide Scan under your Map menu to help find the Huge Wasps.",
                 },
             },
             "Return to Selbina and trade the pollen to Abelard (G-9). He is in the next room from the start of the previous mission.",
             {
-                text = "Purchase from the Auction House or farm 3x Mandragora Dewdrop s off the Pygmaioi in Tahrongi Canyon .",
+                text = "Purchase from the Auction House or farm 3x Mandragora Dewdrop s off the Pygmaioi in Tahrongi Canyon.",
                 substeps = {
-                    "Be sure to use Wide Scan under your Map menu to help find the Pygmaioi .",
+                    "Be sure to use Wide Scan under your Map menu to help find the Pygmaioi.",
                 },
             },
-            "Return to Mhaura and trade the dewdrops to Ekokoko .",
+            "Return to Mhaura and trade the dewdrops to Ekokoko.",
             { note = "NOTE: If you are a new player and you have not yet unlocked your Support Job (a.k.a. subjob ) you will receive the Gilgamesh's introductory letter. If you have already unlocked your Support Job, your reward will be a Copper A.M.A.N. Voucher." },
             "Gilgamesh's introductory letter allows you to unlock your Support Job easier and earlier than before: After reaching Level 18+, speak to either Isacio in Selbina (G-10) twice, or Vera in Mhaura (G-10) twice to unlock your Support Job !",
         },
@@ -191,14 +191,14 @@ M.STEPS = {
             {
                 text = "For Selbina path:",
                 substeps = {
-                    "Talk to Pacomart at (H-10) in Selbina to be brought to Norg .",
+                    "Talk to Pacomart at (H-10) in Selbina to be brought to Norg.",
                     "Talk to the Oaken Door at (K-8) in Norg to Gilgamesh's room.",
                 },
             },
             {
                 text = "For Mhaura path:",
                 substeps = {
-                    "Talk to Tonasav at (H-9) in Mhaura to be brought to Norg .",
+                    "Talk to Tonasav at (H-9) in Mhaura to be brought to Norg.",
                     "Talk to the Oaken Door at (K-8) in Norg to Gilgamesh's room.",
                 },
             },
@@ -218,9 +218,9 @@ M.STEPS = {
         name = "The Path Untraveled",
         steps = {
             {
-                text = "Examine the Shattered Telepoint at the Crag of Holla , Dem , or Mea for a cutscene.",
+                text = "Examine the Shattered Telepoint at the Crag of Holla, Dem, or Mea for a cutscene.",
                 substeps = {
-                    "Not to be confused with whole Telepoints . Venture around the Crag to locate the appropriate spot.",
+                    "Not to be confused with whole Telepoints. Venture around the Crag to locate the appropriate spot.",
                     "You must be Nation Rank 3 or higher.",
                     "Select the Qufim Island response to continue and complete the cutscene.",
                 },
@@ -229,8 +229,8 @@ M.STEPS = {
             {
                 text = "Alternatively, if the Rank 2-3 Mission was already completed, they are available after completing this Rhapsodies Mission:",
                 substeps = {
-                    "Speak to Halver in Chateau d'Oraguille (I-9) to obtain Cipher: Halver .",
-                    "Speak to Kupipi in Heavens Tower to obtain Cipher: Semih .",
+                    "Speak to Halver in Chateau d'Oraguille (I-9) to obtain Cipher: Halver.",
+                    "Speak to Kupipi in Heavens Tower to obtain Cipher: Semih.",
                 },
             },
         },
@@ -240,7 +240,7 @@ M.STEPS = {
         name = "At the Heavens' Door",
         steps = {
             {
-                text = "Examine the Undulating Confluence at (G-8) in Qufim Island .",
+                text = "Examine the Undulating Confluence at (G-8) in Qufim Island.",
                 substeps = {
                     "It's close to the Qufim Home Point.",
                 },
@@ -258,7 +258,7 @@ M.STEPS = {
                 substeps = {
                     "Killing Ophiotaurus by Calling For Help is permitted. The option to do this is next to the combat menu button to Disengage.",
                     "The monster will spawn and attack you as soon as you click the Undulating Confluence for the second time, so make sure you already have your trusts out.",
-                    "You fight against Ophiotaurus . See its page for more information.",
+                    "You fight against Ophiotaurus. See its page for more information.",
                     "The Undulating Confluence doesn't disappear, but only one party can have Ophiotaurus popped at a time.",
                     "The mission is automatically completed when the Ophiotaurus is defeated.",
                     "Examine the Undulating Confluence again for a cutscene.",
@@ -273,8 +273,8 @@ M.STEPS = {
             {
                 text = "Examine the Undulating Confluence again.",
                 substeps = {
-                    "You will be teleported into Escha - Zi'Tah .",
-                    "The mission is automatically completed once you arrive in Escha - Zi'Tah .",
+                    "You will be teleported into Escha - Zi'Tah.",
+                    "The mission is automatically completed once you arrive in Escha - Zi'Tah.",
                 },
             },
         },
@@ -284,7 +284,7 @@ M.STEPS = {
         name = "A Land After Time",
         steps = {
             {
-                text = "Go back to the Shattered Telepoint at the Crag of Holla , Dem , or Mea .",
+                text = "Go back to the Shattered Telepoint at the Crag of Holla, Dem, or Mea.",
                 substeps = {
                     "It doesn't matter if you go to a different one than before.",
                 },
@@ -296,7 +296,7 @@ M.STEPS = {
         name = "Fate's Call",
         steps = {
             {
-                text = "Zone into any of the three starting nations for a cutscene with Iroha .",
+                text = "Zone into any of the three starting nations for a cutscene with Iroha.",
                 substeps = {
                     "You must have defeated the Shadow Lord in rank mission 5-2 to get this cut scene.",
                 },
@@ -308,12 +308,12 @@ M.STEPS = {
         name = "What Lies Beyond",
         steps = {
             {
-                text = "Zone into Norg .",
+                text = "Zone into Norg.",
                 substeps = {
-                    "If you have not yet started Rise of the Zilart Missions , then the cutscene for Rise of the Zilart Mission 1 (The New Frontier) will play.",
+                    "If you have not yet started Rise of the Zilart Missions, then the cutscene for Rise of the Zilart Mission 1 (The New Frontier) will play.",
                 },
             },
-            "Examine Gilgamesh's Oaken Door in Norg .",
+            "Examine Gilgamesh's Oaken Door in Norg.",
         },
     },
 
@@ -322,7 +322,7 @@ M.STEPS = {
         steps = {
             "Head to (J-12) in Sea Serpent Grotto and examine the sparkling ??? near the lake at (J-12) for a cutscene.",
             "There's a couple easy ways to get there, both of which take about the same amount of time.",
-            "Before you instinctively warp away, consider taking advantage of your location for the next mission . You might want to walk there!",
+            "Before you instinctively warp away, consider taking advantage of your location for the next mission. You might want to walk there!",
             "The return-route one-way tunnel is located at (H-8), and at the Cracked Wall (on the map) blank-targetable door at (H-6) you can either:",
         },
     },
@@ -332,13 +332,13 @@ M.STEPS = {
         steps = {
             "Go to (F-11) in Yuhtunga Jungle and examine the sparkling ??? for a cutscene.",
             {
-                text = "If you are still in Sea Serpent Grotto from the previous quest, a Black Mage can cast Escape to take themselves and their party straight out to Yuhtunga Jungle .",
+                text = "If you are still in Sea Serpent Grotto from the previous quest, a Black Mage can cast Escape to take themselves and their party straight out to Yuhtunga Jungle.",
                 substeps = {
                     "Players without the spell Escape can instead take a short walk to the exit.",
                 },
             },
             "If you are starting from Norg, the quickest means to reach the ??? is renting a Chocobo from Marilleune (H-9) in Norg, near the exit to Sea Serpent Grotto and ride to the ???.",
-            "If you are starting from any other location, an alternative quick trip is using the Level 119 Unity Wanted teleport to Yuhtunga Jungle .",
+            "If you are starting from any other location, an alternative quick trip is using the Level 119 Unity Wanted teleport to Yuhtunga Jungle.",
             "It is recommended solo players reach at least level 80 before proceeding to the next mission, as the fight may be more difficult than some players expect.",
         },
     },
@@ -348,19 +348,19 @@ M.STEPS = {
         steps = {
             { note = "Note that the following fight is considerably more difficult than the content leading up to it. If solo (with trusts ), you may want to reach at least level 80 before attempting." },
             {
-                text = "Examining the ??? again will immediately spawn a battle with Siren .",
+                text = "Examining the ??? again will immediately spawn a battle with Siren.",
                 substeps = {
-                    "Prepare (buff/summon trusts) before examining the ??? .",
+                    "Prepare (buff/summon trusts) before examining the ???.",
                     "Siren will despawn after approximately 15 minutes, ending the fight. You will need to kill her within 15 minutes to receive credit.",
-                    "Can Charm , which will despawn your trusts if it hits you. Charm has no effect if it hits your trusts, so let one of them tank her. (Item Level 119 players should have no issues soloing her even if they do get charmed.)",
-                    "Uses Massacre Elegy and Wind Threnody II .",
-                    "Absorbs Wind Elemental damage, including that from Skillchains such as Detonation or Fragmentation .",
+                    "Can Charm, which will despawn your trusts if it hits you. Charm has no effect if it hits your trusts, so let one of them tank her. (Item Level 119 players should have no issues soloing her even if they do get charmed.)",
+                    "Uses Massacre Elegy and Wind Threnody II.",
+                    "Absorbs Wind Elemental damage, including that from Skillchains such as Detonation or Fragmentation.",
                 },
             },
             {
                 text = "After the fight, examine the ??? again for another cutscene.",
                 substeps = {
-                    "You will be rewarded with \"Rhapsody in Azure\" .",
+                    "You will be rewarded with \"Rhapsody in Azure\".",
                     "If you \"Call for Help\" on Siren, you won't get the cutscene and will have to wait 1 minute to pop again.",
                     "In the event of death, one may rezone and still receive the cutscene as long as Siren is defeated.",
                 },
@@ -374,7 +374,7 @@ M.STEPS = {
             {
                 text = "Go to Norg and examine Gilgamesh's Oaken Door for another cutscene.",
                 substeps = {
-                    "You will be given a Cipher: Zeid II .",
+                    "You will be given a Cipher: Zeid II.",
                 },
             },
         },
@@ -383,7 +383,7 @@ M.STEPS = {
     ["1-18"] = {
         name = "Ring My Bell",
         steps = {
-            "To start the next chapter, examine Gilgamesh 's door in Norg multiple times, then go in and talk to Gilgamesh . This will start a cutscene with Gilgamesh , Aldo , Tenzen , Zeid , Kagero , and Prishe . Once the custscene's are completed, you will see the next chapter flagged.",
+            "To start the next chapter, examine Gilgamesh 's door in Norg multiple times, then go in and talk to Gilgamesh. This will start a cutscene with Gilgamesh, Aldo, Tenzen, Zeid, Kagero, and Prishe. Once the custscene's are completed, you will see the next chapter flagged.",
         },
     },
 
@@ -442,7 +442,7 @@ M.STEPS = {
             {
                 text = "Zone into Aht Urhgan Whitegate for a cutscene",
                 substeps = {
-                    "If you lack access to Aht Urhgan Whitegate speaking with Faursel in Lower Jeuno , (J-8) inside the Tenshodo , select the 3rd invisible option twice, and then selecting \"Where is Tenzen\" will grant you access.",
+                    "If you lack access to Aht Urhgan Whitegate speaking with Faursel in Lower Jeuno, (J-8) inside the Tenshodo, select the 3rd invisible option twice, and then selecting \"Where is Tenzen\" will grant you access.",
                 },
             },
         },
@@ -465,13 +465,13 @@ M.STEPS = {
         steps = {
             { note = "OPTIONAL: Return to your home nation for a cutscene. You will be told to go to the Imperial Whitegate and skip to the mission Aphmau's Light." },
             "Examine the Imperial Whitegate for a cutscene.",
-            "You will skip to the mission Reunited , receiving Cipher Of Nashmeira's Alter Ego II and the ability to view all Treasures of Aht Urhgan mission cutscenes.",
+            "You will skip to the mission Reunited, receiving Cipher Of Nashmeira's Alter Ego II and the ability to view all Treasures of Aht Urhgan mission cutscenes.",
             "Return to your home nation for a cutscene. You will be told to go to the Imperial Whitegate and also be informed where Aphmau currently is in your mission progress.",
-            "After viewing the cutscene in your home nation you will skip to the mission Aphmau's Light .",
+            "After viewing the cutscene in your home nation you will skip to the mission Aphmau's Light.",
             {
-                text = "You will progress to the mission The Endless Sky , the placeholder mission to continue.",
+                text = "You will progress to the mission The Endless Sky, the placeholder mission to continue.",
                 substeps = {
-                    "In order to receive the Trust Cipher, you must be past the third Treasures of Aht Urhgan Mission : President Salaheem",
+                    "In order to receive the Trust Cipher, you must be past the third Treasures of Aht Urhgan Mission: President Salaheem",
                 },
             },
             "You only need to speak to Abquhbah after receiving the cutscene in your home nation to obtain it.",
@@ -491,7 +491,7 @@ M.STEPS = {
             {
                 text = "Examine the Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) when Aphmau is in town.",
                 substeps = {
-                    "Even if you have passed Passing Glory , there are some missions where Aphmau is not available. You must progress to a mission where she is \"in town\".",
+                    "Even if you have passed Passing Glory, there are some missions where Aphmau is not available. You must progress to a mission where she is \"in town\".",
                 },
             },
         },
@@ -529,9 +529,9 @@ M.STEPS = {
     ["2-13"] = {
         name = "From the Ruins",
         steps = {
-            "Return to Aht Urhgan Whitegate and click on Imperial Whitegate (The Palace Door) for a cutscene and a Rhapsody in Crimson .",
+            "Return to Aht Urhgan Whitegate and click on Imperial Whitegate (The Palace Door) for a cutscene and a Rhapsody in Crimson.",
             { note = "(Optional): Locate alternate sources of darkness." },
-            "You can do the following at any point during RoV Chapter 2 , before Mission 2-39.",
+            "You can do the following at any point during RoV Chapter 2, before Mission 2-39.",
             {
                 text = "Requires all Aht Urhgan Missions completed.",
                 substeps = {
@@ -547,7 +547,7 @@ M.STEPS = {
             {
                 text = "Requires all Promathia Missions completed.",
                 substeps = {
-                    "Zone into The Garden of Ru'Hmet , descend to the bottom level and enter the next area for a cutscene.",
+                    "Zone into The Garden of Ru'Hmet, descend to the bottom level and enter the next area for a cutscene.",
                 },
             },
         },
@@ -557,15 +557,15 @@ M.STEPS = {
         name = "Cauterize",
         steps = {
             {
-                text = "Head to one of the Cavernous Maw in Batallia Downs , Rolanberry Fields or Sauromugue Champaign for a cutscene when you click the sparkling ???.",
+                text = "Head to one of the Cavernous Maw in Batallia Downs, Rolanberry Fields or Sauromugue Champaign for a cutscene when you click the sparkling ???.",
                 substeps = {
                     "( You may need to be on at least Wings of the Goddess Mission Mission 8: In the Name of the Father to get this cutscene. )",
                     "You may not receive this cutscene depending on mission and quest progress. See Ganged Up On for more details.",
                     "You must complete the quests Champion of the Dawn and A Forbidden Reunion first if they have been flagged before getting this cutscene.",
                 },
             },
-            "If you have not started Wings of the Goddess , mission line proceeds to Uncertain Destinations .",
-            "If you have started Wings of the Goddess , mission line proceeds to Ganged Up On .",
+            "If you have not started Wings of the Goddess, mission line proceeds to Uncertain Destinations.",
+            "If you have started Wings of the Goddess, mission line proceeds to Ganged Up On.",
         },
     },
 
@@ -573,7 +573,7 @@ M.STEPS = {
         name = "Uncertain Destinations",
         steps = {
             {
-                text = "Examine the ??? next to one of the Cavernous Maws in Batallia Downs , Rolanberry Fields or Sauromugue Champaign for a cutscene.",
+                text = "Examine the ??? next to one of the Cavernous Maws in Batallia Downs, Rolanberry Fields or Sauromugue Champaign for a cutscene.",
                 substeps = {
                     "The sparkling blue ???, not the white one.",
                 },
@@ -584,22 +584,22 @@ M.STEPS = {
     ["2-16"] = {
         name = "Ganged Up On",
         steps = {
-            "Examine the ??? next to one of the Cavernous Maws in Batallia Downs , Rolanberry Fields or Sauromugue Champaign for a cutscene.",
+            "Examine the ??? next to one of the Cavernous Maws in Batallia Downs, Rolanberry Fields or Sauromugue Champaign for a cutscene.",
             "You must be on or past Wings of the Goddess mission 8 In the Name of the Father to progress further.",
             {
                 text = "Zone into Southern San d'Oria (S) for a cutscene. You can use a Home Point, Survival Guide, Retrace, or Instant Retrace.",
                 substeps = {
-                    "You will receive a Lightsworm .",
+                    "You will receive a Lightsworm.",
                     "It is possible you might have received this Key Item through previous quests, make sure to check your Key Items.",
-                    "If you do not receive the above cutscene, visit one of the Cavernous Maws in either Batallia Downs , Rolanberry Fields , or Sauromugue Champaign and click on the sparkling blue ??? on the ground next to it for a cutscene first. Then return to Southern San d'Oria (S) for the above cutscene.",
+                    "If you do not receive the above cutscene, visit one of the Cavernous Maws in either Batallia Downs, Rolanberry Fields, or Sauromugue Champaign and click on the sparkling blue ??? on the ground next to it for a cutscene first. Then return to Southern San d'Oria (S) for the above cutscene.",
                     "If you have done all of the above and have not progressed to the next mission ( Sacrifice ), interact with the Mystic Retriever in Southern San d'Oria (S) (M-6).",
                 },
             },
             "You will then be on Rhapsodies of Vanadiel Mission 2-17",
             "Lilisette will not be available if you are currently undertaking one of the following Wings of the Goddess missions:",
             "On Thin Ice / Proof of Valor / A Sanguinary Prelude / Dungeons and Dancers / Distorter of Time / The Will of the World / Adieu, Lilisette / By the Fading Light / Edge of Existence / Her Memories / Forget Me Not / Pillar of Hope / Glimmer of Life / Time Slips Away / When Wills Collide / Whispers of Dawn / Where It All Began * / A Token of Troth * / Lest We Forget *",
-            "If you start the mission Where It All Began by completing Maiden of the Dusk , you must finish the Wings of the Goddess storyline, Champion of the Dawn , and A Forbidden Reunion to continue.",
-            "If you are stuck without a Lightsworm , go to the Goblin Footprint in Batallia Downs (S) at F-9 and watch all of the Ganged Up On cutscenes , and then wait a game day. After that check the shimmering ??? next to any of the present day maws in Rolanberry Fields , Sauromugue Champaign , or Batallia Downs to get the option to raise your Lightsworm .",
+            "If you start the mission Where It All Began by completing Maiden of the Dusk, you must finish the Wings of the Goddess storyline, Champion of the Dawn, and A Forbidden Reunion to continue.",
+            "If you are stuck without a Lightsworm, go to the Goblin Footprint in Batallia Downs (S) at F-9 and watch all of the Ganged Up On cutscenes, and then wait a game day. After that check the shimmering ??? next to any of the present day maws in Rolanberry Fields, Sauromugue Champaign, or Batallia Downs to get the option to raise your Lightsworm.",
             "You will receive the message \"The bonds tying you to Altana have strengthened, enabling you to experience all the memories of Wings of the Goddess!\"",
             "If you are missing the Cipher of Lilisette's alter ego II you will not be able to progress. You can retrieve it from the Mystic Retriever (M-6) in Southern Sandoria (S) near the Mog House.",
         },
@@ -609,18 +609,18 @@ M.STEPS = {
         name = "Sacrifice",
         steps = {
             { note = "Note: You will want to bring some sort of warp ( Warp Ring or Instant Warp ). After finishing the next Mission, you'll be left with no fast way to get back into town." },
-            "If you have at least completed Wings of the Goddess Mission 45, Time Slips Away :",
-            "Enter Walk of Echoes from Pashhow Marshlands (S) (J-9) or Grauberg (S) (F-5) and check the Ornate Door .",
-            "Otherwise, as long as you have at least triggered Wings of the Goddess Mission 8, In the Name of the Father :",
+            "If you have at least completed Wings of the Goddess Mission 45, Time Slips Away:",
+            "Enter Walk of Echoes from Pashhow Marshlands (S) (J-9) or Grauberg (S) (F-5) and check the Ornate Door.",
+            "Otherwise, as long as you have at least triggered Wings of the Goddess Mission 8, In the Name of the Father:",
             {
-                text = "Enter Walk of Echoes by touching the glowing ??? on the ground (You will be asked to use your Lightsworm ) next to one of the Cavernous Maws outside Jeuno :",
+                text = "Enter Walk of Echoes by touching the glowing ??? on the ground (You will be asked to use your Lightsworm ) next to one of the Cavernous Maws outside Jeuno:",
                 substeps = {
                     "Batallia Downs (H-5) Note: Survival Guide to Rolanberry Fields is very close.",
                     "Rolanberry Fields (H-6) Note: Survival Guide to Rolanberry Fields is closer.",
                     "Sauromugue Champaign (K-9)",
                 },
             },
-            "After you zone in run straight ahead, up the stairs, and click on the Ornate Door .",
+            "After you zone in run straight ahead, up the stairs, and click on the Ornate Door.",
         },
     },
 
@@ -634,7 +634,7 @@ M.STEPS = {
                 },
             },
             {
-                text = "Examine the blue glowing ??? closest to the spot you were teleported to in Grauberg (S) to spawn Cetus .",
+                text = "Examine the blue glowing ??? closest to the spot you were teleported to in Grauberg (S) to spawn Cetus.",
                 substeps = {
                     "The correct??? is NE of the Veridical Conflux and not the one right beside it.",
                 },
@@ -651,7 +651,7 @@ M.STEPS = {
     ["2-19"] = {
         name = "Of Light and Darkness",
         steps = {
-            "Head to Norg and examine Gilgamesh's Oaken Door .",
+            "Head to Norg and examine Gilgamesh's Oaken Door.",
         },
     },
 
@@ -659,10 +659,10 @@ M.STEPS = {
         name = "Temporary Farewells",
         steps = {
             {
-                text = "Head to Misareaux Coast (G-5) and examine the sparkling ??? next to the Undulating Confluence .",
+                text = "Head to Misareaux Coast (G-5) and examine the sparkling ??? next to the Undulating Confluence.",
                 substeps = {
                     "The fastest way to get here is by taking the Home Point to Misareaux Coast and walking up the riverbank toward the bridge.",
-                    "You can also use the Survival Guide , and walk north.",
+                    "You can also use the Survival Guide, and walk north.",
                 },
             },
         },
@@ -681,9 +681,9 @@ M.STEPS = {
             {
                 text = "Obtain the food Iroha asks for, return to the ??? in Misareaux Coast and trade the food to it.",
                 substeps = {
-                    "Choosing \" strength \" requires a Beef Stewpot , sold by the Curio Vendor Moogles for 15,000 Gil .",
-                    "Choosing \" style \" requires 30x Spicy Crackers , sold by the Curio Vendor Moogles for 450 Gil each (13,500 Gil total). If you are crafting your own food for this, Spicy Cracker is the easiest option.",
-                    "Choosing \" endurance \" requires a Serving of Zaru Soba , sold by the Curio Vendor Moogles for 15,000 Gil .",
+                    "Choosing \" strength \" requires a Beef Stewpot, sold by the Curio Vendor Moogles for 15,000 Gil.",
+                    "Choosing \" style \" requires 30x Spicy Crackers, sold by the Curio Vendor Moogles for 450 Gil each (13,500 Gil total). If you are crafting your own food for this, Spicy Cracker is the easiest option.",
+                    "Choosing \" endurance \" requires a Serving of Zaru Soba, sold by the Curio Vendor Moogles for 15,000 Gil.",
                 },
             },
         },
@@ -693,9 +693,9 @@ M.STEPS = {
         name = "Past Imperfect",
         steps = {
             {
-                text = "Return to Norg for a cutscene at the Oaken Door .",
+                text = "Return to Norg for a cutscene at the Oaken Door.",
                 substeps = {
-                    "If you are currently on Zilart Mission 3: Kazham's Chieftainness , Gilgamesh will ask you to talk to Jakoh Wahcondalo who can be found in Kazham at (J-9). After doing so you will need to return to Norg and examine the Oaken Door again for another cutscene.",
+                    "If you are currently on Zilart Mission 3: Kazham's Chieftainness, Gilgamesh will ask you to talk to Jakoh Wahcondalo who can be found in Kazham at (J-9). After doing so you will need to return to Norg and examine the Oaken Door again for another cutscene.",
                 },
             },
         },
@@ -725,21 +725,21 @@ M.STEPS = {
     ["2-26"] = {
         name = "Where Divinities Collide",
         steps = {
-            "Head to Crag of Holla , Crag of Dem , or Crag of Mea . Enter Hall of Transference via the Shattered Telepoint for a cutscene.",
+            "Head to Crag of Holla, Crag of Dem, or Crag of Mea. Enter Hall of Transference via the Shattered Telepoint for a cutscene.",
         },
     },
 
     ["2-27"] = {
         name = "Visions of Dread",
         steps = {
-            "Cutscene in the Hall of Transference .",
+            "Cutscene in the Hall of Transference.",
         },
     },
 
     ["2-28"] = {
         name = "To the Skies",
         steps = {
-            "Return to Norg for a cutscene at the Oaken Door .",
+            "Return to Norg for a cutscene at the Oaken Door.",
         },
     },
 
@@ -757,7 +757,7 @@ M.STEPS = {
             {
                 text = "Head north up the ramp, then take the first left (west-northwest to H-10), and examine the blue ??? at the top of the stairs for a cutscene.",
                 substeps = {
-                    "You will receive the temporary Key Item Siren's plume .",
+                    "You will receive the temporary Key Item Siren's plume.",
                 },
             },
         },
@@ -766,14 +766,14 @@ M.STEPS = {
     ["2-31"] = {
         name = "Fall from Grace",
         steps = {
-            "Head back to Crag of Holla , Crag of Dem , or Crag of Mea . Examine the Shattered Telepoint for a cutscene.",
+            "Head back to Crag of Holla, Crag of Dem, or Crag of Mea. Examine the Shattered Telepoint for a cutscene.",
         },
     },
 
     ["2-32"] = {
         name = "Banishing the Darkness",
         steps = {
-            "Head to Norg for a cutscene at Gilgamesh's Oaken Door .",
+            "Head to Norg for a cutscene at Gilgamesh's Oaken Door.",
         },
     },
 
@@ -783,7 +783,7 @@ M.STEPS = {
             {
                 text = "Head to Windurst Walls HP #3 for a cutscene with Shantotto at Shantotto's Manor (K-7) after speaking with her.",
                 substeps = {
-                    "You will receive the temporary Key Item Most curious curio .",
+                    "You will receive the temporary Key Item Most curious curio.",
                 },
             },
         },
@@ -792,7 +792,7 @@ M.STEPS = {
     ["2-34"] = {
         name = "Cacophonous Discord",
         steps = {
-            "Head to Misareaux Coast , examine the Undulating Confluence and enter Escha - Ru'Aun for a cutscene.",
+            "Head to Misareaux Coast, examine the Undulating Confluence and enter Escha - Ru'Aun for a cutscene.",
         },
     },
 
@@ -800,7 +800,7 @@ M.STEPS = {
         name = "Eddies of Despair",
         steps = {
             {
-                text = "Upon entering Escha - Ru'Aun , to the left (next to Dremi ) there is a ??? that gives you Eschan Droplets item. Afterwards, click on the Eschan Portal to get to the next one.",
+                text = "Upon entering Escha - Ru'Aun, to the left (next to Dremi ) there is a ??? that gives you Eschan Droplets item. Afterwards, click on the Eschan Portal to get to the next one.",
                 substeps = {
                     "At each portal, you need to look around for ??? and obtain another Eschan Droplet. This will allow you to teleport to the next one. Repeat this process until you've reached Portal #15. The location of each ??? is as follows:",
                 },
@@ -822,21 +822,21 @@ M.STEPS = {
         name = "Pretender to the Throne",
         steps = {
             {
-                text = "Click on the ??? a second time to begin a fight with Balamor .",
+                text = "Click on the ??? a second time to begin a fight with Balamor.",
                 substeps = {
-                    "Balamor spams Last Laugh , a conal Drain move; mages should attempt to stand far.",
+                    "Balamor spams Last Laugh, a conal Drain move; mages should attempt to stand far.",
                     "Should you fail to win or disconnect midfight, you need to zone and re-enter for another KI.",
                 },
             },
             "After defeating Balamor, check the ??? once again.",
-            "There is a ??? next to the Eschan portal, which will give you another Clump of eschan droplets . Portal #15 loops back to the start of the zone.",
+            "There is a ??? next to the Eschan portal, which will give you another Clump of eschan droplets. Portal #15 loops back to the start of the zone.",
         },
     },
 
     ["2-37"] = {
         name = "Banished",
         steps = {
-            "Return to Norg for a cutscene at the Oaken Door .",
+            "Return to Norg for a cutscene at the Oaken Door.",
         },
     },
 
@@ -851,13 +851,13 @@ M.STEPS = {
     ["2-39"] = {
         name = "Both Paths Taken",
         steps = {
-            "Walk forward to the Transcendental Radiance .",
+            "Walk forward to the Transcendental Radiance.",
             {
-                text = "Upon examining the Transcendental Radiance , you will be given the option to enter the battle field:",
+                text = "Upon examining the Transcendental Radiance, you will be given the option to enter the battle field:",
                 substeps = {
-                    "The fight is against Disjoined One .",
+                    "The fight is against Disjoined One.",
                     "Time limit is 15 minutes.",
-                    "Easily soloable with 5 Trusts .",
+                    "Easily soloable with 5 Trusts.",
                     "If Iroha dies, she will Reraise after 15 seconds. She will Reraise multiple times.",
                 },
             },
@@ -867,7 +867,7 @@ M.STEPS = {
     ["2-40"] = {
         name = "The Man Behind the Mask",
         steps = {
-            "Go back to Norg and examine the Oaken Door .",
+            "Go back to Norg and examine the Oaken Door.",
         },
     },
 
@@ -877,7 +877,7 @@ M.STEPS = {
             {
                 text = "Zone into any area in a starting Nation that has a Mog House entrance for a cutscene.",
                 substeps = {
-                    "You will receive the Song of hope .",
+                    "You will receive the Song of hope.",
                 },
             },
         },
@@ -887,10 +887,10 @@ M.STEPS = {
         name = "Darkness Beckons",
         steps = {
             { note = "Note: Most of the mobs in Reisenjima will aggro and some even have True Sight or True Sound (see Reisenjima#Adversaries.)" },
-            "Travel to the Crag of Holla , Dem , or Mea and examine the Dimensional Portal . You will receive the option to travel to Reisenjima .",
+            "Travel to the Crag of Holla, Dem, or Mea and examine the Dimensional Portal. You will receive the option to travel to Reisenjima.",
             "Upon arrival, you will receive a brief cutscene.",
             {
-                text = "Speak with Shiftrix , the goblin by the entrance, (you don't need to pay for info) to activate the Oseem augmentation system.",
+                text = "Speak with Shiftrix, the goblin by the entrance, (you don't need to pay for info) to activate the Oseem augmentation system.",
                 substeps = {
                     "He sells a Map of Reisenjima (50 Silt.)",
                     "You may also want to grab a Mollifier (500 Silt ) for use in the next Mission while here.",
@@ -903,7 +903,7 @@ M.STEPS = {
                 text = "Make your way to the Etched Rock at (K-9) for a cutscene.",
                 substeps = {
                     "Simply follow the path. The Etched Rock is at the far end and there is no shortcut.",
-                    "Make your way to (K-9) to check the Etched Rock and from this point forward you can pick up Ethereal Ingress . They do not blink when not yet acquired, unlike other teleport points, and most are on or close to the path, with #3 and #4 (the two in the north west) being the only substantial detour.",
+                    "Make your way to (K-9) to check the Etched Rock and from this point forward you can pick up Ethereal Ingress. They do not blink when not yet acquired, unlike other teleport points, and most are on or close to the path, with #3 and #4 (the two in the north west) being the only substantial detour.",
                 },
             },
         },
@@ -938,12 +938,12 @@ M.STEPS = {
         name = "The Crucible",
         steps = {
             {
-                text = "(Optional) Zone into any starting city zone (Bastok, San d'Oria, Windurst) with a Mog House entrance for a cutscene telling you to go to Ceizak Battlegrounds .",
+                text = "(Optional) Zone into any starting city zone (Bastok, San d'Oria, Windurst) with a Mog House entrance for a cutscene telling you to go to Ceizak Battlegrounds.",
                 substeps = {
-                    "This will advance you to the next mission, Rhapsodies of Vanadiel Mission 3-5: Forward Thinking .",
+                    "This will advance you to the next mission, Rhapsodies of Vanadiel Mission 3-5: Forward Thinking.",
                 },
             },
-            "Enter Ceizak Battlegrounds via either the Waypoint in Lower Jeuno , Waypoint in Adoulin , by zoning in from a connected Adoulin area, or from any Home Point crystal to Ceizak Battlegrounds .",
+            "Enter Ceizak Battlegrounds via either the Waypoint in Lower Jeuno, Waypoint in Adoulin, by zoning in from a connected Adoulin area, or from any Home Point crystal to Ceizak Battlegrounds.",
         },
     },
 
@@ -953,7 +953,7 @@ M.STEPS = {
             {
                 text = "Zone into Ceizak Battlegrounds for a cutscene.",
                 substeps = {
-                    "Your Reisenjima Sanctorium orb will be exchanged for Drained orb .",
+                    "Your Reisenjima Sanctorium orb will be exchanged for Drained orb.",
                 },
             },
         },
@@ -963,7 +963,7 @@ M.STEPS = {
         name = "Tears of the Generals",
         steps = {
             {
-                text = "Talk to Ploh Trishbahk at the Castle Adoulin gates in Eastern Adoulin .",
+                text = "Talk to Ploh Trishbahk at the Castle Adoulin gates in Eastern Adoulin.",
                 substeps = {
                     "Must complete at least Seekers of Adoulin Mission 2-2: An Aimless Journey to get this cutscene.",
                 },
@@ -977,7 +977,7 @@ M.STEPS = {
             {
                 text = "Head to the Augural Conveyor (and if you haven't already, click it to unlock it once you're there) room in Rala Waterways (B-6).",
                 substeps = {
-                    "The closest entry is (F-5) in Western Adoulin , closest to the Adoulin Waterfront Waypoint .",
+                    "The closest entry is (F-5) in Western Adoulin, closest to the Adoulin Waterfront Waypoint.",
                     "You will need to move east along the path and enter (B-6) from (C-7).",
                 },
             },
@@ -987,7 +987,7 @@ M.STEPS = {
                     "If you have it unlocked already, you can also use the \" enigmatic device \" Waypoint option to teleport.",
                 },
             },
-            "Once the cutscene ends, you will receive Cipher: Arciela II , and...",
+            "Once the cutscene ends, you will receive Cipher: Arciela II, and...",
             "You will receive the message \"The bonds tying you to Altana have strengthened, enabling you to experience all the memories of Seekers of Adoulin!\"",
         },
     },
@@ -996,10 +996,10 @@ M.STEPS = {
         name = "Gone but Not Forgotten",
         steps = {
             {
-                text = "In Rala Waterways , select the sluice gate and enter, head to the secret hideout at (C-6).",
+                text = "In Rala Waterways, select the sluice gate and enter, head to the secret hideout at (C-6).",
                 substeps = {
-                    "Must be on at least Seekers of Adoulin Mission 2-7-1 Behind the Sluices and up to the part where you enter the sluice to get proper access to the Sluice Gate .",
-                    "Most easily accessed via Western Adoulin (F-5) from the Adoulin Waterfront Waypoint .",
+                    "Must be on at least Seekers of Adoulin Mission 2-7-1 Behind the Sluices and up to the part where you enter the sluice to get proper access to the Sluice Gate.",
+                    "Most easily accessed via Western Adoulin (F-5) from the Adoulin Waterfront Waypoint.",
                 },
             },
             {
@@ -1072,23 +1072,23 @@ M.STEPS = {
                 },
             },
             {
-                text = "Warp from one of the glowing blue ??? next to the Cavernous Maws in Batallia Downs , Rolanberry Fields , and Sauromugue Champaign",
+                text = "Warp from one of the glowing blue ??? next to the Cavernous Maws in Batallia Downs, Rolanberry Fields, and Sauromugue Champaign",
                 substeps = {
                     "Either past or present will work for these three areas -- present-day survival guides are the quickest.",
-                    "Requires the Lightsworm , acquired during Wings of the Goddess Mission 2, Back to the Beginning , or during the early RoV Mission line.",
-                    "As long as the player completed Back to the Beginning after August 2015, this should work. The Lightsworm you need for this was introduced in the August 2015 Version Update Changes .",
+                    "Requires the Lightsworm, acquired during Wings of the Goddess Mission 2, Back to the Beginning, or during the early RoV Mission line.",
+                    "As long as the player completed Back to the Beginning after August 2015, this should work. The Lightsworm you need for this was introduced in the August 2015 Version Update Changes.",
                 },
             },
             {
                 text = "The Verdical Conflux in Grauberg (S) at (F-5).",
                 substeps = {
-                    "Requires Wings of the Goddess Mission 46: When Wills Collide .",
+                    "Requires Wings of the Goddess Mission 46: When Wills Collide.",
                 },
             },
             {
                 text = "The Verdical Conflux in Pashhow Marshlands (S) at (J-9).",
                 substeps = {
-                    "Requires Voidwatch Quest 15: Glimmer of Hope .",
+                    "Requires Voidwatch Quest 15: Glimmer of Hope.",
                 },
             },
         },
@@ -1106,7 +1106,7 @@ M.STEPS = {
                     "Note: If you entered the Walk of Echoes through Xarcabard (S), then you are in the wrong section of the zone. See the previous Mission for directions to the correct entrances.",
                 },
             },
-            "You will then be teleported to Desuetia - Empyreal Paradox and receive Cait Sith's whisker .",
+            "You will then be teleported to Desuetia - Empyreal Paradox and receive Cait Sith's whisker.",
             "The Mission will automatically complete after you enter the area.",
         },
     },
@@ -1136,7 +1136,7 @@ M.STEPS = {
             {
                 text = "Examine the Transcendental Radiance again after clearing the Battlefield for a fairly long cutscene.",
                 substeps = {
-                    "If you wish to replay the cutscene with the flash forward to Reisenjima later, it is at the Goblin Footprints in Reisenjima , under the listing \" Penance \".",
+                    "If you wish to replay the cutscene with the flash forward to Reisenjima later, it is at the Goblin Footprints in Reisenjima, under the listing \" Penance \".",
                 },
             },
         },
@@ -1162,8 +1162,8 @@ M.STEPS = {
             {
                 text = "Return to Reisenjima and examine the ??? at (H-5) (on the hill near the large ruins) for a cutscene.",
                 substeps = {
-                    "If you receive a message about a Tribulens you are at the wrong ??? . It is the one immediately adjacent to the ruins not the one further down the hill.",
-                    "Warp to Ethereal Ingress #5 and run west along the path. Be wary of True Sight Hippogryphs .",
+                    "If you receive a message about a Tribulens you are at the wrong ???. It is the one immediately adjacent to the ruins not the one further down the hill.",
+                    "Warp to Ethereal Ingress #5 and run west along the path. Be wary of True Sight Hippogryphs.",
                 },
             },
         },
@@ -1173,12 +1173,12 @@ M.STEPS = {
         name = "From West to East",
         steps = {
             {
-                text = "Defeat 11 Obstreperous Panopts .",
+                text = "Defeat 11 Obstreperous Panopts.",
                 substeps = {
                     "Many spawn around (F-11) -- just north of Ethereal Ingress #1.",
                     "They are not difficult to defeat, but the area is full of other aggressive mobs.",
                     "Players should purchase a Mollifier KI from Shiftrix prior to completing this Mission otherwise the NM Ascended Panopt can spawn.",
-                    "Zoning will reset your progress . You will receive a message informing you how many remain upon each kill.",
+                    "Zoning will reset your progress. You will receive a message informing you how many remain upon each kill.",
                     "Thanks to the June 2016 version update, the \"Rhapsody in Fuschia\" will reduce the level of any Obstreperous Panopts claimed by the player while on this mission.",
                     "Record of Eminence, Combat (Region), Combat (Escha 2), Conflict: Reisenjima I is killing ten of these.",
                 },
@@ -1218,11 +1218,11 @@ M.STEPS = {
         steps = {
             "Check the Transcendental Radiance in Empyreal Paradox and enter the battlefield \" The Winds of Time \".",
             {
-                text = "You will have to fight and defeat Metus .",
+                text = "You will have to fight and defeat Metus.",
                 substeps = {
-                    "Metus can use Promathia 's TP moves, including : Bastion of Twilight , Wheel of Impregnability , Infernal Deliverance , Empty Salvation .",
-                    "Metus can also use Osmotic Wave , Censure .",
-                    "Metus can cast Meteor .",
+                    "Metus can use Promathia 's TP moves, including: Bastion of Twilight, Wheel of Impregnability, Infernal Deliverance, Empty Salvation.",
+                    "Metus can also use Osmotic Wave, Censure.",
+                    "Metus can cast Meteor.",
                     "Trust NPCs can be used for this battle.",
                 },
             },
@@ -1237,8 +1237,8 @@ M.STEPS = {
             {
                 text = "If Tenzen is 'occupied' in a Promathia Mission, you will be unable to continue until he is free.",
                 substeps = {
-                    "e.g. You are on Dawn , but have not completed the final cut scenes.",
-                    "To continue with the Mission, examine the Resume Point in Empyreal Paradox .",
+                    "e.g. You are on Dawn, but have not completed the final cut scenes.",
+                    "To continue with the Mission, examine the Resume Point in Empyreal Paradox.",
                 },
             },
         },
@@ -1265,7 +1265,7 @@ M.STEPS = {
             {
                 text = "Go to Reisenjima Sanctorium for a cutscene.",
                 substeps = {
-                    "If you've completed the Chains of Promathia Missions or are on the final battle Dawn , you may home point to The Garden of Ru'Hmet and use the elevator to descend. Inside Empyreal Paradox , click on the Dimensional Portal and choose to teleport to Reisenjima Sanctorium .",
+                    "If you've completed the Chains of Promathia Missions or are on the final battle Dawn, you may home point to The Garden of Ru'Hmet and use the elevator to descend. Inside Empyreal Paradox, click on the Dimensional Portal and choose to teleport to Reisenjima Sanctorium.",
                 },
             },
         },
@@ -1307,7 +1307,7 @@ M.STEPS = {
         name = "The Orb's Radiance",
         steps = {
             {
-                text = "Examine the Reisen Crystal again to enter a Battlefield against the Cloud of Darkness .",
+                text = "Examine the Reisen Crystal again to enter a Battlefield against the Cloud of Darkness.",
                 substeps = {
                     "If you fail, get another Breath of the avatars at the Stone Circle in La Theine Plateau (G-6).",
                     "Players that have already completed this Mission don't need the Key Item to join and help you in this fight.",
@@ -1321,7 +1321,7 @@ M.STEPS = {
         steps = {
             "Watch the ending cutscene.",
             "Congratulations, you beat the game!",
-            "After this mission, you have the ability to begin The Voracious Resurgence Missions .",
+            "After this mission, you have the ability to begin The Voracious Resurgence Missions.",
         },
     },
 
