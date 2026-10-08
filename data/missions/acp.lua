@@ -54,7 +54,7 @@ M.STEPS = {
             "Any characters currently on (or previously completed) this mission can receive the goblin food key items as long as they are in the same party/alliance.",
             "These Key Items have a low (5-10%?) obtainment rate, expect to kill dozens of Goblins. If you are in a party/alliance, one character at random will be chosen to receive it (if they don't have it already).",
             "Party/alliance members do not have to be nearby to receive the key item, they can be anywhere in the zone.",
-            "NOTE : You must have the respective Goblin food Key Item when the NM is killed in order to obtain the Seedspall Key Item.",
+            { note = "NOTE: You must have the respective Goblin food Key Item when the NM is killed in order to obtain the Seedspall Key Item." },
             {
                 text = "Kill Goblins in Batallia Downs to obtain the Key Item Bowl of bland Goblin salad .",
                 substeps = {
@@ -121,7 +121,7 @@ M.STEPS = {
             "You have 30 minutes (Earth time) to gather the 9 Afterglows . If you do not collect them all in 30 minutes zone out and back in to begin the process over again.",
             {
                 text = "The Seed Afterglows move periodically, but stay in the same general areas, refer to the maps below.",
-                substeps = {
+                notes = {
                     "NOTE: The yellow Seed Afterglow can spawn in 2 different rooms. If it's not in the big room, check the small circular room at (H/I-9).",
                 },
             },
@@ -142,7 +142,7 @@ M.STEPS = {
         steps = {
             {
                 text = "Examine the Burning Circle ( Qu'Bia Arena ) for a cutscene, examine it again to begin the fight.",
-                substeps = {
+                notes = {
                     "Trusts can be called in this fight as of October 11, 2016.",
                 },
             },

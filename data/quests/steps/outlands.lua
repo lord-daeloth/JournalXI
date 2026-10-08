@@ -211,7 +211,7 @@ Q.STEPS = {
     },
 
     out_sra_divine_might = {
-        "Note: If you complete this quest, Zilart Mission 14 , will be considered completed as well.",
+        { note = "Note: If you complete this quest, Zilart Mission 14, will be considered completed as well." },
         "!!!NOTE:!!! You must flag this quest at the blank target in The Shrine of Ru'Avitau or you WILL NOT receive credit and will have to re-aquire another Ark Pentasphere .",
         {
             text = "Enter The Shrine of Ru'Avitau from the (H-9) entrance in Ru'Aun Gardens .",
@@ -263,7 +263,7 @@ Q.STEPS = {
             },
         },
         "Once you have finished the battle, return to the Blank Target in The Shrine of Ru'Avitau to choose your reward.",
-        "Note: You are only allowed to re-quest this once per Conquest Tally .",
+        { note = "Note: You are only allowed to re-quest this once per Conquest Tally." },
         "Drop your current earring. You will need to zone if you drop it in the same area, as the game checks your Recycle Bin as part of its inspection of your various inventories. The target will be unresponsive until you do this.",
         "Receive the quest at the unmarked target (G/H-11) in the main entrance of The Shrine of Ru'Avitau . The game will mention your old quest reward by name and seems to track your prior selection.",
         "The quest appears as a second Divine Might quest in your quest log with a different description.",
@@ -272,9 +272,11 @@ Q.STEPS = {
         {
             text = "Trade the Light Ore to the Qu'Hau Spring in Ro'Maeve during a Full Moon between 18:00 and 6:00 to receive the Moonlight ore . You cannot do this until the new quest has been started.",
             substeps = {
-                "Warning: if you need both the Moonlight ore and the Ark Pentasphere , you must make TWO separate trades.",
                 "If all three items are traded, only the Moonlight ore will be obtained.",
-                "Each individual restarting this quest must possess their own Moonlight ore .",
+                "Each individual restarting this quest must possess their own Moonlight ore.",
+            },
+            notes = {
+                "Warning: if you need both the Moonlight ore and the Ark Pentasphere, you must make TWO separate trades.",
             },
         },
         {
@@ -870,7 +872,7 @@ Q.STEPS = {
     },
 
     out_kaz_trial_by_fire = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         {
             text = "Map A / Map B",
             substeps = {
@@ -890,7 +892,7 @@ Q.STEPS = {
     },
 
     out_nrg_trial_by_water = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         {
             text = "Map A / Map B",
             substeps = {
@@ -912,7 +914,7 @@ Q.STEPS = {
     },
 
     out_rab_trial_by_wind = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         "Speak with Agado-Pugado to obtain quest. If you are positive that you have the required fame but he is not allowing you to undertake this quest, continue speaking with him until his text changes. Once you have received the Tuning fork of wind , you can now safely undertake the quest.",
         {
             text = "Travel to Cape Teriggan (F-5) to enter the Cloister of Gales .",
@@ -992,7 +994,7 @@ Q.STEPS = {
     out_nrg_li_telor_variant = {
         {
             text = "Talk to Kieran after completing Voidwatch Ops: Border Crossing .",
-            substeps = {
+            notes = {
                 "Note: Zilart Mission 14 - Ark Angels must be started before you can receive this cutscene.",
             },
         },

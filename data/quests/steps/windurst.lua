@@ -62,7 +62,7 @@ Q.STEPS = {
         "The Cardian you are looking for is the Five of Spades . He is at the outpost in Buburimu Peninsula .",
         "Go to Buburimu Peninsula and speak to Five of Spades .",
         "Return to Kororo to receive your reward.",
-        "Notes:",
+        { note = "Notes:" },
         "This quest cannot be flagged if you have Windurst Mission 9-2 open.",
         "This quest cannot be flagged if you have the quest The Kind Cardian open.",
     },
@@ -96,7 +96,7 @@ Q.STEPS = {
     },
 
     wq_wt_smudge_on_ones_record = {
-        "NOTE: You must zone after completing the previous quest before you can start this quest.",
+        { note = "NOTE: You must zone after completing the previous quest before you can start this quest." },
         "Talk to Hariga-Origa in Windurst Waters F-8.",
         "Trade both Slime Oil and Frost Turnip at same time to Hariga-Origa your reward.",
     },
@@ -135,7 +135,7 @@ Q.STEPS = {
                 "At the end of the cutscene you will receive three key items: Gang whereabouts note , First forged envelope , and Second forged envelope .",
             },
         },
-        "Optional: Speak to Cha Lebagta and Bopa Greso who are just south of Nanaa Mihgo at J-4 for a couple clues.",
+        { note = "Optional: Speak to Cha Lebagta and Bopa Greso who are just south of Nanaa Mihgo at J-4 for a couple clues." },
         {
             text = "Head to Sauromugue Champaign and check the ??? s in the following locations to attempt to spawn Climbpix Highrise . The tower that spawns Climbpix Highrise is random, so just check them all until he appears.",
             substeps = {
@@ -226,15 +226,15 @@ Q.STEPS = {
         "Zone in and out if you just completed Star Struck .",
         {
             text = "Speak to Koru-Moru to begin the quest.",
-            substeps = {
-                "(Optional) Talk to the NPCs outside for some hints. Specifically: Luuh Koplehn , Bonchacha , Maan-Pokuun .",
+            notes = {
+                "(Optional) Talk to the NPCs outside for some hints. Specifically: Luuh Koplehn, Bonchacha, Maan-Pokuun.",
             },
         },
         "Head to the Maze of Shakhrami .",
         "Examine the Fossil Rock at (F-8) on Map 2 , to spawn the NM Ichorous Ire . It will drop a Burnite Shell ( G ).",
         {
             text = "Trade the Burnite Shell to Koru-Moru to complete the quest.",
-            substeps = {
+            notes = {
                 "(Optional) Talk to Yoran-Oran again for some concluding dialogue.",
             },
         },
@@ -266,7 +266,7 @@ Q.STEPS = {
     },
 
     wq_wt_blue_ribbon_blues = {
-        "Note: To get a Purple Ribbon , you must first talk to Roberta in Windurst Woods (I-13) inside the Nchaa's Good Goods shop.",
+        { note = "Note: To get a Purple Ribbon, you must first talk to Roberta in Windurst Woods (I-13) inside the Nchaa's Good Goods shop." },
         {
             text = "Give the Purple Ribbon to Kerutoto (J-8) Windurst Waters South (northern Rhinostery building).",
             substeps = {
@@ -287,10 +287,12 @@ Q.STEPS = {
         {
             text = "Trade the Purple Ribbon to Hume Bones at (M-10), which will spawn Lich C Magnus .",
             substeps = {
-                "Note that Lich C Magnus has a chance to drop the unique Lvl. 50 Club Lilith's Rod with an MP Drain effect.",
                 "If the rod doesn't drop, rezone without touching the Hume Bones and repeat the quest from beginning for another chance.",
-                "If you lose the Purple Ribbon , you must wait until next Conquest Tally to get it back.",
+                "If you lose the Purple Ribbon, you must wait until next Conquest Tally to get it back.",
                 "If multiple party members need this quest, you must wait 5 minutes after defeat between each spawn.",
+            },
+            notes = {
+                "Note that Lich C Magnus has a chance to drop the unique Lvl. 50 Club Lilith's Rod with an MP Drain effect.",
             },
         },
         "Check the Hume Bones again after NM is defeated to receive Blue Ribbon .",
@@ -300,8 +302,8 @@ Q.STEPS = {
     wq_wd_can_cardians_cry = {
         {
             text = "Speak to Apururu to begin this quest. There is no need to zone after completing the previous quest.",
-            substeps = {
-                "(Optional) speak to Kororo , Kopuro-Popuro , and Boizo-Naizo for their thoughts on the situation.",
+            notes = {
+                "(Optional) speak to Kororo, Kopuro-Popuro, and Boizo-Naizo for their thoughts on the situation.",
             },
         },
         {
@@ -313,7 +315,7 @@ Q.STEPS = {
         "Trade the Bruised Starfruit to Apururu for your reward.",
         {
             text = "Trading a Bruised Starfruit to Apururu after completing this quest will reward you with 1,000 gil. It is unknown if this is infinitely repeatable.",
-            substeps = {
+            notes = {
                 "(Optional) speak to Apururu, Kororo, Kopuro-Popuro, and Boizo-Naizo again for some closing lore.",
             },
         },
@@ -380,7 +382,7 @@ Q.STEPS = {
     },
 
     wq_wt_chasing_tales = {
-        "NOTE: You must zone after completing the previous quest before you can start this quest.",
+        { note = "NOTE: You must zone after completing the previous quest before you can start this quest." },
         "Talk to Tosuka-Porika .",
         {
             text = "Talk to Furakku-Norakku behind the counter in the same room.",
@@ -496,7 +498,9 @@ Q.STEPS = {
             text = "Head to Fei'Yin . In the basement (Map 2) at (F-6), check the north-western Cermet Door to get a cutscene with Rukususu .",
             substeps = {
                 "Using the Home Point #2 to Fei'Yin is the fastest way.",
-                "Note: Be careful of how many monsters you kill in Fei'Yin . If you kill too many monsters while in posession of Shantotto's new spell before turning it in to Rukususu , the item will break and be replaced by Shantotto's ex-spell . If this happens, return to Torino-Samarino to retrieve another scroll.",
+            },
+            notes = {
+                "Note: Be careful of how many monsters you kill in Fei'Yin. If you kill too many monsters while in posession of Shantotto's new spell before turning it in to Rukususu, the item will break and be replaced by Shantotto's ex-spell. If this happens, return to Torino-Samarino to retrieve another scroll.",
             },
         },
         "Return to Shantotto to complete the Quest and to receive your reward.",
@@ -538,6 +542,8 @@ Q.STEPS = {
             text = "Talk to Tosuka-Porika to begin the quest. You will be told to speak to Furakku-Norakku for further details. Furakku-Norakku will give you the Overdue book notification to be delivered to Orn .",
             substeps = {
                 "Orn is located at F-10 in the Rarab Tail Hostelry room above the Timbre Timbers Tavern.",
+            },
+            notes = {
                 "(Optional) You can speak to Furakku-Norakku again at Orn 's request.",
             },
         },
@@ -545,6 +551,8 @@ Q.STEPS = {
             text = "You will have to go to Giddeus and talk to Quu Bokye , then trade a Silver Beastcoin . You will receive \"Art For Everyone\" .",
             substeps = {
                 "Quu Bokye is in the Treasure Room, which can be found in the underground map of Giddeus. It is the northwest room at the end of a U-turn on the map.",
+            },
+            notes = {
                 "(Optional) You can speak to Orn again with the book.",
             },
         },
@@ -625,7 +633,7 @@ Q.STEPS = {
     },
 
     wq_wl_flower_child = {
-        "(optional) Talk to Ojha Rhawash .",
+        { note = "(optional) Talk to Ojha Rhawash." },
         {
             text = "She won't come out and say it at first, but she would like a Lilac .",
             substeps = {
@@ -707,7 +715,7 @@ Q.STEPS = {
         "Machitata near the residence area, Windurst Waters L-11.",
         "You must talk to a certain number of NPCs in order to complete this quest with the maximum reward. The eight listed above may be mandatory but are not enough by themselves to give you any reward from the quest.",
         "Don't leave Windurst Waters before you finish.",
-        "Warning: If you haven't yet begun Babban Ny Mheillea, do NOT talk to Khoto Rokkorah during this quest. Doing so causes you to fail this quest. The resulting cutscene technically zones you to West Sarutabaruta and back, which counts as leaving Windurst Waters.",
+        { note = "Warning: If you haven't yet begun Babban Ny Mheillea, do NOT talk to Khoto Rokkorah during this quest. Doing so causes you to fail this quest. The resulting cutscene technically zones you to West Sarutabaruta and back, which counts as leaving Windurst Waters." },
         "The more NPCs you talk to, the greater your final reward, up to a maximum of 200 gil and a Windshear Hat.",
         "<20 NPCs: You will not get credit or complete the quest",
         "20~29 NPCs: 50 gil, no hat.",
@@ -747,7 +755,7 @@ Q.STEPS = {
         "Go to Lower Jeuno (G-10) and speak to Yatniel on the top floor. He will ask for 4x Quake Grenades .",
         {
             text = "Trade the Quake Grenades to him for a clue.",
-            substeps = {
+            notes = {
                 "NOTE: Although you can skip this part and get the Bomb incense and fight the Chandelier, you MUST turn in the Quake Grenades in order to clear the KI from Nanaa so she will allow you to complete the quest.",
             },
         },
@@ -756,15 +764,17 @@ Q.STEPS = {
         {
             text = "You will now need to examine multiple ??? in a specific order. Go to each one and choose \"Yes\" to use the Bomb incense .",
             substeps = {
-                "NOTE: Switching to first person view and locking on to the points make it easier to target them. The ??? is in the ceiling.",
-                "Walk to (I-9) (just south of Banishing Gate #1) for the first ??? .",
-                "Head west, take the first left, and examine another ??? at (H-9).",
-                "Go through the first Banishing Gate and hug the right wall to take a winding path down to (F-9). The ??? to the west of the intersection is the one you want.",
-                "Go across the hall directly to the east for another ??? at (F/G-9).",
-                "Go back the way you came towards Banishing Gate #1. Examine the ??? at (G-8/9).",
-                "Head to the north of the large room (around the perimeter, not through the middle, because there are holes) for another ??? at (G-7).",
-                "READ THE NEXT SECTION BEFORE CLICKING THE NEXT (FINAL) ???.",
-                "Hug the wall and walk east and north to pop the NM at the (I-6) ??? .",
+                "Walk to (I-9) (just south of Banishing Gate #1) for the first???.",
+                "Head west, take the first left, and examine another??? at (H-9).",
+                "Go through the first Banishing Gate and hug the right wall to take a winding path down to (F-9). The??? to the west of the intersection is the one you want.",
+                "Go across the hall directly to the east for another??? at (F/G-9).",
+                "Go back the way you came towards Banishing Gate #1. Examine the??? at (G-8/9).",
+                "Head to the north of the large room (around the perimeter, not through the middle, because there are holes) for another??? at (G-7).",
+                "READ THE NEXT SECTION BEFORE CLICKING THE NEXT (FINAL)???.",
+                "Hug the wall and walk east and north to pop the NM at the (I-6)???.",
+            },
+            notes = {
+                "NOTE: Switching to first person view and locking on to the points make it easier to target them. The??? is in the ceiling.",
             },
         },
         {
@@ -805,7 +815,7 @@ Q.STEPS = {
         "Go to Windurst Walls (G-3) and examine the door of the House of the Hero for a cutscene.",
         {
             text = "You will be instructed to experience 7 types of weather in outdoor areas . It seems only zones available in or before the Rise of Zilart Expansion will work.",
-            substeps = {
+            notes = {
                 "Note: The Carbuncle's Ruby must be in your inventory to receive the weather cutscene. You also can't simply idle in a zone - you must zone into an area while the weather is occuring to get the scene.",
             },
         },
@@ -838,7 +848,7 @@ Q.STEPS = {
         "Once you've experienced all 7 weather effects, you'll receive a cutscene with Carbuncle who requests you go to La Theine Plateau .",
         {
             text = "Go to La Theine Plateau (G-6) and trade the Carbuncle's Ruby to the ??? for a cutscene, and to complete the quest.",
-            substeps = {
+            notes = {
                 "Optional: look to the sky around the Crag of Holla for a rainbow which appears when someone unlocks the Summoner job. If it's raining, then the rainbow will appear when the rain stops.",
             },
         },
@@ -870,7 +880,7 @@ Q.STEPS = {
             },
         },
         "Speak to Kuoh Rhel to complete the quest.",
-        "(Optional) Speak to Matata again for some lore about how the chocobo got sick.",
+        { note = "(Optional) Speak to Matata again for some lore about how the chocobo got sick." },
     },
 
     wq_pw_inspectors_gadget = {
@@ -906,7 +916,7 @@ Q.STEPS = {
     },
 
     wq_wt_let_sleeping_dogs_lie = {
-        "Note: Completion of Reap What You Sow is not required to activate this quest, and it cannot be initiated while this quest is active or if Making the Grade is active.",
+        { note = "Note: Completion of Reap What You Sow is not required to activate this quest, and it cannot be initiated while this quest is active or if Making the Grade is active." },
         "Speak to Mashuu-Ajuu (K-6) and then Paku-Nakku to begin this quest.",
         "Next, speak to Maabu-Sonbu , Port Windurst (E-7) (Home Point #1).",
         "Grab some Sickles and head to Pashhow Marshlands (via Derfland).",
@@ -1007,9 +1017,8 @@ Q.STEPS = {
         },
         "Speak to Mashira in the Incinerator Room at (I-7) who will hand you a Broken wand .",
         "Return to Kuroido-Moido for your reward.",
-        "Note :",
-        "This quest cannot be completed if you are on Windurst Mission 8-1 . If you are on the quest Orastery Woes , you may have to speak to Kuroido-Moido multiple times to complete the quest.",
-        "It is recommended that you complete the quest Rubbish Day at the same time as this quest also sends you to the same Incinerator Room.",
+        { note = "This quest cannot be completed if you are on Windurst Mission 8-1. If you are on the quest Orastery Woes, you may have to speak to Kuroido-Moido multiple times to complete the quest." },
+        { note = "It is recommended that you complete the quest Rubbish Day at the same time as this quest also sends you to the same Incinerator Room." },
     },
 
     wq_wd_making_headlines = {
@@ -1022,18 +1031,20 @@ Q.STEPS = {
     },
 
     wq_wt_making_the_grade = {
-        "Note: You cannot start this quest if Let Sleeping Dogs Lie or Teacher's Pet is active. You will need to zone if you just finished Let Sleeping Dogs Lie or Teacher's Pet .",
+        { note = "Note: You cannot start this quest if Let Sleeping Dogs Lie or Teacher's Pet is active. You will need to zone if you just finished Let Sleeping Dogs Lie or Teacher's Pet." },
         {
             text = "Speak to Fuepepe in the east Aurastery in Windurst Waters (North Map) to begin this quest.",
-            substeps = {
+            notes = {
                 "(Optional) Talk to Pechiru-Mashiru for his opinion on tests.",
             },
         },
         {
             text = "Trade the Test Answers to Fuepepe , he will tell you to take them to the principal.",
             substeps = {
-                "Test Answers can sometimes be found on the Auction House , otherwise you have to farm them.",
-                "Test Answers drop off Wendigos in Inner Horutoto Ruins past the Three Mage Gate .",
+                "Test Answers can sometimes be found on the Auction House, otherwise you have to farm them.",
+                "Test Answers drop off Wendigos in Inner Horutoto Ruins past the Three Mage Gate.",
+            },
+            notes = {
                 "(Optional) Talk to him again for a hint as to the principal's identity.",
                 "(Optional) Talk to Tauwawa and Chomoro-Kyotoro for some foreshadowing dialogue.",
             },
@@ -1067,8 +1078,10 @@ Q.STEPS = {
         {
             text = "Speak to Nanaa Mihgo multiple times till the Quest is flagged.",
             substeps = {
-                "If done as a level 40+ Thief , it will potentially begin the Quests The Tenshodo Showdown (THF AF 1), As Thick as Thieves (THF AF 2) and/or Hitting the Marquisate (THF AF 3). You will need to finish these first to flag this Quest.",
-                "(Optional): Speak to Cha Lebagta .",
+                "If done as a level 40+ Thief, it will potentially begin the Quests The Tenshodo Showdown (THF AF 1), As Thick as Thieves (THF AF 2) and/or Hitting the Marquisate (THF AF 3). You will need to finish these first to flag this Quest.",
+            },
+            notes = {
+                "(Optional): Speak to Cha Lebagta.",
             },
         },
         {
@@ -1085,10 +1098,10 @@ Q.STEPS = {
         "Zone in and out if you just completed Blast from the Past .",
         {
             text = "Speak to Koru-Moru to begin the quest.",
-            substeps = {
-                "(Optional) : Talk to Bonchacha and Maan-Pokuun for some hints.",
-                "(Optional) : Speak to Yoran-Oran (E-5) to discuss the author of the thesis on alchemy.",
-                "(Optional) : Speak to Shantotto (K-7) to discuss alchemy.",
+            notes = {
+                "(Optional): Talk to Bonchacha and Maan-Pokuun for some hints.",
+                "(Optional): Speak to Yoran-Oran (E-5) to discuss the author of the thesis on alchemy.",
+                "(Optional): Speak to Shantotto (K-7) to discuss alchemy.",
             },
         },
         "Speak to Fuepepe in Windurst Waters North (L-6).",
@@ -1197,7 +1210,7 @@ Q.STEPS = {
         },
         "As soon as you zone into Boneyard Gully you will get a cutscene and the Map of the Attohwa Chasm (if you do not already own it).",
         "Return to Chipmy-Popmy for the 3,200 gil and 2,000 Experience Points .",
-        "(Optional) Speak to Chipmy-Popmy again for some closing dialogue.",
+        { note = "(Optional) Speak to Chipmy-Popmy again for some closing dialogue." },
     },
 
     wq_pw_onion_rings = {
@@ -1287,10 +1300,10 @@ Q.STEPS = {
     },
 
     wq_wt_reap_what_you_sow = {
-        "Note: if your Windurst fame is level 4 or higher, you will be assigned Let Sleeping Dogs Lie instead, and cannot start this quest until after you complete that one.",
+        { note = "Note: if your Windurst fame is level 4 or higher, you will be assigned Let Sleeping Dogs Lie instead, and cannot start this quest until after you complete that one." },
         {
             text = "Speak to Mashuu-Ajuu who will give you a bag of Herb Seeds and ask you to plant them.",
-            substeps = {
+            notes = {
                 "(Optional) speak to the other students for vague tips about what can be grown from various seed types.",
             },
         },
@@ -1345,7 +1358,7 @@ Q.STEPS = {
         "Return to Nanaa Mihgo .",
         {
             text = "Speak to Varun , Windurst Woods (H-9).",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Ardea again to attempt to get the stone back.",
             },
         },
@@ -1360,7 +1373,9 @@ Q.STEPS = {
             text = "Speak to Ohbiru-Dohbiru (J-9, southern Rhinostery building) who will ask you questions about the flower you are looking for.",
             substeps = {
                 "The correct answers to his questions are \" Rare, Mystical, and Elegant \".",
-                "(Optional) Talk to Kenapa-Keppa .",
+            },
+            notes = {
+                "(Optional) Talk to Kenapa-Keppa.",
             },
         },
         "Head to Tahrongi Canyon (F-6) and examine the Tahrongi Cacti there to get a Tahrongi Cactus .",
@@ -1406,8 +1421,8 @@ Q.STEPS = {
         "Kill Savanna Rarabs in West Sarutabaruta until they drop a Torn Epistle ( U ).",
         {
             text = "Speak to Koru-Moru while the Torn Epistle is in your inventory.",
-            substeps = {
-                "Optional : You can trade Koru-Moru the Torn Epistle at this point for 50 gil, but it isn't necessary.",
+            notes = {
+                "Optional: You can trade Koru-Moru the Torn Epistle at this point for 50 gil, but it isn't necessary.",
             },
         },
         "Head to West Sarutabaruta and kill crawlers there until they drop a Meteorite ( R ).",
@@ -1482,10 +1497,10 @@ Q.STEPS = {
     },
 
     wq_wt_moonlit_path = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         "Talk to Leepe-Hoppe to begin the quest. If the quest Tuning In is offered (cutscene with Shikaree Y ), simply zone and talk to Leepe-Hoppe again to get the proper cutscene. Assuming you have the proper fame.",
         "Next you must battle the six avatar primes to collect their whispers.",
-        "Note: Do not return the whispers to the NPC's who allow you access to the avatar prime battles or you will lose them. You can get the whispers again later if you want items from the avatar prime battles.",
+        { note = "Note: Do not return the whispers to the NPC's who allow you access to the avatar prime battles or you will lose them. You can get the whispers again later if you want items from the avatar prime battles." },
         "Turn the whispers into Leepe-Hoppe to receive a Moon bauble .",
         {
             text = "Head to Full Moon Fountain .",
@@ -1752,7 +1767,7 @@ Q.STEPS = {
     },
 
     wq_wt_waking_dreams = {
-        "Warning: Trust Magic can not be used in this BCNM.",
+        { note = "Warning: Trust Magic can not be used in this BCNM." },
         {
             text = "Speak to Kerutoto , Windurst Waters South (J-8) HP #3, for a cutscene that begins the quest and key item Vial of dream incense .",
             substeps = {

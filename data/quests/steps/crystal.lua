@@ -20,14 +20,16 @@ Q.STEPS = {
     cw_a_feast_for_gnats = {
         {
             text = "Zone into Windurst Waters (S) for a cutscene following the completion of When One Man Is Not Enough .",
-            substeps = {
-                "(Optional) Talk to Dhea Prandoleh for some text urging you to rush to Sauromugue Champaign .",
+            notes = {
+                "(Optional) Talk to Dhea Prandoleh for some text urging you to rush to Sauromugue Champaign.",
             },
         },
         {
             text = "Go to Sauromugue Champaign (S) and talk to Mham Lahrih on the upper floor of a fort at (K-9) for a cutscene.",
             substeps = {
-                "The fort is right next to the Cavernous Maw and just a bit north of the Survival Guide , which will be the fastest route there. Alternatively, you can use the Windurst Waters (S) Campaign Arbiter to warp to Meriphataud Mountains (S) or Sauromugue Champaign (S) , with the former being somewhat closer.",
+                "The fort is right next to the Cavernous Maw and just a bit north of the Survival Guide, which will be the fastest route there. Alternatively, you can use the Windurst Waters (S) Campaign Arbiter to warp to Meriphataud Mountains (S) or Sauromugue Champaign (S), with the former being somewhat closer.",
+            },
+            notes = {
                 "(Optional) Speaking with Mham Lahrih again will result in some flavor text.",
             },
         },
@@ -69,8 +71,10 @@ Q.STEPS = {
         {
             text = "Zone into Walk of Echoes from the Grauberg (S) Veridical Conflux (F-5) or, if you've opened it with Voidwatch quests, the Pashhow Marshlands (S) Veridical Conflux (J-9) close to survival guide teleport.",
             substeps = {
-                "Note: If you didn't leave the Walk of Echoes zone after completing Champion of the Dawn , exit via the Veridical Conflux and reenter Walk of Echoes for the cutscene.",
                 "You need to have unlocked Trusts to trigger this cutscene.",
+            },
+            notes = {
+                "Note: If you didn't leave the Walk of Echoes zone after completing Champion of the Dawn, exit via the Veridical Conflux and reenter Walk of Echoes for the cutscene.",
             },
         },
         {
@@ -89,6 +93,8 @@ Q.STEPS = {
             text = "Inside the battlefield you fight against a Zilant ( Gloomscale ) and an a Gallu ( Gloomtalon )",
             substeps = {
                 "This fight can only be entered by party members who have A Forbidden Reunion active or have already completed the fight.",
+            },
+            notes = {
                 "Trusts may be used in this fight.",
             },
         },
@@ -168,10 +174,12 @@ Q.STEPS = {
             text = "Examine the Colorful Door at (H-5) in Fort Karugo-Narugo (S) (Map 2). This will begin a BCNM in which you must face waves of Yagudo soldiers.",
             substeps = {
                 "When zoning into the BCNM, all buffs will be removed.",
-                "Trusts can be summoned.",
                 "Enemy Yagudo have very low HP, making them highly vulnerable to AoE magic and weapon skills.",
                 "Valaineral also works well here due to all the mobs using you as their enmity target.",
-                "Generally the final mob should be Laa Yaku the Austere .",
+                "Generally the final mob should be Laa Yaku the Austere.",
+            },
+            notes = {
+                "Trusts can be summoned.",
             },
         },
         "After the Yagudo are all defeated you will be teleported to West Sarutabaruta (S) , zone into Windurst Waters (S) for the final storytelling sequence and your reward.",
@@ -294,7 +302,7 @@ Q.STEPS = {
         "Speak to Thierride in Southern San d'Oria (S) (F-8) for a cutscene that begins the quest.",
         "Trade him a Lufet Salt . After the cutscene, trade him another Lufet Salt for another cutscene.",
         "After one game day, zone and speak to him for the final cutscene and reward.",
-        "Note : Once this quest has been completed you may reobtain an Angler's Cassoulet once per conquest tally by speaking to Thierride . There is no need to trade him further salts.",
+        { note = "Note: Once this quest has been completed you may reobtain an Angler's Cassoulet once per conquest tally by speaking to Thierride. There is no need to trade him further salts." },
     },
 
     cw_beast_from_the_east = {
@@ -344,7 +352,7 @@ Q.STEPS = {
     },
 
     cw_bmk_better_part_of_valor = {
-        "Note that you do not specifically need to be allied to Bastok to start this quest.",
+        { note = "Note that you do not specifically need to be allied to Bastok to start this quest." },
         "Exit Bastok Markets (S) into North Gustaberg (S) at (G-4). Upon exiting, a cutscene will play where you obtain the Clump of animal hair .",
         "Take the key item to Engelhart at the Music Shop in Bastok Markets (S) at (K-10).",
         {
@@ -411,6 +419,8 @@ Q.STEPS = {
             text = "Travel to Jugner Forest (S) and examine the Overgrown Mushrooms at (F-10) for a cutscene. (They are on the pathway.)",
             substeps = {
                 "Recall ring: Jugner or Recall-Jugner will get you close to where you are going the fastest. The Survival Guide is also a good option.",
+            },
+            notes = {
                 "Note: Have at least one open inventory slot or you will have to rewatch the entire CS again.",
             },
         },
@@ -432,7 +442,7 @@ Q.STEPS = {
         },
         "After you have cleared the battlefield, report to Rongelouts N Distaud (S) (I-9) in Southern San d'Oria (S) to receive your reward.",
         "To continue with missions: After receiving your reward from Rongelouts N Distaud (S), zone into Southern San d'Oria (S) from East Ronfaure (S) for a cutscene that completes Crossroads of Time and starts Sandswept Memories .",
-        "Note: You will need to wait until the next Vana'diel day, have zoned, and be on the quest Fate in Haze to continue to progress your nation's story after completing this quest.",
+        { note = "Note: You will need to wait until the next Vana'diel day, have zoned, and be on the quest Fate in Haze to continue to progress your nation's story after completing this quest." },
     },
 
     cw_zvb_bonds_of_mythril = {
@@ -487,8 +497,8 @@ Q.STEPS = {
         "Travel to Vunkerl Inlet (S) at the top left corner of (F-5) and look for a Leafy Patch . Touch it, and it will ask you which color corresponds with the current time of day as listed above.",
         {
             text = "Select the correct color from the list above to obtain a Vunkerl herb",
-            substeps = {
-                "Note : You will still receive the herb if you pick the wrong option. However Excenmille will note that the herb is not working and will have you go fetch the right one.",
+            notes = {
+                "Note: You will still receive the herb if you pick the wrong option. However Excenmille will note that the herb is not working and will have you go fetch the right one.",
             },
         },
         "Bring the herb back to Vunkerl Inlet (S) (H-6) and touch the ??? near the bridge to complete quest.",
@@ -554,7 +564,7 @@ Q.STEPS = {
         },
         "Take these three Key Items to Walk of Echoes through the Grauberg (S) Veridical Conflux (F-5).",
         "Check the Ornate Door three times. Once for a cutscene, a second time for a shorter cutscene (introducing the fight), and a third time to begin the actual fight.",
-        "Note: you do not have to be a Summoner when completing the quest, and a party of up to 6 may enter the battlefield. Like the other Avatar fight rewards, the player can choose three different pieces of gear, or Gil instead of access to the Avatar.",
+        { note = "Note: you do not have to be a Summoner when completing the quest, and a party of up to 6 may enter the battlefield. Like the other Avatar fight rewards, the player can choose three different pieces of gear, or Gil instead of access to the Avatar." },
         "You fight Cait Sith .",
         "The fight is trivial at 99. Trusts may be summoned.",
         "Cait Sith will use -ja spells and may put the party to sleep with Mewing Lullaby (as well as casting other enfeebling spells).",
@@ -674,7 +684,7 @@ Q.STEPS = {
         },
         "Travel from Ghelsba Outpost to Map 1 of Yughott Grotto and examine the Scrape Mark at (G-9) for a cutscene.",
         "Examine the Scrape Mark again to enter the battlefield Face of the Future .",
-        "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target. Your opponents in this battlefield are a Fangmonger Colossus and 6 Tombstones , all statue type mobs. At the start of the battle, you will be assisted by Excenmille and Maxcimille . Part way though the battle, Bostillette will join the fray.",
+        { note = "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target. Your opponents in this battlefield are a Fangmonger Colossus and 6 Tombstones, all statue type mobs. At the start of the battle, you will be assisted by Excenmille and Maxcimille. Part way though the battle, Bostillette will join the fray." },
         "You only need to kill Fangmonger Colossus to win.",
         "Each Tombstone defeated will weaken the Colossus' damage resistance.",
         "The Colossus and Tombstones use the weaponskills Seismostomp which does damage and Numbing Glare which is a conal paralysis move. They all have very slow movement speed and can be easily kited. The enemy also seems to respawn a few as the fight continues.",
@@ -711,7 +721,7 @@ Q.STEPS = {
                 "You can cure the NPC via non-BLU spells and she can be buffed by most spells",
             },
         },
-        "WARNING: This mission may be very difficult to solo without AoE sleep and/or damage. Valaineral's Trust will reliably Uriel Blade each group of Quadavs so long as your initial attack to activate Trusts does not immediately defeat the target.",
+        { note = "WARNING: This mission may be very difficult to solo without AoE sleep and/or damage. Valaineral's Trust will reliably Uriel Blade each group of Quadavs so long as your initial attack to activate Trusts does not immediately defeat the target." },
         "Once you defeat all of the Quadavs, the battlefield will end once Adelheid reaches the turret.",
         "Enter Bastok Markets (S) from North Gustaberg (S) for a cutscene.",
         "Speak to Gentle Tiger in Bastok Markets (S) (H-6) for a cutscene.",
@@ -742,7 +752,7 @@ Q.STEPS = {
     },
 
     cw_ssd_gifts_of_griffon = {
-        "Note that you do not specifically need to be allied to San d'Oria to start this quest.",
+        { note = "Note that you do not specifically need to be allied to San d'Oria to start this quest." },
         "You must talk to to Louxiard in Southern San d'Oria (S) at G-7 and watch the cutscene.",
         {
             text = "Leave the area then return to Louxiard for another cutscene.",
@@ -792,7 +802,7 @@ Q.STEPS = {
         },
         {
             text = "Once in Xarcabard (S) find the Veridical Conflux located near the Home Point for a cutscene and to acquire Kupofried's medallion .",
-            substeps = {
+            notes = {
                 "Note: if you try to skip this step you will have to return here.",
             },
         },
@@ -987,7 +997,7 @@ Q.STEPS = {
     },
 
     cw_howl_from_the_heavens = {
-        "Note : You need to wait a game day after completing Sins of the Mothers before you can activate this quest.",
+        { note = "Note: You need to wait a game day after completing Sins of the Mothers before you can activate this quest." },
         "Zone into Windurst Waters (S) from West Sarutabaruta (S) for a cutscene.",
         "Collect the Magicite from the three present day beastmen strongholds again (these may be done in any order):",
         {
@@ -1038,8 +1048,8 @@ Q.STEPS = {
         },
         {
             text = "Upon defeating the Orcish Turret you will be transported out immediately and into another cutscene.",
-            substeps = {
-                "Note: If you fail the BC, you will need to wait a game day to re-acquire the Number eight shelter key . You must return and speak with Diordinne to begin the game day wait for the KI.",
+            notes = {
+                "Note: If you fail the BC, you will need to wait a game day to re-acquire the Number eight shelter key. You must return and speak with Diordinne to begin the game day wait for the KI.",
             },
         },
         "Head back to Southern San d'Oria (S) and speak to Rholont (E-7) during nighttime hours ( 18:00 to 0:00 game time) to complete the quest and receive your reward.",
@@ -1063,16 +1073,18 @@ Q.STEPS = {
         "Trade the 108-Knot Quipu you should've obtained in the first step here to the Bulwark Gate for another cutscene with Rachemace.",
         {
             text = "Click the Bulwark Gate for another cutscene with Rachemace.",
-            substeps = {
+            notes = {
                 "NOTE: Click the Bulwark Gate until you trigger every possible cutscene you can get here, when it says \"the door is firmly sealed\" at least 3 times in a row then proceed just to be sure.",
             },
         },
         {
             text = "Zone into Southern San d'Oria (S) from East Ronfaure (S) for a cutscene with Pattna-Ottna.",
             substeps = {
-                "NOTE: If you are mounted when entering Southern San d'Oria (S) from East Ronfaure (S) , you will not receive this cutscene. Exit back out and re-enter on foot to trigger the cutscene.",
-                "NOTE: If you see \"You are unable to make further progress in Rhapsodies of Vana'diel due to an event occurring in the Wings of the Goddess missions.\" exit and re-enter on foot.",
                 "The Atmacite Refiner at the gate can Voidwatch warp to East Ronfaure right at the zone-line if you're over level 75.",
+            },
+            notes = {
+                "NOTE: If you are mounted when entering Southern San d'Oria (S) from East Ronfaure (S), you will not receive this cutscene. Exit back out and re-enter on foot to trigger the cutscene.",
+                "NOTE: If you see \"You are unable to make further progress in Rhapsodies of Vana'diel due to an event occurring in the Wings of the Goddess missions.\" exit and re-enter on foot.",
             },
         },
         "Go through the Portcullis (gate) and click on the first Door: House on the right at (M-8) in Southern San d'Oria (S) for the final cutscene with Joseaneaut and your reward.",
@@ -1190,26 +1202,26 @@ Q.STEPS = {
         },
         {
             text = "Go to the past, and speak to Romualdo in Batallia Downs (S) , (I-7). (On top of a hill just past the Rampart Gate.)",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Romualdo again for additional text.",
             },
         },
         {
             text = "Talk to Childerich at (E-12) by the Old Cabin in Grauberg (S) .",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Childerich again for addition text.",
             },
         },
         "Examine the ??? at (J-9) to the east of the Grauberg Guntower.",
         {
             text = "Speak to Childerich.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Childerich again for addition text.",
             },
         },
         {
             text = "Speak to Romualdo in Batallia Downs (S) to complete the quest and receive your reward.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Romualdo again for additional text.",
             },
         },
@@ -1374,8 +1386,10 @@ Q.STEPS = {
         {
             text = "Speak to Erlene , The Eldieme Necropolis (S) (J-8) on Scholar. She will ask you to return to the previous location where you found Schultz.",
             substeps = {
-                "(Optional) Speaking with her again will result in some additional dialogue.",
                 "After flagging the quest with this cutscene, you can continue forward through the rest of it on any job.",
+            },
+            notes = {
+                "(Optional) Speaking with her again will result in some additional dialogue.",
             },
         },
         {
@@ -1454,7 +1468,7 @@ Q.STEPS = {
     cw_son_and_father = {
         {
             text = "Speak to Exoroche (S) at Southern San d'Oria (S) (K-9) for a cutscene that begins the quest.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Exoroche in Southern San d'Oria (K-7).",
                 "(Optional) Speak to Ailbeche in Northern San d'Oria (J-9). You can ask about his father or grandfather, but only one at a time. You will need to zone if you want to ask him the other option.",
             },
@@ -1479,7 +1493,7 @@ Q.STEPS = {
     },
 
     cw_ssd_songbirds_snowstorm = {
-        "Note: You must be on the main Wings of the Goddess mission Fate in Haze , and have zoned and waited one game day after completing Bonds That Never Die in order to start this quest. Remember to grab a Flint Stone and fishing rod for this quest.",
+        { note = "Note: You must be on the main Wings of the Goddess mission Fate in Haze, and have zoned and waited one game day after completing Bonds That Never Die in order to start this quest. Remember to grab a Flint Stone and fishing rod for this quest." },
         "Speak to Rholont in Southern San d'Oria (S) at (E-7).",
         "Speak to Daigraffeaux in Southern San d'Oria (S) at (I-11).",
         "Enter Beaucedine Glacier (S) for a cutscene.",
@@ -1624,7 +1638,7 @@ Q.STEPS = {
     cw_wwt_dawn_of_delectability = {
         {
             text = "Talk to Ranpi-Monpi in Windurst Waters (S) for the initial cutscene.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to him again for additional dialogue.",
             },
         },
@@ -1640,13 +1654,13 @@ Q.STEPS = {
         },
         {
             text = "Trade the above items to Ranpi-Monpi and wait one game day for the dish to be completed.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to him again before the day is up for additional dialogue.",
             },
         },
         {
             text = "After receiving Ranpi-Monpi Specialty go back to Windurst Waters (S) and talk to Ranpi-Monpi to feed the young lad. You'll receive a Culinary knife .",
-            substeps = {
+            notes = {
                 "(Optional) Speak to him again for some additional dialogue.",
             },
         },
@@ -1744,11 +1758,13 @@ Q.STEPS = {
         {
             text = "Head to (E/F-7) and examine the Warding Door to start a fight.",
             substeps = {
-                "Note: The battle will begin as soon as you click on the door; there is no cutscene.",
                 "There is a 30 minute time limit for this fight.",
                 "The battle is against 5 monsters:",
                 "Up to 6 people in one party may participate at once in this battle.",
                 "Fight is trivial for any character at level 99.",
+            },
+            notes = {
+                "Note: The battle will begin as soon as you click on the door; there is no cutscene.",
             },
         },
         {
@@ -1763,8 +1779,10 @@ Q.STEPS = {
         {
             text = "Head to the Rhinostery in Windurst Waters (S) southern map (I-8) and examine the southern door for a cutscene.",
             substeps = {
-                "There are two Rhinostery doors . The one on the right (south) starts this quest.",
-                "(Optional) : Check the door a second time for a reminder of where to go.",
+                "There are two Rhinostery doors. The one on the right (south) starts this quest.",
+            },
+            notes = {
+                "(Optional): Check the door a second time for a reminder of where to go.",
             },
         },
         {
@@ -1775,14 +1793,14 @@ Q.STEPS = {
         },
         {
             text = "Trade Quu Bokye the Mythril Beastcoin to receive Leather-bound book .",
-            substeps = {
-                "(Optional) : Talk to Quu Bokye before trading for some text.",
+            notes = {
+                "(Optional): Talk to Quu Bokye before trading for some text.",
             },
         },
         {
             text = "Return to the Rhinostery door in Windurst Waters (S) .",
-            substeps = {
-                "(Optional) : Check the door a second time for a reminder of where to go.",
+            notes = {
+                "(Optional): Check the door a second time for a reminder of where to go.",
             },
         },
         {
@@ -1797,7 +1815,7 @@ Q.STEPS = {
     },
 
     cw_jug_price_of_valor = {
-        "Note: In order to start this quest, you must first be on the Crossroads of Time Mission (obtained after completing A Nation on the Brink ).",
+        { note = "Note: In order to start this quest, you must first be on the Crossroads of Time Mission (obtained after completing A Nation on the Brink )." },
         "You must zone and wait one game day after completing In a Haze of Glory in order to start this quest.",
         "Speak to Rholont (E-7) in Southern San d'Oria (S) for a cutscene.",
         {
@@ -1844,7 +1862,7 @@ Q.STEPS = {
     },
 
     cw_the_swarm = {
-        "Note: This quest only appears as an available quest upon use of the Pest Repellent. It does not appear in the completed quest log section upon completion of the quest.",
+        { note = "Note: This quest only appears as an available quest upon use of the Pest Repellent. It does not appear in the completed quest log section upon completion of the quest." },
         "Obtain a Pest Repellent from the various FFXI events held throughout the year.",
         {
             text = "Have the leader use the Pest Repellent and then check the Fortilace (D-9) Rolanberry Fields (S) to initiate the battle.",
@@ -1875,7 +1893,7 @@ Q.STEPS = {
     },
 
     cw_wwt_tigress_stirs = {
-        "Note that you do not specifically need to be allied to Windurst to start this quest.",
+        { note = "Note that you do not specifically need to be allied to Windurst to start this quest." },
         {
             text = "Zone into Windurst Waters (S) to receive a cutscene and an Inky black Yagudo feather",
             substeps = {
@@ -2001,9 +2019,11 @@ Q.STEPS = {
         {
             text = "Speak with any Voidwatch Officer in PRESENT DAY! to receive the Key Item Voidwatch alarum .",
             substeps = {
-                "Note: If you cannot obtain the Voidwatch alarum :",
-                "First check the Bulwark Gate in Sauromugue Champaign (S) for the cutscene that awards 30,000 Gil .",
-                "Look at the following Quest and head to Pashhow Marshlands (S) for a cutscene before talking to the Officers .",
+                "First check the Bulwark Gate in Sauromugue Champaign (S) for the cutscene that awards 30,000 Gil.",
+                "Look at the following Quest and head to Pashhow Marshlands (S) for a cutscene before talking to the Officers.",
+            },
+            notes = {
+                "Note: If you cannot obtain the Voidwatch alarum:",
             },
         },
         "Return to the Audience Chamber in Ru'Lude Gardens for a cutscene and to receive 50,000 Gil . The next Quest will automatically be flagged upon completion.",
@@ -2022,13 +2042,15 @@ Q.STEPS = {
         {
             text = "Examine the Forbidding Portal at the North West Corner of (I-7) for a cutscene. Examine it again to enter the battlefield.",
             substeps = {
-                "Trusts may be used in this fight.",
                 "Any job with item level 119 equipment should have no trouble clearing the fight.",
                 "When entering, you will fight one humanoid who uses all sword weapon skills, frequently double attacks, and uses Mighty Strikes at 50%.",
                 "Your opponent will randomly select a player and that player will lose all enmity.",
                 "Magic spells (especially nukes and enhancing magic) seem to gain disproportionate enmity in this battle.",
                 "At approximately 50% your opponent will do a monster two-hour animation and gain access to a new AoE weapon skill named Temblor Blade with the additional effect of petrify.",
-                "Should you lose this battle, speak to Gentle Tiger for another Commander's endorsement .",
+                "Should you lose this battle, speak to Gentle Tiger for another Commander's endorsement.",
+            },
+            notes = {
+                "Trusts may be used in this fight.",
             },
         },
         "Speak to Gentle Tiger for a cutscene and your reward.",
@@ -2036,18 +2058,18 @@ Q.STEPS = {
     },
 
     cw_when_one_man_is_not_enough = {
-        "Note: Several fish are noted in this mission: Blackened Siredon , Forest Carp , Greedie , and Pipira . You will need to obtain at least one of these fish to complete this mission. It is suggested to obtain one from the Auction House or some other means before going to Windurst Waters (S) . Which fish you end up using does affect the cutscene received (see below) but the end result of progressing is the same.",
+        { note = "Note: Several fish are noted in this mission: Blackened Siredon, Forest Carp, Greedie, and Pipira. You will need to obtain at least one of these fish to complete this mission. It is suggested to obtain one from the Auction House or some other means before going to Windurst Waters (S). Which fish you end up using does affect the cutscene received (see below) but the end result of progressing is the same." },
         "Begin the quest by speaking to Dhea Prandoleh at H-10 in Windurst Waters (S) .",
         {
             text = "The next cutscene is located at the magic tower at F-11 in West Sarutabaruta (S) . Examine the Sealed Entrance for a cutscene.",
-            substeps = {
+            notes = {
                 "(Optional) Examine it again for a second cutscene where Lehko Habhoka complains of his hunger pains.",
             },
         },
         {
             text = "Speak with Dhea again and you will be suggested to trade one of the items listed in the previous cutscene.",
-            substeps = {
-                "(Optional) Speak with Chioh Remhrll , Kleh Engyumoh , or Tohs Jhannih for some optional flavor text about their suggestions.",
+            notes = {
+                "(Optional) Speak with Chioh Remhrll, Kleh Engyumoh, or Tohs Jhannih for some optional flavor text about their suggestions.",
             },
         },
         {

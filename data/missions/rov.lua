@@ -131,8 +131,8 @@ M.STEPS = {
         steps = {
             {
                 text = "Zone into either Selbina or Mhaura",
-                substeps = {
-                    "Note : This will change what you have to do for the next mission.",
+                notes = {
+                    "Note: This will change what you have to do for the next mission.",
                 },
             },
             "After the cutscene you will now be on the next mission.",
@@ -142,7 +142,7 @@ M.STEPS = {
     ["1-3"] = {
         name = "Emissary from the Seas",
         steps = {
-            "Note: The town you zoned into for the cutscene will lock you into that option for this mission. This is not a big deal, and it does not matter which one you choose.",
+            { note = "Note: The town you zoned into for the cutscene will lock you into that option for this mission. This is not a big deal, and it does not matter which one you choose." },
             {
                 text = "If you picked the Selbina path:",
                 substeps = {
@@ -180,7 +180,7 @@ M.STEPS = {
                 },
             },
             "Return to Mhaura and trade the dewdrops to Ekokoko .",
-            "NOTE: If you are a new player and you have not yet unlocked your Support Job (a.k.a. subjob ) you will receive the Gilgamesh's introductory letter . If you have already unlocked your Support Job , your reward will be a Copper A.M.A.N. Voucher .",
+            { note = "NOTE: If you are a new player and you have not yet unlocked your Support Job (a.k.a. subjob ) you will receive the Gilgamesh's introductory letter. If you have already unlocked your Support Job, your reward will be a Copper A.M.A.N. Voucher." },
             "Gilgamesh's introductory letter allows you to unlock your Support Job easier and earlier than before: After reaching Level 18+, speak to either Isacio in Selbina (G-10) twice, or Vera in Mhaura (G-10) twice to unlock your Support Job !",
         },
     },
@@ -202,7 +202,7 @@ M.STEPS = {
                     "Talk to the Oaken Door at (K-8) in Norg to Gilgamesh's room.",
                 },
             },
-            "NOTE: New players should make sure they elect to unlock the Survival Guide , Proto-Waypoint and Home Point before leaving Norg .",
+            { note = "NOTE: New players should make sure they elect to unlock the Survival Guide, Proto-Waypoint and Home Point before leaving Norg." },
         },
     },
 
@@ -225,7 +225,7 @@ M.STEPS = {
                     "Select the Qufim Island response to continue and complete the cutscene.",
                 },
             },
-            "Note: Trust Ciphers were given by the NPCs met during the Rank 2-3 Mission if you had this Rhapsodies Mission active.",
+            { note = "Note: Trust Ciphers were given by the NPCs met during the Rank 2-3 Mission if you had this Rhapsodies Mission active." },
             {
                 text = "Alternatively, if the Rank 2-3 Mission was already completed, they are available after completing this Rhapsodies Mission:",
                 substeps = {
@@ -252,7 +252,7 @@ M.STEPS = {
     ["1-9"] = {
         name = "The Lion's Roar",
         steps = {
-            "Note that the following fight is considerably more difficult than the content leading up to it. If solo (with up to four Trusts ) you may want to reach level 40 to level 50 before attempting.",
+            { note = "Note that the following fight is considerably more difficult than the content leading up to it. If solo (with up to four Trusts ) you may want to reach level 40 to level 50 before attempting." },
             {
                 text = "Examine the Undulating Confluence again to start the battle.",
                 substeps = {
@@ -346,7 +346,7 @@ M.STEPS = {
     ["1-16"] = {
         name = "The Lost Avatar",
         steps = {
-            "Note that the following fight is considerably more difficult than the content leading up to it. If solo (with trusts ), you may want to reach at least level 80 before attempting.",
+            { note = "Note that the following fight is considerably more difficult than the content leading up to it. If solo (with trusts ), you may want to reach at least level 80 before attempting." },
             {
                 text = "Examining the ??? again will immediately spawn a battle with Siren .",
                 substeps = {
@@ -404,8 +404,8 @@ M.STEPS = {
         steps = {
             {
                 text = "Go to Ru'Lude Gardens and approach the palace. You will get a cutscene at (H-7).",
-                substeps = {
-                    "Note: You will not get the cutscene until you have progressed through Promathia Mission 3-2 .",
+                notes = {
+                    "Note: You will not get the cutscene until you have progressed through Promathia Mission 3-2.",
                 },
             },
             {
@@ -463,7 +463,7 @@ M.STEPS = {
     ["2-7"] = {
         name = "Ever Forward",
         steps = {
-            "OPTIONAL: Return to your home nation for a cutscene. You will be told to go to the Imperial Whitegate and skip to the mission Aphmau's Light .",
+            { note = "OPTIONAL: Return to your home nation for a cutscene. You will be told to go to the Imperial Whitegate and skip to the mission Aphmau's Light." },
             "Examine the Imperial Whitegate for a cutscene.",
             "You will skip to the mission Reunited , receiving Cipher Of Nashmeira's Alter Ego II and the ability to view all Treasures of Aht Urhgan mission cutscenes.",
             "Return to your home nation for a cutscene. You will be told to go to the Imperial Whitegate and also be informed where Aphmau currently is in your mission progress.",
@@ -517,7 +517,9 @@ M.STEPS = {
             {
                 text = "Zone into the Alzadaal Undersea Ruins for a cutscene.",
                 substeps = {
-                    "Go to the Chamber of Passage and go to the Nyzul Isle Staging Point .",
+                    "Go to the Chamber of Passage and go to the Nyzul Isle Staging Point.",
+                },
+                notes = {
                     "Note: The cost is 200 Imperial Standing points. If you do not have the staging point/imperial standing, you can either use Copper A.M.A.N. Voucher for Imperial Standing points, or grab an Assault tag ( Imperial Army I.D. tag ) and select the Nyzul Isle Investigation Assault mission in order to port into Alzadaal Undersea Ruins for the cutscene.",
                 },
             },
@@ -528,7 +530,7 @@ M.STEPS = {
         name = "From the Ruins",
         steps = {
             "Return to Aht Urhgan Whitegate and click on Imperial Whitegate (The Palace Door) for a cutscene and a Rhapsody in Crimson .",
-            "(Optional): Locate alternate sources of darkness.",
+            { note = "(Optional): Locate alternate sources of darkness." },
             "You can do the following at any point during RoV Chapter 2 , before Mission 2-39.",
             {
                 text = "Requires all Aht Urhgan Missions completed.",
@@ -606,7 +608,7 @@ M.STEPS = {
     ["2-17"] = {
         name = "Sacrifice",
         steps = {
-            "Note: You will want to bring some sort of warp ( Warp Ring or Instant Warp ). After finishing the next Mission, you'll be left with no fast way to get back into town.",
+            { note = "Note: You will want to bring some sort of warp ( Warp Ring or Instant Warp ). After finishing the next Mission, you'll be left with no fast way to get back into town." },
             "If you have at least completed Wings of the Goddess Mission 45, Time Slips Away :",
             "Enter Walk of Echoes from Pashhow Marshlands (S) (J-9) or Grauberg (S) (F-5) and check the Ornate Door .",
             "Otherwise, as long as you have at least triggered Wings of the Goddess Mission 8, In the Name of the Father :",
@@ -634,13 +636,15 @@ M.STEPS = {
             {
                 text = "Examine the blue glowing ??? closest to the spot you were teleported to in Grauberg (S) to spawn Cetus .",
                 substeps = {
-                    "The correct ??? is NE of the Veridical Conflux and not the one right beside it.",
-                    "Note: Cetus gains Dread Spikes after Aetheric Pull , so beware if you're a returning player using older gear.",
+                    "The correct??? is NE of the Veridical Conflux and not the one right beside it.",
+                },
+                notes = {
+                    "Note: Cetus gains Dread Spikes after Aetheric Pull, so beware if you're a returning player using older gear.",
                 },
             },
             "Re-examine the ??? for a cutscene.",
             "Re-enter Walk of Echoes for a cutscene by clicking on the ??? beside the Veridical Conflux.",
-            "Note : If you brought some sort of warp as mentioned in the previous mission, warp back into town.",
+            { note = "Note: If you brought some sort of warp as mentioned in the previous mission, warp back into town." },
         },
     },
 
@@ -700,7 +704,7 @@ M.STEPS = {
     ["2-24"] = {
         name = "The Cursed Temple",
         steps = {
-            "Note: You must have completed Zilart Mission 4 , The Temple of Uggalepih in order to receive the cutscene at the Granite Door .",
+            { note = "Note: You must have completed Zilart Mission 4, The Temple of Uggalepih in order to receive the cutscene at the Granite Door." },
             {
                 text = "Head to Temple of Uggalepih in Yhoator Jungle (J-11) and enter for a cut scene.",
                 substeps = {
@@ -840,7 +844,7 @@ M.STEPS = {
         name = "Call of the Void",
         steps = {
             "Teleport to any of the Crags and click the Dimensional Portal for a cutscene.",
-            "Note: You must obtain the Cipher: Selh'teus to continue past this Mission. Check the Mystic Retriever in Empyreal Paradox to obtain it if you did not after the cutscene.",
+            { note = "Note: You must obtain the Cipher: Selh'teus to continue past this Mission. Check the Mystic Retriever in Empyreal Paradox to obtain it if you did not after the cutscene." },
         },
     },
 
@@ -882,15 +886,17 @@ M.STEPS = {
     ["3-1"] = {
         name = "Darkness Beckons",
         steps = {
-            "Note: Most of the mobs in Reisenjima will aggro and some even have True Sight or True Sound (see Reisenjima#Adversaries .)",
+            { note = "Note: Most of the mobs in Reisenjima will aggro and some even have True Sight or True Sound (see Reisenjima#Adversaries.)" },
             "Travel to the Crag of Holla , Dem , or Mea and examine the Dimensional Portal . You will receive the option to travel to Reisenjima .",
             "Upon arrival, you will receive a brief cutscene.",
             {
                 text = "Speak with Shiftrix , the goblin by the entrance, (you don't need to pay for info) to activate the Oseem augmentation system.",
                 substeps = {
-                    "Note: If you're doing missions just to utilize the Dark Matter Arcane Glyphics Campaign , you may stop here.",
-                    "He sells a Map of Reisenjima (50 Silt .)",
+                    "He sells a Map of Reisenjima (50 Silt.)",
                     "You may also want to grab a Mollifier (500 Silt ) for use in the next Mission while here.",
+                },
+                notes = {
+                    "Note: If you're doing missions just to utilize the Dark Matter Arcane Glyphics Campaign, you may stop here.",
                 },
             },
             {
@@ -923,7 +929,7 @@ M.STEPS = {
     ["3-3"] = {
         name = "The River Runs Red",
         steps = {
-            "Note: If you receive the Geomagnetron in this Mission, it will already be attuned and all you need to do is speak to Darcia to obtain the Adoulinian charter permit .",
+            { note = "Note: If you receive the Geomagnetron in this Mission, it will already be attuned and all you need to do is speak to Darcia to obtain the Adoulinian charter permit." },
             "Examine the Etched Rock at (K-9) for a cutscene.",
         },
     },
@@ -1057,10 +1063,12 @@ M.STEPS = {
             {
                 text = "Enter Walk of Echoes for a cutscene.",
                 substeps = {
-                    "All three zoning methods listed below lead to the same section of the Walk of Echoes . The first one is the most easily accessible.",
-                    "Note: If you zone in from blue ??? next to the Cavernous Maw & Survival Guide in Batallia Downs , you will need to exit after the cutscene and go to one of the other locations for the next mission as this is the wrong Walk of Echoes .",
-                    "Note: As of 5/12/2026, zoning in from the blue ??? next to the Cavernous Maw & Survival Guide in Batallia Downs did not require going to another location. You may simply need to leave and return to ??? in Batallia Downs .",
-                    "If you receive the message, \" You are unable to make further progress in Rhapsodies of Vana'diel due to an event occurring in the quest Champion of the Dawn ,\" then you must zone into Walk of Echoes from Xarcabard (S) to activate and receive the cut scene for Champion of the Dawn and you must complete that quest and then A Forbidden Reunion first. You will not receive the Rhapsodies of Vana'diel 3-14 cutscene upon re-entering Walk of Echoes after completing these quests, and you may simply proceed to the next Mission.",
+                    "All three zoning methods listed below lead to the same section of the Walk of Echoes. The first one is the most easily accessible.",
+                    "If you receive the message, \" You are unable to make further progress in Rhapsodies of Vana'diel due to an event occurring in the quest Champion of the Dawn,\" then you must zone into Walk of Echoes from Xarcabard (S) to activate and receive the cut scene for Champion of the Dawn and you must complete that quest and then A Forbidden Reunion first. You will not receive the Rhapsodies of Vana'diel 3-14 cutscene upon re-entering Walk of Echoes after completing these quests, and you may simply proceed to the next Mission.",
+                },
+                notes = {
+                    "Note: If you zone in from blue??? next to the Cavernous Maw & Survival Guide in Batallia Downs, you will need to exit after the cutscene and go to one of the other locations for the next mission as this is the wrong Walk of Echoes.",
+                    "Note: As of 5/12/2026, zoning in from the blue??? next to the Cavernous Maw & Survival Guide in Batallia Downs did not require going to another location. You may simply need to leave and return to??? in Batallia Downs.",
                 },
             },
             {
@@ -1092,8 +1100,10 @@ M.STEPS = {
             {
                 text = "Find a nearby white glowing ??? to receive a cutscene.",
                 substeps = {
-                    "The glowing ??? will be to the east, toward the direction Atomos is visible in the distant sky.",
-                    "Note: If you entered the Walk of Echoes through Xarcabard (S) , then you are in the wrong section of the zone. See the previous Mission for directions to the correct entrances.",
+                    "The glowing??? will be to the east, toward the direction Atomos is visible in the distant sky.",
+                },
+                notes = {
+                    "Note: If you entered the Walk of Echoes through Xarcabard (S), then you are in the wrong section of the zone. See the previous Mission for directions to the correct entrances.",
                 },
             },
             "You will then be teleported to Desuetia - Empyreal Paradox and receive Cait Sith's whisker .",
@@ -1244,7 +1254,7 @@ M.STEPS = {
     ["3-29"] = {
         name = "An Unending Song",
         steps = {
-            "Note: If your inventory was full when you reached this Mission, you will have to examine the Mystic Retriever in Reisenjima to get the \" Cipher of Iroha's alter ego \" in order to get the cutscene in the starting Nations .",
+            { note = "Note: If your inventory was full when you reached this Mission, you will have to examine the Mystic Retriever in Reisenjima to get the \" Cipher of Iroha's alter ego \" in order to get the cutscene in the starting Nations." },
             "Zone into any area in a starting Nation (Bastok, Windurst, San d'Oria) that has a Mog House entrance for a brief cutscene.",
         },
     },

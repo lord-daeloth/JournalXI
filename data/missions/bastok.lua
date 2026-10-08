@@ -94,8 +94,10 @@ M.STEPS = {
                     "You can reach North Gustaberg from Port Bastok (L-7) or South Gustaberg by zoning at (H-5).",
                     "To get to the higher level Quadav, travel north until you hit the big room at (G-7). Make your way over to (H-7) and head south, turning right at the split, followed by a left. This will put you on a straight path down to (H-9) where you'll follow the bend into a circular room, followed by another bend twisting north and finally end up at the elevator in the center.",
                     "Take the elevator up to the second floor by pulling the lever to make it go up and down.",
-                    "This entire floor is filled with Onyx Quadav , Greater Quadav , and Veteran Quadav about Lv.13 (Be careful of Zi'Ghi Boneeater , a Lvl.15-16 NM).",
-                    " Note: Using the boat at (H-8) on the second floor will transport you to Zeruhn Mines and will place you on the other side of a guarded gate. You won't be able to pass this gate to get back , so be careful.",
+                    "This entire floor is filled with Onyx Quadav, Greater Quadav, and Veteran Quadav about Lv.13 (Be careful of Zi'Ghi Boneeater, a Lvl.15-16 NM).",
+                },
+                notes = {
+                    "Note: Using the boat at (H-8) on the second floor will transport you to Zeruhn Mines and will place you on the other side of a guarded gate. You won't be able to pass this gate to get back, so be careful.",
                 },
             },
             "Once you obtained your 4 Fetich pieces, trade them simultaneously to one of the Bastok Gate Guards to complete the Mission.",
@@ -112,15 +114,19 @@ M.STEPS = {
                 text = "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
                 substeps = {
                     "3 Crystals seems to be enough.",
+                },
+                notes = {
                     "(Optional): Talk to Cid in Bastok Metalworks for more information.",
                 },
             },
             {
                 text = "You will have to obtain a Faded Crystal and trade it to Cid to receive the C. L. report .",
                 substeps = {
-                    "Faded Crystal s are not Exclusive, and can be traded or purchased from Bazaars or the Auction House . (  Others  Misc. 1)",
-                    "Alternatively, it can be obtained by trading a Synthesis Crystal to any Crag's Telepoint :",
-                    "(Optional): Talk to Naji .",
+                    "Faded Crystal s are not Exclusive, and can be traded or purchased from Bazaars or the Auction House. ( Others Misc. 1)",
+                    "Alternatively, it can be obtained by trading a Synthesis Crystal to any Crag's Telepoint:",
+                },
+                notes = {
+                    "(Optional): Talk to Naji.",
                 },
             },
             {
@@ -135,7 +141,7 @@ M.STEPS = {
     ["2-2"] = {
         name = "Wading Beasts",
         steps = {
-            "Note: This Mission is optional and can be skipped by trading enough Crystals to the Conquest NPC .",
+            { note = "Note: This Mission is optional and can be skipped by trading enough Crystals to the Conquest NPC." },
             "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
             {
                 text = "Obtain a Lizard Egg .",
@@ -221,7 +227,7 @@ M.STEPS = {
     ["3-2"] = {
         name = "To the Forsaken Mines",
         steps = {
-            "Note: This Mission is optional and can be skipped by trading enough Crystals to the Conquest NPC .",
+            { note = "Note: This Mission is optional and can be skipped by trading enough Crystals to the Conquest NPC." },
             "Trade enough Crystals to the Conquest NPC to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
             "Obtain a Hare Meat .",
             "Speak to Davyad (K-6) in Bastok Mines inside the corner house on the upper deck.",
@@ -382,8 +388,8 @@ M.STEPS = {
             },
             {
                 text = "Once defeated, check the ??? again to receive the Altepa moonpebble .",
-                substeps = {
-                    "Note: If you zone before receiving the Altepa moonpebble , you will have to fight both NMs again.",
+                notes = {
+                    "Note: If you zone before receiving the Altepa moonpebble, you will have to fight both NMs again.",
                 },
             },
             "Return to Bastok Mines HP #3 and speak with Tall Mountain (J-7) on the bottom level near the restricted area.",
@@ -403,7 +409,7 @@ M.STEPS = {
             },
             {
                 text = "Head to Norg and speak with Gilgamesh behind the Oaken Door at (K-8). Continue speaking with him until he mentions Frag Rocks .",
-                substeps = {
+                notes = {
                     "Note: You will receive up to 6 Frag Rocks per fight.",
                 },
             },
@@ -575,8 +581,8 @@ M.STEPS = {
             "Check the ??? again for a cutscene and the Old piece of wood .",
             {
                 text = "Return to Drake Fang for a final cutscene.",
-                substeps = {
-                    "(Optional): Talk to Gumbah (J-7) and Detzo (I-6) in Bastok Mines , and Iron Eater (J-8) in Metalworks for mini-cutscenes.",
+                notes = {
+                    "(Optional): Talk to Gumbah (J-7) and Detzo (I-6) in Bastok Mines, and Iron Eater (J-8) in Metalworks for mini-cutscenes.",
                 },
             },
         },

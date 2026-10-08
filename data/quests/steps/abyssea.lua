@@ -413,7 +413,7 @@ Q.STEPS = {
         "Bring it to Kenapa-Keppa (A) to capture it, making sure not to let it despawn along the way (keep it within 20').",
         "Lastly, speak with Kenapa-Keppa (A) after the full Warp II animation to complete the quest.",
         "Zoning is required to repeat this quest.",
-        "Note: This quest may only be completed once per Vana'diel day.",
+        { note = "Note: This quest may only be completed once per Vana'diel day." },
     },
 
     abyssea_a_ward_to_end_all_wards = {
@@ -447,7 +447,7 @@ Q.STEPS = {
     abyssea_an_acrididaen_anodyne = {
         {
             text = "Speak to Yoran-Oran (A) at (G-10) in Abyssea - Attohwa at the base camp.",
-            substeps = {
+            notes = {
                 "Optional: Speak to Jakaka (A) in Abyssea - Attohwa (I-10) for further information on the quest.",
             },
         },
@@ -494,7 +494,7 @@ Q.STEPS = {
 
     abyssea_an_officer_and_a_pirate = {
         "Examine the ??? in La Theine Plateau (G-6) between 18:00 and 5:00 for a cutscene.",
-        "Note: You will be on this quest after the previous cutscene. Talk to Joachim in Port Jeuno to proceed to the next quest",
+        { note = "Note: You will be on this quest after the previous cutscene. Talk to Joachim in Port Jeuno to proceed to the next quest" },
     },
 
     abyssea_an_ulcerous_uragnite = {
@@ -1584,6 +1584,8 @@ Q.STEPS = {
             text = "Obtaining the title associated with each NM is necessary to advance.",
             substeps = {
                 "It is possible to defeat any or all caturae before the start of this quest.",
+            },
+            notes = {
                 "Note: If you have done this, you may check if you have the titles by talking with the bard npc Zuah Lepahnyu in Port Jeuno (J-8). You do not need to set each title to continue.",
             },
         },
@@ -1885,7 +1887,7 @@ Q.STEPS = {
     },
 
     abyssea_hazy_prospects = {
-        "Note: To unlock this you need Rank 2 fame in Abyssea - Attohwa . Completing about 6 quests should get you to Rank 2. Commonly doing Something in the Air once, Wayward Wares once, and then repeating Crimson Carpet II (Attohwa) 4 times should get you Rank 2.",
+        { note = "Note: To unlock this you need Rank 2 fame in Abyssea - Attohwa. Completing about 6 quests should get you to Rank 2. Commonly doing Something in the Air once, Wayward Wares once, and then repeating Crimson Carpet II (Attohwa) 4 times should get you Rank 2." },
         "Speak to Harith (A) at (G-10) to accept the quest and obtain Miasmal counteragent recipe .",
         {
             text = "Craft, or otherwise obtain, one or more Miasmal Counteragents .",
@@ -1909,7 +1911,7 @@ Q.STEPS = {
 
     abyssea_heart_of_madness = {
         "Speak to Joachim in Port Jeuno (H-8) for a cutscene.",
-        "Note: The previous quest, An Officer and a Pirate , you must talk to Joachim , this is a second time you must talk to him,",
+        { note = "Note: The previous quest, An Officer and a Pirate, you must talk to Joachim, this is a second time you must talk to him," },
     },
 
     abyssea_help_not_wanted = {
@@ -1935,7 +1937,7 @@ Q.STEPS = {
                 "49 quest completions will max fame in this zone.",
             },
         },
-        "Note : If you plan to complete this quest multiple times, you will need to zone between each item drop. The most efficient method to repeat this quest is to warp to Conflux #3 -> obtain a Pursuer's Wing -> warp to Conflux #4 -> accept and turn in the quest -> Warp to Conflux #1 and re-zone.",
+        { note = "Note: If you plan to complete this quest multiple times, you will need to zone between each item drop. The most efficient method to repeat this quest is to warp to Conflux #3 -> obtain a Pursuer's Wing -> warp to Conflux #4 -> accept and turn in the quest -> Warp to Conflux #1 and re-zone." },
         "Zoning is required in order to repeat this quest.",
     },
 
@@ -2021,7 +2023,7 @@ Q.STEPS = {
                 "Piece of dried ebony lumber",
             },
         },
-        "Note that there are seven total crates around the area. Only three will give you an item. There is also one hiding behind the Maw exit.",
+        { note = "Note that there are seven total crates around the area. Only three will give you an item. There is also one hiding behind the Maw exit." },
         "Speak to Raibaht (A) .",
         "Return to Ayame (A) to complete the quest.",
     },
@@ -2087,7 +2089,7 @@ Q.STEPS = {
     abyssea_look_out_below = {
         {
             text = "Speak to Baldric (A) at Outpost 2 which is at (J-5) Conflux #6. He asks you to find Fresh Snowfall locations, and load them with the Subniveal mines and Firesand .",
-            substeps = {
+            notes = {
                 "Note that actual Firesand is not needed.",
             },
         },
@@ -2876,7 +2878,7 @@ Q.STEPS = {
                 "The last option is at (J-6).",
             },
         },
-        "Note : You can use Confluxes TO OBTAIN the egg, it does not affect the outcome.",
+        { note = "Note: You can use Confluxes TO OBTAIN the egg, it does not affect the outcome." },
         {
             text = "After collecting the Wivre egg , you must return to Ranpi-Monpi (A) without breaking it.",
             substeps = {
@@ -3000,7 +3002,7 @@ Q.STEPS = {
                 "Players will now begin accumulating Traverser stones after this quest has been completed. A new stone is created for you every 20 real-life hours at first.",
             },
         },
-        "Note: To learn more about visitant status and entering Abyssea, see the main Abyssea page here .",
+        { note = "Note: To learn more about visitant status and entering Abyssea, see the main Abyssea page here." },
     },
 
     abyssea_the_unmarked_tomb = {
@@ -3076,7 +3078,7 @@ Q.STEPS = {
     abyssea_to_paste_a_peiste = {
         "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone .",
         "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat .",
-        "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary . The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized.",
+        { note = "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary. The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized." },
         "Exit Abyssea - Konschtat for a cutscene that finishes the quest.",
         "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
         {
@@ -3438,7 +3440,7 @@ Q.STEPS = {
     abyssea_when_good_cardians_go_bad = {
         {
             text = "Talk to Apururu (A) at (H-12).",
-            substeps = {
+            notes = {
                 "Note: Zoning resets progress on this quest.",
             },
         },

@@ -365,7 +365,7 @@ Q.STEPS = {
         "Continue monster rearing and purchase the key item \"Sakura's Excellent Adventure\" from Zenicca or a Skipper Moogle .",
         "Enter your Mog Garden for a cutscene",
         "Trade 12 Crayfish to your Green Thumb Moogle to complete the quest.",
-        "Note: Once the quest is activated, you will automatically receive the rank 5 promotion, and immediately be able to raise three simultaneous monsters. Although, for Work Gloves and the ability to progress to the next quest , you still need to have this quest completed.",
+        { note = "Note: Once the quest is activated, you will automatically receive the rank 5 promotion, and immediately be able to raise three simultaneous monsters. Although, for Work Gloves and the ability to progress to the next quest, you still need to have this quest completed." },
         {
             text = "Spoiler",
             substeps = {
@@ -382,7 +382,7 @@ Q.STEPS = {
     oth_sel_elder_memories = {
         "Speak to Isacio .",
         "Trade him a Damselfly Worm , then a Magicked Skull , and finally a Crab Apron .",
-        "NOTE: If you have completed the Rhapsodies of Vana'diel mission Set Free before obtaining your subjob, you will have Gilgamesh's introductory letter . This key item replaces the need for the requested items.",
+        { note = "NOTE: If you have completed the Rhapsodies of Vana'diel mission Set Free before obtaining your subjob, you will have Gilgamesh's introductory letter. This key item replaces the need for the requested items." },
     },
 
     oth_tvs_elderly_pursuits = {
@@ -449,7 +449,7 @@ Q.STEPS = {
         "The Green Thumb Moogle instructs you to examine the sparkling Flotsam on the beach.",
         {
             text = "Examine the spot, and report back to the Moogle to complete the quest line.",
-            substeps = {
+            notes = {
                 "Note that if you do not have five available spots, you will not complete the quest. Talk to the Moogle twice in a row to re-trigger the beach cutscene and complete the quest.",
             },
         },
@@ -469,9 +469,8 @@ Q.STEPS = {
                 "May also be purchased via the Auction House under Materials  Clothcraft.",
             },
         },
-        "Note :",
-        "Mistmelts are able to force Ouryu out of the sky and on to the ground when fighting him.",
-        "Has no effect in The Savage II .",
+        { note = "Mistmelts are able to force Ouryu out of the sky and on to the ground when fighting him." },
+        { note = "Has no effect in The Savage II." },
     },
 
     oth_old_for_the_birds = {
@@ -540,8 +539,8 @@ Q.STEPS = {
         },
         {
             text = "After the cutscene you'll receive Sheep Mount as a reward.",
-            substeps = {
-                "Note that you directly receive the Sheep companion instead of the item Sheep Mount .",
+            notes = {
+                "Note that you directly receive the Sheep companion instead of the item Sheep Mount.",
             },
         },
     },
@@ -603,8 +602,8 @@ Q.STEPS = {
 
     oth_tvs_search_of_the_truth = {
         "Speak to Tressia (J-6, Third Floor: Patrol HQ)",
-        "Optional - Speak to Mengrenaux (J-6, Third Floor: Patrol HQ)",
-        "Optional - Speak to Chemioue (J-6, Third Floor: Patrol HQ)",
+        { note = "Optional - Speak to Mengrenaux (J-6, Third Floor: Patrol HQ)" },
+        { note = "Optional - Speak to Chemioue (J-6, Third Floor: Patrol HQ)" },
         {
             text = "Speak to the following in any order to watch short cutscenes",
             substeps = {
@@ -701,7 +700,7 @@ Q.STEPS = {
         "Trade Zaldon certain fish and he will gut them for you.",
         "He will buy the fish that you trade for a fixed price, as well as give you anything that might be in its stomach.",
         "As of the November 10th, 2021 Version Update , the chance to receive an item is increased when a bigger fish is traded. Fish size is noted on each fish when looking at it in your inventory.",
-        "Note: After completing the quest for the first time, you no longer need to meet the fishing level requirement to repeat the quest.",
+        { note = "Note: After completing the quest for the first time, you no longer need to meet the fishing level requirement to repeat the quest." },
         {
             text = "Fish Rewards Comment Gil Item Probability Title Giant Catfish 50 Earth Wand R Cordon Bleu Fisher Dark Bass 10 Green Rock R Ogre Eel 16 Turquoise Ring R Cordon Bleu Fisher Zafmlug Bass 15 Blue Rock R Giant Donko 96 Broken Halcyon Rod R Bhefhel Marlin 150 Pirate's Chart Brigand's Chart R VR Silver Shark 250 Trident VR Ace Angler Jungle Catfish 300 Broken Hume Rod R Emperor Fish 300 Cuir Highboots VR Ace Angler Titanictus 350 Ancient Sword VR Lu Shang-like Fisher King Takitaro 350 Philosopher's Stone VR Giant Chirai 550 Twinthread VR Ryugu Titan 800 Mercurial Sword VR Tricorn 810 Darksteel Ore R Sea Zombie 350 Drill Calamary C Was U before 6/25/15 update Cave Cherax 800 Dwarf Pugil C Was U before 6/25/15 update Lik 880 Opal Silk UR Gugrusaurus 880 Saber Shoot UR Added in the November 11th, 2009 Version Update Bladefish 200 Robber Rig R Gavial Fish 250 Drone Earring R Veydal Wrasse 225 Seashell Nebimonite U U Morinabaligi 300 Cuir Gloves U Turnabaligi 340 Water Ore Dark Ore Ice Ore VR VR VR Kalkanbaligi 390 Flat Shield R Pterygotus 390 Lapis Lazuli R Gerrothorax 423 Risky Patch VR Pirarucu 516 Wyvern Skin Peiste Skin Wivre Horn R R R Megalodon 532 Mithran Fish. Rod Broken Mithran Rod R Added in the March 23rd, 2010 Version Update Yayinbaligi 50 Telluric Ring Lakerda 51 Pearl Black Pearl R R Kilicbaligi 150 Rusty Greatsword R Monke-Onke 150 Poison Dust x1~6 R Ahtapot 350 Mildewy Ingot Decayed Ingot U R Armored Pisces 475 Stolid Breastplate VR Mola Mola 487 Mercurial Spear VR Added in the September 9th, 2010 Version Update Gugru Tuna 50 Tiny Tathlum R Istavrit 50 Venom Dust x1~4 R Gigant Octopus 119 Black Ink x1~6 R Three-eyed Fish 250 Paralysis Dust x1~12 R Gigant Squid 300 Flame Shield R Rhinochimera 300 Solon Torque R Grimmonite 350 Silver Ring Mythril Ring Gold Ring Platinum Ring R R R R Titanic Sawfish 810 Aizenkunitoshi VR Added in the December 7th, 2010 Version Update Pelazoea 360 Noddy Ring R Dorado Gar 568 Gold Ingot x1~4 R Crocodilos 1,763 Puffin Ring R Added in the July 24th, 2012 Version Update Abaia 960 Aurora Bass x1~3 Plumb Boots U VR Matsya 12,592 Shaper's Shawl VR Added in the June 25th, 2015 Version Update Kokuryu 1,512 Kokuryu's Liver C Soryu 1,512 Soryu's Liver C Hakuryu 1,512 Hakuryu's Liver C Sekiryu 1,512 Sekiryu's Liver C Added in the November 10th, 2015 Version Update Far East Puffer 735 Stinky Subligar R Synthed into Dashing Subligar Added in the November 10th, 2021 Version Update Shen 1,280 Riftcinder Riftdross Pearl VR VR VR Apkallufa 95 Ice Spikes Yawning Catfish 300 Seabird's Ring Malicious Perch 483 Patissiere's Ring Venom Dust VR Bloodblotch 165 Confectioner's Ring Venom Dust VR Bonefish 120 Skeleton Key x4 Added in the April 4th, 2022 Version Update Tiger Shark 285 Duck Ring",
             substeps = {
@@ -798,7 +797,7 @@ Q.STEPS = {
     },
 
     oth_tvs_forbidden_doors = {
-        "Note: You must wait up to 1 minute after the completion of the previous quest.",
+        { note = "Note: You must wait up to 1 minute after the completion of the previous quest." },
         "Talk with Enaremand (J-7).",
         {
             text = "Talk to Chemioue (J-6).",
@@ -978,7 +977,7 @@ Q.STEPS = {
         "The Green Thumb Moogle instructs you to mine from the nearby Mineral Vein.",
         {
             text = "After mining, return to the moogle to move on to the next quest.",
-            substeps = {
+            notes = {
                 "Note: You can initially mine three times in a row from this spot.",
             },
         },
@@ -1150,7 +1149,7 @@ Q.STEPS = {
     oth_mha_recycling_rods = {
         {
             text = "Speak to Keshab-Menjab at the lower level of (H-9) in Mhaura .",
-            substeps = {
+            notes = {
                 "(Optional) You can speak to Keshab-Menjab again for some additional dialogue.",
             },
         },
@@ -1209,9 +1208,8 @@ Q.STEPS = {
                 "The rewards are random. The rewards listed above are some of the more notable rewards.",
             },
         },
-        "Note :",
-        "A Conquest Tally must have taken place after completion of Tango with a Tracker in order to flag this quest. -- Not True as of Aug 2026.The requirement may be after acceptance of Tango with a Tracker .",
-        "This quest can may be completed once per conquest tally. Upon repeating the quest, you will be given the Letter from the Mithran Trackers key item instead.",
+        { note = "A Conquest Tally must have taken place after completion of Tango with a Tracker in order to flag this quest. -- Not True as of Aug 2026.The requirement may be after acceptance of Tango with a Tracker." },
+        { note = "This quest can may be completed once per conquest tally. Upon repeating the quest, you will be given the Letter from the Mithran Trackers key item instead." },
     },
 
     other_rowing_together = {
@@ -1240,8 +1238,8 @@ Q.STEPS = {
         "Trade the Green Thumb Moogle the Grow-M-Good for a final cutscene.",
         {
             text = "After the cutscene, you'll receive your reward Morbol Mount .",
-            substeps = {
-                "Note that you directly receive they key item Morbol companion instead of the item Morbol Mount .",
+            notes = {
+                "Note that you directly receive they key item Morbol companion instead of the item Morbol Mount.",
             },
         },
     },
@@ -1277,7 +1275,7 @@ Q.STEPS = {
             },
         },
         "Repeating the Quest: The quest can be repeated once every conquest week. Restart the quest by simply speaking to Jonette the next conquest week.",
-        "Note: If you do not return to Jonette to receive the Page from Miratete's Memoirs before the current conquest week ends, you will not be able to repeat the quest the next week.",
+        { note = "Note: If you do not return to Jonette to receive the Page from Miratete's Memoirs before the current conquest week ends, you will not be able to repeat the quest the next week." },
     },
 
     other_seed_sowing = {
@@ -1366,8 +1364,8 @@ Q.STEPS = {
         "Speak to Valgeir in Selbina . He will give you a Popoto to deliver back to Rycharde.",
         "Return to Rycharde and trade him the Popoto to complete this quest.",
         "You will receive a Tea Set as a reward.",
-        "(Optional) Speak to Valgeir in Selbina .",
-        "(Optional) Speak to Rycharde one last time to conclude the questline.",
+        { note = "(Optional) Speak to Valgeir in Selbina." },
+        { note = "(Optional) Speak to Rycharde one last time to conclude the questline." },
     },
 
     oth_tvs_the_big_one = {
@@ -1455,7 +1453,7 @@ Q.STEPS = {
     oth_mha_the_old_lady = {
         "Speak to Vera .",
         "Trade her the Wild Rabbit Tail , then the Dhalmel Saliva , and finally the Bloody Robe .",
-        "NOTE: If you have completed the Rhapsodies of Vana'diel mission Set Free before obtaining your subjob, you will have Gilgamesh's introductory letter . This key item replaces the need for the requested items.",
+        { note = "NOTE: If you have completed the Rhapsodies of Vana'diel mission Set Free before obtaining your subjob, you will have Gilgamesh's introductory letter. This key item replaces the need for the requested items." },
     },
 
     oth_sel_the_real_gift = {
@@ -1508,7 +1506,7 @@ Q.STEPS = {
     },
 
     oth_mha_trial_by_lightning = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         "Speak with Ripapa to obtain the quest. If you are positive that you have the required fame but she is not allowing you to undertake this quest, continue speaking with her until her text changes. Once you have received the key item : Tuning fork of lightning , you can now safely undertake the quest.",
         {
             text = "Travel to The Sanctuary of Zi'Tah enter to The Boyahda Tree at (K-12) or (J-12). On the first map of The Boyahda Tree , travel to (A-7) to climb to the second map. On the second map, go behind the waterfall at (I-11) to find the hidden entrance to the Cloister of Storms .",
@@ -1627,7 +1625,7 @@ Q.STEPS = {
     },
 
     oth_lat_waking_the_beast = {
-        "Note: You must first have obtained the 6 summonable Celestial avatars before you are presented with the Rainbow resonator .",
+        { note = "Note: You must first have obtained the 6 summonable Celestial avatars before you are presented with the Rainbow resonator." },
         "Speak to Carbuncle at the ??? (G-6) in La Theine Plateau .",
         {
             text = "You must collect six key items dropped from six battles against much harder versions of the 6 Celestial avatars.",
@@ -1650,8 +1648,7 @@ Q.STEPS = {
             text = "Once you have obtained all six key items, proceed to Full Moon Fountain for a cutscene and the last Battle.",
             substeps = {
                 "HP Warp Toraimarai Canal is the fastest way there",
-                "Up to 18 players are allowed to enter this battlefield at once.",
-                "The battle will begin against Carbuncle .",
+                "The battle will begin against Carbuncle.",
                 "Once Carbuncle 's health reaches 75%, he will disappear and will be replaced by one of the 6 summonable Celestial Avatars.",
                 "After that avatar is defeated, Carbuncle will re-appear with 75% health.",
                 "Once Carbuncle 's health reaches 50%, he will disappear and will be replaced by two of the remaining 6 summonable Celestial Avatars.",
@@ -1659,6 +1656,9 @@ Q.STEPS = {
                 "When Carbuncle 's health reaches 25%, he will disappear once again and be replaced by the remaining 3 summonable Celestial Avatars.",
                 "Once the three avatars are defeated, five Carbuncle Primes will spawn at once.",
                 "Defeat all five Carbuncle Primes to win the battle.",
+            },
+            notes = {
+                "Up to 18 players are allowed to enter this battlefield at once.",
             },
         },
         "The six key items are not lost upon defeat, but lost upon winning the fight.",
@@ -1670,11 +1670,11 @@ Q.STEPS = {
                 "If you chose not to return the ruby, you will receive the title of \"Interrupter of Dreams\".",
             },
         },
-        "Notes:",
+        { note = "Notes:" },
         "Every player who participates in the final fight will receive a Carbuncle's Pole after finishing the quest in La Theine Plateau .",
         "All other quest rewards are randomly dropped at the end of the Carbuncle Prime battle.",
         "You must wait until the Conquest Tally is updated for the week before you can repeat this quest.",
-        "Strategy: -- Please note, this was written in 2012 and is VERY out of date. -- The final fight can be duoed by two well geared Summoners. The strategy is as follows:",
+        { note = "Strategy: -- Please note, this was written in 2012 and is VERY out of date. -- The final fight can be duoed by two well geared Summoners. The strategy is as follows:" },
         "1. Defeat the Carbuncles and Celestial Avatars up until the 3 Celestial Avatars pop.",
         "2. Defeat two of the three Celestial Avatars.",
         "3. Bring the last Celestial Avatar down to about 10% without using Blood Pact: Rages.",

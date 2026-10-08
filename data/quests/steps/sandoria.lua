@@ -11,9 +11,11 @@ Q.STEPS = {
         {
             text = "Trade Ailbeche a Giant Shell Bug .",
             substeps = {
-                "Either buy one off the Auction House, or go to Crawler's Nest and defeat Dreadbug via the ??? on map 2, SW of H-9 .",
-                "He can drop up to 4 Giant Shell Bug .",
-                "If you are planning to complete this quest for other characters on the same account in one trip, you may pop Dreadbug again, only while this quest is still active , on subsequent new game days, once per game day.",
+                "Either buy one off the Auction House, or go to Crawler's Nest and defeat Dreadbug via the??? on map 2, SW of H-9.",
+                "He can drop up to 4 Giant Shell Bug.",
+                "If you are planning to complete this quest for other characters on the same account in one trip, you may pop Dreadbug again, only while this quest is still active, on subsequent new game days, once per game day.",
+            },
+            notes = {
                 "Note: Be careful to do the above NPC interactions, as if skipped you will use up the Giant Shell Bug you get during the next step.",
             },
         },
@@ -62,7 +64,7 @@ Q.STEPS = {
     },
 
     sdz_ns_craftsmans_work = {
-        "Note : Make sure your current job is set to Dragoon when you speak to Miaux. After speaking to Miaux, you may change to another job to perform the rest of the quest if you wish.",
+        { note = "Note: Make sure your current job is set to Dragoon when you speak to Miaux. After speaking to Miaux, you may change to another job to perform the rest of the quest if you wish." },
         "Speak to Miaux in Northern San d'Oria (E-6). You will be requested to obtain an Altepa polishing stone",
         {
             text = "Examine the ??? in Eastern Altepa Desert in the lower part of (H-8) to spawn Decurio I-III .",
@@ -293,7 +295,9 @@ Q.STEPS = {
         {
             text = "Talk to Femitte , who needs a goldsmithing order fulfilled. She requests an Elvaan specifically.",
             substeps = {
-                "She will provide you with a Goldsmithing order .",
+                "She will provide you with a Goldsmithing order.",
+            },
+            notes = {
                 "(Optional) Talk to Rouva for a hint on where to go.",
             },
         },
@@ -301,7 +305,7 @@ Q.STEPS = {
         "Michea requests a Mythril Ingot . After trading it to her, you must zone out of Bastok Markets once.",
         "Zone back into Bastok Markets and return to Michea to receive Mythril hearts .",
         "Travel back to Southern San d'Oria and talk to Femitte to complete the quest.",
-        "(Optional) Talk to Michea again for some more lore.",
+        { note = "(Optional) Talk to Michea again for some more lore." },
     },
 
     sdz_ss_eco_warrior = {
@@ -321,6 +325,8 @@ Q.STEPS = {
             text = "Speak to Rojaireaut (G-3) to have your level capped at 25.",
             substeps = {
                 "Everyone in your party/alliance needs to have the level cap applied to them.",
+            },
+            notes = {
                 "Note that the level cap has no timer. Enemies that normally wouldn't be aggressive to you due to high level, will be aggressive to you now, such as all of the Goblins, Hognosed Bats. Stink Bats will link to Hognosed Bats.",
             },
         },
@@ -344,8 +350,7 @@ Q.STEPS = {
             },
         },
         "Return to Norejaie to complete this quest.",
-        "Note :",
-        "You can only complete 1 Eco-Warrior quest a week. You have to wait until the next conquest tally before accepting another Eco-Warrior.",
+        { note = "You can only complete 1 Eco-Warrior quest a week. You have to wait until the next conquest tally before accepting another Eco-Warrior." },
     },
 
     sdz_co_enveloped_darkness = {
@@ -412,7 +417,7 @@ Q.STEPS = {
 
     sdz_ns_exit_the_gambler = {
         "Start the quest by talking to Aurege (F-3) near Northern San d'Oria Home Point #4, outside of the Carpenter's Guild.",
-        "(Optional): Talk to Nonterene (I-10) at the Parade Grounds near Victory Arch.",
+        { note = "(Optional): Talk to Nonterene (I-10) at the Parade Grounds near Victory Arch." },
         "Varchet is located in Southern San d'Oria at (L-6) right next to the fountains.",
         {
             text = "You'll need to gamble against him. Each attempt against him costs 5 gil. Keep trading until you win.",
@@ -515,7 +520,7 @@ Q.STEPS = {
             },
         },
         "If you've never harvested before: go to the green points marked on the wiki's map, and look for yellow sparkles called \"Logging Point\"s. Trade your hatchet to them for a chance at an item.",
-        "(Optional) turn on the Records of Eminence objective Harvesting -> Original Areas -> Jugner Forest for sparks and experience. For the first clear, it'll also give you 12 hatchets.",
+        { note = "(Optional) turn on the Records of Eminence objective Harvesting -> Original Areas -> Jugner Forest for sparks and experience. For the first clear, it'll also give you 12 hatchets." },
         "Trade these logs to Ramua, for your reward. She will also return the logs to you.",
     },
 
@@ -540,7 +545,7 @@ Q.STEPS = {
     },
 
     sdz_ns_growing_flowers = {
-        "(optional) Talk to Kuu Mohzolhi .",
+        { note = "(optional) Talk to Kuu Mohzolhi." },
         {
             text = "She won't come out and say it at first, but she would like a Marguerite .",
             substeps = {
@@ -622,8 +627,10 @@ Q.STEPS = {
         {
             text = "Head to Temple of Uggalepih for a NM fight.",
             substeps = {
-                "NOTE: Make sure atleast one person present is on Dragoon as having a wyvern out is a requirement to spawn the NM. Other people can be on any job and still get the reward after the fight.",
                 "The survival guide is most likely the fastest warp available",
+            },
+            notes = {
+                "NOTE: Make sure atleast one person present is on Dragoon as having a wyvern out is a requirement to spawn the NM. Other people can be on any job and still get the reward after the fight.",
             },
         },
         {
@@ -640,9 +647,8 @@ Q.STEPS = {
             },
         },
         "Once the NM's are dead, check the ??? again for a cutscene and your reward.",
-        "Note :",
-        "Although it is not necessarry, you can return to Ceraulian after defeating the NM's for an additional cutscene.",
-        "Rahal will also have some additional dialogue for you after the fight.",
+        { note = "Although it is not necessarry, you can return to Ceraulian after defeating the NM's for an additional cutscene." },
+        { note = "Rahal will also have some additional dialogue for you after the fight." },
     },
 
     sdz_ss_lizard_skins = {
@@ -690,7 +696,7 @@ Q.STEPS = {
     sdz_ns_messenger_beyond = {
         {
             text = "As a White Mage, talk to Narcheral (M-6) upstairs in the cathedral in Northern San d'Oria to get the quest.",
-            substeps = {
+            notes = {
                 "Note: You can do the rest of the quest on any job.",
             },
         },
@@ -782,7 +788,7 @@ Q.STEPS = {
     sdz_co_peace_for_spirit = {
         {
             text = "As a Red Mage, Talk to Curilla in Chateau d'Oraguille at (I-9) to start this quest.",
-            substeps = {
+            notes = {
                 "Note: You don't have to be RDM for the remainder of this quest.",
             },
         },
@@ -1084,8 +1090,10 @@ Q.STEPS = {
         {
             text = "Speak to Novalmauge who walks between (F-8) and (G-8) in Bostaunieux Oubliette Map 1 (enter from Northern San d'Oria (I/J-6) HP#2 and then Chateau d'Oraguille (I/J-8) ) for a cutscene.",
             substeps = {
-                "Access to Chateau d'Oraguille is required to talk to Novalmauge in the Bostaunieux Oubliette . You must be at least Rank 2 in San d'Oria , or have started Mission 2-3 as a Bastok / Windurst citizen in order to enter Chateau d'Oraguille .",
-                "Note: If you have not yet completed the quest The Rumor ( Drain Quest), you can speak to Novalmauge a second time to accept The Rumor . You no longer need to complete The Rumor before advancing the job quest.",
+                "Access to Chateau d'Oraguille is required to talk to Novalmauge in the Bostaunieux Oubliette. You must be at least Rank 2 in San d'Oria, or have started Mission 2-3 as a Bastok / Windurst citizen in order to enter Chateau d'Oraguille.",
+            },
+            notes = {
+                "Note: If you have not yet completed the quest The Rumor ( Drain Quest), you can speak to Novalmauge a second time to accept The Rumor. You no longer need to complete The Rumor before advancing the job quest.",
             },
         },
         {
@@ -1168,7 +1176,7 @@ Q.STEPS = {
         "Talk to Altiret , who asks you to retreive the stolen item.",
         {
             text = "Talk to Miene to obtain a clue, an Eagle Button .",
-            substeps = {
+            notes = {
                 "(Optional) You can attempt to trade the button to Altiret.",
             },
         },
@@ -1215,7 +1223,7 @@ Q.STEPS = {
         },
         {
             text = "On this island is an NM named Ahtu . Defeat Ahtu to obtain an Engraved Key .",
-            substeps = {
+            notes = {
                 "(Optional) A Stone Monument for the quest An Explorer's Footsteps is also here.",
             },
         },
@@ -1268,7 +1276,7 @@ Q.STEPS = {
     sdz_ss_cure_a_cough = {
         {
             text = "Speak to Nenne , Southern San d'Oria (F-6)",
-            substeps = {
+            notes = {
                 "Important note: this quest will not immediately appear on your quest log until the actual 'item hunt' portion of the quest has been activated (see below).",
                 "(Optional) You can speak to her again to ask her some questions.",
             },
@@ -1288,7 +1296,7 @@ Q.STEPS = {
     },
 
     sdz_ns_trial_by_ice = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         "Speak with Gulmama to obtain quest. If you are positive that you have the required fame but she is not allowing you to undertake this quest, continue speaking with her until her text changes. Once you have received the key item : Tuning fork of ice , you can now safely undertake the quest.",
         {
             text = "Travel to Beaucedine Glacier and enter the ruins of Fei'Yin at (J-4). In Fei'Yin (Map A) travel to (G-9) and go down the stairs to the second map. In the basement (Map B) travel to (I-5) to find the entrance to the Cloister of Frost .",

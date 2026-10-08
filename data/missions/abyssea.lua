@@ -68,7 +68,7 @@ M.STEPS = {
                     "Players will now begin accumulating Traverser stones after this quest has been completed. A new stone is created for you every 20 real-life hours at first.",
                 },
             },
-            "Note: To learn more about visitant status and entering Abyssea, see the main Abyssea page here .",
+            { note = "Note: To learn more about visitant status and entering Abyssea, see the main Abyssea page here." },
         },
     },
 
@@ -175,7 +175,7 @@ M.STEPS = {
         steps = {
             "Examine the Cavernous Maw in Konschtat Highlands at (I-12) while in possession of a Traverser stone .",
             "Defeat the Notorious Monster Kukulkan in Abyssea - Konschtat .",
-            "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary . The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized.",
+            { note = "Beware! Kukulkan can be a tricky fight if you are not prepared. The monster has a very strong terror, petrify, poison and curse effect that can kill even lv. 99 or master level players. It is recommended to bring a couple offensive magic casting trusts if you are adventuring solo and grab status enhancing effects like HP Boost from the Cruor Prospector if necessary. The offensive magic casting trusts will avoid the stun effects and continue casting damaging spells while you are terrorized." },
             "Exit Abyssea - Konschtat for a cutscene that finishes the quest.",
             "This is part of a series of quests needed to progress in the Abyssea storyline. The reward that you receive varies depending on your progress in this storyline.",
             {
@@ -285,7 +285,7 @@ M.STEPS = {
         name = "An Officer and a Pirate",
         steps = {
             "Examine the ??? in La Theine Plateau (G-6) between 18:00 and 5:00 for a cutscene.",
-            "Note: You will be on this quest after the previous cutscene. Talk to Joachim in Port Jeuno to proceed to the next quest",
+            { note = "Note: You will be on this quest after the previous cutscene. Talk to Joachim in Port Jeuno to proceed to the next quest" },
         },
     },
 
@@ -293,7 +293,7 @@ M.STEPS = {
         name = "Heart of Madness",
         steps = {
             "Speak to Joachim in Port Jeuno (H-8) for a cutscene.",
-            "Note: The previous quest, An Officer and a Pirate , you must talk to Joachim , this is a second time you must talk to him,",
+            { note = "Note: The previous quest, An Officer and a Pirate, you must talk to Joachim, this is a second time you must talk to him," },
         },
     },
 
@@ -619,6 +619,8 @@ M.STEPS = {
                 text = "Obtaining the title associated with each NM is necessary to advance.",
                 substeps = {
                     "It is possible to defeat any or all caturae before the start of this quest.",
+                },
+                notes = {
                     "Note: If you have done this, you may check if you have the titles by talking with the bard npc Zuah Lepahnyu in Port Jeuno (J-8). You do not need to set each title to continue.",
                 },
             },

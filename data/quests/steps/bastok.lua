@@ -39,7 +39,7 @@ Q.STEPS = {
         "Talk to Aquillina in Bastok Markets at (K-9), she will ask for Flint Stones",
         "Trade Flint Stone x4 to Aquillina to complete quest.",
         "Quest is repeatable but has a restriction of 15 earth minutes. This restriction is for everyone , not just yourself. So if another player has completed the quest recently, it will not be available.",
-        "Tip: If you're looking to gain Bastok fame fast, skip this one and work on the other repeatables and also Selbina quests.",
+        { note = "Tip: If you're looking to gain Bastok fame fast, skip this one and work on the other repeatables and also Selbina quests." },
     },
 
     bsz_mw_foremans_best_friend = {
@@ -54,7 +54,7 @@ Q.STEPS = {
     },
 
     bsz_pb_ladys_heart = {
-        "(optional) Talk to Valah Molkot .",
+        { note = "(optional) Talk to Valah Molkot." },
         {
             text = "She won't come out and say it at first, but she would like an Amaryllis .",
             substeps = {
@@ -243,7 +243,7 @@ Q.STEPS = {
         "Travel to Norg and speak with Ryoma at (H-8), who will give you the Sealed dagger .",
         {
             text = "Return to Ensetsu to complete the quest.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Kaede afterwards for some closing dialogue.",
             },
         },
@@ -452,8 +452,8 @@ Q.STEPS = {
     bsz_bkt_brygid_stylist_returns = {
         {
             text = "Speak to Brygid on any job while wearing any 1 to 5 pieces of Artifact Armor to begin the quest.",
-            substeps = {
-                "Note : Artifact Armor +1 and Reforged Artifact Armor will not work. You must use non-enhanced/original Artifact Armor .",
+            notes = {
+                "Note: Artifact Armor +1 and Reforged Artifact Armor will not work. You must use non-enhanced/original Artifact Armor.",
             },
         },
         "She will request one Body and one Legs armor items from the Armor requests table below.",
@@ -561,7 +561,7 @@ Q.STEPS = {
             },
         },
         "Defeat the NM and click on the ??? again. You will obtain a key item: \"Darksteel Formula\"",
-        "(Optional) Return to Metalworks and speak with Mighty Fist again for additional dialogue.",
+        { note = "(Optional) Return to Metalworks and speak with Mighty Fist again for additional dialogue." },
         "Return to Raibaht and speak with him to complete quest.",
     },
 
@@ -789,14 +789,14 @@ Q.STEPS = {
         "Speak to Salimah to begin quest.",
         "Obtain any of the following item and trade it to her depending on time of day. Reward varies depending on type of item traded in as well.",
         "All 3 items may be farmed (Sleepshroom from Funguar type, Treant Bulb from Sapling type and Wild Onion from Goblin Thugs or by gardening) or purchased from the Auction House.",
-        "Important Note: This quest is repeatable as many times as you want but requires zoning between each trade.",
+        { note = "Important Note: This quest is repeatable as many times as you want but requires zoning between each trade." },
     },
 
     bsz_bm_groceries = {
         "Speak to Tami in Bastok Mines at (J-8) to begin quest.",
         {
             text = "She will give you the Tami's note .",
-            substeps = {
+            notes = {
                 "Note: If you open and read the Key Item, you can no longer repeat the quest.",
             },
         },
@@ -1002,7 +1002,7 @@ Q.STEPS = {
                 "She will give you a Fire Crystal you can use to craft your Copper Ring if you choose.",
             },
         },
-        "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation.",
+        { note = "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation." },
         "Obtain a Copper Ring either via Auction House , Merchants or Crafting .",
         "Trade Copper Ring to Roh Latteh in Bastok Mines (H-7), she is located on the first floor house on Ore Street.",
         "Upon NPC dialogue completion, you will obtain Letter from Roh Latteh .",
@@ -1169,7 +1169,7 @@ Q.STEPS = {
     bsz_mw_smoke_on_mountain = {
         {
             text = "Speak to Hungry Wolf inside the Craftmen's Eatery to start the quest. (Use Home Point #1.)",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Offa at Bastok Markets (F-10) (second floor, door on the left) for instructions on how to make the sausage.",
             },
         },
@@ -1412,7 +1412,7 @@ Q.STEPS = {
 
     bsz_bkt_signpost_marks_spot = {
         "Speak to Nbu Latteh at (J-9) to begin quest.",
-        "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation.",
+        { note = "(Optional) speak to Nbu Latteh again, as well as the guard Parnika to the south, for hints at Nbu's occupation." },
         "Travel to Konschtat Highlands and inspect the Signpost at the south edge of G-4 / north edge of G-5.",
         "You will receive a Painting of a windmill",
         "Return to Bastok Mines and speak to Roh Latteh at (H-7) to complete the quest.",
@@ -1421,8 +1421,8 @@ Q.STEPS = {
     bsz_bm_sirens_tear = {
         {
             text = "Talk to Wahid (HP #1 Bastok Mines ), he will ask for a \" Siren's Tear \".",
-            substeps = {
-                "(Optional) Go to the Steaming Sheep Restaurant at Port Bastok (E-6) and talk to Otto , then Carmelo for hints about the tear.",
+            notes = {
+                "(Optional) Go to the Steaming Sheep Restaurant at Port Bastok (E-6) and talk to Otto, then Carmelo for hints about the tear.",
             },
         },
         {
@@ -1473,7 +1473,9 @@ Q.STEPS = {
                 "Doglix Muttsnout (Level 58 WHM)",
                 "Moxnix Nightgoggle (Level 58 RNG)",
                 "Picklix Longindex (Level 60 THF)",
-                "Be aware all 3 NMs will aggressively use Bomb Toss .",
+            },
+            notes = {
+                "Be aware all 3 NMs will aggressively use Bomb Toss.",
             },
         },
         "Defeat the NMs, and zone out of Behemoth's Dominion (back into Qufim Island) to receive a cutscene and your reward.",
@@ -1644,7 +1646,7 @@ Q.STEPS = {
     },
 
     bsz_pb_trial_by_earth = {
-        "Warning: Trust Magic CANNOT be used in this BCNM.",
+        { note = "Warning: Trust Magic CANNOT be used in this BCNM." },
         "Speak with Juroro to obtain the quest. If you are positive that you have the required fame but she is not allowing you to undertake this quest, continue speaking with her until her text changes. Once you have received the Tuning fork of earth , you can now safely undertake the quest.",
         {
             text = "Travel to Eastern Altepa Desert and look for the entrance to Quicksand Caves at (J-7) (where the level 30+ beetle/antica camp is). This will put you at the first map of Quicksand Caves at (L-4). You will need to travel to (E-10) of the map, to find a hidden entrance to the Cloister of Tremors . The map to the right hand side shows you the map with the hidden tunnels, falls and other traps. Be careful to not fall into the wrong areas.",
@@ -1672,7 +1674,7 @@ Q.STEPS = {
                 "Acquire a Yagudo Drink from the Auction House , or purchase one from a Curio Vendor Moogle if you have the appropriate rhapsody item.",
             },
         },
-        "Note: Once you have talked to Ayame, the quest will show up in your quest log, at this point you may switch to another job to complete the quest.",
+        { note = "Note: Once you have talked to Ayame, the quest will show up in your quest log, at this point you may switch to another job to complete the quest." },
         {
             text = "Travel to Castle Oztroja .",
             substeps = {

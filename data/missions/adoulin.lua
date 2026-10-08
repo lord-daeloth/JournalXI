@@ -623,7 +623,7 @@ M.STEPS = {
         steps = {
             {
                 text = "Check the Door: Boarding House at (H-9) in Eastern Adoulin near the Statue of the Goddess Waypoint (#3) for a cutscene.",
-                substeps = {
+                notes = {
                     "Note: This is a very long cutscene.",
                 },
             },
@@ -669,7 +669,7 @@ M.STEPS = {
     ["214"] = {
         name = "To the Victor...",
         steps = {
-            "Note: If you purchase the \"Card Jailer Teodor\" , you will automatically win the mini-game.",
+            { note = "Note: If you purchase the \"Card Jailer Teodor\", you will automatically win the mini-game." },
             "This Mission is completed after beating Teodor at his game.",
         },
     },
@@ -1240,7 +1240,7 @@ M.STEPS = {
                 },
             },
             "You must choose before proceeding, but if you express that you're uncertain at the moment (the top option), you'll exit the scene and just need to interact with Ploh Trishbahk for Arciela to ask you Have you made your decision?",
-            "Note: If you are currently undertaking the Rhapsodies mission Solemnity , Ploh Trishbahk will instead say \" The prrrincess awaits you in Celennia Memorial Library . \" In the case that this happens, you must complete this Rhapsodies mission before being able to select the item of your choice.",
+            { note = "Note: If you are currently undertaking the Rhapsodies mission Solemnity, Ploh Trishbahk will instead say \" The prrrincess awaits you in Celennia Memorial Library. \" In the case that this happens, you must complete this Rhapsodies mission before being able to select the item of your choice." },
         },
     },
 
@@ -1310,8 +1310,8 @@ M.STEPS = {
         name = "Yggdrasil Beckons",
         steps = {
             "This mission splits into two BCNM fights which you may complete in either order. You win each fight by bringing the primary target down to 10%.",
-            "Note: Drawing your weapon will immediately start the battles below, regardless of your distance to the enemy.",
-            "Note: If you fail either battle, you must return to Leafallia and click the Aged Stump at (H-8) to reacquire the Key Item required for entry.",
+            { note = "Note: Drawing your weapon will immediately start the battles below, regardless of your distance to the enemy." },
+            { note = "Note: If you fail either battle, you must return to Leafallia and click the Aged Stump at (H-8) to reacquire the Key Item required for entry." },
             {
                 text = "Head to (K-11) in Cirdas Caverns .",
                 substeps = {
@@ -1443,7 +1443,7 @@ M.STEPS = {
     ["352"] = {
         name = "Reckoning",
         steps = {
-            "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target.",
+            { note = "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target." },
             {
                 text = "Examine the Ominous Postern to enter the fight against Hades (First Form) .",
                 substeps = {
@@ -1457,7 +1457,7 @@ M.STEPS = {
     ["356"] = {
         name = "Abomination",
         steps = {
-            "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target.",
+            { note = "Note: Drawing your weapon will immediately start the battle, regardless of your distance to the target." },
             "Examine the Ominous Postern in Ra'Kaznar Turris to enter the fight against Hades (Second Form) .",
             {
                 text = "You will be assisted by Arciela and Teodor . The Mission will fail if either die .",
@@ -1498,6 +1498,8 @@ M.STEPS = {
                 text = "Zone into Ceizak Battlegrounds for a cutscene.",
                 substeps = {
                     "If you choose the option \" No? \" about a dozen times you will get some extra dialogue from Arciela and an extra permanent Key Item.",
+                },
+                notes = {
                     "Note: This will decrease your bond with Arciela to the lowest possible level.",
                 },
             },

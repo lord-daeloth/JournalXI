@@ -118,7 +118,7 @@ M.STEPS = {
                     "You must zone out and return to get the cutscenes.",
                 },
             },
-            "(Optional) Speak to Fubruhn (F-11) regarding Mog Locker upgrades, administration, and accessibility.",
+            { note = "(Optional) Speak to Fubruhn (F-11) regarding Mog Locker upgrades, administration, and accessibility." },
         },
     },
 
@@ -153,7 +153,7 @@ M.STEPS = {
     ["5"] = {
         name = "Easterly Winds",
         steps = {
-            "Note: You must wait one Earth minute after completing the previous quest to begin this quest.",
+            { note = "Note: You must wait one Earth minute after completing the previous quest to begin this quest." },
             "Approach the Palace in Ru'Lude Gardens for a cutscene.",
             {
                 text = "Choose any of the answers to the questions to complete the quest.",
@@ -225,7 +225,7 @@ M.STEPS = {
     ["11"] = {
         name = "Royal Puppeteer",
         steps = {
-            "Note: If you have not already done so based in the previous mission suggestion you must wait one game day and zone after completing the previous mission.",
+            { note = "Note: If you have not already done so based in the previous mission suggestion you must wait one game day and zone after completing the previous mission." },
             "Once you start this mission, you can progress past the Rhapsodies of Vana'diel mission Ever Forward .",
             "Head to Salaheem's Sentinels ( Aht Urhgan Whitegate I-10) for a cutscene.",
             {
@@ -249,7 +249,7 @@ M.STEPS = {
             },
             "Check the headstone again to spawn a Fomor NM Jazaraat .",
             "Check Jazaraat's Headstone a third time to receive an Ephramadian gold coin .",
-            "Note: There is a battle approaching in the next two missions. If you want another player to participate (who has already completed battle) they must also have this coin. All the other player needs to do is touch the headstone.",
+            { note = "Note: There is a battle approaching in the next two missions. If you want another player to participate (who has already completed battle) they must also have this coin. All the other player needs to do is touch the headstone." },
         },
     },
 
@@ -263,7 +263,7 @@ M.STEPS = {
     ["14"] = {
         name = "The Black Coffin",
         steps = {
-            "Note: All members of your party (including any who have finished this mission before) need an Ephramadian gold coin to enter the battlefield during this mission. If you need another gold coin, examine Jazaraat's Headstone at Caedarva Mire (E-10).",
+            { note = "Note: All members of your party (including any who have finished this mission before) need an Ephramadian gold coin to enter the battlefield during this mission. If you need another gold coin, examine Jazaraat's Headstone at Caedarva Mire (E-10)." },
             {
                 text = "Head to the Cutter, which is located at (H-8) on Map 5 of Arrapago Reef . There are a few options for getting there:",
                 substeps = {
@@ -305,7 +305,7 @@ M.STEPS = {
             },
             {
                 text = "Check the Imperial Whitegate door at (L-8) in Aht Urhgan Whitegate with the proper attire and your weapons removed for a cutscene, after which you will receive an Imperial Mythril Piece .",
-                substeps = {
+                notes = {
                     "Note: Confirm that you have space in your inventory before watching the cutscene, or you'll have to make space and watch the entire scene again if you do not obtain your reward.",
                 },
             },
@@ -315,9 +315,9 @@ M.STEPS = {
     ["17"] = {
         name = "Passing Glory",
         steps = {
-            "Note: You must wait one game day and zone after completing the previous mission before you can receive this cutscene.",
+            { note = "Note: You must wait one game day and zone after completing the previous mission before you can receive this cutscene." },
             "Approach Naja Salaheem for a cutscene.",
-            "Optional: After completing the mission, you will be eligible for Ashu Talif Assault .",
+            { note = "Optional: After completing the mission, you will be eligible for Ashu Talif Assault." },
         },
     },
 
@@ -510,12 +510,14 @@ M.STEPS = {
             {
                 text = "This fight is against up to 10x K23H1-LAMIA that you will encounter near H-9. After enough are defeated, a random amount, the battle ends.",
                 substeps = {
-                    "Trusts may be summoned.",
                     "All the K23H1-LAMIA are located together at (H-9).",
                     "They all have true sight and link.",
                     "They can be slept for crowd control.",
-                    "All of the K23H1-LAMIA attacks have the added effect of Poison .",
+                    "All of the K23H1-LAMIA attacks have the added effect of Poison.",
                     "They can also use the WS Venomous Tail which has a very strong Poison effect (at least 80 HP a tick).",
+                },
+                notes = {
+                    "Trusts may be summoned.",
                 },
             },
             {
@@ -524,8 +526,7 @@ M.STEPS = {
                     "If you fail the battle, you can obtain another permit to enter from Nahshib after one game day.",
                 },
             },
-            "Note :",
-            "If you have already finished this mission, you do not need another permit to help others with it.",
+            { note = "If you have already finished this mission, you do not need another permit to help others with it." },
         },
     },
 
@@ -642,7 +643,7 @@ M.STEPS = {
     ["39"] = {
         name = "Unraveling Reason",
         steps = {
-            "(Optional) Speak to Pherimociel in Ru'Lude Gardens (G-6) for a brief cutscene.",
+            { note = "(Optional) Speak to Pherimociel in Ru'Lude Gardens (G-6) for a brief cutscene." },
             "Wait until next game day and zone after completing the previous mission before speaking to Pherimociel again for the next cutscene.",
             "When the cutscene is over, you will end up at the Leypoint in Wajaom Woodlands .",
         },
@@ -662,7 +663,7 @@ M.STEPS = {
             "Activate the blank target (J-9) (the deactivated lamp) at the Nyzul Isle Staging Point which is right next to the Runic Portal(s) and select \"Yes\" to proceed with the mission.",
             {
                 text = "Check the Runic Seal (I-9), on the other side of the same large room, to enter the battlefield Path of Darkness .",
-                substeps = {
+                notes = {
                     "Trusts can be called during the battle.",
                 },
             },
@@ -727,6 +728,8 @@ M.STEPS = {
                 text = "The time limit for this fight is 45 minutes.",
                 substeps = {
                     "This fight was initially capped at level 75. Level 99 players should have little to no difficulty with it.",
+                },
+                notes = {
                     "Trusts can be summoned in this fight.",
                 },
             },
@@ -773,9 +776,8 @@ M.STEPS = {
                 },
             },
             "The battle is over once Alexander is defeated.",
-            "Note:",
-            "If you fail this fight, return to Naja Salaheem for another key item to try again.",
-            "If you win this fight, you'll watch one last cutscene that finishes this mission.",
+            { note = "If you fail this fight, return to Naja Salaheem for another key item to try again." },
+            { note = "If you win this fight, you'll watch one last cutscene that finishes this mission." },
         },
     },
 

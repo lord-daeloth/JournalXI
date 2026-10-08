@@ -12,6 +12,9 @@ tracking in a straightforward ImGui interface.
 - Read quest metadata and step-by-step walkthroughs without leaving the game.
 - Track one mission or quest in a separate resizable window.
 - Check off individual steps and substeps; progress is saved per character.
+- Keep optional guidance and strategy notes in the main Journal without
+  cluttering the objective tracker; `*` marks objectives with additional notes,
+  with a shortened preview available by hovering over the tracker objective.
 - Automatically mark every step when the game reports an entry as completed.
 - Collapse the tracker to the next unfinished step.
 - Adjust tracker opacity and interface text size.

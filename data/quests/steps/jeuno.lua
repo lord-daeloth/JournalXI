@@ -55,7 +55,7 @@ Q.STEPS = {
     },
 
     jeu_a_minstrel_in_despair = {
-        "Note: This quest will not appear on your quest list until completion.",
+        { note = "Note: This quest will not appear on your quest list until completion." },
         "Return to Mertaire and trade the Poetic Parchment to him for a cutscene and your reward.",
     },
 
@@ -128,7 +128,7 @@ Q.STEPS = {
         "Examine the ??? once the NM's are defeated to obtain a Blue bracelet .",
         {
             text = "Head down the stairs to (H-9) where you will find a blue door that only opens if you have a Blue bracelet .",
-            substeps = {
+            notes = {
                 "Note: The mention of blue or green doors are identified by the color of the light atop their door-ways. Depending on the players screen configuration these soft colors can sometimes look similar.",
             },
         },
@@ -229,11 +229,11 @@ Q.STEPS = {
             },
         },
         "Trade all four cards to Chululu for your measly reward.",
-        "Note: Every real-life day you can obtain another five cards from Chululu .",
+        { note = "Note: Every real-life day you can obtain another five cards from Chululu." },
     },
 
     jeu_rg_apocalypse_nigh = {
-        "Note: You must zone and wait until the next game day after completing the previous quest.",
+        { note = "Note: You must zone and wait until the next game day after completing the previous quest." },
         "Enter the palace in Ru'Lude Gardens .",
         {
             text = "Zone into Sealion's Den for a cutscene and then speak with Sueleen to head to Al'Taieu .",
@@ -378,7 +378,7 @@ Q.STEPS = {
         "Fight and defeat Atori-Tutori . He is level 99 and uses Hundred Fists which removes all enfeebling effects on him.",
         {
             text = "If you are defeated, you may enter the fight again by paying 1 Merit Point or 5 High Kindred's Crests to the Nomad Moogle .",
-            substeps = {
+            notes = {
                 "Keep in mind that besides obtaining seals from mobs, two easier ways exist to obtain various seals:",
             },
         },
@@ -411,7 +411,7 @@ Q.STEPS = {
         "Speak to the Nomad Moogle in Ru'Lude Gardens at (H-5).",
         {
             text = "Trade 10 Kindred's Crests to the Nomad Moogle while also having 5 merit points.",
-            substeps = {
+            notes = {
                 "Keep in mind that besides obtaining seals from mobs, two easier ways exist to obtain various seals:",
             },
         },
@@ -482,7 +482,7 @@ Q.STEPS = {
                 "Lunascent log - Hatchet (Logging Point)",
             },
         },
-        "NOTE : Warping back to town will cause your Fellow to disappear, forcing you to either wait out Signal Pearl 's 6 hour cooldown or get a Tactics Pearl . Using Survival Guides does not make your Fellow vanish, so you can Guide to Maze of Shakhrami -> Guide to Jugner Forest -> Guide to West Sarutabaruta and run west to Giddeus with only one summon charge used. Alternatively, start at Giddeus via the Home Point or Domenic , and do the same thing in reverse. Mounts are safe to use without making your Fellow disappear.",
+        { note = "NOTE: Warping back to town will cause your Fellow to disappear, forcing you to either wait out Signal Pearl 's 6 hour cooldown or get a Tactics Pearl. Using Survival Guides does not make your Fellow vanish, so you can Guide to Maze of Shakhrami -> Guide to Jugner Forest -> Guide to West Sarutabaruta and run west to Giddeus with only one summon charge used. Alternatively, start at Giddeus via the Home Point or Domenic, and do the same thing in reverse. Mounts are safe to use without making your Fellow disappear." },
         "Once you have acquired all three key items, zone into Beaucedine Glacier for a cutscene, then head to the northernmost Mirror Pond at (J-7) for a cutscene.",
         "Return to Neptune's Spire and examine the door again for a cutscene, then speak to Luto to complete the quest.",
     },
@@ -879,7 +879,7 @@ Q.STEPS = {
         },
         "Return to Brutus (G-7) in Upper Jeuno one last time to complete the quest.",
         "Speak to Brutus (G-7) after one game day to receive a chocobo egg.",
-        "Optional: Trade the egg to one of the VCS Trainers located in Bastok Mines , Southern San d'Oria , or Windurst Woods to begin raising a chocobo .",
+        { note = "Optional: Trade the egg to one of the VCS Trainers located in Bastok Mines, Southern San d'Oria, or Windurst Woods to begin raising a chocobo." },
     },
 
     jeu_uj_chocobos_wounds = {
@@ -991,7 +991,7 @@ Q.STEPS = {
     },
 
     jeu_community_service = {
-        "Note: This quest is only offered to one player per Vana'diel Day, per World.",
+        { note = "Note: This quest is only offered to one player per Vana'diel Day, per World." },
         "Speak to Zauko in Lower Jeuno at (I-6) between 18:03 and 21:00.",
         {
             text = "You must light all of the Streetlamps in Lower Jeuno before 01:00.",
@@ -1040,7 +1040,7 @@ Q.STEPS = {
         "Speak to the Nomad Moogle in Ru'Lude Gardens at (H-5). You will be asked to bring one of the following items at random:",
         {
             text = "Trade 1 Kindred's Crest and the requested item to the Nomad Moogle while having 10 merit points.",
-            substeps = {
+            notes = {
                 "Keep in mind that besides obtaining seals from mobs, two easier ways exist to obtain various seals:",
             },
         },
@@ -1101,7 +1101,7 @@ Q.STEPS = {
         "Speak to the Nomad Moogle in Ru'Lude Gardens at (H-5).",
         {
             text = "Trade the Nomad Moogle 5 Kindred's Crests while having 4 merit points to complete the quest.",
-            substeps = {
+            notes = {
                 "Keep in mind that besides obtaining seals from mobs, two easier ways exist to obtain various seals:",
             },
         },
@@ -1148,16 +1148,20 @@ Q.STEPS = {
         {
             text = "Travel to the points on the map. There is very visable a pillar of light on the ground to show when you are getting close.",
             substeps = {
-                "Be aware that the food is inside the burrows. Go around the mound until you see a rectangular entryway.",
                 "You will need to get 5 of these foods.",
+            },
+            notes = {
+                "Be aware that the food is inside the burrows. Go around the mound until you see a rectangular entryway.",
             },
         },
         {
             text = "The raptor will get agitated and slower as you take longer to get to the food.",
             substeps = {
                 "This is indicated by the motivation bar slowly depleting.",
-                "Note: Going up-hill drastically reduces the Raptor's motivation.",
                 "When the pep bar has reached 50% or more you may /cheer to give the raptor a second wind and refill part of its motivation bar.",
+            },
+            notes = {
+                "Note: Going up-hill drastically reduces the Raptor's motivation.",
             },
         },
         {
@@ -1170,8 +1174,8 @@ Q.STEPS = {
         "A comfortable example route: J-8 -> /cheer -> I-7 -> H-6 -> /cheer -> G-6 -> F-7 -> /cheer -> E-6",
         {
             text = "Return to Mapitoto in Upper Jeuno for your reward.",
-            substeps = {
-                "Note that you directly receive the key item Raptor companion instead of the item Raptor Mount .",
+            notes = {
+                "Note that you directly receive the key item Raptor companion instead of the item Raptor Mount.",
             },
         },
     },
@@ -1195,11 +1199,11 @@ Q.STEPS = {
             },
         },
         "After attuning the Prototype attuner to each of the 10 geomagnetic founts above, return to Anastase to complete the quest.",
-        "Note: if you have the quest Granddaddy Dearest open at the same time, Anastase will not complete this quest before you complete Granddaddy Dearest .",
+        { note = "Note: if you have the quest Granddaddy Dearest open at the same time, Anastase will not complete this quest before you complete Granddaddy Dearest." },
     },
 
     jeu_girl_in_the_looking_glass = {
-        "Note: You must zone after finishing Unlisted Qualities before you can start this quest.",
+        { note = "Note: You must zone after finishing Unlisted Qualities before you can start this quest." },
         "Speak to Luto Mewrilah for a cutscene.",
         "Speak to Bheem at (F-5) for a second cutscene.",
         "Enter The Eldieme Necropolis from the entrance at Batallia Downs (G-8). This will start you at (F-9) on Map 2 of the Necropolis.",
@@ -1215,8 +1219,8 @@ Q.STEPS = {
         },
         {
             text = "Once the NM is defeated, speak to your Adventuring Fellow.",
-            substeps = {
-                "Note : If you do not speak to your Adventuring Fellow before he/she despawns, you must rezone and fight the NM again.",
+            notes = {
+                "Note: If you do not speak to your Adventuring Fellow before he/she despawns, you must rezone and fight the NM again.",
             },
         },
         "Return to Upper Jeuno for a cutscene upon speaking with Luto to complete the quest.",
@@ -1290,9 +1294,9 @@ Q.STEPS = {
                 "You will need to cancel invisible (not sneak) when the coast is clear in order to select the ??? and then reapply each time. Bringing some form of Reraise such as a Scroll of Instant Reraise is recommended.",
             },
         },
-        "If you wish to fight the monsters for the drop as opposed to collecting key items, Trusts will be sufficient for this purpose. Be wary of Explosure 's Self-Destruct and Exoray 's conal Breath damage attacks. Trusts such as Cipher: Zeid will attempt to Stun such dangerous TP moves.",
+        { note = "If you wish to fight the monsters for the drop as opposed to collecting key items, Trusts will be sufficient for this purpose. Be wary of Explosure 's Self-Destruct and Exoray 's conal Breath damage attacks. Trusts such as Cipher: Zeid will attempt to Stun such dangerous TP moves." },
         "Maps are located below.",
-        "Note: If at any point you possess one of the three items in any of your inventories, clicking a ??? in that zone will result in the prompt \"There is nothing out of the ordinary here.\", regardless of how many other key items of that type which you have already collected.",
+        { note = "Note: If at any point you possess one of the three items in any of your inventories, clicking a??? in that zone will result in the prompt \"There is nothing out of the ordinary here.\", regardless of how many other key items of that type which you have already collected." },
         "The required items may be obtained in any order and are as follows:",
         {
             text = "Bomb Coal which drops from Explosures or can be received after obtaining three Bomb coal fragments from ??? targets in Garlaige Citadel .",
@@ -1379,7 +1383,7 @@ Q.STEPS = {
         },
         {
             text = "Touch the glowing pebbles targetable location near the shore for a cutscene and to receive the Stardust pebble .",
-            substeps = {
+            notes = {
                 "Note: This spot is not actually glowing, unlike other targetable locations in the game. It is simply a targetable spot in the environment. Target around at (I-5) and pay attention to your target names in order to find the spot.",
             },
         },
@@ -1504,14 +1508,16 @@ Q.STEPS = {
     },
 
     jeu_mirror_mirror = {
-        "Note: You must zone after finishing Girl in the Looking Glass before you can start this quest.",
+        { note = "Note: You must zone after finishing Girl in the Looking Glass before you can start this quest." },
         "Speak to Luto Mewrilah for a cutscene.",
         {
             text = "In Port San d'Oria , head to Cargo Room B near Home Point #1 and speak to Portaure (H-9) for another cutscene that allows you to start a Burning Circle fight.",
             substeps = {
-                "Note: The battlefield applies a level cap of 40: recommend bringing level appropriate gear and food.",
                 "The battlefield was designed to be soloable by players at level 30.",
                 "Trust Magic can not be used.",
+            },
+            notes = {
+                "Note: The battlefield applies a level cap of 40: recommend bringing level appropriate gear and food.",
             },
         },
         "Go to Ghelsba Outpost and interact with the Hut Door (F/G-10) to enter the battlefield.",
@@ -1687,9 +1693,9 @@ Q.STEPS = {
     },
 
     jeu_lj_path_of_the_bard = {
-        "Note: This quest will not appear on your quest list until completion.",
+        { note = "Note: This quest will not appear on your quest list until completion." },
         "Speak to Bki Tbujhja Lower Jeuno H-8, inside the Merry Minstrel, for a hint on where you need to go next.",
-        "(Optional) Speak to Mataligeat for some extra dialogue about Lewenhart .",
+        { note = "(Optional) Speak to Mataligeat for some extra dialogue about Lewenhart." },
         {
             text = "Travel through the tunnel in Valkurm Dunes (C-6) to the \"Secret Beach\" and examine the Song Runes (B-7) for a last cutscene .",
             substeps = {
@@ -1707,8 +1713,8 @@ Q.STEPS = {
                 "You may have to talk to him multiple times to get the cutscene.",
             },
         },
-        "Note: This quest will not show up in your quest log until completion.",
-        "(Optional) Visiting the Merchant's House again from here on out will give you a brief scene of their appreciation.",
+        { note = "Note: This quest will not show up in your quest log until completion." },
+        { note = "(Optional) Visiting the Merchant's House again from here on out will give you a brief scene of their appreciation." },
     },
 
     jeu_petals_of_recollection = {
@@ -1982,7 +1988,7 @@ Q.STEPS = {
 
     jeu_lj_save_my_son = {
         "Examine the Door: Merchant's House on the second floor, Lower Jeuno (G-11), above the chocobo stables by Home Point #1. Agree to help him out.",
-        "(Optional) Speak to Shalott , Upper Jeuno (G-7) (Outside Chocobo Stables, next to Mapitoto) for a cutscene.",
+        { note = "(Optional) Speak to Shalott, Upper Jeuno (G-7) (Outside Chocobo Stables, next to Mapitoto) for a cutscene." },
         {
             text = "Examine the Night Flowers down the ramp in Qufim Island (F-8) between 21:30 and 4:00 for a cutscene.",
             substeps = {
@@ -1998,7 +2004,7 @@ Q.STEPS = {
     },
 
     jeu_save_the_clock_tower = {
-        "(Optional): Speak to Collet near the clock tower (G-7) for gossip.",
+        { note = "(Optional): Speak to Collet near the clock tower (G-7) for gossip." },
         "Speak to Derrick in Lower Jeuno's Chamber of Commerce and Industry (H-7) and ask to start a petition.",
         {
             text = "To complete the quest, you will need to trade the Tower Petition to 10 NPCs. Their locations are:",
@@ -2118,12 +2124,14 @@ Q.STEPS = {
             substeps = {
                 "White Mage may instead pull Maat then stay alive for 5 min, causing Maat to give up.",
                 "Thief may try to steal a Scroll of Instant Warp from Maat. Once you steal the item, Maat will give up.",
-                "Note : If you possess one already, you will not be able to steal another.",
+            },
+            notes = {
+                "Note: If you possess one already, you will not be able to steal another.",
             },
         },
         "When Maat gives up, you will receive the title \"Maat Masher\" and a Scroll of Instant Warp .",
         "Return to Ru'Lude Gardens and speak to Maat to complete the quest. *as of 2026 he doesn't appear to have post-win dialogue other than when you get your 6th win to get the trust and when you get your Maat's cap.",
-        "Note : You keep your testimony after the fight. If you have not yet gained access to Aht Urhgan Whitegate via the quest The Road to Aht Urhgan you may trade your testimony afterwards under the advanced path option and complete the quest.",
+        { note = "Note: You keep your testimony after the fight. If you have not yet gained access to Aht Urhgan Whitegate via the quest The Road to Aht Urhgan you may trade your testimony afterwards under the advanced path option and complete the quest." },
     },
 
     jeu_shifty_shades_of_prey = {
@@ -2189,7 +2197,7 @@ Q.STEPS = {
         "Return to Ru'Lude Gardens and enter the palace again for a final cutscene.",
         "You must wait until the next Vana'diel day in order to begin Shadows of the Departed.",
         "If you cannot trigger the Shadows cutscene, check to see if you completed Awakening.",
-        "(Optional) Speak with Auchefort, Adolie, Neraf-Najiruf, Colti, Petva, and Crooked Arrow in Ru'lude Gardens to hear additional dialogue.",
+        { note = "(Optional) Speak with Auchefort, Adolie, Neraf-Najiruf, Colti, Petva, and Crooked Arrow in Ru'lude Gardens to hear additional dialogue." },
     },
 
     jeu_teleports_by_twilight = {
@@ -2268,7 +2276,7 @@ Q.STEPS = {
     jeu_the_clockmaster = {
         "After completing the previous quest, speak to Galmut by interacting with the Door: House targetable location in Upper Jeuno at (G-7).",
         "This quest will then be completed.",
-        "Optional: After completing the quest, speak to Collet again for a short cutscene.",
+        { note = "Optional: After completing the quest, speak to Collet again for a short cutscene." },
     },
 
     jeu_the_flying_machine_of_eld = {
@@ -2288,6 +2296,8 @@ Q.STEPS = {
             text = "You will not be able to obtain Doctor Status from the apparatus in Fei'Yin .",
             substeps = {
                 "Once obtained, the status will persist after obtaining it in another zone and returning.",
+            },
+            notes = {
                 "Warning: Don't accidentally trade your items to a Strange Apparatus in a zone other than Fei'Yin for this quest! You will lose them.",
             },
         },
@@ -2295,7 +2305,7 @@ Q.STEPS = {
         "Trade the stacks of Clusters to obtain the Whirring engine Key Item.",
         {
             text = "Return to Mapitoto to get the Levitus key Key Item.",
-            substeps = {
+            notes = {
                 "Note: The Levitus inventory item exists in the game, but you are given the Key Item directly.",
             },
         },
@@ -2547,8 +2557,10 @@ Q.STEPS = {
         {
             text = "All four armor pieces can be upgraded via the event Strange Happenings in Vana'diel .",
             substeps = {
+                "Duplicates of the armor pieces can be bought from a Curio Moogle for 100,000 gil per piece if you have the key item \"Rhapsody in Umber\". (Regardless of whether The Goblin Tailor has ever been completed).",
+            },
+            notes = {
                 "Note: this quest has an effective limit of 4 clears, as each item can only be received from Guttrix once. After receiving all 4 pieces, he will refuse to do further business. Upgrading, storing, or otherwise losing the equipment cannot circumvent this.",
-                "Duplicates of the armor pieces can be bought from a Curio Moogle for 100,000 gil per piece if you have the key item \"Rhapsody in Umber\" . (Regardless of whether The Goblin Tailor has ever been completed).",
             },
         },
         {
@@ -2575,7 +2587,7 @@ Q.STEPS = {
     },
 
     jeu_the_kind_cardian = {
-        "(Optional) Speak to Panta's family and Bozz again for some extra dialogue.",
+        { note = "(Optional) Speak to Panta's family and Bozz again for some extra dialogue." },
         "Speak to Apururu , Windurst Woods (H-9) for a cutscene.",
         "Head to West Sarutabaruta (F-11) and enter the Outer Horutoto Ruins (Dahlia Tower).",
         {
@@ -2588,7 +2600,7 @@ Q.STEPS = {
             },
         },
         "Give the Ten of Cups item to Apururu .",
-        "(Optional) return to Monberaux for some extra dialogue.",
+        { note = "(Optional) return to Monberaux for some extra dialogue." },
         "Return to Panta-Putta , Lower Jeuno (G-10) to complete this quest.",
     },
 
@@ -2698,7 +2710,7 @@ Q.STEPS = {
     },
 
     jeu_the_old_monument = {
-        "Note: This quest will not appear on your quest list until completion.",
+        { note = "Note: This quest will not appear on your quest list until completion." },
         "Speak to Mertaire at Merry Minstrel in Lower Jeuno (I-8).",
         "Speak to Bki Tbujhja at the counter in the same room in Lower Jeuno (H-8).",
         {
@@ -2720,7 +2732,7 @@ Q.STEPS = {
         "Speak to Bki Tbujhja to begin the quest; she will request a flask of holy water .",
         {
             text = "Trade Bki Tbujhja the Holy Water and you will be asked to travel to The Eldieme Necropolis and to visit the tomb of a great bard of yesteryear. Once there you are to purify the tomb and play the requiem. She returns the flask of holy water and sends you on your way.",
-            substeps = {
+            notes = {
                 "(Optional) Speak to Malatigeat at the meadhouse for more information on this 'great bard of yesteryear'.",
             },
         },
@@ -2768,8 +2780,8 @@ Q.STEPS = {
             },
         },
         "After completing this quest approach Naja Salaheem at Aht Urhgan Whitegate (I-10) to begin Aht Urhgan Mission 1: Land of Sacred Serpents .",
-        "Note: If you are on Rhapsodies of Vanadiel Mission 2-5, simply select \"Where's Tenzen?\" and you will get a Boarding permit for free.",
-        "Note: The NPC Jijiroon in Nashmau will later say: \"Jijiroon saaaw boat flying throoo air over Wawaaam Wooodland, and--whoosh!--out flew adventooorer! That loook fun.\"",
+        { note = "Note: If you are on Rhapsodies of Vanadiel Mission 2-5, simply select \"Where's Tenzen?\" and you will get a Boarding permit for free." },
+        { note = "Note: The NPC Jijiroon in Nashmau will later say: \"Jijiroon saaaw boat flying throoo air over Wawaaam Wooodland, and--whoosh!--out flew adventooorer! That loook fun.\"" },
         "Trade any one of the following:",
         {
             text = "One coffer key from a beastman stronghold:",
@@ -3563,7 +3575,7 @@ Q.STEPS = {
                 "Davoi Map - Monastic Caverns Map",
             },
         },
-        "Note : Either you or a player assisting you must possess a Crimson orb from a mini-quest below.",
+        { note = "Note: Either you or a player assisting you must possess a Crimson orb from a mini-quest below." },
         "To obtain the Orcish crest , head to Davoi and enter the Monastic Cavern at (H-11).",
         "Exit the Monastic Cavern at (I-8).",
         {
@@ -3597,7 +3609,7 @@ Q.STEPS = {
                 "Beadeaux Map 1 - Beadeaux Map 2 - Qulun Dome Map",
             },
         },
-        "Note : Either you or a player assisting you must possess the Silver bell , Coruscant rosary , and Black matinee necklace from the mission Magicite before you may get this crest. Note : It is also recommended to bring some form of Sneak for this; Invisible is not needed. Silent Oils from the Curio Moogle are preferred, as you should use The Mute to silence yourself before running through Beadeaux . This prevents The Afflictor from cursing you which inflicts a super gravity effect on you.",
+        { note = "Note: Either you or a player assisting you must possess the Silver bell, Coruscant rosary, and Black matinee necklace from the mission Magicite before you may get this crest. Note: It is also recommended to bring some form of Sneak for this; Invisible is not needed. Silent Oils from the Curio Moogle are preferred, as you should use The Mute to silence yourself before running through Beadeaux. This prevents The Afflictor from cursing you which inflicts a super gravity effect on you." },
         {
             text = "To obtain the Quadav crest , proceed to Beadeaux (K-6) and enter the tunnel (do not forget to grab The Mute here).",
             substeps = {
@@ -3619,7 +3631,7 @@ Q.STEPS = {
                 "Map 1 - Map 2 - Map 3 - Map 4 - Map 5 - Map 6 - Map 7",
             },
         },
-        "Note : The Yagudo Crest is located on the 4th floor of Castle Oztroja at H-6. Note : Lower level players may want to bring and use a Reraise item such as an Instant Reraise . Note : Either you or a player assisting you must possess the Yagudo torch to progress.",
+        { note = "Note: The Yagudo Crest is located on the 4th floor of Castle Oztroja at H-6. Note: Lower level players may want to bring and use a Reraise item such as an Instant Reraise. Note: Either you or a player assisting you must possess the Yagudo torch to progress." },
         {
             text = "To obtain the Yagudo crest , find the 3 passwords throughout the zone and open the 3 password trap door on the fourth floor.",
             substeps = {

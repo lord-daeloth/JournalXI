@@ -71,9 +71,9 @@ M.STEPS = {
         steps = {
             {
                 text = "Zone into Zeruhn Mines from Bastok Mines for a cutscene.",
-                substeps = {
-                    "(Optional) : Speak to Rasmus at (I-6) for some dialogue.",
-                    "(Optional) : Speak to Makarim at (H-11) for some dialogue.",
+                notes = {
+                    "(Optional): Speak to Rasmus at (I-6) for some dialogue.",
+                    "(Optional): Speak to Makarim at (H-11) for some dialogue.",
                 },
             },
             "Touch the Disturbed Dirt at (K-9) for a cutscene.",
@@ -245,8 +245,8 @@ M.STEPS = {
             "Speak to Shantotto in her manor at Windurst Walls (K-7) for a cutscene, no zoning required from the previous Mission.",
             {
                 text = "Speak to Kupipi in Heavens Tower for a cutscene.",
-                substeps = {
-                    "(Optional) : Speak to Sassa-Kotassa , Sheelala , and Habida-Jubida in the lobby area once again, they will offer hints to your next destination.",
+                notes = {
+                    "(Optional): Speak to Sassa-Kotassa, Sheelala, and Habida-Jubida in the lobby area once again, they will offer hints to your next destination.",
                 },
             },
             {
@@ -305,9 +305,9 @@ M.STEPS = {
             "Speak to Tosuka-Porika again for a cutscene. Zoning is not required after the previous mission.",
             {
                 text = "Speak to Kohlo-Lakolo in Port Windurst (G-5) (HP #1) behind Warehouse 1 for a cutscene.",
-                substeps = {
-                    "(Optional) : Talking to Kohlo-Lakolo again will give you a hint.",
-                    "(Optional) : Speaking to Shanruru gives an additional cutscene.",
+                notes = {
+                    "(Optional): Talking to Kohlo-Lakolo again will give you a hint.",
+                    "(Optional): Speaking to Shanruru gives an additional cutscene.",
                 },
             },
             "Open up your Temporary Key Item menu and examine the Piece of evidence in your Temporary Key Items to see a cipher.",
@@ -342,9 +342,9 @@ M.STEPS = {
         steps = {
             {
                 text = "Speak to Kohlo-Lakolo for a cutscene. Zoning is not required after the previous mission.",
-                substeps = {
-                    "(Optional) : Speak to Kohlo-Lakolo again as well as the rest of the S.O.B.s for more dialogue.",
-                    "(Optional) : Speak to Nanaa Mihgo in Windurst Woods (J-3) for some dialogue .",
+                notes = {
+                    "(Optional): Speak to Kohlo-Lakolo again as well as the rest of the S.O.B.s for more dialogue.",
+                    "(Optional): Speak to Nanaa Mihgo in Windurst Woods (J-3) for some dialogue.",
                 },
             },
             {
@@ -365,8 +365,8 @@ M.STEPS = {
             "Touch the Secluded Spot again after defeating her for a cutscene.",
             {
                 text = "Return to Kohlo-Lakolo for another cutscene and to receive the Magicked doll .",
-                substeps = {
-                    "(Optional) : Speak to the S.O.B.s for more dialogue.",
+                notes = {
+                    "(Optional): Speak to the S.O.B.s for more dialogue.",
                 },
             },
             "Speak to Kupipi for the final cutscene and your reward.",
@@ -503,7 +503,7 @@ M.STEPS = {
                     "You will receive Hi-Elixir Tank after the cutscene.",
                 },
             },
-            "Note: If you're heading to the next Mission, do not warp away !",
+            { note = "Note: If you're heading to the next Mission, do not warp away!" },
         },
     },
 
@@ -548,7 +548,7 @@ M.STEPS = {
             "Speak with Drangord (D-7) near the entrance to Zeruhn Mines for another cutscene.",
             {
                 text = "Enter Zeruhn Mines from Bastok Mines for a cutscene.",
-                substeps = {
+                notes = {
                     "Optional: Drake Fang in Zeruhn Mines (H-6) will direct you south to stop the Quadav attack.",
                 },
             },
@@ -575,7 +575,7 @@ M.STEPS = {
                     "(Map 3)",
                 },
             },
-            "Optional : Talk to Naji , Metalworks (J-8) (HP #1) for a minor comment on addressing injuries after the prior mission.",
+            { note = "Optional: Talk to Naji, Metalworks (J-8) (HP #1) for a minor comment on addressing injuries after the prior mission." },
             "Speak with Iron Eater in the President's Office (J-8) in Metalworks (HP #1) for a cutscene.",
             {
                 text = "Zone into Palborough Mines from North Gustaberg for a cutscene.",
@@ -601,8 +601,8 @@ M.STEPS = {
             "Touch the Perversion's Refuge once more for a cutscene and a reward Iapetus .",
             {
                 text = "Return to Iron Eater for the final cutscene and a reward Seafood Gratin .",
-                substeps = {
-                    "Optional : Speak with Iron Eater again for some additional dialogue.",
+                notes = {
+                    "Optional: Speak with Iron Eater again for some additional dialogue.",
                 },
             },
         },
@@ -633,7 +633,7 @@ M.STEPS = {
                     "You will obtain the Ziamet armor set.",
                 },
             },
-            "NOTE : If you want to come back later and replay the Whitegate based cutscenes from this mission or any of the upcoming ones, speak to Tsih Kolgimih (near the entrance to Al Zahbi) and look under the Rhapsodies of Vana'diel menu.",
+            { note = "NOTE: If you want to come back later and replay the Whitegate based cutscenes from this mission or any of the upcoming ones, speak to Tsih Kolgimih (near the entrance to Al Zahbi) and look under the Rhapsodies of Vana'diel menu." },
         },
     },
 
@@ -787,18 +787,20 @@ M.STEPS = {
                     "Drakeweaver Hageel Ja - 60k HP",
                     "Riftweaver Pomaal Ja - 60k HP",
                     "Fistweaver Mufaal Ja - 60k HP",
-                    "Glyphweaver Sikool Ja . - 100k HP",
-                    "Trusts may be used in the fight.",
+                    "Glyphweaver Sikool Ja. - 100k HP",
                     "Glyphweaver Sikool Ja's weapon must be broken to win the fight, otherwise he'll remain at 1%.",
                     "All foes utilize their 1-hour abilities.",
                     "All foes can be silenced",
                     "All mobs can be slept",
                 },
+                notes = {
+                    "Trusts may be used in the fight.",
+                },
             },
             {
                 text = "Head back to Aht Urhgan Whitegate and examine Imperial Whitegate for the final cutscene and the Thunder Hammer .",
-                substeps = {
-                    "Note: Do not discard the Thunder Hammer . You will need it for a later Mission.",
+                notes = {
+                    "Note: Do not discard the Thunder Hammer. You will need it for a later Mission.",
                 },
             },
         },
@@ -826,8 +828,10 @@ M.STEPS = {
             {
                 text = "After the cutscene, head to Map 3 of Arrapago Reef (F-7), and trade a Hamsi to the Apkallu Guide for another cutscene.",
                 substeps = {
-                    "The fastest way to get to this location is to warp out and use a Survival Guide to teleport to Caedarva Mire , then immediately enter the cave into Arrapago Reef .",
-                    "Note : If you don't have the Caedarva Mire Survival Guide , you will need another Lamian Fang Key to reach it.",
+                    "The fastest way to get to this location is to warp out and use a Survival Guide to teleport to Caedarva Mire, then immediately enter the cave into Arrapago Reef.",
+                },
+                notes = {
+                    "Note: If you don't have the Caedarva Mire Survival Guide, you will need another Lamian Fang Key to reach it.",
                 },
             },
             {
@@ -845,7 +849,7 @@ M.STEPS = {
             },
             {
                 text = "After the fight, click the Camp Remnants again for a cutscene.",
-                substeps = {
+                notes = {
                     "Note: FastCS will soft-lock your client to a black screen at the end of this cutscene.",
                 },
             },
@@ -869,7 +873,7 @@ M.STEPS = {
                     "Map 3",
                 },
             },
-            "Note: You need the Thunder Hammer you received from Mission 5-3 to complete this.",
+            { note = "Note: You need the Thunder Hammer you received from Mission 5-3 to complete this." },
             {
                 text = "Head to Map 3 of Arrapago Reef (F-7) and speak with Apkallu Guide for a cutscene to begin the Mission.",
                 substeps = {
@@ -913,8 +917,8 @@ M.STEPS = {
             "Head to Alzadaal Undersea Ruins and defeat the Qiqirns in the area to spawn Panaiveriyamman , an Acrolith NM.",
             {
                 text = "Encounter",
-                substeps = {
-                    "Panaiveriyamman It will appear immediately after killing a Qiqirn, so summon Trusts beforehand. You may need to defeat many Qiqirns before Panaiveriyamman spawns. If you're having trouble popping Panaiveriyamman equip your Thunder Hammer and get physical kills with it. (Confirmed that the Thunder Hammer is not required to pop Panaiveriyamman... Just kill till it pops, the Thunder Hammer is not required.) The above comment is anecdotal and should not be taken as fact. See Discussion page. Uses Mighty Strikes , but doesn't hit very hard or accurately in general. Resistant to magic, especially Dark -based spells, but is very susceptible to Water damage. Has approximately 150k HP.",
+                notes = {
+                    "Panaiveriyamman It will appear immediately after killing a Qiqirn, so summon Trusts beforehand. You may need to defeat many Qiqirns before Panaiveriyamman spawns. If you're having trouble popping Panaiveriyamman equip your Thunder Hammer and get physical kills with it. (Confirmed that the Thunder Hammer is not required to pop Panaiveriyamman... Just kill till it pops, the Thunder Hammer is not required.) The above comment is anecdotal and should not be taken as fact. See Discussion page. Uses Mighty Strikes, but doesn't hit very hard or accurately in general. Resistant to magic, especially Dark -based spells, but is very susceptible to Water damage. Has approximately 150k HP.",
                 },
             },
             {
@@ -926,8 +930,10 @@ M.STEPS = {
             {
                 text = "Return to Ghatsad for a cutscene.",
                 substeps = {
-                    "Note: FastCS may cause you to get stuck on a black screen during this CS. Unload FastCS or use the Print Screen button to unlock from a soft freeze.",
                     "You will receive Repaired aeropearl afterwards.",
+                },
+                notes = {
+                    "Note: FastCS may cause you to get stuck on a black screen during this CS. Unload FastCS or use the Print Screen button to unlock from a soft freeze.",
                 },
             },
             {
@@ -948,7 +954,7 @@ M.STEPS = {
     ["380"] = {
         name = "Sky, Moon, Incantrix",
         steps = {
-            "Note: Bring 3 Hoptoad and an Eastern Ginger to save time.",
+            { note = "Note: Bring 3 Hoptoad and an Eastern Ginger to save time." },
             "Speak with Reikuu (K-8) near Ethereal Ingress #6 in Reisenjima for a cutscene to begin the Mission.",
             {
                 text = "Head to Ethereal Ingress #10 and speak with Incantrix for another cutscene.",
@@ -1012,8 +1018,10 @@ M.STEPS = {
                 substeps = {
                     "Has approximately 125k HP.",
                     "This is an Omen fight, so you will be subject to the normal Omen queue.",
+                    "Zhuu Buxu has access to Mijin Gakure.",
+                },
+                notes = {
                     "Trusts may be used in the fight.",
-                    "Zhuu Buxu has access to Mijin Gakure .",
                 },
             },
             "After the fight, you'll automatically enter a cutscene.",
@@ -1022,10 +1030,12 @@ M.STEPS = {
                 substeps = {
                     "Has approximately 90k HP.",
                     "This is an Omen fight, so you will be subject to the normal Omen queue.",
-                    "Trusts may be used in the fight.",
                     "Gessho will assist and must be kept alive.",
                     "Both Reikuu and Gessho can summon clones, and you can stagger Reikuu with a if you can damage the real one.",
-                    "Reikuu also has access to Mijin Gakure .",
+                    "Reikuu also has access to Mijin Gakure.",
+                },
+                notes = {
+                    "Trusts may be used in the fight.",
                 },
             },
             "After the fight, you'll automatically enter a cutscene.",
@@ -1060,11 +1070,13 @@ M.STEPS = {
                 text = "The fight with Uran-Mafran (BLM/RDM) will immediately begin once you touch the Journey's End at (K-10).",
                 substeps = {
                     "Has approximately 185k HP.",
-                    "Trusts may be used in this fight.",
                     "Uran-Mafran can use Manafont multiple times and has a very high degree of Fast Cast",
                     "Possesses a substantial resistance to silence (though not immunity ). Other enfeebles landed normally.",
                     "Will attempt to self-skillchain with Club Weapon Skills and magic burst accordingly.",
                     "You will be joined by Oggbi (MNK), who must be kept alive.",
+                },
+                notes = {
+                    "Trusts may be used in this fight.",
                 },
             },
             "Touch the Journey's End afterwards for a cutscene.",
@@ -1173,10 +1185,12 @@ M.STEPS = {
                 text = "Interact with the Before Delkfutt's Tower spot again to begin a confrontation with Echion (Gigas WAR).",
                 substeps = {
                     "Has approximately 200k HP.",
-                    "Trusts may be used in the fight.",
                     "You will be assisted by the Destiny Destroyers, and the battle will end prematurely if any of them are defeated. You will be unable to heal any of them.",
                     "Echion gains an unremovable Ice Spikes effect following his first Ice Roar that increases in potency after an SP ability is used.",
                     "Gains access to Colossal Slam (AoE Knockback + Zombie) < 50% HP.",
+                },
+                notes = {
+                    "Trusts may be used in the fight.",
                 },
             },
             "Interact with the Before Delkfutt's Tower location after the fight for a cutscene.",
@@ -1187,7 +1201,7 @@ M.STEPS = {
     ["494"] = {
         name = "Delkfutt the Great",
         steps = {
-            "(Optional) : Speak with Elijah in Upper Jeuno (F-6) for some dialogue .",
+            { note = "(Optional): Speak with Elijah in Upper Jeuno (F-6) for some dialogue." },
             "Speak with Shami in Port Jeuno (H-8) for a cutscene to begin the mission.",
             {
                 text = "Head to Southern San d'Oria (S) and speak with Valaineral R Davilles (H-8) for a cutscene.",
@@ -1245,9 +1259,11 @@ M.STEPS = {
                 substeps = {
                     "You must disband from party or have no other members in the same zone.",
                     "You may use buffs that carry over on zone like haste for this fight.",
-                    "Trusts may not be used in this fight.",
                     "The Shadow Lord can switch between dual-wield and two-handed sword modes, similar to the Shadowreign version.",
-                    "You will be assisted by Volker , Zeid , Valli , Oshasha , and Romaa Mihgo .",
+                    "You will be assisted by Volker, Zeid, Valli, Oshasha, and Romaa Mihgo.",
+                },
+                notes = {
+                    "Trusts may not be used in this fight.",
                 },
             },
             "You will enter a cutscene after the fight.",
@@ -1340,8 +1356,10 @@ M.STEPS = {
             {
                 text = "The fight is against Gloom Phantom, Awoken Vampyr Jarl, Awoken Ariri Samariri (has access to Death ), and Awoken Hildesvini.",
                 substeps = {
-                    "Trusts may be used in the fight.",
                     "Jabbos will assist and can tank one mob while you work on the rest.",
+                },
+                notes = {
+                    "Trusts may be used in the fight.",
                 },
             },
             "After the fight, you will automatically enter a cutscene and receive your reward.",
@@ -1500,8 +1518,10 @@ M.STEPS = {
             {
                 text = "Interact with the Moogle Meeting targetable location again to enter the instanced BCNM fight \"Moglesse Oblige\" against Spikehelm Argok (DRK Orc), Tethys (Gigas MNK), Garmatur the Merciless (Troll RDM), and Antican Curule Aedillis (BLM).",
                 substeps = {
-                    "Trusts may be used.",
                     "All foes can be slept and silenced.",
+                },
+                notes = {
+                    "Trusts may be used.",
                 },
             },
             "After winning the fight, you will automatically enter a cutscene and receive your reward.",
@@ -1518,8 +1538,10 @@ M.STEPS = {
                 substeps = {
                     "He uses all staff weaponskills, Chainspell paired with -ga IV tier nukes, and summons clones of you and the Destiny Destroyers.",
                     "Buffs do not remain after entering the BCNM.",
-                    "Trusts may be used.",
                     "You will be assisted by the Destiny Destroyers.",
+                },
+                notes = {
+                    "Trusts may be used.",
                 },
             },
             {
@@ -1527,11 +1549,13 @@ M.STEPS = {
                 substeps = {
                     "Any weapon can damage Chaos, but all non-Prime weapons (and stage 1 Primes) deal -70% damage and cannot finish off the boss.",
                     "Everyone in the party needs to have their weapon equipped in order to queue and enter the fight.",
-                    "Trusts may be used and resummoned as needed.",
                     "You will be assisted by Gurebu-Ougrebu and Medada.",
                     "Chaos seems to regen if not taking damage. Chaos can also cast Cure IV on himself to heal for over 30k.",
                     "You will be assisted by Cornelia (Mythril Musketeer), Lehko Habhoka, Ragelise, Fickblix, and Luzaf that spawn one at a time. If they are defeated in battle, they will then become an additional fetter.",
                     "Again, the final hit must come from a prime weapon. If you have a tank, having them keep theirs equipped is a good idea for example.",
+                },
+                notes = {
+                    "Trusts may be used and resummoned as needed.",
                 },
             },
             "You will receive Vial of Chaos's blood after the fight.",

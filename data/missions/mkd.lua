@@ -46,7 +46,7 @@ M.STEPS = {
                     "Yagudo Caulk dropped from Yagudos in Giddeus .",
                 },
             },
-            "NOTE: They must be traded in the mog house of your current nation of allegiance, and all at once.",
+            { note = "NOTE: They must be traded in the mog house of your current nation of allegiance, and all at once." },
         },
     },
 
@@ -69,8 +69,7 @@ M.STEPS = {
                     "You do not need to collect all three before the cutscenes. Each item triggers one cutscene. This method is just more efficient.",
                 },
             },
-            "Note :",
-            "These key items can be obtained in any order, even before the moogle even asks for them.",
+            { note = "These key items can be obtained in any order, even before the moogle even asks for them." },
             {
                 text = "For maximum efficiency, be sure that your inventory is full before attempting to gather at a node, allowing repeated attempts to obtain the key item.",
                 substeps = {

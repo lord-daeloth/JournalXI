@@ -281,9 +281,18 @@ def render_metadata(
 def render_step(step: str | dict, indent: str = "        ") -> list[str]:
     if isinstance(step, str):
         return [f"{indent}{lua_string(step)},"]
-    lines = [f"{indent}{{", f"{indent}    text = {lua_string(step['text'])},", f"{indent}    substeps = {{"]
-    lines.extend(f"{indent}        {lua_string(item)}," for item in step.get("substeps", []))
-    lines.extend([f"{indent}    }},", f"{indent}}},"])
+    if "note" in step:
+        return [f"{indent}{{ note = {lua_string(step['note'])} }},"]
+    lines = [f"{indent}{{", f"{indent}    text = {lua_string(step['text'])},"]
+    if step.get("substeps"):
+        lines.append(f"{indent}    substeps = {{")
+        lines.extend(f"{indent}        {lua_string(item)}," for item in step["substeps"])
+        lines.append(f"{indent}    }},")
+    if step.get("notes"):
+        lines.append(f"{indent}    notes = {{")
+        lines.extend(f"{indent}        {lua_string(item)}," for item in step["notes"])
+        lines.append(f"{indent}    }},")
+    lines.append(f"{indent}}},")
     return lines
 
 

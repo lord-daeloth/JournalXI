@@ -137,7 +137,7 @@ M.STEPS = {
                     "Rolanberry Fields (S) -> Pashhow Marshlands (S) -> Grauberg (S) -> North Gustaberg (S) .",
                 },
             },
-            "Note : At this point, the maps of Vunkerl Inlet (S) , Fort Karugo-Narugo (S) , and Grauberg (S) will be absent. (These maps are obtainable from the Magical Map Vendors for 30k Gil in the present, or may be obtainable for only 3000 gil from the vendors in the past/Shadowreign areas. Currently confirmed for Map of Fort Karugo-Narugo .)",
+            { note = "Note: At this point, the maps of Vunkerl Inlet (S), Fort Karugo-Narugo (S), and Grauberg (S) will be absent. (These maps are obtainable from the Magical Map Vendors for 30k Gil in the present, or may be obtainable for only 3000 gil from the vendors in the past/Shadowreign areas. Currently confirmed for Map of Fort Karugo-Narugo.)" },
             {
                 text = "They may be obtained from quests within the area of the three Allied fortresses and do not require any sort of fighting.",
                 substeps = {
@@ -178,8 +178,10 @@ M.STEPS = {
             {
                 text = "Once a single questline has been completed, touch any of the three Cavernous Maws outside Jeuno in the past to get a cutscene for Cait Sith (Mission) . You will receive the title \"Cait Sith's Assistant\" when it finishes.",
                 substeps = {
+                    "If you have not unlocked these maws, your only present-day option is the randomly-generated zone that you first landed into during the previous mission.",
+                },
+                notes = {
                     "Note: Present day maws surrounding Jeuno can also be used, provided you have unlocked them beforehand.",
-                    "If you have not unlocked these maws, your only present-day option is the randomly-generated zone that you first landed into during the previous mission .",
                 },
             },
         },
@@ -325,14 +327,16 @@ M.STEPS = {
             {
                 text = "Speak to Amaura in Southern San d'Oria HP #4 at (G-6). She will request a Cernunnos Bulb .",
                 substeps = {
-                    "(Optional) Speaking to Amaura again will have her restate some recycled dialogue about Cernunnos resin .",
-                    "The fastest route to her would be to take Home Point #4 for Southern San d'Oria .",
-                    "If you did not farm one after Dancers in Distress as recommended, kill Wandering Saplings in Jugner Forest (S) for a Cernunnos Bulb .",
+                    "The fastest route to her would be to take Home Point #4 for Southern San d'Oria.",
+                    "If you did not farm one after Dancers in Distress as recommended, kill Wandering Saplings in Jugner Forest (S) for a Cernunnos Bulb.",
+                },
+                notes = {
+                    "(Optional) Speaking to Amaura again will have her restate some recycled dialogue about Cernunnos resin.",
                 },
             },
             {
                 text = "Trade the Cernunnos Bulb to Amaura and watch the cutscene.",
-                substeps = {
+                notes = {
                     "(Optional) She'll state she's busy brewing a powerful potion if you speak to her again.",
                 },
             },
@@ -362,8 +366,10 @@ M.STEPS = {
             {
                 text = "Speak to Amaura after waiting until the next game day and zoning to obtain the Bottle of treant tonic and complete the mission.",
                 substeps = {
-                    "(Optional) She'll suggest you do some household chores for her if you speak with her before then. If you speak to her after the day has changed but without zoning, she'll tell you she's busy brewing a powerful potion.",
                     "You may be required to talk to her multiple times if you are currently doing the To Cure a Cough quest. Cough medicine is not the required key item.",
+                },
+                notes = {
+                    "(Optional) She'll suggest you do some household chores for her if you speak with her before then. If you speak to her after the day has changed but without zoning, she'll tell you she's busy brewing a powerful potion.",
                 },
             },
         },
@@ -418,7 +424,7 @@ M.STEPS = {
             "Click the Underpass Hatch again to enter Everbloom Hollow for the A Nation on the Brink instance battlefield.",
             "Up to six players may enter at once as long as they have a Underpass hatch key or have completed the quest previously. The party leader must have the Underpass hatch key to take the party in.",
             "The objective is to defeat One-eyed Gwajboj , who will spawn once the waves of beastmen are defeated. He is a Paladin that may use Invincible multiple times.",
-            "Trusts can be summoned.",
+            { note = "Trusts can be summoned." },
             "All of the mobs inside the instance are immune to all forms of Sleep. Bind and Gravity immunity unknown, but is generally the case for many WotG NMs.",
             {
                 text = "You will be assisted by 9 NPCs: Rongelouts N Distaud , Zazarg , Romaa Mihgo , Iron Ram Knights x2, 7th Cohors Legionnaires x2, Cobra Mercenaries x2.",
@@ -488,7 +494,7 @@ M.STEPS = {
                     "Moves back and forth in a seemingly random pattern.",
                 },
             },
-            "Note: Easiest way to win the 3 following 'Red Light, Green Light' minigames is to wait till Cait Sith's head is turned 45-degrees to move. The Cait Sith will turn at entirely random intervals. When she turns at a 45-degree angle however, the next turn will always be facing away. This is the very best time to move. You can move 2-4 (even 5 if you're risky) times when she finally does a 45-degree turn. This will often be accompanied by a frustrated scribble \"thought bubble\" which is a good visual indicator that you can quickly take 1-2 moves in safety. Cait Sith can cycle through numerous quick turns, so it is best to wait for sideways 45 degree turn to advance.",
+            { note = "Note: Easiest way to win the 3 following 'Red Light, Green Light' minigames is to wait till Cait Sith's head is turned 45-degrees to move. The Cait Sith will turn at entirely random intervals. When she turns at a 45-degree angle however, the next turn will always be facing away. This is the very best time to move. You can move 2-4 (even 5 if you're risky) times when she finally does a 45-degree turn. This will often be accompanied by a frustrated scribble \"thought bubble\" which is a good visual indicator that you can quickly take 1-2 moves in safety. Cait Sith can cycle through numerous quick turns, so it is best to wait for sideways 45 degree turn to advance." },
             "If you are using the FastCS addon, unload it before initiating this minigame , as it will make it substantially more difficult.",
             {
                 text = "Cait Sith Seachd is at the tower at (I-7) . You must direct Lilisette in a game of 'Red Light, Green' Light until she is close enough to plant the bug.",
@@ -545,7 +551,7 @@ M.STEPS = {
     ["20"] = {
         name = "Proof of Valor",
         steps = {
-            "Note : You only need 20 signatures to progress in the mission; however, if you collect more, you can receive a prize as well. Prizes include items required for certain inventory upgrade quests you might be interested in. See Rewards section at the bottom of the page for more info.",
+            { note = "Note: You only need 20 signatures to progress in the mission; however, if you collect more, you can receive a prize as well. Prizes include items required for certain inventory upgrade quests you might be interested in. See Rewards section at the bottom of the page for more info." },
             "For this quest you will need to collect at least 20 signatures from the Knights in Southern San d'Oria (S) .",
             "If strictly interested in mission progression, use the image below for the fastest solution, following the turquoise blue line :",
             "Aissaville (I-7), Illeuse (H-9), Daigraffeaux (I-11), Andagge (H-9), Louxiard (G-7), Machionage (C-6), Remiotte (L-10), Elnonde (K-9), Loillie (K-9), and Mailleronce (M-6) will freely give you 1 signature each after talking to them.",
@@ -749,9 +755,11 @@ M.STEPS = {
             {
                 text = "Speak to Halver in Chateau d'Oraguille (I-9).",
                 substeps = {
-                    "You must have access to Chateau d'Oraguille to get past Bacherume in order to see Halver .",
-                    "Note that The Voracious Resurgence Mission 3-1 will take priority over this mission. If Halver has you speak with Rahal then you will need to complete The Voracious Resurgence Mission 3-1 before continuing.",
+                    "You must have access to Chateau d'Oraguille to get past Bacherume in order to see Halver.",
                     "The Voracious Resurgence mission Epilogue Quests will also take priority over this mission. You must zone out and back into Chateau d'Oraguille after the cutscene to continue with Another World.",
+                },
+                notes = {
+                    "Note that The Voracious Resurgence Mission 3-1 will take priority over this mission. If Halver has you speak with Rahal then you will need to complete The Voracious Resurgence Mission 3-1 before continuing.",
                 },
             },
         },
@@ -818,8 +826,10 @@ M.STEPS = {
                 text = "Your Flee effect will refresh upon speaking to an operative.",
                 substeps = {
                     "Failing to refresh the stimulant will require you to return to Antje and start from square one.",
-                    "Note: It only fails you if you talk to the NPC without Flee Status. You can cheese this using the Flee JA, Powder Boots (can have multiple pairs), and even using latent effect gear that can give you Flee when you're hit before talking to the next NPC. It will continue your timer once again as nothing wrong has happened.",
                     "Note!!: It will not be refreshed from the NPCs if you used Flee(JA) or an item such as Powder Boots or item effect after speaking to them. Bringing multiple items (5+) is recommended if you lose original flee effect from operatives and then start relying on items.",
+                },
+                notes = {
+                    "Note: It only fails you if you talk to the NPC without Flee Status. You can cheese this using the Flee JA, Powder Boots (can have multiple pairs), and even using latent effect gear that can give you Flee when you're hit before talking to the next NPC. It will continue your timer once again as nothing wrong has happened.",
                 },
             },
             "Upon speaking to an operative, they will detonate their charge and a flash of smoke will also appear in the distance, hinting the next operative's position. Keep an eye out for where this is to keep your bearings.",
@@ -1034,6 +1044,8 @@ M.STEPS = {
                     "The first Spitewarden is a MNK who uses a staff. Can use Hundred Fists, has a special weaponskill called Forlorn Strike.",
                     "The second Spitewarden is a PLD. Can use Invincible, casts Banish and Banishga spells, and shares hate with the third Spitewarden.",
                     "The third Spitewarden is a DNC. Can use trance, and is capable of curing and removing debuffs (such as gravity), and will occasionally cure the second Spitewarden. Also has a special gaze attack with a Doom effect, it can be avoided by turning away.",
+                },
+                notes = {
                     "The fourth Spitewarden does not seem to have a job, but will use a weapon that matches the person who starts the BC, and has access to all weaponskills for that weapon, also has an ability at low HP called Essence Jack that will lower your statuses, inflict terror, and give a damage boost.",
                 },
             },
@@ -1190,14 +1202,16 @@ M.STEPS = {
             {
                 text = "Augment Set 2",
                 substeps = {
-                    "Latent effect: \"Regain\" is active when you are engaged with an enemy. +10 TP / tick .",
-                    "Latent effect: \"Refresh\" is active when you are not engaged with an enemy; however, it is not active while resting. +1 MP / tick .",
-                    "Occ. grants dmg. bonus based on TP +5% Grants a +5% chance for attacks to deal extra damage. Damage is increased by about 33% at 1000TP, 66% at 2000TP, and 100% at 3000 TP. Can proc on melee weapons in either hand and on Multi-Attacks . Compare to Empyrean Aftermath : (Occ. Double Damage, doesn't proc on Weapon Skills).",
-                    "TP Bonus +250 When using a Weapon Skill , the \" varies by TP \" effect is calculated as if you had 250 additional TP, up to the 3000 TP cap. 1000 TP is still required to perform the weapon skill, this augment enhances the TP multiplier only. Can affect Blue Magic only when TP is consumed through abilities such as Chain Affinity .",
+                    "Latent effect: \"Regain\" is active when you are engaged with an enemy. +10 TP / tick.",
+                    "Latent effect: \"Refresh\" is active when you are not engaged with an enemy; however, it is not active while resting. +1 MP / tick.",
+                    "TP Bonus +250 When using a Weapon Skill, the \" varies by TP \" effect is calculated as if you had 250 additional TP, up to the 3000 TP cap. 1000 TP is still required to perform the weapon skill, this augment enhances the TP multiplier only. Can affect Blue Magic only when TP is consumed through abilities such as Chain Affinity.",
                     "Occ. maximizes magic accuracy +3% Grants a +3% chance for magical spells to have dramatically enhanced magic accuracy, similar to an Elemental Seal effect.",
-                    "Occ. quickens spellcasting +3% Grants a +3% chance for spells to have 0 cast time and recast time. Same as Quick Magic .",
+                    "Occ. quickens spellcasting +3% Grants a +3% chance for spells to have 0 cast time and recast time. Same as Quick Magic.",
                     "Counter+3 grants a 3% chance to cancel an enemy's attack and deal damage to them instead. See: Counter",
-                    "Occ. inc. resist. to all stat. ailments +5 Grants a 5% chance to resist a negative status effect from being applied. See: Resistance to all status ailments , Status Effects",
+                    "Occ. inc. resist. to all stat. ailments +5 Grants a 5% chance to resist a negative status effect from being applied. See: Resistance to all status ailments, Status Effects",
+                },
+                notes = {
+                    "Occ. grants dmg. bonus based on TP +5% Grants a +5% chance for attacks to deal extra damage. Damage is increased by about 33% at 1000TP, 66% at 2000TP, and 100% at 3000 TP. Can proc on melee weapons in either hand and on Multi-Attacks. Compare to Empyrean Aftermath: (Occ. Double Damage, doesn't proc on Weapon Skills).",
                 },
             },
         },

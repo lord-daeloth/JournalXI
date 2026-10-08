@@ -92,24 +92,26 @@ M.STEPS = {
             },
             {
                 text = "After the cutscene, head to Ghelsba Outpost . The entrance is located at (E-4) in West Ronfaure .",
-                substeps = {
-                    "The map for Ghelsba Outpost may be purchased for 600 Gil from either Elesca at (I-8) in Northern San d'Oria or Violitte at (G-10) in Southern San d'Oria .",
+                notes = {
+                    "The map for Ghelsba Outpost may be purchased for 600 Gil from either Elesca at (I-8) in Northern San d'Oria or Violitte at (G-10) in Southern San d'Oria.",
                 },
             },
             "Make your way to the Hut Door in the large area around (G-9). The door itself is located at (F-10).",
             {
-                text = "Interact with the Hut Door and clear the BCNM Save the Children . You will obtain Orcish hut key .",
+                text = "Interact with the Hut Door and clear the Save the Children battlefield to obtain the Orcish Hut Key.",
                 substeps = {
+                    "You will fight 3 Orcs.",
+                },
+                notes = {
                     "Up to 6 people are allowed into this BCNM if they are on or have completed this Mission.",
-                    "When entering the battlefield, a Level Restriction (Status) effect will be applied (level unlimited), which serves to reset TP, desummons Trusts , and prevents exp loss if you're defeated. Trusts can be used in the battlefield: be sure to wait until your trust magic Recast Time is ready, and summon them after entering the battlefield but before entering combat.",
-                    "You will fight 3 Orcs .",
+                    "When entering the battlefield, a Level Restriction (Status) effect will be applied (level unlimited), which serves to reset TP, desummons Trusts, and prevents exp loss if you're defeated. Trusts can be used in the battlefield: be sure to wait until your trust magic Recast Time is ready, and summon them after entering the battlefield but before entering combat.",
                 },
             },
             "Interact with the Hut Door after clearing the BCNM for a cutscene.",
             {
                 text = "Return to a Gate Guard to complete the Mission and receive Rank 2.",
-                substeps = {
-                    "(Optional): There is an additional cutscene at Arnau after speaking with the Gate Guard .",
+                notes = {
+                    "(Optional): There is an additional cutscene at Arnau after speaking with the Gate Guard.",
                 },
             },
         },
@@ -130,8 +132,8 @@ M.STEPS = {
             "At the east side of (F-6), head down the ramp.",
             {
                 text = "Continue into Ordelle's Caves at (F-7), in a tunnel at the south of the canyon.",
-                substeps = {
-                    "(Optional) : You can talk to Equesobillot , Deaufrain , Vicorpasse , Augevinne , Yaucevouchat , Laurisse , and Narvecaint for some additional dialogue as you head down into and through the canyon.",
+                notes = {
+                    "(Optional): You can talk to Equesobillot, Deaufrain, Vicorpasse, Augevinne, Yaucevouchat, Laurisse, and Narvecaint for some additional dialogue as you head down into and through the canyon.",
                 },
             },
             "Once inside Ordelle's Caves , follow the left wall and talk to Ruillont at (G-3) in the corner behind a rock, in the small pond.",
@@ -154,8 +156,10 @@ M.STEPS = {
             {
                 text = "Talk to any Gate Guard and accept the Mission.",
                 substeps = {
-                    "There are two in Southern San d'Oria , Ambrotien at (K-6) and Endracion at (F-9). There is also a gate guard in Northern San d'Oria , Grilau at (D-8).",
-                    "A map of Davoi can be purchased for 3000 Gil from Elesca at (I-8) of North San d'Oria or Violitte at (G-10) of Southern San d'Oria , but it is not required.",
+                    "There are two in Southern San d'Oria, Ambrotien at (K-6) and Endracion at (F-9). There is also a gate guard in Northern San d'Oria, Grilau at (D-8).",
+                },
+                notes = {
+                    "A map of Davoi can be purchased for 3000 Gil from Elesca at (I-8) of North San d'Oria or Violitte at (G-10) of Southern San d'Oria, but it is not required.",
                 },
             },
             "Make your way to Davoi . To reach Davoi , zone into Jugner Forest from La Theine Plateau at (M-8). Then follow the right wall of Jugner Forest to the zone into Davoi at (G-12).",
@@ -213,7 +217,9 @@ M.STEPS = {
                 substeps = {
                     "Invisible is recommended for this Mission, bring Prism Powders or have a spell for Invisiblity.",
                     "Follow the right wall of Jugner Forest to the zone into Davoi at (G-12).",
-                    "A map of Davoi can be purchased for 3,000 Gil from Elesca at I-8 of Northern San d'Oria or Violitte at G-10 of Southern San d'Oria .",
+                },
+                notes = {
+                    "A map of Davoi can be purchased for 3,000 Gil from Elesca at I-8 of Northern San d'Oria or Violitte at G-10 of Southern San d'Oria.",
                 },
             },
             "Speak with Quemaricond , patrolling around (H-7), when it is safe to drop Invisibility. You will obtain Royal Knights' Davoi report .",
@@ -455,8 +461,8 @@ M.STEPS = {
             },
             {
                 text = "When defeated, check the Heavy Stone Door again, and enter. Check the Tombstone inside for a cutscene, at the end of which, you'll receive the Ancient San d'Orian book .",
-                substeps = {
-                    "(Optional) : Return to Prince Trion , and you will be instructed to go see the Gate Guard .",
+                notes = {
+                    "(Optional): Return to Prince Trion, and you will be instructed to go see the Gate Guard.",
                 },
             },
             "Talk to any Gate Guard . A cutscene will play out saying they sent the book to scholars to decipher.",
@@ -548,8 +554,8 @@ M.STEPS = {
             "Go to Chateau d'Oraguille , where you'll receive a cutscene upon entering.",
             {
                 text = "Speak to Halver for instructions.",
-                substeps = {
-                    "(Optional) : Interact with the two doors to the Princes' quarters for short cutscenes.",
+                notes = {
+                    "(Optional): Interact with the two doors to the Princes' quarters for short cutscenes.",
                 },
             },
             {
@@ -600,8 +606,10 @@ M.STEPS = {
             {
                 text = "Pass into the big room, and head upstairs and through the door at (J-10) which requires the Prelate Key .",
                 substeps = {
-                    "Note : The door on top of the east set of stairs can be bypassed without a Prelate Key . One way of doing this is summoning a Trust that moves away from you, such as Yoran-Oran , engaging an enemy in front of the door, and hoping that the Trust runs through the door. This is a much faster method than dealing with the low drop rate of the key.",
                     "You only need 1 Prelate Key to open this door for yourself or an entire party. As soon as someone makes it behind this door they can open it for anyone else coming through.",
+                },
+                notes = {
+                    "Note: The door on top of the east set of stairs can be bypassed without a Prelate Key. One way of doing this is summoning a Trust that moves away from you, such as Yoran-Oran, engaging an enemy in front of the door, and hoping that the Trust runs through the door. This is a much faster method than dealing with the low drop rate of the key.",
                 },
             },
             {
@@ -649,7 +657,7 @@ M.STEPS = {
             },
             "Go to the Chateau and check the Great Hall door for a cutscene.",
             "You must now travel to 3 ??? and obtain 3 Key Items .",
-            "Note: The following steps must be done in order.",
+            { note = "Note: The following steps must be done in order." },
             {
                 text = "In Valley of Sorrows , if you don't have a mount like the chocobo or raptor then Sneak and Invisible across to (I-8) and check the ??? to receive the Figure of Titan .",
                 substeps = {
@@ -666,7 +674,7 @@ M.STEPS = {
             },
             "The ??? is in a group of 3 clustered trees with their leaves to the west of the ramp (still in H-7).",
             "Select the ??? to obtain the Figure of Garuda .",
-            "Note: Purchase a Magicked astrolabe from Churano-Shurano in Windurst Waters (F-8) to open the doors in the Eldieme Necropolis by yourself.",
+            { note = "Note: Purchase a Magicked astrolabe from Churano-Shurano in Windurst Waters (F-8) to open the doors in the Eldieme Necropolis by yourself." },
             {
                 text = "Head for the southern Eldieme Necropolis entrance at (I-10) in Batallia Downs .",
                 substeps = {
@@ -676,15 +684,17 @@ M.STEPS = {
             "Make your way to the southern room, and then to the center hole at (G-9). You will likely need Sneak in the basement, do so before dropping down.",
             {
                 text = "Now on map 2, Follow the immediate path heading East to reach map 3. Head to the exit at (J-9) into Batallia Downs .",
-                substeps = {
+                notes = {
                     "Optional: If Ahtu is up, kill it first, it should not pose a problem to anyone in the party.",
                 },
             },
             {
                 text = "Check the ??? (J-11) near the cliff to spawn two Greater Bird NMs: Suparna ( WAR ) and Suparna Fledgling ( WHM ).",
                 substeps = {
-                    "Note: There are multiple ??? on this island. Check the one near the Stone Monument at the rear of this island.",
-                    "They can both use Horde Lullaby and Massacre Elegy as well as their own respective abilities, such as Mighty Strikes and Benediction , and typical Greater Bird TP attacks.",
+                    "They can both use Horde Lullaby and Massacre Elegy as well as their own respective abilities, such as Mighty Strikes and Benediction, and typical Greater Bird TP attacks.",
+                },
+                notes = {
+                    "Note: There are multiple??? on this island. Check the one near the Stone Monument at the rear of this island.",
                 },
             },
             "Defeat both NMs, once the corpses despawn check the ??? again to receive a cutscene and the Figure of Leviathan .",
@@ -730,8 +740,8 @@ M.STEPS = {
             "Make your way to (H-8) in King Ranperre's Tomb and check the Heavy Stone Door -- the same from a previous mission -- for yet another cutscene.",
             {
                 text = "Go back to the Chateau and speak to Halver and you will receive your rewards.",
-                substeps = {
-                    "(Optional) : Exit to Northern San d'Oria and proceed to the Papal Chamber door .",
+                notes = {
+                    "(Optional): Exit to Northern San d'Oria and proceed to the Papal Chamber door.",
                 },
             },
             "Zone into Southern San d'Oria for a final epilogue cutscene!",

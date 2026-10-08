@@ -59,9 +59,11 @@ Q.STEPS = {
         {
             text = "While on Corsair, head to the Shararat Teahouse in Aht Urhgan Whitegate at (K-12) for a cutscene and the key item, Life float .",
             substeps = {
-                "Note : After receiving the cutscene, you may commission Corsair Artifact Armor from Leleroon .",
                 "The rest of this quest may be completed on any job.",
                 "If you lose the battle, you may return to get another key item after one real life day (midnight JST).",
+            },
+            notes = {
+                "Note: After receiving the cutscene, you may commission Corsair Artifact Armor from Leleroon.",
             },
         },
         {
@@ -78,6 +80,8 @@ Q.STEPS = {
             substeps = {
                 "Up to six people may enter the fight.",
                 "There is no level cap, and buffs will wear on entry.",
+            },
+            notes = {
                 "Trusts can be summoned in this fight.",
             },
         },
@@ -208,6 +212,8 @@ Q.STEPS = {
                 "Long-Bowed Chariot ( Bhaflau Remnants ) - \"Comet Charioteer\"",
                 "Armored Chariot ( Arrapago Remnants ) - \"Sun Charioteer\"",
                 "Arrapago Remnants has a Earth day lockout that resets at JP Midnight.",
+            },
+            notes = {
                 "Note that titles are NOT granted immediately - the chariot must completely fade out after death.",
             },
         },
@@ -368,7 +374,7 @@ Q.STEPS = {
                 "Assault :",
             },
         },
-        "Note that if you decide to change weapons, all progress on this quest will be reset (any traded Alexandrite or items will be lost and Assault logs will need to be dropped so they can be received again before the quest can be restarted).",
+        { note = "Note that if you decide to change weapons, all progress on this quest will be reset (any traded Alexandrite or items will be lost and Assault logs will need to be dropped so they can be received again before the quest can be restarted)." },
         "Once all the items have been given to Paparoon , speak to him again to receive Paparoon's sealed invitation .",
     },
 
@@ -379,6 +385,8 @@ Q.STEPS = {
             substeps = {
                 "VW Teleport will take you to the exact location.",
                 "Casting Escape from inside Halvung puts you at (L-7) just north of the location.",
+            },
+            notes = {
                 "Be aware that starting this cutscene after 05:00 will not allow you enough time to read the dialogue at a normal speed and start the next cutscene before the hour changes.",
             },
         },
@@ -410,8 +418,10 @@ Q.STEPS = {
         {
             text = "Talk to Ratihb at Aht Urhgan Whitegate (J-12) at the Shararat Teahouse.",
             substeps = {
-                "Note: In the previous quest it was suggested that a final optional step was to go back to Ratihb for a cutscene. If you talk with Ratihb and his response is to welcome you and revitalize with tea, you probably already did that step.",
                 "The quest will not appear in your log until you complete the next step.",
+            },
+            notes = {
+                "Note: In the previous quest it was suggested that a final optional step was to go back to Ratihb for a cutscene. If you talk with Ratihb and his response is to welcome you and revitalize with tea, you probably already did that step.",
             },
         },
         {
@@ -440,8 +450,7 @@ Q.STEPS = {
     },
 
     tau_alz_fear_of_dark_2 = {
-        "Note :",
-        "If Suldiran is taken prisoner during Besieged , this quest will be unavailable until he is rescued.",
+        { note = "If Suldiran is taken prisoner during Besieged, this quest will be unavailable until he is rescued." },
         "Speak to Suldiran to begin this quest.",
         "Trade Suldiran 2 Imp Wings to complete this quest.",
     },
@@ -621,8 +630,8 @@ Q.STEPS = {
     tau_wg_luck_of_the_draw = {
         {
             text = "Speak to Ratihb at Aht Urhgan Whitegate (J-12 Shararat Teahouse) for a cutscene that begins the quest.",
-            substeps = {
-                "(Optional) Speak to him again to start the quest The Die is Cast . It requires passing through the same key-locked area as this quest.",
+            notes = {
+                "(Optional) Speak to him again to start the quest The Die is Cast. It requires passing through the same key-locked area as this quest.",
             },
         },
         "Speak to Mafwahb at Aht Urhgan Whitegate (L-9 Palace Door) for a cutscene.",
@@ -760,8 +769,10 @@ Q.STEPS = {
         {
             text = "Find the ??? at (H-10) on the first boat, hidden beneath the stairs, to receive Antique automaton .",
             substeps = {
-                "THIS IS NOT THE ??? THAT YOU CHECK FOR CORSAIR, IT IS ON THE SOUTHERN BOAT OF H-10",
-                "Note that a Lamian Fang Key is not needed to access the ??? .",
+                "THIS IS NOT THE??? THAT YOU CHECK FOR CORSAIR, IT IS ON THE SOUTHERN BOAT OF H-10",
+            },
+            notes = {
+                "Note that a Lamian Fang Key is not needed to access the???.",
             },
         },
         "Speak to Ghatsad.",
@@ -824,8 +835,10 @@ Q.STEPS = {
         {
             text = "When in the Navukgo Execution Chamber , examine the Decorative Bronze Gate to start a BC fight.",
             substeps = {
-                "Up to 18 people can enter, but more people will cause more Immortal Flans to spawn.",
                 "Trust Magic is allowed.",
+            },
+            notes = {
+                "Up to 18 people can enter, but more people will cause more Immortal Flans to spawn.",
             },
         },
         "Return to Aht Urhgan Whitegate and speak to Waoud .",
@@ -1186,8 +1199,8 @@ Q.STEPS = {
         "Speak with Iruki-Waraki who, during a cut-scene, asks you to inquire with his mentor, Shamarhaan about the situation.",
         {
             text = "You can be any job from here on.",
-            substeps = {
-                "Note : At this point, you can now commission Dhima Polevhia to craft three Artifact pieces. See her page for details.",
+            notes = {
+                "Note: At this point, you can now commission Dhima Polevhia to craft three Artifact pieces. See her page for details.",
             },
         },
         "Travel to Bastok Markets and talk to Shamarhaan at (F-9) who gives a cut-scene and the key item Valkeng's memory chip from his own Automaton . He also tells you to retrieve an item from Mount Zhayolm .",
@@ -1612,6 +1625,8 @@ Q.STEPS = {
             text = "Enter the Walahra Temple in Aht Urhgan Whitegate at (J/K-8) for a cutscene to receive the Talisman key .",
             substeps = {
                 "If you do not get a cutscene, inspect the Imperial Whitegate instead.",
+            },
+            notes = {
                 "NOTE: For any subsequent attempts, you will need to bring a new Talisman of the rebel gods directly to the Imperial Whitegate door (L-8/9).",
             },
         },
@@ -1827,7 +1842,7 @@ Q.STEPS = {
     },
 
     tau_iw_waking_colossus = {
-        "Warning: Trust Magic cannot be used in this BCNM, but the fight is targeted at level 75.",
+        { note = "Warning: Trust Magic cannot be used in this BCNM, but the fight is targeted at level 75." },
         "Approach Naja Salaheem in Aht Urhgan Whitegate (I-10) for a cutscene that begins the quest.",
         {
             text = "Examine Imperial Whitegate at Aht Urhgan Whitegate (L-8/9) to receive the Imperial missive .",
@@ -1894,8 +1909,7 @@ Q.STEPS = {
             },
         },
         "Return to Tsetseroon for an Imperial Bronze Piece and to complete the quest.",
-        "Note :",
-        "If you chose not to look into Wawaroon's bag, you will receive the Map of Aydeewa Subterrane when you return to Tsetseroon instead; you will not get an Imperial Bronze Piece .",
+        { note = "If you chose not to look into Wawaroon's bag, you will receive the Map of Aydeewa Subterrane when you return to Tsetseroon instead; you will not get an Imperial Bronze Piece." },
     },
 
     tau_alz_when_bow_breaks = {

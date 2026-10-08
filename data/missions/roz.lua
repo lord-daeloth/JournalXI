@@ -134,7 +134,7 @@ M.STEPS = {
     ["16"] = {
         name = "Return to Delkfutt's Tower",
         steps = {
-            "(Optional) Aldo's Decision: At the Tenshodo HQ in Lower Jeuno , speak to Aldo for a cutscene.",
+            { note = "(Optional) Aldo's Decision: At the Tenshodo HQ in Lower Jeuno, speak to Aldo for a cutscene." },
             "Zone into Lower Delkfutt's Tower from Qufim Island or via Survival Guide for a cutscene.",
             {
                 text = "Zone into Stellar Fulcrum for a cutscene.",
@@ -167,7 +167,7 @@ M.STEPS = {
     ["18"] = {
         name = "Ro'Maeve",
         steps = {
-            "(Optional) Head to the Tenshodo and speak to Aldo .",
+            { note = "(Optional) Head to the Tenshodo and speak to Aldo." },
             {
                 text = "Go to Norg and speak with Gilgamesh , who speaks of ruins north of The Sanctuary of Zi'Tah , and may be what Eald'narche is talking about.",
                 substeps = {

@@ -42,8 +42,8 @@ Q.STEPS = {
         },
         {
             text = "Next click on the door to the Hospital at (I-9) in Western Adoulin for a cutscene.",
-            substeps = {
-                "Note that if you are at a certain point on the quest Flowers for Svenja , the doctor will be unavailable and you cannot progress in A Barrel of Laughs . You will simply receive the message \"The door is firmly shut\". **If this happens, you must progress further in Flowers for Svenja in order to proceed.",
+            notes = {
+                "Note that if you are at a certain point on the quest Flowers for Svenja, the doctor will be unavailable and you cannot progress in A Barrel of Laughs. You will simply receive the message \"The door is firmly shut\". **If this happens, you must progress further in Flowers for Svenja in order to proceed.",
             },
         },
         {
@@ -149,7 +149,7 @@ Q.STEPS = {
     },
 
     adoulin_a_thirst_before_time = {
-        "WARNING: You must complete The Curious Case of Melvien in order to begin the quest, otherwise no cutscene will occur",
+        { note = "WARNING: You must complete The Curious Case of Melvien in order to begin the quest, otherwise no cutscene will occur" },
         {
             text = "Talk to Roskin in Eastern Adoulin (H-8) for a cutscene.",
             substeps = {
@@ -242,6 +242,8 @@ Q.STEPS = {
                 "Ceizak Battlegrounds",
                 "Western Adoulin",
                 "Eastern Adoulin",
+            },
+            notes = {
                 "Optional: Yahse Hunting Grounds",
             },
         },
@@ -397,8 +399,8 @@ Q.STEPS = {
         },
         {
             text = "Trade all four items to Traiffeaux .",
-            substeps = {
-                "Note : If you are running Windower or Ashita you will likely get a black screen after you give him the items.",
+            notes = {
+                "Note: If you are running Windower or Ashita you will likely get a black screen after you give him the items.",
             },
         },
         "After the cutscene is complete you will obtain the two \"Fragmenting\" and Pair of fuzzy earmuffs needed to participate in the area's Reives.",
@@ -494,12 +496,14 @@ Q.STEPS = {
             substeps = {
                 "Insidio is an Orobon NM which notably has access to Mayhem Lantern (AoE Charm ).",
                 "Party members actively participating in the quest will receive a Insidio's extinguished lantern upon defeat. Other members who are assisting will receive up to 10,000 Bayld (depending on the size of the party), if they have never assisted in this battle before.",
+            },
+            notes = {
                 "Strategy for Insidio - If attempting to solo this fight, the easiest way to do so is to summon your trusts, preferably those that can deal magic damage, your best dps, and those that can Skillchain. Now pop Insidio and let your trusts get hate. Once they've gained a decent amount of hate, move well out of range of charm AoE. Alternatively use Tenebrae with Pflug and other Magic Evasion buffs. Now sit back and watch your trusts do all the work. Using this strategy with ilvl 119 gear trusts easily took down NM within 8-10 minutes.",
             },
         },
-        "(Optional) Examine the Bloodstained Glove after defeating Insidio .",
+        { note = "(Optional) Examine the Bloodstained Glove after defeating Insidio." },
         "Return to Octavien to complete the quest and receive your reward.",
-        "(Optional) Talk to Zurko-Bazurko in Mhaura at the proto-waypoint for an additional cutscene. He will ask you to give him the runic kinegraver.",
+        { note = "(Optional) Talk to Zurko-Bazurko in Mhaura at the proto-waypoint for an additional cutscene. He will ask you to give him the runic kinegraver." },
     },
 
     adoulin_did_you_feel_that = {
@@ -584,7 +588,7 @@ Q.STEPS = {
                 "\"<Name> obtains a Rusted pickaxe !\"",
             },
         },
-        "Notes:",
+        { note = "Notes:" },
         "The Rusted pickaxe counts as a fished-up \"rusted\" item, and has been tested to qualify for objectives such as Reel In Multiple Rusted Objects from RoE and Master Angler (VBD) from Vana'Bout.",
         "Unlike the partial Bayld awards, this quest doesn't provide any fame for each part until you finish all three - it silently rewards you with that you only at the very end.",
     },
@@ -725,7 +729,7 @@ Q.STEPS = {
         "After defeating Arcus Blades you will earn 10 synthesis materials related to the Erilaz Armor Set and a Codex of Etchings .",
         "You also earn the title Sword Saint and Octavernost will address you as such.",
         "Proceed to the \"Afterwards\" section below.",
-        "Optional: Return to Octavernost at the Big Bridge who instructs you to proceed to Amchuchu.",
+        { note = "Optional: Return to Octavernost at the Big Bridge who instructs you to proceed to Amchuchu." },
         "Check Amchuchu's Laboratory at the Inventor's Coalition in Western Adoulin (J-10) for a cutsene.",
         "Wait one game day and then talk to Octavernost for your reward of 15000 XP and an Erilaz Surcoat !",
         {
@@ -900,12 +904,14 @@ Q.STEPS = {
             text = "Zone and come back to speak with Octavien after finishing the last quest. He is in Eastern Adoulin at (I-8) near the Sverdhried Hillock waypoint.",
             substeps = {
                 "You no longer need to be a Rune Fencer after this point.",
+            },
+            notes = {
                 "(Optional) Speak with Gaddiux at Inventors' Coalition in Western Adoulin (J-10) on the blacksmith's whereabouts.",
             },
         },
         {
             text = "Check the Inconspicuous Barrel in Western Adoulin (I-4), in the alley near the Adoulin Waterfront waypoint. Yestin-Ovestin appears on the wall during a cutscene, and asks for a Rune saber and a Frost-encrusted flame gem .",
-            substeps = {
+            notes = {
                 "(Optional) Return to Octavien for additional dialogue.",
             },
         },
@@ -936,7 +942,7 @@ Q.STEPS = {
         "Check the Inconspicuous Barrel in Western Adoulin (I-4) for a cutscene, where you will lose the Rune saber and Frost-encrusted flame gem key items.",
         "Check the Inconspicuous Barrel after one game day has passed. There will be a note instructing you to talk to Octavien .",
         "Talk with Octavien to receive the Beorc Sword .",
-        "Note: Completing this quest allows the player to commission the three non-quested pieces of Rune Fencer artifact armor from the Tomato Vantage Point at (E-10) Rala Waterways . Western Adoulin Mog House is closest entrance.",
+        { note = "Note: Completing this quest allows the player to commission the three non-quested pieces of Rune Fencer artifact armor from the Tomato Vantage Point at (E-10) Rala Waterways. Western Adoulin Mog House is closest entrance." },
     },
 
     adoulin_geomancer_relic_armor = {
@@ -1252,7 +1258,7 @@ Q.STEPS = {
                 "Keep track yourself",
             },
         },
-        "Note: She can ask the same question multiple times.",
+        { note = "Note: She can ask the same question multiple times." },
         "After this cutscene, the player receives the \"Secrets of Runic Enhancement\" . Finish the quest with the following few steps.",
         {
             text = "Eastern Adoulin (I-8)",
@@ -1316,10 +1322,12 @@ Q.STEPS = {
             text = "Select the Suspicious Roots again to enter a BCNM with a Dullahan NM , Headless Torturer .",
             substeps = {
                 "All Party members must have a Purple purgation cloth to enter fight.",
-                "Trusts may be summoned inside this fight.",
                 "Ingrid will assist you during the fight. If she is defeated, you will lose the fight immediately.",
                 "Headless Torturer uses all standard Dullahan TP Moves as well as Tier V single target, AoE Elemental and Enfeebling magic spells.",
                 "If you are defeated, speak with Rigobertine to obtain a new Key Item in order to try again.",
+            },
+            notes = {
+                "Trusts may be summoned inside this fight.",
             },
         },
         "Upon victory, examine the Suspicious Roots again for the last cutscene, and your rewards.",
@@ -1331,7 +1339,7 @@ Q.STEPS = {
         "Tuffle-Buffle will ask you to procure the following ingredients to make an appetizer: Fire Crystal , Popoto , and Stick of Selbina Butter .",
         "Grab the ingredients, head back and trade the ingredients to the Mischief Marker for another cutscene.",
         "It is a good idea to buy a few of each item, as the NPC may break the items when crafting.",
-        "Note : Tuffle-Buffle may fail any of the synths in this quest (multiple times), so it is recommended that you purchase a couple extra ingredients.",
+        { note = "Note: Tuffle-Buffle may fail any of the synths in this quest (multiple times), so it is recommended that you purchase a couple extra ingredients." },
         {
             text = "Afterwards, Tuffle-Buffle will ask you to procure the following ingredients to make the main course: Fire Crystal , Dhalmel Meat , Olive Oil , and Black Pepper . Grab the ingredients and head back to the Mischief Marker for another cutscene.",
             substeps = {
@@ -1403,8 +1411,8 @@ Q.STEPS = {
         "After defeating the NM, check the Foreboding Vineprints again for a cutscene.",
         {
             text = "Check the Door: Hospital in Western Adoulin at (I-9) to complete this quest and receive your reward.",
-            substeps = {
-                "NOTE: This item can be re-obtained if dropped by waiting until the next Vanadiel day and checking the Door: Svenja's Manor . After a brief cutscene you will be asked to pay 10,000 Bayld in order to reacquire this item.",
+            notes = {
+                "NOTE: This item can be re-obtained if dropped by waiting until the next Vanadiel day and checking the Door: Svenja's Manor. After a brief cutscene you will be asked to pay 10,000 Bayld in order to reacquire this item.",
             },
         },
     },
@@ -1580,14 +1588,14 @@ Q.STEPS = {
         "Casts Protect IV , Shell V , and Phalanx exclusively.",
         "Frequently parries which will limit your physical damage leaving Swipe and Lunge as effective options.",
         "Zurko-Bazurko will use Lunge which can do significant damage if no opposing runes are active.",
-        "(Optional) Return to Octavien for a short dialogue directing you to the Order of Orvail's maester.",
+        { note = "(Optional) Return to Octavien for a short dialogue directing you to the Order of Orvail's maester." },
         "Speak with Gaddiux in Western Adoulin (J-10) for a cutscene with Amchuchu and to receive your base weapon, Lexeme Blade I .",
         "Trade your Lexeme Blade I to Runje Desaali",
         "Then trade her the following:",
         {
             text = "200 Ghastly Stones",
-            substeps = {
-                "Note: Ghastly Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments . In return, you can buy NQ Ghastly Stones for 50 Obsidian Fragments each.",
+            notes = {
+                "Note: Ghastly Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments. In return, you can buy NQ Ghastly Stones for 50 Obsidian Fragments each.",
             },
         },
         "You will receive Superlative runic ring of deluge .",
@@ -1596,8 +1604,8 @@ Q.STEPS = {
         "Then trade her the following:",
         {
             text = "200 Verdigris Stones",
-            substeps = {
-                "Note: Verdigris Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments . In return, you can buy NQ Verdigris Stones for 100 Obsidian Fragments each.",
+            notes = {
+                "Note: Verdigris Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments. In return, you can buy NQ Verdigris Stones for 100 Obsidian Fragments each.",
             },
         },
         "You will receive Superlative runic ring of luster .",
@@ -1606,8 +1614,8 @@ Q.STEPS = {
         "Then trade her the following:",
         {
             text = "200 Wailing Stones",
-            substeps = {
-                "Note: Wailing Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments . In return, you can buy NQ Wailing Stones for 200 Obsidian Fragments each.",
+            notes = {
+                "Note: Wailing Stone +1s / +2s do not work for this quest. You can, however, trade them to Ornery Dhole for Obsidian Fragments. In return, you can buy NQ Wailing Stones for 200 Obsidian Fragments each.",
             },
         },
         "You will receive Superlative runic ring of vision .",
@@ -1676,9 +1684,9 @@ Q.STEPS = {
         "This quest has several parts and is rather involved.",
         {
             text = "Speak with Nhili Uvolep and she will ask you to go to Dho Gates to investigate \"forces of darkness\".",
-            substeps = {
-                "Note : You can start this quest as any job, even though Idris can only be equipped by Geomancer.",
-                "Note : If you are working towards an Epeolatry, you will need to complete or quit that weapon to begin working on Idris . You will lose all materials deposited if you quit, but you will keep your Broken rapier hilt key item, and can restart it immediately.",
+            notes = {
+                "Note: You can start this quest as any job, even though Idris can only be equipped by Geomancer.",
+                "Note: If you are working towards an Epeolatry, you will need to complete or quit that weapon to begin working on Idris. You will lose all materials deposited if you quit, but you will keep your Broken rapier hilt key item, and can restart it immediately.",
             },
         },
         {
@@ -1707,14 +1715,16 @@ Q.STEPS = {
             text = "With your main job set to GEO, examine the \" Water of Whispers \" in Dho Gates at (H-7) to enter a battlefield.",
             substeps = {
                 "Foret de Hennetiel Home Point is close to the Dho Gates entrance.",
-                "This is a one on one against the Bygone Geomancer . Subjob and trusts are not available. There is a 15 minute time limit. No key item is consumed if you lose. The BCNM may be entered again immediately.",
+                "This is a one on one against the Bygone Geomancer. Subjob and trusts are not available. There is a 15 minute time limit. No key item is consumed if you lose. The BCNM may be entered again immediately.",
                 "She is immune to all damage at first and must be dealt with by destroying her luopans that she continuously throws down, up to three at a time.",
                 "Each luopan destroyed will lower her health down by 4%, ultimately leaving her at 1% for you to finish off either with a spell or physical attack. Meaning that 25 luopans must be destroyed within the 15min time limit, destroying more will never kill the fomor.",
                 "Highly recommend MP and HP restoration items and refresh drinks along with use of all abilities available to GEO. She will start casting higher tier spells (single target III-IV and -ra II) as her health gets lower.",
                 "Utilize your knowledge of the elemental wheel to quickly take them out, as luopans take severely reduced damage to all elements except the element that the element of the spell is weak to, and darkness damage.",
                 "As most do not take diminished magic damage from darkness element, using a staff and Cataclysm whenever possible can one shot all of the luopans at once except Geo-Languor. If your doing this and get Geo-Languor you should cast Aero Fire or Thunder.",
-                "Another strategy is to set up a Geo-Regen bubble and use Indi-Acumen to mitigate the damage from the geomancer fomor and maximize magic damage to luopans. Geo-Regen is enough to fully mitigate/regain damage dealt by the Bygone Geomancer as she doesn't cast spells very quickly.",
                 "Spamming tier I spells of the appropriate element and shying away from -ra spells unless they would deal full damage to 2 or all 3 luopans will allow you to finish the BCNM in time and not require any MP restoration items.",
+            },
+            notes = {
+                "Another strategy is to set up a Geo-Regen bubble and use Indi-Acumen to mitigate the damage from the geomancer fomor and maximize magic damage to luopans. Geo-Regen is enough to fully mitigate/regain damage dealt by the Bygone Geomancer as she doesn't cast spells very quickly.",
             },
         },
         "After the fight, return to Nhili Uvolep to receive your base weapon, Nodal Wand I .",
@@ -2131,7 +2141,7 @@ Q.STEPS = {
         "Click on the Pollinating Swarm and then /heal until it counts 10 bees caught, then stand up.",
         {
             text = "Click on the Pollinating Swarm again to receive the key item Full Land of Milk and Honey hive .",
-            substeps = {
+            notes = {
                 "(Optional) Go back to Rumin-Flumin and speak to him again",
             },
         },
@@ -2182,11 +2192,13 @@ Q.STEPS = {
             },
         },
         "Speak with Roskin (near the Statue of the Goddess) for a cutscene, where he will ask for Copse Candy .",
-        "(Optional) Talk to Palomel for some related dialogue.",
+        { note = "(Optional) Talk to Palomel for some related dialogue." },
         {
             text = "Copse Candy can be obtained for 10,000 bayld after unlocking its purchase from Runje Desaali .",
             substeps = {
-                "To unlock with Runje Desaali , decline the initial offer of selling it to you for 100,000 bayld, she will offer to sell it to you for 10,000 bayld in exchange for a Jungle Nectar , which is sold by Soupox in Leafallia .",
+                "To unlock with Runje Desaali, decline the initial offer of selling it to you for 100,000 bayld, she will offer to sell it to you for 10,000 bayld in exchange for a Jungle Nectar, which is sold by Soupox in Leafallia.",
+            },
+            notes = {
                 "Note: Copse Candy obtained through the Login Campaign will be stolen in an amusing cutscene until you get the nectar for Runje.",
             },
         },
@@ -2209,7 +2221,7 @@ Q.STEPS = {
                 "The Levil cutscene may be blocked by The Silent Forest , where he talks about Arciela and Kamihr Drifts. If this is the case, you will need to speak to Ploh Trishbahk before you can continue.",
             },
         },
-        "(Optional) Speak to Yocile , \" the young woman at the Cafe des Larmes ,\" for a direction to the Mummer's Coalition. Note that Levil must be spoken to first for the quest to continue.",
+        { note = "(Optional) Speak to Yocile, \" the young woman at the Cafe des Larmes,\" for a direction to the Mummer's Coalition. Note that Levil must be spoken to first for the quest to continue." },
         "Speak with Masad in the Mummer's Coalition for another cutscene.",
         {
             text = "Beat Ygnas at the minigame: Boom or Bust to continue. To win, you must win 3 rounds. If you lose, speak twice with Masad to try again.",
@@ -2260,7 +2272,9 @@ Q.STEPS = {
         {
             text = "Brash Gramk-Droog",
             substeps = {
-                "Durs-Vike Deathspell Black Mage -  - Ignor-Mnt Stealthslayer Warrior -  - Liij-Vok Waaxwane White Mage -  - Tryl-Wuj Wingrip Beastmaster Assisted by a Tryl-Wuj's Puk -  - Ymmr-Ulvid Gloomlight Dark Knight",
+                "Durs-Vike Deathspell Black Mage - - Ignor-Mnt Stealthslayer Warrior - - Liij-Vok Waaxwane White Mage - - Tryl-Wuj Wingrip Beastmaster Assisted by a Tryl-Wuj's Puk - - Ymmr-Ulvid Gloomlight Dark Knight",
+            },
+            notes = {
                 "Trusts may be called once inside. You may Party with others if they have completed or are on The Ygnas Directive 6. You'll fight alongside Ygnas and Nashu. If either are defeated, you will lose. The NPCs are very durable. They have extremely high HP and MP. If you die and reraise mid-battle, they will be able to hold out while you recover. Ygnas will cast Protectra and Shellra V upon entry as well as haste and erase on himself as well as cures. Ygnas will constantly attack one target after the next. Is recommended to assist him (/as <t>) and the target he is after. Sleep is highly recommended. All NMs are resistant to light based sleeps, but are susceptible to dark based sleeps but Nashu will stand at a distance and cast divine magic including Banishga II which will wake slept mobs. Liij-Vok Waaxwane's Benediction will wake slept foes. All of the Velkk will use their respective 1 hour abilities, and the same TP moves from incursion including Jungle Wallop (AoE Damage, Silence, Bind, and Amnesia) from melee Velkk as well as Jungle Hoodoo (Earth damage, Paralyze, Plague, and a -50% Curse) from mage velkk.. Take care while fighting Durs-Vike Deathspell as his Meteor is rapidly cast and will tear through your trusts. The Velkk all seem to have roughly 50-80k HP depending on the target. A tank trust that is able to generate AoE enmity (Amchuchu) or casts cures and later uses some JA (such as August) will have hate on the Velkk when they awake.",
             },
         },
@@ -2410,7 +2424,7 @@ Q.STEPS = {
         "Check Amchuchu's Laboratory to receive Amchuchu's Missive .",
         "Talk to Cid in Metalworks .",
         "Check Amchuchu's Laboratory for reward.",
-        "Note: Raptor Rapture is required -- some information about that quest is mentioned in one of the cutscenes.",
+        { note = "Note: Raptor Rapture is required -- some information about that quest is mentioned in one of the cutscenes." },
     },
 
     adoulin_vegetable_vegetable_evolution = {
@@ -2472,9 +2486,11 @@ Q.STEPS = {
         {
             text = "Go to the ??? in the small round room at (K-8) in Sih Gates for a cutscene with Midras to receive the Memo from Midras",
             substeps = {
-                "Take the \"Frontier Station\" Waypoint warp in Foret de Hennetiel then head north past the frogs to (J-5) to zone into Sih Gates .",
+                "Take the \"Frontier Station\" Waypoint warp in Foret de Hennetiel then head north past the frogs to (J-5) to zone into Sih Gates.",
                 "The surrounding Apex Leeches are aggressive to sound.",
-                "Note: There will likely be a Reive blocking the path at (I-8) which you will need to clear to reach the ???.",
+            },
+            notes = {
+                "Note: There will likely be a Reive blocking the path at (I-8) which you will need to clear to reach the???.",
             },
         },
         "Head to the Metalworks in Bastok and speak with Cid (H-8) to receive Cid's catalyst .",

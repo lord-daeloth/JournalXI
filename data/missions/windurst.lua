@@ -51,7 +51,7 @@ M.STEPS = {
                     "The Inner Horutoto Ruins Survival Guide places you at the right tower if you have it unlocked already.",
                 },
             },
-            "(Optional): Speak to Sama Gohjima near the entrance for some dialogue.",
+            { note = "(Optional): Speak to Sama Gohjima near the entrance for some dialogue." },
             "Head down the stairs to the Inner Horutoto Ruins .",
             "Inside, you'll be in the Lily Tower on Map 1. Go down the stairs in to the main room.",
             "Run to the other side, and look for the Cracked Wall , around (H-9). Pass through it and go left.",
@@ -118,8 +118,10 @@ M.STEPS = {
             {
                 text = "When you've collected all 6, head back out of the tower. When you zone, you'll receive another cutscene.",
                 substeps = {
-                    "(Optional) : You can speak to Quh Berhuja nearby for some dialogue.",
-                    "Alternatively, you can use any means of leaving the zone that will not lead you to East Sarutabaruta . Doing this will allow you to skip the cutscene and go straight back to Apururu will which lead to a slightly different cutscene upon finishing the Mission.",
+                    "Alternatively, you can use any means of leaving the zone that will not lead you to East Sarutabaruta. Doing this will allow you to skip the cutscene and go straight back to Apururu will which lead to a slightly different cutscene upon finishing the Mission.",
+                },
+                notes = {
+                    "(Optional): You can speak to Quh Berhuja nearby for some dialogue.",
                 },
             },
             "Head back to the Manustery and speak to Apururu to complete the Mission.",
@@ -171,18 +173,20 @@ M.STEPS = {
         name = "Lost for Words",
         steps = {
             "Trade enough Crystals to the Conquest NPC (one crystal is enough) to raise your Rank bar and unlock the Mission, then accept it from the Gate Guard .",
-            "(Optional) : As usual for Windurst Missions, the Gate Guards and their adjacent NPCs will all have optional dialogue after accepting and at end of the Mission.",
+            { note = "(Optional): As usual for Windurst Missions, the Gate Guards and their adjacent NPCs will all have optional dialogue after accepting and at end of the Mission." },
             {
                 text = "Head for the Optistery on the northern map of Windurst Waters (near Home Point #1). Speak to Tosuka-Porika at (G-8) (East door).",
-                substeps = {
-                    "(Optional) : The other NPCs and Tosuka-Porika inside the same room have additional dialogue.",
+                notes = {
+                    "(Optional): The other NPCs and Tosuka-Porika inside the same room have additional dialogue.",
                 },
             },
             {
                 text = "Head to (J-3) in Windurst Woods and speak to Nanaa Mihgo . She will lend you her Lapis monocle .",
                 substeps = {
                     "You may need to talk to her twice or more if you have a Windurst Trust permit and Aht Urhgan Lure of the Wildcat Quests started.",
-                    "(Optional) : Nanaa 's cronies nearby have additional dialogue.",
+                },
+                notes = {
+                    "(Optional): Nanaa 's cronies nearby have additional dialogue.",
                 },
             },
             {
@@ -206,8 +210,8 @@ M.STEPS = {
             },
             {
                 text = "Make your way back to Nanaa Mihgo , who will give you the Hideout key .",
-                substeps = {
-                    "(Optional) : Nanaa 's cronies have new additional dialogue.",
+                notes = {
+                    "(Optional): Nanaa 's cronies have new additional dialogue.",
                 },
             },
             {
@@ -225,15 +229,15 @@ M.STEPS = {
             },
             {
                 text = "Check the Mahogany Door for a cutscene.",
-                substeps = {
-                    "(Optional) : Nanaa and her cronies back in Windurst Woods have new additional dialogue after this cutscene.",
+                notes = {
+                    "(Optional): Nanaa and her cronies back in Windurst Woods have new additional dialogue after this cutscene.",
                 },
             },
             "Head to the House of the Hero at Windurst Walls (G-3). Check the door for a cutscene.",
             {
                 text = "Make your way back to Windurst Waters Home Point #1 and speak to Tosuka-Porika to complete the Mission.",
-                substeps = {
-                    "(Optional) : Some of the NPCs in the same room have new additional dialogue.",
+                notes = {
+                    "(Optional): Some of the NPCs in the same room have new additional dialogue.",
                 },
             },
         },
@@ -244,15 +248,17 @@ M.STEPS = {
         steps = {
             {
                 text = "Accept the mission from the Gate Guard .",
-                substeps = {
-                    "(Optional) : As usual, you can speak to the gate guards for additional dialogue.",
+                notes = {
+                    "(Optional): As usual, you can speak to the gate guards for additional dialogue.",
                 },
             },
             {
                 text = "Head to (L-6) in Windurst Waters and speak to Moreno-Toeno (inside the Aurastery ), who gives you the \"Creature Counter\" magic doll to keep track of your objective.",
                 substeps = {
-                    "(Optional) : You can talk to the students on the roof and the other NPCs in the same room as Moreno-Toeno for additional dialogue.",
                     "You can save some time by setting your Home Point in Windurst Waters and bringing a Warp item.",
+                },
+                notes = {
+                    "(Optional): You can talk to the students on the roof and the other NPCs in the same room as Moreno-Toeno for additional dialogue.",
                 },
             },
             {
@@ -355,7 +361,7 @@ M.STEPS = {
             "Pass the Three Mage Gate (inside Inner Horutoto Ruins) and continue on to the small room at (G-7).",
             "Check the Gate of Light at G-7 map 4 for a cutscene.",
             "Return to Heavens Tower and speak to Zubaba to finish the mission.",
-            "Note: Zubaba does not give you the Portal charm . To obtain it, finish the mission and trade a Rolanberry to Kupipi . You may trade Kupipi the Rolanberry mid-mission, but she will not give you the Portal charm until you talk to her again after the mission is completed.",
+            { note = "Note: Zubaba does not give you the Portal charm. To obtain it, finish the mission and trade a Rolanberry to Kupipi. You may trade Kupipi the Rolanberry mid-mission, but she will not give you the Portal charm until you talk to her again after the mission is completed." },
             "This Mission will work differently if: you have skipped this Mission and obtained a higher Home Nation Rank after completing The Final Seal , or are simply repeating it.",
             "Accept the mission and speak to Zubaba . She will ask for you to bring her 3 Rusty Daggers . These can be purchased on the Auction House (but may be rare), or obtained from the Wendigos past the Three Mage Gate (the same skeletons that drop Test Answers .)",
             "Trade Zubaba the daggers to complete the mission. Obtaining the Portal charm is done the same way as completing the mission regularly.",
@@ -483,8 +489,8 @@ M.STEPS = {
             },
             {
                 text = "Examine the door after defeating them for a cutscene. If you see a message saying \" A mysterious force is interfering \", wait until the NMs have fully despawned off screen before trying again. Eventually the cutscene will trigger.",
-                substeps = {
-                    "(Optional) : Return to Hakkuru-Rinkuru for some dialogue on Ajido-Marujido 's whereabouts.",
+                notes = {
+                    "(Optional): Return to Hakkuru-Rinkuru for some dialogue on Ajido-Marujido 's whereabouts.",
                 },
             },
             {
@@ -512,7 +518,7 @@ M.STEPS = {
                     "Home Point #1 to Giddeus is the fastest way.",
                 },
             },
-            "Note: If you're in a party with other players, only players that are on this Mission or have completed it may enter the BCNM.",
+            { note = "Note: If you're in a party with other players, only players that are on this Mission or have completed it may enter the BCNM." },
             {
                 text = "Inside are 4 NM Yagudo . They can use their respective 2-hours.",
                 substeps = {
@@ -539,7 +545,7 @@ M.STEPS = {
             "Map 4",
             {
                 text = "Starting from the main entrance on Map 1, go through the first Brass Door (I-8) by turning the correct lever and go upstairs at point A .",
-                substeps = {
+                notes = {
                     "Note: While standing in between the two levers, pull one and move away immediately. It will either open the Brass Door, or a trapdoor which can cause you to fall. If the trapdoor opens, wait for it to close and try the other lever. Which lever controls which door changes every day.",
                 },
             },
@@ -616,8 +622,10 @@ M.STEPS = {
                 text = "Talk to Kerutoto in the Rhinostery northern building for a cutscene.",
                 substeps = {
                     "You may need to talk to her over 3 times.",
-                    "The correct cutscene is the one where she talks about Leepe-Hoppe and Rukususu , not the Diabolos one.",
-                    "Optional : Talk to Vanono in Kazham at (G-7) for a brief message.",
+                    "The correct cutscene is the one where she talks about Leepe-Hoppe and Rukususu, not the Diabolos one.",
+                },
+                notes = {
+                    "Optional: Talk to Vanono in Kazham at (G-7) for a brief message.",
                 },
             },
             "Talk to Romaa Mihgo in Kazham at (H-11) in Mihgo's Residence .",
@@ -632,8 +640,8 @@ M.STEPS = {
             },
             {
                 text = "After obtaining your Cursed Key , trade it to the Granite Door at (J-6) on the same map for a cutscene. You will receive Book of the Gods .",
-                substeps = {
-                    "Optional : Inspect three Tome of Magic.",
+                notes = {
+                    "Optional: Inspect three Tome of Magic.",
                 },
             },
             "Return to Leepe-Hoppe to complete the Mission.",
@@ -669,14 +677,14 @@ M.STEPS = {
             },
             {
                 text = "Trade the Curse Wand to Sedal-Godjal for a cutscene.",
-                substeps = {
-                    "Optional : Talk to Sedal-Godjal again.",
+                notes = {
+                    "Optional: Talk to Sedal-Godjal again.",
                 },
             },
             {
                 text = "Return to Moreno-Toeno for a cutscene that completes the Mission.",
-                substeps = {
-                    "Optional : Talk to Moreno-Toeno again.",
+                notes = {
+                    "Optional: Talk to Moreno-Toeno again.",
                 },
             },
         },
@@ -740,7 +748,7 @@ M.STEPS = {
             "Talk to Apururu in Windurst Woods HP #1 inside the northern Manustery building (H-9) for a cutscene.",
             {
                 text = "Zone into Heavens Tower for a cutscene.",
-                substeps = {
+                notes = {
                     "Optional: Every NPC upstairs (past the Starway Stairway door) has unique dialogue to this mission. Now is your chance to hear what they have to say!",
                 },
             },
@@ -811,7 +819,7 @@ M.STEPS = {
                     "Alternatively, you can use the Survival Guide to reach Toraimarai Canal .",
                 },
             },
-            "Note: If you use the Enternity/FastCS addon, the following cutscenes may not play while using Windower or Ashita. If you are running the game at 60 FPS, you may have to revert to 30 FPS to complete this cutscene.",
+            { note = "Note: If you use the Enternity/FastCS addon, the following cutscenes may not play while using Windower or Ashita. If you are running the game at 60 FPS, you may have to revert to 30 FPS to complete this cutscene." },
             "Commands to unload them: //lua u enternity - /addon unload enternity - //lua unload fastcs - //config FrameRateDivisor 2",
             "If you crash the game after completing the BCNM, the top door will not provide a cutscene. The remedy is to click the blank, glowing spot right outside of Heavens Tower to complete Rank 10.",
             "Not everyone has this issue but if you do the above should work for you.",

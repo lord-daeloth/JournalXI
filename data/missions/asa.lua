@@ -96,7 +96,7 @@ M.STEPS = {
             },
             {
                 text = "After the battle, click the crystal again to attach the seal and receive a counterseal Key Item ( Scarlet counterseal , Cerulean counterseal , Emerald counterseal , Amber counterseal , Violet counterseal , Azure counterseal ).",
-                substeps = {
+                notes = {
                     "Note: If you leave the area before receiving the counterseal Key Item, you can simply return in order to obtain it; the battle is not repeated.",
                 },
             },
@@ -122,7 +122,9 @@ M.STEPS = {
                 substeps = {
                     "Andrause will offer to sell you a Soultrapper and 12 Blank Soul Plates for 800 Gil.",
                     "You can buy another 12 Blank Soul Plates from him each day (after JP Midnight).",
-                    "Note: he will only accept Soul Plates of monsters found in Sea Serpent Grotto .",
+                },
+                notes = {
+                    "Note: he will only accept Soul Plates of monsters found in Sea Serpent Grotto.",
                 },
             },
             {
@@ -215,9 +217,11 @@ M.STEPS = {
             {
                 text = "You must collect 6 Key Item fragments from various monsters.",
                 substeps = {
-                    "Note: If you are in a party/alliance, everyone in the group will obtain the Key Item if it drops.",
                     "The fragments are not a guaranteed drop, but have a high drop rate. Treasure Hunter does not work on them, because they are not normal items.",
                     "The NMs will despawn 5 minutes after being engaged and will respawn 2 minutes after either despawning or successfully being killed.",
+                },
+                notes = {
+                    "Note: If you are in a party/alliance, everyone in the group will obtain the Key Item if it drops.",
                 },
             },
             "If relying on damage from Trusts , refer to the Damage Type table to select the appropriate Trust for each NM.",
@@ -241,7 +245,7 @@ M.STEPS = {
                     "Ninja's Daken Job Trait does not work.",
                 },
             },
-            "Note: The NMs in The Sanctuary of Zi'Tah only appear between the hours of 17:00 and 7:00 Vana'diel Time .",
+            { note = "Note: The NMs in The Sanctuary of Zi'Tah only appear between the hours of 17:00 and 7:00 Vana'diel Time." },
             {
                 text = "Luminous green fragment from Holey Horror at (H-8) in The Sanctuary of Zi'Tah .",
                 substeps = {
@@ -301,7 +305,7 @@ M.STEPS = {
         steps = {
             {
                 text = "After the initial cutscene from the Moon Spiral , click it again while possessing at least one elemental sap Key Item to receive the option to enter the Battaru Royale battlefield.",
-                substeps = {
+                notes = {
                     "Trusts can be summoned in this fight (relevant if you're doing it below item level 119.)",
                 },
             },

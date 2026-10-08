@@ -181,6 +181,67 @@ local function step_substeps(step)
     return nil
 end
 
+local function step_notes(step)
+    if type(step) == 'table' and type(step.notes) == 'table' then
+        return step.notes
+    end
+    return nil
+end
+
+local function step_is_note(step)
+    return type(step) == 'table' and step.note ~= nil
+end
+
+local NOTE_TOOLTIP_LIMIT = 700
+
+local function related_step_notes(steps, index, step)
+    local notes = {}
+    local before = {}
+    local note_index = index - 1
+    while step_is_note(steps[note_index]) do
+        table.insert(before, 1, tostring(steps[note_index].note or ''))
+        note_index = note_index - 1
+    end
+    for _, note in ipairs(before) do notes[#notes + 1] = note end
+    for _, note in ipairs(step_notes(step) or {}) do
+        notes[#notes + 1] = tostring(note or '')
+    end
+    note_index = index + 1
+    while step_is_note(steps[note_index]) do
+        notes[#notes + 1] = tostring(steps[note_index].note or '')
+        note_index = note_index + 1
+    end
+    return notes
+end
+
+local function note_preview(notes)
+    local text = table.concat(notes or {}, '\n\n')
+    if #text <= NOTE_TOOLTIP_LIMIT then return text end
+    local preview = text:sub(1, NOTE_TOOLTIP_LIMIT)
+    local boundary = preview:match('^(.*)%s+%S*$')
+    if boundary ~= nil and #boundary >= math.floor(NOTE_TOOLTIP_LIMIT * 0.75) then
+        preview = boundary
+    end
+    return preview .. '...'
+end
+
+local function draw_note_tooltip(notes)
+    if notes == nil or #notes == 0
+        or imgui.IsItemHovered == nil or imgui.IsItemHovered() ~= true then
+        return
+    end
+    local preview = note_preview(notes)
+    if imgui.BeginTooltip ~= nil and imgui.EndTooltip ~= nil then
+        imgui.BeginTooltip()
+        if imgui.PushTextWrapPos ~= nil then imgui.PushTextWrapPos(420) end
+        imgui.TextWrapped(preview)
+        if imgui.PopTextWrapPos ~= nil then imgui.PopTextWrapPos() end
+        imgui.EndTooltip()
+    elseif imgui.SetTooltip ~= nil then
+        imgui.SetTooltip(preview)
+    end
+end
+
 local function step_is_checked(kind, group, id, index, step)
     local key = step_progress_key(kind, group, id, index)
     if config.step_progress[key] == true then return true end
@@ -214,16 +275,18 @@ local function complete_entry_steps(kind, group, item)
     if config.auto_completed_entries[entry_key] == true then return false end
     local changed = false
     for index, step in ipairs(item.steps) do
-        local key = step_progress_key(kind, group, item.id, index)
-        if config.step_progress[key] ~= true then
-            config.step_progress[key] = true
-            changed = true
-        end
-        for subindex = 1, #(step_substeps(step) or {}) do
-            local subkey = substep_progress_key(kind, group, item.id, index, subindex)
-            if config.step_progress[subkey] ~= true then
-                config.step_progress[subkey] = true
+        if not step_is_note(step) then
+            local key = step_progress_key(kind, group, item.id, index)
+            if config.step_progress[key] ~= true then
+                config.step_progress[key] = true
                 changed = true
+            end
+            for subindex = 1, #(step_substeps(step) or {}) do
+                local subkey = substep_progress_key(kind, group, item.id, index, subindex)
+                if config.step_progress[subkey] ~= true then
+                    config.step_progress[subkey] = true
+                    changed = true
+                end
             end
         end
     end
@@ -237,16 +300,18 @@ local function clear_entry_steps(kind, group, item)
     config.auto_completed_entries = config.auto_completed_entries or T{}
     local changed = false
     for index, step in ipairs(item.steps) do
-        local key = step_progress_key(kind, group, item.id, index)
-        if config.step_progress[key] ~= nil then
-            config.step_progress[key] = nil
-            changed = true
-        end
-        for subindex = 1, #(step_substeps(step) or {}) do
-            local subkey = substep_progress_key(kind, group, item.id, index, subindex)
-            if config.step_progress[subkey] ~= nil then
-                config.step_progress[subkey] = nil
+        if not step_is_note(step) then
+            local key = step_progress_key(kind, group, item.id, index)
+            if config.step_progress[key] ~= nil then
+                config.step_progress[key] = nil
                 changed = true
+            end
+            for subindex = 1, #(step_substeps(step) or {}) do
+                local subkey = substep_progress_key(kind, group, item.id, index, subindex)
+                if config.step_progress[subkey] ~= nil then
+                    config.step_progress[subkey] = nil
+                    changed = true
+                end
             end
         end
     end
@@ -473,7 +538,8 @@ local function step_text(step)
     return table.concat(parts, ' ')
 end
 
-local function draw_step(step, index, item, kind, group, hide_checked_substeps)
+local function draw_step(step, index, display_index, item, kind, group,
+        hide_checked_substeps, show_notes, notes)
     config.step_progress = config.step_progress or T{}
     local key = step_progress_key(kind, group, item.id, index)
     local checked = { step_is_checked(kind, group, item.id, index, step) }
@@ -483,11 +549,16 @@ local function draw_step(step, index, item, kind, group, hide_checked_substeps)
         save()
     end
     imgui.SameLine()
-    imgui.TextColored(colors.heading, tostring(index) .. '.')
+    imgui.TextColored(colors.heading, tostring(display_index) .. '.')
     imgui.SameLine()
     if checked[1] then imgui.PushStyleColor(ImGuiCol_Text, colors.muted) end
-    imgui.TextWrapped(step_text(step))
+    local text = step_text(step)
+    local attached_notes = step_notes(step)
+    local has_notes = notes ~= nil and #notes > 0
+    if not show_notes and has_notes then text = text .. ' *' end
+    imgui.TextWrapped(text)
     if checked[1] then imgui.PopStyleColor() end
+    if not show_notes then draw_note_tooltip(notes) end
 
     local substeps = step_substeps(step)
     if substeps ~= nil then
@@ -516,25 +587,51 @@ local function draw_step(step, index, item, kind, group, hide_checked_substeps)
         end
         imgui.Unindent(24)
     end
+    if show_notes and attached_notes ~= nil then
+        imgui.Indent(24)
+        for _, note in ipairs(attached_notes) do
+            imgui.PushStyleColor(ImGuiCol_Text, colors.muted)
+            imgui.TextWrapped('* ' .. tostring(note or ''))
+            imgui.PopStyleColor()
+        end
+        imgui.Unindent(24)
+    end
     imgui.PopID()
 end
 
-local function draw_steps(steps, item, kind, group, hide_checked_substeps)
+local function draw_steps(steps, item, kind, group, hide_checked_substeps, show_notes)
     if type(steps) ~= 'table' or #steps == 0 then
         imgui.TextDisabled('No objectives are available for this entry.')
         return
     end
+    local display_index = 0
     for index, step in ipairs(steps) do
-        draw_step(step, index, item, kind, group, hide_checked_substeps)
+        if step_is_note(step) then
+            if show_notes then
+                imgui.PushStyleColor(ImGuiCol_Text, colors.muted)
+                imgui.TextWrapped('* ' .. tostring(step.note or ''))
+                imgui.PopStyleColor()
+            end
+        else
+            display_index = display_index + 1
+            local notes = related_step_notes(steps, index, step)
+            draw_step(step, index, display_index, item, kind, group,
+                hide_checked_substeps, show_notes, notes)
+        end
         if index < #steps then imgui.Spacing() end
     end
 end
 
 local function next_unchecked_step(steps, item, kind, group)
     config.step_progress = config.step_progress or T{}
+    local display_index = 0
     for index, step in ipairs(steps or {}) do
-        if not step_is_checked(kind, group, item.id, index, step) then
-            return step, index
+        if not step_is_note(step) then
+            display_index = display_index + 1
+        end
+        if not step_is_note(step)
+            and not step_is_checked(kind, group, item.id, index, step) then
+            return step, index, display_index
         end
     end
     return nil, nil
@@ -605,7 +702,7 @@ local function draw_details(item)
     end
     imgui.Separator()
     imgui.TextColored(colors.heading, 'Objectives')
-    draw_steps(item.steps, item, config.mode, current_group(), false)
+    draw_steps(item.steps, item, config.mode, current_group(), false, true)
 end
 
 local function draw_main_window()
@@ -708,11 +805,12 @@ local function draw_tracker_window()
                 imgui.TextColored(colors.unstarted, '[Not started]')
             end
             imgui.Separator()
-            local step, index = next_unchecked_step(
+            local step, index, display_index = next_unchecked_step(
                 item.steps, item, config.tracked_kind, config.tracked_group)
             if step ~= nil then
-                draw_step(step, index, item, config.tracked_kind,
-                    config.tracked_group, true)
+                local notes = related_step_notes(item.steps, index, step)
+                draw_step(step, index, display_index, item, config.tracked_kind,
+                    config.tracked_group, true, false, notes)
             else
                 imgui.TextColored(colors.completed, 'All objectives complete.')
             end
@@ -736,7 +834,7 @@ local function draw_tracker_window()
             if imgui.BeginChild('journalxi_tracker_objectives', { 0, -42 }, false) then
                 apply_font_scale()
                 draw_steps(item.steps, item, config.tracked_kind,
-                    config.tracked_group, false)
+                    config.tracked_group, false, false)
             end
             imgui.EndChild()
             imgui.PopStyleColor()
